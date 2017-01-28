@@ -200,7 +200,7 @@ shinyServer(function(input, output, session) {
   })
 
   output$tripsMap = renderLeaflet(
-    stationMap('trips')
+    stationsMap('trips')
   )
 
   tripsSankeyReact = reactive({
