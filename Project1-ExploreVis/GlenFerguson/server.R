@@ -41,7 +41,7 @@ function(input, output) {
   })
 
   output$ex_country = renderText({
-    paste0('Export Country: ', list_country[input$Country])
+    paste0('Country: ', list_country[input$Country])
   })
 
 #  output$SankeyTitle = renderText({   print(list_country[[input$country]])
