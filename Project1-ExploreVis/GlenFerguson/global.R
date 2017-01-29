@@ -6,7 +6,7 @@ library(ggplot2)
 library(ggthemes)
 library(RColorBrewer)
 
-setwd("~/Desktop/Wine_trade_datasets/Final_Data")
+setwd("./data")
 growth_data <- readRDS('1960-2009_data.rds')
 bilateral_trade <- readRDS('Bilateral_trade_by_Region.rds')
 
@@ -82,12 +82,3 @@ names_bt_col = list("Vol_wine_exports_region" = "Volume of wine exports to each 
 
 intensity_col_names = list("Volume-based trade intensity" = "Index_volume_trade_intensity",
                            "Value-based trade intensity" = "Index_value_trade_intensity")
-
-#AME <- c('SAF', 'TURK')
-#ANZ <- c('AUS','NZL')
-#APA <- c('CHINA', 'HK', 'INDIA', 'JPN', 'KOR', 'MAL', 'PHIL', 'SIN', 'THAI')
-#ECA <- c('BUL', 'CRO', 'GEO', 'HUN', 'MOLD', 'ROM', 'RUS', 'UKR')
-#LAC <- c('ARG', 'BRA', 'CHILE', 'MEX', 'URU')
-#USC <- c('CAN', 'USA')
-#WEM <- c('AUT', 'BEL', 'DEN', 'FIN', 'GER', 'GRE', 'IRL', 'NLD', 'SWE', 'SWISS', 'UK')
-#WEX <- c('FRA', 'ITA', 'POR', 'SPN')
