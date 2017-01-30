@@ -10,7 +10,7 @@ function(input, output) {
     if(input$tax){
       return("_aftertax")
     }else{
-      return("_aftertax")
+      return("")
     }
   })
   
