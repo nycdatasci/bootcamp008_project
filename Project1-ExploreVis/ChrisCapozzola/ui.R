@@ -21,6 +21,7 @@ fluidPage(
         label = "Date",
         min = 1, max = length(unique(colombia_data$report_date)), value = 1, step = 1
       ),
+      verbatimTextOutput("summary"),
       uiOutput("Date")
     ),
   mainPanel(

@@ -138,7 +138,7 @@ colombia_adm.df = fortify(colombia_adm, region = "NAME_1")
 countries_data = rbind(argentina_data,brazil_data,colombia_data,dominican_republic_data,ecuador_data,el_salvador_data,guatemala_data,haiti_data,mexico_data,nicaragua_data,panama_data,united_states_data)
 countries_lst = c("Argentina" = "Argentina", "Brazil" = "Brazil", "Colombia" = "Colombia", "Dominican Republic" = "Dominican_Republic", "Ecuador" = "Ecuador", "El Salvador" = "El_Salvador","Guatemala" = "Guatemala", "Haiti" = "Haiti", "Mexico" = "Mexico", "Nicaragua" = "Nicaragua", "Panama" = "Panama", "United States" = "United_States")
 C_P_select = c("Probable" = "probable","Confirmed" = "confirmed")
-shapes_lst = list("Argentina" = argentina_adm.df,"Colombia" = colombia_adm.df)
+# shapes_lst = list("Argentina" = argentina_adm.df,"Colombia" = colombia_adm.df)
 
 cleanMapPlot <- function(country_data, country_adm.df, date_input,c_f){
   # Clean Data
@@ -155,7 +155,7 @@ cleanMapPlot <- function(country_data, country_adm.df, date_input,c_f){
   country_adm.df = arrange(country_adm.df, order)
   
   # Create plot with clean data
-  g <- ggplot(data = country_adm.df, aes(x = long, y = lat, group = group)) + geom_polygon(aes(fill = cut(infected,6)), alpha = .75) + geom_path(colour = 'grey')
+  g <- ggplot(data = country_adm.df, aes(x = long, y = lat, group = group)) + geom_polygon(aes(fill = cut(infected,8, dig.lab = 4)), alpha = .75) + geom_path(colour = 'grey')
   g = g + labs(x=" ", y=" ") + 
     theme_bw() + scale_fill_brewer('Zika Virus Infections', palette  = 'YlOrRd') + 
     coord_map() +
