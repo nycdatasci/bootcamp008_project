@@ -1,9 +1,10 @@
-ql=read.csv("/Users/gaoxu/Desktop/DataSProject/Project 1/ql.csv",stringsAsFactors = F)
-matches <- read.csv("/Users/gaoxu/Desktop/DataSProject/Project 1/match.csv")
-hname <- read.csv("/Users/gaoxu/Desktop/DataSProject/Project 1/hero_names.csv")
-itemname <- read.csv("/Users/gaoxu/Desktop/DataSProject/Project 1/item_ids.csv")
+ql=read.csv("ql.csv",stringsAsFactors = F)
+matches <- read.csv("match.csv")
+hname <- read.csv("hero_names.csv")
+itemname <- read.csv("item_ids.csv")
 ql_grp = group_by(ql,hero_id)
 q6=left_join(ql,matches,by="match_id")[,c(2,3,5:15,17,19)]
+hname <- hname[c(1:106,108,109),]
 sec_to_min <- function(x){
   m=x%/%60
   if(m<20){ return("< 20 min")}
