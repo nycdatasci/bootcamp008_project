@@ -78,7 +78,7 @@ function(input, output, session) {
     )
   })
   
-  output$loss.chart <- renderGvis({
+  get.loss.by.state <- reactive({
     loss.by.state <- loss.by.state.pp
     if (input$group.by == "Year") {
       loss.by.state <- loss.by.state %>% group_by(yr, st) %>% summarise(loss = sum(loss))
@@ -87,6 +87,11 @@ function(input, output, session) {
       loss.by.state <- loss.by.state %>% filter(loss > 0)
     }
     loss.by.state <- loss.by.state %>% group_by(st) %>% summarise(damage = mean(loss)) %>% arrange(damage)
+  })
+  
+  output$loss.chart <- renderGvis({
+    
+    loss.by.state <- get.loss.by.state()
     
     loss.by.state <- windowed.bar.chart(loss.by.state, "st", input$state, 4, 4)
     
@@ -101,8 +106,8 @@ function(input, output, session) {
                                    vAxis = "{title:'Financial Loss (USD)', format:'short'}"))
   })
   
-  output$casualty.chart <- renderGvis({
-    
+  
+  get.casualties.by.state <- reactive({
     casualties.by.state <- casualties.by.state.pp
     if (input$group.by == "Year") {
       casualties.by.state <- casualties.by.state %>% group_by(yr, st) %>% summarise(casualties = sum(casualties))
@@ -111,6 +116,12 @@ function(input, output, session) {
       casualties.by.state <- casualties.by.state %>% filter(casualties > 0)
     }
     casualties.by.state <- casualties.by.state %>% group_by(st) %>% summarise(damage = mean(casualties)) %>% arrange(damage)
+    
+  })
+  
+  output$casualty.chart <- renderGvis({
+    
+    casualties.by.state <- get.casualties.by.state()
     
     casualties.by.state <- windowed.bar.chart(casualties.by.state, "st", input$state, 4, 4)
     
@@ -124,6 +135,25 @@ function(input, output, session) {
                                    hAxis = "{title:'State'}",
                                    vAxis = "{title:'Number of Casualties'}")
     )
+  })
+  
+  
+  output$state.comparison <- renderGvis({
+    loss.by.state <- get.loss.by.state()
+    casualties.by.state <- get.casualties.by.state()
+    
+    loss.by.state <- loss.by.state %>% select(st) %>% mutate(Loss.Position = as.numeric(row.names(loss.by.state)))
+    casualties.by.state <- casualties.by.state %>% select(st) %>% mutate(Casualty.Position = as.numeric(row.names(casualties.by.state)))
+    
+    compare <- inner_join(loss.by.state, casualties.by.state, by = 'st')
+    compare <- compare %>% mutate(x3 = NA)
+    names(compare) <- c("st", "x1", "Other States", input$state)
+    compare[compare$st == input$state, input$state] <- compare[compare$st == input$state, "Other States"]
+    compare[compare$st == input$state, "Other States"] <- NA
+    
+    gvisScatterChart(compare[, c(-1)], options = list(colors = "['blue', 'gold']",
+                                                      title = "Position Comparison with All Other States"))
+    
   })
   
   
