@@ -1,5 +1,14 @@
 ## server.R ##
 library(scales)
+library(dplyr)
+library(ggplot2)
+library(ggthemes)
+library(ggvis)
+library(leaflet)
+library(RColorBrewer)
+library(DT)
+
+
 shinyServer(
 
   function(input, output, session){
@@ -28,9 +37,20 @@ shinyServer(
   output$graph1 <- renderPlot({
     plot_check <- clean_bm %>%
       filter(Year %in% input$show_years, city %in% input$show_cities)
-    ggplot(data = plot_check, aes(x = plot_check[input$xvar], y = plot_check[input$yvar], alpha = (1/length(input$show_cities)))) +
-      geom_point(aes(color = factor(city))) + graph1xlims() + graph1ylims() + xlab(plotrev[input$xvar]) +
-      ylab(plotrev[input$yvar]) + scale_color_discrete(name="City", breaks=c(input$show_cities), labels=c(input$show_cities)) + guides(alpha = FALSE)
+    de <- ggplot(data = plot_check, aes(x = plot_check[input$xvar], y = plot_check[input$yvar], alpha = .05), size = .1) +
+      geom_point(aes()) + graph1xlims() + graph1ylims() + xlab(plotrev[input$xvar]) +
+      ylab(plotrev[input$yvar]) + scale_color_discrete(name="City", breaks=c(input$show_cities), labels=c(input$show_cities)) +
+      guides(alpha = FALSE)
+    if (input$yearcolor == "Year") {
+      de <- de + geom_point(aes(color = factor(Year), alpha = (1/length(input$show_cities)))) + scale_color_discrete(name="Year", breaks=c(input$show_years), labels=c(input$show_years))
+    }
+    if (input$yearcolor == "City") {
+      de <- de + geom_point(aes(color = factor(city), alpha = (1/length(input$show_cities))))
+    }
+    if (input$trendline == TRUE) {
+      de <- de + geom_smooth(aes(group = city, color = city, fill = factor(city))) + scale_fill_manual(values = c("orange","purple", "red"), name = "Trendline(s)")
+    }
+    de
   })
   
 
@@ -51,16 +71,24 @@ shinyServer(
   })
 
   output$city1 <- renderPlot({
-    ggplot(citygroup(), aes(x = Year, y = count, fill = factor(Year))) + geom_histogram(width = .4, stat='identity') + 
+    ggplot(citygroup(), aes(x = Year, y = count, fill = factor(Year))) + 
+      geom_histogram(width = .4, stat='identity') + 
       ggtitle(paste0(input$radio, " Buildings\n Reporting Each Year")) + 
-      ylab("") + theme_gdocs() + theme(plot.title = element_text(hjust = 0.5)) + scale_fill_discrete(guide = F)
+      ylab("") +
+      theme_gdocs() +
+      theme(plot.title = element_text(hjust = 0.5)) +
+      scale_fill_discrete(guide = F)
   })  
 
   output$city2 <- renderPlot({
     c2 <- ggplot(cityplots(), aes(y = ReportedGFA, x = NormSourceEUI, color = as.factor(Year))) +
-      geom_point(alpha = .5) + ggtitle("Building Size vs. \nEnergy Use per Square Foot") +
-      scale_color_discrete(name="Year") + ylab("Building Size (ft2)") + xlab("Energy Use Intensity (kBtu / ft2)") + 
-      theme_gdocs() + theme(plot.title = element_text(hjust = 0.5)) + 
+      geom_point(alpha = .5) +
+      ggtitle("Building Size vs. \nEnergy Use per Square Foot") +
+      scale_color_discrete(name="Year") +
+      ylab("Building Size (ft2)") +
+      xlab("Energy Use Intensity (kBtu / ft2)") + 
+      theme_gdocs() + 
+      theme(plot.title = element_text(hjust = 0.5)) + 
       scale_y_continuous(labels = comma)
     if (input$log==TRUE){
       c2 <- c2 + coord_trans(y = 'log', x = 'log')  
@@ -70,19 +98,30 @@ shinyServer(
   
   output$city3 <- renderPlot({
     c3 <- ggplot(cityplots(), aes(x = ReportedGFA, y = ENERGY.STAR.Score, color = log10(NormSourceEUI))) +
-      geom_point() + ggtitle("Building Size vs. \nENERGY STAR Score") + xlab("Building Size (ft2)") +
-      scale_color_gradient(name = "ENERGY STAR Scores", low = 'green', high = 'red') + guides(color=F) +
-      theme_gdocs() + theme(plot.title = element_text(hjust = 0.5)) + scale_x_continuous(labels = comma, breaks=seq(0, 3000000, 1000000), limits=c(0, 3000000))
+      geom_point() + 
+      ggtitle("Building Size vs. \nENERGY STAR Score") +
+      xlab("Building Size (ft2)") +
+      scale_color_gradient(name = "ENERGY STAR Scores", low = 'green', high = 'red') +
+      guides(color=F) +
+      theme_gdocs() +
+      theme(plot.title = element_text(hjust = 0.5)) +
+      scale_x_continuous(labels = comma, breaks=seq(0, 3000000, 1000000), limits=c(0, 3000000))
     if (input$log==TRUE){
         c3 <- c3 + coord_trans(y = 'log') + geom_jitter()
       }
     c3
   })
+  
   output$city4 <- renderPlot({
     ggplot(cityviolin(), aes(x = PropType, y = NormSourceEUI, group = PropType)) + 
-      geom_violin(aes(fill = factor(PropType))) + ylim(0, 1000) + scale_color_brewer() + 
-      ggtitle("Energy Use Intensity\n In Common Property Types") + xlab("Grouped Property Type") +
-      ylab("Energy Use Per Square Foot\n (kBtu/ft2)") + theme_gdocs() + theme(legend.position='none', plot.title = element_text(hjust = 0.5))
+      geom_violin(aes(fill = factor(PropType))) + 
+      ylim(0, 1000) + 
+      scale_color_brewer() + 
+      ggtitle("Energy Use Intensity\n In Common Property Types") +
+      xlab("Grouped Property Type") +
+      ylab("Energy Use Per Square Foot\n (kBtu/ft2)") + 
+      theme_gdocs() + 
+      theme(legend.position='none', plot.title = element_text(hjust = 0.5))
   })
 
   filteredData <- reactive({
@@ -95,7 +134,8 @@ shinyServer(
 
   output$map <- renderLeaflet({
     leaflet(filteredData()) %>% addTiles() %>%
-      setView(-73.90, 40.7128, zoom = 11) %>% addCircles(~longitude, ~latitude, weight = 5, color = ~qpal(MedNormSourceEUI), fillColor = ~qpal(MedNormSourceEUI), fillOpacity = .9, popup = ~paste("Source EUI:", MedNormSourceEUI, " Zip Code:", zip), radius = ~full_zips$MedNormSourceEUI)
+      setView(-73.90, 40.7128, zoom = 12) %>% 
+      addCircles(~longitude, ~latitude, weight = 5, color = ~qpal(MedNormSourceEUI), fillColor = ~qpal(MedNormSourceEUI), fillOpacity = .9, popup = ~paste("Source EUI:", MedNormSourceEUI, " Zip Code:", zip), radius = ~full_zips$MedNormSourceEUI)
   })
 
   observe({
@@ -103,7 +143,7 @@ shinyServer(
     if (input$mapcity == "NYC") {
       mapx <- -73.8 
       mapy <- 40.7128
-      mapzoom <- 11
+      mapzoom <- 12
     }
     if (input$mapcity == "DC") {
       mapx <- -77

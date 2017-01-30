@@ -1,14 +1,5 @@
 ## global.R ##
 
-library(dplyr)
-library(ggplot2)
-library(ggthemes)
-library(ggvis)
-library(leaflet)
-library(RColorBrewer)
-library(DT)
-library(shiny)
-library(shinydashboard)
 
 #load various data sets
 clean_bm <- tbl_df(read.csv("clean_bm.csv"))
