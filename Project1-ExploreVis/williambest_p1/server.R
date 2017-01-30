@@ -2,6 +2,7 @@ library(dygraphs)
 library(dplyr)
 library(googleVis)
 library(reshape2)
+library(geosphere)
 
 source("helpers.r")
 
@@ -11,14 +12,14 @@ tornadoes.since.1996 <- tornadoes.since.1996 %>% arrange(st)
 tornadoes.since.1996 <- tornadoes.since.1996 %>% mutate(mag = paste0("F", mag))
 ## Preprocessing data
 # for map
-valid.storms <- tornadoes.since.1996
-start.locs <- valid.storms %>% select(storm.id = X1, state = st, year = yr, lat = slat, lon = slon, loss, mag)
-end.locs <- valid.storms %>% select(storm.id = X1, state = st, year = yr, lat = elat, lon = elon, loss, mag)
-storm.paths.pp <- rbind(start.locs, end.locs)
+storm.paths.pp <- tornadoes.since.1996 %>% select(storm.id = X1, state = st, year = yr, slat, slon, elat, elon, loss, mag, len)
 # storms with starts or ends at 0.00 are bad data
-storm.paths.pp <- storm.paths.pp %>% filter((60 > lat & lat > 10) & (-130 < lon & lon < -50))
+storm.paths.pp <- storm.paths.pp %>% filter((60 > slat & slat > 10))
+storm.paths.pp <- storm.paths.pp %>% filter((60 > elat & elat > 10))
+storm.paths.pp <- storm.paths.pp %>% filter((-130 < slon & slon < -50))
+storm.paths.pp <- storm.paths.pp %>% filter((-130 < elon & elon < -50))
 # storm lengths
-storm.size.pp <- valid.storms %>% filter(!is.na(len) & !is.na(wid))
+storm.size.pp <- tornadoes.since.1996 %>% filter(!is.na(len) & !is.na(wid))
 storm.size.pp <- storm.size.pp %>% group_by(st, mag) %>% summarise(average.length = mean(len), average.width = mean(wid))
 storm.size.pp <- storm.size.pp %>% arrange(mag)
 # for loss graphs
@@ -32,6 +33,10 @@ casualties.by.state.pp <- casualties.by.state.pp %>% mutate(casualties = inj + f
 
 function(input, output, session) {
   
+  get.storm.paths <- reactive({
+    
+  })
+  
   output$map <- renderLeaflet({
     # get only storms given user filter options
     storm.paths <- storm.paths.pp %>% filter(state == input$state) 
@@ -40,25 +45,27 @@ function(input, output, session) {
     
     storm.map <- leaflet(storm.paths) %>% addTiles() 
     
-    for (sid in unique(storm.paths$storm.id)) {
-      storm.map <- storm.map %>% addPolylines(data = storm.paths[storm.paths$storm.id==sid, ], 
-                                              lng = ~lon, lat = ~lat, 
-                                              group = ~mag)
+    for (i in 1:nrow(storm.paths)) {
+      
+      # draw each path, but only those that are not possible errors
+      # check possible erros agains recorded length traveled
+      
+      lat1 <- as.numeric(storm.paths[i, "slat"])
+      lat2 <- as.numeric(storm.paths[i, "elat"])
+      lon1 <- as.numeric(storm.paths[i, "slon"])
+      lon2 <- as.numeric(storm.paths[i, "elon"])
+      
+      geo.dist <- distm(c(lon1, lat1), c(lon2, lat2), fun = distHaversine) / 1000 * 0.621  
+      rec.dist <- storm.paths[i, "len"]
+      
+      if (rec.dist * 1.2 >= geo.dist) {
+        storm.map <- addPolylines(storm.map, 
+                                lat = c(lat1, lat2),
+                                lng = c(lon1, lon2))
+      }
     }
-    #storm.map <- storm.map %>% 
     return(storm.map)
   })
-  
-  # output$map.loss.boxplot <- renderPlot({
-  #   loss.by.severity <- tornadoes.since.1996 %>% filter(st == input$state)
-  #   loss.by.severity <- loss.by.severity %>% filter(yr >= input$map.year[1] & yr <= input$map.year[2])
-  #   loss.by.severity <- loss.by.severity %>% filter(mag %in% input$map.mag)
-  #   loss.by.severity <- loss.by.severity %>% filter(!is.na(loss))
-  #   if (!input$include.zero.values) {
-  #     loss.by.severity <-  loss.by.severity %>% filter(loss > 0)
-  #   }
-  #   ggplot(loss.by.severity, aes(x=mag, y=loss)) + geom_boxplot()
-  # })
   
   output$length.by.severity <- renderGvis({
     storm.size <- storm.size.pp %>% filter(st == input$state)
