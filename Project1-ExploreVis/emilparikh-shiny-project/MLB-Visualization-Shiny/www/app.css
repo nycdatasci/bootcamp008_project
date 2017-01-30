@@ -1,0 +1,147 @@
+/*** msin ***/
+.main-header, .main-sidebar{
+  position: fixed;
+  overflow: visible;
+}
+
+/*** sidebar ***/
+.skin-blue .left-side, .skin-blue .main-sidebar, .skin-blue .wrapper{
+  background-color: #282f32;
+}
+
+.skin-blue .sidebar a{
+  color: #ffffff;
+}
+
+
+.skin-blue .sidebar-menu>li.active>a, .skin-blue .sidebar-menu>li:hover>a{
+  background-color: inherit;
+  border-left: 3px solid #cc0000;
+}
+
+
+.sidebar-menu:hover{
+	overflow: hidden;
+}
+
+.sidebar-menu{
+	/*border-left: 3px solid #cc0000;*/
+}
+
+/*** header bar background ***/
+.skin-blue .main-header .navbar{
+  background-color: #191993;
+}
+
+/*** title background ***/
+.skin-blue .main-header .logo{
+  background-color: #000088;
+}
+
+.skin-blue .main-header .logo:hover{
+  background-color: #00007a;
+}
+
+a.sidebar-toggle:hover{
+  background-color: #000088 !important;
+}
+
+.main-header{
+  width: 100%;
+}
+
+.content{
+  margin: 0px;
+  padding: 85px 40px;
+  background-color: #ffffff;
+}
+
+
+/*** box ***/
+.box-header .box-title, .box-header>.fa, .box-header>.glyphicon, .box-header>.ion{
+  display: inline;
+}
+
+.box.box-solid.box-primary{
+  border: 1px solid #3f3f49;
+}
+
+.box.box-solid.box-primary>.box-header{
+  background-color: #3f3f49;
+}
+
+.box-header{
+  padding: 0px 5px 0px 10px;
+}
+
+/*** data table ***/
+.dataTables_info{
+  display: none;
+}
+
+
+td, th{
+  text-align: center !important;
+}
+
+/*** page statistic title ***/
+#page-title{
+  font-size: 40px;
+  margin: 0px;
+  letter-spacing: 0px;
+}
+
+#title-box{
+  height: auto;
+  vertical-align: middle;
+}
+
+div.box{
+  box-shadow: none;
+  border-top: 0px;
+  margin-top: 5px;
+
+}
+
+/*** subheaders ***/
+.subheader{
+  padding: 0px;
+  border-bottom: 1px solid #282f32;
+}
+
+.h4,h4{
+    text-transform:full-width;
+}
+
+/*** valuebox ***/
+.small-box{
+  margin-bottom: 0px;
+}
+.small-box h3{
+  font-size: 28px;
+
+}
+
+.small-box>.inner{
+  padding: 10px;
+}
+
+#nav-label{
+	padding: 12px 15px 0px 12px;
+}
+
+.user-panel{
+	position: absolute;
+	padding: 30px;
+	bottom: 0px;
+}
+
+.user-panel > .info{
+	right: 4px;
+}
+
+.user-panel p{
+	font-weight: normal !important;
+	font-style: italic;
+	text-align: right;
+}
