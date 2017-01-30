@@ -13,6 +13,7 @@ carnitas_map = read.csv("https://dl.dropboxusercontent.com/u/9526991/carnitas_ma
 map_df <-readRDS(gzcon(url("https://dl.dropboxusercontent.com/u/9526991/Map_df2.rds")))
 joined.steak <-readRDS(gzcon(url("https://dl.dropboxusercontent.com/u/9526991/Steak_Regression.rds")))
 reg_vars <- readRDS(gzcon(url("https://dl.dropboxusercontent.com/u/9526991/allthedata.rds")))
+steak_burrito <- readRDS(gzcon(url("https://dl.dropboxusercontent.com/u/9526991/steak_burrito.rds")))
 names(reg_vars)[50] = "Minimum_Wage"
 names(reg_vars)[49] = "Living_Wage"
 names(reg_vars)[40] = "Annual_taxes"
