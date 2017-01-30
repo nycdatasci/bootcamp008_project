@@ -38,9 +38,14 @@ shinyServer(
     plot_check <- clean_bm %>%
       filter(Year %in% input$show_years, city %in% input$show_cities)
     de <- ggplot(data = plot_check, aes(x = plot_check[input$xvar], y = plot_check[input$yvar], alpha = .05), size = .1) +
-      geom_point(aes()) + graph1xlims() + graph1ylims() + xlab(plotrev[input$xvar]) +
-      ylab(plotrev[input$yvar]) + scale_color_discrete(name="City", breaks=c(input$show_cities), labels=c(input$show_cities)) +
-      guides(alpha = FALSE)
+      geom_point(aes()) + 
+      graph1xlims() +
+      graph1ylims() +
+      xlab(plotrev[input$xvar]) +
+      ylab(plotrev[input$yvar]) +
+      scale_color_discrete(name="City", breaks=c(input$show_cities), labels=c(input$show_cities)) +
+      guides(alpha = FALSE) + 
+      theme(axis.text = element_text(size=13), axis.title = element_text(size=14))
     if (input$yearcolor == "Year") {
       de <- de + geom_point(aes(color = factor(Year), alpha = (1/length(input$show_cities)))) + scale_color_discrete(name="Year", breaks=c(input$show_years), labels=c(input$show_years))
     }
@@ -53,7 +58,6 @@ shinyServer(
     de
   })
   
-
   cityplots <- reactive({
     clean_bm %>%
       filter(city %in% input$radio)
@@ -76,7 +80,7 @@ shinyServer(
       ggtitle(paste0(input$radio, " Buildings\n Reporting Each Year")) + 
       ylab("") +
       theme_gdocs() +
-      theme(plot.title = element_text(hjust = 0.5)) +
+      theme(plot.title = element_text(hjust = 0.5), axis.text = element_text(size=13), axis.title = element_text(size = 14)) +
       scale_fill_discrete(guide = F)
   })  
 
@@ -88,7 +92,7 @@ shinyServer(
       ylab("Building Size (ft2)") +
       xlab("Energy Use Intensity (kBtu / ft2)") + 
       theme_gdocs() + 
-      theme(plot.title = element_text(hjust = 0.5)) + 
+      theme(plot.title = element_text(hjust = 0.5), axis.text = element_text(size=13), axis.title = element_text(size = 14)) + 
       scale_y_continuous(labels = comma)
     if (input$log==TRUE){
       c2 <- c2 + coord_trans(y = 'log', x = 'log')  
@@ -104,7 +108,7 @@ shinyServer(
       scale_color_gradient(name = "ENERGY STAR Scores", low = 'green', high = 'red') +
       guides(color=F) +
       theme_gdocs() +
-      theme(plot.title = element_text(hjust = 0.5)) +
+      theme(plot.title = element_text(hjust = 0.5), axis.text = element_text(size=13), axis.title = element_text(size = 14)) +
       scale_x_continuous(labels = comma, breaks=seq(0, 3000000, 1000000), limits=c(0, 3000000))
     if (input$log==TRUE){
         c3 <- c3 + coord_trans(y = 'log') + geom_jitter()
@@ -121,7 +125,7 @@ shinyServer(
       xlab("Grouped Property Type") +
       ylab("Energy Use Per Square Foot\n (kBtu/ft2)") + 
       theme_gdocs() + 
-      theme(legend.position='none', plot.title = element_text(hjust = 0.5))
+      theme(legend.position='none', plot.title = element_text(hjust = 0.5), axis.text = element_text(size=13), axis.title = element_text(size = 14))
   })
 
   filteredData <- reactive({
@@ -135,9 +139,10 @@ shinyServer(
   output$map <- renderLeaflet({
     leaflet(filteredData()) %>% addTiles() %>%
       setView(-73.90, 40.7128, zoom = 12) %>% 
-      addCircles(~longitude, ~latitude, weight = 5, color = ~qpal(MedNormSourceEUI), fillColor = ~qpal(MedNormSourceEUI), fillOpacity = .9, popup = ~paste("Source EUI:", MedNormSourceEUI, " Zip Code:", zip), radius = ~full_zips$MedNormSourceEUI)
+      addCircles(~longitude, ~latitude, weight = 5, color = ~qpal(MedNormSourceEUI), fillColor = ~qpal(MedNormSourceEUI), fillOpacity = .9, popup = ~paste("Source EUI:", MedNormSourceEUI, " Zip Code:", zip), radius = ~full_zips$Count) %>%
+      addLegend(position = "bottomleft", pal = qpal, values = ~MedNormSourceEUI, title = "Energy Consumption", labels = c("Low Energy Consumption","","","","","","","","", "High Energy Consumption"))
   })
-
+?addLegend
   observe({
     qpal <- colorpal()
     if (input$mapcity == "NYC") {
@@ -160,7 +165,7 @@ shinyServer(
     leafletProxy("map", data = filteredData()) %>%
       clearShapes() %>% 
       setView(lng = mapx, lat = mapy, zoom = mapzoom) %>%
-      addCircles(~longitude, ~latitude, color = ~qpal(MedNormSourceEUI), weight = 5, fillColor = ~qpal(MedNormSourceEUI), fillOpacity = .9, popup = ~paste("Zip Code:", zip, "\n"," Source EUI:", MedNormSourceEUI), radius = ~(full_zips$MedNormSourceEUI))
+      addCircles(~longitude, ~latitude, color = ~qpal(MedNormSourceEUI), weight = 5, fillColor = ~qpal(MedNormSourceEUI), fillOpacity = .9, popup = ~paste("Zip Code:", zip, "\n"," Source EUI:", MedNormSourceEUI), radius = ~full_zips$Count * 5)
   })
   
   #customize data table output

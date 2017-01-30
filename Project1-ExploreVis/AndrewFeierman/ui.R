@@ -2,6 +2,22 @@
 library(shiny)
 library(shinydashboard)
 
+  sidebar <- dashboardSidebar(
+    
+      sidebarUserPanel("", image = "http://www.pd4pic.com/images/building-flat-cartoon-trees-windows-doors-tall.png"),
+      sidebarMenu(
+        menuItem("Home", tabName = "home", icon = icon("home")),
+        menuItem("Data Explorer", tabName = "graph", icon = icon("flag")),
+        menuItem("City Explorer", tabName = "city", icon = icon("building")),
+        menuItem("View Data", tabName = "data", icon = icon("database")),
+        br(),br(),br(),br(),br(),br(),br(),br(),br(),
+        br(),br(),br(),br(),br(),br(),br(),br(),
+        br(),br(),br(),br(),br(),br(),br(),br(),
+        p(align = 'center', a("What is EUI?", href = "https://www.energystar.gov/buildings/facility-owners-and-managers/existing-buildings/use-portfolio-manager/understand-metrics/what-energy")),
+        p(align = 'center', a("Glossary", href = "http://buildingrating.org/glossary-terms"))
+        )
+    )
+
   home <- tags$html(
     tags$head(
       tags$title('Energy Benchmarking Dashboard')
@@ -15,6 +31,7 @@ library(shinydashboard)
                     p('In the United States, a group of progressive cities have begun collecting and publicly reporting energy consumption of large buildings.'),
                     p('This map shows average building energy consumption within each zip code.'),
                     p('Use the map to explore which neighborhoods are using the most energy, and change years to see how energy use is changing over time!'),
+                    p('The larger a circle is, the more data we have for that Zip Code.'),
                     p('To explore further, click a tab on the panel to the left. Explore maps, graphs, or the data itself.'),
                     selectizeInput("mapcity", "Select City to Display", 
                                    mapcities, selected = "NYC"),
@@ -23,16 +40,6 @@ library(shinydashboard)
                     )
       )
       )
-  sidebar <- dashboardSidebar(
-    
-      sidebarUserPanel("", image = "http://www.pd4pic.com/images/building-flat-cartoon-trees-windows-doors-tall.png"),
-      sidebarMenu(
-        menuItem("Home", tabName = "home", icon = icon("home")),
-        menuItem("Data Explorer", tabName = "graph", icon = icon("flag")),
-        menuItem("City Explorer", tabName = "city", icon = icon("building")),
-        menuItem("View Data", tabName = "data", icon = icon("database"))
-        )
-    )
   
   body <- dashboardBody(
       tabItems(
@@ -69,7 +76,8 @@ library(shinydashboard)
                      selectInput("yvar", "Y-axis variable", plotyvalues, selected = "ReportedGFA")
                   ),
                   column(width = 9,
-                          fluidRow(wellPanel(plotOutput("graph1", height = 750)))))),
+                          fluidRow(wellPanel(plotOutput("graph1", height = 750))),
+                          fluidRow(ggvisOutput('ggvisgraph'))))),
         
         tabItem(tabName = "city",
                 fluidRow(height = "20%",
