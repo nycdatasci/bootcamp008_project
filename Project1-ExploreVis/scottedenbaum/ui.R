@@ -12,10 +12,10 @@ sel_group_by2 = c('Gender' = 'Gender',
 ckbox_filter = levels(df1$Goal.Classification)[2:12]
 
 
-IMG <- "POHLogo1.jpg"
+IMG <- "RedShield.jpg"
 shinyUI(dashboardPage(skin="red",
   dashboardHeader(title = "Pathway of Hope"),
-  dashboardSidebar(width = 500,
+  dashboardSidebar(width = 300,
       sidebarUserPanel("Salvation Army", image = IMG),
       sidebarMenu(
         menuItem("Controls", tabName = "Goal", icon = icon("th"),
@@ -44,17 +44,33 @@ shinyUI(dashboardPage(skin="red",
                                 box(title = "Analysis by grouping"), 
                                 htmlOutput("col", width = "300%", height = "600px")
                                 )
-                    ),
-                    fluidRow(column(12,
-                                    imageOutput("image2"))
-                             )
+                    )
               ),#tabitem1
           
           tabItem(tabName="POH",
                   fluidRow(column(12,
+                                  #box(imageOutput("image2", width=300, height=300)),
+                                  #box(title = "Pathway of Hope",imageOutput("POHLogo", width = 300, height = 300), imageOutput("POHLo"))
+                                 imageOutput("imageClient")
+                                  #box(imageOutput("imageRedShield", width = 300, height = 300))
+                  ),
+                  fluidRow(column(10,
                                   wellPanel(
                                     box(title = "The Pathway of Hope Initiative - Helping Families Break the Cycyle of Poverty since 2015",
-                                        h2("The Salvation Army initiated the Pathway of Hope Program in 2015")
+                                        h4("Pathway of Hope is an expert solution to families in crisis through The
+                                            Salvation Army. It is targeted and intensive case management to assist
+                                            families striving to break free from intergenerational poverty. The
+                                            Salvation Army forms a crucial partnership with families in need. Families
+                                            a part of the program possess the desire to change their situation, and are
+                                            willing to share accountability with The Salvation Army for planned
+                                            actions. By achieving increased stability, these families find a newfound
+                                            hope, propelling them forward on their journey to sufficiency.",
+                                           br(),
+                                          "This analysis takes a deeper look at the initiative, running in
+                                          over 25 local communities within The Salvation Army’s Eastern Territory.
+                                          The in-take process individually evaluates a family in crisis, and
+                                          identifies custom and critical goals ranging from securing employment to
+                                          finding affordable childcare")
                                     )
                                   )
                                 )
@@ -65,6 +81,4 @@ shinyUI(dashboardPage(skin="red",
     )#dashboardbody
   
   
-  ))
-
-
+  )))
