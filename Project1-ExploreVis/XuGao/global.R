@@ -1,3 +1,8 @@
+library(dplyr)
+library(ggplot2)
+library(shiny)
+library(DT)
+library(tidyr)
 ql=read.csv("ql.csv",stringsAsFactors = F)
 matches <- read.csv("match.csv")
 hname <- read.csv("hero_names.csv")
