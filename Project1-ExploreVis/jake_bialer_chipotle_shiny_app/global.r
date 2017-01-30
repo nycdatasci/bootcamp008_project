@@ -3,20 +3,21 @@ library(rgdal)
 library(RColorBrewer)
 library(noncensus)
 library(shiny)
-ibrary(tidyr)
+library(tidyr)
 library(maps)
 library(noncensus)
 library(dplyr)
+library(shiny)
 
 carnitas_map = read.csv("https://dl.dropboxusercontent.com/u/9526991/carnitas_map1.csv")
-map_df <-readRDS("https://dl.dropboxusercontent.com/u/9526991/Map_df2.rds")
-joined.steak <-readRDS("https://dl.dropboxusercontent.com/u/9526991/Steak_Regression.rds")
-reg_vars <- readRDS("https://dl.dropboxusercontent.com/u/9526991/allthedata.rds")
+map_df <-readRDS(gzcon(url("https://dl.dropboxusercontent.com/u/9526991/Map_df2.rds")))
+joined.steak <-readRDS(gzcon(url("https://dl.dropboxusercontent.com/u/9526991/Steak_Regression.rds")))
+reg_vars <- readRDS(gzcon(url("https://dl.dropboxusercontent.com/u/9526991/allthedata.rds")))
 names(reg_vars)[50] = "Minimum_Wage"
 names(reg_vars)[49] = "Living_Wage"
 names(reg_vars)[40] = "Annual_taxes"
 names(reg_vars)[46] = "Required_annual_income_before_taxes"
-super_burrito =  readRDS("https://dl.dropboxusercontent.com/u/9526991/superburrito.rds")
+super_burrito =  readRDS(gzcon(url("https://dl.dropboxusercontent.com/u/9526991/superburrito.rds")))
 
 names(map_df)[1] = "long"
 names(map_df)[2] = "lat"
@@ -25,8 +26,10 @@ names(map_df)[2] = "lat"
 
 library(RColorBrewer)
 library(maps)
+my.cols2 <-brewer.pal(8, "Reds")
+
 states_map <- map_data("state")
-pal <- colorFactor(my.cols2, domain = as.factor(c(super_burrito$`Steak Burrito`,super_burrito$`Steak Burrito_aftertax`)))
+pal <- leaflet::colorFactor(my.cols2, domain = as.factor(c(super_burrito$`Steak Burrito`,super_burrito$`Steak Burrito_aftertax`)))
 
 
 menu_items = c("Steak Burrito","Barbacoa Burrito","Chicken Burrito","Chorizo Burrito","Sofritas Burrito","Veggie Burrito")
