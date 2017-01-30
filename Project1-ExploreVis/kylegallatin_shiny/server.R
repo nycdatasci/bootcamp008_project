@@ -2,6 +2,8 @@ library(ggplot2)
 library(dplyr)
 library(ggthemes)
 
+mutations <- read_csv('mutations_final.csv')
+
 function(input, output, session) {
   
   selectedData <- reactive({
