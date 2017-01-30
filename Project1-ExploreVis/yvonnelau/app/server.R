@@ -62,9 +62,9 @@ function(input, output,session){
       theme(legend.key=element_blank()) +
       geom_vline(xintercept = c(14,28), colour='grey') +
       annotate("text", x = c(6,20,35), y = 0.11, label = c('A','B','C'), size=6) +
-      annotate("rect", xmin = 0, xmax = 14, ymin = 0, ymax = 0.20, alpha = .2, fill='darkred') +
+      annotate("rect", xmin = 0, xmax = 14, ymin = 0, ymax = 0.20, alpha = .2, fill='darkgreen') +
       annotate("rect", xmin = 14, xmax = 28, ymin = 0, ymax = 0.20, alpha = .2, fill='darkblue') +
-      annotate("rect", xmin = 28, xmax = 60, ymin = 0, ymax = 0.20, alpha = .2, fill='darkgreen')
+      annotate("rect", xmin = 28, xmax = 60, ymin = 0, ymax = 0.20, alpha = .2, fill='darkred')
       
   })
   
