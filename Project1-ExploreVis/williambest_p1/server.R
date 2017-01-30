@@ -154,7 +154,8 @@ function(input, output, session) {
     gvisScatterChart(compare[, c(-1)], options = list(colors = "['blue', 'gold']",
                                                       title = "Position Comparison with All Other States",
                                                       hAxis = "{title:'National Loss Position'}",
-                                                      vAxis = "{title:'National Casualty Position'}"))
+                                                      vAxis = "{title:'National Casualty Position'}",
+                                                      trendlines = "0"))
     
   })
   
