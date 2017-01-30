@@ -77,6 +77,24 @@ shinyServer(function(input, output){
     ggtitle(paste("Death By Leading Cause for",plot_df1(),sep=' ')) + theme(plot.title = element_text(hjust = 0.5)) + theme(plot.title = element_text(size = 15, face = "bold"))
   })
   
+  #Trend line for death by race ethnicity and Leading causes
+ 
+  
+  output$TrendByLeadingCauseAndRace<-renderPlot({
+    
+    data %>% group_by(Race_Ethnicity,Leading.Cause,Year) %>% summarise(TotalDeath = sum(as.numeric(Deaths),na.rm=TRUE)) %>% filter(Race_Ethnicity %in% input$RaceSelection,Leading.Cause==input$LeadingCauseType10) %>%
+    ggplot(aes(Year,TotalDeath)) +
+      geom_point() +
+      geom_line(aes(color = Race_Ethnicity)) +
+      ylab('Total Death') +
+      ggtitle('2007-2014 Death Trend by Leading Cause and Race')+
+      theme(plot.title = element_text(hjust = 0.5,size = 15, face = "bold")) +
+      guides(fill=guide_legend(title = "Leading Cause")) 
+    
+  })
+  
+  
+  
   
   #Trend line for the death by race ethnicity
   output$TrendLineByRaceEthnicity<-renderPlot({
