@@ -32,11 +32,15 @@ shinyServer(function(input, output){
       #addTiles() %>% 
       addProviderTiles('CartoDB.Positron') %>%
       addMarkers(popup = paste(
+        paste0("<img src = ./", combined_movies$Poster_new), '<br>','<br>', '<br>',
         combined_movies$Film, ",", 
         combined_movies$Year, "<br>", 
         'Location:', combined_movies$Location.Display.Text, '<br>', 
         'IMDB rating:', combined_movies$IMDB, '<br>', 
-        paste0('<a href = ', combined_movies$IMDB.LINK, " target = '_blank'", '> IMDB Link </a>')))
+        paste0('<a href = ', combined_movies$IMDB.LINK, " target = '_blank'", '> IMDB Link </a>'),
+        "<style> div.leaflet-popup-content {width:auto !important;}</style>"
+          )
+        )
   })
  
 observe( {
@@ -45,11 +49,15 @@ observe( {
     proxy = leafletProxy('map', data = updated)
     proxy %>% clearMarkers() %>%
     addMarkers(popup = paste(
+              paste0("<img src = ./", updated$Poster_new), '<br>', '<br>', '<br>',
               updated$Film, ",", 
               updated$Year, "<br>", 
               'Location:', updated$Location.Display.Text, '<br>', 
               'IMDB rating:', updated$IMDB, '<br>', 
-              paste0('<a href = ', updated$IMDB.LINK, " target = '_blank'", '> IMDB Link </a>')))
+              paste0('<a href = ', updated$IMDB.LINK, " target = '_blank'", '> IMDB Link </a>'),
+              "<style> div.leaflet-popup-content {width:auto !important;}</style>"
+                )
+              )
   })
   
   observe({
