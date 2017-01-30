@@ -19,6 +19,7 @@ library(ggmap)
 library(leaflet)
 library(maps)
 library(plotly)
+library(reshape)
 
 
 function(input, output,session){
@@ -41,8 +42,8 @@ function(input, output,session){
       summarise(n=n())
     
     #melt and cast data into the format for stacked googlevis 
-    mgrade_only <- melt(grade_only_grouped, id = c("grade","year"))
-    grade_dist <- cast(mgrade_only, year~grade,sum)
+    mgrade_only <- reshape::melt(grade_only_grouped, id = c("grade","year"))
+    grade_dist <- reshape::cast(mgrade_only, year~grade,sum)
     
     gvisColumnChart(grade_dist, options = list(
       isStacked="percent", colors="['#A6D0BD','#565656','red']"))

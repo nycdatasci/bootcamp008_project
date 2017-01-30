@@ -1,4 +1,4 @@
-##############################################
+?##############################################
 ###  Data Science Bootcamp 8               ###
 ###  Project 1 - Exploratory Visualization ###
 ###  Yvonne Lau  / January 29, 2017        ###
@@ -12,8 +12,7 @@ library(shinydashboard)
 library(leaflet)
 library(ggplot2)
 library(plotly)
-
-
+library(reshape)
 
 source("globals.R")
 
