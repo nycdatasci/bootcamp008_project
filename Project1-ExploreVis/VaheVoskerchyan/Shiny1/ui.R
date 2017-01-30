@@ -15,8 +15,8 @@ shinyUI(dashboardPage(
       name = 'Vahe Voskerchyan',
       image = img(src = './Shiny1/image/Vahe.jpg')),
     sidebarMenu(
-      menuItem("Graphs", tabName = "graphs", icon = icon("bar-chart")),
-      menuItem("Data", tabName = "data", icon = icon("database"))),
+      menuItem("Quarters", tabName = "quarter", icon = icon("bar-chart")),
+      menuItem("Years", tabName = "year", icon = icon("bar-chart"))),
     selectizeInput("relativeSide",
                    h4("The Relative Category"),
                    choice = list('Immidiat Relatives' = 1,
@@ -39,8 +39,8 @@ shinyUI(dashboardPage(
   ),
   dashboardBody(
     tabItems(
-      tabItem(tabName = "graphs",
-              fluidRow(plotOutput("graph"),
+      tabItem(tabName = "quarter",
+              fluidRow(plotOutput("quarter"),
                        selectizeInput("relative",
                                       h4("The Relative Category"),
                                       choice = list('Immidiate Relatives' = "immid",
@@ -52,7 +52,19 @@ shinyUI(dashboardPage(
                                                   'Denied' = "D",
                                                   'Pending'= "P"),
                                       selected = 'immid_R'))),
-      tabItem(tabName = "data",
-              "to be replaced with datatable"))
+      tabItem(tabName = "year",
+              fluidRow(plotOutput('year'),
+                       selectizeInput("relative1",
+                                      h4("The Relative Category"),
+                                      choice = list('Immidiate Relatives' = "immid",
+                                                    'All Other Relatives' = "other")),
+                       selectInput('status1',
+                                   h4('Application Status'),
+                                   choice = list('Received' = "R",
+                                                 'Approved' = "A",
+                                                 'Denied' = "D",
+                                                 'Pending'= "P"),
+                                   selected = 'immid_R'))
+              )
   )
-))
+)))

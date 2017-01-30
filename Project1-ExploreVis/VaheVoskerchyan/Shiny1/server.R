@@ -28,7 +28,7 @@ shinyServer(function(input,output){
                    other_R,other_A,other_D,other_P)
 
   
-    output$graph <- renderPlot({ 
+    output$quarter <- renderPlot({ 
     
     choice_bar <- paste(input$relative, input$status, sep = "_")
     
@@ -39,8 +39,22 @@ shinyServer(function(input,output){
                      fill = year),
                  stat = 'identity', color = 'grey', position = 'dodge')+
       theme_economist() + scale_fill_economist() +
-      ylab("Number of Applications in 1000's")# + coord_cartesian(ylim=c(0,1000))
-    
+      ylab("Number of Applications in 1000's")
+    # + coord_cartesian(ylim=c(0,1000)),
+    })  
+    output$year <- renderPlot({ 
+      
+      choice_bar <- paste(input$relative1, input$status1, sep = "_")
+      
+      g <- ggplot(data = data1)
+      
+      g + geom_bar(aes(x = year, 
+                       y =eval(parse(text = paste(input$relative1, input$status1, sep = "_")))/1000,
+                       fill = quarter),
+                   stat = 'identity', color = 'grey', position = 'dodge')+
+        theme_economist() + scale_fill_economist() +
+        ylab("Number of Applications in 1000's")
+      # + coord_cartesian(ylim=c(0,1000))
   })
 
   
