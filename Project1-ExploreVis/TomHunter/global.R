@@ -11,7 +11,7 @@ library(tidyverse)
 # devtools::install_github('dkahle/ggmap')
 # devtools::install_github('hadley/ggplot2')
 # install.packages("ggthemes", type = "source")
-# install.packages("tidyverse")
+# install.packages("leaflet")
 # install_version("ggplot2", version = "2.1.0", repos = "http://cran.us.r-project.org")
 
 
@@ -24,12 +24,12 @@ df_hs17 <- fread('Heat Seek NYC data 6-16 to 6-17.csv', stringsAsFactors = TRUE,
 sensor_mapping <- fread('sensor_mapping.csv', stringsAsFactors=FALSE, data.table = FALSE)
 df_311data <- fread('311_Service_Requests_from_2010_to_Present.csv', stringsAsFactors = TRUE, data.table = FALSE) 
 
-setwd(paste(getwd(),'/BORO_zip_files_csv/', sep=""))
-df_geo_MN <- fread('MN.csv', data.table = FALSE)
-df_geo_BK <- fread('BK.csv', data.table = FALSE)
-df_geo_BX <- fread('BX.csv', data.table = FALSE)
-df_geo_SI <- fread('SI.csv', data.table = FALSE)
-df_geo_QN <- fread('QN.csv', data.table = FALSE)
+# setwd(paste(getwd(),'/BORO_zip_files_csv/', sep=""))
+# df_geo_MN <- fread('MN.csv', data.table = FALSE)
+# df_geo_BK <- fread('BK.csv', data.table = FALSE)
+# df_geo_BX <- fread('BX.csv', data.table = FALSE)
+# df_geo_SI <- fread('SI.csv', data.table = FALSE)
+# df_geo_QN <- fread('QN.csv', data.table = FALSE)
 
 ##############HELPER CODE###################
 winterize <- function(df, col_name) {
@@ -47,6 +47,15 @@ winterize <- function(df, col_name) {
   return(df)
 }
 
+remove_outliers <- function(x, na.rm = TRUE, ...) {
+  qnt <- quantile(x, probs=c(.25, .75), na.rm = na.rm, ...)
+  H <- 1.5 * IQR(x, na.rm = na.rm)
+  y <- x
+  y[x < (qnt[1] - H)] <- NA
+  y[x > (qnt[2] + H)] <- NA
+  y
+}
+
 ##############HEAT SEEK DATA CLEANING###################
 df_hs <- full_join(df_hs16, df_hs17)
 rm(df_hs16, df_hs17)
@@ -59,8 +68,14 @@ df_hs <- winterize(df_hs, 'created_at')
 df_hs$Year <- as.factor(format(df_hs$created_at,'%Y'))
 df_hs$Month <- as.factor(format(df_hs$created_at,'%m'))
 
-df_hs <- tbl_df(df_hs) %>% arrange(desc(created_at))
+# merging lat/long data into main hs df
+# test <- left_join(df_hs, sensor_mapping, by=c('address'='unique_address'))
+# test[!is.na(test$lat),]
+# 
+# test2 <- merge(df_hs, sensor_mapping, by.x = "clean_address", by.y = "unique_address", all.x = TRUE)
 
+
+# moved this to external CSV for convenience
 # sensor_mapping <- data.frame(unique_address=unique(df_hs$clean_address[!df_hs$clean_address %in% c("")]))
 # sensor_mapping$unique_address <- paste(sensor_mapping$unique_address, ', NY', sep = "")
 # sensor_mapping$unique_address <- as.character(sensor_mapping$unique_address)
@@ -80,7 +95,6 @@ df_311subset <- winterize(df_311subset, 'Created Date')
 df_311subset$Winters <- as.factor(df_311subset$Winters)
 df_311subset$Year <- as.factor(format(df_311subset$`Created Date`,'%Y'))
 df_311subset$Month <- as.factor(format(df_311subset$`Created Date`,'%m'))
-# sapply(df_311subset, drop(is.na(Winters)))
 
 df_311subset <- tbl_df(df_311subset) %>% arrange(`Created Date`)
 
@@ -90,43 +104,28 @@ df_311subset <- tbl_df(df_311subset) %>% arrange(`Created Date`)
 
 ##############GEO DATA CLEANING###################
 #subset of only columns interested in
-sub_cols <- c("Borough","Block","Lot","ZipCode","Address","AssessTot")
-df_geo_MN <- df_geo_MN[,sub_cols]
-df_geo_BK <- df_geo_BK[,sub_cols]
-df_geo_BX <- df_geo_BX[,sub_cols]
-df_geo_SI <- df_geo_SI[,sub_cols]
-df_geo_QN <- df_geo_QN[,sub_cols]
-
-df_geo <- full_join(df_geo_MN, df_geo_BK)
-df_geo <- full_join(df_geo, df_geo_BX)
-df_geo <- full_join(df_geo, df_geo_QN)
-df_geo <- full_join(df_geo, df_geo_SI)
-
-rm(sub_cols, df_geo_MN, df_geo_BK, df_geo_QN, df_geo_SI, df_geo_BX)
-
-df_geo$Borough <- as.factor(df_geo$Borough)
+# sub_cols <- c("Borough","Block","Lot","ZipCode","Address","AssessTot")
+# df_geo_MN <- df_geo_MN[,sub_cols]
+# df_geo_BK <- df_geo_BK[,sub_cols]
+# df_geo_BX <- df_geo_BX[,sub_cols]
+# df_geo_SI <- df_geo_SI[,sub_cols]
+# df_geo_QN <- df_geo_QN[,sub_cols]
+# 
+# df_geo <- full_join(df_geo_MN, df_geo_BK)
+# df_geo <- full_join(df_geo, df_geo_BX)
+# df_geo <- full_join(df_geo, df_geo_QN)
+# df_geo <- full_join(df_geo, df_geo_SI)
+# 
+# rm(sub_cols, df_geo_MN, df_geo_BK, df_geo_QN, df_geo_SI, df_geo_BX)
+# 
+# df_geo$Borough <- as.factor(df_geo$Borough)
 
 
 
 ##############UI SELECTION CRITERIA###################
-cols_311 <- c("Borough" = "Borough",
-              "Year" = "Year", 
-              "Winter" = "Winters")
-cols_hs <- c( "Year" = "Year",
-              "Winter" = "Winters")
-
 hs_addresses <- sensor_mapping[,1]
 
 hs_sensor_ids <- unique(df_hs$sensor_short_code[!df_hs$sensor_short_code %in% c("")])
-
-##############SUMMARIES AND GRAPHS###################
-
-# get_googlemap("156 5TH AVENUE, NY", zoom = 12) %>% ggmap()
-
-# qmplot(lon, lat, data = sensor_mapping, maptype = "toner-lite", color = I("red"))
-# qmplot(lon, lat, data = sensor_mapping, geom = "blank", zoom = 15, maptype = "toner-background", darken = .7, legend = "topleft") +
-#   stat_density_2d(aes(fill = ..level..), geom = "polygon", alpha = .3, color = NA) +
-#   scale_fill_gradient2("Sensor\nLocations", low = "white", mid = "yellow", high = "red", midpoint = median())
 
 
 
