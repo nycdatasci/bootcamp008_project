@@ -68,9 +68,8 @@ fluidPage(
                         start = min(df_hs$created_at)
                       ),
                       plotOutput("line_hs")),
-             tabPanel("Sensor Map", 
-                      # plotOutput("map_hs", width = "100%", height = "100%"))
-                      leafletOutput('map', width = '100%')),
+             tabPanel("Sensor Map",
+                      leafletOutput('map_hs', width = '100%', height=600)),
              tabPanel("Sensor Data",
                       dataTableOutput("data"), width = "100%"),
              tabPanel("Next Steps",

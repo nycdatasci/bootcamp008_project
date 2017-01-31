@@ -90,20 +90,15 @@ function(input,output){
       g
     }
     
-
     })
   
   #sensor map
-  # output$map_hs <- renderPlot({
-  #   qmplot(lon, lat, data = sensor_mapping, maptype = "toner-lite", color = I("red"))
-  # })
   output$map_hs <- renderLeaflet({
     leaflet() %>% 
       addProviderTiles('CartoDB.Positron') %>%
       addMarkers(lng = sensor_mapping$lon, 
-                 lat = sensor_mapping$lat)
-    # ,
-                 # popup = paste('Address:', sensor_mapping$unique_address, '<br>'))
+                 lat = sensor_mapping$lat,
+                 popup = paste('Address:', sensor_mapping$unique_address, '<br>'))
   })
   
   #data
