@@ -1,5 +1,6 @@
 df0 <- read.csv("df0.csv")
-df1 <- read.csv("df1.csv") #reading in data frame of goals
+df1 <- read.csv("df1.csv") 
+Poh <- read.csv("Poh.csv")#reading in data frame of goals
 library(googleVis)
 library(tidyr)
 library(ggplot2)
@@ -58,12 +59,34 @@ shinyServer(function(input, output){
   })
   output$image2 <- renderImage({
       return(list(
-        src = "BoothHope.jpg",
+        src = "www/BoothHope.jpg",
         filetype = "image/jpeg",
         alt = "This is George W. Booth"
       ))
-    
-    
+  }, deleteFile = FALSE)
+  
+  output$imagePOH <- renderImage({
+    return(list(
+      src = "www/PathwayOfHope.jpg",
+      filetype = "image/jpeg",
+      alt = "This is Pathway of Hope"
+    ))
+  }, deleteFile = FALSE)
+  
+  output$imageClient <- renderImage({
+    return(list(
+      src = "www/Capture.jpg",
+      filetype = "image/jpeg",
+      alt = "This is a Pathway of Hope family"
+    ))
+  }, deleteFile = FALSE)
+  
+  output$imagePOHLogo <- renderImage({
+    return(list(
+      src = "www/POHLogo1.jpg",
+      filetype = "image/jpeg",
+      alt = "This is a Pathway of Hope family"
+    ))
   }, deleteFile = FALSE)
   
    output$bar1 <- renderGvis({
