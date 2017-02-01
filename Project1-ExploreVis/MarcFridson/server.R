@@ -23,8 +23,11 @@ library(methods)
 library(utils)
 library(xtable)
 library(DT)
+
+nfl<-readRDS("./data/nfl")
+
 shinyServer(function(input, output) {
-  nfl<-readRDS("data/nfl")
+  # nfl<-readRDS("data/nfl")
   output$team_plot <- renderPlot({
     Tm_rnd_group<-group_by(filter(nfl,Position.Standard %in% input$check_pos, Year %in% min(input$year_slide):max(input$year_slide)),Tm,Rnd)
     Tm_rnd_Outcome_Summary<-summarise(Tm_rnd_group,Drafted_Players=n(),Avg_Years_Played=mean(Years_Played,2),Pro_Bowl_App=sum(PB),Avg_PBs=mean(PB,3),Avg_PBs_PerYear=mean(PB_Per_Year_Played,2))

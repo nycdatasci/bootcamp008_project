@@ -4,8 +4,8 @@ library(shinydashboard)
 library(ggthemes)
 library(openxlsx)
 
-setwd("/Users/ethanweber/Desktop/Shiny_Project/Script")
-raw <- read_rds("/Users/ethanweber/Desktop/Shiny_Project/Script/shinydata")
+# setwd("/Users/ethanweber/Desktop/Shiny_Project/Script")
+raw <- read_rds("./shinydata")
 raw$state <- raw$state %>% tolower
 
 simpleCap <- function(x) {
@@ -66,9 +66,9 @@ prime_age$nonemployed <- lfp_adj(prime_age$nonemployed)
 
 
 #Code from another file
-male <- read_tsv('/Users/ethanweber/Desktop/Shiny_Project/script/genderM.txt')
-fem <- read_tsv('/Users/ethanweber/Desktop/Shiny_Project/script/genderF.txt')
-occu<- read.csv('/Users/ethanweber/Desktop/Shiny_Project/script/occup.csv', header = TRUE)
+male <- read_tsv('./genderM.txt')
+fem <- read_tsv('./genderF.txt')
+occu<- read.csv('./occup.csv', header = TRUE)
 
 male <- mutate(male, 'gender' = 'Male')
 fem <- mutate(fem, 'gender' = 'Female')

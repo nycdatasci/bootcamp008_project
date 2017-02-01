@@ -1,4 +1,5 @@
 # ui.R
+library(dplyr)
 library(leaflet)
 library(shinydashboard)
 

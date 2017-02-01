@@ -2,6 +2,19 @@
 
 shinyServer(function(input, output){
   
+  output$trend <- renderPlot(
+    group_by(filter_(nyc.collisions, input$trendradio), 
+             year)%>%summarise(count = n())%>%
+      ggplot(aes(x=as.integer(as.character(year)), y=count)) + 
+      geom_point(size = 4, color = 'red') + 
+      geom_line(size = 2, color = 'red') + theme_classic() +
+      geom_text(aes(label = count), vjust = 2) +
+    labs(title = 'Motor Vehicle Collisions 2013 - 2016',
+         x = 'Year', y = 'Number of Accidents'),
+    height = 500
+    
+  )
+  
   output$map1 <- renderLeaflet({
     leaflet() %>% 
       addTiles()%>%
@@ -93,11 +106,13 @@ shinyServer(function(input, output){
       fitBounds(min(motorcycles$LONGITUDE), min(motorcycles$LATITUDE), 
                 max(motorcycles$LONGITUDE), max(motorcycles$LATITUDE))
   })
-  observeEvent(input$motorvars, {
+  observeEvent(input$motoradio, {observeEvent(input$motorvars, {
     proxy <- leafletProxy("motoraccidents")%>%clearMarkers()%>%
-      addMarkers(data = filter_(motorcycles,
+      addMarkers(data = filter_(filter_(motorcycles, input$motoradio),
                                 paste0(input$motorvars, collapse = ' | ')), 
-                 ~LONGITUDE, ~LATITUDE)
+                 ~LONGITUDE, ~LATITUDE,
+                 popup = ~as.character(CONTRIBUTING.FACTOR.VEHICLE.1))
+  })
   })
   
 
