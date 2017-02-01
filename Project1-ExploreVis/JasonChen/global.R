@@ -19,7 +19,7 @@ library(DT)
 
 countvehicles <- function(row){return(sum(row != ''))}
 
-nyc.collisions <- fread('NYPD_Motor_Vehicle_Collisions.csv', 
+nyc.collisions <- fread('https://data.cityofnewyork.us/api/views/h9gi-nx95/rows.csv', 
                         stringsAsFactors = F)%>%tbl_df()
 setnames(nyc.collisions, make.names(colnames(nyc.collisions)))
 
