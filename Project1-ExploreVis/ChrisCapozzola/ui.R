@@ -25,6 +25,15 @@ fluidPage(
       uiOutput("Date")
     ),
   mainPanel(
-    plotOutput("plot")
-  )
+    tabsetPanel( type = "tabs",
+                 tabPanel("Map Visualization", plotOutput("plot")),
+                 tabPanel("Infections by Region", plotOutput("freq")),
+                 tabPanel("Infection Time Series", plotOutput("series"))
+      
+      ))
 ))
+
+
+
+
+

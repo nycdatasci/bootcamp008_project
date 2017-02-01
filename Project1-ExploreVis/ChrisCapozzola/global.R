@@ -8,7 +8,7 @@ library(rgdal)
 library(rgeos)
 
 # read in data
-zika_data = read.csv("/Users/arianiherrera/Desktop/NYCDataScience/Data Visualization Project/cdc_zika.csv")
+zika_data = read.csv("data/cdc_zika.csv")
 zika_clean = zika_data
 # reformate date field
 zika_clean$report_date = as.Date(zika_clean$report_date, format = "%Y-%m-%d")
@@ -17,89 +17,89 @@ zika_clean = separate(zika_clean, location, into = c("Country","State","Municipa
 
 # break out data by country
 
-# argentina_data = zika_clean[zika_clean$Country == "Argentina",]
-# brazil_data = zika_clean[zika_clean$Country == "Brazil",]
+argentina_data = zika_clean[zika_clean$Country == "Argentina",]
+brazil_data = zika_clean[zika_clean$Country == "Brazil",]
 colombia_data = zika_clean[zika_clean$Country == "Colombia",]
-# dominican_republic_data = zika_clean[zika_clean$Country == "Dominican_Republic",]
-# ecuador_data = zika_clean[zika_clean$Country == "Ecuador",]
-# el_salvador_data = zika_clean[zika_clean$Country == "El_Salvador",]
-# guatemala_data = zika_clean[zika_clean$Country == "Guatemala",]
-# haiti_data = zika_clean[zika_clean$Country == "Haiti",]
-# mexico_data = zika_clean[zika_clean$Country == "Mexico",]
-# nicaragua_data = zika_clean[zika_clean$Country == "Nicaragua",]
-# panama_data = zika_clean[zika_clean$Country == "Panama",]
-# united_states_data = zika_clean[zika_clean$Country == "United_States",]
+dominican_republic_data = zika_clean[zika_clean$Country == "Dominican_Republic",]
+ecuador_data = zika_clean[zika_clean$Country == "Ecuador",]
+el_salvador_data = zika_clean[zika_clean$Country == "El_Salvador",]
+guatemala_data = zika_clean[zika_clean$Country == "Guatemala",]
+haiti_data = zika_clean[zika_clean$Country == "Haiti",]
+mexico_data = zika_clean[zika_clean$Country == "Mexico",]
+nicaragua_data = zika_clean[zika_clean$Country == "Nicaragua",]
+panama_data = zika_clean[zika_clean$Country == "Panama",]
+united_states_data = zika_clean[zika_clean$Country == "United_States",]
 
 # clean country data and add column to classify confirmed vs. probable cases
 
-# argentina_data = argentina_data %>% mutate_if(is.factor,as.character)
-# argentina_data = argentina_data[grepl("probable|confirmed|study",argentina_data$data_field),]
-# argentina_data = argentina_data %>% mutate(conf_prob = ifelse(grepl("confirmed",argentina_data$data_field),"confirmed","probable"))
-# argentina_data$value = as.numeric(argentina_data$value)
-# 
-# brazil_data = brazil_data %>% mutate_if(is.factor,as.character)
-# brazil_data = brazil_data[grepl("confirmed|zika",brazil_data$data_field),]
-# brazil_data = brazil_data %>% mutate(conf_prob = ifelse(grepl("zika",brazil_data$data_field),"confirmed","probable"))
-# brazil_data$value = as.numeric(brazil_data$value)
-# brazil_data = brazil_data[is.na(brazil_data$value) == FALSE,]
-# brazil_data = brazil_data[is.na(brazil_data$State) == FALSE,]
+argentina_data = argentina_data %>% mutate_if(is.factor,as.character)
+argentina_data = argentina_data[grepl("probable|confirmed|study",argentina_data$data_field),]
+argentina_data = argentina_data %>% mutate(conf_prob = ifelse(grepl("confirmed",argentina_data$data_field),"confirmed","probable"))
+argentina_data$value = as.numeric(argentina_data$value)
+
+brazil_data = brazil_data %>% mutate_if(is.factor,as.character)
+brazil_data = brazil_data[grepl("confirmed|zika",brazil_data$data_field),]
+brazil_data = brazil_data %>% mutate(conf_prob = ifelse(grepl("zika",brazil_data$data_field),"confirmed","probable"))
+brazil_data$value = as.numeric(brazil_data$value)
+brazil_data = brazil_data[is.na(brazil_data$value) == FALSE,]
+brazil_data = brazil_data[is.na(brazil_data$State) == FALSE,]
 
 colombia_data = colombia_data %>% mutate_if(is.factor,as.character)
 colombia_data = colombia_data %>% mutate(conf_prob = ifelse(grepl("confirmed",colombia_data$data_field),"confirmed","probable"))
 colombia_data$value = as.numeric(colombia_data$value)
 
-# dominican_republic_data = dominican_republic_data %>% mutate_if(is.factor,as.character)
-# dominican_republic_data$value = as.numeric(dominican_republic_data$value)
-# dominican_republic_data = dominican_republic_data[dominican_republic_data$value>0,]
-# dominican_republic_data = dominican_republic_data[!grepl("gbs|efe|weeks", dominican_republic_data$data_field),]
-# dominican_republic_data = dominican_republic_data[dominican_republic_data$location_type != "country",]
-# dominican_republic_data = dominican_republic_data[grepl("cumulative",dominican_republic_data$data_field),]
-# dominican_republic_data = dominican_republic_data %>% mutate(conf_prob = ifelse(grepl("confirmed",dominican_republic_data$data_field),"confirmed","probable"))
-# 
-# ecuador_data = ecuador_data %>% mutate_if(is.factor,as.character)
-# ecuador_data$value = as.numeric(ecuador_data$value)
-# ecuador_data = ecuador_data[!grepl("ages|Not",ecuador_data$data_field),]
-# ecuador_data = ecuador_data %>% mutate(conf_prob = ifelse(grepl("confirmed",ecuador_data$data_field),"confirmed","probable"))
-# 
-# el_salvador_data = el_salvador_data %>% mutate_if(is.factor,as.character)
-# el_salvador_data$value = as.numeric(el_salvador_data$value)
-# el_salvador_data = el_salvador_data[!grepl("weekly|age|pregnant",el_salvador_data$data_field),]
-# el_salvador_data = el_salvador_data[el_salvador_data$location_type != "country",]
-# el_salvador_data = el_salvador_data %>% mutate(conf_prob = ifelse(grepl("suspected",el_salvador_data$data_field),"probable","confirmed"))
-# 
-# guatemala_data = guatemala_data %>% mutate_if(is.factor,as.character)
-# guatemala_data$value = as.numeric(guatemala_data$value)
-# guatemala_data = guatemala_data[guatemala_data$location_type != "country",]
-# guatemala_data = guatemala_data %>% mutate(conf_prob = ifelse(grepl("confirmed", guatemala_data$data_field),"confirmed","probable"))
-# 
-# haiti_data = haiti_data %>% mutate_if(is.factor,as.character)
-# haiti_data$value = as.numeric(haiti_data$value)
-# haiti_data = haiti_data %>% mutate(conf_prob = ifelse(grepl("suspected", haiti_data$value), "probable","confirmed"))
-# 
-# mexico_data = mexico_data %>% mutate_if(is.factor,as.character)
-# mexico_data$value = as.numeric(mexico_data$value)
-# mexico_data = mexico_data[!grepl("yearly",mexico_data$data_field),]
-# mexico_data = mexico_data %>% mutate(conf_prob = ifelse(grepl("confirmed",mexico_data$data_field),"confirmed","probable"))
-# 
-# nicaragua_data = nicaragua_data %>% mutate_if(is.factor,as.character)
-# nicaragua_data$value = as.numeric(nicaragua_data$value)
-# nicaragua_data = nicaragua_data[!grepl("normal",nicaragua_data$data_field),]
-# nicaragua_data = nicaragua_data %>% mutate(conf_prob = ifelse(grepl("confirmed",nicaragua_data$data_field),"confirmed","probable"))
-# 
-# panama_data = panama_data %>% mutate_if(is.factor,as.character)
-# panama_data$value = as.numeric(panama_data$value)
-# panama_data = panama_data[!grepl("negative|age|weekly", panama_data$data_field),]
-# panama_data = panama_data[panama_data$location_type != "country",]
-# panama_data = panama_data %>% mutate(conf_prob = ifelse(grepl("Zika",panama_data$data_field),"confirmed","probable"))
-# 
-# united_states_data = united_states_data %>% mutate_if(is.factor,as.character)
-# united_states_data$value = as.numeric(united_states_data$value)
-# united_states_data = united_states_data[!grepl("yearly",united_states_data$data_field),]
-# united_states_data = united_states_data %>% mutate(conf_prob = ifelse(grepl("reported",united_states_data$data_field),"confirmed","probable"))
+dominican_republic_data = dominican_republic_data %>% mutate_if(is.factor,as.character)
+dominican_republic_data$value = as.numeric(dominican_republic_data$value)
+dominican_republic_data = dominican_republic_data[dominican_republic_data$value>0,]
+dominican_republic_data = dominican_republic_data[!grepl("gbs|efe|weeks", dominican_republic_data$data_field),]
+dominican_republic_data = dominican_republic_data[dominican_republic_data$location_type != "country",]
+dominican_republic_data = dominican_republic_data[grepl("cumulative",dominican_republic_data$data_field),]
+dominican_republic_data = dominican_republic_data %>% mutate(conf_prob = ifelse(grepl("confirmed",dominican_republic_data$data_field),"confirmed","probable"))
+
+ecuador_data = ecuador_data %>% mutate_if(is.factor,as.character)
+ecuador_data$value = as.numeric(ecuador_data$value)
+ecuador_data = ecuador_data[!grepl("ages|Not",ecuador_data$data_field),]
+ecuador_data = ecuador_data %>% mutate(conf_prob = ifelse(grepl("confirmed",ecuador_data$data_field),"confirmed","probable"))
+
+el_salvador_data = el_salvador_data %>% mutate_if(is.factor,as.character)
+el_salvador_data$value = as.numeric(el_salvador_data$value)
+el_salvador_data = el_salvador_data[!grepl("weekly|age|pregnant",el_salvador_data$data_field),]
+el_salvador_data = el_salvador_data[el_salvador_data$location_type != "country",]
+el_salvador_data = el_salvador_data %>% mutate(conf_prob = ifelse(grepl("suspected",el_salvador_data$data_field),"probable","confirmed"))
+
+guatemala_data = guatemala_data %>% mutate_if(is.factor,as.character)
+guatemala_data$value = as.numeric(guatemala_data$value)
+guatemala_data = guatemala_data[guatemala_data$location_type != "country",]
+guatemala_data = guatemala_data %>% mutate(conf_prob = ifelse(grepl("confirmed", guatemala_data$data_field),"confirmed","probable"))
+
+haiti_data = haiti_data %>% mutate_if(is.factor,as.character)
+haiti_data$value = as.numeric(haiti_data$value)
+haiti_data = haiti_data %>% mutate(conf_prob = ifelse(grepl("suspected", haiti_data$value), "probable","confirmed"))
+
+mexico_data = mexico_data %>% mutate_if(is.factor,as.character)
+mexico_data$value = as.numeric(mexico_data$value)
+mexico_data = mexico_data[!grepl("yearly",mexico_data$data_field),]
+mexico_data = mexico_data %>% mutate(conf_prob = ifelse(grepl("confirmed",mexico_data$data_field),"confirmed","probable"))
+
+nicaragua_data = nicaragua_data %>% mutate_if(is.factor,as.character)
+nicaragua_data$value = as.numeric(nicaragua_data$value)
+nicaragua_data = nicaragua_data[!grepl("normal",nicaragua_data$data_field),]
+nicaragua_data = nicaragua_data %>% mutate(conf_prob = ifelse(grepl("confirmed",nicaragua_data$data_field),"confirmed","probable"))
+
+panama_data = panama_data %>% mutate_if(is.factor,as.character)
+panama_data$value = as.numeric(panama_data$value)
+panama_data = panama_data[!grepl("negative|age|weekly", panama_data$data_field),]
+panama_data = panama_data[panama_data$location_type != "country",]
+panama_data = panama_data %>% mutate(conf_prob = ifelse(grepl("Zika",panama_data$data_field),"confirmed","probable"))
+
+united_states_data = united_states_data %>% mutate_if(is.factor,as.character)
+united_states_data$value = as.numeric(united_states_data$value)
+united_states_data = united_states_data[!grepl("yearly",united_states_data$data_field),]
+united_states_data = united_states_data %>% mutate(conf_prob = ifelse(grepl("reported",united_states_data$data_field),"confirmed","probable"))
 
  
 # load all shape files to build maps and convert into dataframes
-colombia_adm <- readRDS("/Users/arianiherrera/Desktop/NYCDataScience/Data Visualization Project/COL_adm2.rds")
+colombia_adm <- readRDS("data/COL_adm2.rds")
 colombia_adm.df = fortify(colombia_adm, region = "NAME_1")
 
 # argentina_adm <- readRDS("../ARG_adm2.rds")
@@ -165,8 +165,24 @@ cleanMapPlot <- function(country_data, country_adm.df, date_input,c_f){
   return(g)
 }
 
+cleanBarPlot <- function(country_data, date_input, c_f){
+  country_filt = country_data[,c("report_date","State","conf_prob","value")]
+  country_filt = country_filt[country_filt$report_date == date_input,]
+  country_filt = country_filt %>% group_by(State,conf_prob) %>% summarise(infected = sum(value))
+  country_filt = country_filt[country_filt$conf_prob == c_f,]
+  
+  b <- ggplot(data = country_filt, aes(x = State, y = infected)) + geom_bar(stat = "identity", fill= "blue", alpha = .75) + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+  return(b)
+}
 
-
+cleanTrendPlot <- function(country_data, c_f){
+  country_filt = country_data[,c("report_date","conf_prob","value")]
+  country_filt = country_filt %>% group_by(report_date,conf_prob) %>% summarise(infected = sum(value))
+  country_filt = country_filt[country_filt$conf_prob == c_f,]
+  
+  t <- ggplot(data = country_filt, aes(report_date,infected)) + geom_line() + ylab("Infected")
+  return(t)
+}
 
 
 
