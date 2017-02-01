@@ -1,6 +1,6 @@
-df0 <- read.csv("df0.csv")
-df1 <- read.csv("df1.csv") 
-Poh <- read.csv("Poh.csv")
+# df0 <- read.csv("df0.csv")
+# df1 <- read.csv("df1.csv") 
+# Poh <- read.csv("Poh.csv")
 mf0 <- read.csv("mf0.csv")
 #reading in data frame of goals
 library(googleVis)
@@ -11,14 +11,7 @@ library(wordcloud)
 library(tm)
 library(ggthemes)
 shinyServer(function(input, output){
-  
-  # plot_df <- reactive({
-  #   print (input$selected)
-  #   result = df0 %>% group_by_(input$selected) %>% summarise(count=n()) 
-  #   return (result)
-  #   
-  # })
-  
+
 
   mdata <- reactive({
     
@@ -31,18 +24,15 @@ shinyServer(function(input, output){
   
   # show histogram using googleVis
   output$hist <- renderGvis({
-    
-    #mydata <- plot_df()
     histdata <- mf0 %>% group_by_(input$selected) %>% summarise(count=n()) %>% arrange(desc(count))
-    #bardata <- df0 %>% group_by_(c(input$selected, input$selected2)) %>% summarise(Count = n())
     gvisColumnChart(histdata, xvar=input$selected, yvar="count", 
                     options=list(title = paste("Number of Goals grouped by: ", input$selected),
                                                legend='none', 
                                               width = "210%", height = "500px",
                                               hAxis = "{title:'Groupings'}",
                                               yAxis = "{title:'Count}'",
-                                              colors="['red']"
-                                 ))
+                                              colors="['red']")
+                    )#columnchart
   })
   
   graph2 <- reactive({
@@ -59,10 +49,6 @@ shinyServer(function(input, output){
                                    hAxis = "{title:'Groupings'}",
                                    yAxis = "{title:'Count'}",
                                    colors="['red']"))
-    # mydata <- graph2()
-    # m <- ggplot(data = mydata, aes(x = count))
-    # m <- m + geom_bar() + coord_polar()
-    # print(m)
     
   })
   
@@ -82,15 +68,7 @@ shinyServer(function(input, output){
             panel.grid.minor.x = element_blank() ) + ggtitle("Comparison of Goal Classification")  
     return(g)
 })
-  # output$topGoal <- renderPlot(function() {
-  #   goaldata <- mf0 %>% group_by(EE.Provider, Goal.Classification) %>% summarize(n=n()) %>% top_n(n=5, n) 
-  #   
-  #   p <- ggplot(mpgData, aes(var, mpg)) + 
-  #     geom_boxplot(outlier.size = ifelse(input$outliers, 2, NA)) + 
-  #     xlab(input$variable)
-  #   print(p)
-  # })
-  # 
+
   output$image2 <- renderImage({
       return(list(
         src = "www/BoothHope.jpg",
@@ -123,13 +101,12 @@ shinyServer(function(input, output){
     ))
   }, deleteFile = FALSE)
   
-   output$bar1 <- renderGvis({
-     mydata <- mf0 %>% group_by_(input$selected, input$selected2) %>% summarise(count = n())
-     bard <- spread(mydata, input$selected2, count)
-     #print(bard)
-     gvisColumnChart(bard)#, xvar= yvar = count, options=list(legend ='none', width = 'automatic', height = '500px'))
-    # gvisColumnChart( spread(input$selected2, count), col = count)
-     #gvisColumnChart(mydata, xvar = input$selected2, yvar="count", options = list(legent='none', width = "automatic", height = "600px")
-   })
+   
+   output$table <- DT::renderDataTable({
+     datatable(mf0, rownames=FALSE) %>% 
+       formatStyle(input$selected,  
+                   background="skyblue", fontWeight='bold')
+     # Highlight selected column using formatStyle
+   })   
   
 })

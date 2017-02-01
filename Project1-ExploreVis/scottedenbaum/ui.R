@@ -28,13 +28,17 @@ shinyUI(dashboardPage(skin="red",
         menuItem("About POH", tabName = "POH", icon = icon("road")),        
         menuSubItem("View Goal Analysis", tabName = "Goal-Geog", icon=icon("bar-chart")),
         menuSubItem("View Goal Classification Analysis", tabName = "Goal-Cat", icon=icon("gear")),
+        menuSubItem("Data", tabName = "data", icon = icon("database")),
         tags$img(src = "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCdSDxxGEbkNQyzKbrOyKtIMJdPUx90lSvaXqAgaQP3NgOVfl5", width = 300)
         
         )#sidebarmenu 
   ),
   dashboardBody(
         tabItems(
-          
+          tabItem(tabName = "data",
+                  # datatable
+                  fluidRow(box(DT::dataTableOutput("table", width = "1500px")))
+                  ),          
           tabItem(tabName = "Goal-Cat",
                   fluidRow(column(width = 6, plotOutput("rose", width = '220%', height = '850px')))
                   ),
