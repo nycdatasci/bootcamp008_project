@@ -32,7 +32,7 @@ shinyServer(function(input, output){
       #addTiles() %>% 
       addProviderTiles('CartoDB.Positron') %>%
       addMarkers(popup = paste(
-        paste0("<img src = ./", combined_movies$Poster_new), '<br>','<br>', '<br>',
+        paste0("<img src = ./", combined_movies$Poster_new, " width='200' height = '300'"), '<br>','<br>', '<br>',
         combined_movies$Film, ",", 
         combined_movies$Year, "<br>", 
         'Location:', combined_movies$Location.Display.Text, '<br>', 
@@ -49,7 +49,7 @@ observe( {
     proxy = leafletProxy('map', data = updated)
     proxy %>% clearMarkers() %>%
     addMarkers(popup = paste(
-              paste0("<img src = ./", updated$Poster_new), '<br>', '<br>', '<br>',
+              paste0("<img src = ./", updated$Poster_new, " width='200' height = '300'"), '<br>', '<br>', '<br>',
               updated$Film, ",", 
               updated$Year, "<br>", 
               'Location:', updated$Location.Display.Text, '<br>', 
