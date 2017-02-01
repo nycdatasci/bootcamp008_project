@@ -3,17 +3,8 @@ library(dplyr)
 library(data.table)
 library(tidyr)
 library(ggplot2)
-library(ggmap)
-library(mapproj)
 library(devtools)
 library(tidyverse)
-
-# devtools::install_github('dkahle/ggmap')
-# devtools::install_github('hadley/ggplot2')
-# install.packages("ggthemes", type = "source")
-# install.packages("leaflet")
-# install_version("ggplot2", version = "2.1.0", repos = "http://cran.us.r-project.org")
-
 
 setwd('~/Dropbox/learning/NYCDSA/projects/NYCDSA_project_1/')
 options(digits.secs = 6) #to include fractions of a second for timestamps
@@ -23,13 +14,6 @@ df_hs16 <- fread('Heat Seek NYC data 6-15 to 6-16.csv', stringsAsFactors = TRUE,
 df_hs17 <- fread('Heat Seek NYC data 6-16 to 6-17.csv', stringsAsFactors = TRUE, data.table = FALSE)
 sensor_mapping <- fread('sensor_mapping.csv', stringsAsFactors=FALSE, data.table = FALSE)
 df_311data <- fread('311_Service_Requests_from_2010_to_Present.csv', stringsAsFactors = TRUE, data.table = FALSE) 
-
-# setwd(paste(getwd(),'/BORO_zip_files_csv/', sep=""))
-# df_geo_MN <- fread('MN.csv', data.table = FALSE)
-# df_geo_BK <- fread('BK.csv', data.table = FALSE)
-# df_geo_BX <- fread('BX.csv', data.table = FALSE)
-# df_geo_SI <- fread('SI.csv', data.table = FALSE)
-# df_geo_QN <- fread('QN.csv', data.table = FALSE)
 
 ##############HELPER CODE###################
 winterize <- function(df, col_name) {
@@ -67,17 +51,13 @@ df_hs$clean_address <- sapply(df_hs$address, toupper)
 df_hs <- winterize(df_hs, 'created_at')
 df_hs$Year <- as.factor(format(df_hs$created_at,'%Y'))
 df_hs$Month <- as.factor(format(df_hs$created_at,'%m'))
+df_hs$full_address <- paste0(df_hs$clean_address, ', NY ', df_hs$zip_code)
 
 # merging lat/long data into main hs df
-# test <- left_join(df_hs, sensor_mapping, by=c('address'='unique_address'))
-# test[!is.na(test$lat),]
-# 
-# test2 <- merge(df_hs, sensor_mapping, by.x = "clean_address", by.y = "unique_address", all.x = TRUE)
-
+df_hs <- left_join(df_hs, sensor_mapping, by=c('full_address'='unique_address'))
 
 # moved this to external CSV for convenience
-# sensor_mapping <- data.frame(unique_address=unique(df_hs$clean_address[!df_hs$clean_address %in% c("")]))
-# sensor_mapping$unique_address <- paste(sensor_mapping$unique_address, ', NY', sep = "")
+# sensor_mapping <- data.frame(unique_address=unique(df_hs$full_address[!df_hs$full_address %in% c(", NY NA")]))
 # sensor_mapping$unique_address <- as.character(sensor_mapping$unique_address)
 # sensor_mapping <- sensor_mapping %>% mutate_geocode(., unique_address)
 # write_csv(sensor_mapping, path = '~/Dropbox/learning/NYCDSA/projects/NYCDSA_project_1/sensor_mapping.csv')
@@ -97,35 +77,4 @@ df_311subset$Year <- as.factor(format(df_311subset$`Created Date`,'%Y'))
 df_311subset$Month <- as.factor(format(df_311subset$`Created Date`,'%m'))
 
 df_311subset <- tbl_df(df_311subset) %>% arrange(`Created Date`)
-
-# zipcode_mapping <- data.frame(unq_zip=unique(df_311subset$`Incident Zip`))
-# zipcode_mapping$unq_zip <- as.character(zipcode_mapping$unq_zip)
-# zipcode_mapping <- zipcode_mapping %>% mutate_geocode(., unq_zip)
-
-##############GEO DATA CLEANING###################
-#subset of only columns interested in
-# sub_cols <- c("Borough","Block","Lot","ZipCode","Address","AssessTot")
-# df_geo_MN <- df_geo_MN[,sub_cols]
-# df_geo_BK <- df_geo_BK[,sub_cols]
-# df_geo_BX <- df_geo_BX[,sub_cols]
-# df_geo_SI <- df_geo_SI[,sub_cols]
-# df_geo_QN <- df_geo_QN[,sub_cols]
-# 
-# df_geo <- full_join(df_geo_MN, df_geo_BK)
-# df_geo <- full_join(df_geo, df_geo_BX)
-# df_geo <- full_join(df_geo, df_geo_QN)
-# df_geo <- full_join(df_geo, df_geo_SI)
-# 
-# rm(sub_cols, df_geo_MN, df_geo_BK, df_geo_QN, df_geo_SI, df_geo_BX)
-# 
-# df_geo$Borough <- as.factor(df_geo$Borough)
-
-
-
-##############UI SELECTION CRITERIA###################
-hs_addresses <- sensor_mapping[,1]
-
-hs_sensor_ids <- unique(df_hs$sensor_short_code[!df_hs$sensor_short_code %in% c("")])
-
-
 
