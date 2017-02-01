@@ -1,4 +1,5 @@
 library(shinydashboard)
+library(googleVis)
 
 ui <- dashboardPage(
   dashboardHeader(title = "GDP Dashboard"),

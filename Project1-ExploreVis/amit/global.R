@@ -33,7 +33,6 @@ empl <- empl %>%
 empl <- empl[c(-3,-4)]
 empl <- empl[complete.cases(empl),]
 
-
 ####JOIN THE TABLES TO CREATE ONE TABLE
 
 empl <- join(empl,gdp,by=c('Country Name','Country Code','year'))
@@ -51,7 +50,6 @@ empl <- join(empl,country_region, by='country')
 empl$year<- as.numeric(empl$year)
 empl <- empl[complete.cases(empl[,"region"]),]
 
-
 ### Load temperature data from Keggle
 
 temp_raw<- fread('data/GlobalLandTemperaturesByCountry.csv')
@@ -61,17 +59,14 @@ names(temp_raw)[names(temp_raw) == 'Country'] <- 'country'
 temp_raw$year <- factor(temp_raw$year)
 temp_raw$country <- factor(temp_raw$country)
 temp_agg <- temp_raw %>%
-  group_by(country,year)%>%
-  summarise(avg_temp=mean(AverageTemperature))
+  dplyr::group_by(country,year)%>%
+  dplyr::summarise(avg_temp=mean(AverageTemperature))
 temp_agg$country = as.character(temp_agg$country)
 temp_agg$year = as.numeric(as.character(temp_agg$year))
 empl<-left_join(empl, temp_agg, by=c('country','year'))
 
-
 ###Load CO2 emissions data 
 
-
-?fread
 co2 <- fread('data/co2_emissions.csv',header= TRUE,check.names = F, stringsAsFactors = F, na.string=c("","NA"))
 colnames(co2)[1] <- "country"
 colnames(co2)[2] <- "code"
