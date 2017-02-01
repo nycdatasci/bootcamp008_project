@@ -1,19 +1,28 @@
 ##############LIBRARIES & SETTINGS###################
 library(dplyr)
 library(data.table)
-library(tidyr)
 library(ggplot2)
 library(devtools)
 library(tidyverse)
 
-setwd('~/Dropbox/learning/NYCDSA/projects/NYCDSA_project_1/')
+
 options(digits.secs = 6) #to include fractions of a second for timestamps
 options(max.print = 100)
 
-df_hs16 <- fread('Heat Seek NYC data 6-15 to 6-16.csv', stringsAsFactors = TRUE, data.table = FALSE)
-df_hs17 <- fread('Heat Seek NYC data 6-16 to 6-17.csv', stringsAsFactors = TRUE, data.table = FALSE)
-sensor_mapping <- fread('sensor_mapping.csv', stringsAsFactors=FALSE, data.table = FALSE)
-df_311data <- fread('311_Service_Requests_from_2010_to_Present.csv', stringsAsFactors = TRUE, data.table = FALSE) 
+
+#REMOTE FILES -- WARNING: Files are large (df_311data > 1gb), may take a while to download depending on connection 
+url_stub <- 'https://dl.dropboxusercontent.com'
+df_hs16 <- fread(paste0(url_stub, '/s/ksxhrdn1hgj0btl/Heat%20Seek%20NYC%20data%206-15%20to%206-16.csv?dl=0'), stringsAsFactors = TRUE, data.table = FALSE)
+df_hs17 <- fread(paste0(url_stub, '/s/q03pq9qw0oi152b/Heat%20Seek%20NYC%20data%206-16%20to%206-17.csv?dl=0'), stringsAsFactors = TRUE, data.table = FALSE)
+sensor_mapping <- fread(paste0(url_stub, '/s/doy90pumwhgygdl/sensor_mapping.csv?dl=0'), stringsAsFactors = FALSE, data.table = FALSE)
+df_311data <- fread(paste0(url_stub, '/s/qwrc8shn8dtvy2a/311_Service_Requests_from_2010_to_Present.csv?dl=0'), stringsAsFactors = TRUE, data.table = FALSE)
+
+#LOCAL STORAGE
+# setwd('~/Dropbox/learning/NYCDSA/projects/NYCDSA_project_1/')
+# df_hs16 <- fread('data/Heat Seek NYC data 6-15 to 6-16.csv', stringsAsFactors = TRUE, data.table = FALSE)
+# df_hs17 <- fread('data/Heat Seek NYC data 6-16 to 6-17.csv', stringsAsFactors = TRUE, data.table = FALSE)
+# sensor_mapping <- fread('data/sensor_mapping.csv', stringsAsFactors=FALSE, data.table = FALSE)
+# df_311data <- fread('data/311_Service_Requests_from_2010_to_Present.csv', stringsAsFactors = TRUE, data.table = FALSE) 
 
 ##############HELPER CODE###################
 winterize <- function(df, col_name) {

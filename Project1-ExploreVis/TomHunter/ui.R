@@ -1,5 +1,6 @@
 library(shiny)
 library(leaflet)
+library(plotly)
 require(global.R)
 options(shiny.error = browser)
 
@@ -60,7 +61,7 @@ fluidPage(
                       HTML('<br>')),
              tabPanel("Sensor Map",
                       checkboxInput("remove_outliers", "Remove Outliers", TRUE),
-                      checkboxInput("violations_only", "Show Violations Only", TRUE),
+                      checkboxInput("violations_only", "Show Violations Only", FALSE),
                       leafletOutput('map_hs', width = '100%', height=600)),
              tabPanel("Next Steps",
                       HTML(
