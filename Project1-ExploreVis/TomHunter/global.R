@@ -5,11 +5,7 @@ library(ggplot2)
 library(devtools)
 library(tidyverse)
 
-<<<<<<< HEAD
 
-=======
-# setwd('~/Dropbox/learning/NYCDSA/projects/NYCDSA_project_1/')
->>>>>>> a20c39d271323a07d1aadb5ae34f15c3c524c318
 options(digits.secs = 6) #to include fractions of a second for timestamps
 options(max.print = 100)
 
