@@ -3,7 +3,7 @@ library(shiny)
 library(shinydashboard)
 library(ggthemes)
 library(openxlsx)
-setwd("/Users/ethanweber/Desktop/Shiny_Project/Script")
+# setwd("/Users/ethanweber/Desktop/Shiny_Project/Script")
 #df <- read_rds("/Users/ethanweber/Desktop/Shiny_Project/shinydata")
 
 ages <- list("15_16-24", "25-34",    "35-44",    "45-54",    "55-64",   "65+", "TotalPop")

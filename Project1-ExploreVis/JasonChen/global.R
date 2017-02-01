@@ -19,7 +19,7 @@ library(DT)
 
 countvehicles <- function(row){return(sum(row != ''))}
 
-nyc.collisions <- fread('NYPD_Motor_Vehicle_Collisions.csv', 
+nyc.collisions <- fread('https://data.cityofnewyork.us/api/views/h9gi-nx95/rows.csv', 
                         stringsAsFactors = F)%>%tbl_df()
 setnames(nyc.collisions, make.names(colnames(nyc.collisions)))
 
@@ -60,7 +60,7 @@ inj.ratio <- group_by(nyc.collisions, VEHICLE.TYPE.CODE.1)%>%
 
 
 
-  motorcycles <- filter(nyc.collisions, VEHICLE.TYPE.CODE.1 == 'MOTORCYCLE')
+motorcycles <- filter(nyc.collisions, VEHICLE.TYPE.CODE.1 == 'MOTORCYCLE')
 motorcycle.cause <- group_by(motorcycles, CONTRIBUTING.FACTOR.VEHICLE.1)%>%
   summarise(total.deaths = sum(NUMBER.OF.PERSONS.KILLED),
             total.injuries = sum(NUMBER.OF.PERSONS.INJURED),
@@ -70,7 +70,7 @@ motorcycle.cause <- group_by(motorcycles, CONTRIBUTING.FACTOR.VEHICLE.1)%>%
   filter(CONTRIBUTING.FACTOR.VEHICLE.1 != '', CONTRIBUTING.FACTOR.VEHICLE.1 != 'Unspecified')
 
 summary(motorcycle.cause)
-  
+
 collisions.hurt <- nyc.collisions%>%
   filter(NUMBER.OF.PERSONS.KILLED != 0 | NUMBER.OF.PERSONS.INJURED !=0)
 collisions.safe <- nyc.collisions%>%
@@ -100,5 +100,4 @@ grouped1 <- group_by(collisions.hurt,year,BOROUGH)%>%
     count = n()
   )
 
-grouped2 <- group_by(collisions.safe, year, BOROUGH)%>%
-  summarise(count = n())
+#####################################TEST######################################

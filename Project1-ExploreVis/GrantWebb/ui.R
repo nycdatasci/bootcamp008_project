@@ -1,4 +1,3 @@
-library(shinydashboard)
 imgURL <- "http://www.healthworks.my/wp-content/uploads/2014/10/drinking-man.jpg"
 
 

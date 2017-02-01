@@ -1,5 +1,6 @@
 library(shiny)
 library(leaflet)
+library(plotly)
 require(global.R)
 options(shiny.error = browser)
 
@@ -48,12 +49,6 @@ fluidPage(
                       plotOutput("bar_311_by_winter")),
              tabPanel("Sensor Time Series",
                       HTML("<br>"),
-                      # selectizeInput(
-                      #   inputId = 'hs_sensor_select',
-                      #   label = "Select Individual Sensor",
-                      #   choices = unique(df_hs$sensor_short_code),
-                      #   selected = unique(df_hs$sensor_short_code)[1]
-                      # ),
                       selectizeInput(
                         inputId = 'hs_address_select',
                         label = "Select Specific Address",
@@ -61,17 +56,13 @@ fluidPage(
                         selected = c('196 ROCKAWAY PARKWAY')
                       ),
                       checkboxInput("group_by_violations", "Highlight Violations", TRUE),
-                      checkboxInput("remove_outliers", "Remove Outliers", FALSE),
-                      dateRangeInput(
-                        inputId = 'hs_date_inp',
-                        label = "Select Range for Sensor Data",
-                        start = min(df_hs$created_at)
-                      ),
-                      plotOutput("line_hs")),
+                      checkboxInput("remove_outliers", "Remove Outliers", TRUE),
+                      plotlyOutput("line_hs"),
+                      HTML('<br>')),
              tabPanel("Sensor Map",
+                      checkboxInput("remove_outliers", "Remove Outliers", TRUE),
+                      checkboxInput("violations_only", "Show Violations Only", FALSE),
                       leafletOutput('map_hs', width = '100%', height=600)),
-             tabPanel("Sensor Data",
-                      dataTableOutput("data"), width = "100%"),
              tabPanel("Next Steps",
                       HTML(
                         "<h4>Next Steps for Heat Seek</h4>",

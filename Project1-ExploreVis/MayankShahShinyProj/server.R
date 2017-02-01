@@ -17,7 +17,7 @@ library(readxl)
 library(shiny)
 
 
-MyShape <- readOGR(dsn = ".", layer = "geo_export_64e1323f-442d-4e29-9483-f2a66ac6c867")
+MyShape <- readOGR(dsn = "./data", layer = "geo_export_64e1323f-442d-4e29-9483-f2a66ac6c867")
 MyShapeMapData <- map_data(MyShape)
 MajorKey <- read_excel("MajorKey.xlsx")
 MyShapeMapData <- merge(MyShapeMapData, MajorKey, by.x= 'region', by.y = 'Region', all = TRUE)

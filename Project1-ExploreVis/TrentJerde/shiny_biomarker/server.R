@@ -5,7 +5,8 @@ library(ggplot2)
 # library(readr)
 library(feather)
 data.file <- file.path(
-  "/Users/trentonjerde/ds_stuff/projects/biomarker/shiny_biomarker/data",
+  "./data",
+  # "/Users/trentonjerde/ds_stuff/projects/biomarker/shiny_biomarker/data",
   "data.shiny.feather"
 )
 data.shiny <- read_feather(data.file)

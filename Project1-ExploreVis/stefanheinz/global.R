@@ -34,7 +34,7 @@ stations = filter(stations, station_id > 0)
 #
 # sum(is.na(trips))
 # colnames(trips)
-trips = rename(
+trips = dplyr::rename(
   trips,
   Bike.No = Bike..,
   Start.Date.src = Start.Date,
@@ -46,7 +46,7 @@ trips = rename(
 # colnames(weather[, colSums(is.na(weather)) > 0])
 
 # There are some missing temperature values that need to be taken care of
-weatherZoo = zoo(select(weather, ZIP, Date, Mean.TemperatureF, Mean.TemperatureC, CloudCover))
+weatherZoo = zoo(dplyr::select(weather, ZIP, Date, Mean.TemperatureF, Mean.TemperatureC, CloudCover))
 # sum(is.na(weatherZoo))
 weatherZoo=na.locf(weatherZoo)
 # sum(is.na(weatherZoo))
@@ -63,7 +63,7 @@ weatherZoo =
 
 weatherZoo = left_join(
   weatherZoo,
-  select(
+  dplyr::select(
     weather,
     ZIP,
     Date,
@@ -118,7 +118,7 @@ trips = trips %>%
 
     End.Date.Hour = hour(End.Date)
   )
-trips = select(trips, -Start.Date.src, -End.Date.src)
+trips = dplyr::select(trips, -Start.Date.src, -End.Date.src)
 
 
 ## TRIPS
@@ -145,7 +145,7 @@ routesABne = trips %>%
 routesABne = routesABne %>%
   left_join(stations, by=c('Start.Terminal' = 'station_id')) %>%
   left_join(stations, by=c('End.Terminal' = 'station_id'), suffix=c('start','end')) %>%
-  select(
+  dplyr::select(
     route,
     Start.Terminal,
     End.Terminal,
@@ -194,7 +194,7 @@ for (i in 1:nrow(routesABe)) {
 routesABe = routesABe %>%
   left_join(stations, by=c('Start.Terminal' = 'station_id')) %>%
   left_join(stations, by=c('End.Terminal' = 'station_id'), suffix=c('start','end')) %>%
-  select(
+  dplyr::select(
     normRoute,
     Start.Terminal,
     End.Terminal,
@@ -295,7 +295,7 @@ staStartByDate = trips %>%
 # Add ZIP to trips
 tripsZIP = trips %>%
   left_join(stations, by=c('Start.Terminal' = 'station_id'))  %>%
-  select(
+  dplyr::select(
     -name,
     -lat,
     -long,

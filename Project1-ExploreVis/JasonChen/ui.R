@@ -6,6 +6,7 @@ shinyUI(dashboardPage(skin = 'purple',
     sidebarMenu(id = 'sideBarMenu',
       
       menuItem("Accidents", tabName = "plot", icon = icon("bar-chart-o"),
+      menuSubItem("2013 - 2016 Trend", tabName = "trend",icon = icon("line-chart")),
       menuSubItem("By Year and Borough", tabName = "plot",icon = icon("bar-chart-o")),
       menuSubItem("By Weekdays", tabName = "plot2",icon = icon("bar-chart-o"))),
       
@@ -17,8 +18,8 @@ shinyUI(dashboardPage(skin = 'purple',
       
       menuItem("Highest Injury Ratio?", tabName = "injratio", icon = icon("bar-chart-o"),
       menuSubItem("Injury/Death to Accidents", tabName = "injratio",icon = icon("bar-chart-o")),
-      menuSubItem("A Deeper Look into Motorcycles", tabName = "motorcycles",icon = icon("play")),
-      menuSubItem("Top 3 Motorcycle Accidents", tabName = "motoraccidents",icon = icon("play"))
+      menuSubItem("A Deeper Look into Motorcycles", tabName = "motorcycles",icon = icon("motorcycle")),
+      menuSubItem("Top 3 Motorcycle Accidents", tabName = "motoraccidents",icon = icon("motorcycle"))
       ),
       
       menuItem('Future Features', tabName = 'future', icon = icon('exclamation-triangle'))
@@ -47,7 +48,8 @@ shinyUI(dashboardPage(skin = 'purple',
                                    min = 0, max = 2000, value = 200, step = 100),
                        dateRangeInput('dateRange',
                                       label = 'Date range input: yyyy-mm-dd',
-                                      start = '2012-01-01', end = '2016-12-31'),
+                                      start = '2012-01-01', end = '2016-12-31', 
+                                      min = '2012-01-01', max = '2016-12-31'),
                        
                        radioButtons("time1", "Select time: ",
                                     c('All' = "TIME >= 00:00:00 & TIME <= 06:00:00",
@@ -72,7 +74,8 @@ shinyUI(dashboardPage(skin = 'purple',
                        
                        dateRangeInput('dateRange2',
                                       label = 'Date range input: yyyy-mm-dd',
-                                      start = '2012-01-01', end = '2016-12-31'),
+                                      start = '2012-01-01', end = '2016-12-31',
+                                      min = '2012-01-01', max = '2016-12-31'),
                        
                        radioButtons("time2", "Select time: ",
                                     c('All' = "TIME >= 00:00:00 & TIME <= 06:00:00",
@@ -86,7 +89,7 @@ shinyUI(dashboardPage(skin = 'purple',
                                       'Accidents by casualties: ',
                                       choice = c('All' = "NUMBER.OF.PERSONS.KILLED != ''",
                                                  'Injured or Killed' = 'NUMBER.OF.PERSONS.KILLED != 0 | NUMBER.OF.PERSONS.INJURED !=0',
-                                                 'Unharmed' = 'NUMBER.OF.PERSONS.KILLED == 0 | NUMBER.OF.CYCLIST.INJURED ==0'))
+                                                 'Unharmed' = 'NUMBER.OF.PERSONS.KILLED == 0 & NUMBER.OF.PERSONS.INJURED ==0'))
                        
       ),
       
@@ -123,8 +126,10 @@ shinyUI(dashboardPage(skin = 'purple',
                        checkboxGroupInput('motorvars', 'Select group: ',
                         c('Traffic Control Disregarded' = "CONTRIBUTING.FACTOR.VEHICLE.1 =='Traffic Control Disregarded'",
                           'Physical Disability' = "CONTRIBUTING.FACTOR.VEHICLE.1 == 'Physical Disability'",
-                          'Road Rage' = "CONTRIBUTING.FACTOR.VEHICLE.1 =='Aggressive Driving/Road Rage'"),
-                        selected = "CONTRIBUTING.FACTOR.VEHICLE.1 =='Traffic Control Disregarded'")
+                          'Road Rage' = "CONTRIBUTING.FACTOR.VEHICLE.1 =='Aggressive Driving/Road Rage'")),
+                       radioButtons('motoradio', 'Select data:',
+                                    c('All' = 'NUMBER.OF.PERSONS.INJURED !=""',
+                                      'Fatal' = 'NUMBER.OF.PERSONS.KILLED != 0'))
                        
       )
     
@@ -179,6 +184,15 @@ shinyUI(dashboardPage(skin = 'purple',
                               height = 650),
                 width = 12))),
       
+      tabItem(tabName = "trend",
+              fluidRow(box(
+                plotOutput("trend",
+                              height = 500),
+                radioButtons('trendradio', 'Select data:',
+                             c('All' = 'NUMBER.OF.PERSONS.INJURED !=""',
+                               'Hurt' = 'NUMBER.OF.PERSONS.KILLED != 0 | NUMBER.OF.PERSONS.INJURED !=0')),
+                width = 12))),
+      
       tabItem(tabName = 'future',
               fluidRow((box(
                 'Add weekdays to maps. 
@@ -191,4 +205,3 @@ shinyUI(dashboardPage(skin = 'purple',
       )
     )
 ))
-
