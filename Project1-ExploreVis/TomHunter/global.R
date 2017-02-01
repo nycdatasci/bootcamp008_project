@@ -6,7 +6,7 @@ library(ggplot2)
 library(devtools)
 library(tidyverse)
 
-setwd('~/Dropbox/learning/NYCDSA/projects/NYCDSA_project_1/')
+# setwd('~/Dropbox/learning/NYCDSA/projects/NYCDSA_project_1/')
 options(digits.secs = 6) #to include fractions of a second for timestamps
 options(max.print = 100)
 
