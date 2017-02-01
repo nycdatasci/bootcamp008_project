@@ -3,21 +3,22 @@ library(googleVis)
 library(dplyr)
 
 
-states_party <- (read.csv("data/states_party_strength2.csv"))
+states_party <- read.csv("./data/states_party_strength2.csv", 
+                         stringsAsFactors = FALSE)
 
 states_party_temp <- states_party %>% 
-  group_by(year) %>% 
-  summarise(h.D.sum = sum(h.D.num), 
+  dplyr::group_by(year) %>% 
+  dplyr::summarise(h.D.sum = sum(h.D.num), 
             h.R.sum = sum(H.R.num), 
             senate.D.sum = sum(senate.D.num), 
             senate.R.sum = sum(senate.R.num)) 
 
 states_party_smy <- states_party_temp %>%
   mutate(prev = year - 2) %>%
-  select(year, prev, h.D.sum, h.R.sum, senate.D.sum, senate.R.sum) %>%
+  dplyr::select(year, prev, h.D.sum, h.R.sum, senate.D.sum, senate.R.sum) %>%
   inner_join(states_party_temp %>% 
-               select(year, h.D.sum, h.R.sum, senate.D.sum, senate.R.sum) %>%
-               rename(prev = year,
+               dplyr::select(year, h.D.sum, h.R.sum, senate.D.sum, senate.R.sum) %>%
+               dplyr::rename(prev = year,
                       prev.h.D = h.D.sum, 
                       prev.h.R = h.R.sum, 
                       prev.s.D = senate.D.sum, 
@@ -39,10 +40,12 @@ states_party <- states_party %>%
 shinyServer(function(input, output) {
   
   state_party <- reactive({
-    year <- as.integer(input$president) + 2*input$mid_term
-    year <- ifelse(year > 2016, 2016, year)
-    states_party<- states_party %>%
-      filter(year ==  year)
+    selected_year <- as.integer(input$president) + 2*input$mid_term
+    selected_year <- ifelse(selected_year > 2016, 2016, selected_year)
+    cat(selected_year)
+    states_party <- states_party %>%
+      dplyr::filter(year == selected_year)
+    return(states_party)
   })
   
     output$map1 <- renderGvis({
@@ -75,7 +78,7 @@ shinyServer(function(input, output) {
                                           defaultColor="#ECF0F1",
                                           width=500, height=300))
         h.chart <- gvisBarChart(states_party_smy %>% 
-                                  filter(year == as.character(as.integer(input$president) +2)), xvar = "year", 
+                                  filter(year == as.character(as.integer(input$president) + 2)), xvar = "year", 
                                 yvar = c("h.D.diff", "h.R.diff"),
                                 options = list(title = "Party Strength: Change in House seats at Mid-Terms",
                                                width=500,

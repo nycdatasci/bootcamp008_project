@@ -1,6 +1,7 @@
 library(shiny)
 library(dplyr)
 library(tidyr)
+library(ggplot2)
 
 
 shinyServer(function(input, output,session) {

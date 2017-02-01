@@ -19,6 +19,7 @@ shinyServer(function(input, output){
     corrplot(dataInput2(), method = input$param2) 
   })
   output$gvis <- renderGvis({
+    print(head(empl))
     gvisMotionChart(empl,
                     idvar = "country",
                     timevar = "year",

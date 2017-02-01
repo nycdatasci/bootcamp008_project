@@ -205,4 +205,3 @@ shinyUI(dashboardPage(skin = 'purple',
       )
     )
 ))
-

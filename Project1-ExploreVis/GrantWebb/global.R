@@ -5,8 +5,8 @@ library(ggplot2)
 library(dplyr)
 library(DT)
 
-student_mat_df = read.csv("~/Desktop/Main Folder/NYC_Data_Science/DataScienceProject1/data/student-mat.csv", stringsAsFactors = FALSE)
-student_por_df = read.csv("~/Desktop/Main Folder/NYC_Data_Science/DataScienceProject1/data/student-por.csv", stringsAsFactors = FALSE)
+student_mat_df = read.csv("./data/student-mat.csv", stringsAsFactors = FALSE)
+student_por_df = read.csv("./data/student-por.csv", stringsAsFactors = FALSE)
 student_df <- rbind(student_mat_df,student_por_df)
 student_df_norepeats <- student_df %>% distinct(school,sex,age,address,famsize,Pstatus,
                                                 Medu,Fedu,Mjob,Fjob,reason,

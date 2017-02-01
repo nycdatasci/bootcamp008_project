@@ -7,6 +7,7 @@
 
 library(shiny)
 library(shinydashboard)
+nfl<-readRDS("./data/nfl")
 
 shinyUI(dashboardPage(skin = "green",
   dashboardHeader(title = "NFL Draft Analysis"),

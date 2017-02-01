@@ -60,7 +60,7 @@ inj.ratio <- group_by(nyc.collisions, VEHICLE.TYPE.CODE.1)%>%
 
 
 
-  motorcycles <- filter(nyc.collisions, VEHICLE.TYPE.CODE.1 == 'MOTORCYCLE')
+motorcycles <- filter(nyc.collisions, VEHICLE.TYPE.CODE.1 == 'MOTORCYCLE')
 motorcycle.cause <- group_by(motorcycles, CONTRIBUTING.FACTOR.VEHICLE.1)%>%
   summarise(total.deaths = sum(NUMBER.OF.PERSONS.KILLED),
             total.injuries = sum(NUMBER.OF.PERSONS.INJURED),
@@ -70,7 +70,7 @@ motorcycle.cause <- group_by(motorcycles, CONTRIBUTING.FACTOR.VEHICLE.1)%>%
   filter(CONTRIBUTING.FACTOR.VEHICLE.1 != '', CONTRIBUTING.FACTOR.VEHICLE.1 != 'Unspecified')
 
 summary(motorcycle.cause)
-  
+
 collisions.hurt <- nyc.collisions%>%
   filter(NUMBER.OF.PERSONS.KILLED != 0 | NUMBER.OF.PERSONS.INJURED !=0)
 collisions.safe <- nyc.collisions%>%

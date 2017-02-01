@@ -7,14 +7,15 @@ library(googleVis)
 ## tab DRG drop down menu selection ##
 year = list("2011" = "2011", "2012" = "2012", "2013" = "2013", "2014" = "2014")
 state = list("Inpatient" = "Inpatient", "Outpatient" = "Outpatient", "Total" = "Total")
-DRG = in_total_DRG
-cost = colnames(in_total)[3:4]
-hospital = as.list(unique(in_2014[,3]))
+# DRG = in_total_DRG
+# cost = colnames(in_total)[3:4]
+# hospital = as.list(unique(in_2014[,3]))
 top = list("Top 5" = 5, "Top 10" = 10, "Top 20" = 20)
   
 ## tab DRG dataset ##
 #inpatient 2014
-in_2014 = read.csv('Medicare_Provider_Charge_Inpatient_DRGALL_FY2014.csv',stringsAsFactors = FALSE)
+in_2014 = read.csv('./Medicare_Provider_Charge_Inpatient_DRGALL_FY2014.csv',stringsAsFactors = FALSE)
+
 t = in_2014 %>% group_by(DRG.Definition) %>% summarise(count = sum(Total.Discharges))
 t = arrange(t,desc(count))[1:100, ]
 in_2014 = left_join(t,in_2014)
@@ -62,6 +63,10 @@ in_2011_state=in_2011 %>%
 in_total = rbind(in_2011_state,in_2012_state,in_2013_state,in_2014_state)
 
 in_total_DRG = unique(in_total[,2])
+
+DRG = in_total_DRG
+cost = colnames(in_total)[3:4]
+hospital = as.list(unique(in_2014[,3]))
 
 q = in_2012 %>% group_by(DRG.Definition) %>% summarise(count = n())
 q = arrange(t,desc(count))[1:100, ]
