@@ -1,25 +1,4 @@
-# server <- function(input,output,session){
-#   
-  # points <- eventReactive(input$recalc, {
-  #   cbind(rnorm(40) * 2 + 13, rnorm(40) + 48)
-  # }, ignoreNULL = FALSE)
-  # 
-  # output$mymap <- renderLeaflet({
-  #   leaflet() %>%
-  #     addProviderTiles("Stamen.TonerLite",
-  #                      options = providerTileOptions(noWrap = TRUE)
-  #     ) %>%
-  #     addMarkers(data = points())
-  # })
-  # output$hist <- renderGvis(
-  #   gvisHistogram(new_df[,input$selected, drop=FALSE]))
-  # output$table <- DT::renderDataTable({
-  #   datatable(new_df, rownames=FALSE) %>% 
-  #     formatStyle(input$selected,  
-  #                 background="skyblue", fontWeight='bold')
-  #   # Highlight selected column using formatStyle
-  # })
-  
+
 
   server <- function(input, output, session) {
     
