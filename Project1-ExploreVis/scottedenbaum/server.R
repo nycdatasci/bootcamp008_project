@@ -1,6 +1,12 @@
+<<<<<<< HEAD
+df0 <- read.csv("df0.csv")
+df1 <- read.csv("df1.csv") 
+Poh <- read.csv("Poh.csv")
+=======
 # df0 <- read.csv("df0.csv")
 # df1 <- read.csv("df1.csv") 
 # Poh <- read.csv("Poh.csv")
+>>>>>>> c8f59dfdff54e3097561b1d069001a5d20d50fd8
 mf0 <- read.csv("mf0.csv")
 #reading in data frame of goals
 library(googleVis)
@@ -12,7 +18,10 @@ library(tm)
 library(ggthemes)
 shinyServer(function(input, output){
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> c8f59dfdff54e3097561b1d069001a5d20d50fd8
   mdata <- reactive({
     
     return (mf0 %>% filter(Goal.Classification %in% input$filterbox))
@@ -24,7 +33,14 @@ shinyServer(function(input, output){
   
   # show histogram using googleVis
   output$hist <- renderGvis({
+<<<<<<< HEAD
+    
+    #mydata <- plot_df()
     histdata <- mf0 %>% group_by_(input$selected) %>% summarise(count=n()) %>% arrange(desc(count))
+    #bardata <- df0 %>% group_by_(c(input$selected, input$selected2)) %>% summarise(Count = n())
+=======
+    histdata <- mf0 %>% group_by_(input$selected) %>% summarise(count=n()) %>% arrange(desc(count))
+>>>>>>> c8f59dfdff54e3097561b1d069001a5d20d50fd8
     gvisColumnChart(histdata, xvar=input$selected, yvar="count", 
                     options=list(title = paste("Number of Goals grouped by: ", input$selected),
                                                legend='none', 
@@ -68,13 +84,61 @@ shinyServer(function(input, output){
             panel.grid.minor.x = element_blank() ) + ggtitle("Comparison of Goal Classification")  
     return(g)
 })
+<<<<<<< HEAD
+  # output$topGoal <- renderPlot(function() {
+  #   goaldata <- mf0 %>% group_by(EE.Provider, Goal.Classification) %>% summarize(n=n()) %>% top_n(n=5, n) 
+  #   
+  #   p <- ggplot(mpgData, aes(var, mpg)) + 
+  #     geom_boxplot(outlier.size = ifelse(input$outliers, 2, NA)) + 
+  #     xlab(input$variable)
+  #   print(p)
+  # })
+  # 
+=======
 
+>>>>>>> c8f59dfdff54e3097561b1d069001a5d20d50fd8
   output$image2 <- renderImage({
       return(list(
         src = "www/BoothHope.jpg",
         filetype = "image/jpeg",
         alt = "This is George W. Booth"
       ))
+<<<<<<< HEAD
+  }, deleteFile = FALSE)
+  
+  output$imagePOH <- renderImage({
+    return(list(
+      src = "www/PathwayOfHope.jpg",
+      filetype = "image/jpeg",
+      alt = "This is Pathway of Hope"
+    ))
+  }, deleteFile = FALSE)
+  
+  output$imageClient <- renderImage({
+    return(list(
+      src = "www/Capture.jpg",
+      filetype = "image/jpeg",
+      alt = "This is a Pathway of Hope family"
+    ))
+  }, deleteFile = FALSE)
+  
+  output$imagePOHLogo <- renderImage({
+    return(list(
+      src = "www/POHLogo1.jpg",
+      filetype = "image/jpeg",
+      alt = "This is a Pathway of Hope family"
+    ))
+  }, deleteFile = FALSE)
+  
+   output$bar1 <- renderGvis({
+     mydata <- mf0 %>% group_by_(input$selected, input$selected2) %>% summarise(count = n())
+     bard <- spread(mydata, input$selected2, count)
+     #print(bard)
+     gvisColumnChart(bard)#, xvar= yvar = count, options=list(legend ='none', width = 'automatic', height = '500px'))
+    # gvisColumnChart( spread(input$selected2, count), col = count)
+     #gvisColumnChart(mydata, xvar = input$selected2, yvar="count", options = list(legent='none', width = "automatic", height = "600px")
+   })
+=======
   }, deleteFile = FALSE)
   
   output$imagePOH <- renderImage({
@@ -108,5 +172,6 @@ shinyServer(function(input, output){
                    background="skyblue", fontWeight='bold')
      # Highlight selected column using formatStyle
    })   
+>>>>>>> c8f59dfdff54e3097561b1d069001a5d20d50fd8
   
 })
