@@ -14,6 +14,11 @@ shinyServer(function(input, output){
     hp.list[[which(hp_col == input$hp.at)]]
   })
   
+  data3 <- reactive({
+    dataset %>%
+      select_(input$attr1, input$attr2)
+  })
+  
   output$chart1 <- renderPlot({
     ggplot(head(data1(), input$num_cat),
            aes(x = reorder(categories, total),
@@ -28,15 +33,34 @@ shinyServer(function(input, output){
   
   
   
+  # output$hist1 <- renderPlot({
+  #   ggplot(data2(), aes(fill = categories,
+  #                       x = reorder(categories, total),
+  #                       y = total)) +
+  #     geom_bar(stat = "identity") + 
+  #     coord_flip() + 
+  #     theme_minimal() +
+  #     theme(legend.position = 'none') +
+  #     xlab("") 
+  # })
+  
+  output$mosaicPlot <- renderPlot({
+    # p <- recordPlot()
+    mosaicplot(table(data3()), shade=T, main = NULL) 
+    # p
+  })
+  
+  output$scatter1 <- renderPlot({
+    ggplot(data4()) +
+      geom_point(aes(x = ratio1, y = ratio2, fill = categories))
+  })
+  
   output$hist1 <- renderPlot({
-    ggplot(data2(), aes(fill = categories,
-                        x = reorder(categories, total),
-                        y = total)) +
-      geom_bar(stat = "identity") + 
-      coord_flip() + 
-      theme_minimal() +
-      theme(legend.position = 'none') +
-      xlab("") 
+    ggplot(data2()) +
+    geom_bar(aes(x=categories, y=ratio, fill=hipster),
+             stat='identity', position='dodge') + 
+    coord_flip() +
+      ylab("")
   })
   
   output$map1 <- renderLeaflet({
@@ -97,9 +121,14 @@ shinyServer(function(input, output){
     
 })
   
-  output$table <- renderDataTable({
+  output$summary_table <- renderDataTable({
     DT::datatable(summ, rownames=FALSE)
       
+  })
+  
+  output$overview_table <- renderDataTable({
+    DT::datatable(overview, rownames=FALSE)
+    
   })
   
   output$downloadTable <- downloadHandler(

@@ -8,7 +8,11 @@ shinyUI(dashboardPage(
     sidebarMenu(id = "sideBarMenu",
                 menuItem("ReadMe", tabName = "readme", icon = icon("mortar-board"), selected=TRUE
                 ),
-                menuItem("Charts", tabName = "charts", icon = icon("bar-chart")
+                menuItem("Charts", tabName = "charts", icon = icon("bar-chart"),
+                         menuSubItem("Hist", tabName = 'charts1'),
+                         menuSubItem("Mosaic", tabName = 'mosaic')
+                         # ,
+                         # menuSubItem("Scatter", tabName = 'scatter')
                 ),
                 menuItem("Hipster", tabName = "hips", icon = icon("paint-brush")),
                 menuItem("Summary", tabName = 'summary', icon = icon('newspaper-o')),
@@ -36,17 +40,17 @@ shinyUI(dashboardPage(
   dashboardBody(
     tabItems(
       tabItem(tabName = "mp1",
-              h2("Fancy map content"),
+              h2("Where does hipsters go?"),
               fluidRow(
                 column(8, leafletOutput("map1", height = 450, width = 800))
               )),
       tabItem(tabName = "mp2",
-              h2("Fancy map content"),
+              h2("Density map"),
               fluidRow(
                 column(8, plotOutput("map2", height = 450, width = 800))
               )),
       
-      tabItem(tabName = "charts",
+      tabItem(tabName = "charts1",
               
               fluidRow(
                 column(4, sliderInput("num_cat", "More categories to show:",
@@ -61,6 +65,29 @@ shinyUI(dashboardPage(
               fluidRow(plotOutput("chart1", height = 400, width = 800))
       ),
       
+      tabItem(tabName = "mosaic",
+              
+              fluidRow(
+                column(6, selectizeInput(inputId = 'attr1',
+                                         label = 'Select attributes',
+                                         choices = attri_col,
+                                         selected = c('attributes.Noise.Level'))),
+                column(6, 
+                       selectizeInput(inputId = 'attr2',
+                                      label = 'Select attributes',
+                                      choices = attri_col,
+                                      selected = c('attributes.Ambience.hipster')))
+              ),
+              
+              fluidRow(plotOutput("mosaicPlot", height = 400, width = 800))
+      ),
+      
+      # tabItem(tabName = 'scatter',
+      #         fluidRow(box(status = "primary",
+      #           height = 180, width = 25,
+      #           plotOutput("scatter1", height = 450, width = 800)
+      #         ))),
+      
       tabItem(tabName = "hips",
               fluidRow(box(
                 title = "Hello Hipsters ~", status = "primary",
@@ -71,7 +98,17 @@ shinyUI(dashboardPage(
       tabItem(tabName = "summary",
               fluidRow(downloadButton('downloadTable', 'Download')),
               hr(),
-              fluidRow(dataTableOutput("table"))
+              
+              tabsetPanel(
+                tabPanel(
+                  'Overview',
+                  fluidRow(dataTableOutput("overview_table"))
+                ),
+                tabPanel(
+                  'Summary',
+                  fluidRow(dataTableOutput("summary_table"))
+                )
+              )
       ),
       
       tabItem(tabName = "readme",
