@@ -2,6 +2,7 @@
 import time
 import re
 import argparse
+import urllib2
 # specific imports
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -21,13 +22,44 @@ def write_data_to_file(bgg_data, output_file):
     print "WRITE TO FILE NOT YET IMPLEMENTED"
 
 
-# Specialized BGG scraping functions
+# Specialized BGG scraping functions and data
 
-# pre-processed regexs for function below
-game_designer_re = re.compile("/boardgamedesigner/.*")
-full_credits_re = re.compile("\s*Full Credits\s*")
-designers_re = re.compile("Designers")
-def bgg_parse_game_page(browser, bgg_data, game_page):
+bgg_search_page = "https://boardgamegeek.com/search/boardgame/page/1?sort=rank&advsearch=1&sortdir=asc"
+
+
+# regexes that will be used
+ratings_comments_re = re.compile(r"\s*Ratings & Comments\s*")
+non_integer_re = re.compile(r"[^\d]")
+game_designer_re = re.compile(r"/boardgamedesigner/.*")
+full_credits_re = re.compile(r"\s*Full Credits\s*")
+designers_re = re.compile(r"Designers")
+
+
+def bgg_scrape_rating_count(page_source):
+    count = ''
+    try:
+        soup = BeautifulSoup(page_source, "html.parser")
+        ratings_panel = soup.find("h3", text=ratings_comments_re).parent.parent
+        ratings_info = ratings_panel.find("span", {"class": "panel-body-toolbar-count"}).span
+        count = ratings_info.find_all("strong")[-1].string
+        count = non_integer_re.sub('', count)
+    except Exception, e:
+        print e
+    return count
+
+
+def bgg_ratings_distribution(browser, game_data, game_page):
+    ratings_breakdown = {}
+    for rating in xrange(1,11):
+        browser.get("{}/ratings?rating={}".format(game_page, rating))
+        time.sleep(3)
+        count = bgg_scrape_rating_count(browser.page_source)
+        ratings_breakdown[rating] = count
+    game_data['ratings_breakdown'] = '|'.join([ratings_breakdown[i] for i in xrange(1, 11)])
+    print game_data['ratings_breakdown']
+
+
+def bgg_parse_game_page(browser, game_data, game_page):
     # ratings_graph = stats_section.find_element_by_xpath(".//div[@class='stats-graph']")
     # ratings_counts = ratings_graph.find_element_by_xpath(".//svg/g[1]/g[4]")
     # got to credits page
@@ -48,6 +80,7 @@ def bgg_parse_game_page(browser, bgg_data, game_page):
     #designer_elements = credit_data
     #designers = [designer_element.get_text() for designer_element in designer_elements]
     #print designers
+    bgg_ratings_distribution(browser, game_data, game_page)
     pass
 
 
@@ -63,46 +96,38 @@ def bgg_go_to_next_page(browser):
     return True
 
 
+# get initial game data of all games on given rank page
+def bgg_scrape_rank_page(page_source):
+    bgg_data = {}
+    soup = BeautifulSoup(page_source, "html.parser")
+    rows = soup.find_all("tr", {"id": "row_"})
+    for row in rows:
+        columns = row.find_all("td")
+        rank = int(columns[0].get_text())
+        game_name = columns[2].find("a").get_text()
+        game_page = columns[2].find("a")['href']
+        game_page = "https://boardgamegeek.com" + game_page
+        bgg_rating = float(columns[3].get_text())
+        user_rating = float(columns[4].get_text())
+        num_votes = int(columns[5].get_text())
+        game_id = re.search("\d+", game_page).group(0)
+        game_data = {'rank': rank, 'name': game_name, 'page': game_page, "bbg_rating": bgg_rating,
+                     "user_rating": user_rating, "num_votes": num_votes}
+        bgg_data[game_id] = game_data
+    return bgg_data
+
+
 # first scrape of data
-# Expansions don't seem to show up with a bgg_rank
-def bgg_scrape_rank_page(browser, bgg_data, number_to_get):
+# start building bgg_data
+def bgg_scrape_all_rank_pages(browser, bgg_data, number_to_get):
     number_gotten = 0
-    # if we want to scrape all images, number_to_get will be float(inf)
-    while number_gotten < number_to_get:
-        soup = BeautifulSoup(browser.page_source, "html.parser")
-        rows = soup.find_all("tr", {"id": "row_"})
-        for row in rows:
-            if number_gotten >= number_to_get:
-                continue
-            columns = row.find_all("td")
-            rank = int(columns[0].get_text())
-            game_name = columns[2].find("a").get_text()
-            game_page = columns[2].find("a")['href']
-            bgg_rating = float(columns[3].get_text())
-            user_rating = float(columns[4].get_text())
-            num_votes = int(columns[5].get_text())
-            game_data = {'rank': rank, 'name': game_name, 'page': game_page, "bbg_rating": bgg_rating,
-                         "user_rating": user_rating, "num_votes": num_votes}
-            bgg_data[rank] = game_data
-            number_gotten += 1
-            print number_gotten,'games collected'
-        if not bgg_go_to_next_page(browser):
-            break
-
-
-def bgg_sort_all_games(browser):
-    # the waits used here are so the page can re-load, we don't want to click on the same element exactly again
-    browser.find_element_by_xpath("//*[@id='header_top']/div[2]/ul/li[2]/a").click()
-    browser.find_element_by_xpath("//*[@id='main_content']/form/p/input[1]").click()
-    browser.find_element_by_xpath("//*[@id='collectionitems']/tbody/tr[1]/th[1]/a").click()
-
-# Generalized selenium and beautiful soup functions
-
-
-# goes to a url and waits 1 second, in hopes of keeping the scraper from being blocked
-def go_to_page(browser, url):
-    browser.get(url)
-    time.sleep(10)
+    while True:
+        bgg_data.update(bgg_scrape_rank_page(browser.page_source))
+        number_gotten += 1
+        print number_gotten,'games collected'
+        #if not bgg_go_to_next_page(browser):
+        #    break
+        break
 
 
 def main(max_games = 5000, output_file = None, continue_file = None):
@@ -113,14 +138,14 @@ def main(max_games = 5000, output_file = None, continue_file = None):
         browser = webdriver.Firefox()
         browser.implicitly_wait(15)
         print 'Going to list'
-        go_to_page(browser, "https://boardgamegeek.com/")
-        bgg_sort_all_games(browser)
+        browser.get(bgg_search_page)
         print 'Scraping', max_games, 'games'
-        bgg_scrape_rank_page(browser, bgg_data, max_games)
-        for rank, game_data in bgg_data.iteritems():
-            print rank, game_data
+        bgg_scrape_all_rank_pages(browser, bgg_data, max_games)
+        for game_id, game_data in bgg_data.iteritems():
+            print game_id, game_data['rank'], game_data['name']
             game_page = game_data['page']
-            bgg_parse_game_page(browser, bgg_data, game_page)
+            bgg_parse_game_page(browser, game_data, game_page)
+            bgg_data[game_id] = game_data
     except Exception, e:
         print 'SOME ERROR OCCURED'
         print e
