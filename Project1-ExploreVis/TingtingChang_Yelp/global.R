@@ -321,18 +321,18 @@ price = function(x) mean(x, na.rm = T)
 
 summ <- dataset %>%
   group_by(categories) %>%
-  summarise(sum.reviews = sum(review_count),
-            avg.stars = format(mean(stars), digits=2, nsmall=2),
-            sum.hipster = summ(attributes.Ambience.hipster),
-            sum.divey = summ(attributes.Ambience.divey),
-            sum.credit= summ(attributes.Accepts.Credit.Cards),
-            sum.seat = summ(attributes.Outdoor.Seating),
-            sum.tv = summ(attributes.Has.TV),
+  summarise(reviews = sum(review_count),
+            stars = format(mean(stars), digits=2, nsmall=2),
+            hipster = summ(attributes.Ambience.hipster),
+            divey = summ(attributes.Ambience.divey),
+            credit= summ(attributes.Accepts.Credit.Cards),
+            seat = summ(attributes.Outdoor.Seating),
+            tv = summ(attributes.Has.TV),
             price = round(price(attributes.Price.Range)),
-            sum.takeout = summ(attributes.Take.out),
-            sum.parking.garage = summ(attributes.Parking.garage),
-            sum.kids = summ(attributes.Good.for.Kids),
-            sum.group = summ(attributes.Good.For.Groups)
+            takeout = summ(attributes.Take.out),
+            parking.garage = summ(attributes.Parking.garage),
+            kids = summ(attributes.Good.for.Kids),
+            group = summ(attributes.Good.For.Groups)
   ) %>%
   arrange(desc(reviews))
 
