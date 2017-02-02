@@ -37,10 +37,7 @@ hp_col <- list('Hipster VS. Noise Level' = 'attributes.Noise.Level',
                'Hipster VS. Credit Cards' = 'attributes.Accepts.Credit.Cards',
                'Hipster VS. Divey' = 'attributes.Ambience.divey',
                'Hipster VS. Garage Parking' = 'attributes.Parking.garage',
-               'Hipster VS. TV' = 'attributes.Has.TV',
-               'Hipster VS. Price' = 'attributes.Price.Range',
-               'Hipster VS. Take Out' = 'attributes.Take.out',
-               'Hipster VS. Reviews' = 'review_count')
+               'Hipster VS. TV' = 'attributes.Has.TV')
 
 
 mp_col <- list('Locate' = 'leaflet',
@@ -312,26 +309,10 @@ hipster.takeout <- hipster.takeout[complete.cases(hipster.takeout),] %>%
   gather(key= 'hipster', value='ratio', -categories) 
 
 
-# Hipster VS. Review
-hipster.reviews <- select(dataset, categories,
-                          review_count, attributes.Ambience.hipster) %>% 
-  group_by(categories, attributes.Ambience.hipster) %>% 
-  summarise(ratio = summ(review_count)/n()) %>%   
-  arrange(desc(ratio))
-
-hipster.reviews <- hipster.reviews[complete.cases(hipster.reviews),] %>% 
-  spread(key=attributes.Ambience.hipster,
-         value=ratio) 
-
-
-hipster.reviews <- hipster.reviews[complete.cases(hipster.reviews),] %>% 
-  gather(key= 'hipster', value='ratio', -categories) 
-
 
 
 hp.list <- list(hipster.noise,hipster.group, hipster.seat, hipster.credit,
-                hipster.divey, hipster.tv, hipster.price, hipster.takeout,
-                hipster.reviews)
+                hipster.divey, hipster.tv, hipster.price, hipster.takeout)
 
 
 ## summary table
