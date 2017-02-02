@@ -1,3 +1,4 @@
+mf0 <- read.csv("mf0.csv")
 library(shinydashboard)
 sel_group_by = c('Individual' = 'Client.Uid',
                  'Corp Location' = 'EE.Provider',
@@ -37,13 +38,14 @@ shinyUI(dashboardPage(skin="red",
           tabItem(tabName = "Goal-Cat",
                   fluidRow(column(width = 6, plotOutput("rose", width = '220%', height = '850px')))
                   ),
+          
           tabItem(tabName="Goal-Geog",
                 fluidRow(column(12,box(htmlOutput("hist", width = "300%", height = "600px")))
                   ),
                 fluidRow(column(12, 
                             box(htmlOutput("col", width = "300%", height = "600px")))
                  )
-            ),#tabitem1
+            ),
                     
           tabItem(tabName="POH",
                   fluidRow(column(12,
