@@ -12,7 +12,7 @@ library(shinythemes)
 library(readr)
 
 
-load('data/data.RData')
+load('data.RData')
 
 #data for map data
 # new_df<- read_csv("data/crimeData1.csv")
