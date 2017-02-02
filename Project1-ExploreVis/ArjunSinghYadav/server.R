@@ -32,8 +32,8 @@
       #input$goButton
       leaflet() %>%
         addTiles() %>%
-        setView(lng =  -122.620608423371, lat = 45.4654788882659, zoom = 12)#%>%
-        #addProviderTiles('OpenStreetMap.BlackAndWhite',layerId=1)
+        setView(lng =  -122.620608423371, lat = 45.4654788882659, zoom = 12)%>%
+        addProviderTiles('OpenStreetMap.BlackAndWhite',layerId=1)
          
        
     })
@@ -44,7 +44,7 @@
         clearShapes()%>%
         clearMarkers()%>%
         clearMarkerClusters()%>%
-        addCircleMarkers(lng = df2()$lat, lat = df2()$long,color=color(input$yaxis),clusterOptions = markerClusterOptions(),popup= paste(df2()$long, df2()$lat))
+        addCircleMarkers(lng = df2()$lat, lat = df2()$long,clusterOptions = markerClusterOptions(),popup= paste(df2()$long, df2()$lat))
       })
     
     output$table <- renderDataTable({table_df},
