@@ -1,5 +1,6 @@
 ## global.R ##
-
+library(dplyr)
+library(leaflet)
 
 #load various data sets
 clean_bm <- tbl_df(read.csv("clean_bm.csv"))

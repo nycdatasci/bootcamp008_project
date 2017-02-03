@@ -5,8 +5,8 @@ library(ggplot2)
 library(dplyr)
 library(scales)
 
-source('global.R')
-attach('./data/combined_movies.rda')
+# source('global.R')
+load('./data/combined_movies.rda')
 
 shinyServer(function(input, output){
   

@@ -173,7 +173,7 @@ top5TimeLicCountyDA <- drilling_activity %>%
            County.Name == t$County.Name[3] | County.Name == t$County.Name[4] |
            County.Name == t$County.Name[5]) %>%
   group_by(County.Name, YearMonth) %>%
-  count(sort = T) 
+  dplyr::count(sort = T) 
 tsLic <- spread(top5TimeLicCountyDA, County.Name, n)
 
 YearMonth1 <- as.Date(tsLic$YearMonth, "%y-%m-%d")
