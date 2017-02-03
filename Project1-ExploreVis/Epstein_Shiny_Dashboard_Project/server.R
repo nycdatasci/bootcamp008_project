@@ -4,6 +4,7 @@ library(rCharts)
 library(ggplot2)
 library(dplyr)
 library(scales)
+library(DT)
 
 source('global.R')
 attach('./data/combined_movies.rda')
