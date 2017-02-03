@@ -27,7 +27,7 @@ ui <- fluidPage(
     
     dateRangeInput(inputId="date_range",
               label=" Date Range:",
-              min = as.Date("2012-03-01"), max = Sys.Date(), end = NULL,
+              min = as.Date("2012-03-01"), max = "2016-12-31", end = NULL,
               format = "yyyy-mm-dd",
               startview = "2012-03-01",
               weekstart = 0,

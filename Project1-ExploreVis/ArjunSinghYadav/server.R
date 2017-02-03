@@ -1,25 +1,4 @@
-# server <- function(input,output,session){
-#   
-  # points <- eventReactive(input$recalc, {
-  #   cbind(rnorm(40) * 2 + 13, rnorm(40) + 48)
-  # }, ignoreNULL = FALSE)
-  # 
-  # output$mymap <- renderLeaflet({
-  #   leaflet() %>%
-  #     addProviderTiles("Stamen.TonerLite",
-  #                      options = providerTileOptions(noWrap = TRUE)
-  #     ) %>%
-  #     addMarkers(data = points())
-  # })
-  # output$hist <- renderGvis(
-  #   gvisHistogram(new_df[,input$selected, drop=FALSE]))
-  # output$table <- DT::renderDataTable({
-  #   datatable(new_df, rownames=FALSE) %>% 
-  #     formatStyle(input$selected,  
-  #                 background="skyblue", fontWeight='bold')
-  #   # Highlight selected column using formatStyle
-  # })
-  
+
 
   server <- function(input, output, session) {
     
@@ -53,8 +32,8 @@
       #input$goButton
       leaflet() %>%
         addTiles() %>%
-        setView(lng =  -122.620608423371, lat = 45.4654788882659, zoom = 12)#%>%
-        #addProviderTiles('OpenStreetMap.BlackAndWhite',layerId=1)
+        setView(lng =  -122.620608423371, lat = 45.4654788882659, zoom = 12)%>%
+        addProviderTiles('OpenStreetMap.BlackAndWhite',layerId=1)
          
        
     })
@@ -65,7 +44,7 @@
         clearShapes()%>%
         clearMarkers()%>%
         clearMarkerClusters()%>%
-        addCircleMarkers(lng = df2()$lat, lat = df2()$long,color=color(input$yaxis),clusterOptions = markerClusterOptions(),popup= paste(df2()$long, df2()$lat))
+        addCircleMarkers(lng = df2()$lat, lat = df2()$long,clusterOptions = markerClusterOptions(),popup= paste(df2()$long, df2()$lat))
       })
     
     output$table <- renderDataTable({table_df},
