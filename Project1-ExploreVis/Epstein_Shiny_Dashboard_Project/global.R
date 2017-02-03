@@ -1,3 +1,6 @@
+
+attach('./data/combined_movies.rda')
+
 movie_dataset <- combined_movies
 
 
