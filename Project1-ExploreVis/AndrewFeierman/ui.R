@@ -1,6 +1,9 @@
 ## ui.R ##
+library(googleVis)
 library(shiny)
 library(shinydashboard)
+library(ggvis)
+
 
   sidebar <- dashboardSidebar(
     

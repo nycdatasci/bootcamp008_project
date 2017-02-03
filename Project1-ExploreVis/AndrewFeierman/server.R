@@ -7,6 +7,7 @@ library(ggvis)
 library(leaflet)
 library(RColorBrewer)
 library(DT)
+library(googleVis)
 
 
 shinyServer(
