@@ -1,0 +1,13 @@
+X-Request-Id: 65ed5d7a-6aae-4edf-ae4b-82eb2ef42bd2
+X-Xss-Protection: 1; mode=block
+X-Robots-Tag: all
+X-Content-Type-Options: nosniff
+Content-Encoding: gzip
+Set-Cookie: split_test_identifier=16a78c2b15c9aec22f7f727e52c8d5975cc602e; domain=.songkick.com; path=/; expires=Sun, 04 Feb 2018 20:39:55 -0000
+Set-Cookie: _skweb_session=R1pMWjZKRkZZQmxIK0lTWERZUGsydjVreERDbk1GTnhSZWpYL091QXVFdU5reWhxUWVyWW05YmhNV1ZnamVKNHBvRFJPNjJCSDFCWXhGZU84Ukk2b21QUEtxMlpabU5MWjI5Y1o1ZHo3eWxUY3VJWWViY0pFOVg3VW9ramwzaGFiWFNueVVFOVpRcVZqVDBCTHNrcno1SzA2S3Ayd1JTVVlyR2ZLVHZlZFY2Z0tvRExxblU4am1saE1sS2pGUGk4S1psNTdMVEIxUUp2QUhlcUlmKzdhNU82L1lyMnBHamp2VXFIK0JzSDNQYz0tLWg5eFFTRFRlWE82ekNQZWZoZHJGQVE9PQ%3D%3D--8e6e9f1913655a03cf06e9ae12504b422cdca549; path=/; HttpOnly
+Vary: Accept-Encoding
+X-Runtime: 0.312883
+Cache-Control: no-cache
+Date: Sat, 04 Feb 2017 20:39:55 GMT
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=utf-8
