@@ -1,7 +1,7 @@
-consumerKey = "csbyfWcdWFWiEPr5n6aAOg"
-consumerSecret = "cL5arLJ1wXICaEauI6wf9oHzhwM"
-token = "_HJB_zNlmAoRQ-oiAmr2HLkMTa-CW3Tw"
-token_secret = "Gn52hUisdqUXdHev8YxBcGo1crg"
+consumerKey = ""
+consumerSecret = ""
+token = ""
+token_secret = ""
 
 require(httr)
 require(httpuv)

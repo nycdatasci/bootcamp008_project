@@ -16,7 +16,7 @@ alldata = NULL
 for(zip in missed_zips){
   print(zip)
   zip = trim(zip)
-  api_key = "tCmnCP5pS5GfyBehp4G3oLhCdYJHtkU75pTf26Ix2BoHo3NrU1ATvvWkF2KBLHj1U0j4MqfN1Qvlxzlt25OmRg=="
+  apikey = ""
   url=paste0("https://taxrates.api.avalara.com:443/postal?country=usa&postal=",zip,"&apikey=",api_key)
   tryCatch({
   data = GET(url)
