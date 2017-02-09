@@ -11,7 +11,7 @@ comments_re = re.compile(r"\s*Comments\s*")
 fans_re = re.compile(r"\s*Fans\s*")
 weight_re = re.compile(r"\s*Weight\s*")
 plays_re = re.compile(r"\s*All Time Plays\s*")
-owned_re = re.compile(r"\s*Owned\s*")
+own_re = re.compile(r"\s*Own\s*")
 prev_owned_re = re.compile(r"\s*Prev. Owned\s*")
 
 non_integer_re = re.compile(r"[^\d]")

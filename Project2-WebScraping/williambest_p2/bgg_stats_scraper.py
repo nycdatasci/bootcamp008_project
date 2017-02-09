@@ -1,4 +1,4 @@
-from bgg_regex import std_re, comments_re, fans_re, weight_re, clean_integer, plays_re, prev_owned_re, owned_re
+from bgg_regex import std_re, comments_re, fans_re, weight_re, clean_integer, plays_re, prev_owned_re, own_re
 
 
 def if_error(default=''):
@@ -55,9 +55,10 @@ def bgg_get_weight(soup):
 
 @if_error()
 def bgg_get_owned(soup):
-    owned = soup.find("div", text=owned_re)
+    owned = soup.find("div", text=own_re)
     owned = owned.parent
-    owned = int(owned.find("span").get_text())
+    owned = owned.find_all("div")[1]
+    owned = clean_integer(owned.find("a").get_text())
     return owned
 
 
@@ -65,7 +66,8 @@ def bgg_get_owned(soup):
 def bgg_get_prev_owned(soup):
     prev_owned = soup.find("div", text=prev_owned_re)
     prev_owned = prev_owned.parent
-    prev_owned = int(prev_owned.find("span").get_text())
+    prev_owned = prev_owned.find_all("div")[1]
+    prev_owned = clean_integer(prev_owned.find("a").get_text())
     return prev_owned
 
 
@@ -74,7 +76,7 @@ def bgg_get_total_plays(soup):
     plays = soup.find("div", text=plays_re)
     plays = plays.parent
     plays = plays.find_all("div")[1]
-    plays = int(plays.find("a").get_text())
+    plays = clean_integer(plays.find("a").get_text())
     return plays
 
 
@@ -86,3 +88,4 @@ def bgg_scrape_stats(soup, game_data):
     game_data['total_plays'] = bgg_get_total_plays(soup)
     game_data['owned'] = bgg_get_owned(soup)
     game_data['prev_owned'] = bgg_get_prev_owned(soup)
+    pass
