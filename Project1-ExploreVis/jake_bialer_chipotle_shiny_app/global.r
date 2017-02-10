@@ -30,7 +30,7 @@ library(maps)
 my.cols2 <-brewer.pal(8, "Reds")
 
 states_map <- map_data("state")
-pal <- leaflet::colorFactor(my.cols2, domain = as.factor(c(super_burrito$`Steak Burrito`,super_burrito$`Steak Burrito_aftertax`)))
+#pal <- leaflet::colorFactor(my.cols2, domain = as.factor(c(super_burrito$`Steak Burrito`,super_burrito$`Steak Burrito_aftertax`)))
 
 
 menu_items = c("Steak Burrito","Barbacoa Burrito","Chicken Burrito","Chorizo Burrito","Sofritas Burrito","Veggie Burrito")
