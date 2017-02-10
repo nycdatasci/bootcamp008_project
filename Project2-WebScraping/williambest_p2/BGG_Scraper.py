@@ -41,7 +41,9 @@ def write_data_to_sqlite(db_data, game_id, game_data):
 
 
 def bgg_parse_game_page(browser, game_id, game_data, game_page, db_data):
-    print u'Scraping data for: {} ({}), Rank #{}'.format(game_data['name'], game_id, game_data['rank'])
+    game_name = game_data['name']
+    game_name = game_name.encode('utf-8')
+    print r'Scraping data for: {} ({}), Rank #{}'.format(game_name, game_id, game_data['rank'])
 
     browser.get(game_page + '/stats')
     #_ = browser.find_element_by_xpath('//h3[@class="panel-title"]')

@@ -15,6 +15,7 @@ own_re = re.compile(r"\s*Own\s*")
 prev_owned_re = re.compile(r"\s*Prev. Owned\s*")
 
 non_integer_re = re.compile(r"[^\d]")
+non_float_re = re.compile(r"[^\d.]")
 integer_re = re.compile(r"\d+")
 
 
@@ -24,6 +25,16 @@ def clean_integer(integer_string):
     rez = None
     try:
         rez = int(re.sub(non_integer_re, '', integer_string))
+    except (ValueError, NameError, TypeError) as e:
+        pass  # keep rez as None
+    finally:
+        return rez
+
+
+def clean_float(float_string):
+    rez = None
+    try:
+        rez = float(re.sub(non_float_re, '', float_string))
     except (ValueError, NameError, TypeError) as e:
         pass  # keep rez as None
     finally:

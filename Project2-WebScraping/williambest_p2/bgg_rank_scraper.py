@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 from re import search as re_search
+from bgg_regex import clean_integer, clean_float
 
 
 # get initial game data of all games on given rank page
@@ -8,13 +9,13 @@ def bgg_scrape_rank_page(soup):
     rows = soup.find_all('tr', {'id': 'row_'})
     for row in rows:
         columns = row.find_all('td')
-        rank = int(columns[0].get_text())
+        rank = clean_integer(columns[0].get_text())
         game_name = columns[2].find('a').get_text()
         game_page = columns[2].find('a')['href']
         game_page = 'https://boardgamegeek.com' + game_page
-        geek_rating = float(columns[3].get_text())
-        avg_rating = float(columns[4].get_text())
-        num_votes = int(columns[5].get_text())
+        geek_rating = clean_float(columns[3].get_text())
+        avg_rating = clean_float(columns[4].get_text())
+        num_votes = clean_integer(columns[5].get_text())
         game_id = re_search('\d+', game_page).group(0)
         game_data = {'game_id': game_id, 'rank': rank, 'name': game_name, 'page': game_page, 'geek_rating': geek_rating,
                      'avg_rating': avg_rating, 'num_votes': num_votes}
