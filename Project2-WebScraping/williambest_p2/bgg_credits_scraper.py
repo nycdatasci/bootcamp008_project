@@ -14,7 +14,7 @@ def get_element(soup, element_name):
     except Exception as e:
         print e, element_name
     finally:
-        return '|'.join(elements)
+        return '|'.join(set(elements))
 
 
 def bgg_scrape_credits(soup, game_data):

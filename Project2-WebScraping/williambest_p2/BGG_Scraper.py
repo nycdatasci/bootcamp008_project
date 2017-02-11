@@ -124,7 +124,8 @@ def main(start_page, end_page, db_name, headless=False):
                         'designers', 'mechanics', 'categories',
                         'min_players', 'max_players', 'best_players', 'min_age',
                         'min_playtime', 'max_playtime',
-                        'num_expansions'
+                        'num_expansions',
+                        'total_plays', 'owned', 'prev_owned'
                         ]
 
         db_data = {'db_name': db_name, 'table_name': table_name, 'column_names': column_names}
@@ -138,7 +139,8 @@ def main(start_page, end_page, db_name, headless=False):
         t_mu = tt / len(bgg_data)
 
         print 'Average Time:', t_mu
-        print 'Total Est:', t_mu * 5000.0 / 3600.0, 'hours'
+        estimated_time = t_mu * 5000.0 / 3600.0 / (50 / (start_page - end_page))
+        print 'Total Est: {}'.format(estimated_time)
 
     except TimeoutException as te:
         print te
