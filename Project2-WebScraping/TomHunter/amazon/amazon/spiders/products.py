@@ -1,17 +1,30 @@
-import scrapy
+from scrapy.spiders import CrawlSpider, Rule
+from scrapy.linkextractors import LinkExtractor
+
 import pandas as pd
 from amazon.items import AmazonProductBaseItem
 
 
-class AmazonProductSpider(scrapy.Spider):
+class AmazonProductSpider(CrawlSpider):
     name = "products"
     allowed_domains = ["amazon.com"]
     start_urls = list(pd.read_csv('data/listing_urls.csv')['url'])
 
     # use for LinkExtractors
     # '//div[contains(@id,"summaryStars")]/a' -- links to reviews
+    rules = (
+        Rule(
+            LinkExtractor(
+                allow=(),
+                restrict_xpaths=('//div[@data-p13n-asin-metadata]/a',),
+                # process_value=lambda x: 'https://www.amazon.com' + x
+            ),
+            callback="parse_items",
+            follow=True,
+        ),
+    )
 
-    def parse(self, response):
+    def parse_items(self, response):
 
         def gxp(xpath):
             return response.xpath(xpath)
@@ -20,7 +33,9 @@ class AmazonProductSpider(scrapy.Spider):
             try:
                 if type(text) == list:
                     text = ''.join(text).strip()
-                    return text.replace('\t', '').replace('\n', '').strip()
+                    text = text.replace('\t', '').replace('\n', '')
+                    text = text.replace('<b>', '')
+                    return text.strip()
                 else:
                     return text.replace('\t', '').replace('\n', '').strip()
             except:
@@ -28,7 +43,12 @@ class AmazonProductSpider(scrapy.Spider):
 
         def clean_list(list_text, join=False):
             return list(map(lambda x:
-                            x.replace('\t', '').replace('\n', '').strip(),
+                            x.replace('\t', '').
+                            replace('\n', '').
+                            replace('<b>', '').
+                            replace('</b>', '').
+                            replace(':', '').
+                            strip(),
                             list_text)
                         )
 
@@ -41,6 +61,11 @@ class AmazonProductSpider(scrapy.Spider):
             vals = [x for x in clean_list(vals) if x != '' if x != ')']
             return {keys: vals for keys, vals in list(zip(keys, vals))}
 
+        def update_fields(obj, update):
+            for k in update.keys():
+                obj.fields.update({k: {}})
+            return obj
+
         def get_rating_hist():
             keys = gxp(
                 '//table[contains(@id,"histogramTable")]/tr/td[1]/a/text()'
@@ -51,10 +76,11 @@ class AmazonProductSpider(scrapy.Spider):
             keys = [k.replace(' ', '_') for k in keys]
             return {keys: vals for keys, vals in list(zip(keys, vals))}
 
-        def update_fields(obj, update):
-            for k in update.keys():
-                obj.fields.update({k: {}})
-            return obj
+        def get_root_or_child(self, response):
+            if response.url in self.start_urls:
+                return 'root'
+            else:
+                return 'child'
 
         # xpaths
         product_title = gxp(
@@ -88,22 +114,33 @@ class AmazonProductSpider(scrapy.Spider):
 
         in_stock = gxp('//div[@id="availability"]//text()').extract()
 
-        description = gxp(
+        about = gxp(
             '//div[@id="feature-bullets"]/ul/li/span/text()'
         ).extract()
-        description = ''.join([x + '. ' for x in clean_list(description)])
+        about = ''.join([x + '. ' for x in clean_list(about)])
+        description = gxp(
+            '//div[@id = "productDescription"]/p/text()'
+        ).extract()
 
         review_ratings = get_rating_hist()
 
+        # product info
         prod_info = get_product_info(
             key_xp='//table[contains(@id,"productDetails_detailBullets_sections1")]/tr/th/text()',
             vals_xp='//table[contains(@id,"productDetails_detailBullets_sections1")]/tr/td/text()'
         )
 
-        prod_detail = get_product_info(
-            key_xp='//table[contains(@id,"productDetails_detailBullets_sections1")]/tr/th/text()',
-            vals_xp='//table[contains(@id,"productDetails_detailBullets_sections1")]/tr/td/text()'
-        )
+        # product details
+        isProdDet = gxp(
+            '//div[contains(@id,"detail-bullets")]/table/tr/td/h2/text()'
+        ).extract()
+        if isProdDet == 'Product Details':
+            prod_detail = get_product_info(
+                key_xp='//div[contains(@id,"detail-bullets")]/table/tr/td/div[@class = "content"]/ul/li/b',
+                vals_xp='//div[contains(@id,"detail-bullets")]/table/tr/td/div[@class = "content"]/ul/li/text()'
+            )
+        else:
+            prod_detail = {}
 
         dict_cont = [review_ratings, prod_info, prod_detail]
         items = AmazonProductBaseItem()
@@ -116,6 +153,8 @@ class AmazonProductSpider(scrapy.Spider):
             for k in dc:
                 items[k] = dc[k]
 
+        roc = get_root_or_child(self, response=response)
+
         items['url'] = str(response.url)
         items['product_title'] = clean(product_title)
         items['category'] = clean(category)
@@ -127,6 +166,8 @@ class AmazonProductSpider(scrapy.Spider):
         items['reviews_url'] = clean(reviews_url)
         items['avg_rating'] = clean(avg_rating)
         items['in_stock'] = clean(in_stock)
-        items['description'] = description
+        items['about'] = about
+        items['description'] = clean(description)
+        items['root_or_child'] = roc
 
         yield items
