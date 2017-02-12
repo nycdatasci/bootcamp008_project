@@ -27,7 +27,7 @@ class AmazonProductListing(CrawlSpider):
 
         for product in pages:
             p = AmazonListingItem()
-            root = 'https://www.amazon.com/'
-            p['url'] = root + product
+            root = 'https://www.amazon.com'
+            p['url'] = root + product.replace('?_encoding=UTF8&psc=1', '')
             products.append(p)
         return products
