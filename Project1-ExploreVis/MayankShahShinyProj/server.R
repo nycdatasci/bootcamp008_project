@@ -16,9 +16,8 @@ library(foreign)
 library(readxl)
 library(shiny)
 
-setwd("/Users/mayanks/datascience/Project 1")
 
-MyShape <- readOGR(dsn = ".", layer = "geo_export_64e1323f-442d-4e29-9483-f2a66ac6c867")
+MyShape <- readOGR(dsn = "./data", layer = "geo_export_64e1323f-442d-4e29-9483-f2a66ac6c867")
 MyShapeMapData <- map_data(MyShape)
 MajorKey <- read_excel("MajorKey.xlsx")
 MyShapeMapData <- merge(MyShapeMapData, MajorKey, by.x= 'region', by.y = 'Region', all = TRUE)
@@ -613,7 +612,8 @@ MT15 <- MT15 + geom_polygon(aes(group = group, fill = Occurrences)) + scale_fill
 
 CrimeDataA00 <- recordPlot()
 
-shinyServer(function(input, output) {
+
+shinyServer(function(input, output){
   crime2 <- reactive({
     switch(input$select,
            "Assault" = "A",
@@ -648,4 +648,6 @@ shinyServer(function(input, output) {
   output$plot <- renderPlot({
     get(paste0(crime2(), year2()))
   })
+  
+  
 })

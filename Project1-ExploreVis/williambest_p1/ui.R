@@ -1,4 +1,5 @@
 # ui.R
+library(dplyr)
 library(leaflet)
 library(shinydashboard)
 
@@ -10,8 +11,8 @@ dashboardPage(
                   choices = state.abb[state.abb!="AK" & state.abb!="HI"], multiple=FALSE, selectize=TRUE
       ),
       menuItem("Map", tabName = "storm_map", icon = icon("map")),
-      menuItem("Damage Overview", tabName = "damage_overview", icon = icon("bar-chart")),
-      menuItem("State Data", tabName = "state_data", icon = icon("th")),
+      menuItem("State Comparison", tabName = "state_comparison", icon = icon("bar-chart")),
+      menuItem("State at a Glance", tabName = "state_data", icon = icon("th")),
       menuItem("Options", icon = icon("gear"),
                checkboxInput("include.zero.values", "Include Zero Values", value = FALSE),
                radioButtons("group.by", "Grouping Method", c("By Year" = "Year", "By Storm" = "Storm"), selected = "Year"))
@@ -47,10 +48,11 @@ dashboardPage(
           )
         )
       ),
-      tabItem(tabName = "damage_overview",
+      tabItem(tabName = "state_comparison",
         fluidRow(
-          box(htmlOutput("loss.chart"), width = "100%", height = "250"),
-          box(htmlOutput("casualty.chart"), width = "100%", height = "250")
+          box(htmlOutput("loss.chart"), height = "250"),
+          box(htmlOutput("casualty.chart"), height = "250"),
+          box(htmlOutput("state.comparison"))
         )
       ),
       tabItem(tabName = "state_data",

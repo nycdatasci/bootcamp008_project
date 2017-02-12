@@ -7,7 +7,7 @@ library(sqldf)
 library(corrplot)
 library(shinythemes)
 
-setwd('C:/Users/Shyam/Documents/Bootcamp/Homework/1st_Project')
+# setwd('C:/Users/Shyam/Documents/Bootcamp/Homework/1st_Project')
 rt2 <- read.csv('rt2.csv')
 
 dataurl = "https://raw.githubusercontent.com/swingley/san-diego-neighborhoods/master/data/sdpd_beats.topojson"

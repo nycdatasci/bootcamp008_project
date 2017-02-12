@@ -78,7 +78,7 @@ shinyServer(function(input, output) {
     return(ggplot(data = seldf(v1,v2),aes_string(x =v1)) + geom_density(aes_string(color = v2, fill = v2), alpha = 0.1))
   }
   dens2d2p <- function(v1, v2){
-    return(ggplot(data = seldf(v1,v2),aes_string(x =v1, y = v1)) + geom_density2d())
+    return(ggplot(data = seldf(v1,v2),aes_string(x =v1, y = v2)) + geom_density2d())
   }
   hist2p <- function(v1, v2){
     return(ggplot(data = seldf(v1,v2),aes_string(x =v1)) + geom_histogram(aes_string(fill = v2))) 
