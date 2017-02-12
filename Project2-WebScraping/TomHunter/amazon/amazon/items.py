@@ -13,7 +13,9 @@ class AmazonProductBaseItem(Item):
     reviews_url = Field()
     avg_rating = Field()
     in_stock = Field()
+    about = Field()
     description = Field()
+    root_or_child = Field()
 
 
 class AmazonCategoryItem(Item):
