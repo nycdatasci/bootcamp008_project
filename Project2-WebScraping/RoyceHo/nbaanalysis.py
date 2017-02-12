@@ -5,8 +5,8 @@ import seaborn as sns
 # %matplotlib inline
 print "Run '%matplotlib inline' for graphs "
 
-p = pd.read_csv('nbaplayerstats.csv')
-t = pd.read_csv('nbateamstats.csv')
+p = pd.read_csv('data/nbaplayerstats.csv')
+t = pd.read_csv('data/nbateamstats.csv')
 teamAcr = {'GoldenStateWarriors': 'GSW', 'SanAntonioSpurs': 'SAS', 'HoustonRockets': 'HOU', \
            'ClevelandCavaliers': 'CLE', 'BostonCeltics': 'BOS', 'UtahJazz': 'UTA', 'LAClippers': 'LAC', \
            'MemphisGrizzlies': 'MEM', 'WashingtonWizards': 'WAS', 'TorontoRaptors': 'TOR', 'AtlantaHawks': 'ATL', \
@@ -23,10 +23,10 @@ n = 0
 playerlist = {}
 for i in p['PLAYER']:
     a = i.replace(' ', '')
-    b = pd.read_csv(a + '.csv')
-    c = pd.read_csv(a + 'Def.csv')
+    b = pd.read_csv('data/' + a + '.csv')
+    c = pd.read_csv('data/' + a + 'Def.csv')
     d = p['TEAM'][n]
-    e = pd.read_csv(a + 'gamelog.csv')
+    e = pd.read_csv('data/' + a + 'gamelog.csv')
     e = e.drop(e.columns[0], axis = 1)
     teamRoster[d].append(i)
     playerlist[i] ={'TEAM': d, 'STATS': b, 'DEFSTATS': c, 'GAMELOGS': e}
@@ -56,9 +56,9 @@ n = 0
 t['W-L'] = None
 for i in t['TEAM']:
     a = i.replace(' ', '')
-    b = pd.read_csv(a + '.csv')
+    b = pd.read_csv('data/' + a + '.csv')
     b = b.drop(b.columns[0], axis = 1)
-    c = pd.read_csv(a + 'gamelog.csv')
+    c = pd.read_csv('data/' + a + 'gamelog.csv')
     c = c.drop(c.columns[0], axis = 1)
     d = teamAcr[a]
     t['W-L'][n] = str(t['W'][n]) + '-' + str(t['L'][n])
