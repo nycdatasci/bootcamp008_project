@@ -1,0 +1,81 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This text.
+
+```{r}
+library(
+  "readr", 
+  lib.loc="/Library/Frameworks/R.framework/Versions/3.3/Resources/library"
+)
+library(
+  "dplyr", 
+  lib.loc="/Library/Frameworks/R.framework/Versions/3.3/Resources/library"
+)
+library(
+  "ggplot2", 
+  lib.loc="/Library/Frameworks/R.framework/Versions/3.3/Resources/library"
+)
+```
+
+```{r}
+data.nfl <- 
+  read_tsv("nfldraft.txt", col_names = FALSE)
+
+data.nfl <- 
+  data.nfl %>% 
+  rename(
+    rnd = X1,
+    pick = X2,
+    team = X3,
+    player = X4,
+    position = X5,
+    college = X6,
+    conf = X7
+  ) %>% 
+  filter(is.na(rnd) == FALSE) %>% 
+  mutate_at(
+    vars(team, position, college, conf),
+    funs(factor)
+  )
+
+conf.sub <- 
+  (data.nfl %>% 
+     group_by(conf) %>% 
+     summarise(cnt = n()) %>% 
+     arrange(desc(cnt)) %>% 
+     filter(cnt >= 124))$conf
+position.sub <- 
+  (data.nfl %>% 
+     group_by(position) %>% 
+     summarise(cnt = n()) %>% 
+     arrange(desc(cnt)) %>% 
+     top_n(11))$position
+
+data.nfl.sub <- 
+  data.nfl %>% 
+  filter(conf %in% conf.sub & position %in% position.sub) %>% 
+  
+data.nfl.sub$conf <- 
+  recode(data.nfl.sub$conf, "Big 12" = "B-12", "Big East" = "B-Est", "Big Ten" = "B-Ten", "Pac-10" = "P-10", "Pac-12" = "P-12")  
+
+# ggplot(data.nfl.sub, aes(position, pick)) +
+#   geom_boxplot() + 
+#   facet_wrap(~ conf)
+
+ggplot(data.nfl.sub, aes(conf, pick, fill = conf)) +
+  geom_violin(trim = FALSE)+
+  geom_dotplot(binaxis='y', stackdir='center',
+               stackratio=1, dotsize=1.2) + 
+  facet_wrap(~ position) + 
+  scale_y_reverse(lim = c(250, 0)) + 
+  scale_fill_brewer(palette="Dark2") + 
+  labs(
+    title = "2006-2016 NFL Drafts",
+    x = "College Conference",
+    y = "Draft Pick"
+  ) + 
+  theme_minimal()
+```

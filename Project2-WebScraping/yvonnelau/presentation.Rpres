@@ -1,0 +1,44 @@
+Skincare Products Recommendation System
+========================================================
+author: Yvonne Lau
+date: February 12, 2017
+autosize: true
+
+Introduction
+========================================================
+- Dataset: Data scrapped from totalbeauty.com using Scrapy framework in Python. 
+Dataset contains about 50,000 rows with reviews from 6,000 Skincare Products from 2008 to 2017
+
+![tb](tb_website.png)
+
+Problem
+========================================================
+- <b> Problem:</b> As a skincare products enthusiast, I often found myself spending hours looking over reviews to find an ideal match.
+- From distribution of ratings: more than 50% of reviews are 9 or higher. -> Finding a product of quality is not the issue, the problem is finding a product to suit one's needs
+
+Solution
+========================================================
+- Create a recommendation system to obtain product suggestions based on user preferences (e.g orange scent product for sensitive skin)
+- Method: 
+- 1) Use NLP to parse through reviews by creating a tf-idf measure. TF-IDF is one of the most basic NLP techniques - it is essentially a measure of how important a word is to a given Product in a collection of Products.
+- 2) After quantifying words with vectors, we can assign products to a query by calculating the cosine-similarity between queries and diffrent Products, returning products with the highest cosine similarity
+
+TF-IDF
+========================================================
+- TF: Term Frequency also known as TF measures the number of times a term (word) occurs within Reviews for a particular product
+- IDF: logaritmic measurement of the frequency of a term within a document, helps weigh down words that appear too often across all documents 
+
+
+![tfidf](tf-idf.png)
+
+Cosine Similarity
+========================================================
+The set of products is viewed as a set of vectors in a vector space. Each term will have its own axis. Using the formula given below we can find out the similarity between any two Products. 
+![cossim](cossim.png)
+
+Further Improvements
+========================================================
+- Process words/misspellings to account for that "clean" and "cleaaan" are accounted as the same word
+- Perform sentiment analysis to find which reviews are positive negative
+
+
