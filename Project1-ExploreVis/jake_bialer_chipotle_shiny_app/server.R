@@ -17,7 +17,7 @@ function(input, output) {
   
   great_df <- reactive({
     yelps_ratings= input$yelp
-    if(input$yelp_min>0){
+    if(input$yelp_min>=0){
       df= subset(super_burrito, review_count>input$yelp_min) 
       subset(df, rating>=yelps_ratings[1] & rating<=yelps_ratings[2]) 
       
@@ -27,16 +27,35 @@ function(input, output) {
     }
   })   
 
+  greater_df <- reactive({
+    if(input$shortage){
+      great_df()[is.na(great_df()$"message"),]
+    }else{
+      great_df()
+    }
+    
+  }
+    
+    
+  )
+  pallette <- reactive({
+    data= greater_df()
+    pal <- colorNumeric(
+      palette = c("#addd82","#78c679",'#41ab5d','#238443','#006837','#004529'),
+      domain = data[,paste0(input$menu_item1,plotType())]
+    )
+    print(pal)
+    
+  })
 
 
    
 output$mymap = renderLeaflet({   
-  
-  leaflet(data = great_df()) %>% addProviderTiles("Stamen.Toner") %>%
+  leaflet(data = greater_df()) %>% addProviderTiles("Stamen.Toner") %>%
     addCircleMarkers(~long, 
                      ~lat,
-                     radius=1,
-                     color = ~pal(get(paste0("Steak Burrito",plotType()))),
+                     radius=5,
+                     color = ~pallette()(get(paste0(input$menu_item1,plotType()))),
                      popup=~paste("Address:",address.x,"<br>",
                                   "City:",city.x,"<br>",
                                   "State:",state,"<br>",
@@ -44,6 +63,7 @@ output$mymap = renderLeaflet({
                                   "Hours:",hours,"<br>",
                                   "Tax Rate:", rate, "<br>",
                                   "Yelp Rating:",rating,"<br>",
+                                  "Food Shortage:",message,"<br>",
                                   "Number of Yelp Reviews:", review_count, "<br>",
                                   "Steak Burrito Price:",get(paste0("Steak Burrito",plotType())),"<br>",
                                   "Chicken Burrito Price:",get(paste0("Chicken Burrito",plotType())),"<br>",
@@ -52,7 +72,11 @@ output$mymap = renderLeaflet({
                                   "Chorizo Burrito Price:",get(paste0("Chorizo Burrito",plotType())),"<br>",
                                   "Sofritas Burrito Price:",get(paste0("Sofritas Burrito",plotType())),"<br>",
                                   "Veggie Burrito Price:",get(paste0("Veggie Burrito",plotType()))
-                     ))
+                     )) %>% addLegend("bottomright", pal = pallette(), values = ~get(paste0(input$menu_item1,plotType())),
+                                      title = paste0(input$menu_item1," Price"),
+                                      labFormat = labelFormat(prefix = "$"),
+                                      opacity = 1
+                     )
   
     })
 
@@ -71,11 +95,11 @@ output$mymap = renderLeaflet({
 
   output$num_countries <- renderValueBox({
     
-    # num_countries=length(unique(steak_burrito$country))
+    num_countries=length(unique(steak_burrito$country))
     
 
     valueBox(
-      value = formatC(5, digits = 0, format = "f"),
+      value = formatC(num_countries, digits = 0, format = "f"),
       subtitle = "Number of Countries",
       color = "aqua"
     )
@@ -93,7 +117,6 @@ output$mymap = renderLeaflet({
       color =  "aqua"
     )
   })
-  
   
   
 
@@ -137,7 +160,7 @@ output$plot <- renderPlot(
 output$plot2 <- renderPlot(
   ggplot(carnitas_map, aes(map_id = state)) + geom_map(aes(fill=percent),map=states_map) +scale_fill_distiller(palette = "Reds",direction=1)+
     expand_limits(x = states_map$long, y = states_map$lat)+ theme_bw() + labs(title=paste0("Chipotles With Carnitas That Doesn't Meet Antibiotic Protocol"))+
-    guides(fill=guide_legend(title="% of Chipotles"))
+    guides(fill=guide_legend(title="% of Chipotles")) +coord_map()
   )
 
 

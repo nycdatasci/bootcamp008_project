@@ -1,4 +1,5 @@
 ## server.R ##
+
 library(scales)
 library(dplyr)
 library(ggplot2)
@@ -7,6 +8,7 @@ library(ggvis)
 library(leaflet)
 library(RColorBrewer)
 library(DT)
+library(googleVis)
 
 
 shinyServer(

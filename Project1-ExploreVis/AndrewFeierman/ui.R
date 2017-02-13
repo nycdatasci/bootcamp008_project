@@ -1,6 +1,9 @@
 ## ui.R ##
+library(googleVis)
 library(shiny)
 library(shinydashboard)
+library(ggvis)
+
 
   sidebar <- dashboardSidebar(
     
@@ -20,13 +23,13 @@ library(shinydashboard)
 
   home <- tags$html(
     tags$head(
-      tags$title('Energy Benchmarking Dashboard')
+      tags$title('Building Energy Dashboard')
     ),
     tags$body(
       leafletOutput("map", width = "100%", height = "750"),
       absolutePanel(id = "controls", class = "panel panel-default", fixed = TRUE,
                     draggable = TRUE, top = 100, right = 25, bottom = "auto", left = "auto",
-                    width = 250, height = "auto", cursor = "default",
+                    width = 250, height = "auto", cursor = "auto",
                     h3(strong('The Building Energy Dashboard')),
                     p('In the United States, a group of progressive cities have begun collecting and publicly reporting energy consumption of large buildings.'),
                     p('This map shows average building energy consumption within each zip code.'),

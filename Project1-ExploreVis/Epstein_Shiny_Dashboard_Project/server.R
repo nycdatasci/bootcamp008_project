@@ -4,6 +4,7 @@ library(rCharts)
 library(ggplot2)
 library(dplyr)
 library(scales)
+library(DT)
 
 source('global.R')
 attach('./data/combined_movies.rda')
@@ -65,7 +66,7 @@ observe( {
     data = reactive_dataset()
     stripped_data <- data[!is.na(data$Film), c('Film', 'Year', 'Director', 'Budget', 'Gross', 'Duration', 'IMDB')]
     cleaned_data <- stripped_data[!duplicated(stripped_data),]
-    DT::datatable(cleaned_data, rownames = FALSE) %>% formatStyle(input$selected, background = 'skyblue', fontWeight = 'bold')
+    DT::datatable(cleaned_data, rownames = FALSE) %>% DT::formatStyle(input$selected, background = 'skyblue', fontWeight = 'bold')
     })
   })
   

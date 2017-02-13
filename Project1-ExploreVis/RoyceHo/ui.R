@@ -24,16 +24,16 @@ shinyUI(dashboardPage(
     ),
     tabItems(
       tabItem(tabName = "home",
-              fluidRow(column( 12, h3("Eating and Health Module"), br(),
+              fluidRow(column( 12, h3("Eating and Health Module"),
                        p("The American Time Use Survey, collected by the US Department of Labor, provides estimates of
                          how Americans spend their time. This application was built to specifically view the Eating and
                          Health module of the survey. The data is used to examine eating and drinking patterns and how it
-                         relates to one's health."),br(),
-                       a("For more information, please visit their website", href = "https://www.bls.gov/tus/ehdatafiles.htm"), br(),
-                       h5("Graphs"), p("The related variables have been grouped together and can individually 
-                        be plotted against important health related variables."), br(),
-                       h5("Interactive"), br(), p("Variables can be plotted against each other to view their relationships."),br(),
-                       h5("Dictionary"),br(), p("Short summary of the questions related to each variable.")
+                         relates to one's health."),
+                       a("For more information, please visit their website", href = "https://www.bls.gov/tus/ehdatafiles.htm"),
+                       h4("Graphs"), p("The related variables have been grouped together and can individually 
+                        be plotted against important health related variables."),
+                       h4("Interactive"), p("Variables can be plotted against each other to view their relationships."),
+                       h4("Dictionary"), p("Short summary of the questions related to each variable.")
                     
                        ))
               ),
@@ -46,7 +46,7 @@ shinyUI(dashboardPage(
                        ),
               fluidRow(plotOutput(outputId = "hplot")
                        ),
-              fluidRow( column(12, h3("Variables"),
+              fluidRow( column(12, h4("Variables"),
                         verbatimTextOutput("hv1"),
                         verbatimTextOutput("hv2"),
                         verbatimTextOutput("hv3")
