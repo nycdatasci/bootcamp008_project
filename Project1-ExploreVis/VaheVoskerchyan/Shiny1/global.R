@@ -6,7 +6,7 @@ library(ggthemes)
 library(shiny)
 
 
-thestepmother <- read.csv('/Users/vMac/Desktop/Bootcamp/Project/Shiny1/data/thestepmother.csv',
+thestepmother <- read.csv('./data/thestepmother.csv',
                           stringsAsFactors = F)
 
 thestepmother[ ,"state"] <- as.factor(thestepmother$state)

@@ -13,7 +13,7 @@ shinyUI(dashboardPage(
   dashboardSidebar(
     sidebarUserPanel(
       name = 'Vahe Voskerchyan',
-      image = img(src = './Shiny1/image/Vahe.jpg')),
+      image = img(src = '../image/Vahe.jpg')),
     sidebarMenu(
       menuItem("Quarters", tabName = "quarter", icon = icon("bar-chart")),
       menuItem("Years", tabName = "year", icon = icon("bar-chart")))

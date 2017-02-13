@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+{% block body %} 
+
+<head>
+    <title>Listen Local Alpha</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script>
+      $( function() {
+        var dateFormat = "yyyy/mm/dd",
+          from = $( "#from" )
+            .datepicker({
+              defaultDate: "+1w",
+              changeMonth: true,
+              numberOfMonths: 1
+            })
+            .on( "change", function() {
+              to.datepicker( "option", "minDate", getDate( this ) );
+            }),
+          to = $( "#to" ).datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            numberOfMonths: 1
+          })
+          .on( "change", function() {
+            from.datepicker( "option", "maxDate", getDate( this ) );
+          });
+     
+        function getDate( element ) {
+          var date;
+          try {
+            date = $.datepicker.parseDate( dateFormat, element.value );
+          } catch( error ) {
+            date = null;
+          }
+          return date;
+        }
+      } );
+      </script>
+
+      <script>
+        $( function() {
+          var availableTags = {{  venues|tojson }};
+          $( "#venue" ).autocomplete({
+            source: availableTags,
+            delay: 300,
+            minLength: 3
+          });
+        } );
+      </script>
+
+    <script type=text/javascript>
+      $(function() {
+        $('a#submit_date').on('click', function() {
+        $.getJSON('/create_playlist', {
+          from: $('input[name="from"]').val(),
+          to: $('input[name="to"]').val(),
+          venue: $('input[name="venue"]').val(),
+        }, function(data) {
+          $("#result").text(data.result);
+        });
+        return false;
+        });
+      });
+    </script>
+
+</head>
+
+    <div class="container">
+        <div class="header">
+            <h3 class="text-muted">Python Flask App</h3>
+        </div>
+ 
+        <div class="jumbotron">
+            <h4>Set dates, choose venue, click button, enjoy tunes!</h4>
+            <p class="lead"></p>
+            <p>
+                <label for="from">From</label>
+                <input type="text" id="from" name="from">
+                <label for="to">to</label>
+                <input type="text" id="to" name="to">
+            </p>
+
+            <div class="ui-widget">
+              <label for="venue">Select Venue: </label>
+              <input type="text" id="venue" name="venue">
+            </div>
+
+        </div>
+        <p></p>
+        <div>
+          <form>
+            <a href=# id=submit_date><button class='btn btn-default'>Create Playlist!</button></a>
+          </form>
+        <p id=result>?</p>
+        </div>
+        
+        {% for item in sorted_array%}
+		    <p> {{ item }} </p>
+		    {% endfor %}
+ 
+        <footer class="footer">
+            <p>&copy; Andrew Feierman 2017</p>
+        </footer>
+ 
+    </div>
+{% endblock %}

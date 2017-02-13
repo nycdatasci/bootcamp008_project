@@ -1,3 +1,5 @@
+library(dplyr)
+
 windowed.bar.chart <- function(df, filter.col, filter.val, size.left, size.right) {
   idx <- which(df[, filter.col] == filter.val)
   # range will be 4 above and below

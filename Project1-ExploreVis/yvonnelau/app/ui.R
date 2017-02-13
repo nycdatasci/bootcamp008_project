@@ -102,7 +102,7 @@ dashboardPage(skin = "green",
                 htmlOutput("days_close_hist"))),
               fluidRow(box(
                 width = 12, status ="success", solidHeader = TRUE,
-                title = "Scores of Restaurants closed due to Health Violations",
+                title = "Scores of Restaurants closed due to Health Violations vs length of closure",
                 plotlyOutput("days_close_barplot")))),
       tabItem(tabName = "closure_prob",
               fluidRow(box(width = 6,height =150,
