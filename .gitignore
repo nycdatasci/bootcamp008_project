@@ -10,3 +10,6 @@ Project1-ExploreVis/TomHunter/Heat\ Seek\ NYC\ data\ 6-16\ to\ 6-17.csv
 *.ipynb_checkpoints/
 *.Rapp.history
 *.DS_Store
+
+*.pyc
+*~
