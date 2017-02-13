@@ -152,6 +152,7 @@ function(input, output, session) {
     compare[compare$st == input$state, "Other States"] <- NA
     
     gvisScatterChart(compare[, c(-1)], options = list(colors = "['blue', 'gold']",
+                                                      legend = "none",
                                                       title = "Position Comparison with All Other States",
                                                       hAxis = "{title:'National Loss Position'}",
                                                       vAxis = "{title:'National Casualty Position'}",
