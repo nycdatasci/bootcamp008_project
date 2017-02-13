@@ -21,7 +21,7 @@ dashboardPage(
                      label = 'Select Variable to Search',
                      choices = c("ASIN", "Product_Title", 'Category', 'Manufacturer', 'Origin','Sale_Price', 
                                   "Avg_Customer_Rating", "Number_of_Customer Questions","Number_of_Reviews", 
-                                 "List_Price", "1_Star_%", "2_Star_%","3_Star_%","4_Star_%", "5_Star_%")
+                                 "List_Price", "OneStarPct", "TwoStarPct","ThreeStarPct","FourStarPct", "FiveStarPct")
                      )
     ),
     conditionalPanel(
@@ -46,8 +46,8 @@ dashboardPage(
       condition = "input.menu1 == 'histogram'",  
       selectInput('var',
                   label = 'Choose a variable to view as a histogram',
-                  choices = c('Avg_Customer_Rating', "1_Star_%",
-                              "2_Star_%","3_Star_%","4_Star_%", "5_Star_%"),
+                  choices = c('Avg_Customer_Rating', "OneStarPct",
+                              "TwoStarPct","ThreeStarPct","FourStarPct", "FiveStarPct"),
                   selected = 'Avg_Customer_Rating'
                   )
     ),
@@ -61,8 +61,8 @@ dashboardPage(
       selectizeInput('yvar_box',
                      label = 'Choose Y-axis variable',
                      choices = c('Sale_Price', 'Avg_Customer_Rating', "Number_of_Customer_Questions",
-                                 "Number_of_Reviews", "List_Price", "1_Star_%", "2_Star_%","3_Star_%",
-                                 "4_Star_%", "5_Star_%"), 
+                                 "Number_of_Reviews", "List_Price", "OneStarPct", "TwoStarPct","ThreeStarPct",
+                                 "FourStarPct", "FiveStarPct"), 
                      selected = 'Sale_Price'
       )
     ),
@@ -71,21 +71,22 @@ dashboardPage(
       condition = "input.menu1 == 'scatter'",
       selectizeInput('xvar',
                      label = 'Choose X-axis variable',
-                     choices = c('Sale_Price', 'Avg Customer_Rating', "Number_of_Customer_Questions",
-                                 "Number_of_Reviews", "List_Price", "1_Star_%", "2_Star_%","3_Star_%",
-                                 "4_Star_%", "5_Star_%"),
-                     selected = "5_Star_%"
+                     choices = c('Sale_Price', 'Avg_Customer_Rating', "Number_of_Customer_Questions",
+                                 "Number_of_Reviews", "List_Price", "OneStarPct", "TwoStarPct","ThreeStarPct",
+                                 "FourStarPct", "FiveStarPct"),
+                     selected = "FiveStarPct"
       ),
       selectizeInput('yvar',
                      label = 'Choose Y-axis variable',
-                     choices = c('Sale_Price', 'Avg Customer_Rating', "Number_of_Customer_Questions",
-                                 "Number_of_Reviews", "List_Price", "1_Star_%", "2_Star_%","3_Star_%",
-                                 "4_Star_%", "5_Star_%"),
-                     selected = 'Avg Customer Rating'
+                     choices = c('Sale_Price', 'Avg_Customer_Rating', "Number_of_Customer_Questions",
+                                 "Number_of_Reviews", "List_Price", "OneStarPct", "TwoStarPct","ThreeStarPct",
+                                 "FourStarPct", "FiveStarPct"),
+                     selected = 'Avg_Customer_Rating'
       ),
       selectizeInput('factor',
                      label = 'Choose a factor',
-                     choices = c('Category', 'Manufacturer', 'Origin'), selected = 'Category')
+                     choices = c('Category', 'Manufacturer', 'Origin'), 
+                     selected = 'Origin')
     )
   ),
   dashboardBody( 
