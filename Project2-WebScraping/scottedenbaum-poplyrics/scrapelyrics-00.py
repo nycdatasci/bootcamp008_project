@@ -1,7 +1,6 @@
 import re
 import requests
 import nltk
-from sys import version_info
 from bs4 import BeautifulSoup
 from tswift import Song
 from tswift import Artist
@@ -16,7 +15,7 @@ def clean_song(title, artist):
 	elif title.find('!') > 0:
 		title = title.replace('!', '')
 	elif title.find('#') > 0:
-		title = title.replace('.', '')
+		title = title.replace('#', '')
 	elif title.find('.') > 0:
 		title = title.replace('.', '')
 	elif title.find(',') > 0:
@@ -30,7 +29,7 @@ def clean_song(title, artist):
 	elif title.find('('):
 		title = title.split( ' (')[0]
 
-	c_title = title.lower().strip().replace(' ', '-')replace('.', '').replace("'", "").replace('!', '').replace(',', '').replace('$', '').replace('?', '').replace('&', '').replace('#', '')
+	c_title = title.lower().strip().replace(' ', '-')
 
 	if artist.find('"') > 0:
 		artist = artist.replace('"', '')
@@ -49,18 +48,12 @@ def clean_song(title, artist):
 	elif artist.find(' feat') > 0:
 		artist = artist.split(' feat')[0]
 		
-	c_artist = artist.lower().strip().replace('/','').replace('.', '').replace(' ', '-').replace("'", '').replace('"', '').replace(',', '')
+	c_artist = artist.lower().strip().replace(' ', '-')
 
 	return(c_title, c_artist)
 
 def main():
-	#file = 'billboard100-00s.csv'
-	py3 = version_info[0] > 2 #creates boolean value for test that Python major version > 2
-
-	if py3:
-		file = input("Please enter billboard | separated .csv file: ")
-	else:
-		file = raw_input("Please enter billboard | separated .csv file: ")
+	file = 'billboard100-00s.csv'
 	with open(file, 'r') as f:
 		f.readline()
 		for line  in f.readlines():
@@ -78,7 +71,7 @@ def main():
 					if chartyear:
 						r_chartyear = chartyear[:4]
 					c_title, c_artist = clean_song(r_title, r_artist)
-					writename = 'lyrics/' + str(r_chartyear) + '-' + c_artist + '-' + c_title + '.txt'
+					writename = 'lyrics/' + str(r_chartyear) + c_artist + '-' + c_title + '.txt'
 			
 					dir = os.path.dirname(writename)
 					if not os.path.exists(dir):
@@ -91,7 +84,7 @@ def main():
 						print e
 						continue
 					try:
-						songlyrics = Song(title = c_title, artist = c_artist,).lyrics.format().replace('\n',"")
+						songlyrics = Song(title = c_title, artist = c_artist,).lyrics.format().replace("\n","|")
 					except Exception, e:
 						print "Exception occurred with the format function!"
 						print e
