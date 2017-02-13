@@ -1,0 +1,881 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(0, 'iterations', 'list is ', 1, 'is finished')\n",
+      "(1, 'iterations', 'list is ', 2, 'is finished')\n",
+      "(2, 'iterations', 'list is ', 3, 'is finished')\n",
+      "(3, 'iterations', 'list is ', 4, 'is finished')\n",
+      "(4, 'iterations', 'list is ', 5, 'is finished')\n",
+      "(5, 'iterations', 'list is ', 6, 'is finished')\n",
+      "(6, 'iterations', 'list is ', 7, 'is finished')\n",
+      "(7, 'iterations', 'list is ', 8, 'is finished')\n",
+      "(8, 'iterations', 'list is ', 9, 'is finished')\n",
+      "(9, 'iterations', 'list is ', 10, 'is finished')\n",
+      "(10, 'iterations', 'list is ', 11, 'is finished')\n",
+      "(11, 'iterations', 'list is ', 12, 'is finished')\n",
+      "(12, 'iterations', 'list is ', 13, 'is finished')\n",
+      "(13, 'iterations', 'list is ', 14, 'is finished')\n",
+      "(14, 'iterations', 'list is ', 15, 'is finished')\n",
+      "(15, 'iterations', 'list is ', 16, 'is finished')\n",
+      "(16, 'iterations', 'list is ', 17, 'is finished')\n",
+      "(17, 'iterations', 'list is ', 18, 'is finished')\n",
+      "(18, 'iterations', 'list is ', 19, 'is finished')\n",
+      "(19, 'iterations', 'list is ', 20, 'is finished')\n",
+      "(20, 'iterations', 'list is ', 21, 'is finished')\n",
+      "(21, 'iterations', 'list is ', 22, 'is finished')\n",
+      "(22, 'iterations', 'list is ', 23, 'is finished')\n",
+      "(23, 'iterations', 'list is ', 24, 'is finished')\n",
+      "(24, 'iterations', 'list is ', 25, 'is finished')\n",
+      "(25, 'iterations', 'list is ', 26, 'is finished')\n",
+      "(26, 'iterations', 'list is ', 27, 'is finished')\n",
+      "(27, 'iterations', 'list is ', 28, 'is finished')\n",
+      "(28, 'iterations', 'list is ', 29, 'is finished')\n",
+      "(29, 'iterations', 'list is ', 30, 'is finished')\n",
+      "(30, 'iterations', 'list is ', 31, 'is finished')\n",
+      "(31, 'iterations', 'list is ', 32, 'is finished')\n",
+      "(32, 'iterations', 'list is ', 33, 'is finished')\n",
+      "(33, 'iterations', 'list is ', 34, 'is finished')\n",
+      "(34, 'iterations', 'list is ', 35, 'is finished')\n",
+      "(35, 'iterations', 'list is ', 36, 'is finished')\n",
+      "(36, 'iterations', 'list is ', 37, 'is finished')\n",
+      "(37, 'iterations', 'list is ', 38, 'is finished')\n",
+      "(38, 'iterations', 'list is ', 39, 'is finished')\n",
+      "(39, 'iterations', 'list is ', 40, 'is finished')\n",
+      "(40, 'iterations', 'list is ', 41, 'is finished')\n",
+      "(41, 'iterations', 'list is ', 42, 'is finished')\n",
+      "(42, 'iterations', 'list is ', 43, 'is finished')\n",
+      "(43, 'iterations', 'list is ', 44, 'is finished')\n",
+      "(44, 'iterations', 'list is ', 45, 'is finished')\n",
+      "(45, 'iterations', 'list is ', 46, 'is finished')\n",
+      "(46, 'iterations', 'list is ', 47, 'is finished')\n",
+      "(47, 'iterations', 'list is ', 48, 'is finished')\n",
+      "(48, 'iterations', 'list is ', 49, 'is finished')\n",
+      "(49, 'iterations', 'list is ', 50, 'is finished')\n",
+      "(50, 'iterations', 'list is ', 51, 'is finished')\n",
+      "(51, 'iterations', 'list is ', 52, 'is finished')\n",
+      "(52, 'iterations', 'list is ', 53, 'is finished')\n",
+      "(53, 'iterations', 'list is ', 54, 'is finished')\n",
+      "(54, 'iterations', 'list is ', 55, 'is finished')\n",
+      "(55, 'iterations', 'list is ', 56, 'is finished')\n",
+      "(56, 'iterations', 'list is ', 57, 'is finished')\n",
+      "(57, 'iterations', 'list is ', 58, 'is finished')\n",
+      "(58, 'iterations', 'list is ', 59, 'is finished')\n",
+      "(59, 'iterations', 'list is ', 60, 'is finished')\n",
+      "(60, 'iterations', 'list is ', 61, 'is finished')\n",
+      "(61, 'iterations', 'list is ', 62, 'is finished')\n",
+      "(62, 'iterations', 'list is ', 63, 'is finished')\n",
+      "(63, 'iterations', 'list is ', 64, 'is finished')\n",
+      "(64, 'iterations', 'list is ', 65, 'is finished')\n",
+      "(65, 'iterations', 'list is ', 66, 'is finished')\n",
+      "(66, 'iterations', 'list is ', 67, 'is finished')\n",
+      "(67, 'iterations', 'list is ', 68, 'is finished')\n",
+      "(68, 'iterations', 'list is ', 69, 'is finished')\n",
+      "(69, 'iterations', 'list is ', 70, 'is finished')\n",
+      "(70, 'iterations', 'list is ', 71, 'is finished')\n",
+      "(71, 'iterations', 'list is ', 72, 'is finished')\n",
+      "(72, 'iterations', 'list is ', 73, 'is finished')\n",
+      "(73, 'iterations', 'list is ', 74, 'is finished')\n",
+      "(74, 'iterations', 'list is ', 75, 'is finished')\n",
+      "(75, 'iterations', 'list is ', 76, 'is finished')\n",
+      "(76, 'iterations', 'list is ', 77, 'is finished')\n",
+      "(77, 'iterations', 'list is ', 78, 'is finished')\n",
+      "(78, 'iterations', 'list is ', 79, 'is finished')\n",
+      "(79, 'iterations', 'list is ', 80, 'is finished')\n",
+      "(80, 'iterations', 'list is ', 81, 'is finished')\n",
+      "(81, 'iterations', 'list is ', 82, 'is finished')\n",
+      "(82, 'iterations', 'list is ', 83, 'is finished')\n",
+      "(83, 'iterations', 'list is ', 84, 'is finished')\n",
+      "(84, 'iterations', 'list is ', 85, 'is finished')\n",
+      "(85, 'iterations', 'list is ', 86, 'is finished')\n",
+      "(86, 'iterations', 'list is ', 87, 'is finished')\n",
+      "(87, 'iterations', 'list is ', 88, 'is finished')\n",
+      "(89, 'iterations', 'list is ', 89, 'is finished')\n",
+      "(90, 'iterations', 'list is ', 90, 'is finished')\n",
+      "(91, 'iterations', 'list is ', 91, 'is finished')\n",
+      "(92, 'iterations', 'list is ', 92, 'is finished')\n",
+      "(93, 'iterations', 'list is ', 93, 'is finished')\n",
+      "(94, 'iterations', 'list is ', 94, 'is finished')\n",
+      "(95, 'iterations', 'list is ', 95, 'is finished')\n",
+      "(96, 'iterations', 'list is ', 96, 'is finished')\n",
+      "(97, 'iterations', 'list is ', 97, 'is finished')\n",
+      "(98, 'iterations', 'list is ', 98, 'is finished')\n",
+      "(99, 'iterations', 'list is ', 99, 'is finished')\n",
+      "(100, 'iterations', 'list is ', 100, 'is finished')\n",
+      "(101, 'iterations', 'list is ', 101, 'is finished')\n",
+      "(102, 'iterations', 'list is ', 102, 'is finished')\n",
+      "(103, 'iterations', 'list is ', 103, 'is finished')\n",
+      "(104, 'iterations', 'list is ', 104, 'is finished')\n",
+      "(105, 'iterations', 'list is ', 105, 'is finished')\n",
+      "(106, 'iterations', 'list is ', 106, 'is finished')\n",
+      "(109, 'iterations', 'list is ', 107, 'is finished')\n",
+      "(110, 'iterations', 'list is ', 108, 'is finished')\n",
+      "(111, 'iterations', 'list is ', 109, 'is finished')\n",
+      "(112, 'iterations', 'list is ', 110, 'is finished')\n",
+      "(113, 'iterations', 'list is ', 111, 'is finished')\n",
+      "(114, 'iterations', 'list is ', 112, 'is finished')\n",
+      "(115, 'iterations', 'list is ', 113, 'is finished')\n",
+      "(116, 'iterations', 'list is ', 114, 'is finished')\n",
+      "(117, 'iterations', 'list is ', 115, 'is finished')\n",
+      "(118, 'iterations', 'list is ', 116, 'is finished')\n",
+      "(119, 'iterations', 'list is ', 117, 'is finished')\n",
+      "(120, 'iterations', 'list is ', 118, 'is finished')\n",
+      "(121, 'iterations', 'list is ', 119, 'is finished')\n",
+      "(122, 'iterations', 'list is ', 120, 'is finished')\n",
+      "(123, 'iterations', 'list is ', 121, 'is finished')\n",
+      "(124, 'iterations', 'list is ', 122, 'is finished')\n",
+      "(126, 'iterations', 'list is ', 123, 'is finished')\n",
+      "(127, 'iterations', 'list is ', 124, 'is finished')\n",
+      "(128, 'iterations', 'list is ', 125, 'is finished')\n",
+      "(129, 'iterations', 'list is ', 126, 'is finished')\n",
+      "(130, 'iterations', 'list is ', 127, 'is finished')\n",
+      "(131, 'iterations', 'list is ', 128, 'is finished')\n",
+      "(132, 'iterations', 'list is ', 129, 'is finished')\n",
+      "(133, 'iterations', 'list is ', 130, 'is finished')\n",
+      "(134, 'iterations', 'list is ', 131, 'is finished')\n",
+      "(135, 'iterations', 'list is ', 132, 'is finished')\n",
+      "(136, 'iterations', 'list is ', 133, 'is finished')\n",
+      "(137, 'iterations', 'list is ', 134, 'is finished')\n",
+      "(138, 'iterations', 'list is ', 135, 'is finished')\n",
+      "(139, 'iterations', 'list is ', 136, 'is finished')\n",
+      "(140, 'iterations', 'list is ', 137, 'is finished')\n",
+      "(141, 'iterations', 'list is ', 138, 'is finished')\n",
+      "(142, 'iterations', 'list is ', 139, 'is finished')\n",
+      "(143, 'iterations', 'list is ', 140, 'is finished')\n",
+      "(144, 'iterations', 'list is ', 141, 'is finished')\n",
+      "(145, 'iterations', 'list is ', 142, 'is finished')\n",
+      "(146, 'iterations', 'list is ', 143, 'is finished')\n",
+      "(147, 'iterations', 'list is ', 144, 'is finished')\n",
+      "(148, 'iterations', 'list is ', 145, 'is finished')\n",
+      "(149, 'iterations', 'list is ', 146, 'is finished')\n",
+      "(150, 'iterations', 'list is ', 147, 'is finished')\n",
+      "(151, 'iterations', 'list is ', 148, 'is finished')\n"
+     ]
+    },
+    {
+     "ename": "KeyboardInterrupt",
+     "evalue": "",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-6-84d28ad96a8b>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m     25\u001b[0m \u001b[0mi\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;36m0\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     26\u001b[0m \u001b[0;32mwhile\u001b[0m \u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mrecipelist\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m<\u001b[0m \u001b[0;36m200\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 27\u001b[0;31m     \u001b[0;32mif\u001b[0m \u001b[0mgetlinks\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mstr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mrecipes\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mstr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mi\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0;34m'#'\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mstr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mi\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0mNone\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     28\u001b[0m         \u001b[0mi\u001b[0m \u001b[0;34m+=\u001b[0m \u001b[0;36m1\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     29\u001b[0m     \u001b[0;32melse\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m<ipython-input-6-84d28ad96a8b>\u001b[0m in \u001b[0;36mgetlinks\u001b[0;34m(x)\u001b[0m\n\u001b[1;32m     14\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     15\u001b[0m \u001b[0;32mdef\u001b[0m \u001b[0mgetlinks\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 16\u001b[0;31m     \u001b[0msoup\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0murltobso\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     17\u001b[0m     \u001b[0;32mfor\u001b[0m \u001b[0mi\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mrange\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0msoup\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mfindAll\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'article'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m{\u001b[0m\u001b[0;34m'class'\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m'grid-col--fixed-tiles'\u001b[0m\u001b[0;34m}\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     18\u001b[0m         \u001b[0mk\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0msoup\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mfindAll\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'article'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m{\u001b[0m\u001b[0;34m'class'\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m'grid-col--fixed-tiles'\u001b[0m\u001b[0;34m}\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mi\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mfind\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;32mlambda\u001b[0m \u001b[0mtag\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0mtag\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mhas_attr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'href'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m<ipython-input-6-84d28ad96a8b>\u001b[0m in \u001b[0;36murltobso\u001b[0;34m(url)\u001b[0m\n\u001b[1;32m      9\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     10\u001b[0m \u001b[0;32mdef\u001b[0m \u001b[0murltobso\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0murl\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 11\u001b[0;31m     \u001b[0mtext\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mrequests\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mget\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0murl\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mtext\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     12\u001b[0m     \u001b[0mx\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mBeautifulSoup\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mtext\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     13\u001b[0m     \u001b[0;32mreturn\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/site-packages/requests/api.pyc\u001b[0m in \u001b[0;36mget\u001b[0;34m(url, params, **kwargs)\u001b[0m\n\u001b[1;32m     68\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     69\u001b[0m     \u001b[0mkwargs\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msetdefault\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'allow_redirects'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 70\u001b[0;31m     \u001b[0;32mreturn\u001b[0m \u001b[0mrequest\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'get'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0murl\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mparams\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mparams\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     71\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     72\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/site-packages/requests/api.pyc\u001b[0m in \u001b[0;36mrequest\u001b[0;34m(method, url, **kwargs)\u001b[0m\n\u001b[1;32m     54\u001b[0m     \u001b[0;31m# cases, and look like a memory leak in others.\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     55\u001b[0m     \u001b[0;32mwith\u001b[0m \u001b[0msessions\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mSession\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0msession\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 56\u001b[0;31m         \u001b[0;32mreturn\u001b[0m \u001b[0msession\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mrequest\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmethod\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mmethod\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0murl\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0murl\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     57\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     58\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/site-packages/requests/sessions.pyc\u001b[0m in \u001b[0;36mrequest\u001b[0;34m(self, method, url, params, data, headers, cookies, files, auth, timeout, allow_redirects, proxies, hooks, stream, verify, cert, json)\u001b[0m\n\u001b[1;32m    486\u001b[0m         }\n\u001b[1;32m    487\u001b[0m         \u001b[0msend_kwargs\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mupdate\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0msettings\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 488\u001b[0;31m         \u001b[0mresp\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msend\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mprep\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0msend_kwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    489\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    490\u001b[0m         \u001b[0;32mreturn\u001b[0m \u001b[0mresp\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/site-packages/requests/sessions.pyc\u001b[0m in \u001b[0;36msend\u001b[0;34m(self, request, **kwargs)\u001b[0m\n\u001b[1;32m    607\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    608\u001b[0m         \u001b[0;31m# Send the request\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 609\u001b[0;31m         \u001b[0mr\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0madapter\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msend\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mrequest\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    610\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    611\u001b[0m         \u001b[0;31m# Total elapsed time of the request (approximately)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/site-packages/requests/adapters.pyc\u001b[0m in \u001b[0;36msend\u001b[0;34m(self, request, stream, timeout, verify, cert, proxies)\u001b[0m\n\u001b[1;32m    421\u001b[0m                     \u001b[0mdecode_content\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mFalse\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    422\u001b[0m                     \u001b[0mretries\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmax_retries\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 423\u001b[0;31m                     \u001b[0mtimeout\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mtimeout\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    424\u001b[0m                 )\n\u001b[1;32m    425\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.pyc\u001b[0m in \u001b[0;36murlopen\u001b[0;34m(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, **response_kw)\u001b[0m\n\u001b[1;32m    592\u001b[0m                                                   \u001b[0mtimeout\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mtimeout_obj\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    593\u001b[0m                                                   \u001b[0mbody\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mbody\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mheaders\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mheaders\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 594\u001b[0;31m                                                   chunked=chunked)\n\u001b[0m\u001b[1;32m    595\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    596\u001b[0m             \u001b[0;31m# If we're going to release the connection in ``finally:``, then\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.pyc\u001b[0m in \u001b[0;36m_make_request\u001b[0;34m(self, conn, method, url, timeout, chunked, **httplib_request_kw)\u001b[0m\n\u001b[1;32m    382\u001b[0m         \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    383\u001b[0m             \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m  \u001b[0;31m# Python 2.7, use buffering of HTTP responses\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 384\u001b[0;31m                 \u001b[0mhttplib_response\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mconn\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mgetresponse\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mbuffering\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    385\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mTypeError\u001b[0m\u001b[0;34m:\u001b[0m  \u001b[0;31m# Python 2.6 and older, Python 3\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    386\u001b[0m                 \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/httplib.pyc\u001b[0m in \u001b[0;36mgetresponse\u001b[0;34m(self, buffering)\u001b[0m\n\u001b[1;32m   1134\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1135\u001b[0m         \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1136\u001b[0;31m             \u001b[0mresponse\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mbegin\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1137\u001b[0m             \u001b[0;32massert\u001b[0m \u001b[0mresponse\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mwill_close\u001b[0m \u001b[0;34m!=\u001b[0m \u001b[0m_UNKNOWN\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1138\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m__state\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0m_CS_IDLE\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/httplib.pyc\u001b[0m in \u001b[0;36mbegin\u001b[0;34m(self)\u001b[0m\n\u001b[1;32m    451\u001b[0m         \u001b[0;31m# read until we get a non-100 response\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    452\u001b[0m         \u001b[0;32mwhile\u001b[0m \u001b[0mTrue\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 453\u001b[0;31m             \u001b[0mversion\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mstatus\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mreason\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_read_status\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    454\u001b[0m             \u001b[0;32mif\u001b[0m \u001b[0mstatus\u001b[0m \u001b[0;34m!=\u001b[0m \u001b[0mCONTINUE\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    455\u001b[0m                 \u001b[0;32mbreak\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/httplib.pyc\u001b[0m in \u001b[0;36m_read_status\u001b[0;34m(self)\u001b[0m\n\u001b[1;32m    407\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0m_read_status\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    408\u001b[0m         \u001b[0;31m# Initialize with Simple-Response defaults\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 409\u001b[0;31m         \u001b[0mline\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mfp\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mreadline\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0m_MAXLINE\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0;36m1\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    410\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mline\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m>\u001b[0m \u001b[0m_MAXLINE\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    411\u001b[0m             \u001b[0;32mraise\u001b[0m \u001b[0mLineTooLong\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"header line\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/socket.pyc\u001b[0m in \u001b[0;36mreadline\u001b[0;34m(self, size)\u001b[0m\n\u001b[1;32m    478\u001b[0m             \u001b[0;32mwhile\u001b[0m \u001b[0mTrue\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    479\u001b[0m                 \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 480\u001b[0;31m                     \u001b[0mdata\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_sock\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mrecv\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_rbufsize\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    481\u001b[0m                 \u001b[0;32mexcept\u001b[0m \u001b[0merror\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0me\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    482\u001b[0m                     \u001b[0;32mif\u001b[0m \u001b[0me\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0mEINTR\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;31mKeyboardInterrupt\u001b[0m: "
+     ]
+    }
+   ],
+   "source": [
+    "recipes = 'http://allrecipes.com/recipes/95/pasta-and-noodles/?page='\n",
+    "\n",
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "import re\n",
+    "from bs4 import BeautifulSoup\n",
+    "import requests\n",
+    "import string\n",
+    "\n",
+    "def urltobso(url):\n",
+    "    text = requests.get(url).text\n",
+    "    x = BeautifulSoup(text)\n",
+    "    return (x)\n",
+    "\n",
+    "def getlinks(x):\n",
+    "    soup = urltobso(x)\n",
+    "    for i in range(len(soup.findAll('article', {'class':'grid-col--fixed-tiles'}))):\n",
+    "        k = soup.findAll('article', {'class':'grid-col--fixed-tiles'})[i].find(lambda tag: tag.has_attr('href'))\n",
+    "        if k == None:\n",
+    "            return None\n",
+    "        else: \n",
+    "            return 'http://allrecipes.com' + str(k.attrs[\"href\"])\n",
+    "\n",
+    "recipelist = []\n",
+    "i = 0\n",
+    "while len(recipelist) < 200:\n",
+    "    if getlinks(str(recipes + str(i) + '#' + str(i))) == None:\n",
+    "        i += 1\n",
+    "    else:\n",
+    "        with open('/Users/ethanweber/Desktop/Untitled Folder/newpasta.txt', 'a+') as f:\n",
+    "            f.write(str(getlinks(str(recipes + str(i) + '#' + str(i)))))\n",
+    "            f.write(\"\\n\")\n",
+    "            recipelist.append(getlinks(recipes + str(i) + '#' + str(i)))\n",
+    "            print(i, 'iterations', 'list is ', len(recipelist), 'is finished')\n",
+    "            i += 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 167,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'http://allrecipes.com/video/5066/chef-johns-cheese-blintzes'"
+      ]
+     },
+     "execution_count": 167,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def urltobso(url):\n",
+    "    text = requests.get(url).text\n",
+    "    x = BeautifulSoup(text)\n",
+    "    return (x)\n",
+    "\n",
+    "m = 'http://allrecipes.com/recipes/76/appetizers-and-snacks/'\n",
+    "\n",
+    "def geturlsonbso(bso):\n",
+    "    bsolist = []\n",
+    "    output = []\n",
+    "    for i in bso.find_all('article', {'class': 'grid-col--fixed-tiles'}):\n",
+    "        print i('a', href = True)\n",
+    "    #for a in bso('a', href = True):\n",
+    "        #print a\n",
+    "    #for i in bsolist:\n",
+    "        #if i[:6] == '/recipe/':\n",
+    "            #output += i\n",
+    "    return #output\n",
+    "\n",
+    "def getlinks(x):\n",
+    "    soup = urltobso(x)\n",
+    "    for i in range(len(soup.findAll('article', {'class':'grid-col--fixed-tiles'}))):\n",
+    "        k = soup.findAll('article', {'class':'grid-col--fixed-tiles'})[i].find(lambda tag: tag.has_attr('href'))\n",
+    "        if k == None:\n",
+    "            print \"uh oh\"\n",
+    "        else: \n",
+    "            return 'http://allrecipes.com' + str(k.attrs[\"href\"])\n",
+    "\n",
+    "getlinks('http://allrecipes.com/recipes/78/breakfast-and-brunch/?page=2#2')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 166,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "ename": "AttributeError",
+     "evalue": "'Doctype' object has no attribute 'has_attr'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-166-7d882d793a8c>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      6\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      7\u001b[0m \u001b[0;32mfor\u001b[0m \u001b[0mlink\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mBeautifulSoup\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mresponse\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mparse_only\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mSoupStrainer\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'a'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 8\u001b[0;31m     \u001b[0;32mif\u001b[0m \u001b[0mlink\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mhas_attr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'href'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      9\u001b[0m         \u001b[0mlink\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m'href'\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/site-packages/bs4/element.pyc\u001b[0m in \u001b[0;36m__getattr__\u001b[0;34m(self, attr)\u001b[0m\n\u001b[1;32m    728\u001b[0m             raise AttributeError(\n\u001b[1;32m    729\u001b[0m                 \"'%s' object has no attribute '%s'\" % (\n\u001b[0;32m--> 730\u001b[0;31m                     self.__class__.__name__, attr))\n\u001b[0m\u001b[1;32m    731\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    732\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0moutput_ready\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mformatter\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\"minimal\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;31mAttributeError\u001b[0m: 'Doctype' object has no attribute 'has_attr'"
+     ]
+    }
+   ],
+   "source": [
+    "import httplib2\n",
+    "from bs4 import BeautifulSoup, SoupStrainer\n",
+    "\n",
+    "http = httplib2.Http()\n",
+    "status, response = http.request('http://allrecipes.com/')\n",
+    "\n",
+    "for link in BeautifulSoup(response, parse_only=SoupStrainer('a')):\n",
+    "    if link.has_attr('href'):\n",
+    "        link['href']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "from bs4 import BeautifulSoup\n",
+    "import urllib2\n",
+    "import re\n",
+    " \n",
+    "html_page = urllib2.urlopen(\"http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=5\")\n",
+    "soup = BeautifulSoup(html_page)\n",
+    "#soup.find_all('h3', {'class': 'grid-col__h3 grid-col__h3--recipe-grid' })\n",
+    "#for link in soup.findAll('a', attrs={'href': re.compile(\"http://allrecipes.com/recipe/\")}): #attrs={'href': re.compile(\"^http://\")}):\n",
+    "#    print link.get('href')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 140,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<h3 class=\"grid-col__h3 grid-col__h3--recipe-grid\">\\r\\n            Best Egg Rolls\\r\\n                <div class=\"grid-col__video\">\\n<a data-click-id=\"cardslot 7\" data-internal-referrer-link=\"hub recipe\" href=\"/video/3053/best-egg-rolls\"><span class=\"icon--videoplay-small-white\"></span></a>\\n</div>\\n</h3>"
+      ]
+     },
+     "execution_count": 140,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "soup.findAll('h3', attrs={\"class\": 'grid-col__h3 grid-col__h3--recipe-grid'})[6]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 125,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "\n",
+    "getlinks()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": false,
+    "scrolled": false
+   },
+   "outputs": [],
+   "source": [
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "import re\n",
+    "from bs4 import BeautifulSoup\n",
+    "import requests\n",
+    "import string\n",
+    "\n",
+    "def urltobso(url):\n",
+    "    text = requests.get(url).text\n",
+    "    x = BeautifulSoup(text)\n",
+    "    return (x)\n",
+    "\n",
+    "def getlinks(x):\n",
+    "    soup = urltobso(x)\n",
+    "    for i in range(len(soup.findAll('article', {'class':'grid-col--fixed-tiles'}))):\n",
+    "        k = soup.findAll('article', {'class':'grid-col--fixed-tiles'})[i].find(lambda tag: tag.has_attr('href'))\n",
+    "        if k == None:\n",
+    "            return None\n",
+    "        else: \n",
+    "            return 'http://allrecipes.com' + str(k.attrs[\"href\"])\n",
+    "\n",
+    "\n",
+    "pork = 'http://allrecipes.com/recipes/205/meat-and-poultry/pork/?page='\n",
+    "\n",
+    "recipelist = []\n",
+    "i = 0\n",
+    "while len(recipelist) < 200:\n",
+    "    if getlinks(str(pork + str(i) + '#' + str(i))) == None:\n",
+    "        i += 1\n",
+    "    else:\n",
+    "        with open('/Users/ethanweber/Desktop/Untitled Folder/porklist.txt', 'a+') as f:\n",
+    "            f.write(str(getlinks(str(pork + str(i) + '#' + str(i)))))\n",
+    "            f.write(\"\\n\")\n",
+    "            recipelist.append(getlinks(appetizers + str(i) + '#' + str(i)))\n",
+    "            print(i, 'iterations', 'list is ', len(recipelist), 'is finished')\n",
+    "            i += 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 163,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "meat = 'http://allrecipes.com/recipes/200/meat-and-poultry/beef/?page='"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 168,
+   "metadata": {
+    "collapsed": false,
+    "scrolled": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "http://allrecipes.com/recipe/69660/pineapple-pork-chops/\n",
+      "(1, 'iterations', 'list is ', 1, 'is finished')\n",
+      "http://allrecipes.com/video/720/how-to-make-homemade-bacon\n",
+      "(2, 'iterations', 'list is ', 2, 'is finished')\n",
+      "http://allrecipes.com/recipe/57761/herb-roasted-pork/\n",
+      "(3, 'iterations', 'list is ', 3, 'is finished')\n",
+      "http://allrecipes.com/recipe/72392/spinach-stuffed-chicken-breast/\n",
+      "(4, 'iterations', 'list is ', 4, 'is finished')\n",
+      "http://allrecipes.com/recipe/31144/sweet-and-sour-pork-iii/\n",
+      "(5, 'iterations', 'list is ', 5, 'is finished')\n",
+      "http://allrecipes.com/recipe/196732/fried-cabbage-with-bacon-onion-and-garlic/\n",
+      "(6, 'iterations', 'list is ', 6, 'is finished')\n"
+     ]
+    },
+    {
+     "ename": "KeyboardInterrupt",
+     "evalue": "",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-168-865e481b1c15>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m     15\u001b[0m \u001b[0;32mwhile\u001b[0m \u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mrecipelist\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m<\u001b[0m \u001b[0;36m200\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     16\u001b[0m     \u001b[0mi\u001b[0m \u001b[0;34m+=\u001b[0m \u001b[0;36m1\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 17\u001b[0;31m     \u001b[0mx\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mstr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mgetlinks\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mpork\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mstr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mi\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0;34m'#'\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mstr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mi\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     18\u001b[0m     \u001b[0;32mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     19\u001b[0m     \u001b[0;32mif\u001b[0m \u001b[0mx\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0mNone\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m<ipython-input-168-865e481b1c15>\u001b[0m in \u001b[0;36mgetlinks\u001b[0;34m(x)\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0mrecipelist\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m[\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0;32mdef\u001b[0m \u001b[0mgetlinks\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 5\u001b[0;31m     \u001b[0msoup\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0murltobso\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      6\u001b[0m     \u001b[0;32mfor\u001b[0m \u001b[0mi\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mrange\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0msoup\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mfindAll\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'article'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m{\u001b[0m\u001b[0;34m'class'\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m'grid-col--fixed-tiles'\u001b[0m\u001b[0;34m}\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      7\u001b[0m         \u001b[0mk\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0msoup\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mfindAll\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'article'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m{\u001b[0m\u001b[0;34m'class'\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m'grid-col--fixed-tiles'\u001b[0m\u001b[0;34m}\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mi\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mfind\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;32mlambda\u001b[0m \u001b[0mtag\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0mtag\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mhas_attr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'href'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m<ipython-input-167-d78ab86faa8e>\u001b[0m in \u001b[0;36murltobso\u001b[0;34m(url)\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;32mdef\u001b[0m \u001b[0murltobso\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0murl\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m     \u001b[0mtext\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mrequests\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mget\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0murl\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mtext\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      3\u001b[0m     \u001b[0mx\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mBeautifulSoup\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mtext\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m     \u001b[0;32mreturn\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0mm\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m'http://allrecipes.com/recipes/76/appetizers-and-snacks/'\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/site-packages/requests/api.pyc\u001b[0m in \u001b[0;36mget\u001b[0;34m(url, params, **kwargs)\u001b[0m\n\u001b[1;32m     68\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     69\u001b[0m     \u001b[0mkwargs\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msetdefault\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'allow_redirects'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 70\u001b[0;31m     \u001b[0;32mreturn\u001b[0m \u001b[0mrequest\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'get'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0murl\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mparams\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mparams\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     71\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     72\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/site-packages/requests/api.pyc\u001b[0m in \u001b[0;36mrequest\u001b[0;34m(method, url, **kwargs)\u001b[0m\n\u001b[1;32m     54\u001b[0m     \u001b[0;31m# cases, and look like a memory leak in others.\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     55\u001b[0m     \u001b[0;32mwith\u001b[0m \u001b[0msessions\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mSession\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0msession\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 56\u001b[0;31m         \u001b[0;32mreturn\u001b[0m \u001b[0msession\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mrequest\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmethod\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mmethod\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0murl\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0murl\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     57\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     58\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/site-packages/requests/sessions.pyc\u001b[0m in \u001b[0;36mrequest\u001b[0;34m(self, method, url, params, data, headers, cookies, files, auth, timeout, allow_redirects, proxies, hooks, stream, verify, cert, json)\u001b[0m\n\u001b[1;32m    486\u001b[0m         }\n\u001b[1;32m    487\u001b[0m         \u001b[0msend_kwargs\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mupdate\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0msettings\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 488\u001b[0;31m         \u001b[0mresp\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msend\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mprep\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0msend_kwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    489\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    490\u001b[0m         \u001b[0;32mreturn\u001b[0m \u001b[0mresp\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/site-packages/requests/sessions.pyc\u001b[0m in \u001b[0;36msend\u001b[0;34m(self, request, **kwargs)\u001b[0m\n\u001b[1;32m    607\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    608\u001b[0m         \u001b[0;31m# Send the request\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 609\u001b[0;31m         \u001b[0mr\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0madapter\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msend\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mrequest\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    610\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    611\u001b[0m         \u001b[0;31m# Total elapsed time of the request (approximately)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/site-packages/requests/adapters.pyc\u001b[0m in \u001b[0;36msend\u001b[0;34m(self, request, stream, timeout, verify, cert, proxies)\u001b[0m\n\u001b[1;32m    421\u001b[0m                     \u001b[0mdecode_content\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mFalse\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    422\u001b[0m                     \u001b[0mretries\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmax_retries\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 423\u001b[0;31m                     \u001b[0mtimeout\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mtimeout\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    424\u001b[0m                 )\n\u001b[1;32m    425\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.pyc\u001b[0m in \u001b[0;36murlopen\u001b[0;34m(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, **response_kw)\u001b[0m\n\u001b[1;32m    592\u001b[0m                                                   \u001b[0mtimeout\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mtimeout_obj\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    593\u001b[0m                                                   \u001b[0mbody\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mbody\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mheaders\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mheaders\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 594\u001b[0;31m                                                   chunked=chunked)\n\u001b[0m\u001b[1;32m    595\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    596\u001b[0m             \u001b[0;31m# If we're going to release the connection in ``finally:``, then\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.pyc\u001b[0m in \u001b[0;36m_make_request\u001b[0;34m(self, conn, method, url, timeout, chunked, **httplib_request_kw)\u001b[0m\n\u001b[1;32m    382\u001b[0m         \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    383\u001b[0m             \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m  \u001b[0;31m# Python 2.7, use buffering of HTTP responses\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 384\u001b[0;31m                 \u001b[0mhttplib_response\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mconn\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mgetresponse\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mbuffering\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    385\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mTypeError\u001b[0m\u001b[0;34m:\u001b[0m  \u001b[0;31m# Python 2.6 and older, Python 3\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    386\u001b[0m                 \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/httplib.pyc\u001b[0m in \u001b[0;36mgetresponse\u001b[0;34m(self, buffering)\u001b[0m\n\u001b[1;32m   1134\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1135\u001b[0m         \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1136\u001b[0;31m             \u001b[0mresponse\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mbegin\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1137\u001b[0m             \u001b[0;32massert\u001b[0m \u001b[0mresponse\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mwill_close\u001b[0m \u001b[0;34m!=\u001b[0m \u001b[0m_UNKNOWN\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1138\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m__state\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0m_CS_IDLE\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/httplib.pyc\u001b[0m in \u001b[0;36mbegin\u001b[0;34m(self)\u001b[0m\n\u001b[1;32m    451\u001b[0m         \u001b[0;31m# read until we get a non-100 response\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    452\u001b[0m         \u001b[0;32mwhile\u001b[0m \u001b[0mTrue\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 453\u001b[0;31m             \u001b[0mversion\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mstatus\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mreason\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_read_status\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    454\u001b[0m             \u001b[0;32mif\u001b[0m \u001b[0mstatus\u001b[0m \u001b[0;34m!=\u001b[0m \u001b[0mCONTINUE\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    455\u001b[0m                 \u001b[0;32mbreak\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/httplib.pyc\u001b[0m in \u001b[0;36m_read_status\u001b[0;34m(self)\u001b[0m\n\u001b[1;32m    407\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0m_read_status\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    408\u001b[0m         \u001b[0;31m# Initialize with Simple-Response defaults\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 409\u001b[0;31m         \u001b[0mline\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mfp\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mreadline\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0m_MAXLINE\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0;36m1\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    410\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mline\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m>\u001b[0m \u001b[0m_MAXLINE\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    411\u001b[0m             \u001b[0;32mraise\u001b[0m \u001b[0mLineTooLong\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"header line\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m/Users/ethanweber/anaconda/lib/python2.7/socket.pyc\u001b[0m in \u001b[0;36mreadline\u001b[0;34m(self, size)\u001b[0m\n\u001b[1;32m    478\u001b[0m             \u001b[0;32mwhile\u001b[0m \u001b[0mTrue\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    479\u001b[0m                 \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 480\u001b[0;31m                     \u001b[0mdata\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_sock\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mrecv\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_rbufsize\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    481\u001b[0m                 \u001b[0;32mexcept\u001b[0m \u001b[0merror\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0me\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    482\u001b[0m                     \u001b[0;32mif\u001b[0m \u001b[0me\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0mEINTR\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;31mKeyboardInterrupt\u001b[0m: "
+     ]
+    }
+   ],
+   "source": [
+    "pork = 'http://allrecipes.com/recipes/205/meat-and-poultry/pork/?page='\n",
+    "\n",
+    "recipelist = []\n",
+    "def getlinks(x):\n",
+    "    soup = urltobso(x)\n",
+    "    for i in range(len(soup.findAll('article', {'class':'grid-col--fixed-tiles'}))):\n",
+    "        k = soup.findAll('article', {'class':'grid-col--fixed-tiles'})[i].find(lambda tag: tag.has_attr('href'))\n",
+    "        if k == None:\n",
+    "            return None\n",
+    "        else: \n",
+    "            return 'http://allrecipes.com' + str(k.attrs[\"href\"])\n",
+    "\n",
+    "recipelist = []\n",
+    "i = 0\n",
+    "while len(recipelist) < 200:\n",
+    "    i += 1\n",
+    "    x = str(getlinks(pork + str(i) + '#' + str(i)))\n",
+    "    print(x)\n",
+    "    if x == None:\n",
+    "        print 'pass'\n",
+    "    else:\n",
+    "        with open('/Users/ethanweber/Desktop/Untitled Folder/porklist.txt', 'a+') as f:\n",
+    "            f.write(str(x))\n",
+    "            f.write(\"\\n\")\n",
+    "            recipelist.append(x)\n",
+    "            print(i, 'iterations', 'list is ', len(recipelist), 'is finished')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 165,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "200"
+      ]
+     },
+     "execution_count": 165,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(set(recipelist))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 146,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "http://allrecipes.com/recipe/47179/crab-and-lobster-stuffed-mushrooms/\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "NoneType"
+      ]
+     },
+     "execution_count": 146,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "getlinks(appetizers + str(1) + '#' + str(1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=2#2',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=3#3',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=4#4',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=5#5',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=6#6',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=7#7',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=8#8',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=9#9',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=10#10',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=11#11',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=12#12',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=13#13',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=14#14',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=15#15',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=16#16',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=17#17',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=18#18',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=19#19',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=20#20',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=21#21',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=22#22',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=23#23',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=24#24',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=25#25',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=26#26',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=27#27',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=28#28',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=29#29',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=30#30',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=31#31',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=32#32',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=33#33',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=34#34',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=35#35',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=36#36',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=37#37',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=38#38',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=39#39',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=40#40',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=41#41',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=42#42',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=43#43',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=44#44',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=45#45',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=46#46',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=47#47',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=48#48',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=49#49',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=50#50',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=51#51',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=52#52',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=53#53',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=54#54',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=55#55',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=56#56',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=57#57',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=58#58',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=59#59',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=60#60',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=61#61',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=62#62',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=63#63',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=64#64',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=65#65',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=66#66',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=67#67',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=68#68',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=69#69',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=70#70',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=71#71',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=72#72',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=73#73',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=74#74',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=75#75',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=76#76',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=77#77',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=78#78',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=79#79',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=80#80',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=81#81',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=82#82',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=83#83',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=84#84',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=85#85',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=86#86',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=87#87',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=88#88',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=89#89',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=90#90',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=91#91',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=92#92',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=93#93',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=94#94',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=95#95',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=96#96',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=97#97',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=98#98',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=99#99',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=100#100',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=101#101',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=102#102',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=103#103',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=104#104',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=105#105',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=106#106',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=107#107',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=108#108',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=109#109',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=110#110',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=111#111',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=112#112',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=113#113',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=114#114',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=115#115',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=116#116',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=117#117',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=118#118',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=119#119',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=120#120',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=121#121',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=122#122',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=123#123',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=124#124',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=125#125',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=126#126',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=127#127',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=128#128',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=129#129',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=130#130',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=131#131',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=132#132',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=133#133',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=134#134',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=135#135',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=136#136',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=137#137',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=138#138',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=139#139',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=140#140',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=141#141',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=142#142',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=143#143',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=144#144',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=145#145',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=146#146',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=147#147',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=148#148',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=149#149',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=150#150',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=151#151',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=152#152',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=153#153',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=154#154',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=155#155',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=156#156',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=157#157',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=158#158',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=159#159',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=160#160',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=161#161',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=162#162',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=163#163',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=164#164',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=165#165',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=166#166',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=167#167',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=168#168',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=169#169',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=170#170',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=171#171',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=172#172',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=173#173',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=174#174',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=175#175',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=176#176',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=177#177',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=178#178',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=179#179',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=180#180',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=181#181',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=182#182',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=183#183',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=184#184',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=185#185',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=186#186',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=187#187',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=188#188',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=189#189',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=190#190',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=191#191',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=192#192',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=193#193',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=194#194',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=195#195',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=196#196',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=197#197',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=198#198',\n",
+       " 'http://allrecipes.com/recipes/76/appetizers-and-snacks/?page=199#199']"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "anaconda-cloud": {},
+  "kernelspec": {
+   "display_name": "Python [default]",
+   "language": "python",
+   "name": "python2"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 2
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython2",
+   "version": "2.7.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 1
+}
