@@ -5,7 +5,7 @@ library(DT)
 library(tidyr)
 shinyServer(function(input, output) {
   d1 <- reactive({
-    t10wh=arrange(summarise(ql_grp,winRatio=sum(V16==1)/n()),desc(winRatio))
+    t10wh=arrange(summarise(ql_grp,winRatio=round(sum(V16==1)/n(),3)),desc(winRatio))
     Dt=left_join(head(t10wh,input$Ng1),hname,by="hero_id")
     return(Dt)
   })
@@ -66,7 +66,7 @@ shinyServer(function(input, output) {
   
   d5 <- reactive({
     H_id=filter(hname,localized_name %in% input$mychooser$right)[,2]
-    d5=arrange(summarise(ql_grp,winRatio=sum(V16==1)/n()),desc(winRatio))
+    d5=arrange(summarise(ql_grp,winRatio=round(sum(V16==1)/n(),3)),desc(winRatio))
     Dt=left_join(filter(d5,hero_id%in% H_id),hname,by="hero_id")
     return(Dt)
   })
@@ -88,7 +88,7 @@ shinyServer(function(input, output) {
   output$g6 <- renderPlot({
     Dt=d6()
     single_grp=group_by(Dt,GameTime)
-    D=summarise(single_grp,winRatio=sum(V16==1)/n())
+    D=summarise(single_grp,winRatio=round(sum(V16==1)/n(),3))
     D$GameTime=factor(D$GameTime, levels = c("< 20 min","20 ~ 30 min","30 ~ 40 min","40 ~ 50 min","> 50 min"))
     D=D[order(D$GameTime),]
     p <- ggplot(D,aes(x=GameTime,y=winRatio,group=1))+geom_point()+geom_line()+ggtitle("Winning Ratio to Duration")
@@ -96,10 +96,10 @@ shinyServer(function(input, output) {
   })
   output$t6 <- renderDataTable({
     Dt=d6()
-    t6=summarise(Dt,aveGPM=mean(gold_per_min),aveKillsPerMin=mean(kills/duration*60),
-                 aveDeathPerMin=mean(deaths/duration*60),aveAssistPermin=mean(assists/duration*60),winRatio=sum(V16==1)/n())
-    Dat=summarise(group_by(q6,hero_id),aveGPM=mean(gold_per_min),aveKillsPerMin=mean(kills/duration*60),
-               aveDeathPerMin=mean(deaths/duration*60),aveAssistPermin=mean(assists/duration*60),winRatio=sum(V16==1)/n())
+    t6=summarise(Dt,aveGPM=round(mean(gold_per_min),1),aveKillsPerMin=round(mean(kills/duration*60),3),
+                 aveDeathPerMin=round(mean(deaths/duration*60),3),aveAssistPermin=round(mean(assists/duration*60),3),winRatio=round(sum(V16==1)/n(),3))
+    Dat=summarise(group_by(q6,hero_id),aveGPM=round(mean(gold_per_min),1),aveKillsPerMin=round(mean(kills/duration*60),3),
+               aveDeathPerMin=round(mean(deaths/duration*60),3),aveAssistPermin=round(mean(assists/duration*60),3),winRatio=round(sum(V16==1)/n(),3))
     H_id=filter(hname,localized_name %in% input$sig)[,2]
     A=apply(Dat[-1,-1],2,function(x){return(which(order(x,decreasing=T)==H_id))})
     t6=rbind(t6,A)
@@ -116,7 +116,7 @@ shinyServer(function(input, output) {
     H_id=filter(hname,localized_name %in% c(input$m1,input$m2,input$m3,input$m4))[,2]
     YrH=teamD-sapply(filter(EheroD,hero_id %in% H_id)[,2:3],sum)  
     Dt=filter(EheroD,aveGPM<=YrH[1,1]*1.1,aveGPM>=YrH[1,1]*0.9,aveXPM>=YrH[1,2]*0.9,aveXPM<=YrH[1,2]*1.1)
-    t10wh=summarise(ql_grp,winRatio=sum(V16==1)/n())
+    t10wh=summarise(ql_grp,winRatio=round(sum(V16==1)/n(),3))
     DDt=arrange(filter(t10wh,hero_id %in% Dt$hero_id),desc(winRatio))%>%left_join(.,hname,by="hero_id")
     DDt=DDt[,c(2,4)]
     return(DDt)
