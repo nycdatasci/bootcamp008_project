@@ -7,12 +7,12 @@ from scrapy.exceptions import DropItem
 from scrapy.exporters import CsvItemExporter
 
 class ValidateItemPipeline(object):
-
-    def process_item(self, item, spider):
-        if not all(item.values()):
-            raise DropItem("Missing values!")
-        else:
-            return item
+    pass
+#    def process_item(self, item, spider):
+#        if not all(item.values()):
+#            raise DropItem("Missing values!")
+#        else:
+#            return item
 
 class WriteItemPipeline(object):
 
