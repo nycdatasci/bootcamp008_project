@@ -1,0 +1,6 @@
+[submodule "DodgeCoates"]
+	path = DodgeCoates
+	url = https://www.github.com/dwcoates/craigs-politics
+[submodule "Project2-WebScraping/DodgeCoates"]
+	path = Project2-WebScraping/DodgeCoates
+	url = git@github.com:dwcoates/craigs-politics.git
