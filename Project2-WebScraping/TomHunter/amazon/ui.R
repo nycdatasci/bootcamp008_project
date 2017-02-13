@@ -1,97 +1,67 @@
 library(shinydashboard)
-library(leaflet)
+library(plotly)
 
-shinyUI(dashboardPage(
+dashboardPage(
   dashboardHeader(title = 'Amazon Products'), 
   dashboardSidebar(
     sidebarUserPanel(fluidRow(column(width = 4, 
-                                     img(src = "Tom Hunter 1.jpg", height = 40, width = 40), 'Made by Tom Hunter'))
+                                     img(src = "Tom-Hunter-1.jpg", height = 40, width = 40), 'Made by Tom Hunter'))
     ), br(),
     sidebarMenu(id = 'menu1',
                 menuItem('Data', tabName = 'data', icon = icon('table')),
-                menuItem('By Rating', tabName = 'groups', icon = icon('users')),
-                menuItem('By Category', tabName = 'groups', icon = icon('users')),
+                menuItem('Categorical Variables', tabName = 'groups', icon = icon('users')),
                 menuItem('Histograms', tabName = 'histogram', icon = icon('bar-chart')),
-                menuItem('Box Plots', tabName = 'box', icon = icon('reorder'))
-    ),
-    conditionalPanel(
-      condition = "input.menu1 != 'histogram'",
-      sliderInput('range', 
-                  label = 'Range of IMDB Scores:',
-                  min = 0.0, max = 10.0, step = 0.1, ticks = T, value = c(0.0, 10.0)
-      ),
-      sliderInput('range_year',
-                  label = 'Range of Years:',
-                  min = 1945, max = 2006, step = 1, sep = '', ticks = T, value = c(1945, 2006)
-      )
+                menuItem('Box Plots', tabName = 'box', icon = icon('reorder')),
+                menuItem('Scatter Plots', tabName = 'scatter', icon = icon('line-chart'))
     ),
     conditionalPanel(
       condition = "input.menu1 == 'data'",
       selectizeInput('selected',
-                     label = 'Select Variable to Sort by',
-                     choices = c('Film', 'Year', 'Director', 'IMDB'))
+                     label = 'Select Variable to Search',
+                     choices = c("ASIN", "Product Title", 'Category', 'Manufacturer', 'Origin','Sale Price', 'Avg Customer Rating', "Number of Customer Questions",
+                                 "Number of Reviews", "List Price", "1 Star %", "2 Star %","3 Star %",
+                                 "4 Star %", "5 Star %")
+                     )
     ),
     conditionalPanel(
       condition = "input.menu1 == 'groups'",
       selectizeInput('by_group',
                      label = 'Select Variable to Group by',
-                     choices = c('Director', 'Borough', 'Neighborhood'), selected = 'Director')
+                     choices = c('Manufacturer', 'Origin', 'Category'), 
+                     selected = 'Category'
+                     )
     ),
     conditionalPanel(
       condition = "input.menu1 == 'histogram'",  
       selectInput('var',
-                  label = 'choose a variable to graph',
-                  choices = c('IMDB Score', 'Year', 'Budget', 'Duration', 'Gross'),
-                  selected = 'IMDB Score')
-    ),
-    conditionalPanel(
-      condition = "input.menu1 == 'histogram' && input.var == 'IMDB Score'",
-      sliderInput('binsize_IMDB',
-                  label = 'Bin size:',
-                  min = 0.1, max = 3, step = 0.1, sep = '', value = 1, ticks = T
-      )
-    ),
-    conditionalPanel(
-      condition = "input.menu1 == 'histogram' && input.var == 'Year'",
-      sliderInput('binsize_year',
-                  label = 'Bin size:',
-                  min = 1, max = 30, step = 1, sep = '', value = 10, ticks = T
-      )
+                  label = 'Choose a variable to view as a histogram',
+                  choices = c('Manufacturer', 'Origin', 'Category', 'Avg Customer Rating', "1 Star %",
+                              "2 Star %","3 Star %","4 Star %", "5 Star %"),
+                  selected = 'Category'
+                  )
     ),
     
-    conditionalPanel(
-      condition = "input.menu1 == 'histogram' && input.var == 'Duration'",
-      sliderInput('binsize_duration',
-                  label = 'Bin size:',
-                  min = 5, max = 75, step = 5, sep = '', value = 25, ticks = T
-      )
-    ),
+    # conditionalPanel(
+    #   condition = "input.menu1 == 'histogram' && input.var == 'Duration'",
+    #   sliderInput('binsize_duration',
+    #               label = 'Bin size:',
+    #               min = 5, max = 75, step = 5, sep = '', value = 25, ticks = T
+    #   )
     
-    conditionalPanel(
-      condition = "input.menu1 == 'histogram' && input.var == 'Budget'",
-      sliderInput('binsize_budget',
-                  label = 'Bin size:',
-                  min = 1000000, max = 50000000, step = 1000000, value = 25000000, ticks = T
-      )
-    ),
-    
-    conditionalPanel(
-      condition = "input.menu1 == 'histogram' && input.var == 'Gross'",
-      sliderInput('binsize_gross',
-                  label = 'Bin size:',
-                  min = 1000000, max = 50000000, step = 1000000, value = 25000000, ticks = T
-      )
-    ),
-    
+
     conditionalPanel(
       condition = "input.menu1 == 'box'",
       selectizeInput('xvar_box',
                      label = 'Choose Factor',
-                     choices = c('Borough'), selected = 'Borough'
+                     choices = c('Category', 'Manufacturer', 'Origin'), 
+                     selected = 'Category'
       ),
       selectizeInput('yvar_box',
                      label = 'Choose Y-axis variable',
-                     choices = c('IMDB', 'Duration', 'Budget', 'Gross'), selected = 'IMDB'
+                     choices = c('Sale Price', 'Avg Customer Rating', "Number of Customer Questions",
+                                 "Number of Reviews", "List Price", "1 Star %", "2 Star %","3 Star %",
+                                 "4 Star %", "5 Star %"), 
+                     selected = 'Sale Price'
       )
     ),
     
@@ -99,15 +69,21 @@ shinyUI(dashboardPage(
       condition = "input.menu1 == 'scatter'",
       selectizeInput('xvar',
                      label = 'Choose X-axis variable',
-                     choices = c('Year', 'Budget', 'Duration', 'Gross'), selected = 'Year'
+                     choices = c('Sale Price', 'Avg Customer Rating', "Number of Customer Questions",
+                                 "Number of Reviews", "List Price", "1 Star %", "2 Star %","3 Star %",
+                                 "4 Star %", "5 Star %"),
+                     selected = "5 Star %"
       ),
       selectizeInput('yvar',
                      label = 'Choose Y-axis variable',
-                     choices = c('IMDB', 'Budget', 'Duration', 'Gross'), selected = 'IMDB'
+                     choices = c('Sale Price', 'Avg Customer Rating', "Number of Customer Questions",
+                                 "Number of Reviews", "List Price", "1 Star %", "2 Star %","3 Star %",
+                                 "4 Star %", "5 Star %"),
+                     selected = 'Avg Customer Rating'
       ),
       selectizeInput('factor',
                      label = 'Choose a factor',
-                     choices = c('Borough', 'Neighborhood'), selected = 'Borough')
+                     choices = c('Category', 'Manufacturer', 'Origin'), selected = 'Category')
     )
   ),
   dashboardBody( 
@@ -127,9 +103,8 @@ shinyUI(dashboardPage(
       tabItem(tabName = 'scatter',
               fluidRow(column(width = 2, actionButton('regression', label = 'Click to add Regression Line')),
                        br(), br(),
-                       column(width = 6, plotOutput('scatter', width = '200%', height = '600px')))
+                       column(width = 6, plotlyOutput('scatter', width = '200%', height = '600px')))
       )
     )
   )
-)
 )

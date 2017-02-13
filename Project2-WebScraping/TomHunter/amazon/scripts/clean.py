@@ -79,9 +79,13 @@ if __name__ == '__main__':
     # Item_Weight - DONE
     # Item_model_number - DONE
     # Manufacturer - DONE
+    df.fillna(value='', inplace=True)
+    df.replace(to_replace='', value={'Manufacturer': np.nan}, inplace=True)
     # Manufacturer_recommended_age - DONE
     # Media - DONE
     # Origin - DONE
+    df.replace(to_replace='Imported (China)', value={'Origin': 'China'},
+               inplace=True)
     # Pricing - DONE
     # Product_Dimensions - DONE
     df.replace(to_replace='Currently, item can be shipped only within the U.S. \
