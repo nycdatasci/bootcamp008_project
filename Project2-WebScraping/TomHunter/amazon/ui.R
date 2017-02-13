@@ -8,8 +8,10 @@ dashboardPage(
                                      img(src = "Tom-Hunter-1.jpg", height = 40, width = 40), 'Made by Tom Hunter'))
     ), br(),
     sidebarMenu(id = 'menu1',
+                menuItem('Intro', tabName = 'intro', icon = icon('bars')),
                 menuItem('Data', tabName = 'data', icon = icon('table')),
                 menuItem('Categorical Variables', tabName = 'groups', icon = icon('users')),
+                menuItem('Bar Charts', tabName = 'bar', icon = icon('bar-chart')),
                 menuItem('Histograms', tabName = 'histogram', icon = icon('bar-chart')),
                 menuItem('Box Plots', tabName = 'box', icon = icon('reorder')),
                 menuItem('Scatter Plots', tabName = 'scatter', icon = icon('line-chart'))
@@ -20,7 +22,7 @@ dashboardPage(
                      label = 'Select Variable to Search',
                      choices = c("ASIN", "Product_Title", 'Category', 'Manufacturer', 'Origin','Sale_Price', 
                                   "Avg_Customer_Rating", "Number_of_Customer Questions","Number_of_Reviews", 
-                                 "List_Price", "1_Star_%", "2_Star_%","3_Star_%","4_Star_%", "5_Star_%")
+                                 "List_Price", "OneStarPct", "TwoStarPct","ThreeStarPct","FourStarPct", "FiveStarPct")
                      )
     ),
     conditionalPanel(
@@ -32,23 +34,24 @@ dashboardPage(
                      )
     ),
     conditionalPanel(
-      condition = "input.menu1 == 'histogram'",  
+      condition = "input.menu1 == 'bar'",  
       selectInput('var',
+                  label = 'Choose a variable to view as a bar chart',
+                  choices = c('Manufacturer', 'Origin', 'Category'),
+                  selected = 'Origin'
+      ),
+      checkboxInput("remove_NA", "Remove NA and blank values", TRUE),
+      checkboxInput("remove_low_counts", "Remove Small Counts", TRUE)
+    ),
+    conditionalPanel(
+      condition = "input.menu1 == 'histogram'",  
+      selectInput('var_his',
                   label = 'Choose a variable to view as a histogram',
-                  choices = c('Manufacturer', 'Origin', 'Category', 'Avg_Customer_Rating', "1_Star_%",
-                              "2_Star_%","3_Star_%","4_Star_%", "5_Star_%"),
-                  selected = 'Category'
+                  choices = c('Avg_Customer_Rating', "OneStarPct",
+                              "TwoStarPct","ThreeStarPct","FourStarPct", "FiveStarPct"),
+                  selected = 'Avg_Customer_Rating'
                   )
     ),
-    
-    # conditionalPanel(
-    #   condition = "input.menu1 == 'histogram' && input.var == 'Duration'",
-    #   sliderInput('binsize_duration',
-    #               label = 'Bin size:',
-    #               min = 5, max = 75, step = 5, sep = '', value = 25, ticks = T
-    #   )
-    
-
     conditionalPanel(
       condition = "input.menu1 == 'box'",
       selectizeInput('xvar_box',
@@ -58,10 +61,10 @@ dashboardPage(
       ),
       selectizeInput('yvar_box',
                      label = 'Choose Y-axis variable',
-                     choices = c('Sale_Price', 'Avg_Customer_Rating', "Number_of_Customer_Questions",
-                                 "Number_of_Reviews", "List_Price", "1_Star_%", "2_Star_%","3_Star_%",
-                                 "4_Star_%", "5_Star_%"), 
-                     selected = 'Sale_Price'
+                     choices = c('Avg_Customer_Rating', "Number_of_Customer_Questions",
+                                 "Number_of_Reviews", "OneStarPct", "TwoStarPct","ThreeStarPct",
+                                 "FourStarPct", "FiveStarPct"), 
+                     selected = 'Avg_Customer_Rating'
       )
     ),
     
@@ -69,30 +72,60 @@ dashboardPage(
       condition = "input.menu1 == 'scatter'",
       selectizeInput('xvar',
                      label = 'Choose X-axis variable',
-                     choices = c('Sale_Price', 'Avg Customer_Rating', "Number_of_Customer_Questions",
-                                 "Number_of_Reviews", "List_Price", "1_Star_%", "2_Star_%","3_Star_%",
-                                 "4_Star_%", "5_Star_%"),
-                     selected = "5_Star_%"
+                     choices = c('Sale_Price', 'Avg_Customer_Rating', "Number_of_Customer_Questions",
+                                 "Number_of_Reviews", "List_Price", "OneStarPct", "TwoStarPct","ThreeStarPct",
+                                 "FourStarPct", "FiveStarPct"),
+                     selected = "FiveStarPct"
       ),
       selectizeInput('yvar',
                      label = 'Choose Y-axis variable',
-                     choices = c('Sale_Price', 'Avg Customer_Rating', "Number_of_Customer_Questions",
-                                 "Number_of_Reviews", "List_Price", "1_Star_%", "2_Star_%","3_Star_%",
-                                 "4_Star_%", "5_Star_%"),
-                     selected = 'Avg Customer Rating'
+                     choices = c('Sale_Price', 'Avg_Customer_Rating', "Number_of_Customer_Questions",
+                                 "Number_of_Reviews", "List_Price", "OneStarPct", "TwoStarPct","ThreeStarPct",
+                                 "FourStarPct", "FiveStarPct"),
+                     selected = 'Avg_Customer_Rating'
       ),
       selectizeInput('factor',
                      label = 'Choose a factor',
-                     choices = c('Category', 'Manufacturer', 'Origin'), selected = 'Category')
+                     choices = c('Category', 'Manufacturer', 'Origin'), 
+                     selected = 'Origin')
     )
   ),
   dashboardBody( 
     tabItems(
+      tabItem(tabName = 'intro',
+              HTML("<h3><b>Problem</b><h3>",
+                   "<ul>",
+                    "<li><h4>What differentiates a high selling product from a low selling product on Amazon?</h4></li>",
+                   "</ul>",
+                   "<h3><b>Theorized solution</b></h3>",
+                   "<ul>",
+                    "<li><h4>GOAL: Estimating product sales using change in BSR</h4></li>",
+                    "<li><h4>GOAL: Predict BSR using product attribute data</h4></li>",
+                   "</ul>",
+                   "<h3><b>Problems encountered</b></h3>",
+                   "<ul>",
+                    "<li><h4>Inconsistent Dom structure</h4></li>",
+                    "<li><h4>Captchas </h4></li>",
+                    "<li><h4>IP bans</h4></li>",
+                    "<li><h4>User-agent profiling</h4></li>",
+                    "<li><h4>Work arounds?</h4></li>",
+                   "</ul>",
+                   "<h3><b>Dashboard Visualizations</b></h3>",
+                   "<h3><b>Next steps</b></h3>",
+                   "<ul>",
+                    "<li><h4>More dynamic selectors</h4></li>",
+                    "<li><h4>Supplementing data with API</h4></li>",
+                   "</ul>"
+                  )
+      ),
       tabItem(tabName = 'data',
               fluidRow(column(width = 6, DT::dataTableOutput('table', width = '200%')))
       ),
       tabItem(tabName = 'groups',
               fluidRow(column(width = 6, DT::dataTableOutput('groups', width = '200%')))
+      ),
+      tabItem(tabName = 'bar',
+              fluidRow(column(width = 6, plotOutput('bar', width = '200%', height = '600px')))
       ),
       tabItem(tabName = 'histogram',
               fluidRow(column(width = 6, plotOutput('histogram', width = '200%', height = '600px')))
