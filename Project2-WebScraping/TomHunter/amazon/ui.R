@@ -8,6 +8,7 @@ dashboardPage(
                                      img(src = "Tom-Hunter-1.jpg", height = 40, width = 40), 'Made by Tom Hunter'))
     ), br(),
     sidebarMenu(id = 'menu1',
+                menuItem('Intro', tabName = 'intro', icon = icon('bars')),
                 menuItem('Data', tabName = 'data', icon = icon('table')),
                 menuItem('Categorical Variables', tabName = 'groups', icon = icon('users')),
                 menuItem('Bar Charts', tabName = 'bar', icon = icon('bar-chart')),
@@ -91,6 +92,32 @@ dashboardPage(
   ),
   dashboardBody( 
     tabItems(
+      tabItem(tabName = 'intro',
+              HTML("<h3><b>Problem</b><h3>",
+                   "<ul>",
+                    "<li><h4>What differentiates a high selling product from a low selling product on Amazon?</h4></li>",
+                   "</ul>",
+                   "<h3><b>Theorized solution</b></h3>",
+                   "<ul>",
+                    "<li><h4>GOAL: Estimating product sales using change in BSR</h4></li>",
+                    "<li><h4>GOAL: Predict BSR using product attribute data</h4></li>",
+                   "</ul>",
+                   "<h3><b>Problems encountered</b></h3>",
+                   "<ul>",
+                    "<li><h4>Inconsistent Dom structure</h4></li>",
+                    "<li><h4>Captchas </h4></li>",
+                    "<li><h4>IP bans</h4></li>",
+                    "<li><h4>User-agent profiling</h4></li>",
+                    "<li><h4>Work arounds?</h4></li>",
+                   "</ul>",
+                   "<h3><b>Dashboard Visualizations</b></h3>",
+                   "<h3><b>Next steps</b></h3>",
+                   "<ul>",
+                    "<li><h4>More dynamic selectors</h4></li>",
+                    "<li><h4>Supplementing data with API</h4></li>",
+                   "</ul>"
+                  )
+      ),
       tabItem(tabName = 'data',
               fluidRow(column(width = 6, DT::dataTableOutput('table', width = '200%')))
       ),
