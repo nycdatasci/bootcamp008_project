@@ -1,16 +1,18 @@
-FinalScrape <- read.csv("FinalScrape2.csv", header = TRUE)
-
-GenreSummary <- FinalScrape %>% group_by(Group, Genre) %>% summarise(GenreSums = length(Genre))
-
-AverageTime <- FinalScrape %>% group_by(Group) %>% summarise(Average_Time = mean(Length))
-
-
 library(ggplot2)
 library(readxl)
 library(plyr)
 library(dplyr)
 library(ggrepel)
 library(car)
+
+
+
+FinalScrape <- read.csv("FinalScrape2.csv", header = TRUE)
+
+GenreSummary <- FinalScrape %>% group_by(Group, Genre) %>% summarise(GenreSums = length(Genre))
+
+AverageTime <- FinalScrape %>% group_by(Group) %>% summarise(Average_Time = mean(Length))
+
 
 shinyServer(function(input, output){
   output$SongPlot <- renderPlot({
