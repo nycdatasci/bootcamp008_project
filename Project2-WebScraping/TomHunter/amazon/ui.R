@@ -44,7 +44,7 @@ dashboardPage(
     ),
     conditionalPanel(
       condition = "input.menu1 == 'histogram'",  
-      selectInput('var',
+      selectInput('var_his',
                   label = 'Choose a variable to view as a histogram',
                   choices = c('Avg_Customer_Rating', "OneStarPct",
                               "TwoStarPct","ThreeStarPct","FourStarPct", "FiveStarPct"),
@@ -60,10 +60,10 @@ dashboardPage(
       ),
       selectizeInput('yvar_box',
                      label = 'Choose Y-axis variable',
-                     choices = c('Sale_Price', 'Avg_Customer_Rating', "Number_of_Customer_Questions",
-                                 "Number_of_Reviews", "List_Price", "OneStarPct", "TwoStarPct","ThreeStarPct",
+                     choices = c('Avg_Customer_Rating', "Number_of_Customer_Questions",
+                                 "Number_of_Reviews", "OneStarPct", "TwoStarPct","ThreeStarPct",
                                  "FourStarPct", "FiveStarPct"), 
-                     selected = 'Sale_Price'
+                     selected = 'Avg_Customer_Rating'
       )
     ),
     
