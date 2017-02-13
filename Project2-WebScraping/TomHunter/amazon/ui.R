@@ -18,9 +18,9 @@ dashboardPage(
       condition = "input.menu1 == 'data'",
       selectizeInput('selected',
                      label = 'Select Variable to Search',
-                     choices = c("ASIN", "Product Title", 'Category', 'Manufacturer', 'Origin','Sale Price', 'Avg Customer Rating', "Number of Customer Questions",
-                                 "Number of Reviews", "List Price", "1 Star %", "2 Star %","3 Star %",
-                                 "4 Star %", "5 Star %")
+                     choices = c("ASIN", "Product_Title", 'Category', 'Manufacturer', 'Origin','Sale_Price', 
+                                  "Avg_Customer_Rating", "Number_of_Customer Questions","Number_of_Reviews", 
+                                 "List_Price", "1_Star_%", "2_Star_%","3_Star_%","4_Star_%", "5_Star_%")
                      )
     ),
     conditionalPanel(
@@ -35,8 +35,8 @@ dashboardPage(
       condition = "input.menu1 == 'histogram'",  
       selectInput('var',
                   label = 'Choose a variable to view as a histogram',
-                  choices = c('Manufacturer', 'Origin', 'Category', 'Avg Customer Rating', "1 Star %",
-                              "2 Star %","3 Star %","4 Star %", "5 Star %"),
+                  choices = c('Manufacturer', 'Origin', 'Category', 'Avg_Customer_Rating', "1_Star_%",
+                              "2_Star_%","3_Star_%","4_Star_%", "5_Star_%"),
                   selected = 'Category'
                   )
     ),
@@ -58,10 +58,10 @@ dashboardPage(
       ),
       selectizeInput('yvar_box',
                      label = 'Choose Y-axis variable',
-                     choices = c('Sale Price', 'Avg Customer Rating', "Number of Customer Questions",
-                                 "Number of Reviews", "List Price", "1 Star %", "2 Star %","3 Star %",
-                                 "4 Star %", "5 Star %"), 
-                     selected = 'Sale Price'
+                     choices = c('Sale_Price', 'Avg_Customer_Rating', "Number_of_Customer_Questions",
+                                 "Number_of_Reviews", "List_Price", "1_Star_%", "2_Star_%","3_Star_%",
+                                 "4_Star_%", "5_Star_%"), 
+                     selected = 'Sale_Price'
       )
     ),
     
@@ -69,16 +69,16 @@ dashboardPage(
       condition = "input.menu1 == 'scatter'",
       selectizeInput('xvar',
                      label = 'Choose X-axis variable',
-                     choices = c('Sale Price', 'Avg Customer Rating', "Number of Customer Questions",
-                                 "Number of Reviews", "List Price", "1 Star %", "2 Star %","3 Star %",
-                                 "4 Star %", "5 Star %"),
-                     selected = "5 Star %"
+                     choices = c('Sale_Price', 'Avg Customer_Rating', "Number_of_Customer_Questions",
+                                 "Number_of_Reviews", "List_Price", "1_Star_%", "2_Star_%","3_Star_%",
+                                 "4_Star_%", "5_Star_%"),
+                     selected = "5_Star_%"
       ),
       selectizeInput('yvar',
                      label = 'Choose Y-axis variable',
-                     choices = c('Sale Price', 'Avg Customer Rating', "Number of Customer Questions",
-                                 "Number of Reviews", "List Price", "1 Star %", "2 Star %","3 Star %",
-                                 "4 Star %", "5 Star %"),
+                     choices = c('Sale_Price', 'Avg Customer_Rating', "Number_of_Customer_Questions",
+                                 "Number_of_Reviews", "List_Price", "1_Star_%", "2_Star_%","3_Star_%",
+                                 "4_Star_%", "5_Star_%"),
                      selected = 'Avg Customer Rating'
       ),
       selectizeInput('factor',
@@ -103,7 +103,7 @@ dashboardPage(
       tabItem(tabName = 'scatter',
               fluidRow(column(width = 2, actionButton('regression', label = 'Click to add Regression Line')),
                        br(), br(),
-                       column(width = 6, plotlyOutput('scatter', width = '200%', height = '600px')))
+                       column(width = 6, plotOutput('scatter', width = '200%', height = '600px')))
       )
     )
   )
