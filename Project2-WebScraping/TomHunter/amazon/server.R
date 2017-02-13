@@ -60,42 +60,81 @@ function(input, output){
     })
   })
   
-  #HISTOGRAMS
+  #BAR CHARTS
   observe({
-    output$histogram <- renderPlot({
+    output$bar <- renderPlot({
+      
       data = reactive_dataset()
       
-      # input$var
       if(input$var == 'Manufacturer'){
-        g <- ggplot(data, aes(x = Manufacturer)) +
-          # geom_histogram(breaks = seq(input$range_year[1], input$range_year[2], by = input$binsize_year)) +
-          geom_histogram(stat = "count") +
+        if(input$remove_NA == TRUE) {
+          d <- tbl_df(data) %>%
+            filter(Manufacturer != c(''))
+        } else if(input$remove_low_counts == TRUE) {
+          d <- d %>%
+            filter(count(Manufacturer) <= 10)
+        } else {
+          d <- data
+        }
+        g <- ggplot(d, aes(x = Manufacturer)) +
+          geom_bar() +
           xlab('Manufacturer') +
-          theme(axis.title = element_text(size = 20), plot.title = element_text(size = 21, hjust = 0.5)) +
+          theme(axis.title = element_text(size = 20), 
+                plot.title = element_text(size = 21, hjust = 0.5),
+                axis.text.x = element_text(angle = 45, hjust = 1, size = 8)) +
           scale_fill_gradient(low = "#56B1F7", high = "#132B43") +
           scale_y_continuous()
         g
       }
       else if (input$var == 'Origin'){
-        g <- ggplot(data, aes(x = Origin)) +
-          geom_histogram(stat = "count") +
+        if(input$remove_NA == TRUE) {
+          d <- tbl_df(data) %>%
+            filter(Origin != c(''))
+        } else {
+          d <- data
+        }
+        g <- ggplot(d, aes(x = Origin)) +
+          geom_bar() +
           xlab('Product Origin') +
-          theme(axis.title = element_text(size = 20), plot.title = element_text(size = 21, hjust = 0.5)) +
+          theme(axis.title = element_text(size = 20), 
+                plot.title = element_text(size = 21, hjust = 0.5),
+                axis.text.x = element_text(angle = 45, hjust = 1, size = 15)) +
           scale_fill_gradient(low = "#56B1F7", high = "#132B43") +
           scale_y_continuous()
         print(g)
       }
       else if (input$var == 'Category'){
-        
-        g <- ggplot(data, aes(x = Category)) +
-          geom_histogram(stat = "count") +
+        if(input$remove_NA == TRUE) {
+          d <- tbl_df(data) %>%
+            filter(Category != c(''))
+        } else if(input$remove_low_counts == TRUE) {
+          d <- d %>%
+            filter(count(Category) <= 10)
+        } else {
+          d <- data
+        }
+        g <- ggplot(d, aes(x = Category)) +
+          geom_bar() +
           xlab('Product Category') +
-          theme(axis.title = element_text(size = 20), plot.title = element_text(size = 21, hjust = 0.5)) +
+          theme(axis.title = element_text(size = 20), 
+                plot.title = element_text(size = 21, hjust = 0.5),
+                axis.text.x = element_text(angle = 45, hjust = 1, size = 15)) +
           scale_fill_gradient(low = "#56B1F7", high = "#132B43") +
           scale_y_continuous()
         g
       }
-      else if (input$var == 'Avg_Customer_Rating'){
+    })
+  })
+  
+  
+  #HISTOGRAMS
+  observe({
+    output$histogram <- renderPlot({
+      
+      data = reactive_dataset()
+      
+      if (input$var == 'Avg_Customer_Rating'){
+        
         g <- ggplot(data, aes(x = `Avg_Customer_Rating`)) +
           geom_histogram() +
           xlab('Average Customer Rating') +
@@ -162,10 +201,9 @@ function(input, output){
   #BOXPLOTS
   observe({
     output$box <- renderPlot({
-      
       data = reactive_dataset()
-      d <- na.omit(data[, c(input$`xvar_box`, input$`yvar_box`)])
-      g <- ggplot(d, aes_string(x = input$xvar_box, y = input$yvar_box)) +
+      data <- na.omit(data[, c(input$`xvar_box`, input$`yvar_box`)])
+      g <- ggplot(data, aes_string(x = input$xvar_box, y = input$yvar_box)) +
         geom_boxplot() +
         scale_fill_gradient(low = "#56B1F7", high = "#132B43") +
         theme(legend.position = 'none') 
@@ -177,8 +215,8 @@ function(input, output){
     output$scatter <- renderPlot({
       if (input$regression %% 2 != 0){
         data = reactive_dataset()
-        d <- na.omit(data[, c(input$xvar, input$yvar, input$factor)])
-        g <- ggplot(d, aes_string(x = input$xvar, y = input$yvar)) +
+        data <- na.omit(data[, c(input$xvar, input$yvar, input$factor)])
+        g <- ggplot(data, aes_string(x = input$xvar, y = input$yvar)) +
           geom_point(aes_string(colour = input$factor)) +
           scale_color_gradient(low = 'blue') +
           scale_colour_brewer() +  
@@ -189,9 +227,9 @@ function(input, output){
       }
       else {
         data = reactive_dataset()
-        d <- na.omit(data[, c(input$`xvar`, input$`yvar`, input$`factor`)])
-        g <- ggplot(d, aes_string(x = input$xvar, y = input$yvar)) +
-          geom_point(aes_string(color = input$factor)) +
+        data <- na.omit(data[, c(input$xvar, input$yvar, input$factor)])
+        g <- ggplot(data, aes_string(x = input$xvar, y = input$yvar)) +
+          geom_point(aes(color = input$`factor`)) +
           scale_colour_brewer() +
           theme_dark() +
           scale_x_continuous() +

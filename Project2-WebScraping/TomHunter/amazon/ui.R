@@ -10,6 +10,7 @@ dashboardPage(
     sidebarMenu(id = 'menu1',
                 menuItem('Data', tabName = 'data', icon = icon('table')),
                 menuItem('Categorical Variables', tabName = 'groups', icon = icon('users')),
+                menuItem('Bar Charts', tabName = 'bar', icon = icon('bar-chart')),
                 menuItem('Histograms', tabName = 'histogram', icon = icon('bar-chart')),
                 menuItem('Box Plots', tabName = 'box', icon = icon('reorder')),
                 menuItem('Scatter Plots', tabName = 'scatter', icon = icon('line-chart'))
@@ -32,23 +33,24 @@ dashboardPage(
                      )
     ),
     conditionalPanel(
+      condition = "input.menu1 == 'bar'",  
+      selectInput('var',
+                  label = 'Choose a variable to view as a bar chart',
+                  choices = c('Manufacturer', 'Origin', 'Category'),
+                  selected = 'Origin'
+      ),
+      checkboxInput("remove_NA", "Remove NA and blank values", TRUE),
+      checkboxInput("remove_low_counts", "Remove Small Counts", TRUE)
+    ),
+    conditionalPanel(
       condition = "input.menu1 == 'histogram'",  
       selectInput('var',
                   label = 'Choose a variable to view as a histogram',
-                  choices = c('Manufacturer', 'Origin', 'Category', 'Avg_Customer_Rating', "1_Star_%",
+                  choices = c('Avg_Customer_Rating', "1_Star_%",
                               "2_Star_%","3_Star_%","4_Star_%", "5_Star_%"),
-                  selected = 'Category'
+                  selected = 'Avg_Customer_Rating'
                   )
     ),
-    
-    # conditionalPanel(
-    #   condition = "input.menu1 == 'histogram' && input.var == 'Duration'",
-    #   sliderInput('binsize_duration',
-    #               label = 'Bin size:',
-    #               min = 5, max = 75, step = 5, sep = '', value = 25, ticks = T
-    #   )
-    
-
     conditionalPanel(
       condition = "input.menu1 == 'box'",
       selectizeInput('xvar_box',
@@ -93,6 +95,9 @@ dashboardPage(
       ),
       tabItem(tabName = 'groups',
               fluidRow(column(width = 6, DT::dataTableOutput('groups', width = '200%')))
+      ),
+      tabItem(tabName = 'bar',
+              fluidRow(column(width = 6, plotOutput('bar', width = '200%', height = '600px')))
       ),
       tabItem(tabName = 'histogram',
               fluidRow(column(width = 6, plotOutput('histogram', width = '200%', height = '600px')))
