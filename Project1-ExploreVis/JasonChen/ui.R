@@ -20,9 +20,9 @@ shinyUI(dashboardPage(skin = 'purple',
       menuSubItem("Injury/Death to Accidents", tabName = "injratio",icon = icon("bar-chart-o")),
       menuSubItem("A Deeper Look into Motorcycles", tabName = "motorcycles",icon = icon("motorcycle")),
       menuSubItem("Top 3 Motorcycle Accidents", tabName = "motoraccidents",icon = icon("motorcycle"))
-      ),
+      )
       
-      menuItem('Future Features', tabName = 'future', icon = icon('exclamation-triangle'))
+      # menuItem('Future Features', tabName = 'future', icon = icon('exclamation-triangle'))
       ),
       
       conditionalPanel("input.sideBarMenu == 'map1'",
@@ -48,8 +48,8 @@ shinyUI(dashboardPage(skin = 'purple',
                                    min = 0, max = 2000, value = 200, step = 100),
                        dateRangeInput('dateRange',
                                       label = 'Date range input: yyyy-mm-dd',
-                                      start = '2012-01-01', end = '2016-12-31', 
-                                      min = '2012-01-01', max = '2016-12-31'),
+                                      start = '2013-01-01', end = '2016-12-31', 
+                                      min = '2013-01-01', max = '2016-12-31'),
                        
                        radioButtons("time1", "Select time: ",
                                     c('All' = "TIME >= 00:00:00 & TIME <= 06:00:00",
@@ -61,6 +61,15 @@ shinyUI(dashboardPage(skin = 'purple',
                        
       ),
       conditionalPanel("input.sideBarMenu == 'map2'",
+                       selectizeInput('borough1',
+                                      'BOROUGH',
+                                      choice = c('All' = 'BOROUGH != ""',
+                                                 'Brooklyn' = 'BOROUGH == "BROOKLYN"',
+                                                 'Bronx' = 'BOROUGH == "BRONX"',
+                                                 'Queens' = 'BOROUGH == "QUEENS"',
+                                                 'Staten Island' = 'BOROUGH == "STATEN ISLAND"',
+                                                 'Manhattan' = 'BOROUGH == "MANHATTAN"')),
+                       
                        checkboxGroupInput('show_vars', 'Select group: ',
                                           c('Pedestrians - Red' = 'NUMBER.OF.PEDESTRIANS.KILLED > 0',
                                             'Cyclists - Green' = 'NUMBER.OF.CYCLIST.KILLED > 0',
@@ -74,8 +83,8 @@ shinyUI(dashboardPage(skin = 'purple',
                        
                        dateRangeInput('dateRange2',
                                       label = 'Date range input: yyyy-mm-dd',
-                                      start = '2012-01-01', end = '2016-12-31',
-                                      min = '2012-01-01', max = '2016-12-31'),
+                                      start = '2013-01-01', end = '2016-12-31',
+                                      min = '2013-01-01', max = '2016-12-31'),
                        
                        radioButtons("time2", "Select time: ",
                                     c('All' = "TIME >= 00:00:00 & TIME <= 06:00:00",
@@ -194,14 +203,15 @@ shinyUI(dashboardPage(skin = 'purple',
                 width = 12))),
       
       tabItem(tabName = 'future',
-              fluidRow((box(
-                'Add weekdays to maps. 
-                Optimize map loading. 
-                Add more features to motorcycle tabs. 
-                Add intro tab.'
+              fluidRow((box(renderText(
+                'Add weekdays to maps.\n 
+                Optimize map loading. \n 
+                Add more features to motorcycle tabs.\n 
+                Add intro tab.')
               ))))
 
             
       )
     )
 ))
+
