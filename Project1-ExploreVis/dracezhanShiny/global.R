@@ -15,7 +15,7 @@ library(shinydashboard)
 library(RColorBrewer)
 library(DT)
 
-VGdata = read.csv('data/Video_Games_Sales_Dec_2016.csv', stringsAsFactors = F)
+VGdata = read.csv('data\\Video_Games_Sales_Dec_2016.csv', stringsAsFactors = F)
 #VGdata = read.csv('data/Video_Games_Sales_Dec_2016.csv', stringsAsFactors = F) for mac/linux deployment locally
 VGdata[c(2,4,5,15,16)] <- lapply(VGdata[c(2,4,5,15,16)], factor)
 VGdata[3] <- lapply(VGdata[3], as.numeric)
