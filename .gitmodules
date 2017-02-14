@@ -4,6 +4,8 @@
 [submodule "Project2-WebScraping/DodgeCoates"]
 	path = Project2-WebScraping/DodgeCoates
 	url = git@github.com:dwcoates/craigs-politics.git
-[submodule "williambest_p1"]
-	path = williambest_p1
+[submodule "Project1-ExploreVis/williambest_p1"]
+	
+	path = Project1-ExploreVis/williambest_p1
+	
 	url = https://github.com/Billtholomew/NYCDSA-ShinyProject.git
