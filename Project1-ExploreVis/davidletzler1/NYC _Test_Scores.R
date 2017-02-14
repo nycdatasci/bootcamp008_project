@@ -132,7 +132,7 @@ cor.test(address.cor$Proficient.ELA, address.cor$Median.Household.Income) #0.514
 math.total$X..8[math.total$X..8=="s"]<-NA
 math.total$X..8<-as.numeric(math.total$X..8)
 math.year<-filter(math.total, Grade=="All Grades")
-math.year %>% group_by(Year) %>% summarize(Total.Proficient=sum(X..8, na.rm=T)/sum(Number.Tested, na.rm=T)) 
+math.summ<-math.year %>% group_by(Year) %>% summarize(Math=sum(X..8, na.rm=T)/sum(Number.Tested, na.rm=T)) 
 # 1  2013        0.3099477
 #2  2014        0.3558831
 #3  2015        0.3642421
@@ -141,7 +141,13 @@ math.year %>% group_by(Year) %>% summarize(Total.Proficient=sum(X..8, na.rm=T)/s
 ela.total$Proficiet.Total[ela.total$Proficiet.Total=="s"]<-NA
 ela.total$Proficiet.Total<-as.numeric(ela.total$Proficiet.Total)
 ela.year<-filter(ela.total, Grade=="All Grades")
-ela.year %>% group_by(Year) %>% summarize(Total.Proficient=sum(Proficiet.Total, na.rm=T)/sum(Number.Tested, na.rm=T))
+ela.summ<-ela.year %>% group_by(Year) %>% summarize(ELA=sum(Proficiet.Total, na.rm=T)/sum(Number.Tested, na.rm=T))
+
+year.summ<-full_join(math.summ, ela.summ, by="Year")
+year.summ$Year<-as.factor(year.summ$Year)
+library(tidyr)
+year.summ<-gather(year.summ, key="Test", value="Proficient", 2:3)
+year.summ$Test<-factor(year.summ$Test, levels=c("Math", "ELA"))
 
 #1  2013        0.2763665
 #2  2014        0.2958861
@@ -149,7 +155,7 @@ ela.year %>% group_by(Year) %>% summarize(Total.Proficient=sum(Proficiet.Total, 
 #4  2016        0.3933296
 
 #Examine grade-by-grade proficiency
-math.total %>% group_by(Grade) %>% summarize(Total.Proficient=sum(X..8, na.rm=T)/sum(Number.Tested, na.rm=T))
+math.grade<-math.total %>% group_by(Grade) %>% summarize(Math=sum(X..8, na.rm=T)/sum(Number.Tested, na.rm=T))
 #3        0.3863118
 #4        0.4005786
 #5        0.3791962
@@ -158,7 +164,7 @@ math.total %>% group_by(Grade) %>% summarize(Total.Proficient=sum(X..8, na.rm=T)
 #8        0.2561857
 #All Grades        0.3511844
 
-ela.total %>% group_by(Grade) %>% summarize(Total.Proficient=sum(Proficiet.Total, na.rm=T)/sum(Number.Tested, na.rm=T))
+ela.grade<-ela.total %>% group_by(Grade) %>% summarize(ELA=sum(Proficiet.Total, na.rm=T)/sum(Number.Tested, na.rm=T))
 #         3        0.3307813
 #         4        0.3375183
 #         5        0.3139323
@@ -167,8 +173,44 @@ ela.total %>% group_by(Grade) %>% summarize(Total.Proficient=sum(Proficiet.Total
 #         8        0.3363706
 # All Grades        0.3198468
 
+grade.summ<-full_join(math.grade, ela.grade, by="Grade")
+grade.summ$Grade<-as.factor(grade.summ$Grade)
+grade.summ<-gather(grade.summ, key="Test", value="Proficient", 2:3)
+grade.summ<-filter(grade.summ, Grade!="All Grades")
+
 #Examine year/grade proficiency for longitudinal analysis
 math.mix<-filter(math.total, Grade!="All Grades")
 ela.mix<-filter(ela.total, Grade!="All Grades")
-math.year.grade<-math.mix %>% group_by(Grade, Year) %>% summarize(Total.Proficient=sum(X..8, na.rm=T)/sum(Number.Tested, na.rm=T))
-ela.year.grade<-ela.mix %>% group_by(Grade, Year) %>% summarize(Total.Proficient=sum(Proficiet.Total, na.rm=T)/sum(Number.Tested, na.rm=T))
+math.year.grade<-math.mix %>% group_by(Grade, Year) %>% summarize(Math=sum(X..8, na.rm=T)/sum(Number.Tested, na.rm=T))
+ela.year.grade<-ela.mix %>% group_by(Grade, Year) %>% summarize(ELA=sum(Proficiet.Total, na.rm=T)/sum(Number.Tested, na.rm=T))
+
+year.grade<-full_join(math.year.grade, ela.year.grade, by=c("Year", "Grade"))
+year.grade$Year<-as.Date(year.grade$Year)
+year.grade$Grade<-as.factor(year.grade$Grade)
+year.grade<-gather(year.grade, key="Test", value="Proficient", 3:4)
+long.3<-year.grade %>% filter((Year=="2013" & Grade=="3")|(Year=="2014" & Grade=="4")|(Year=="2015" & Grade=="5")|(Year=="2016" & Grade=="6")) %>% mutate(Cohort="3rd (2013)")
+long.4<-year.grade %>% filter((Year=="2013" & Grade=="4")|(Year=="2014" & Grade=="5")|(Year=="2015" & Grade=="6")|(Year=="2016" & Grade=="7")) %>% mutate(Cohort="4th (2013)")
+long.5<-year.grade %>% filter((Year=="2013" & Grade=="5")|(Year=="2014" & Grade=="6")|(Year=="2015" & Grade=="7")|(Year=="2016" & Grade=="8")) %>% mutate(Cohort="5th (2013)")
+long.345<-rbind(long.3, long.4, long.5)
+long.math<-filter(long.345, Test=="Math")
+long.ela<-filter(long.345, Test=="ELA")
+
+#Dumb plots
+library(ggplot2)
+ela<-ggplot(data=address.cor, aes(x=Median.Household.Income, y=Proficient.ELA))
+math<-ggplot(data=address.cor, aes(x=Median.Household.Income, y=Proficient.Math))
+
+ela + geom_point(aes(color=Proficient.ELA)) + geom_smooth(method="lm") + labs(title="Common Core ELA Test Scores by Neighborhood Income Level", x="Median Household Income of Census Tract ($)", y= "Percent Proficient on ELA exam (All Students)", color= "% Proficient") + scale_color_continuous(low="red", high="green") + geom_text(x=200000, y=15, label=" r =.51 (p < 10e-15)") + theme(plot.title = element_text(hjust = 0.5))
+math + geom_point(aes(color=Proficient.Math)) + geom_smooth(method="lm") + labs(title="Common Core Math Test Scores by Neighborhood Income Level", x="Median Household Income of Census Tract ($)", y= "Percent Proficient on Math exam (All Students)", color= "% Proficient") + scale_color_continuous(low="red", high="green") + geom_text(x=200000, y=15, label=" r =.47 (p < 10e-15)") + theme(plot.title = element_text(hjust = 0.5))
+
+year<-ggplot(data=year.summ, aes(x=Year, y=Proficient))
+year + geom_bar(stat="identity", aes(fill=Test), position="dodge") + labs(title="Proficiency Rates by Year") + geom_text(label = paste0(signif(year.summ$Proficient*100, 3), "%"), check_overlap = T) + theme(plot.title = element_text(hjust = 0.5))
+
+grade<-ggplot(data=grade.summ, aes(x=Grade, y=Proficient))
+grade + geom_bar(stat="identity", aes(fill=Test), position="dodge") + labs(title="Proficiency Rates by Grade") + geom_text(label = paste0(signif(grade.summ$Proficient*100, 3), "%"), check_overlap = T) + theme(plot.title = element_text(hjust = 0.5))
+
+long1<-ggplot(data=long1, aes(x=Year, y=Proficient))
+long2<-ggplot(data=long2, aes(x=Year, y=Proficient))
+long1 + geom_line(aes(color=Cohort), lwd=2) + geom_label(label=long.math$Grade) + labs(title="Longitudindal Tracking of 2013 Cohorts", y="Fraction Proficient") + theme(plot.title = element_text(hjust = 0.5))
+long2 + geom_line(aes(color=Cohort), lwd=2) + geom_label(label=long.math$Grade) + labs(title="Longitudindal Tracking of 2013 Cohorts", y="Fraction Proficient") + theme(plot.title = element_text(hjust = 0.5))
+
