@@ -1,0 +1,336 @@
+---
+title: "Board Game Geek Analysis"
+author: "Bill Best"
+date: "February 10, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(RSQLite)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(corrplot)
+library(stats)
+```
+
+
+```{r load, echo=FALSE}
+get.data.from.sqlite <- function(db.name, table.name) {
+  con <- dbConnect(SQLite(), dbname=db.name)
+  db.query <- paste('select * from', table.name, ";")
+  table.data <- dbGetQuery(con, db.query)
+  return(table.data)
+}
+
+game.data <- get.data.from.sqlite("bgg_data_3.db", "board_games")
+
+# Then clean
+# there is a minimum set of data I want to work with
+
+clean.data <- game.data %>% 
+  filter(grepl('[[:digit:]]+', rank)) %>% mutate(rank = as.numeric((rank))) %>%
+  filter(grepl('[[:digit:]]+', num_votes)) %>% mutate(num_votes = as.numeric((num_votes))) %>%
+  filter(grepl('[[:digit:].]+', geek_rating)) %>% mutate(geek_rating = as.numeric((geek_rating))) %>%
+  filter(grepl('[[:digit:].]+', avg_rating)) %>% mutate(avg_rating = as.numeric((avg_rating))) %>%
+  filter(grepl('[[:digit:].]+', avg_rating_std_deviations)) %>% mutate(avg_rating_std_deviations = as.numeric((avg_rating_std_deviations)))
+
+```
+
+## Plot Votes vs Comments with Rank Page
+
+As rank increases, people vote more, and comment more. People are more interested in talking about things they like.
+Note that this is log-log scale.
+
+```{r comment.vote.rank, echo=FALSE}
+
+valid.data <- clean.data %>% filter(grepl("[[:digit:]]+", num_comments)) %>% mutate(num_comments = as.numeric(num_comments))
+
+votes.comments <- valid.data %>% select(num_votes, num_comments, rank)
+votes.comments <- votes.comments[complete.cases(votes.comments), ]
+
+ggplot(votes.comments, aes(x=num_votes, y=num_comments, color=rank)) + geom_point() + 
+  scale_colour_continuous(limits= c(1, 5000), low="green", high="blue") + 
+  scale_x_log10() + scale_y_log10() + xlab("# Votes") + ylab("# Comments")
+```
+
+## How correlated are geek_rating and rank?
+
+Very strongly. abs(Corr) = 0.88
+
+```{r ,echo=FALSE}
+
+cor(select(clean.data, c(rank, geek_rating)))
+
+```
+
+## Are Number of Fans a good indicator of geek rating?
+
+Actually, no. Number of fans is not closely correlated.
+
+```{r num.fans.check, echo=FALSE}
+
+fan.data <- clean.data %>% 
+  filter(grepl("[[:digit:]]+", num_fans)) %>% mutate(num_fans = as.numeric(num_fans)) %>% filter(num_fans >  0) %>%
+  filter(grepl("[[:digit:]]+", num_comments)) %>% mutate(num_comments = as.numeric(num_comments)) %>% filter(num_comments >  0) %>%
+  filter(grepl("[[:digit:].]+", weight)) %>% mutate(weight = as.numeric(weight)) %>% filter(weight >  0) %>%
+  mutate(rank = 5000-rank)
+
+fan.data <- fan.data %>% 
+  select(Rank = rank, "Geek Rating" = geek_rating, "Avg. Rating" = avg_rating, "# Fans" = num_fans, "# Votes" = num_votes, "# Comments" = num_comments, "Weight" = weight)
+
+f.cor <- cor(fan.data)
+f.cor
+corrplot(f.cor)
+
+
+fan.data <- clean.data %>% 
+  filter(grepl("[[:digit:]]+", num_fans)) %>% mutate(num_fans = as.numeric(num_fans)) %>% filter(num_fans >  0) %>%
+  filter(grepl("[[:digit:]]+", num_comments)) %>% mutate(num_comments = as.numeric(num_comments)) %>% filter(num_comments >  0) %>%
+  filter(grepl("[[:digit:].]+", weight)) %>% mutate(weight = as.numeric(weight)) %>% filter(weight >  0) %>%
+  mutate(rank = 5000-rank)
+
+fan.data <- fan.data %>% 
+  mutate(num_fans = log10(num_fans), num_votes = log10(num_votes), num_comments = log10(num_comments)) %>%
+  select(Rank = rank, "Geek Rating" = geek_rating, "Avg. Rating" = avg_rating, "log10(# Fans)" = num_fans, "log10(# Votes)" = num_votes, "log10(# Comments)" = num_comments, "Weight" = weight)
+
+
+f.cor.loglog <- cor(fan.data)
+f.cor.loglog
+corrplot(f.cor.loglog)
+
+
+fan.data <- clean.data %>%
+  filter(grepl("[[:digit:]]+", num_fans)) %>% mutate(num_fans = as.numeric(num_fans)) %>% filter(num_fans >  0) %>%
+  filter(grepl("[[:digit:]]+", num_expansions)) %>% mutate(num_expansions = as.numeric(num_expansions)) %>%
+  filter(grepl("[[:digit:]]+", owned)) %>% mutate(owned = as.numeric(owned)) %>%
+  filter(grepl("[[:digit:]]+", prev_owned)) %>% mutate(prev_owned = as.numeric(prev_owned)) %>%
+  mutate(rank = 5000-rank)
+
+fan.data <- fan.data %>% 
+  mutate(`Est. Sales` = owned + prev_owned) %>%
+  select(Rank = rank, "Geek Rating" = geek_rating, "Avg. Rating" = avg_rating, "# Expansions" = num_expansions, num_fans)
+
+f.cor <- cor(fan.data)
+
+corrplot(f.cor)
+
+
+fan.data <- clean.data %>% 
+  filter(grepl("[[:digit:]]+", num_fans)) %>% mutate(num_fans = as.numeric(num_fans)) %>% filter(num_fans >  0) %>%
+  filter(grepl("[[:digit:]]+", num_comments)) %>% mutate(num_comments = as.numeric(num_comments)) %>% filter(num_comments >  0) %>%
+  filter(grepl("[[:digit:].]+", weight)) %>% mutate(weight = as.numeric(weight)) %>% filter(weight >  0) %>%
+  mutate(rank = 5000-rank)
+
+fan.data <- fan.data %>% 
+  mutate(`FV Score` = (log10(num_votes) + avg_rating )) %>%
+  mutate(num_votes = log10(num_votes), avg_rating = avg_rating, `FV Score` = `FV Score`) %>%
+  select(Rank = rank, "log10(# Votes)" = num_votes, avg_rating, `FV Score`)
+
+
+f.cor.cv.score <- cor(fan.data)
+f.cor.cv.score
+
+
+
+
+```
+
+
+```{r, echo=FALSE}
+
+fan.data <- clean.data %>% 
+  filter(grepl("[[:digit:]]+", num_fans)) %>% mutate(num_fans = as.numeric(num_fans)) %>% filter(num_fans >  0) %>%
+  filter(grepl("[[:digit:]]+", num_comments)) %>% mutate(num_comments = as.numeric(num_comments)) %>% filter(num_comments >  0) %>%
+  mutate(rank = 5000-rank)
+
+fan.data <- fan.data %>% 
+  mutate(num_fans = log10(num_fans), num_votes = log10(num_votes), num_comments = log10(num_comments)) %>%
+  select(Rank = rank, "Geek Rating" = geek_rating, "Avg. Rating" = avg_rating, "log10(# Fans)" = num_fans, "log10(# Votes)" = num_votes, "log10(# Comments)" = num_comments)
+
+```
+
+
+## Weight Analysis
+
+People generally prefer more complex games over simpler games,
+
+```{r weight.avg.Rating, echo=FALSE}
+
+valid.data <- clean.data %>% filter(grepl("[[:digit:].]+", weight)) %>% mutate(weight = as.numeric(weight))
+
+weight.rating <- valid.data %>% select(weight, avg_rating, rank)
+weight.rating <- weight.rating[complete.cases(weight.rating), ]
+
+ggplot(weight.rating, aes(x=weight, y=avg_rating, color=rank)) + geom_point() + scale_colour_continuous("Rank", limits= c(1, 5000), low="green", high="blue")
+
+
+```
+
+## Non-Rentention Rates
+
+As Geek rating increases, people are more likely to keep the board games they own. That is, the "non-retention" rate, rate of previous ownership, goes down.
+
+
+```{r retention, echo=FALSE}
+
+valid.data <- clean.data %>% 
+  filter(grepl("[[:digit:]]+", owned)) %>% mutate(owned = as.numeric(owned)) %>%
+  filter(grepl("[[:digit:]]+", prev_owned)) %>% mutate(prev_owned = as.numeric(prev_owned))
+  
+
+retention.rank <- valid.data %>% mutate(retention = prev_owned / (owned + prev_owned)) %>% select(retention, geek_rating, rank)
+retention.rank <- retention.rank[complete.cases(retention.rank), ]
+
+ggplot(retention.rank, aes(x=geek_rating, y=retention, color=rank)) + geom_point() + scale_colour_continuous("Rank", limits= c(1, 5000), low="green", high="blue") + xlab("Geek Rating") + ylab("Non-Retention")
+
+```
+
+
+## Find Top Mechanics and Categories
+
+I used log10(fans) for each game, and took the mean of that to evaluate and rank the categorical variables.
+
+
+```{r top.mechanics, echo=FALSE}
+
+valid.data <- clean.data %>% filter(grepl("[[:digit:].]+", num_fans)) %>% mutate(fans = as.numeric(num_fans))
+
+fans.mechanics <- valid.data %>% select(fans, num_votes, mechanics) %>% 
+  select(fans, mechanics)
+
+fans.mechanics <- fans.mechanics %>% 
+  mutate(mechanics = strsplit(mechanics, split = "|", fixed=TRUE)) %>% unnest(mechanics) %>%
+  mutate(fans = log10(fans)) %>%
+  group_by(mechanics) %>% summarise(fans = mean(fans)) %>% arrange(desc(fans))
+
+top.mechanics <- fans.mechanics[1:10, ]
+top.mechanics[, 1]
+
+```
+
+```{r top.categories, echo=FALSE}
+
+valid.data <- clean.data %>% filter(grepl("[[:digit:].]+", num_fans)) %>% mutate(fans = as.numeric(num_fans))
+
+# how far above average geek rating is the game? <- this gives us a score
+# how many people thought talking about it was important? <- this gives us weight
+fans.categories <- valid.data %>% select(fans, num_votes, categories) %>% 
+  select(fans, categories)
+
+fans.categories <- fans.categories %>% 
+  mutate(categories = strsplit(categories, split = "|", fixed=TRUE)) %>% unnest(categories) %>%
+  mutate(fans = log10(fans)) %>%
+  group_by(categories) %>% summarise(fans = mean(fans)) %>% arrange(desc(fans))
+
+top.categories <- fans.categories[1:10, ]
+top.categories[, 1]
+
+```
+
+```{r m.c.counts, echo=FALSE}
+
+# Number of top mechanics/categories per game
+count.top.mechanics <- 
+  clean.data %>%
+  mutate(mechanics = strsplit(mechanics, split = "|", fixed=TRUE)) %>% unnest(mechanics) %>%
+  filter(mechanics %in% top.mechanics$mechanics) %>%
+  group_by(game_id) %>% summarise(num.top.mechanics = n())
+
+count.top.categories <- 
+  clean.data %>%
+  mutate(categories = strsplit(categories, split = "|", fixed=TRUE)) %>% unnest(categories) %>%
+  group_by(game_id) %>% summarise(num.top.categories = n())
+
+# Total mechanics/categories per game
+count.mechanics <- 
+  clean.data %>%
+  mutate(mechanics = strsplit(mechanics, split = "|", fixed=TRUE)) %>% unnest(mechanics) %>%
+  filter(mechanics %in% top.mechanics$mechanics) %>%
+  group_by(game_id) %>% summarise(num.mechanics = n())
+
+count.categories <- 
+  clean.data %>%
+  mutate(categories = strsplit(categories, split = "|", fixed=TRUE)) %>% unnest(categories) %>%
+  group_by(game_id) %>% summarise(num.categories = n())
+
+```
+
+```{r ,echo=FALSE}
+
+mechanic.data <- clean.data %>% mutate(mechanics = strsplit(mechanics, split = "|", fixed=TRUE)) %>% unnest(mechanics) %>%
+  select(mechanics, geek_rating, avg_rating, num_votes, rank)
+category.data <- clean.data %>% mutate(categories = strsplit(categories, split = "|", fixed=TRUE)) %>% unnest(categories) %>%
+  select(categories, geek_rating, avg_rating, num_votes, rank)
+
+mech.mod <- lm(geek_rating ~ mechanics, mechanic.data)
+
+anova(mech.mod)
+
+```
+
+```{r top.mechanics, echo=FALSE}
+
+valid.data <- clean.data %>% filter(grepl("[[:digit:].]+", num_fans)) %>% mutate(fans = as.numeric(num_fans))
+
+fans.mechanics <- valid.data %>% select(num_votes, avg_rating, mechanics)
+
+fans.mechanics <- fans.mechanics %>% 
+  mutate(mechanics = strsplit(mechanics, split = "|", fixed=TRUE)) %>% unnest(mechanics) %>%
+  mutate(score = (log10(num_votes) + avg_rating )) %>%
+  group_by(mechanics) %>% summarise(score = mean(score)) %>% arrange((score))
+
+top.mechanics <- fans.mechanics[1:10, ]
+top.mechanics[, 1]
+
+```
+
+
+```{r top.categories, echo=FALSE}
+
+valid.data <- clean.data %>% filter(grepl("[[:digit:].]+", num_fans)) %>% mutate(fans = as.numeric(num_fans))
+
+fans.categories <- valid.data %>% select(num_votes, avg_rating, categories)
+
+fans.categories <- fans.categories %>% 
+  mutate(categories = strsplit(categories, split = "|", fixed=TRUE)) %>% unnest(categories) %>%
+  mutate(score = (log10(num_votes) + avg_rating )) %>%
+  group_by(categories) %>% summarise(score = mean(score)) %>% arrange((score))
+
+fans.categories <- fans.categories[1:10, ]
+fans.categories[, 1]
+
+```
+
+```{r fan.categories, echo=FALSE}
+
+valid.data <- clean.data %>% filter(grepl("[[:digit:].]+", num_fans)) %>% mutate(fans = as.numeric(num_fans)) %>% filter(fans > 0)
+
+fans.categories <- valid.data %>% select(num_votes, fans, categories)
+
+fans.categories <- fans.categories %>% 
+  mutate(categories = strsplit(categories, split = "|", fixed=TRUE)) %>% unnest(categories) %>%
+  mutate(fans = log10(fans)) %>%
+  group_by(categories) %>% summarise(fans = mean(fans)) %>% arrange(desc(fans))
+
+fans.categories <- fans.categories[1:10, ]
+fans.categories[, 1]
+
+```
+
+```{r fan.mechs, echo=FALSE}
+
+valid.data <- clean.data %>% filter(grepl("[[:digit:].]+", num_fans)) %>% mutate(fans = as.numeric(num_fans)) %>% filter(fans > 0)
+
+fans.mechanics <- valid.data %>% select(num_votes, fans, mechanics)
+
+fans.mechanics <- fans.mechanics %>% 
+  mutate(mechanics = strsplit(mechanics, split = "|", fixed=TRUE)) %>% unnest(mechanics) %>%
+  mutate(fans = log10(fans)) %>%
+  group_by(mechanics) %>% summarise(fans = mean(fans)) %>% arrange((fans))
+
+fans.mechanics <- fans.mechanics[1:10, ]
+fans.mechanics[, 1]
+
+```
