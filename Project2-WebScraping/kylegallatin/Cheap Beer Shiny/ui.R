@@ -26,7 +26,8 @@ shinyUI(dashboardPage(
   dashboardBody(
     tabItems(
       tabItem(tabName = "Ratings",
-              fluidRow(plotOutput("plot"))),
+              fluidRow(plotOutput("plot")),
+              fluidRow(img(src = 'beerIndustry.jpeg', height = 400, width = 600))),
       tabItem(tabName = "Boxplots",
               fluidRow(infoBoxOutput("maxBox"),
                        infoBoxOutput("minBox"),
