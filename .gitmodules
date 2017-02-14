@@ -4,6 +4,3 @@
 [submodule "Project2-WebScraping/DodgeCoates"]
 	path = Project2-WebScraping/DodgeCoates
 	url = git@github.com:dwcoates/craigs-politics.git
-[submodule "Project1-ExploreVis/williambest_p1"]
-	path = Project1-ExploreVis/williambest_p1
-	url = https://github.com/Billtholomew/NYC-Data-Science-Academy.git
