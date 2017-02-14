@@ -18,12 +18,18 @@ library(lubridate)
 # Nicer data tables
 library(DT)
 
+options(encoding = "WINDOWS-1252")
+
 # %like%
 library(data.table)
 
 source('helpers.R')
 
 songs = readRDS('data/clean/swr3-songs-2016-v3.rds')
+
+songs$artist <- iconv(songs$artist, from = "latin1", to='UTF-8')
+songs$title <- iconv(songs$title, from = "latin1", to='UTF-8')
+
 shows = readRDS('data/clean/shows.rds')
 wordCloudFilter = readLines('data/wordcloudfilter.txt')
 

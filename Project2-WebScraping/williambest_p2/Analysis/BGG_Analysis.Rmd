@@ -19,7 +19,7 @@ library(stats)
 ```{r load, echo=FALSE}
 get.data.from.sqlite <- function(db.name, table.name) {
   con <- dbConnect(SQLite(), dbname=db.name)
-  db.query <- paste('select * from', table.name)
+  db.query <- paste('select * from', table.name, ";")
   table.data <- dbGetQuery(con, db.query)
   return(table.data)
 }

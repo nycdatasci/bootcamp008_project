@@ -19,3 +19,10 @@ windowed.bar.chart <- function(df, filter.col, filter.val, size.left, size.right
   df[idx - idx.a + 1, "damage.style"] <- "gold"
   return(df)
 }
+
+length.check <- function(slat, slon, elat, elon, len) {
+  d <- distm(as.matrix(cbind(slon, slat)), as.matrix(cbind(elon, elat)), fun = distHaversine) / 1000 * 0.621
+  d <- diag(d)
+  dd <- abs(d - len)
+  return( (dd / len) < 0.2 )
+}
