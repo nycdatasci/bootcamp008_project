@@ -104,7 +104,7 @@ dashboardPage(
                    "</ul>",
                    "<h3><b>Problems encountered</b></h3>",
                    "<ul>",
-                    "<li><h4>Inconsistent Dom structure</h4></li>",
+                    "<li><h4>Inconsistent DOM structure</h4></li>",
                     "<li><h4>Captchas </h4></li>",
                     "<li><h4>IP bans</h4></li>",
                     "<li><h4>User-agent profiling</h4></li>",
