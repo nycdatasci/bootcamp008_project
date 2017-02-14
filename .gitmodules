@@ -7,3 +7,6 @@
 [submodule "Project1-ExploreVis/williambest_p1"]
 	path = Project1-ExploreVis/williambest_p1
 	url = https://github.com/Billtholomew/NYCDSA-ShinyProject.git
+[submodule "Project2-WebScraping/williambest_p2"]
+	path = Project2-WebScraping/williambest_p2
+	url = https://github.com/Billtholomew/NYCDSA-WebScraper.git
