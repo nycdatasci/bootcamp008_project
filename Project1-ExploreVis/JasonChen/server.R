@@ -17,7 +17,7 @@ shinyServer(function(input, output){
   
   output$map1 <- renderLeaflet({
     leaflet() %>% 
-      addTiles()%>%
+      addProviderTiles("Esri.WorldStreetMap")%>%
       fitBounds(min(nyc.collisions$LONGITUDE), min(nyc.collisions$LATITUDE), 
                 max(nyc.collisions$LONGITUDE), max(nyc.collisions$LATITUDE))
     })
@@ -42,7 +42,7 @@ shinyServer(function(input, output){
   
   output$map2 <- renderLeaflet({
     leaflet() %>%
-      addTiles()%>%
+      addProviderTiles("Esri.WorldStreetMap")%>%
       fitBounds(min(collisions.killed$LONGITUDE), min(collisions.killed$LATITUDE), 
                 max(collisions.killed$LONGITUDE), max(collisions.killed$LATITUDE))
     })
@@ -104,7 +104,7 @@ shinyServer(function(input, output){
   
   output$motoraccidents <- renderLeaflet({
     leaflet() %>% 
-      addTiles()%>%
+      addProviderTiles("Esri.WorldStreetMap")%>%
       fitBounds(min(motorcycles$LONGITUDE), min(motorcycles$LATITUDE), 
                 max(motorcycles$LONGITUDE), max(motorcycles$LATITUDE))
   })
