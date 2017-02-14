@@ -18,10 +18,13 @@ storm.paths.pp <- storm.paths.pp %>% filter((60 > slat & slat > 10))
 storm.paths.pp <- storm.paths.pp %>% filter((60 > elat & elat > 10))
 storm.paths.pp <- storm.paths.pp %>% filter((-130 < slon & slon < -50))
 storm.paths.pp <- storm.paths.pp %>% filter((-130 < elon & elon < -50))
+
+
 # storm lengths
 storm.size.pp <- tornadoes.since.1996 %>% filter(!is.na(len) & !is.na(wid))
 storm.size.pp <- storm.size.pp %>% group_by(st, mag) %>% summarise(average.length = mean(len), average.width = mean(wid))
 storm.size.pp <- storm.size.pp %>% arrange(mag)
+
 # for loss graphs
 loss.by.state.pp <- tornadoes.since.1996
 loss.by.state.pp <- loss.by.state.pp %>% filter(!is.na(loss))
@@ -33,38 +36,39 @@ casualties.by.state.pp <- casualties.by.state.pp %>% mutate(casualties = inj + f
 
 function(input, output, session) {
   
-  get.storm.paths <- reactive({
-    
+  get.path.ids.state <- reactive({
+    storm.paths.pp %>% filter(state == input$state) %>% select(storm.id)
+  })
+  
+  get.path.ids.mag <- reactive({
+    storm.paths.pp %>% filter(mag %in% input$map.mag) %>% select(storm.id)
+  })
+  
+  get.path.ids.year <- reactive({
+    storm.paths.pp %>% filter(year >= input$map.year[1] & year <= input$map.year[2]) %>% select(storm.id)
   })
   
   output$map <- renderLeaflet({
     # get only storms given user filter options
-    storm.paths <- storm.paths.pp %>% filter(state == input$state) 
-    storm.paths <- storm.paths %>% filter(year >= input$map.year[1] & year <= input$map.year[2])
-    storm.paths <- storm.paths %>% filter(mag %in% input$map.mag)
     
-    storm.map <- leaflet(storm.paths) %>% addTiles() 
+    storm.paths <- storm.paths.pp %>% filter(state == input$state) 
+    storm.paths <- storm.paths %>% filter(mag %in% input$map.mag)
+    storm.paths <- storm.paths %>% filter(year >= input$map.year[1] & year <= input$map.year[2])
+    
+    storm.paths <- storm.paths %>% filter(length.check(slat, slon, elat, elon, len))
+    
+    storm.map <- leaflet() %>% addTiles() 
     
     for (i in 1:nrow(storm.paths)) {
+      lat1 <- storm.paths[i, "slat"]
+      lat2 <- storm.paths[i, "elat"]
+      lon1 <- storm.paths[i, "slon"]
+      lon2 <- storm.paths[i, "elon"]
       
-      # draw each path, but only those that are not possible errors
-      # check possible erros agains recorded length traveled
-      
-      lat1 <- as.numeric(storm.paths[i, "slat"])
-      lat2 <- as.numeric(storm.paths[i, "elat"])
-      lon1 <- as.numeric(storm.paths[i, "slon"])
-      lon2 <- as.numeric(storm.paths[i, "elon"])
-      
-      geo.dist <- distm(c(lon1, lat1), c(lon2, lat2), fun = distHaversine) / 1000 * 0.621  
-      rec.dist <- storm.paths[i, "len"]
-      
-      if (rec.dist * 1.2 >= geo.dist) {
-        storm.map <- addPolylines(storm.map, 
-                                lat = c(lat1, lat2),
-                                lng = c(lon1, lon2))
-      }
+      storm.map <- addPolylines(storm.map, lat = c(lat1, lat2), lng = c(lon1, lon2))
     }
-    return(storm.map)
+    
+    storm.map
   })
   
   output$length.by.severity <- renderGvis({
