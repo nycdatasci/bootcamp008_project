@@ -146,6 +146,10 @@ function(input, output,session){
                                  '# OF INFRACTIONS:',n_infractions,'<br/>'))
   })
   
+  observe({
+    data <- closure_data
+  })
+  
   #----------------closure information 
   # number of days closed data (reactive from select input_year)
   n_closed <- unique(closure_shiny[c("camis","date","score","days_diff","year")])
@@ -273,7 +277,7 @@ function(input, output,session){
   # Chart for closure by Borough
   output$closure_prob_plot_borough <- renderGvis({
     gvisdata <- closure_prob_borough() %>%arrange(desc(prob))%>%select(borough,prob)
-    gvisColumnChart(gvisdata,options=list(vAxis="{format:'#,###%'}",
+    gvisColumnChart(gvisdata,options=list(vAxis="{format:'#,###.##%'}",
                                           legend = 'none',
                                           series="[{color:'A6D0BD', targetAxisIndex: 0}]"))
     
