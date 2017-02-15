@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoc Doc Analysis</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.css" />
     <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css"/>
 </head>
@@ -74,10 +75,14 @@ New York is where Zoc Doc is headquartered and is not suprisingly the home to th
    
     <h2>Map</h2>
 
-    </div>
-    
-    <div id="map" style="width:100%; height:400px;"></div>
+<div class="form-group"> 
+<!-- <select id="emptyDropdown">
+<option value="All Doctors">All Doctors</option>
+</select>
+ --></div>
 
+    </div>
+    <div id="map" style="width:100%; height:400px;"></div>
     <table id="myTable" border=1 cellpadding=10>
     <thead>
         <tr> 
@@ -113,8 +118,17 @@ New York is where Zoc Doc is headquartered and is not suprisingly the home to th
 
     $(document).ready(function(){
     $('#myTable').DataTable();
+
         });
 
+        // var isDoctorType = function(x,y){
+        //     if(y=="All Doctors"){
+        //         return true; 
+        //     }
+        //     else{
+        //         return x['properties']['type'] == y;
+        //     }
+        // }
 
         var map = L.map('map').setView([39.8282, -98.35], 4);
 
@@ -124,6 +138,7 @@ New York is where Zoc Doc is headquartered and is not suprisingly the home to th
         });
         map.addLayer(osmLayer);
 
+
         var data = {
           "type": "FeatureCollection",
           "features": [
@@ -131,8 +146,13 @@ New York is where Zoc Doc is headquartered and is not suprisingly the home to th
             {
               "type": "Feature",
               "properties": {
-                "full_name": "{{ obj.doctor_id }}",
-                "id": "{{ obj.doctor_id }}"
+                "full_name": "{{ obj.name }}",
+                "id": "{{ obj.doctor_id }}",
+                "type": "{{ obj.type  }}",
+                "overall_rating": "{{ obj.overall_rating }}",
+                "bedside_manner": "{{ obj.bedside_manner }}",
+                "wait_time": "{{ obj.wait_time }}",
+                "total_reviews": "{{ obj.total_reviews }}"
               },
               "geometry": {
                 "type": "Point",
@@ -142,21 +162,70 @@ New York is where Zoc Doc is headquartered and is not suprisingly the home to th
             {% endfor %}
           ]
         };
+    //     var options = []
+    //     for(feature in data['features']){
+    //         options.push(data['features'][feature]['properties']['type'])
+    //         }         
+    //     options = new Set(options)
+    //     options = Array.from(options);
+
+    //     $.each(options, function(i, d) {
+    //                 $('#emptyDropdown').append('<option value="' + d + '">' + d + '</option>');
+    //             }
+    //             )
+    //     $('#emptyDropdown')
+    // var newdata = data;
+ // $(document).ready(function() {
+      // $('select').change(function() {
+      //       selected_option=$(this).val()
+      //       data['features'] = newdata['features'].filter(isDoctorType.bind(this, selected_option))
+      //       map.removeLayer(dataLayer);
+      //       console.log(newdata)
+      //               var dataLayer = L.geoJson(newdata, {
+      //       pointToLayer: function (feature, latlng) {
+      //           return L.marker(latlng, {icon: new blackIcon()});
+      //       },
+      //       onEachFeature: function(feature, layer) {
+      //           layer.bindPopup(
+      //               '<a href="' + feature.properties.id + '/">' +
+      //                   feature.properties.full_name +
+      //               '</a> <p> <b>Type: </b>'+feature.properties.type+
+      //               '</br> <b>Overall Rating: </b>' + feature.properties.overall_rating + 
+      //               '</br> <b>Bedside Manner: </b>' + feature.properties.bedside_manner + 
+      //               '</br> <b>Wait Time: </b>' + feature.properties.wait_time + 
+      //               '</br> <b>Total Reviews: </b>' + feature.properties.total_reviews+'</p>'
+
+      //           );
+      //       }
+      //   });
+      //                map.addLayer(dataLayer);
+      // });
+       
+        // });
+
+
+
         var blackIcon = L.Icon.extend({
             options: {
                 iconUrl: "{{ url_for('static', filename='marker-24.png') }}",
                 iconSize: [24, 24]
             }
         });
+
         var dataLayer = L.geoJson(data, {
             pointToLayer: function (feature, latlng) {
                 return L.marker(latlng, {icon: new blackIcon()});
             },
             onEachFeature: function(feature, layer) {
                 layer.bindPopup(
-                    '<a href="' + feature.properties.full_name + '/">' +
-                        feature.properties.id +
-                    '</a>'
+                    '<a href="' + feature.properties.id + '/">' +
+                        feature.properties.full_name +
+                    '</a> <p> <b>Type: </b>'+feature.properties.type+
+                    '</br> <b>Overall Rating: </b>' + feature.properties.overall_rating + 
+                    '</br> <b>Bedside Manner: </b>' + feature.properties.bedside_manner + 
+                    '</br> <b>Wait Time: </b>' + feature.properties.wait_time + 
+                    '</br> <b>Total Reviews: </b>' + feature.properties.total_reviews+'</p>'
+
                 );
             }
         });
