@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from scrapy import Spider, Request, Selector
 from jobs.items import JobPosting
-import re, datetime, json
+import re, datetime, json, urllib
 
 amazon_headers = {
     'Host': 'www.amazon.jobs',
@@ -14,27 +14,36 @@ amazon_headers = {
     'Connection': 'keep-alive'
 }
 
-base_url = 'https://www.amazon.jobs/en/search?base_query=data+scientist&sort=relevant&result_limit=100&offset='
+get_list_url = lambda offset, query: 'https://www.amazon.jobs/en/search?base_query=' +\
+        query + '&sort=relevant&result_limit=100&offset=' + str(offset)
 
 class GetJobsSpider(Spider):
     name = "amazon"
     allowed_domains = ["amazon.jobs"]
+    query_terms = [urllib.quote_plus(q) for q in ["data scientist", "data engineer", "business analyst"]]
     
     def start_requests(self):
-        return [Request(base_url + '0', meta = {'offset': 0},
-                    headers = amazon_headers, callback = self.parse_list)]
+        return [Request(get_list_url(0, query_term),
+                    meta = {'offset': 0, 'query_term': query_term},
+                    headers = amazon_headers, callback = self.parse_list)
+                for query_term in self.query_terms]
         
     custom_settings = {
         'ITEM_PIPELINES': {
             'jobs.pipelines.JobsPipeline': 100
         }
     }
+    
+    def __init__(self):
+        self.ids = set()
+        super(Spider, self).__init__()
 
     def parse_list(self, response):
         json_list = json.loads(response.body)
         count = int(json_list.get('hits', 0))
         self.logger.debug('Got %d results.' % count)
         offset = response.meta['offset']
+        query_term = response.meta['query_term']
         for job_json in json_list.get('jobs', []):
             try:
                 country = job_json.get('country_code', None)
@@ -44,6 +53,9 @@ class GetJobsSpider(Spider):
                     self.logger.debug('Country is not USA: "' + country + '". Skipping...')
                     continue
                 job_id = job_json['id']
+                if job_id in self.ids:
+                    continue
+                self.ids.add(job_id)
                 title = job_json['title']
                 location = job_json.get('location', '')
                 date_posted = job_json.get(u'posted_date', '')
@@ -80,7 +92,7 @@ class GetJobsSpider(Spider):
                 self.logger.error('Unable to parse Amazons\'s: '\
                     + str(job_json) + '\n' + str(excpt))
         if offset + 100 < count:
-            yield Request(base_url + str(offset + 100), meta = {'offset': offset + 100},
+            yield Request(get_list_url(offset + 100, query_term), meta = {'offset': offset + 100, 'query_term': query_term},
                     headers = amazon_headers, callback = self.parse_list)
         else:
             self.logger.debug('Not submitting any more requests. offset = %d, count = %d' %(offset, count))

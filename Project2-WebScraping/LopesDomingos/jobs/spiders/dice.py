@@ -10,7 +10,8 @@ get_list_url = lambda page, query: 'http://service.dice.com/api/rest/jobsearch/v
 class GetJobsSpider(IdSpider):
     name = "dice"
     allowed_domains = ["dice.com"]
-    query_terms = [urllib.quote_plus(q) for q in ["data scientist"]]
+    query_terms = [urllib.quote_plus(q) for q in ["data scientist", "data engineer", "business analyst"]]
+    download_delay = 1
     
     def start_requests(self):
         return [Request(get_list_url(1, query_term),
@@ -33,7 +34,8 @@ class GetJobsSpider(IdSpider):
                     continue
                 # Make sure we do not scrape the same post during the same session, as we might be dealing with multiple search queries
                 self.ids.add(job_id)
-                yield Request(posting['detailUrl'], callback=self.parse_posting,
+                yield Request(posting['detailUrl'].replace('http://www.dice.com/job/result/',
+                            'https://www.dice.com/jobs/detail/'), callback=self.parse_posting,
                         meta = {'job_meta': posting, 'job_id': job_id})
             except Exception as excpt:
                 self.logger.error('Unable to parse Dice\'s: '\

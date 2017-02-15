@@ -4,7 +4,7 @@ from jobs.idspider import IdSpider
 from jobs.items import AggregatorJobPosting
 import re, datetime, json, requests, urllib
 
-publisher_key = ### Please insert your own key ###
+publisher_key = ### Insert your key!!
 
 get_list_url = lambda start, user_ip, query: 'http://api.indeed.com/ads/apisearch?sort=date&co=us&format=json&highlight=0&publisher=' +\
         publisher_key + '&q=' + query + '&start=' + str(start) + '&limit=25&v=2&userip=' + user_ip +\
@@ -13,7 +13,7 @@ get_list_url = lambda start, user_ip, query: 'http://api.indeed.com/ads/apisearc
 class GetJobsSpider(IdSpider):
     name = "indeed"
     allowed_domains = ["indeed.com"]
-    query_terms = [urllib.quote_plus(q) for q in ["data scientist"]]
+    query_terms = [urllib.quote_plus(q) for q in ["data scientist", "data engineer", "business analyst"]]
     
     def start_requests(self):
         self.user_ip = requests.get('https://api.ipify.org').text

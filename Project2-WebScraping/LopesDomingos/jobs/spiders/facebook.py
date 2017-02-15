@@ -10,7 +10,8 @@ import re, datetime
 class GetJobsSpider(IdSpider):
     name = "facebook"
     allowed_domains = ["facebook.com"]
-    start_urls = ['https://www.facebook.com/careers/search/?q=data%20scientist']
+    start_urls = ['https://www.facebook.com/careers/search/?q=' + query_term
+                    for query_term in ['data%20scientist', 'data%20engineer', 'business%20analyst']]
     
     custom_settings = {
         'ITEM_PIPELINES': {

@@ -4,8 +4,8 @@ from jobs.idspider import IdSpider
 from jobs.items import JobPosting
 import re, datetime, json
     
-def get_list_form_data(page_number):
-    return {'searchRequestJson': '{"searchString":"Data Scientist","jobType":"1",' +\
+def get_list_form_data(page_number, query):
+    return {'searchRequestJson': '{"searchString":"' + query + '","jobType":"1",' +\
                     '"sortOrder":"","filters":{"locations":{"location":[{"type":"0","code":"USA"}]}},' +\
                     '"pageNumber":"' + str(page_number) + '"}',
             'csrfToken': 'null', 'clientOffset': '-300'}
@@ -18,11 +18,13 @@ listing_converter = {u'additionalRequirements': 'Additional Requirements',
 class GetJobsSpider(IdSpider):
     name = "apple"
     allowed_domains = ["jobs.apple.com"]
+    query_terms = ["data scientist", "data engineer", "business analyst"]
     
     def start_requests(self):
         return [FormRequest('https://jobs.apple.com/us/search/search-result',
-                    formdata = get_list_form_data(0), callback = self.parse_list,
-                    meta = {'page_number', 0})]
+                    formdata = get_list_form_data(0, query_term), callback = self.parse_list,
+                    meta = {'page_number': 0, 'query_term': query_term})
+                for query_term in self.query_terms]
         
     custom_settings = {
         'ITEM_PIPELINES': {
@@ -33,6 +35,7 @@ class GetJobsSpider(IdSpider):
     def parse_list(self, response):
         count = int(response.xpath('/html/body/result/count/text()').extract_first())
         pagenum = response.meta['page_number']
+        query_term = response.meta['query_term']
         for posting in response.xpath('/html/body/result/requisition'):
             try:
                 job_id = posting.xpath('./jobid/text()').extract_first()
@@ -50,8 +53,8 @@ class GetJobsSpider(IdSpider):
                     + str(posting) + '\n' + str(excpt))
         if (count - 1) / 20 > pagenum:
             yield FormRequest('https://jobs.apple.com/us/search/search-result',
-                    formdata = get_list_form_data(pagenum + 1), callback = self.parse_list,
-                    meta = {'page_number': pagenum + 1})
+                    formdata = get_list_form_data(pagenum + 1, query_term), callback = self.parse_list,
+                    meta = {'page_number': pagenum + 1, 'query_term': query_term})
     
     def parse_posting(self, response):
         try:
