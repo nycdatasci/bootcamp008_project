@@ -152,6 +152,6 @@ def textrazorAPI(df):
 
 dir = 'C:/Users/sandh/Dropbox/FRM/Bootcamp/Projects/Project 2/tamingnews/analysis/data/'#place where response will be saved
 numArticles = 450
-textrazor.api_key = '9020b0cd82c799b3af0a034c71f3b8bd883495ebc1dbeb98886dabba'
+textrazor.api_key = #use your own
 
 wrapper(dir, numArticles)
