@@ -28,8 +28,8 @@ shinyServer(function(input,output){
   
   output$map<-renderLeaflet({
    
-    leaflet() %>%  addTiles() %>% setView(lng=-74, lat=40.7, zoom=11) %>%
-      addPolygons(data=tract.longlat, weight=1, layerId=census.vital$X) 
+    leaflet() %>%  addTiles() %>% setView(lng=-74, lat=40.7, zoom=11) 
+      
   })
   
   observe({
@@ -42,15 +42,17 @@ shinyServer(function(input,output){
                         "Lowest Quintile"=census.vital[census.vital$Income.Bucket=="Lowest Quintile",],
                         "All"= census.vital)
     proxy=leafletProxy("map", data=copy_longlat)
-    proxy %>% clearShapes() %>% addPolygons(weight=1, popup=paste(sep="<br/>", copy_longlat@data$NTAName, paste0("Median AnnualHousehold Income (2010): $",census.data$Median.Household.Income)))
+    proxy %>% clearShapes() %>% addPolygons(weight=1, group="Tracts", color = "black", fillOpacity= 0.5, fillColor = census.data$Color, popup=paste(sep="<br/>", copy_longlat@data$NTAName, paste0("Median AnnualHousehold Income (2010): $",census.data$Median.Household.Income)))
   })
   
   observe({
    
     proxy=leafletProxy("map", data=school.sub())
-    proxy %>% clearMarkers() %>% addCircleMarkers(lng=~long, lat=~lat, opacity=1, color = ~Color, radius= 3, popup= ~paste(sep="<br/>", School.Name, paste(Proficient, "% Proficient"))) %>%
-    clearControls %>% addLegend("bottomright", pal = pal, values = address.test$Proficient.ELA, na.label= 'Not Reported', title = paste("Percent Proficient, ", input$year))
-    
+    proxy %>% clearMarkers() %>% addCircleMarkers(lng=~long, lat=~lat, opacity=1, color = ~Color, group="Markers", radius= 3, popup= ~paste(sep="<br/>", School.Name, paste(Proficient, "% Proficient"))) %>%
+    clearControls %>% addLegend("bottomright", pal = pal, values = address.test$Proficient.ELA, na.label= 'Not Reported', title = paste0("Percent Proficient in ", input$test, ", ", input$year)) %>%
+      addLegend("topright", pal = pal2, values = census.vital$Median.Household.Income, na.label= 'Not Reported', title = "Median Household Income")
+      
+      
   })
   
 })

@@ -19,14 +19,24 @@ shinyServer(function(input, output){
   #first plot of graphs over time
   output$plot <- renderPlot(
     ggplot(beers(), aes_string(x = 'date', y = parameter(), col = 'name')) + 
-      geom_smooth(se = FALSE) 
+      geom_smooth(se = FALSE) +
+      ggtitle('Rating over Time')
   )
   
   #second plot of boxplots for averages
   output$plot2 <- renderPlot(
-    ggplot(beers(), aes_string(x = 'name', y = parameter())) + 
+    ggplot(beers(), aes_string(x = 'name', y = parameter(), fill = 'name')) + 
       geom_boxplot() + 
       theme_minimal() +
+      coord_flip() +
+      ggtitle('Boxplot of Ratings')
+  )
+  
+  output$plot3 <- renderPlot(
+    ggplot(beers(), aes_string(x = 'year', y = parameter())) + 
+      geom_boxplot() + 
+      facet_grid(~name, scales = "free_x") +
+      geom_smooth(aes(group = 1)) +
       coord_flip()
   )
   
@@ -38,8 +48,8 @@ shinyServer(function(input, output){
   #info graphics 
   #replace all "tastes" and classic_mean calc w reactive outputs 
   stats <- reactive({
-    stats = classic[colnames(classic) == parameter()]
-    stats = na.omit(cbind(classic$name, stats))
+    stats = beers()[colnames(beers()) == parameter()]
+    stats = na.omit(cbind(beers()$name, stats))
     colnames(stats) <- c('name', parameter())
     stats %>% group_by(name) %>% summarise_each(funs(mean))
   })

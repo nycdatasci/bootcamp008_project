@@ -22,8 +22,8 @@ shinyServer(function(input, output) ({
   output$topTwoGenre <- renderPlot({ggplot(YearTopTwoGenre, aes(x=Year_of_Release, y=total.genre.sales)) + geom_bar(stat='Identity', aes(fill=Genre))})
   output$topTwoPlat <- renderPlot({ggplot(YearTopTwoPlat, aes(x=Year_of_Release, y=total.plat.sales)) + geom_bar(stat='Identity', position = 'stack', aes(fill=Platform))+xlab(
     'Year of Release') + ylab('Units Sold in Millions') + ggtitle('Top Two Console Games Sold')})
-  output$YearRegionSales <-renderPlot({ggplot(data = tot_region_sales, aes(x = Year_of_Release)) + geom_line(aes(y=tot_NA_sales, colour = 'NA Sales'))+ geom_line(aes(y=tot_EU_sales, colour = 'EU Sales')) + geom_line(aes(y=tot_JP_sales, colour = 'JP Sales')) + xlab(
-    'Units sold in Millions') + ylab('Year of Release') + ggtitle('Regional Units Sold Comparison')
+  output$YearRegionSales <-renderPlot({ggplot(data = subset(tot_region_sales, Year_of_Release >= input$yearID[1] & Year_of_Release<=input$yearID[2]), aes(x = Year_of_Release)) + geom_line(aes(y=tot_NA_sales, colour = 'NA Sales'))+ geom_line(aes(y=tot_EU_sales, colour = 'EU Sales')) + geom_line(aes(y=tot_JP_sales, colour = 'JP Sales')) + ylab(
+    'Units sold in Millions') + xlab('Year of Release') + ggtitle('Regional Units Sold Comparison')
     })
   
   output$radar <-renderPlot({ggradar(scaled_bigThree) +  ggtitle('Regional Performance of Consoles')})

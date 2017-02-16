@@ -48,7 +48,15 @@ zip <- separate(zip, 'ZIP Codes', into=c('a','b','c','d','e','f','g','h','i'), s
   na.omit()%>%
   arrange(Neighborhood)%>%select(ZIP.CODE, Neighborhood)
 
-nyc.collisions <- left_join(nyc.collisions, zip, by='ZIP.CODE')
+left<-nyc.collisions%>%select(NUMBER.OF.PERSONS.INJURED,NUMBER.OF.PERSONS.KILLED,NUMBER.OF.PEDESTRIANS.INJURED,
+                              NUMBER.OF.PEDESTRIANS.KILLED,NUMBER.OF.CYCLIST.INJURED,NUMBER.OF.CYCLIST.KILLED,
+                              NUMBER.OF.MOTORIST.INJURED,NUMBER.OF.MOTORIST.KILLED,
+                              ZIP.CODE,BOROUGH)
+
+left$ZIP.CODE <- as.integer(left$ZIP.CODE)
+zip$ZIP.CODE <- as.integer(zip$ZIP.CODE)
+
+byneighborhood <- left_join(left, zip, by="ZIP.CODE")
 
 inj.ratio <- group_by(nyc.collisions, VEHICLE.TYPE.CODE.1)%>%
   summarise(total.deaths = sum(NUMBER.OF.PERSONS.KILLED),
@@ -60,7 +68,7 @@ inj.ratio <- group_by(nyc.collisions, VEHICLE.TYPE.CODE.1)%>%
 
 
 
-motorcycles <- filter(nyc.collisions, VEHICLE.TYPE.CODE.1 == 'MOTORCYCLE')
+  motorcycles <- filter(nyc.collisions, VEHICLE.TYPE.CODE.1 == 'MOTORCYCLE')
 motorcycle.cause <- group_by(motorcycles, CONTRIBUTING.FACTOR.VEHICLE.1)%>%
   summarise(total.deaths = sum(NUMBER.OF.PERSONS.KILLED),
             total.injuries = sum(NUMBER.OF.PERSONS.INJURED),
@@ -70,7 +78,7 @@ motorcycle.cause <- group_by(motorcycles, CONTRIBUTING.FACTOR.VEHICLE.1)%>%
   filter(CONTRIBUTING.FACTOR.VEHICLE.1 != '', CONTRIBUTING.FACTOR.VEHICLE.1 != 'Unspecified')
 
 summary(motorcycle.cause)
-
+  
 collisions.hurt <- nyc.collisions%>%
   filter(NUMBER.OF.PERSONS.KILLED != 0 | NUMBER.OF.PERSONS.INJURED !=0)
 collisions.safe <- nyc.collisions%>%

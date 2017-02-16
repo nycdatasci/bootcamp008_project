@@ -16,6 +16,7 @@ shinyUI(dashboardPage(
                        choices = list("Budweiser" = "Budweiser ",
                                       "Bud Light" = "Bud Light ",
                                       "Coors" = "Coors ",
+                                      "Coors Light" = "Coors Light ",
                                       "Busch Beer" = "Busch Beer ",
                                       "Busch Light" = "Busch Light ",
                                       "Miller High Life" = "Miller High Life ",
@@ -26,7 +27,9 @@ shinyUI(dashboardPage(
   dashboardBody(
     tabItems(
       tabItem(tabName = "Ratings",
-              fluidRow(plotOutput("plot"))),
+              fluidRow(plotOutput("plot")),
+              fluidRow(plotOutput("plot3")),
+              fluidRow(img(src = 'beerIndustry.jpeg', height = 400, width = 600))),
       tabItem(tabName = "Boxplots",
               fluidRow(infoBoxOutput("maxBox"),
                        infoBoxOutput("minBox"),

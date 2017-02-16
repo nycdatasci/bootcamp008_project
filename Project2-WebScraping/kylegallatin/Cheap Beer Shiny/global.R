@@ -36,9 +36,14 @@ classic$feel = as.numeric(sub('\\|', '', classic$feel))
 
 #turn the dates into the correct format
 classic$date = as.POSIXct(classic$date, format = "%b %d,%Y")
+classic$year = format(classic$date, '%Y')
 classic <- na.omit(classic)
 
-
+# ggplot(data = classic, aes(x = year, y = look)) +
+#   geom_boxplot() +
+#   facet_grid(~name, scales = "free_x") +
+#   coord_flip() +
+#   geom_smooth(aes(group = 1))
 
 #include analysis component 
 # summary(aov(classic$overall ~ classic$name))

@@ -2,18 +2,27 @@
 
 shinyServer(function(input, output){
   
+  beers <- reactive({
+    filter(beerStyle, Style == c(input$checkGroup))
+  })
+  
   #reactive function for the ratings sliderbar
   numRatings <- reactive({
-    beerStyle[beerStyle$Ratings >= input$ratings,]
+    beers()[beers()$Ratings >= input$ratings,]
   })
   
   avgRating <- reactive({
     numRatings()[beerStyle$Avg >= input$avg,]
   })
   
+  #reative function for alcohol content, just checking for linear regression
+  alcoholContent <- reactive({
+    avgRating()[beerStyle$ABV >= input$alcohol,]
+  })
+  
   #reactive function for the linear regression analysis
   reg <- reactive({
-    temp = lm(avgRating()$Avg ~ avgRating()$ABV)
+    temp = lm(alcoholContent()$Avg ~ alcoholContent()$ABV)
     return(temp)
   })
   
@@ -30,27 +39,32 @@ shinyServer(function(input, output){
   
   #plot of the count of each style, with Bros ratings 
   output$plot1 <- renderPlot(
-    ggplot(avgRating()[!is.na(avgRating()$Avg),], aes_string(x = 'Style', fill = fill())) + 
+    ggplot(alcoholContent()[!is.na(alcoholContent()$Avg),], aes_string(x = 'Style', fill = fill())) + 
       geom_histogram(stat = 'count') +
-      coord_flip()
+      coord_flip() +
+      ggtitle('Number of Beers by Style')
   )
   
   
   output$plot2 <- renderPlot(
-    ggplot(avgRating(), aes(ABV, Avg, col = Style)) + 
+    ggplot(alcoholContent(), aes(ABV, Avg, col = Style)) + 
       geom_point() + 
-      geom_abline(intercept = reg()$coefficients[1], slope = reg()$coefficients[2]) 
+      geom_abline(intercept = reg()$coefficients[1], slope = reg()$coefficients[2]) +
+      ylab('Average Rating') +
+      ggtitle('Average Rating by Alcohol Content')
   )
   
   output$plot3 <- renderPlot(
-    ggplot(avgRating(), aes(x = Style, y = Avg)) + 
+    ggplot(alcoholContent(), aes(x = Style, y = Avg, fill = Style)) + 
       geom_boxplot() +
       coord_flip() +
-      theme_minimal()
+      theme_minimal() +
+      ggtitle('Average Rating by Style') +
+      ylab('Average Rating')
   )
   
   output$table1 <- renderDataTable(
-    avgRating()
+    alcoholContent()
   )
   
   output$text <- renderPrint(

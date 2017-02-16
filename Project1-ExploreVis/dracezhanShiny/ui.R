@@ -76,7 +76,9 @@ shinyUI(dashboardPage(
         console performance in sales and whether or not the region speaks English.
         ")), h1(plotOutput('ConsoleComp1'))
         ),
-      tabItem(tabName = "YearRegionSales", fluidRow(box(width =12, plotOutput('YearRegionSales')))),
+      tabItem(tabName = "YearRegionSales", fluidRow(box(width =12, sliderInput(inputId = 'yearID', label = "Year", min = 1980, max = 2020,
+                                                                               step = 1, value = c(1980, 2020)),
+                                                                               h1(plotOutput('YearRegionSales'))))),
       tabItem(tabName = "data","Data Base", fluidRow(box(width=12, DT::dataTableOutput("table")))),
       tabItem(tabName = "score", fluidRow(box(width = 12, title = "Controls",
         selectInput(inputId = "rate",

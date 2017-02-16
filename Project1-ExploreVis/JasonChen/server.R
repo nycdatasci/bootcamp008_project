@@ -17,7 +17,7 @@ shinyServer(function(input, output){
   
   output$map1 <- renderLeaflet({
     leaflet() %>% 
-      addTiles()%>%
+      addProviderTiles("Esri.WorldStreetMap")%>%
       fitBounds(min(nyc.collisions$LONGITUDE), min(nyc.collisions$LATITUDE), 
                 max(nyc.collisions$LONGITUDE), max(nyc.collisions$LATITUDE))
     })
@@ -42,16 +42,17 @@ shinyServer(function(input, output){
   
   output$map2 <- renderLeaflet({
     leaflet() %>%
-      addTiles()%>%
+      addProviderTiles("Esri.WorldStreetMap")%>%
       fitBounds(min(collisions.killed$LONGITUDE), min(collisions.killed$LATITUDE), 
                 max(collisions.killed$LONGITUDE), max(collisions.killed$LATITUDE))
     })
-  observeEvent(input$dateRange2, 
+  observeEvent(input$borough1,
+               {observeEvent(input$dateRange2, 
                {observeEvent(input$time2,
                              {observeEvent(input$circlesize,
                                            {observeEvent(input$show_vars, {
     proxy <- leafletProxy("map2")%>%clearShapes()%>%
-      addCircles(data = filter_( collisions.killed, paste0(input$show_vars, collapse = ' | '))%>% 
+      addCircles(data = filter_( collisions.killed,input$borough1, paste0(input$show_vars, collapse = ' | '))%>% 
                    filter(DATE > input$dateRange2[1] & DATE < input$dateRange2[2])%>%
                    filter_(input$time2),
                  ~LONGITUDE, ~LATITUDE, 
@@ -60,6 +61,7 @@ shinyServer(function(input, output){
   })
   })
   })
+               })
   })
    
    
@@ -68,7 +70,7 @@ shinyServer(function(input, output){
     ggplot(summarise(group_by(filter_(nyc.collisions, input$plot),year,BOROUGH),count = n()), 
            aes(x=year, y=count)) + facet_grid(~ BOROUGH) +
       geom_bar(stat = 'identity', aes(fill = BOROUGH)) +
-      scale_fill_brewer(palette = 'Set1') +
+      scale_fill_brewer(palette = 'Pastel1') +
       theme_classic()
     )
   
@@ -102,7 +104,7 @@ shinyServer(function(input, output){
   
   output$motoraccidents <- renderLeaflet({
     leaflet() %>% 
-      addTiles()%>%
+      addProviderTiles("Esri.WorldStreetMap")%>%
       fitBounds(min(motorcycles$LONGITUDE), min(motorcycles$LATITUDE), 
                 max(motorcycles$LONGITUDE), max(motorcycles$LATITUDE))
   })
@@ -117,7 +119,7 @@ shinyServer(function(input, output){
   
 
   output$table <- DT::renderDataTable({
-    datatable(summarise(group_by(na.omit(nyc.collisions),Neighborhood),
+    datatable(summarise(group_by(na.omit(byneighborhood),Neighborhood),
                         BOROUGH = paste0(unique(BOROUGH), collapse = ','),
                         ZIP = paste0(unique(ZIP.CODE), collapse = ','),
                         CYCLISTS.K = sum(NUMBER.OF.CYCLIST.KILLED),
