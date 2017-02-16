@@ -53,3 +53,6 @@ print info
 df = pd.DataFrame()
 df['Track'] = lyrics.keys()
 df['Lyrics'] = lyrics.values()
+
+
+set(os.listdir('lyrics/')) - set(os.listdir('track-data/'))

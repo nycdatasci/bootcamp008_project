@@ -93,13 +93,13 @@ def main():
 					#	print "Exception occurred for " + c_artist + ' - ' + c_title
 					#	print e
 					#	continue
-					try:
-						Song(title = c_title, artist = c_artist,).lyrics.format().replace('\n'," ")
-					except Exception, e:
-						print "Exception occurred for " + c_artist + ' - ' + c_title + "!"
-						print e
-						x = False
-						continue
+# 					try:
+# 						Song(title = c_title, artist = c_artist,).lyrics.format().replace('\n'," ")
+# 					except Exception, e:
+# 						print "Exception occurred for " + c_artist + ' - ' + c_title + "!"
+# 						print e
+# 						x = False
+# 						continue
 			except Exception, e:
 				print "track skipped!"
 				x = False
@@ -107,7 +107,7 @@ def main():
 			print c_title + " " + c_artist
 			try:
 				if x == True:
-					trackdata = str(r_chartyear) + "|" + c_artist + "|" + c_title + "|" + a + "|" + b + "|" + c + "|" + q + "|" + d + "|" + p + "|" + f + "|" + g
+					trackdata = str(r_chartyear) + "|" + c_artist + "|" + c_title + "|"#  + a + "|" + b + "|" + c + "|" + q + "|" + d + "|" + p + "|" + f + "|" + g
 					target = open(writename, 'w')
 					target.write(trackdata.encode('utf-8'))
 					target.close()
