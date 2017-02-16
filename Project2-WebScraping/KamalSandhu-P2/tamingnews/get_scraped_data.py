@@ -46,7 +46,8 @@ def get_scraped_data(dir,items_job, key, spider):
 
             totalItems += 1
             item = pd.Series(item)
-            if item['title'] != '' or item['article'] != '':
+            if item['title'] != '' and item['article'] != '' and \
+                            item['title'] != ' ' and item['article'] != ' ':
                 item['spider'] = spider
                 item = item.drop('category')
                 item = item.replace(["page1", "page2", "page3", "scrape_time", "", "basic"],
@@ -70,10 +71,10 @@ def get_scraped_data(dir,items_job, key, spider):
     print keptItems, ' were written to the folder'
     print '-' * 50, '\n\n'
 
-items_job = #name of the project in scrapinghub
-key = #scrapinghub api key
-spiders = #list of spider names
-dir = #place where response will be saved
+items_job = '152791' #name of the project in scrapinghub
+scrapinghub_key = 'd7b42955068743c2addcc239888254dc' #scrapinghub api key
+spiders = ['basic', 'cnnbasic', 'foxbasic'] #list of spider names
+dir = 'C:/Users/sandh/Dropbox/FRM/Bootcamp/Projects/Project 2/tamingnews/analysis/data/' #place where response will be saved
 
 for spider in spiders:
     get_scraped_data(dir, items_job, scrapinghub_key, spider)
