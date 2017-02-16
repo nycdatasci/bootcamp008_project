@@ -71,8 +71,8 @@ def get_scraped_data(dir,items_job, key, spider):
     print keptItems, ' were written to the folder'
     print '-' * 50, '\n\n'
 
-items_job = '152791' #name of the project in scrapinghub
-scrapinghub_key = 'd7b42955068743c2addcc239888254dc' #scrapinghub api key
+items_job = #name of the project in scrapinghub
+scrapinghub_key = #Use your own scrapinghub api key
 spiders = ['basic', 'cnnbasic', 'foxbasic'] #list of spider names
 dir = 'C:/Users/sandh/Dropbox/FRM/Bootcamp/Projects/Project 2/tamingnews/analysis/data/' #place where response will be saved
 
