@@ -3,6 +3,19 @@ library(leaflet)
 library(leaflet.extras)
 library(dplyr)
 
+# library(htmltools)
+# library(htmlwidgets)
+# 
+# heatPlugin <- htmlDependency("Leaflet.heat", "99.99.99",
+#                              src = c(href = "http://leaflet.github.io/Leaflet.heat/dist/"),
+#                              script = "leaflet-heat.js"
+# )
+# 
+# registerPlugin <- function(map, plugin) {
+#   map$dependencies <- c(map$dependencies, list(plugin))
+#   map
+# }
+
 companies_locations <- read.csv('data/company_job_locations.csv')
 companies_locations <- companies_locations %>%
   select(company, latitude, longitude) %>%
@@ -34,35 +47,64 @@ for(i in 1:5) {
   locations_index[col] <- locations_index[col] + locations_index[col_names[i]]
 }
 
+update_companiesMap <- function(map, companiesGroup = c('apple', 'facebook', 'amazon')) {
+  locations <- companies_locations %>% filter(company %in% companiesGroup) %>%
+    group_by(latitude, longitude) %>% summarize(quantity = sum(quantity))
+  return(map %>% removeWebGLHeatmap(layerId = 'heat') %>%
+           addWebGLHeatmap(lng = ~longitude, lat = ~latitude, intensity = ~quantity,
+                           size = 40000, opacity = 0.8, layerId = 'heat',
+                           alphaRange = 0.01, data = locations))
+}
+
+update_aggregatorsMap <- function(map, date_slider = c(0, 4), size_slider = 10000) {
+  locations <- locations_index %>%
+    select(longitude, latitude)
+  locations['quantity'] = locations_index[col_names[date_slider[2]+1]] -
+    locations_index[col_names[date_slider[1]+1]]
+  return(map %>% removeWebGLHeatmap(layerId = 'heat') %>%
+           addWebGLHeatmap(lng = ~longitude, lat = ~latitude, intensity = ~quantity,
+                           size = size_slider, opacity = 0.8, layerId = 'heat',
+                           alphaRange = 0.01, data = locations))
+}
+
+# update_aggregatorsMap <- function(map, date_slider = c(0, 4), size_slider = 10000) {
+#   locations <- locations_index %>%
+#     select(longitude, latitude)
+#   locations['quantity'] = locations_index[col_names[date_slider[2]+1]] -
+#     locations_index[col_names[date_slider[1]+1]]
+#   return(map %>% registerPlugin(heatPlugin) %>%
+#            onRender("function(el, x, data) {
+#     if(\"heat_layer\" in window) {
+#       heat_layer.remove();
+#     }
+#     data = HTMLWidgets.dataframeToD3(data);
+#     data = data.map(function(val) { return [val.lat, val.long, val.mag]; });
+#     heat_layer = L.heatLayer(data, {radius: 25}).addTo(this);
+#   }", data = locations %>% select(lat = latitude, long = longitude, mag = quantity)))
+# }
+
 shinyServer(function(input, output, session) {
-  
-  
-  
+
   output$companiesMap = renderLeaflet({
-    leaflet(companies_locations) %>% addTiles() %>% setView(-95, 37, 4)# %>%
+    leaflet() %>% addProviderTiles('Hydda.Base') %>%
+      addProviderTiles('Stamen.TonerHybrid') %>%
+      setView(-95, 37, 4) %>% update_companiesMap()
   })
   
-  observeEvent(input$companies_refresh, {
-    locations <- companies_locations %>% filter(company %in% input$companiesGroup) %>%
-      group_by(latitude, longitude) %>% summarize(quantity = sum(quantity))
-    leafletProxy('companiesMap', session, data = locations) %>%
-      clearHeatmap() %>%
-      addWebGLHeatmap(lng = ~longitude, lat = ~latitude, intensity = ~quantity,
-                      size = 40000, opacity = 0.8, layerId = 'heat',
-                      alphaRange = 0.1)})
+  observe({
+    leafletProxy('companiesMap', session) %>% update_companiesMap(input$companiesGroup)
+    })
   
   output$aggregatorsMap = renderLeaflet({
-    leaflet() %>% addTiles() %>% setView(-95, 37, 4)
+    leaflet() %>% addProviderTiles('Hydda.Base') %>%
+      addProviderTiles('Stamen.TonerHybrid') %>%
+      setView(-95, 37, 4) %>% update_aggregatorsMap()
   })
   
-  observeEvent(input$date_slider, {observeEvent(input$size_slider, {
-    locations <- locations_index %>%
-      select(longitude, latitude)
-    locations['quantity'] = locations_index[col_names[input$date_slider[2]+1]] -
-      locations_index[col_names[input$date_slider[1]+1]]
-    leafletProxy('aggregatorsMap', session, data = locations) %>%
-      clearHeatmap() %>%
-      addWebGLHeatmap(lng = ~longitude, lat = ~latitude, intensity = ~quantity,
-                      size = input$size_slider, opacity = 0.8, layerId = 'heat',
-                      alphaRange = 0.1)})})
+  observe({
+    leafletProxy('aggregatorsMap', session) %>%
+      update_aggregatorsMap(input$date_slider, round(10^(input$size_slider/4)))
+  })
+  
+  #output$size_output <- renderText(input$size_slider)
 })
