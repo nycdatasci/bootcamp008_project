@@ -1,0 +1,10 @@
+*.pyc
+/data/*test.json
+/data/processed_train.json
+/data/*processed*.json
+/develop/*checkpoint*
+/data/images
+/two-sigma.org
+/develop/.ipynb_checkpoints/2017-02-23-YH-EDA-upd-checkpoint.ipynb
+/develop/.#mergeimagedf.py
+/develop/.#2017-02-26-SE-mergedf.py
