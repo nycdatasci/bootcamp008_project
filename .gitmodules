@@ -10,3 +10,6 @@
 [submodule "Project2-WebScraping/williambest_p2"]
 	path = Project2-WebScraping/williambest_p2
 	url = https://github.com/Billtholomew/NYCDSA-WebScraper.git
+[submodule "Project3-MachineLearning/PowerChromeAmazing"]
+	path = Project3-MachineLearning/PowerChromeAmazing
+	url = https://github.com/Billtholomew/NYCDSA-MachineLearning.git
