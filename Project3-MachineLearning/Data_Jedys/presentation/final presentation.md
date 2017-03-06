@@ -1,3 +1,8 @@
+<style>
+body {
+    overflow: scroll;
+}
+</style>
 Machine Learning Kaggle Project
 ========================================================
 author: Daniel Epstein, Jessie Gong, Stefan Heinz, Yvonne Lau, Ethan Weber
@@ -61,8 +66,8 @@ Basic EDA: Price x Interest level
 * From histogram and density plot it can be seen that lower-priced apartments tend
 to more frequently have an interest level of 'high' than higher-priced ones
 
-|      |      |
-|-----:|:-----|
+|           |           |
+|----------:|:----------|
 |![Price distribution per interest level](img/price-distribution-interest-level.png)|![Price density per interest level](img/price-density-interest-level.png)|
 
 
@@ -84,7 +89,7 @@ type: section
 
 Feature Engineering: Price
 ========================================================
-![price_distribution](img/price_distribution.png)
+![Price distribution](img/price_distribution.png)
 
 After some data cleaning:
 * # of bedrooms ranges from 0 to 4
@@ -113,7 +118,7 @@ date/time arithmetics
 Feature Engineering: Location Clustering
 ========================================================
 * Problem: Level of interest is also dependent on price with respect to location. A $2,000 1-br apartment should lead to a higher level of interest in Hell's Kitchen than in The Bronx. However, the original dataset only has lat/long information.
-![renthop_map](img/renthop_subway_map.png)
+![Renthop subway map](img/renthop_subway_map.png)
 
 
 Feature Engineering: DBSCAN Clustering
@@ -181,9 +186,49 @@ i.e. grouping by `listing_id`
 * Images were clustered using k-means clustering
 
 
-Feature Engineering: TFIDF
+Feature Engineering: Description Analysis Methods
 ========================================================
-* jessie
+* Text feature extraction: Tf-Idf
+* Logistic regression analysis
+* Append analyses as new features
+
+
+Feature Engineering: Text Feature Extraction: Tf-idf
+========================================================
+To re-weight the count features into floating point values suitable for usage by classifier
+* Description cleaning: extracting nouns and adjectives
+![Cleaned descriptions](img/cleaned.png)
+
+
+Feature Engineering: Text Feature Extraction: Tf-idf
+========================================================
+* Compute the top 1,000 max_features ordered by term frequency across the corpus.
+* $$Tf-Idf(t, d) = tf(t, d) * Idf(t)$$
+
+![Tf idf](img/tfidf.png)
+
+
+Feature Engineering: Logistic regression analysis
+========================================================
+Prediction of training dataset
+* Split the training set into equal parts.
+* Train 2 logit models with the two subsets.
+* Predict each subset with the model trained on the opposite subset.
+
+
+Feature Engineering: Logistic regression analysis
+========================================================
+Prediction of test dataset
+* Train logit model with entire training dataset.
+* Predict interest levels with trained logit model.
+
+
+Feature Engineering: Append new features
+========================================================
+* Include predicted probabilities of interest levels.
+* Append "medium" & "high" interest levels as new feature.
+
+![Probability](img/proba.png)
 
 
 Feature Engineering: Sentiment Analysis
@@ -225,6 +270,99 @@ type: section
 # 4. MODEL SELECTION
 
 
+Model Selection
+========================================================
+* Supervised Learning
+* Classification problem
+* Non-linear decision boundary
+* 49,000 rows, 50+ columns after feature engineering
+* Limited computing power
+
+
+Models We Tested
+========================================================
+* Multiple Logistic Regression
+* Trees
+  + Random forest better than MLR
+  + Ideal tool for uneven decision boundary
+* Support Vector Machine
+  + May have been ideal but proved to be too computationally intensive.
+* Neural Network
+* We used five fold validation for all models.
+
+
+Multiple Logistic Regression
+========================================================
+* Assumptions of MLR made it's implementation problematic.
+  + Decision boundary is not linear.
+  + Example: Interest goes up and down based on latitude and longitude, but not
+  continuously in either direction.
+* Multiple Logistic Regression struggles with multicollinearity.
+  + In the course of feature engineering, many featuers proved highly correlated.
+  + Avoiding multicolinearity would have forced us to eliminate useful features
+  we engineered.
+
+
+Trees Worked Best
+========================================================
+* Trees are ideal for identifying uneven decision boundaries.
+* Gradient boosting trees work by dividing the sample space by one or several
+parameters to reduce the output of an objective function.
+* The objective function is a measure of model performance given a set of parameters.
+  + Objective function contains a loss function (mean squared error, log loss, etc.)
+  + Objective function also contains a regularization parameter which penalizes
+  complexity.
+
+
+Trees (cont)
+========================================================
+0.564 log loss with XGBoost
+* XGBoost was the best mix of power, flexibility, and ease-of-use to permit
+extensive tuning.
+* XGBoost is faster than GBM due to parallel processing.
+* Offers more flexible tuning than GBM or Random Forest.
+  + GBM stops splitting only when subsequent nodes increase loss.
+  + Our xgboost model was limited by tree depth and additional pruning parameters
+  unavailable on GBM.
+* XGBoost helped us reduce bias and variance through better regularization than GBM,
+but we still were overfitting to the data based on our log loss scores on our training versus test set.
+* Cross-validation is built in.
+
+
+Tuning Model
+=======================================================
+* After getting scores from kaggle, we submitted our parameters and results to a
+google doc.
+* With that data, we trained a random forest.
+* We created a dataframe with 10,000 random values for each parameter, and predicted
+kaggle score based on that data.
+* The model quickly converged to a local minimum offering little insight.
+* Next steps are automating this process for a larger sample size and introducing
+randomness to produce superior results.
+
+
+Neural Network
+========================================================
+* Why?
+  + Different learning algos may produce uncorrelated error.
+  + In these cases, averaging them will smooth the decision boundary and reduce bias.
+* We used a Neural Network in python using `scikit-learn` and `keras`.
+* The network took 62 hours to run, limiting our ability to tune it for more precision.
+* Produced 0.602 log loss; inferior to XGBoost.
+
+
+Stacking
+========================================================
+* Support Vector Machine proved too computationally intensive to produce a good model.
+* We tried stacking our Neural Network and our best XGBoost model through two methods.
+  + Arithmetic Mean: $$(Results_{XGBoost} + Results_{NeuralNet}) / 2$$
+  + Geometric Mean: $$(Results_{XGBoost} * Results_{NeuralNet}) ^{(0.5)}$$
+* This indicates that the biases were in fact correlated, and possibly caused by
+our feature engineering, or the way we structured our models.
+* Had we tuned our Neural Network better, it is possible that we would have
+achieved better results.
+
+
 ========================================================
 type: section
 &nbsp;
@@ -235,47 +373,94 @@ type: section
 
 Model Tuning: XGBoost
 ========================================================
-+ Decided against grid search,
-+ Created google doc with parameters used and the resulting log loss
-+ In general, found we were overfitting, tuned parameters to account for this
+* Decided against grid search,
+* Created google doc with parameters used and the resulting log loss
+* In general, found we were overfitting, tuned parameters to account for this
 
-![img/bias_variance_tradeoff.jpeg](img/bias_variance_tradeoff.jpeg)
+![Bias Variance Tradeoff](img/bias_variance_tradeoff.jpeg)
 
 
 Tuning XGBoost: Eta
 ========================================================
-+ Eta = learning Rate
-+ Get weights after each boost step and shrinks them
-+ Smaller values prevent overfitting
-+ We got our best results with an 0.01 eta
+* Learning Rate
+* Get weights after each boost step and shrinks them
+* Smaller values prevent overfitting
+* We got our best results with an 0.01 eta
 
 
-Tuning XGBoost - Gamma
+Tuning XGBoost: Gamma
 ========================================================
-+ Gamma = Controls regularization
-+ Loss reduction required to make a partition on the leaf node
-+ Larger values prevent overfitting
-+ We got our best results with an 0.175 gamma
-+ Tradeoff between bias and variance
+* Controls regularization
+* Loss reduction required to make a partition on the leaf node
+* Larger values prevent overfitting
+* We got our best results with an 0.175 gamma
+* Tradeoff between bias and variance
 
 
 Tuning XGBoost: Max Depth
 ========================================================
-+ Max Depth = number of levels trees are allowed to grow
-+ Trees that are allowed to grow to deep are generally overfitted
-+ Keeping this number low can help prevent overfitting
-+ We found 7 was the best value for us
+* Number of levels trees are allowed to grow
+* Trees that are allowed to grow to deep are generally overfitted
+* Keeping this number low can help prevent overfitting
+* We found 7 was the best value for us
 
 
 Tuning XGBoost: Column Sample By Tree
 ========================================================
-+ Number of columns randomly sampled by each tree
-+ Not using 100% of the columns helps prevent overfitting
-+ We found that 80% was the most effective value
+* Number of columns randomly sampled by each tree
+* Not using 100% of the columns helps prevent overfitting
+* We found that 80% was the most effective value
 
 
 Tuning XGBoost: Subsample
 ========================================================
-+ Number of rows randomly sampled
-+ Not using 100% of the rows helps to prevent overfitting
-+ We found that 80% gave us the best validation and test accuracy
+* Number of rows randomly sampled
+* Not using 100% of the rows helps to prevent overfitting
+* We found that 80% gave us the best validation and test accuracy
+
+
+========================================================
+type: section
+&nbsp;
+&nbsp;
+&nbsp;
+# 6. CONCLUSION
+
+
+Conclusion
+========================================================
+* Photos
+  + There are a lot of explorations pertaining to image recognition that could
+  still be explored to improve our model
+  + Use image recognition to compare of number of rooms listed with what is
+  shown in photos
+  + Investigate whether the presence of floorplans has any impact on interest level
+* Features
+  + 20 features helped us get more accurate results, however were very
+  computationally expensive for the XGBoost model
+  + Instead: create a secondary model using features to predict interest level,
+  then use those results instead in the XGBoost model, leading to less complex trees
+
+
+========================================================
+type: section
+&nbsp;
+&nbsp;
+&nbsp;
+# Q&A
+
+
+========================================================
+type: section
+&nbsp;
+&nbsp;
+&nbsp;
+# BACKUP
+
+
+BACKUP: Feature Engineering: DBSCAN Algorithm
+========================================================
+* Step 1: For each point in the dataset, we draw a n-dimensional sphere of radius epsilon around the point (if you have n-dimensional data).
+* Step 2: If the number of points inside the sphere is larger than min_samples, we set the center of the sphere as a cluster, and all the points within the sphere are belong to this cluster.
+* Step 3: Loop through all the points within the sphere with the above 2 steps, and expand the cluster whenever it satisfy the 2 rules.
+* Step 4: For the points not belong to any cluster, you can ignore them, or treat them as outliers.
