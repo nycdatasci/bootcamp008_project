@@ -1,0 +1,10 @@
+##########################################################################################################################################################################################################
+Feel free to add your (general) notes to this file. Please keep to the same format.
+
+      2017-02-25 SE:
+                 small, but important note regarding the 'listing_id' column in
+                 the dataframe - each entry is unique and it has a corresponding
+                 directory of photos.
+
+                 also, check the data directory for the sample images (100
+                 directories of .jpg image files).
