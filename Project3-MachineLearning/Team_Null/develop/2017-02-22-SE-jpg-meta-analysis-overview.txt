@@ -1,0 +1,257 @@
+the metadata for the .jpg pictures can be gathered with the Exif.py script
+
+https://github.com/ianare/exif-py
+
+installation: pip install Exif.py
+
+$ EXIF.py image1.jpg
+$ EXIF.py image1.jpg image2.tiff
+$ find ~/Pictures -name "*.jpg" -name "*.tiff" | xargs EXIF.py
+
+images scottedenbaum$ ls */*.jpg
+-bash: /bin/ls: Argument list too long
+
+there are 124011 directories of images (ie unique properties)
+
+I keep running into the issue of 'Argument list too long' because I'm reading in
+too many files!
+
+It seems the only way would be to run small slices of the data numerous times.
+
+Now. for the results, similar to the sample pics only ~5% of the photos have any
+metadata (EXIF data) which ranges from
+
+moderate amount of info:
+
+Opening: 7066899/7063726_672a62f79468a26377656baacfc8e2a4.jpg
+EXIF ColorSpace (Short): sRGB
+EXIF ExifImageLength (Long): 223
+EXIF ExifImageWidth (Long): 225
+Image DateTime (ASCII): 2015-06-10 17:54:07 -0400
+Image ExifOffset (Long): 158
+Image Orientation (Short): Horizontal (normal)
+Image ResolutionUnit (Short): Pixels/Inch
+Image Software (ASCII): Pixelmator 1.4.1
+Image XResolution (Ratio): 72
+Image YResolution (Ratio): 72
+
+or
+
+Opening: 7066852/7066852_72382b927b958d64bccbe5ef5ffa17e1.jpg
+EXIF DateTimeDigitized (ASCII): 2016:04:28 17:51:52
+EXIF DateTimeOriginal (ASCII): 2016:04:28 17:51:52
+EXIF Padding (Undefined): []
+EXIF SubSecTimeDigitized (ASCII): 32
+EXIF SubSecTimeOriginal (ASCII): 32
+Image Artist (ASCII): Martin Harris
+Image ExifOffset (Long): 2136
+Image Padding (Undefined): []
+Image XPAuthor (Byte): Martin Harris
+
+small amount of info:
+
+Opening: 7066887/6864739_dc7f95706c1c8f1e7b322b053628cf90.jpg
+EXIF ColorSpace (Short): Uncalibrated
+EXIF ExifVersion (Undefined): 0221
+Image Artist (ASCII): Portia Lipscomb
+Image ExifOffset (Long): 96
+Image Orientation (Short): Horizontal (normal)
+
+or
+
+Opening: 7066297/7066297_527291a7ef41cfb0e7bb0bc7623b7a09.jpg
+EXIF ColorSpace (Short): sRGB
+EXIF ExifImageLength (Long): 334
+EXIF ExifImageWidth (Long): 500
+Image ExifOffset (Long): 26
+
+sometimes a lot of info:
+
+Opening: 7066713/7066713_359bac1b1651261cd673a813bb61bbc8.jpg
+EXIF ColorSpace (Short): sRGB
+EXIF ComponentsConfiguration (Undefined): YCbCr
+EXIF CompressedBitsPerPixel (Ratio): 8
+EXIF Contrast (Short): Normal
+EXIF CustomRendered (Short): Normal
+EXIF DateTimeDigitized (ASCII): 2007:02:03 15:11:45
+EXIF DateTimeOriginal (ASCII): 2007:02:03 15:11:45
+EXIF ExifImageLength (Long): 2816
+EXIF ExifImageWidth (Long): 2112
+EXIF ExifVersion (Undefined): 0221
+EXIF ExposureBiasValue (Signed Ratio): 0
+EXIF ExposureMode (Short): Auto Exposure
+EXIF ExposureProgram (Short): Program Normal
+EXIF ExposureTime (Ratio): 1/40
+EXIF FNumber (Ratio): 14/5
+EXIF FileSource (Undefined): Digital Camera
+EXIF Flash (Short): Flash did not fire, compulsory flash mode
+EXIF FlashPixVersion (Undefined): 0100
+EXIF FocalLength (Ratio): 63/10
+EXIF ISOSpeedRatings (Short): 200
+EXIF LightSource (Short): Unknown
+EXIF MakerNote (Undefined): [83, 79, 78, 89, 32, 68, 83, 67, 32, 0, 0, 0, 34, 0, 0, 32, 7, 0, 1, 0, ... ]
+EXIF MaxApertureValue (Ratio): 3
+EXIF MeteringMode (Short): Pattern
+EXIF Saturation (Short): Normal
+EXIF SceneCaptureType (Short): Standard
+EXIF SceneType (Undefined): Directly Photographed
+EXIF Sharpness (Short): Normal
+EXIF WhiteBalance (Short): Auto
+Image DateTime (ASCII): 2007:02:03 15:11:45
+Image ExifOffset (Long): 192
+Image ImageDescription (ASCII):
+Image Make (ASCII): SONY
+Image Model (ASCII): DSC-W30
+Image PrintIM (Undefined): [80, 114, 105, 110, 116, 73, 77, 0, 48, 51, 48, 48, 0, 0, 2, 0, 2, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0]
+Image YCbCrPositioning (Short): Co-sited
+
+
+
+here's one with everything, even GPS info
+Opening: 7069864/7069864_db33fbf787ea1f083109f1ecab9e2c36.jpg
+File has JPEG thumbnail
+EXIF ApertureValue (Ratio): 4
+EXIF ColorSpace (Short): sRGB
+EXIF ComponentsConfiguration (Undefined): YCbCr
+EXIF CustomRendered (Short): Normal
+EXIF DateTimeDigitized (ASCII): 2013:06:06 01:22:07
+EXIF DateTimeOriginal (ASCII): 2013:06:06 01:22:07
+EXIF ExifImageLength (Short): 1856
+EXIF ExifImageWidth (Short): 2784
+EXIF ExifVersion (Undefined): 0221
+EXIF ExposureBiasValue (Signed Ratio): 0
+EXIF ExposureMode (Short): Manual Exposure
+EXIF ExposureProgram (Short): Manual
+EXIF ExposureTime (Ratio): 1/100
+EXIF FNumber (Ratio): 4
+EXIF Flash (Short): Flash did not fire, compulsory flash mode
+EXIF FlashPixVersion (Undefined): 0100
+EXIF FocalLength (Ratio): 24
+EXIF FocalPlaneResolutionUnit (Short): 2
+EXIF FocalPlaneXResolution (Ratio): 2784000/1459
+EXIF FocalPlaneYResolution (Ratio): 928000/479
+EXIF ISOSpeedRatings (Short): 1000
+EXIF InteroperabilityOffset (Long): 8626
+EXIF MakerNote (Undefined): [37, 0, 1, 0, 3, 0, 49, 0, 0, 0, 252, 4, 0, 0, 2, 0, 3, 0, 4, 0, ... ]
+EXIF MeteringMode (Short): Pattern
+EXIF SceneCaptureType (Short): Standard
+EXIF ShutterSpeedValue (Signed Ratio): 53/8
+EXIF SubSecTime (ASCII): 68
+EXIF SubSecTimeDigitized (ASCII): 68
+EXIF SubSecTimeOriginal (ASCII): 68
+EXIF UserComment (Undefined): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+EXIF WhiteBalance (Short): Auto
+GPS GPSVersionID (Byte): [2, 2, 0, 0]
+Image Artist (ASCII):
+Image Copyright (ASCII):
+Image DateTime (ASCII): 2013:06:06 01:22:07
+Image ExifOffset (Long): 360
+Image GPSInfo (Long): 8672
+Image Make (ASCII): Canon
+Image Model (ASCII): Canon EOS 5D Mark II
+Image Orientation (Short): Horizontal (normal)
+Image ResolutionUnit (Short): Pixels/Inch
+Image YCbCrPositioning (Short): Co-sited
+Image YResolution (Ratio): 72
+Interoperability InteroperabilityIndex (ASCII): R98
+Interoperability InteroperabilityVersion (Undefined): [48, 49, 48, 48]
+MakerNote AESetting (Proprietary): Unknown
+MakerNote AFAreaMode (Proprietary): Spot AF
+MakerNote AFPointSelected (Proprietary): Unknown
+MakerNote AFPointUsed (Proprietary): 0
+MakerNote AspectInfo (Long): [0, 2784, 1856, 0, 0]
+MakerNote BracketMode (Proprietary): Off
+MakerNote BracketShotNumber (Proprietary): 0
+MakerNote BracketValue (Proprietary): 0
+MakerNote CanonImageWidth (Proprietary): 1856
+MakerNote ColorSpace (Short): sRGB
+MakerNote ContinuousDriveMode (Proprietary): Single Or Timer
+MakerNote Contrast (Proprietary): Normal
+MakerNote CropInfo  (Short): [24, 24, 16, 16]
+MakerNote DigitalZoom (Proprietary): None
+MakerNote DustRemovalData  (Undefined): []
+MakerNote EasyShootingMode (Proprietary): Manual
+MakerNote ExposureMode (Proprietary): Manual
+MakerNote FileNumber (Proprietary): 0
+MakerNote FilterEffect (Proprietary): Unknown
+MakerNote FirmwareVersion (ASCII): Firmware Version 2.1.2
+MakerNote FlashActivity (Proprietary): Did Not Fire
+MakerNote FlashBias (Proprietary): 0 EV
+MakerNote FlashDetails (Proprietary): Manual
+MakerNote FlashExposureLock (Proprietary): Off
+MakerNote FlashInfo (Short): [0, 0, 0, 0]
+MakerNote FlashMode (Proprietary): Flash Not Fired
+MakerNote FocalLength (Proprietary): 52635
+MakerNote FocalType (Proprietary): Unknown
+MakerNote FocalUnitsPerMM (Proprietary): 1
+MakerNote FocusMode (Proprietary): Unknown
+MakerNote FocusType (Proprietary): Unknown
+MakerNote ISO (Proprietary): Unknown
+MakerNote ImageSize (Proprietary): Small
+MakerNote ImageStabilization (Proprietary): Unknown
+MakerNote ImageType (ASCII): Canon EOS 5D Mark II
+MakerNote InternalSerialNumber  (ASCII): M628232
+MakerNote LensModel (ASCII): EF24-105mm f/4L IS , ... ]
+MakerNote LensType (Proprietary): 237
+MakerNote LiveViewShooting (Proprietary): Off
+MakerNote LongExposureNoiseReduction2 (Proprietary): Off
+MakerNote LongFocalLengthOfLensInFocalUnits (Proprietary): 105
+MakerNote MacroMagnification (Proprietary): 95
+MakerNote Macromode (Proprietary): Normal
+MakerNote ManualFlashOutput (Proprietary): n/a
+MakerNote MeteringMode (Proprietary): Evaluative
+MakerNote ModelID (Long): EOS 5D Mark II
+MakerNote NumAFPoints (Proprietary): 9
+MakerNote OwnerName (ASCII):
+MakerNote Quality (Proprietary): Fine
+MakerNote RawJpgQuality (Proprietary): Unknown
+MakerNote RawJpgSize (Proprietary): Large
+MakerNote RecordMode (Proprietary): JPEG
+MakerNote Saturation (Proprietary): Normal
+MakerNote SelfTimer (Proprietary): 0
+MakerNote SequenceNumber (Proprietary): 0
+MakerNote SerialNumber (Long): 552300517
+MakerNote SerialNumberFormat (Long): Format 2
+MakerNote Sharpness (Proprietary): Unknown
+MakerNote ShortFocalLengthOfLensInFocalUnits (Proprietary): 24
+MakerNote SlowShutter (Proprietary): None
+MakerNote SpotMeteringMode (Proprietary): Unknown
+MakerNote SubjectDistance (Proprietary): 0
+MakerNote Tag 0x0019 (Short): 1
+MakerNote Tag 0x0083 (Long): 0
+MakerNote Tag 0x0099 (Long): [396, 4, 1, 92, 7, 257, 1, 0, 258, 1, 0, 259, 1, 0, 260, 1, 0, 261, 1, 0, ... ]
+MakerNote Tag 0x00A0 (Short): [28, 0, 3, 0, 0, 0, 0, 0, 65535, 5200, 129, 0, 0, 0]
+MakerNote Tag 0x00AA (Short): [12, 590, 1024, 1024, 465, 0]
+MakerNote Tag 0x00D0 (Long): 0
+MakerNote Tag 0x00E0 (Short): [34, 5792, 3804, 1, 1, 168, 56, 5783, 3799, 0, 0, 0, 0, 0, 0, 0, 0]
+MakerNote Tag 0x4001 (Short): []
+MakerNote Tag 0x4008 (Short): [129, 129, 129]
+MakerNote Tag 0x4009 (Short): [0, 0, 0]
+MakerNote Tag 0x4010 (ASCII):
+MakerNote Tag 0x4011 (Undefined): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ... ]
+MakerNote Tag 0x4012 (ASCII):
+MakerNote Tag 0x4013 (Long): [20, 0, 0, 10, 0]
+MakerNote Tag 0x4015 (Undefined): [0, 16, 116, 0, 1, 0, 0, 0, 0, 0, 0, 0, 56, 0, 0, 0, 0, 0, 0, 0, ... ]
+MakerNote Tag 0x4016 (Long): [24, 0, 1, 0, 0, 1]
+MakerNote Tag 0x4017 (Long): [395528, 2701131776]
+MakerNote ThumbnailImageValidArea (Short): [0, 159, 7, 112]
+MakerNote ToningEffect (Proprietary): Unknown
+MakerNote Unknown (Proprietary): 0
+MakerNote ValidAFPoints (Proprietary): 2784
+MakerNote WBBracketMode (Proprietary): Off
+MakerNote WBBracketValueAB (Proprietary): 0
+MakerNote WBBracketValueGM (Proprietary): 0
+MakerNote WhiteBalance (Proprietary): Auto
+Thumbnail Compression (Short): JPEG (old-style)
+Thumbnail JPEGInterchangeFormat (Long): 10560
+Thumbnail JPEGInterchangeFormatLength (Long): 10529
+Thumbnail ResolutionUnit (Short): Pixels/Inch
+Thumbnail XResolution (Ratio): 72
+Thumbnail YResolution (Ratio): 72
+
+
+
+ultimately, it seems that too few of the pictures have any EXIF metadata, so for
+purposes of our analysis within the given timeframe, I think we should table any
+further analysis on the images until we've exhausted other methods of optimizing
+our model.
