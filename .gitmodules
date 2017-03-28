@@ -16,3 +16,6 @@
 [submodule "Daka-for-Data-submodule"]
 	path = Project3-MachineLearning/Daka-for-Data
 	url = git@github.com:domingos86/renthop-kaggle.git
+[submodule "Airbnb"]
+	path = Project4-Capstone/Airbnb
+	url = https://github.com/sahooa/airbnb_kaggle/.git
