@@ -1,0 +1,1002 @@
+,business_id,count,name_biz,stars_biz,address,neighborhood,latitude,longitude
+0,4JNXUYY8wbaaDmk3BPzlWw,474,Mon Ami Gabi,4.0,3655 Las Vegas Blvd S,The Strip,36.1128270642,-115.172581497
+1,7sPNbCx7vGAaH7SbNPZ6oA,450,Bachi Burger,4.0,"470 E Windmill Ln, Ste 100",Southeast,36.0427979056,-115.153225035
+2,RESDUcs7fIiihp38-d6_6g,446,Bacchanal Buffet,4.0,"Caesars Palace Las Vegas Hotel And Casino, 3570 Las Vegas Boulevard South",The Strip,36.1158543432,-115.176174388
+3,K7lWdNUhCbcnEvI0NhGewg,432,Wicked Spoon,3.5,"The Cosmopolitan Of Las Vegas, 3708 Las Vegas Blvd S",The Strip,36.1098756593,-115.175163842
+4,iCQpiavjjPzJ5_3gPD5Ebg,421,Secret Pizza,4.0,"The Cosmopolitan Of Las Vegas, 3708 Las Vegas Blvd S",The Strip,36.1099136471,-115.176315898
+5,UPIYuRaZvknINOd1w8kqRQ,417,Monta Ramen,4.0,"5030 Spring Mountain Rd, Ste 6",Chinatown,36.1270432,-115.2096534
+6,g8OnV26ywJlZpezdBnOWUQ,416,Hash House A Go Go,4.0,6800 W Sahara Ave,Westside,36.144667,-115.239955
+7,KskYqH1Bi7Z_61pH6Om8pg,413,Lotus of Siam,4.0,"953 E Sahara Ave, Ste A5",Eastside,36.14345,-115.14278
+8,JyxHvtj-syke7m9rbza7mA,375,Sushi House Goyemon,3.5,"5255 S Decatur Blvd, Ste118",,36.0950586541,-115.208877933
+9,DkYS3arLOhA8si5uUEmHOw,372,Earl of Sandwich,4.5,3667 Las Vegas Blvd S,The Strip,36.109361,-115.171877
+10,A5Rkh7UymKm0_Rxm9K2PJw,347,Yard House Town Square,4.0,6593 Las Vegas Blvd S,Southeast,36.0684267393,-115.178000895
+11,yfxDa8RFOvJPQh0rNtakHA,344,Pho Kim Long,3.5,4029 Spring Mountain Rd,Chinatown,36.1261943318,-115.193445287
+12,fL-b760btOaGa85OJ9ut3w,328,Rollin Smoke Barbeque,4.5,3185 S Highland Dr,,36.1321763,-115.177067
+13,zdE82PiD6wquvjYLyhOJNA,320,KoMex Fusion,4.5,"633 N Decatur Blvd, Ste H",,36.179939,-115.206417
+15,P7pxQFqr7yBKMMI2J51udw,320,Holsteins Shakes and Buns,4.0,3708 Las Vegas Blvd S,The Strip,36.1097544,-115.1738726
+16,igHYkXZMLAc9UdV5VnR_AA,320,Echo & Rig,4.5,440 S Rampart Blvd,Westside,36.166576,-115.286232
+18,j5nPiTwWEFr-VsePew7Sjg,301,Ichiza,4.0,4355 Spring Mountain Rd,Chinatown,36.125908,-115.197904
+20,4k3RlMAMd46DZ_JyZU0lMg,301,Ramen Sora,4.0,4490 Spring Mountain Rd,Chinatown,36.1265262,-115.2017756
+21,XXW_OFaYQkkGOGniujZFHg,293,The Peppermill Restaurant & Fireside Lounge,4.0,2985 Las Vegas Blvd S,The Strip,36.1336130336,-115.163122017
+22,cYwJA2A6I12KNkm2rtXd5g,291,Gordon Ramsay BurGR,4.0,3667 Las Vegas Blvd S,The Strip,36.110724,-115.172169
+23,uW6UHfONAmm8QttPkbMewQ,290,Island Flavor,4.5,8090 S Durango Dr,Southwest,36.0417787776,-115.278213657
+24,2weQS-RnoOBhb1KsHKyoSQ,283,The Buffet,3.5,"Wynn Las Vegas, 3131 Las Vegas Blvd S",The Strip,36.1268872232,-115.165590048
+25,3GEEy7RP6e4bT4LAiWFMFQ,277,Pizza Rock,4.0,201 N 3rd St,Downtown,36.1718303,-115.1420069
+27,3BCsAgo_1i4xMuTyLKMLRQ,276,SkinnyFATS,4.5,6261 Dean Martin Dr,,36.0758571125,-115.181633346
+28,IMLrj2klosTFvPRLv56cng,274,Honey Salt,4.0,1031 S Rampart Blvd,Westside,36.160577,-115.292996
+29,qqs7LP4TXAoOrSlaKRfz3A,274,DW Bistro,4.5,"9275 West Russell Rd, Ste 190",Spring Valley,36.0842933813,-115.293878168
+30,vl2IZrNJEA8npSjqXbdwxw,273,BabyStacks Cafe,4.0,"2400 N Buffalo Dr, Ste 145",Summerlin,36.2037425,-115.2598768
+32,l_GV0hgEoTUf70uJVT0_hg,272,eat.,4.0,707 Carson Ave,Downtown,36.166723,-115.13894
+34,Cni2l-VKG_pdospJ6xliXQ,269,Burger Bar,4.0,3950 S Las Vegas Blvd,The Strip,36.092875,-115.176247
+35,ZibmYdOPKLlqDM9oR6xzOA,267,Bachi Burger,4.0,"9410 W Sahara Ave, Ste 150",Westside,36.1469098416,-115.30077702
+36,EnCIojgP5KTr1leaysFE3A,263,Viva Las Arepas,4.5,"1616 S Las Vegas Blvd, Ste 120",Downtown,36.1512686085,-115.15254548
+37,UNI1agsPX2k3eJSJVB91nw,260,Hot N Juicy Crawfish,4.0,"4810 Spring Mountain Rd, Ste C & D",Chinatown,36.1265925847,-115.206305981
+38,UYh1N1xQhOh-a7nX92xPzQ,257,Brio Tuscan Grille,4.0,6653 Las Vegas Blvd,Southeast,36.0681523873,-115.175929912
+39,sNVGdeOPeitJ3OWUQBINzQ,256,BabyStacks Cafe,4.0,"4135 S Buffalo Dr, Ste 101",Spring Valley,36.1136678,-115.2614725
+41,hIUKufhwR6Ifn7bi0-phLA,255,Baguette Cafe,4.5,"8359 W Sunset Rd, Ste 100",Spring Valley,36.066865,-115.273241
+42,rcaPajgKOJC2vo_l3xa42A,252,Bouchon at the Venezia Tower,4.0,"3355 Las Vegas Blvd S, Venezia Tower, 10th floor",The Strip,36.122293409,-115.170278879
+43,gTw6PENNGl68ZPUpYWP50A,248,Soyo Korean Barstaurant,4.0,"7775 S Rainbow Blvd, Ste 105",Southwest,36.0471471941,-115.24373889
+44,-ed0Yc9on37RoIoG2ZgxBA,247,Le Thai,4.0,523 Fremont St,Downtown,36.1688018067,-115.139880089
+45,QJatAcxYgK1Zp9BRZMAx7g,235,Shake Shack,4.0,"New York New York Hotel & Casino, 3790 Las Vegas Blvd S",The Strip,36.1030612595,-115.173450261
+46,sqRX-XLlhx4rs2c1TpBf8A,231,Raku,4.5,"5030 Spring Mountain Rd, Ste 2",Chinatown,36.127033,-115.210028
+48,rq5dgoksPHkJwJNQKlGQ7w,230,Sambalatte Torrefazione,4.0,"750 S Rampart Blvd, Ste 9",Westside,36.1641802266,-115.289629743
+49,ugLqbAvBdRDc-gS4hpslXw,230,Yama Sushi,4.0,"1350 E Flamingo Rd, Ste 18",Eastside,36.115520451,-115.134970584
+50,WRQ-9LluyivReFiQZFUujw,230,Buldogis Gourmet Hot Dogs,4.5,"2291 S Fort Apache Rd, Ste 102",Westside,36.1470835,-115.2982993
+51,awI4hHMfa7H0Xf0-ChU5hg,226,Oyster Bar,4.5,2411 W Sahara Ave,,36.1429035195,-115.174618522
+52,2iTsRqUsPGRH1li1WVRvKQ,224,Carson Kitchen,4.5,"124 S 6th St, Ste 100",Downtown,36.1678783157,-115.140640475
+53,ujHiaprwCQ5ewziu0Vi9rw,223,The Buffet at Bellagio,3.5,3600 S Las Vegas Blvd,The Strip,36.1131604088,-115.17640885
+54,wX1ORSDKPkA5ftE7F6UONw,223,Strip N Dip Chicken Strips,4.5,873 S Rainbow Blvd,Westside,36.1618764,-115.2453617
+55,SAIrNOB4PtDA4gziNCucwg,223,Herbs & Rye,4.0,3713 W Sahara Ave,Westside,36.1439242153,-115.191727262
+56,y8d90Pt16Nip-B5UXWBP-w,221,Yard House Red Rock Resort,4.0,11011 W Charleston Blvd,South Summerlin,36.1567959455,-115.334386826
+57,CiYLq33nAyghFkUR15pP-Q,220,TACOS EL GORDO,4.5,1724 E Charleston Blvd,Downtown,36.1584751,-115.1265495
+59,FvVSy2r7_zDEhZWqLgjXNQ,219,The Bagel Cafe,4.0,"Westcliff House, 301 N Buffalo Dr",Westside,36.1759103,-115.260485
+60,Gaq3S9lmjXVcuDCZ8ulppw,218,Oyshi Sushi,3.5,"7775 S Rainbow Blvd, Ste 145",Southwest,36.047306,-115.244158
+62,A0X1baHPgw9IiBRivu0G9g,217,Patisserie Manon,4.0,"8751 W Charleston Blvd, Ste 110",Westside,36.1575911274,-115.285657683
+63,RwMLuOkImBIqqYj4SSKSPg,214,Tacos El Gordo,4.0,3049 S Las Vegas Blvd,The Strip,36.1315942123,-115.164766838
+64,A-uZAD4zP3rRxb44WUGV5w,214,Soho Japanese Restaurant,4.5,"7377 S Jones Blvd, Ste 116",Southwest,36.0552438,-115.2258702
+65,gx2yPrOJSwF1ApJYdGBWIw,212,JINYA Ramen Bar,4.0,4860 W Flamingo Rd,,36.1158115,-115.2068476
+66,Jur1iiejUFw_YCkfDfy1gQ,211,Orchids Garden Chinese Restaurant,3.5,5485 W Sahara Ave,Westside,36.1435449,-115.2163036
+68,NvKNe9DnQavC9GstglcBJQ,210,Grand Lux Cafe,4.0,"The Venetian Hotel & Casino, 3355 Las Vegas Blvd S",The Strip,36.1222764411,-115.17012246
+69,XZbuPXdyA0ZtTu3AzqtQhg,210,Mesa Grill,4.0,3570 Las Vegas Blvd S,The Strip,36.1171245659,-115.174792707
+70,ZAuAwz1ijuydn5yL3q3rzA,210,Japanese Curry Zen,4.5,"5020 Spring Mountain Rd, Ste 1",Chinatown,36.1268196106,-115.20941925
+71,EAwh1OmG6t6p3nRaZOW_AA,209,Ellis Island Casino & Brewery,4.0,4178 Koval Ln,Eastside,36.1130255,-115.1634847
+73,Ec9CBmL3285XkeHaNp-bSQ,204,District One Kitchen & Bar,4.0,"3400 S Jones Blvd, Ste 8",Chinatown,36.1274286041,-115.22407185
+74,zcScEL0WEdFkROcnz5379g,201,The Boiling Crab,4.0,4025 S Decatur Blvd,,36.1171281659,-115.208510922
+75,UCpUOtvqR-NBWBNVMzJleA,196,Blue Martini Lounge,3.5,"6593 Las Vegas Blvd S, Bldg L B214",Southeast,36.0683706291,-115.177535906
+76,1ZnVfS-qP19upP_fwOhZsA,194,Big Wong Restaurant,4.0,5040 Spring Mountain Rd,Chinatown,36.126663,-115.20992
+77,pHJu8tj3sI8eC5aIHLFEfQ,194,Nora's Italian Cuisine,4.0,5780 W Flamingo Rd,,36.1148522,-115.2203694
+79,umXvdus9LbC6oxtLdXelFQ,193,Sweets Raku,4.5,"5040 W Spring Mountain Rd, Ste 3",Chinatown,36.1264269463,-115.209914042
+80,0w3BdEOxvwKTpypwbN5kiQ,192,Tofu Hut,3.5,3920 Spring Mountain Rd,Chinatown,36.1267612,-115.192874
+82,n_K2xa_nqzUqaUJa0S_5tQ,192,Tea Station,3.0,"4355 Spring Mountain Rd, Ste 106",Chinatown,36.125964,-115.1976
+83,G-5kEa6E6PD5fkBRuA7k9Q,191,Giada,3.5,"The Cromwell Las Vegas Resort & Casino, 3595 Las Vegas Blvd South",The Strip,36.1151458785,-115.172286068
+84,zRqi6L1u-YmmVAHjeUbGMQ,191,SkinnyFATS,4.5,"8680 W Warm Springs Rd, Ste 170",Southwest,36.0562823585,-115.280428139
+85,364hhL5st0LV16UcBHRJ3A,190,Yonaka Modern Japanese,4.5,"4983 W Flamingo Rd, Ste A",,36.114935,-115.209737
+87,rioQ_p2pILNbJ4Xp5jW6-Q,186,Downtown Container Park,4.0,707 Fremont St,Downtown,36.1675431,-115.1384234
+88,3kdSl5mo9dWC4clrQjEDGg,185,Egg & I,4.5,"4533 W Sahara Ave, Ste 5",Westside,36.1440458,-115.2024651
+89,riFzCvp77DMKDX-5GoTpqA,185,Steak 'n Shake,3.5,9777 Las Vegas Blvd S,Southeast,36.0114062572,-115.1757787
+90,I6EDDi4-Eq_XlFghcDCUhw,183,Joe's Seafood Prime Steak & Stone Crab,4.5,"The Forum Shop At Caesars Palace, 3500 Las Vegas Blvd S, Ste R-05",The Strip,36.1186453192,-115.173629052
+91,hroo5nOO8b9QhHX0GLg7oA,183,Pho So 1,3.5,4745 Spring Mountain Rd,Chinatown,36.1249835,-115.2064306
+93,wuQDMDlqM17jQNo0lYQZ7g,182,Park on Fremont,4.0,506 Fremont St,Downtown,36.169326,-115.140097
+94,IZivKqtHyz4-ts8KsnvMrA,182,Kung Fu Tea,4.5,5030 Spring Mountain Rd,Chinatown,36.1270199715,-115.20964399
+95,gTlDDzDEHyDQ6iwjNhpI6A,180,Mount Everest India's Cuisine,4.5,3641 W Sahara Ave,Westside,36.1439733,-115.1898435
+97,Vs7gc9EE3k9wARuUcN9piA,179,Pan Asian,4.5,"2980 S Durango Dr, Ste 101",Westside,36.134956,-115.278458
+98,PQER4ba8Q0zqB1G2QiXamQ,179,Black Bear Diner,4.0,6180 W. Tropicana Avenue,,36.1002814148,-115.22745826
+99,JDZ6_yycNQFTpUZzLIKHUg,177,El Dorado Cantina,4.5,3025 Sammy Davis Jr. Dr,,36.1350121,-115.1714295
+101,uWECX6-Uq9n8v5ipk9R29A,176,Lola's A Louisana Kitchen,4.0,"241 W Charleston Blvd, Ste 101",Downtown,36.158293,-115.1579886
+102,El4FC8jcawUVgw_0EIcbaQ,176,MGM Grand Hotel,3.0,3799 Las Vegas Blvd S,The Strip,36.1022543,-115.1699583
+104,DzKl51tivGJMLiNsQqf38w,175,Island Sushi & Grill,4.0,"9400 S Eastern Ave, Ste 103",Southeast,36.0182263,-115.1179256
+106,m5niZy68d2gTtVWz89elfA,175,Slidin Thru,4.0,6478 Windy Rd,Southeast,36.071643,-115.176101
+107,UMqfeCItzQ2glr4d9apGlA,175,Sunrise Coffee,4.5,"3130 E Sunset Rd, Ste A",Southeast,36.0719462,-115.1069016
+109,dEAk-gE-5Q95a7p91gNn8A,173,Sushi Koma,4.0,"8665 W Flamingo Rd, Ste 106",Spring Valley,36.1144681157,-115.281096697
+110,eduRavkml8awmPachSZXuw,172,Kona Grill,3.5,750 S Rampart Blvd,Westside,36.1638735074,-115.289943661
+111,JWDiG0nSsM7GQ9QFRTxU9w,172,Glazier's Food Marketplace,4.0,8525 W Warm Springs Rd,Southwest,36.0544216949,-115.277408257
+112,7sb2FYLS2sejZKxRYF9mtg,171,Sakana,4.5,3949 S Maryland Pkwy,Eastside,36.1172566639,-115.138506234
+113,SVGApDPNdpFlEjwRQThCxA,170,Juan's Flaming Fajitas & Cantina,4.5,"9640 W Tropicana, Ste 101",Spring Valley,36.1003444651,-115.302336439
+114,pQ6e4fjq6kqRqLE6w8CfWQ,169,Wendy's Noodle Cafe,4.0,3401 S Jones Blvd,Chinatown,36.1275319,-115.2252191
+116,qkyCuFJF2Uboh6n2Lmuwlg,169,Lee's Sandwiches,3.0,3989 Spring Mountain Rd,Chinatown,36.126144295,-115.192033683
+117,IhNASEZ3XnBHmuuVnWdIwA,168,Brew Tea Bar,5.0,"7380 S Rainbow Blvd, Ste 101",Southwest,36.0541948,-115.242443
+118,7ibuDLfx8gEhESAufYIySw,168,Sushi Mon,4.0,"9770 S Maryland Pkwy, Ste 3",Southeast,36.0119105,-115.1361159
+119,n8Zqqhff-2cxzWt_nwhU2Q,168,Public School 702,3.5,1850 Festival Plaza Dr,South Summerlin,36.1511909431,-115.332766928
+120,LFs5jyYdXlzi0SpAYi1eSA,168,Maggiano's Little Italy,4.0,3200 Las Vegas Blvd S,The Strip,36.1276070473,-115.168533551
+121,OETh78qcgDltvHULowwhJg,168,Gordon Ramsay Steak,4.0,"Paris Las Vegas Hotel & Casino, 3655 Las Vegas Boulevard South",The Strip,36.1128823357,-115.171270357
+122,GHS1rVjO-RMcRB6WJLpCDQ,168,Las Vegas North Premium Outlets,4.0,875 S Grand Central Pkwy,Downtown,36.16421,-115.157736
+124,cJWbbvGmyhFiBpG_5hf5LA,167,Hofbräuhaus Las Vegas,3.5,4510 Paradise Rd,Eastside,36.1077570331,-115.151691257
+125,d_L-rfS1vT3JMzgCUGtiow,167,Border Grill,4.0,3950 S Las Vegas Blvd,The Strip,36.0899498633,-115.175814183
+126,ixAh9crILnJ9tM8LhWFhkw,167,Archi's Thai Bistro,4.0,"6345 S Rainbow Blvd, Ste 100",Spring Valley,36.0732064948,-115.243538218
+127,vx4YAA02Qz6khRD1fZ1MFA,166,Ping Pang Pong,3.5,"Gold Coast Hotel & Casino, 4000 W Flamingo Rd",,36.1153088291,-115.195201635
+128,Os1n1_idfw9vv9kwULGJnQ,166,Island Style,4.5,"3909 W Sahara Ave, Ste 1",Westside,36.1440350372,-115.193389175
+129,W8apgXmOxESpoL_EeogC5w,166,Fukumimi Ramen,4.0,"4860 S Eastern Ave, Ste 2",Southeast,36.1004644026,-115.117415621
+130,f4x1YBxkLrZg652xt2KR5g,166,Hash House A Go Go,4.0,"The LINQ Hotel & Casino, 3535 Las Vegas Blvd S",The Strip,36.1178829948,-115.17124454
+131,82YGtjc5KKikNiqBZ33qzw,162,Kyara Japanese Tapas,4.0,"6555 S Jones Blvd, Ste 120",Spring Valley,36.0698514,-115.2249867
+132,eZcCFV-8X91ZSnmB9807bw,162,The Cheesecake Factory,3.5,"750 S Rampart Blvd, Bldg 17",Westside,36.1646282753,-115.28920699
+133,6tSvz_21BMo3a4GaItwa0g,161,JJANGA Japanese Restaurant,4.0,"3650 S Decatur Blvd, Ste 31",Chinatown,36.1235575,-115.2075378
+135,zEaGcSVPDQipnRdEZp-F6g,161,Dom DeMarco's Pizzeria & Bar,4.0,9785 W Charleston Blvd,Westside,36.1588974,-115.3115031
+136,UV2Jt8slktGu14gLZeNCjA,158,Mint Indian Bistro,4.0,"730 E Flamingo Rd, Ste 10",University,36.1148754728,-115.147404671
+137,KalAJyO0Zpg3K1wVwYXBHA,158,Marché Bacchus,4.0,"2620 Regatta Dr, Ste 106",Summerlin,36.2075183,-115.2681365
+138,IT_4EEIbv6Ox1jBRMyE7pg,154,Del Frisco's Double Eagle Steak House,4.5,3925 Paradise Rd,Eastside,36.1179324,-115.1553873
+140,0_aeYE2-VbsZts_UpILgDw,154,Lazy Dog Restaurant & Bar,4.0,"1725 Festival Plz Dr, Ste A2",South Summerlin,36.152831458,-115.333866775
+141,FQB3VXrWYM_m_XrzwRozAg,152,Sura BBQ Buffet,3.5,4480 W Spring Mountain Rd,Chinatown,36.1263313,-115.2014204
+142,1SqLPgnZEVeVYDM-AuoFhg,152,Pop's Philly Steaks,3.5,501 S Decatur Blvd,Westside,36.166261,-115.205674
+143,CauQnqZ5eowyrr7oWF_p3Q,152,John Mull's Meats & Road Kill Grill,4.5,3730 Thom Blvd,Northwest,36.22723,-115.2114516
+145,ydcNlRMKs93AQpOhVkSrGQ,152,Fukuburger Truck,4.0,,Downtown,36.1699412,-115.1398296
+147,HgdFqAvK31fB9sgBdOzo9g,152,Crêpe Expectations,4.5,"9500 S Eastern Ave, Ste 150",,36.016494,-115.117099
+148,QJR4qBUHegWEozSQrGmBPw,152,Olives,4.0,3600 S Las Vegas Blvd,The Strip,36.111978,-115.17698
+149,sOYsxYYFl03PhHmz_rBDZQ,150,The Sparklings,4.0,"8310 S Rainbow Blvd, Ste 100",Southwest,36.0373841989,-115.242948945
+150,osu1j_Lg8R9brpuMMn3a3A,149,Fogo de Chão Brazilian Steakhouse,4.5,360 E Flamingo Rd,Eastside,36.1147454655,-115.157157183
+151,DbEszO3wk1xVmN3pCPob2g,149,Jamms Restaurant,4.5,1029 S Rainbow Blvd,Westside,36.159706,-115.245078
+152,dn_ipqbm7_jUz5X3rDez_A,148,Todd English P.U.B.,3.5,3720 S Las Vegas Blvd,The Strip,36.1088082,-115.173583
+154,C9ImzBi5fn742ZcAYDww2A,148,Rise & Shine - A Steak & Egg Place,4.0,10690 Southern Highlands Pkwy,Southwest,35.9949501,-115.2062178
+155,p5rpYtxS5xPQjt3MXYVEwA,148,Greens and Proteins,4.0,8975 S Eastern Ave,Southeast,36.0262317,-115.1192573
+157,DYAorbxOyubUB_wtQRCdug,148,MadHouse Coffee,4.0,"8470 W Desert Inn Rd, Ste H-1",Westside,36.129857,-115.275526
+158,OVTY-NpcTA7iXbMQmusv3A,147,BJ's Restaurant & Brewhouse,4.0,10840 West Charleston,Summerlin,36.159552,-115.331914
+160,y4ETe3DkcIjjr_eyeg5U5g,147,Cornish Pasty,4.5,10 E Charleston Blvd,Downtown,36.1586573241,-115.152920932
+161,VGWEpMEkzQopS5lUNd06Sw,147,Miller's Ale House - Las Vegas,3.5,6683 Las Vegas Blvd S,Southeast,36.0661824639,-115.175287547
+162,_w5hBpkjHs5_Hv3pLeHtIw,147,Julian Serrano,4.0,3730 Las Vegas Blvd S,The Strip,36.1058559054,-115.174262584
+163,2SfSzEd3B7WimeZac23zhg,147,Leoné Café,4.0,"400 S Rampart Blvd, Ste 165",Westside,36.167315,-115.286719
+165,H8qpFitIesth86zqR4cwYg,147,Jean Philippe Patisserie,4.0,3730 Las Vegas Blvd S,The Strip,36.1068146101,-115.178174973
+166,HQcel0uvg7N7KfhHJChfSQ,146,Sushi Kaya,3.5,"4355 Spring Mountain Rd, Ste 101B",Chinatown,36.1259513087,-115.198216438
+167,pomGBqfbxcqPv14c3XH-ZQ,146,Leticia's Mexican Cocina,4.0,"7585 Norman Rockwell Ln, Bldg 1",Centennial,36.2988751854,-115.280088186
+168,Qihead6oTtWCwde3TBqlGg,145,Du-Par's,4.0,1 Fremont St,Downtown,36.171301,-115.146052
+169,ECOkEVUodMLUxvI0PMI4gQ,145,Tao Nightclub,3.0,"The Venetian, 3377 S Las Vegas Blvd",The Strip,36.1214517,-115.169597789
+170,YJ8ljUhLsz6CtT_2ORNFmg,145,Gordon Ramsay Pub & Grill,3.5,"Caesars Palace Las Vegas Hotel And Casino, 3570 Las Vegas Boulevard South",The Strip,36.1177282041,-115.175818301
+171,GJ_bXUPv672YwNg4TneJog,145,China Poblano,3.0,3708 Las Vegas Blvd S,The Strip,36.1098709067,-115.17481374
+172,-IWsoxH7mLJTTpU5MmWY4w,144,Kinh Do,4.0,"4300 Spring Mountain Rd, Ste 101",Chinatown,36.1269341,-115.1977704
+174,8olG8J91NG_QU92WHG5QfA,144,Amore Taste of Chicago,4.0,3945 S Durango Dr,Spring Valley,36.1191125,-115.2797333
+176,xkVMIk_Vqh17f48ZQ_6b0w,144,Tom Colicchio's Craftsteak,4.0,3799 Las Vegas Blvd S,The Strip,36.102918,-115.169751
+177,VrGI7_nRjXpn0415S3coGQ,144,Thai Style Noodle House,4.0,3516 Wynn Rd,Chinatown,36.1258871,-115.1944248
+178,VsewHMsfj1Mgsl2i_hio7w,144,LAVO Italian Restaurant & Lounge,3.5,"The Palazzo, 3255 S Las Vegas Blvd",The Strip,36.1244339501,-115.169068691
+179,HhVmDybpU7L50Kb5A0jXTg,143,Guy Fieri's Vegas Kitchen & Bar,3.5,"The LINQ Las Vegas Resort & Casino, 3535 S Las Vegas Blvd",The Strip,36.118793,-115.1726
+180,qVO3l9Q0-KVQE7W9JL9ePw,142,Greenland Supermarket,4.0,6850 Spring Mountain Rd,Chinatown,36.127061,-115.241457
+182,OjApDLQUPV8c_yPCg8xZog,142,Pot Liquor CAS,4.0,"6587 S Las Vegas Blvd, Ste B-196",Southeast,36.0689369963,-115.178216174
+183,faPVqws-x-5k2CQKDNtHxw,142,Yardbird Southern Table & Bar,4.5,"The Venetian, 3355 Las Vegas Blvd S",The Strip,36.1229684406,-115.168792678
+184,Z5eukYH32_nFljOTC2DJ0g,142,Grimaldi's Pizzeria,4.0,9595 S Eastern Ave,Southeast,36.0153892,-115.1195612
+186,0WoQQlMXVIDEgI0xNdENKA,142,Feast Buffet,3.5,11011 W Charleston Blvd,South Summerlin,36.1564004,-115.3335562
+188,LpGCzgAKNSpzDNEUMVVtZA,141,Grimaldi's - Coal Brick-Oven Pizzeria,4.0,"7155 S Rainbow Blvd, Ste 125",Southwest,36.0582206,-115.2436309
+190,VMXl3Dm1Nwvgwo1PVYTXbg,141,Gold Spike,4.0,217 Las Vegas Blvd N,Downtown,36.1713078,-115.1402675
+192,fHM09_y3QX3n4a_bIFbk_w,141,Grand Lux Cafe,4.0,"PALAZZO Resort Hotel Casino, 3327 Las Vegas Blvd S, Ste 1580",The Strip,36.123618,-115.17033
+193,HPLB1Tr8ZB5UkD-2umKPdA,139,Fat Choy,4.0,595 E Sahara Ave,Eastside,36.1434734,-115.1468836
+194,DkZuVzYuylBanEsWK7mNGw,138,Yummy Grill & Sushi,4.5,"7331 W Lake Mead Blvd, Ste 105",,36.1947642877,-115.25248422
+195,ZkGDCVKSdf8m76cnnalL-A,138,Le Village Buffet,3.5,3655 Las Vegas Blvd S,The Strip,36.1129302794,-115.169968853
+196,aD0EslPREWGDlSpD0RMlEg,138,Asian BBQ & Noodles,4.0,"3400 S Jones Blvd, Ste 5C",Chinatown,36.1278838165,-115.224121095
+197,K0j_Znzin0jShXVnpvW86A,137,Jaleo,3.5,3708 Las Vegas Blvd S,The Strip,36.1097544,-115.1738726
+198,RRw9I8pHt5PzgYGT2QeODw,137,Grimaldi's Pizzeria,4.0,750 S Rampart Blvd,Westside,36.1640989787,-115.289727652
+199,dKdApYVFDSNYsNOso6NYlA,136,White Castle,3.0,3411 S Las Vegas Blvd,The Strip,36.1208167322,-115.17205102
+200,LR0qF0FEVsCOhYWUOiH26A,136,The Buffet at ARIA,3.0,3743 Las Vegas Blvd S,The Strip,36.107406,-115.17698
+201,q-zZgXKAQFLEgMp9ZNllgQ,136,Umiya Sushi,4.0,4465 W Flamingo Rd,,36.1154185,-115.2006442
+202,f4kNNLU_0q_2J711jCN7dA,135,Paymon's Mediterranean Cafe & Lounge,4.0,4147 S Maryland Pkwy,University,36.1136516,-115.1383819
+203,mDR12Hafvr84ctpsV6YLag,135,Mr Mamas,4.5,"5693 S Jones Blvd, Ste 106",Spring Valley,36.0865254,-115.2262491
+205,a192hdM0_UVCYLwPJv1Qwg,135,Casa Don Juan  - Downtown,4.0,1204 S Main St,Downtown,36.157156,-115.1538305
+206,pH0BLkL4cbxKzu471VZnuA,134,SUSHISAMBA - Las Vegas,4.0,3327 Las Vegas Blvd,The Strip,36.1239774361,-115.167756725
+207,B_WggEKFq-ZFNui8CHPYvA,134,Soho SushiBurrito,4.5,"2600 W Sahara Ave, Ste 115",,36.145214,-115.176443
+209,bPcqucuuClxYrIM8xWoArg,133,Due Forni,4.0,"3555 S Town Center Dr, Ste 105",South Summerlin,36.1248405,-115.3252217
+211,Fi-2ruy5x600SX4avnrFuA,133,Spice Market Buffet,3.0,3667 Las Vegas Blvd S,The Strip,36.1102503133,-115.171666064
+212,XeDLyY2a7nZ3IEY4RYslXA,132,Chicago Brewing Company,3.5,2201 S Fort Apache Rd,Westside,36.1474961,-115.2980652
+213,olmCDBoMF-EhN8U2livBSg,132,Freed's Bakery,4.0,9815 S Eastern Ave,Southeast,36.0109982442,-115.119957995
+214,qsJkjQoM3Hdg6Gtqp2S9_w,132,Archi's Thai Cafe,4.0,9350 W Sahara Ave,Westside,36.1471526137,-115.299976431
+215,YRyYbOSwvHkZsZOLv98oQg,132,Estiatorio Milos,4.0,3708 Las Vegas Blvd S,The Strip,36.109883,-115.173887
+217,iA8Ve2sZKN5Vz3mYKrtCaQ,131,Komol Restaurant,4.0,"953 E Sahara Ave, Ste E-10 & E -12",Eastside,36.1424875212,-115.142594814
+218,zpoZ6WyQUYff18-z4ZU1mA,131,The Goodwich,4.5,"900 S Las Vegas Blvd, Ste 120",Downtown,36.1599382942,-115.147452718
+219,65eDIQ8bpMJFtgdyX7ulVA,131,Yassou,4.5,7871 W Charleston Blvd,Westside,36.1586479,-115.2634866
+220,vl1aHp6pvnSmpoRQShWLjg,131,Lucille's Smokehouse Bar-B-Que,3.5,11011 W Charleston Blvd,Summerlin,36.158032627,-115.335199692
+221,jLxeBgWhLRbII2ACkgH1Sg,131,La Belle Terre Bread French Bakery Café,4.5,"8390 W Sahara Ave, Ste 130",Westside,36.1443811,-115.2742995
+223,qmymSqVwHYRqdwfcBatzpQ,131,Vintner Grill,4.0,"10100 W Charleston Blvd, Ste 150",Summerlin,36.160122,-115.31731
+225,QDeB3ZtWYzVJJ0KK-HM-PA,131,Ronald's Donuts,4.5,4600 Spring Mountain Rd,Chinatown,36.1265632,-115.2042227
+226,eR7Iw_X54m3YLWkXp9y35Q,130,Tonkatsu Kiyoshi,4.5,"7780 S Jones Blvd, Ste 103",Southwest,36.0478877,-115.2244706
+228,aT_SsfZ6GQgJGyuIv1Hapw,130,Bouchon Bakery at the Venetian Casino,4.0,"The Venetian Resort Hotel & Casino, 3355 Las Vegas Blvd S, Ste 10101",The Strip,36.121774,-115.169229
+229,kRgAf6j2y1eR0wOFdzFAuw,129,Firefly,4.5,3824 Paradise Rd,Eastside,36.120135075,-115.154417458
+230,Gt4z3AylNTsEPDkzkaC7HA,129,Stacks & Yolks,3.5,"7150 S Durango Dr, Ste 140",Southwest,36.057847,-115.278523
+232,6H8xfhoZ2IGa3eNiY5FqLA,129,Trattoria Nakamura-Ya,4.0,"5040 W Spring Mountain Rd, Ste 5",Chinatown,36.1266205315,-115.209951897
+233,q3dJQtwZQrrurNT-1bNKgQ,128,Capo's Italian Cuisine,4.0,5675 W Sahara Ave,Westside,36.143974,-115.219248
+234,8K3CRM4COa0SSBEvli0fJQ,127,Paymons Mediterranean Cafe & Hookah Lounge,3.5,8380 W Sahara Ave,Westside,36.1447995,-115.2739605
+235,H0xkoPI-WwbjY7r-Zt-arw,127,CRAVE Restaurant,3.0,10970 Rosemary Park Dr,South Summerlin,36.1507596,-115.3334927
+237,O7ot_LMlCfLpOP9tBqeNfw,127,Kabuki Japanese Restaurant,3.5,"6605 Las Vegas Blvd S, Ste 147",Southeast,36.0675357995,-115.177971954
+238,k8BqCejnaMlw7aoVthvqyw,126,The Bootlegger Italian Bistro,4.0,"7700 Las Vegas Blvd S, Ste 1",Southeast,36.048992157,-115.171539307
+239,aQ222ydz_GSRZV66xNt4kQ,125,Sen of Japan,4.5,"8480 W Desert Inn Rd, Ste F1",Westside,36.1298813,-115.276416
+241,zwNC-Ow4eIMan2__bS9-rg,124,Taco Y Taco,4.0,3430 E Tropicana Ave,Eastside,36.1010489,-115.0999655
+242,PXShA3JZMXr2mEH3on5clw,124,Egg Works,4.5,2490 E Sunset Rd,Southeast,36.072421,-115.11687
+244,LYWbyu1EQM2o5hwHG5_Ldg,124,RM Seafood,3.5,3950 S Las Vegas Blvd,The Strip,36.0901182339,-115.172017635
+245,GI-CAiZ_Gg3h21PwrANB4Q,124,Mastro's Ocean Club,4.5,3720 South Las Vegas Blvd,The Strip,36.1079241113,-115.174055099
+246,NLEe-RzDSU-5BN6xp_WWCw,123,M&M Soul Food Cafe,4.0,3923 W Charleston Blvd,Westside,36.1588056245,-115.193109512
+247,BslEhCyzaQPfpHtDogb4hQ,123,Brooklyn Bowl,3.5,"3545 Las Vegas Blvd S, Ste 22",The Strip,36.117515,-115.169632
+249,kABF0hYfAEnl166mn1zR1A,122,The Noodle Man,4.0,"6870 S Rainbow Blvd, Ste 101",Spring Valley,36.0641072,-115.2415182
+250,eBj_YyJU5jVu6tbZCkdtDA,122,Brio Tuscan Grille,4.0,"420 S Rampart Blvd, Ste 180",Westside,36.1671901,-115.2855925
+251,RNi6tW22UMgHwWLAb0mYdA,122,Lawry's The Prime Rib,4.0,4043 Howard Hughes Pkwy,Eastside,36.1151617,-115.1597903
+252,SwAZBCyFtVo_8vkRbJhdkA,121,Culinary Dropout,4.0,"Hard Rock Hotel Casino, 4455 Paradise Rd",Eastside,36.108808,-115.152708
+253,AtD6B83S4Mbmq0t7iDnUVA,121,Veggie House,4.5,5115 Spring Mountain Rd,Chinatown,36.1253966874,-115.21156311
+254,u-67zd1ImTv3EEr5kIdWrA,120,House of Blues Restaurant & Bar,3.5,3950 Las Vegas Blvd S,The Strip,36.0928664972,-115.175868273
+255,a0v7Si0DK4cIko7AQY4YXg,120,Egg Works,4.5,6960 S Rainbow Blvd,Spring Valley,36.0621940089,-115.241856213
+256,BCAw9a_kyx2RddRH9tMmKQ,120,Mr. Lucky's 24-7,3.5,"Hard Rock Hotel & Casino, 4455 Paradise Rd",Eastside,36.1082943796,-115.152589542
+257,UUGoM4q4i8rK2CBRS0xDAw,120,Jean Philippe Patisserie,4.0,3600 S Las Vegas Blvd,The Strip,36.1119459216,-115.176876783
+258,FNe5PPA9pyj8FjcDefCBpg,119,Weera Thai,4.0,"3839 W Sahara Ave, Ste 9",Westside,36.144252,-115.192834
+259,tQifTiY-vutj8orxcMJKfQ,119,Triple George Grill,4.0,"201 N 3rd St, Ste 120",Downtown,36.1718195,-115.1423041
+261,7fxebHYUwIF6CakxSr70iQ,119,Carnevino,3.5,"The Palazzo, 3325 Las Vegas Blvd S",The Strip,36.124582,-115.168415
+263,f9sU31meK0bqAD7922sCog,119,Sage,4.0,3732 Las Vegas Blvd S,The Strip,36.1081923221,-115.176013461
+264,tsf1JNdeeQf_654YUSrzRw,119,McMullan's Irish Pub,4.0,4650 W Tropicana Ave,,36.1016609,-115.2042887
+265,4qG3Gh8QyugC1XvoTlmgcQ,119,Egg Works,4.5,9355 W Flamingo Rd,Spring Valley,36.1145171608,-115.295586366
+266,eaNenRk_liZBERFFLCXqqQ,119,Hobak Korean BBQ,4.5,"5808 Spring Mountain Rd, Ste 101",Chinatown,36.1260055033,-115.222520251
+267,elqbBhBfElMNSrjFqW3now,118,Pin Kaow Thai Restaurant,4.0,1974 N Rainbow Blvd,,36.195393,-115.241323
+268,yHYjDPuRtLvhvMpOn5fXOQ,117,Naked Fish's Sushi & Grill,4.0,"3945 S Durango Dr, Ste A6",Spring Valley,36.1192428,-115.279717
+270,lTixk1IT-D4hoMZ6LgoyHQ,117,The Barrymore,4.0,99 Convention Center Dr,The Strip,36.1318966939,-115.162421151
+271,5CJL_2-XwCGBmOav4mFdYg,117,Krung Siam Thai,3.5,"3755 Spring Mountain Rd, Ste 102",Chinatown,36.1261559476,-115.189639864
+272,YuiM5VKscO8rS1EX7f19_g,117,Fleur by Hubert Keller,4.0,3950 S Las Vegas Blvd,The Strip,36.0912534112,-115.176881115
+273,diY31IEunbV8MfDh81FS1A,117,Smashburger,3.5,9101 W Sahara Ave,The Lakes,36.143856508,-115.296061311
+274,pd2Xo1WqNic9zxLTVdilGA,116,Market Street Cafe,3.5,12 E Ogden A,Downtown,36.1731313752,-115.144967406
+275,d4qwVw4PcN-_2mK2o1Ro1g,116,Pink Taco,3.5,"Hard Rock Hotel & Casino, 4455 Paradise Rd",Eastside,36.1100828,-115.1538714
+277,OJdufUU3hVabgviIBHksYw,116,Aloha Kitchen & Bar,3.5,"2605 S Decatur Blvd, Ste 109",Westside,36.1429701,-115.20935
+278,OHFH6ALQqq35NiEbD1eXuw,116,Chang's Hong Kong Cuisine,3.5,4670 S Decatur Blvd,,36.105081,-115.20764
+279,v1AE1LLWDOqe8ubOzqKADg,116,The Original Sunrise Cafe,4.5,"8975 S Eastern Ave, Ste 6",Southeast,36.0262328,-115.1193237
+281,DESv2ys6SjBKA4SyDtJvxw,116,Ferraro's Italian Restaurant & Wine Bar,4.0,4480 Paradise Rd,Eastside,36.1091983422,-115.151955374
+282,pKk7jCFIm96qDdk0laVT2w,115,StripSteak,4.0,3950 S Las Vegas Blvd,The Strip,36.0911934011,-115.176574392
+283,mmbXj7CmjGbH-wR3j6cD0w,114,Sweet Tomatoes,3.5,"9460 W Flamingo Rd, Ste 100",Spring Valley,36.1152681022,-115.298301965
+284,bpRo8L8dkhgbJhdIKa9mwA,114,STK Las Vegas,4.0,"The Cosmopolitan Of Las Vegas, 3708 Las Vegas Blvd S",The Strip,36.109699457,-115.17441503
+285,0NmTwqYEQiKErDv4a55obg,114,Scarpetta,4.0,"Cosmopolitan Hotel, 3708 Las Vegas Blvd S",The Strip,36.1098050267,-115.174355507
+286,uUEKndnFbHD8mVkGiirtpA,114,Tommy Bahama Restaurant | Bar | Store - Las Vegas,4.0,6635 Las Vegas Blvd. South,Southeast,36.0684969257,-115.176930629
+287,hojZyJk1Wf2UE2CpG7cgIg,114,Freddy's Frozen Custard & Steakburgers,4.0,9809 S Eastern Ave,Southeast,36.0110778809,-115.11932373
+288,gO_z_5FQVHLCiJjOsfE1fg,113,Via Brasil Steakhouse,4.0,"1225 S Fort Apache Rd, Ste 100",Westside,36.15692415,-115.291998204
+289,FSnqO-YWUdRb0Xc95nXbvw,113,Lemongrass Café,3.5,8820 S Eastern Ave,,36.0289643,-115.1171379
+291,jBh399TajGcH28Zo2J1pHw,113,Shake Shack,3.5,10975 Oval Park Dr,South Summerlin,36.1518122,-115.3320001
+293,Sovgwq-E-n6wLqNh3X_rXg,112,Lindo Michoacan,4.0,2655 E Desert Inn Rd,Eastside,36.1293621,-115.1135114
+295,MyTsAeShB9pcWP84GSTAdw,112,KoMex Fusion,4.5,"4155 S Buffalo Dr, Ste 103 and 104",Spring Valley,36.1130397605,-115.261817568
+296,Mh84_j7YmRrAcm0DWV4bUw,111,Cugino's Italian Deli & Pizza,4.5,4550 S Maryland Pkwy,University,36.1067926,-115.1364723
+298,tMdgY7Ou4k3bYZZulJCiuQ,111,Bronze Cafe At The Center,4.5,401 S Maryland Pkwy,Downtown,36.1619276,-115.1346287
+300,pLMPpaJ7whp86uL_3ezwMg,111,Stripburger,4.0,3200 Las Vegas Blvd S,The Strip,36.127647,-115.168354
+302,M30I1NPl5JuHthxo1IXPGg,111,Pho Saigon 8,3.5,5650 Spring Mountain Rd,Chinatown,36.1259475,-115.2188254
+304,buTa1akbH0pO_P10v99_eA,110,Honey Pig,3.5,4725 Spring Mountain Rd,Chinatown,36.1251730572,-115.205299122
+305,jfmyj519pg2flxGEQ2xdPg,110,Joyful House Chinese Cuisine,3.5,4601 Spring Mountain Rd,Chinatown,36.1259553166,-115.203431297
+306,9edPSkfXKsJmkZYIaOmA7Q,110,Las Vegas South Premium Outlets,3.5,7400 Las Vegas Blvd S,Southeast,36.0539333477,-115.168928254
+307,0CB7YB1qRSWLQvMbHw3Fmw,110,Easy Life Boba Tea,4.0,"8560 W Desert Inn Rd, Ste D2",Westside,36.1300289,-115.2777727
+308,7vHvQCjPq5pWj7Rio1A--w,109,Blue Fin Sushi & Roll,4.0,"3980 E Sunset Rd, Ste 102",,36.0715,-115.0884104
+309,R3TC2oq8fQK9c9BNMZ-ynA,109,RA Sushi Bar Restaurant,3.5,"3200 Las Vegas Blvd S, Ste 1132",The Strip,36.127797,-115.168692
+311,P8uECqGqXWTwEndkh-6bQw,109,Naked City Pizza Shop on Arville,4.0,3240 S Arville St,Westside,36.130804,-115.198971
+312,hihud--QRriCYZw1zZvW4g,109,Gangnam Asian BBQ Dining,4.5,4480 Paradise Rd,Eastside,36.108898,-115.151261
+314,yp2nRId4v-bDtrYl5A3F-g,108,Nittaya's Secret Kitchen,4.0,"2110 N Rampart, Ste 110",Summerlin,36.1980614,-115.2825096
+315,p3YqOYELqXtLyHz9T49p_w,108,Hot N Juicy Crawfish,4.0,3863 Spring Mountain Rd,Chinatown,36.126217212,-115.191350097
+316,Qc0l8rZ3nvrcERitgxu8XA,108,Omelet House,4.5,2160 W Charleston Blvd,Downtown,36.1594391,-115.1712276
+317,DYuOxkW4DtlJsTHdxdXSlg,108,Bahama Breeze,4.0,375 Hughes Center Dr,Eastside,36.1151230695,-115.154719581
+318,S1N5-ZXwR4fUIPs6dLnBYQ,107,Hue Thai,3.5,"5115 Spring Mountain Rd, Ste 223",Chinatown,36.125587,-115.211199
+319,ewmTwsZqCHH2gvCeDKz0dw,107,Poke Express,5.0,"655 W Craig Rd, Ste 118",,36.2382459749,-115.150921382
+320,mY_g1z7iyMHxzpV2mV6IXQ,107,Hwaro,4.5,5030 Spring Mountain Rd,Chinatown,36.1262105,-115.2095854
+322,--9e1ONYQuAa-CB_Rrw7Tw,107,Delmonico Steakhouse,4.0,3355 Las Vegas Blvd S,The Strip,36.123183,-115.16919
+324,6Vyp-9i1jzwK_bvisuPJpQ,106,Lobster ME,3.5,"Miracle Mile at Planet Hollywood, 3663 Las Vegas Blvd",The Strip,36.1056748276,-115.172234076
+325,_8VkSb_Mryb6bHQxSWB7Pg,106,Swish Shabu Shabu,4.0,"5115 W Spring Mountain Rd, Ste 121",Chinatown,36.1261008,-115.211285
+327,N0apJkxIem2E8irTBRKnHw,106,Wolfgang Puck Bar & Grill,4.0,3799 S Las Vegas Blvd,The Strip,36.102543,-115.169884
+329,PbyqDJf815zRn-7p6vYpAQ,106,Umami Burger -  SLS Las Vegas,4.0,2535 S Las Vegas Blvd,The Strip,36.1427564,-115.1578748
+331,oEkOj9NXJFrjFn3NBB_jpA,106,Rhythm Kitchen,3.5,6435 S Decatur Blvd,Spring Valley,36.073079,-115.20848
+333,ygaOvp0PLBYaYeN9cZAlGg,105,Viet Noodle Bar,4.5,5288 Spring Mountain Rd,Chinatown,36.1265592,-115.213272
+334,DB9BRdu7is0AK1DvcuKlcw,105,Five Guys Burgers and Fries,4.0,"9484 W Flamingo Rd, Ste 180",Spring Valley,36.1158067,-115.2987479
+336,fcWkZgmzRsm3H4egzSrV_A,105,KJ Dim Sum & Seafood,3.5,"Rio All-Suite Hotel & Casino, 3700 W. Flamingo Road",,36.1174419807,-115.189182093
+337,VgrFPYtK6HGUEJVc4srpWw,105,Pho Annie,4.0,"8390 S Rainbow Blvd, Ste 110",Southwest,36.0360346,-115.2429957
+338,FMnH5WIRLyexBYMBUUnDxQ,104,Hearthstone Kitchen & Cellar,4.0,11011 W Charleston Blvd,South Summerlin,36.1551327,-115.334816
+340,JPWg9acsCv_om9UFYGMJbA,103,Fleming's Prime Steakhouse & Wine Bar,4.0,8721 W Charleston Blvd,Westside,36.1584963,-115.2857479
+342,hYX0z2C6Th5XmcrKOP31fQ,102,Double Helix Wine & Whiskey Lounge,4.0,"6599 Las Vegas Blvd S, Ste 150b",Southeast,36.0678425,-115.1746193
+343,M51gw2cz_vXarNBLbKkOxQ,102,The Cracked Egg,4.0,6435 S Rainbow Blvd,Spring Valley,36.0720455659,-115.243501424
+344,dWk0mbhj79pK3WBp5oLtpw,102,Rí Rá Irish Pub,4.0,3950 S Las Vegas Blvd,The Strip,36.093647,-115.175383
+346,wWuGa3OOQJro_XGe-GKBXA,102,Kabuto,4.5,"5040 Spring Mountain Rd, Ste 4",Chinatown,36.126922,-115.210022
+347,TfabYPasZ1oOMN6JLa-yvw,101,India Palace,4.0,505 E Twain Ave,Eastside,36.121237,-115.151852
+348,6xgcHeLad-VaoTIQewK84A,101,N9NE Steakhouse,4.0,4321 W Flamingo Rd,,36.11475,-115.1941
+349,16tWXenJ1wTqugXJU7yiZg,100,808 Sushi,3.5,7435 S Durango Dr,Southwest,36.0529956,-115.2799348
+350,J4CATH00YZrq8Bne2S4_cw,100,CUT,4.0,"The Palazzo At Venetian, 3325 S Las Vegas Blvd,  1520, The Palazzo",The Strip,36.123454,-115.168335
+352,dm6sO_Y8JdKTE1ZM955yug,100,Chada Thai & Wine,4.5,"3400 S Jones Blvd, Ste 11A",Chinatown,36.1273748593,-115.22417105
+353,-AD5PiuJHgdUcAK-Vxao2A,100,Smashburger,3.5,4725 S Maryland Pkwy,University,36.1036793,-115.1377851
+355,Hqs4YNST_ZHbshwyi4bnsQ,100,Old School Pizzeria,4.5,"2040 E Craig Rd, Ste 101",,36.2401921665,-115.120915092
+356,XkvvUNCmLIvOts0OftXegw,100,Original Pancake House,3.5,4170 S Ft Apache Rd,Spring Valley,36.1135009105,-115.296490917
+357,hRZadfm7OEOzk0qjuk8BXg,100,Cantina Laredo,3.5,"430 S Rampart Blvd, Ste 110",Westside,36.1667009,-115.2870029
+359,ItqPtxnayraXSlBS0EMOgg,99,MTO Café,4.5,500 S Main St,Downtown,36.1669491,-115.1496248
+361,NblDoJBEwhkJyvAuxzh4rg,99,Gyu-Kaku Japanese BBQ,4.0,3550 S Decatur Blvd,Chinatown,36.1252426883,-115.207619707
+362,fhoFsFK6TqJOEo30LtXeDA,99,The Halal Guys,3.5,"3755 Spring Mountain Rd, Ste 101",Chinatown,36.1259368667,-115.189743413
+363,R_ZlcX46pPdjhjmfd043LA,99,Top of the World,4.0,2000 Las Vegas Blvd S,The Strip,36.1476947,-115.1563056
+364,nYzCr8fcJ2ci4aiB1-hB6w,99,Rolling in Dough Cafe,4.0,7293 W Sahara Ave,Westside,36.1434074,-115.2514937
+366,Z1E36owKeeZKDL-9ZuanJw,98,TC's Rib Crib,3.5,3655 South Durango,Spring Valley,36.1234867972,-115.279909111
+367,Gh1BoQNMGkh91pSHqvDRAA,98,Thai Style Noodle House 2,4.0,"5135 S Fort Apache Rd, Ste 125",Spring Valley,36.0949947,-115.2982015
+369,1DP5vHxJzCDbgawv0WC3yA,98,Rose. Rabbit. Lie,4.0,"The Cosmopolitan Of Las Vegas, 3708 Las Vegas Blvd S",The Strip,36.110091,-115.173908
+371,lOQPeguczAueJnLmDUTfGg,98,Bonito Michoacan,4.0,3715 S Decatur Blvd,Chinatown,36.1221978,-115.2089027
+373,XgsIf7s2zM-cC29WUD-NZQ,98,Makino Sushi & Seafood Buffet,3.5,"3965 S Decatur Blvd, Ste 5",,36.1186319921,-115.20845876
+374,BOQOuwSNhfKx1xvKtONsBg,98,Settebello Pizzeria Napoletana,4.0,"9350 W Sahara Ave, Ste 170",Westside,36.1472606377,-115.299658589
+375,9PIC380tmNYpIC3z5cvcNA,98,Is Sweet,4.0,"5288 Spring Mountain Rd, Ste 101",Chinatown,36.1265291,-115.2132639
+376,wpnLPAnkMEb1NpC3xiD_qg,98,Aloha Specialties,4.0,12 E Ogden Ave,Downtown,36.1729495,-115.1447421
+378,6Z6IyosSMciZtwk8hRLRag,97,China Mama Restaurant,3.5,3420 S Jones Blvd,Chinatown,36.126861,-115.224647
+380,T0Uw6vwwfO3el29wBoDamQ,97,Pink's Hot Dogs,3.0,3667 Las Vegas Blvd S,The Strip,36.109413,-115.172353
+381,kYvZZ_aKaKLQKeyms74T2Q,97,Lindo Michoacan,3.5,10082 W Flamingo Rd,Spring Valley,36.1156121,-115.3123628
+382,VaKXUpmWTTWDKbpJ3aQdMw,97,Buffalo Wild Wings,3.5,"7345 S Durango Dr, Ste 118-121",Southwest,36.0551540144,-115.28142949
+383,zU9w_xRlQSRIYXxGo-HSOA,97,Carnegie,3.0,3400 Las Vegas Blvd S,The Strip,36.1215488944,-115.174516439
+384,hRQS8y-uG2kc8miWVYiLuQ,96,Golden Steer Steakhouse,4.0,308 W Sahara Ave,The Strip,36.1440928,-115.1611434
+386,z0rSmZQz9eEXjg_C3_E5-g,96,Stephano's Greek & Mediterranean Grill,4.0,4632 S Maryland Pkwy,University,36.1049744,-115.1359993
+387,ZgWjkMSzIV9fAuJJQXSUvA,96,Market Grille Cafe,4.0,"7175 W Lake Mead Blvd, Ste 130",,36.195285,-115.24816
+389,Vg1C_1eqwIwkZLIXGMTW3g,96,Crown & Anchor British Pub,3.5,1350 E Tropicana Ave,University,36.101467,-115.134574
+390,mUdalYTuAtnZm2K9zoH27Q,96,L'Atelier de Joël Robuchon,4.5,3799 Las Vegas Blvd S,The Strip,36.1025900701,-115.170541385
+391,D8a2usm9b-j89W9IrJ_Evw,96,Satay Thai Bistro & Bar,4.0,"3900 Paradise Rd, Ste N",Eastside,36.1188384,-115.1544802
+393,WrHu03srbhJAw6bnTIixdw,96,Kobe Sushi Bistro,3.5,"6375 S Rainbow Blvd, Ste 102-104",Spring Valley,36.0724699,-115.2435649
+395,7wHLFohwCw8l6WS-feLjeg,96,Other Mama,4.5,"3655 S Durango, Unit 6",Spring Valley,36.1229130301,-115.279936977
+396,ruPFtD9dU6Cv9_wpzIR4UQ,95,Coronado Cafe,3.0,"South Point Hotel & Casino, 9777 S Las Vegas Blvd",Southeast,36.011426,-115.174196
+397,HK2Ki-PvnNN-YMTlX1uSVA,95,808 Hawaii Mixed Plate,4.5,"775 W Craig Rd, Ste 148",,36.2379284,-115.1523061
+398,dJF4C707KVhFx1qcRJhlEA,95,Phat Phrank's,4.5,4850 W Sunset Rd,,36.072516,-115.206889
+400,3vxIqhm2jCVjkUWtmDvTsw,95,Raising Cane's,4.0,7550 S Las Vegas Blvd,Southeast,36.0524764,-115.1715066
+402,tMYYSWyTppDcF070Hmy-kQ,94,Blue Ribbon Fried Chicken,3.5,"Downtown Summerlin, 1770 Festival Plaza Dr",South Summerlin,36.1517914562,-115.332706822
+403,YU2XR_ZY-g2VzDpi7KMzEw,94,Icy Juicy,3.5,"3400 S Jones Blvd, Ste 20",Chinatown,36.1266014497,-115.224371644
+404,0zoXYHq82haayMaV952jEQ,94,Greens and Proteins,4.0,9809 W Flamingo Rd,Spring Valley,36.1148228,-115.3062846
+405,LwQB9H3jZ9wTk24Lr-AnZQ,94,Spago,4.0,"The Forum Shops At Caesars, 3500 Las Vegas Blvd S, Ste G1",The Strip,36.1190940945,-115.177009553
+406,0EgYXYjt2XJL4hlsKnzrcw,94,PublicUs,4.5,1126 Fremont St,Downtown,36.1657583,-115.1329346
+407,Qy_tDaVTWlS14fEglzo1Tg,94,Rachel's Kitchen,3.5,3330 S Hualapai Way,Spring Valley,36.1288897304,-115.314624059
+408,N6MzDoao6s68nAIW8vS9dQ,94,Biaggio's Pizzeria,4.5,"4235 S Fort Apache Rd, Ste 160",Spring Valley,36.1121815,-115.2980281
+409,5T0h9YCsXiDZyBsVIN9gcg,93,Viet Bistro,3.5,7175 W Lake Mead Blvd,,36.1953124953,-115.248178026
+410,iPM8BXV6vEVEci8ttsOObQ,93,Jenni Pho,3.0,7855 S Rainbow Blvd,Southwest,36.0455949,-115.2435889
+412,E62l6LwZJ7lKaExcUbrtYw,93,Hikari,3.5,4175 S Buffalo Dr,Spring Valley,36.1129308,-115.2613745
+414,T3ASfec34b8-uYr3xZj8Lw,92,P.F. Chang's,3.5,1095 S Rampart Blvd,Westside,36.1593507001,-115.291914698
+415,p8HvhJZ-_EHhmUVmZN15gg,92,Cafe Zupas,4.0,9460 S Eastern Ave,Southeast,36.0176074413,-115.118390004
+416,YZGSNhgTS6YeyUYoivD-Ww,92,Triple 7 Restaurant & Microbrewery,3.5,"Main Street Station Hotel, 200 N Main St",,36.1744156664,-115.144905648
+417,JpgVl3d20CMRNjf1DVnzGA,92,Pampas Brazilian Grille,3.0,"3663 S Las Vegas Blvd, Ste 610",The Strip,36.10877,-115.170117
+419,7Xw_vv-ekUL2sTqipnKT0g,92,Buffalo Wild Wings,2.5,"7430 Las Vegas Blvd South, Suite 120",Southeast,36.05446,-115.171677
+420,Q5olb1x6FGk2oLAlc9p5Lg,91,Bonefish Grill,4.0,6527 Las Vegas Blvd,Southeast,36.0699725316,-115.174840031
+421,UpW3jyJ3_kTG7oDSflwnMA,91,Archi's Thai Kitchen,4.0,6360 W Flamingo Rd,,36.1148157,-115.2309704
+422,BnpuVvPy3sfLlkqKCx6Xnw,91,Grand Café,2.5,"Red Rock Casino Resort & Spa, 11016 W Charleston Blvd",South Summerlin,36.1560543343,-115.332797718
+423,VG0nWxGsPixYLsyi49gyxQ,91,Hugo's Cellar,4.5,"Four Queens Hotel and Casino, 202 Fremont St",Downtown,36.1695017335,-115.142535036
+424,S_5VQYMMa4aD3NzgYLkvhg,91,Mochiko Chicken,4.5,2101 S Decatur Blvd,Westside,36.1486584,-115.2098129
+426,X8c23dur0ll2D9XTu-I8Qg,91,Hakkasan Nightclub,2.5,"Mgm Grand Hotel And Casino, 3799 Las Vegas Blvd S",The Strip,36.1037993418,-115.168108888
+427,YavRvjbLsvh4DYDJPAfJIA,91,Pho Saigon 8,3.5,9055 S Eastern Ave,Southeast,36.0253639,-115.1189835
+428,7xXaO9deBDh_dd0JQjA-Qg,90,Claim Jumper,3.0,6629 Las Vegas Blvd S,Southeast,36.067666,-115.176931
+430,nVAJZ6BJ9PPlxDXn976R6A,90,In-N-Out Burger,4.0,4888 Dean Martin Dr,,36.1013195,-115.1821862
+432,jCR-xC4NqoEajjmstqX8sA,90,Twin Creeks,4.0,"Silverton Casino Lodge, 3333 Blue Diamond Rd",Southwest,36.0419145304,-115.183436512
+433,E67gGK8yOn9kkNzx8FzQKA,90,Buffalo Wild Wings,3.0,"4280 Hualapi, #108",Spring Valley,36.1120909,-115.3142768
+435,svdEhLmNmpVaIv1WLtoOvQ,90,Tacos & Beer,4.5,"3900 Paradise Rd, Ste A",Eastside,36.11926,-115.154634
+436,qRymrsLmlA34bC8PvNoujg,89,Market Grille Cafe,4.0,7070 North Durango Dr,Centennial,36.2892014,-115.2873343
+438,ozEDKl0tZw5ob1evx41gcQ,89,Big Dog's Brewing,3.5,4543 N Rancho Dr,Northwest,36.2424193447,-115.235810795
+439,WETHRoXB2IbixndSlOktJA,89,Lulu's Bread & Breakfast,4.0,6720 Skypointe Dr,Centennial,36.2835006714,-115.269882202
+440,ZOmf-3NN4Z59b2Fw6VAM7g,89,Bite Breakfast & Lunch,4.5,4165 S Grand Canyon Dr,Spring Valley,36.11391655,-115.308625493
+441,Zmfq3DVhHdtVChhSxzoUHw,89,Panna Thai Restaurant,4.0,"6015 S Fort Apache Rd, Ste 100",Spring Valley,36.0789362,-115.2985524
+443,AyEtowSGi9vx0-xFfrgjWw,89,Payard Pâtisserie & Bistro,4.0,"Caesars Palace Las Vegas Hotel And Casino, 3570 Las Vegas Boulevard South",The Strip,36.1172428598,-115.175013639
+444,3cHL1r5w2oLYH-veijtweA,89,Public House,3.5,3355 Las Vegas Blvd S,The Strip,36.122828,-115.169206
+446,r8Jr-7YfkhJL2nxk9lxUNg,89,Frank & Fina's Cocina,4.0,4175 S Grand Canyon Dr,Spring Valley,36.1135548,-115.3073046
+448,gwYt_q3Ob7aQJIefIBsZiQ,89,Raising Cane's,4.0,7135 S Rainbow Blvd,Southwest,36.058716,-115.2433571
+449,AL5YzikrmxwcBzBNLGO7Jw,88,Fuddruckers,3.5,"4195 South Grand Canyon Dr, Ste 101",Spring Valley,36.1133092462,-115.309266763
+450,UTXNr62dGSK-tet8OeXUcQ,88,Yard House LINQ,4.0,3545 Las Vegas Blvd,The Strip,36.1175416594,-115.168661512
+451,zXBrfL_ohYMuBZWvF8EcSA,88,Cafe Zupas,3.5,7521 W Lake Mead Blvd,,36.1956831424,-115.25772598
+452,KXITXbKuE60WSUDs7NZVLQ,88,Table 10,3.5,3327 Las Vegas Blvd S,The Strip,36.12478,-115.167966
+453,qG_WEgPa8MBo1dPUOkTMlw,88,In-N-Out Burger,4.5,9610 W Tropicana Ave,Spring Valley,36.1006463107,-115.302041517
+454,ahSFUPojs9X3-1jP-QPb-w,87,Bazaar Meat by José Andrés,4.0,2535 S Las Vegas Blvd,The Strip,36.1427564,-115.1578748
+456,SycXTaA4MeJZuDK4Y1owDQ,87,Islands Restaurant,3.5,10810 W Charleston Blvd,Summerlin,36.1600355773,-115.331454438
+457,mjhwLcuoenVW8oFhcNmlHA,87,Claim Jumper,3.0,1100 S Fort Apache Rd,Westside,36.1586208868,-115.290936644
+458,TCWMgOiV0PxQkWE1SyBIWQ,87,Nobu,4.0,"Hard Rock Hotel & Casino, 4455 Paradise Rd",Eastside,36.1091636136,-115.153493285
+459,YNDxeeRUARbd8GRnscJSvg,87,Panevino Italian Grille,4.0,246 Via Antonio Ave,Southeast,36.0708262285,-115.162891043
+460,Tk7qCou7aYv_Z-K3a7NhhA,86,Shish Kabob House,4.0,"6620 W Flamingo Rd, Ste 7",,36.1150697,-115.2366549
+461,ID5wWJ9C7G0hfbQilvlfxA,86,La Comida,3.5,100 6th St,Downtown,36.1687401,-115.1395496
+463,OtSbxxD-WNzlNQlDGpXFSA,86,IKEA,3.5,6500 Ikea Way,Spring Valley,36.0689265,-115.280825
+464,dGuVYsA5DMCm_TjSbX6x7g,86,Windy City Beefs N Pizza,4.0,9711 S Eastern Ave,Southeast,36.0124990687,-115.119525599
+465,Rd11Bosr8JkfoUhZLzpuxg,86,The Capital Grille,4.5,3200 Las Vegas Blvd S,The Strip,36.1276483735,-115.168328033
+466,eJKnymd0BywNPrJw1IuXVw,86,Nacho Daddy,4.0,113 N 4th St,Downtown,36.1703953,-115.1417869
+468,vdOf_NWsct8jr4qYKoE_iw,85,Yu-Yu,4.5,"4115 Spring Mountain Rd, Ste E101",Chinatown,36.1264024,-115.1947749
+470,Xj7DIGRHEchJ-VVdISazQQ,85,Javier's,4.0,3730 Las Vegas Blvd S,The Strip,36.1076179578,-115.177367531
+471,19S0gFtg5GTX6CkiApJiAQ,85,Frijoles & Frescas Grilled Tacos,4.5,7000 W Charleston Blvd,Westside,36.1594235,-115.2515385
+473,poYsvuOmVDqF4dTnjJ780A,85,Tiabi Coffee & Waffle,4.0,3961 Maryland Pkwy,Eastside,36.1166498731,-115.138752864
+474,ypfFfR3-PbtoslIhohNstw,85,Lee's Korean BBQ,3.5,"6820 Spring Mountain Rd, Ste 110",Chinatown,36.1267945039,-115.241037682
+475,jgtWfJCJZty_Nctqpdtp3g,84,The Fat Greek,4.0,"4001 S Decatur Blvd, Ste 34",,36.1173478,-115.2093939
+476,F0lI9okn4pzmN_iq5UqF7w,84,Pieology Pizzeria,4.0,"10965 Lavender Hills Dr, Ste 130",South Summerlin,36.1449601851,-115.332681937
+477,GMrwDXRlAZU2zj5nH6l4vQ,84,Pho Thanh Huong,4.0,"1131 E Tropicana Ave, Ste D",Southeast,36.1001831,-115.138668
+478,StNAnvyhVISULAFmO_Ke1Q,84,Great Links Brewhouse & Grill,4.0,"6010 W Craig Rd, Ste 110",Northwest,36.2396728,-115.2259534
+480,xVEtGucSRLk5pxxN0t4i6g,84,Eiffel Tower Restaurant,4.0,3655 Las Vegas Blvd S,The Strip,36.112477,-115.172189
+482,sYfHxCqHpIX2HnDhw0JRAA,84,Ohjah Japanese Steakhouse Sushi & Hibachi,4.0,"8595 S Decatur Blvd, Ste 104",Southwest,36.0334054807,-115.208426028
+483,iw9p7E4bMe1YW-APcFGjgQ,84,PKWY Tavern,3.0,9820 W Flamingo Rd,Spring Valley,36.1158076406,-115.306274197
+484,1ZJz840L496LAmQdeDv0WA,84,Pinches Tacos,4.0,"Shipping Container Park, 707 Fremont St",Downtown,36.1675261791,-115.138435028
+485,Gen0ei06dGq13OJ8DRXUjg,84,Metro Pizza,4.0,1395 E Tropicana Ave,Southeast,36.1003692,-115.134347
+487,wKA2y-F_fPcBDOkpzDB9eQ,84,Viva Zapatas Mexican Restaurant & Cantina,4.0,3826 E Craig Rd,,36.2407047,-115.0961525
+489,SEjyjYlMfFFzkHaru6JadA,84,Ricardo's Mexican Restaurant,3.5,4930 W Flamingo Rd,,36.1159213,-115.208547
+490,So132GP_uy3XbGs0KNyzyw,84,Casa Di Amore,4.5,2850 E Tropicana Ave,Southeast,36.1003826,-115.1116708
+491,v_yCY6NCwxCPIsNZR80UfQ,83,Donut Bar,4.5,"124 S 6th St, Ste 140",Downtown,36.1679398,-115.1404681
+493,cOJ1uIVIHCiefUyWG2wDfw,83,The Blind Pig,4.0,Panaroma Towers,,36.1073888656,-115.181590095
+494,V-0qRzBHKixmQgon_fW_AA,83,Makai Pacific Island Grill,4.5,"5165 S Fort Apache Rd, Ste 150",Spring Valley,36.0957104,-115.2982167
+496,IVnGPHdTyu_GbLo9mXj98w,83,Ramen Tatsu,4.5,"3400 S Jones Blvd, Ste 6",Chinatown,36.1276603052,-115.224217679
+497,IOEGLxXwCNiq4P-U359D7Q,82,Those Guys Pies,4.0,2916 Lake E Dr,The Lakes,36.1385152,-115.2843553
+498,wYrkCpUlxhb89nnNGUX4AA,82,Kushiyaki Inyo,4.5,"6000 W Spring Mountain Rd, Ste 1B",Chinatown,36.126117184,-115.223357154
+499,VKmGedwOk-16D7OawNg_ng,82,Buffet Asia,3.0,2380 S Rainbow Blvd,Westside,36.1447569,-115.242249
+500,uGcC3CKAolcwfOTMjjoexQ,82,Smashburger,3.5,7541 W Lake Mead Blvd,,36.1956879636,-115.258802564
+501,2dCnTMv3Hh-fM8bOjYS4Xw,82,Nevada Chicken Cafe,3.5,"6155 W Sahara Ave, Ste 1&3",Westside,36.1437858,-115.2266305
+503,CoyeXg8FBsS_d20QzNIy-A,82,Makers & Finders Coffee,4.5,"1120 S Main St, Ste 110",Downtown,36.157897,-115.153959
+505,FYqFfaxVRW6pdviONXIoDw,82,Fleming's Prime Steakhouse & Wine Bar,4.0,6515 S Las Vegas Blvd,Southeast,36.0695675256,-115.173747385
+506,UidEFF1WpnU4duev4fjPlQ,81,Therapy,4.5,518 E Fremont St,Downtown,36.1689017707,-115.139872374
+507,fW7SHgmidc32kHSoyLTM2A,81,Our Families Country Cafe,3.5,10591 S Rainbow Blvd,Southwest,35.9984328257,-115.244157314
+508,z5J9U_HU4iVLwaCH6rdC2w,81,Lo-Lo's Chicken and Waffles,3.0,2040 N Rainbow Blvd,,36.196409,-115.2402479
+509,FfG8twx5K18y268Gp4dSKA,81,Hooters,2.5,7155 S Rainbow Blvd,Southwest,36.0582206,-115.2436309
+511,aNe8ofTYrealxqv7VtFTuw,81,Sierra Gold,3.5,6515 S Jones Blvd,Spring Valley,36.0703249,-115.2249525
+513,y0x795PyDX8JL_oyIaTUiQ,81,Blueberry Hill Family Restaurant,3.5,1280 S Decatur Blvd,Westside,36.1564277,-115.2076923
+515,O3OH5IEFMPtz7mPKakPZ3Q,81,Japaneiro,4.5,"7315 W Warm Springs Rd, Ste 170",Southwest,36.0552046,-115.2509345
+516,oXoVJ0xKv82cBo9U6oEjlQ,81,Chayo Mexican Kitchen + Tequila Bar,3.5,3545 S Las Vegas Blvd,The Strip,36.1175744315,-115.171528026
+517,gHoP4eJimaMltfUlp6EP4Q,81,Sammy's Woodfired Pizza and Grill,4.0,6500 W Sahara Ave,Westside,36.144512,-115.2366621
+518,MXC9pwIxovWUc9yu1F8OxA,81,Sushi Twister,4.0,5566 Boulder Hwy,,36.1007412933,-115.052618219
+519,WO1sgbYB6u6VVcvChanp5g,80,Dae Jang Keum Korean BBQ & Tofu Restaurant,3.0,3943 Spring Mountain Rd,Chinatown,36.1258698833,-115.192326648
+520,saQQmDQQJ14BVkm_sg53UA,80,Zaytoon Mediterranean Market and Kabob,4.5,"3655 S Durango Dr, Ste 11-14",Spring Valley,36.1231920415,-115.279892041
+521,hDL3Q-GNQlOuE04_zWEMJA,80,Krazy Buffet,3.5,8095 W Sahara Ave,Westside,36.1432784,-115.2674831
+522,78hGCrQ6wLA2yh8zMywnmw,80,Wahoo's Fish Tacos,3.5,1000 S Rampart,Westside,36.1603422,-115.2913214
+523,S599hCA4kJJO3_b6SRFKoA,80,Michoacan Gourmet Mexican Restaurant,3.5,7870 W Tropical Pkwy,Centennial,36.2713574092,-115.266850034
+524,Bm8nRUsZ-dK6g2eJLxMTOw,80,Naka Sushi,4.0,"8540 W Lake Mead Blvd, Ste 120",Summerlin,36.199816342,-115.27929157
+525,ZFyJ83LJkkO1dP82kzXKNg,80,Raising Cane's,4.0,1120 E Flamingo Rd,Eastside,36.1149831,-115.1397985
+527,Rj-7ymdw8aNZBRqGRAjR3Q,80,El Segundo Sol,4.0,3200 Las Vegas Blvd S,The Strip,36.1272241,-115.1715512
+529,OFw59czUoeeosFMKfRawmg,80,Gordon Biersch Brewery Restaurant,3.5,3987 Paradise Rd,Eastside,36.1170027,-115.1552488
+530,-K82LBrI3H0FVuhTbNDpRA,79,Shoku Ramen,3.5,"470 E Windmill Ln, Ste 110",Southeast,36.0425315584,-115.152754052
+531,jBs2HmEOkqCvdHNnw3N-og,79,Red Robin Gourmet Burgers,3.5,7860 W. Tropical Parkway,Centennial,36.271428,-115.266543
+532,gBfPyzPRmeOaj3SdcIj0Rw,79,Sushi Roku,4.0,"Forum Shops Caesar's Palace, 3500 Las Vegas Blvd S, Ste T18",The Strip,36.118966,-115.17305
+533,h_g5HV6Fw2rinZ3xqFwygw,79,Seasons Buffet,3.5,3333 Blue Diamond Rd,Southwest,36.0412834,-115.1833103
+535,u3nwislXMKKwkpHAXAArbQ,79,KJ Kitchen,3.5,5960 Spring Mountain Rd,Chinatown,36.1258098,-115.2230979
+536,BjH8Xepc10i6OhCDQdX6og,79,Emeril's New Orleans Fish House,3.5,3799 Las Vegas Blvd S,The Strip,36.105982,-115.169191
+537,w12x7UBSSRsdbp3ZqguG3Q,79,Palm Restaurant,4.0,"Caesar's Palace, 3500 Las Vegas Blvd S",The Strip,36.118329,-115.176032
+539,FhIeCF6QrsLaRvAeu0oEPQ,79,Bob Taylor's Ranch House,3.5,6250 Rio Vista St,Centennial,36.2747255482,-115.245787036
+540,WmLTIN4qzZ8SjpPxsPH27Q,78,Windy City Beefs N Dogs,4.5,"7500 W Lake Mead Blvd, Ste 10",,36.1974376,-115.257775
+541,PyrcymoNDAJDm_Zn9yl-7A,78,Café Berlin,4.5,4850 W Sunset Rd,,36.0724469893,-115.20714283
+542,pHA8wyVcrkhI4wQ3mt6NHw,78,Which Wich,3.5,"2192 N Rainbow Blvd, Ste 100",,36.1991721483,-115.241808796
+543,SqxIx0KbTmCvUlOfkjamew,78,Thai Style Noodle House,4.0,2267 N Rampart Blvd,Summerlin,36.201845,-115.282141
+544,DqcD3YflYhArFsC4KVUnOw,78,Nothing Bundt Cakes,4.5,"9711 S. Eastern Avenue, #H10",Southeast,36.0126441,-115.1196051
+546,8SwMaPL6AJIs1ZPSZ3NJ4w,78,Forte European Tapas Bar and Bistro,4.0,"4180 Rainbow Blvd, Ste 806",Spring Valley,36.112856,-115.242389
+548,9IpKGHaPy3hhXo9g5Bt7lg,78,Metro Pizza,4.0,"4001 S Decatur Blvd, Ste 39",,36.1184484856,-115.209104221
+549,SZEFE5hL7aN5nM-A44iPwQ,78,Prime,4.0,3600 S Las Vegas Blvd,The Strip,36.113596,-115.174923
+551,K7fip0nDFFdCC7OCnNOotQ,77,Hyde Bellagio,3.5,3600 S Las Vegas Blvd,The Strip,36.1140656,-115.1730043
+552,L_ZLtfHvfzfoNVQ0-okTXg,77,SW Steakhouse,4.0,3131 Las Vegas Blvd S,The Strip,36.1261670801,-115.166813653
+553,56Ll9rqG2WxXj4X2pmlkHQ,77,Sweet Tomatoes,3.5,2080 N Rainbow Blvd,,36.1972325,-115.2404774
+554,nUpz0YiBsOK7ff9k3vUJ3A,77,Buddy V's Ristorante,4.0,"The Venetian, 3327 S Las Vegas Blvd",The Strip,36.123406,-115.170188
+555,SAfuIUZMXrOnb3LWyvYjDA,77,Jun's Korean Restaurant,3.5,"8826 S Eastern Ave, Ste 113",,36.029295364,-115.115884515
+556,DLJCwHGtbAV31UQ1lnIjlw,77,Siena Italian Authentic Trattoria and Deli,3.5,9500 W Sahara Ave,Westside,36.1449499,-115.301818
+557,ostVuyoxxQiP3Qik_L7nPA,77,BJ's Restaurant & Brewhouse,3.0,5881 Centennial Center Blvd,Centennial,36.269812,-115.261465
+559,yNVcnSaMSrTmjJBMrHTy9w,77,Battista's Hole In the Wall,3.5,4041 Linq Ln,The Strip,36.115471,-115.1679198
+561,-Ylpy3VyRWwubf9dysuwjQ,77,The Cheesecake Factory,4.0,3500 South Las Vegas Blvd.,The Strip,36.118864339,-115.178106512
+562,698nukvxe7mq2Fra5vDikQ,77,Rise & Shine a Steak & Egg Place,4.0,9827 W Flamingo Rd,Spring Valley,36.1142829,-115.3064409
+563,UT6L3b7Zll_nvRidijiDSA,77,Five50 Pizza Bar,4.0,3730 Las Vegas Blvd S,The Strip,36.107291,-115.173703
+564,G6BwYw_0_atLPTzI1uokIA,77,Nacho Daddy,4.0,9560 W Sahara Ave,Westside,36.1449407,-115.3028257
+565,NQhPS0MUKJgBUB6PTLlmzA,76,Pho Bosa,4.0,3711 S Valley View,Chinatown,36.1224049688,-115.190958381
+566,fQt4D34vcJNtEf8Q4zte3w,76,TAO Asian Bistro,3.5,"The Venetian, 3355 S Las Vegas Blvd",The Strip,36.1227352674,-115.170028624
+567,EUWBT5GDxPC95w9itZ1EHw,76,Garden Court Buffet,3.5,200 N Main St,,36.1740973156,-115.145109872
+568,wdOOK3K6vzQy1d_OIk-U9w,76,Yama Sushi,3.5,3909 Spring Mt Rd,Chinatown,36.1264728,-115.1919017
+570,CZhc8YXdFLhAI4ViC2ERTg,76,Viva Mercado's Mexican Bar & Grill,4.0,"9440 W Sahara Ave, Ste 165",Westside,36.1455404,-115.3007591
+572,HfuIfYB_CxMAAJiEnxDl9w,76,Sushi Loca,3.5,6181 Centennial Center Blvd,Centennial,36.2725325,-115.2667252
+574,4GXII-GU7S0ZyU6ElkhscQ,76,Hooters Casino Hotel,2.5,115 E Tropicana Ave,Southeast,36.100562,-115.167672
+575,OVTZNSkSfbl3gVB9XQIJfw,76,Cravings Buffet,3.0,3400 Las Vegas Blvd S,The Strip,36.121237,-115.174105
+577,PgJgpW4TKQ8IoALH2Yq-zA,76,Bayside Buffet at Mandalay Bay,3.0,3950 S Las Vegas Blvd,The Strip,36.0912192601,-115.1758039
+578,rTS8LsUmNIiXsXydE49tPA,75,Margaritaville - Las Vegas,3.5,3555 Las Vegas Blvd S,The Strip,36.1163474,-115.1723373
+579,gtB-1QxTscdPj78UE5sWuQ,75,Shucks Tavern & Oyster Bar,3.5,9338 W Flamingo Rd,Spring Valley,36.1152215167,-115.294361775
+580,lKH_cqeaeVpHdsO2dK58OA,75,Smashburger,3.5,5655 Centennial Center Blvd,Centennial,36.2644291578,-115.257308033
+581,sf3kp0H13jZYEmS1A8Etcw,75,View Wine Bar & Kitchen,4.0,"420 S Rampart Blvd, Ste 150",Westside,36.1671853,-115.2855266
+582,ruWTngdiC68O9la27hvvHw,75,Foundation Room,4.0,3950 S Las Vegas Blvd,The Strip,36.0918639,-115.1751614
+584,YQ--LJ7pvjiDSqNv0TuKTQ,75,Grimaldi's Pizzeria,4.0,"The Palazzo, 3327 Las Vegas Blvd S, Ste 2710",The Strip,36.1248767264,-115.169034004
+585,kJAmLFgiIjtjULunpr3NNg,75,Blue Ribbon Sushi Bar and Grill,3.5,3708 Las Vegas Blvd S,The Strip,36.109669,-115.174321
+587,tXqaK0lBEE1XJbzDPsdFvg,75,Farmer Boys,3.5,5847 S. Decatur Blvd.,Spring Valley,36.083996,-115.2085119
+589,TVbVii4EUQt9DG7y698zIw,74,ARIA Café,2.5,3730 Las Vegas Blvd S,The Strip,36.1073273138,-115.176129438
+590,duw-3Aj7gAKbQG-isS5UtQ,74,Veranda,4.0,"Four Seasons Hotel, 3950 S Las Vegas Blvd",The Strip,36.0904354064,-115.17422274
+591,7UFDAX4wLi6ux5otguYldA,74,Andiron Steak & Sea,4.0,1720 Festival Plaza Dr,Summerlin,36.1584768423,-115.331681809
+592,cyzOijFJ82cae6qH6L8vuw,74,Arawan Thai Bistro and Dessert,4.5,"953 E Sahara Ave, Ste E-14",Eastside,36.1422857525,-115.142520846
+593,XjepvTIfp4iqGq1orODedg,74,Four Kegs Sports Bar,4.0,"276 N Jones Blvd, Ste B",,36.1759036894,-115.223261777
+594,_3FxLxdg1unUQc3QqIgJuA,74,T-Bones Chophouse,3.5,"Red Rock Casino Resort Spa, 11011 W Charleston Blvd",Summerlin,36.1582165859,-115.33241272
+595,q3YnYPjLuBGRDi_59yTC5g,74,Sidestreet Pho and Grill,4.5,"8560 W Desert Inn Rd, Ste D1",Westside,36.1300289,-115.2777727
+596,KUOa1acSFn6DkO9jp-sn6A,74,Famous Dave's Bar-B-Que,3.5,4390 Blue Diamond Rd,Southwest,36.0372728,-115.1984441
+598,e7N0AW-sKkJmRIpEovxBAg,74,Aces & Ales,4.0,"2801 N Tenaya Way, Ste A",,36.2111233966,-115.249689339
+599,Y07qIurPKiUJDnTZWxZN2A,73,Bistro Buffet,3.0,4321 W Flamingo Rd,,36.115137,-115.195433
+601,9c3LlXubVkbMwIrS8dIp0Q,73,Ribs & Burgers,3.5,"2010 Festival Plaza Dr, Ste 170",South Summerlin,36.149123,-115.332938
+603,1Df5WnLX3DqN6ymlhqznaQ,73,Roy's Restaurant,4.5,620 E Flamingo Rd,Eastside,36.11511815,-115.1497355
+605,TT658qQinO6MBHP9q7rJ8w,73,Lola's A Louisiana Kitchen,4.0,1220 N Town Center Dr,Summerlin,36.183143,-115.308819
+606,s0vNtuLs1cwEqHTXKiS05w,73,Babystacks Cafe,4.0,"7090 N Durango Dr, Ste 140",Centennial,36.2896832,-115.2868474
+608,XnJeadLrlj9AZB8qSdIR2Q,73,Joël  Robuchon,4.5,3799 Las Vegas Blvd S,Eastside,36.103399,-115.167725
+610,O_C-2kZMHGnq3ZDL_OaG6Q,73,Morels French Steakhouse & Bistro,3.5,"The Palazzo, 3325 Las Vegas Blvd S",The Strip,36.1246035827,-115.168988486
+611,PJPO9AYkt__t4kSWdSWnfw,73,MTO Café,3.5,"10970 Rosemary Park Dr, Ste 100",South Summerlin,36.1508714858,-115.33308159
+612,aKcqKNcbwNydCBnvAA4TeQ,73,"Downtown Grand Hotel & Casino, an Ascend Hotel Collection Member",3.5,206 North 3rd St,Downtown,36.1724073419,-115.141844067
+613,dzKDFiWLkspVBJKGfT0M2g,72,Oyshi Sushi,4.0,7293 W Sahara Ave,Westside,36.143582706,-115.251559111
+614,R7LyTeiOHLyTNkA8HssBRQ,72,Los Tacos,4.0,4001 W Sahara Ave,Westside,36.1441999,-115.1944048
+616,dOGLTIMqqQZn8xxBRsU6CQ,72,Kung Fu Thai & Chinese Restaurant,3.5,3505 S Valley View Blvd,Chinatown,36.1261484,-115.1904588
+617,vYOtdnBm-45KQiiHj8jqaw,72,Mandarin Oriental Tea Lounge,4.0,3752 Las Vegas Blvd S,The Strip,36.1062048737,-115.174350297
+618,zsQk990PubOHjr1YcLkQFw,72,Dakao Sandwiches,4.0,"5700 W Spring Mountain Rd, #I",Chinatown,36.1257411,-115.2191508
+619,0xvdC8F0HmFpAFkJk6nXLg,72,Yojié Japanese Fondue,4.5,"9440 W Sahara Ave, Ste 175",Westside,36.1455632,-115.3006082
+621,NIOwzgujIXKVBEVNTQBXpg,72,Jjanga Steak & Sushi,4.0,"6125 S Fort Apache Rd, Ste 200",Spring Valley,36.0765586,-115.2986392
+622,_Kd0kQ8RF70hJ1ykLqCRyQ,72,Cafe Rio,3.5,9595 S Eastern Ave,Southeast,36.0154353334,-115.119496901
+623,-LzUYsR54hd8cCiYXTquRA,72,French Market Buffet,3.0,4500 W Tropicana Ave,,36.1027231891,-115.202593803
+624,Er8DpPwf_lHHv64ncWhD8g,72,The Henry,3.5,"The Cosmopolitan Of Las Vegas, 3708 Las Vegas Blvd S",The Strip,36.1098769,-115.1731471
+626,bzI2YREsxDomhVvvaZmcSw,72,Sammy's Woodfired Pizza and Grill,4.0,"7345 Arroyo Crossing Pkwy, Ste 100",Spring Valley,36.063237,-115.252315
+627,l3joBBpkq0ib11dKUpKMAw,71,Karaoke Q Studio,4.5,"3400 S Jones Blvd, Ste 11",Chinatown,36.1273078,-115.2243612
+629,3Jq5LfJ5fmJ5KmuA6VHmzw,71,Topgolf,3.5,4627 Koval Ln,Eastside,36.1059960332,-115.164722298
+630,9XelmxS5q9tv7uClvjGqMg,71,Seafood City Supermarket,3.5,3890 S Maryland Pkwy,Eastside,36.1182191,-115.1357269
+632,dxeu5YQIzw0jOp1cSVkimg,71,Izakaya Go,4.5,"3775 Spring Mountain Rd, Ste 301",Chinatown,36.1257028382,-115.189529033
+633,iIwKW2cBAxjElE8eUzjwqA,71,Bobby's Burger Palace,4.0,3750 South Las Vegas Blvd,The Strip,36.1058300263,-115.173315049
+634,5Lcit9Zt6TF9bmKoFMhF0g,71,Noodle Pot,3.5,"4215 Spring Mountain Rd, Ste B112",Chinatown,36.1253970859,-115.196422914
+635,4mb32UmQULqg7IMck28vog,71,Pinches Tacos,4.0,"9205 W Russell Rd, Ste 190",Spring Valley,36.0845762,-115.2932145
+636,MwCai0x6GILtK4KkwufZig,71,The Martini,4.0,1205 S Fort Apache Rd,Westside,36.1571926,-115.2930234
+637,N7yuiiu8jhQ-Fl9Npflreg,70,Lemongrass,3.5,3730 Las Vegas Blvd S,The Strip,36.1077099028,-115.175769949
+638,0InA3Ffj8MxyQV9hgsyYcQ,70,Novecento Pizzeria,4.0,"5705 Centennial Center Blvd, Ste 170",Centennial,36.2651489,-115.2595274
+639,N8D-5-fW7EkBdKjNYGhu0A,70,La Cave Wine and Food Hideaway,4.0,3131 Las Vegas Blvd. South,The Strip,36.129868,-115.164896
+640,czyhvf93Txsfxdxqcm16mA,70,Rice n Noodle,4.0,"7910 S Rainbow Blvd, Ste 105",Southwest,36.0441239,-115.2429386
+642,K2_zfa7cKbg5klHJYqoWnw,70,Hot N Juicy Crawfish,4.0,9560 S Eastern Ave,Southeast,36.0144563702,-115.117986997
+643,_j2EtQtgLuXGRBfbM5YwZA,70,Noodle Asia,3.5,"The Venetian, 3355 Las Vegas Blvd S",The Strip,36.12008,-115.17106
+645,JcFyuyo0Rt6gDiVZ9yJ3VQ,70,Krayvings,4.0,"11770 W Charleston Blvd, Ste 150",Summerlin,36.1593238,-115.351451
+647,_kdpjoGrIzA64E6aXHA66w,70,Barcelona Tapas,4.0,10690 Southern Highlands Pkwy,Southwest,35.995577,-115.205172
+649,km5aBHRss5ir_B0jvEErzQ,70,McFadden's Restaurant and Saloon,2.0,"6593 Las Vegas Blvd S, Ste 222",Southeast,36.0684803,-115.1776797
+650,68jn0s0snbO5dhasLaVvDw,69,Flock & Fowl,4.5,380 W Sahara Ave,The Strip,36.144296015,-115.162691921
+651,ibFdignja_hNpgCjDYP7Ug,69,Wahoo's Fish Tacos,3.5,7020 W Sunset Rd,Spring Valley,36.0708627333,-115.244947596
+652,PtwW1Hwme8Y0wy54zNr8Xw,69,Egg Works,4.5,2025 Village Center Dr,Summerlin,36.1910596779,-115.304284944
+653,bSY97kgQpJ5BrpgW40V1qg,69,THE Steak House,4.0,2880 S Las Vegas Blvd,The Strip,36.137041,-115.164611
+655,MqIgMLUdD53r_dmx1goYJg,69,Shucks Tavern & Oyster Bar,3.5,7155 N Durango Dr,Centennial,36.291036,-115.288192
+656,74pWjFssgqyhaVg-YCUo3A,69,The Cracked Egg,4.0,7660 W Cheyenne Ave,Northwest,36.2191781,-115.2624712
+658,PM0A7ZgbxvtbRCj931PbyQ,68,Shabu Grill,3.5,"1263 E Silverado Ranch, Ste 106",Southeast,36.013144,-115.136143
+659,YnmtUJGqQIQL9tz1MRyfqA,68,Michael Mina Pub 1842,4.0,3799 Las Vegas Blvd S,Eastside,36.1030179172,-115.167688876
+660,6bgjcFOy4WHMyw62_1V9Pw,68,Panera Bread,3.5,5130 South Fort Apache Rd,Spring Valley,36.0957996497,-115.296600759
+661,y7Js-07RF8d3N_AEtaw2VQ,68,Heart Attack Grill,3.0,450 Fremont St,The Strip,36.1065513,-115.1721069
+662,sZsJooAzpKqOvDysphkqpQ,68,Pop Up Pizza,4.0,1 S Main St,Downtown,36.1721756,-115.1468294
+663,VWtT4DKxQ4YVRWT88Z5SMA,68,Sambalatte,4.0,"6555 S Jones Blvd, Ste 100",Spring Valley,36.0698215199,-115.224872182
+664,SzzrUeJGnl_LQAJXMK8wQw,68,Omoide Noodles & Bowls,3.5,7745 S Rainbow Blvd,Southwest,36.0477111,-115.2435475
+665,BcW7Z9lPmOB_8eS2lEuOqQ,68,Musashi Japanese Steakhouse,4.0,3900 Paradise Rd,Eastside,36.1188384,-115.1544802
+667,DVJkxZkLKS76Khb2y6XA6A,68,ProteinHouse,3.5,"9555 S Eastern Ave, Ste 125",Southeast,36.0160520683,-115.119517202
+668,ohz8ljVxcZMo2bMGrBZfgw,68,Origin India Restaurant & Bar,3.5,"4480 Paradise Rd, Ste 1200",Eastside,36.108898,-115.151261
+670,bzyoY6HHZJS39fspg-6DrA,68,Dickey's Barbecue Pit,3.5,7430 Las Vegas Blvd. South,Southeast,36.0544189,-115.1714995
+672,bRR4gsjHv0F_RnRGjQBqlg,67,CJ's Italian Ice & Custard,4.0,3555 S Durango Dr,Spring Valley,36.1250824,-115.279539
+674,Q7m8G4579-XYKV3LMW8V7g,67,Kaizen Fusion Roll and Sushi,4.0,"4480 S Paradise Rd, Ste 900",Eastside,36.1084615203,-115.151910782
+675,hHe1mFDxxrtejXHfiysJJg,67,The Melting Pot,4.0,8704 W Charleston Blvd,Westside,36.1595314696,-115.285329107
+676,ytk8XVFegCSdSBXLDZutpw,67,Bachi Kitchen,3.5,"6825 W Russell Rd, Ste 115",Spring Valley,36.0844749,-115.2412756
+678,YaTlfyPieOXwHH16wzieFg,67,Cafe Rio,2.5,4830 Blue Diamond Rd,Southwest,36.0334392429,-115.207224121
+679,vAh6WNioOEw7G9tGhd_JQw,67,Food Express Chinese Restaurant,4.0,"2003 S Decatur Blvd, Ste B",Westside,36.1497949,-115.2075998
+681,N4BbeIbQNgtUEEMutu9U3w,66,Famous Dave's Barbeque - Las Vegas,3.0,1951 N Rainbow Blvd,,36.194458,-115.2430691
+682,L6qd3x0bHymyxub9dF7lIA,66,Cafe Noodle & Chinese Barbeque,3.0,4355 Spring Mountain Rd,Chinatown,36.125908,-115.197904
+684,VR8QvH2g-jEG5EfMzA_G9w,66,Nine Fine Irishmen,4.0,3790 Las Vegas Blvd S,The Strip,36.103087,-115.17352
+685,M-SS_Kr0zlC7v8kBSRa74g,66,Hokaido Sushi,4.0,"6015 S Fort Apache Rd, Ste 150",Spring Valley,36.0789703,-115.298266
+687,7-Ba9uSmYYpXgnQRoIPxMQ,66,Havana Grill,3.5,"8878 S Eastern Ave, Ste 100",Southeast,36.0279784249,-115.117866329
+688,ZrXYLXcEcDvYYBErmafobg,66,Marketplace Cafe,4.5,"Nordstrom, 3200 Las Vegas Blvd S",The Strip,36.1283758336,-115.172733943
+689,A4zLP5AyKEEHQr_dWEZKig,66,Cleo,4.5,2535 S Las Vegas Blvd,The Strip,36.1422486001,-115.156616047
+690,CCRgGKhzxSpl38w7yhqKUw,66,Noodles,3.0,3600 S Las Vegas Blvd,The Strip,36.1122690547,-115.176300532
+691,5Dccw539NNtnyCgTu5ed5A,66,Thai House,3.5,"9850 S Maryland Pkwy, Ste 17",Southeast,36.0105784998,-115.134144854
+692,n7V4cD-KqqE3OXk0irJTyA,65,GameWorks,3.0,"6587 Las Vegas Blvd S, Ste 171",Southeast,36.0682585154,-115.1788768
+693,UAMTM6LMA2on079oBMFBPQ,65,Lazy Joe's Fish & Chips,3.5,"7835 S Rainbow Blvd, Ste 22",Southwest,36.0458007,-115.2440943
+694,Gdv3qhsDeQzZ2Ag-Tzq6vA,65,Rocco's NY Pizzeria,4.0,"10860 W Charleston Blvd, Ste 190",Summerlin,36.1612270133,-115.332990837
+695,czx3G3V_f-4ZDg9YKJ0YQA,65,Osaka Japanese Bistro Summerlin,2.5,7511 W Lake Mead Blvd,,36.1956731299,-115.257341096
+696,0AQnRQw34IQW9-1gJkYnMA,65,Diablo's Cantina,3.0,3770 Las Vegas Blvd S,The Strip,36.1041326556,-115.17354363
+697,h7s4MRVvB726jWHCHiQ9kw,65,Texas de Brazil,4.5,6533 Las Vegas Blvd S,Southeast,36.0701338,-115.1753307
+698,iL2-xJ4-eMsJk88PsbivbQ,65,Anthony & Marios Broadway Pizzeria,4.0,840 S Rancho Dr,Downtown,36.1617046,-115.1734184
+699,q4v-I9j1v7WqtxR12uEMxQ,65,Beach Hut Deli,4.0,"9500 S Eastern Ave, Ste180",,36.016485,-115.117119
+701,nMaIIKEAW2cTEWbEyeFyXQ,65,Surang's Thai Kitchen,4.0,"5455 S Fort Apache Rd, Ste 105",Spring Valley,36.089564,-115.2974352
+702,gRCEObNuHtI61xR32ytqNQ,65,Palace Station Hotel & Casino,2.5,2411 W Sahara Ave,,36.1427819,-115.1747468
+704,5ma1OUQWy_Ds80xUiP7JPQ,65,Fuku Burger,4.0,3429 S Jones Blvd,Chinatown,36.126605687,-115.225238855
+705,D6K3VT6S8FwFm4u5uN8T8g,65,Moko Ramen Bar,4.5,"6350 W Charleston Blvd, Ste 120",Westside,36.1595762338,-115.233089299
+706,pik4ebdFa0UcUhnNkivFcg,65,Carmine's,4.0,3500 S Las Vegas Blvd,The Strip,36.1184749,-115.1755707
+707,3FlWR_osNPb8dcqLgHebHw,65,Mimi's Cafe,3.0,1121 S Fort Apache,Westside,36.1576912,-115.2918796
+708,0d0i0FaJq1GIeW1rS2D-5w,65,Bruxie,4.5,"3782 S Las Vegas Blvd, South Tenant Block, Bldg D1",The Strip,36.10352,-115.174608
+709,nlsibvBeSc8vfus2KuQatA,64,Handel's Homemade Ice Cream & Yogurt,4.0,"10170 W Tropicana Ave, Ste 150",Spring Valley,36.1015133836,-115.314433873
+710,YkOCo5ipV2he2WXIAlZb-A,64,Jaburritos Sushi Burritos,4.5,"6090 S Rainbow Blvd, Ste 2",Spring Valley,36.0780826,-115.2421567
+712,e13SEvJud_vgeDR_doL4sQ,64,Hussong's Cantina - Las Vegas,3.5,"Mandalay Bay Shoppes, 3930 Las Vegas Blvd S, Ste 121B",The Strip,36.094254,-115.176019
+713,AjWFFZN8KwyqJzzi0DyEsw,64,BURGER BRASSERIE,3.5,"Paris Las Vegas Hotel & Casino, 3655 Las Vegas Boulevard South",The Strip,36.112648,-115.170283
+715,tA5mqEP68qjbTFK9c14D7A,64,Pot Tea Social House,4.0,"7815 S Rainbow Blvd, Ste 102",Southwest,36.0463716252,-115.243588686
+716,ym5FOqL6tGbgynzwKMHZuw,64,Crab Corner,3.5,6485 S Rainbow Blvd,Spring Valley,36.07097,-115.243522
+717,GkRF8rSvh9cOQuuPeDh9bg,64,Sushi Fever,4.0,"7985 W Sahara Ave, Ste 105",Westside,36.1431984312,-115.264456426
+718,dVhGY-mNwTWQzK01Zxuclw,64,Yunnan Garden,3.5,3934 Schiff Dr,Chinatown,36.1249257,-115.1923226
+720,ZtsnwjxjzMUI6tDZNrJUeA,64,Montana Meat Company,3.5,9135 S Durango,Southwest,36.0219644,-115.2796586
+722,Po0QGzgwFrfnGJEi_akCjA,64,Korean Garden BBQ House,3.0,4355 Spring Mountain Rd,Chinatown,36.125908,-115.197904
+724,JbopSXzZIy7id23GJsO9pA,64,Jollibee,2.5,"9430 W Sahara Ave, Ste 100A",Westside,36.1462743378,-115.301021822
+725,Jt28TYWanzKrJYYr0Tf1MQ,64,Cabo Wabo Cantina,3.0,3663 Las Vegas Blvd S,The Strip,36.1110724694,-115.172451868
+726,DVfCbJhJUDWRlUfrKzaKOA,63,Sam Woo BBQ Restaurant,2.0,"4215 Spring Mountain Rd, Ste B101",Chinatown,36.1253808,-115.1959803
+728,rbcfYmJtqwIkk17IeOI5Kw,63,BARDOT Brasserie,4.5,3730 Las Vegas Blvd S,The Strip,36.1074117364,-115.177676973
+729,ZhLSAiRj9kANxf8m2SBfRA,63,Lucki Thai,4.5,467 E Silverado Ranch Blvd,Southeast,36.0119846411,-115.153598562
+730,Ffhe2cmRyloz3CCdRGvHtA,63,Earl of Sandwich,4.0,"Palms Casino Resort, 4321 W. Flamingo Rd",,36.114345,-115.195589
+731,4VkLiFoIEjTTpbCRgxjnCQ,63,Spaghetty Western,4.0,"10690 Southern Highlands Pkwy, Ste 103",Southwest,35.9951546506,-115.206350564
+732,t4bBKVXbr8bIN9nEJIobYg,63,Saffron Flavors of India,4.0,"4450 N Tenaya Way, Ste 115",Northwest,36.24172,-115.250134
+733,iAuOpYDfOTuzQ6OPpEiGwA,63,Memphis Championship Barbecue,3.0,2250 E Warm Springs Rd,Southeast,36.0577242,-115.1225863
+734,eYJcI9cI6-kJ2NQpYdHcLw,63,The Perch,4.0,"Downtown Container Park, 707 Fremont St",Downtown,36.1673570366,-115.13881669
+735,po0p6NIro0cDrmKkcyPy0w,63,To See Roll,4.5,"7040 S Rainbow Blvd, Ste 110",Spring Valley,36.0605553,-115.2417218
+736,ghVhlFpNhfBwWDFGSlt2JA,63,Sushi Neko,4.0,"5115 W Spring Mountain Rd, Ste 117",Chinatown,36.1260481,-115.2123157
+738,OPxWcHK96_cbmiF7legDnA,63,McCormick & Schmick's Seafood & Steaks,3.5,335 Hughes Center Dr,Eastside,36.1150754866,-115.156941325
+739,Yq92uUpugGyJLvDtcDRunw,63,In-N-Out Burger,4.5,9240 S Eastern Ave,Southeast,36.0213759,-115.1180729
+741,KkmPDIWzvwbBpyqOHT6pcQ,63,Rao's,3.5,3570 Las Vegas Blvd S,The Strip,36.1163674508,-115.176439563
+742,PIXl4WvAqjl2w9Lj81zXvQ,62,Zest - Bistro & Bar,4.0,"10670 Southern Highlands Pkwy, Ste 102",Southwest,35.9953175,-115.2069481
+744,Fy4t2XHIRKwMk_ocCZze0Q,62,ENVY The Steakhouse,4.0,"Renaissance Las Vegas, 3400 Paradise Rd",Eastside,36.1274067129,-115.154467611
+745,8F-UdXe_YylX3k0L1SEiRg,62,Pho Little Saigon,2.5,"3775 Spring Mountain Rd, Ste 306",Chinatown,36.1256660799,-115.189855594
+746,2sx52lDoiEtef7xgPCaoBw,62,VegeNation,4.5,"616 Carson Ave, Ste 120",Downtown,36.1672853944,-115.139310447
+747,LEzaRCdhDfO2eM75HZNnUQ,62,Miko's Izakaya,4.5,"500 E Windmill Ln, Ste 165",Southeast,36.0428966,-115.1520552
+748,MAuSh7NKoT__CQ4BumoayA,62,T&T - Tacos & Tequila,3.5,"Luxor Hotel & Casino, 3900 Las Vegas Blvd",The Strip,36.0970140729,-115.175894613
+749,cPmThZ7Ugpd8eJnIObOy0Q,62,Olive Garden Italian Restaurant,3.0,10800 West Charleston Blvd,Summerlin,36.1596477,-115.331415
+751,-Le6cwbZL4tDZwNHwipfKg,62,Marrakech Mediterranean Restaurant,4.5,"3900 Paradise Rd, Ste Y",Eastside,36.1177117193,-115.154608946
+752,JPfi__QJAaRzmfh5aOyFEw,62,Shang Artisan Noodle,4.5,"4983 W Flamingo Rd, Ste B",,36.1149052,-115.2097436
+753,JTFFtWy_chbsHTs95yD_2Q,62,Cafe Bellagio,3.0,3600 S Las Vegas Blvd,The Strip,36.112379,-115.174531
+754,xw6G0T2VQZAtta6RcZoAOQ,62,Cafe Rio,3.0,9002 W Sahara Ave,Westside,36.1446524,-115.294935
+756,_hML_SleB40KkUrMHOZ_-Q,62,Rx Boiler Room,4.0,3930 Las Vegas Blvd,The Strip,36.093584908,-115.175897346
+757,RnAb4KkRDmWUBWhhZhugZQ,62,Ohana Hawaiian BBQ,3.5,"7435 S Durango Dr, Ste 104",Southwest,36.0529956,-115.2799348
+758,eUuKXhloFVHdQsLdodcLbw,62,Parsley Modern Mediterranean,4.0,6420 S Pecos Rd,Southeast,36.072381,-115.100413
+760,I6qFvR-jVDGqDD_iVG38ng,61,Jenni Pho Grill,3.0,4480 W Spring Mountain Rd,Chinatown,36.1264280647,-115.201307757
+761,MqYYYNA-ZYvV-1w5qcmMoA,61,Aureole,3.5,3950 S Las Vegas Blvd,The Strip,36.0925630613,-115.176415443
+762,HaWU8ICNtjIkCN_ZNrx1hw,61,Illumilatte Brew Society,4.0,"6825 W Russell Rd, Ste 155",Spring Valley,36.0845009115,-115.241361431
+763,w7r_pDUR56k0raVroQhhww,61,Steiner's A Nevada Style Pub,4.0,8168 Las Vegas Blvd S,Southeast,36.0407804215,-115.171651706
+764,uHUcYpGlcdlu5m7oiZGY6w,61,Max's Restaurant,3.0,1290 E Flamingo Rd,University,36.114859,-115.136639
+766,W1Vn2G1disKO52jHARIZMA,61,California Pizza Kitchen,3.5,"6659 Las Vegas Blvd S, Bldg C1, Ste 100",Southeast,36.0681423832,-115.174817346
+767,hCsJv234v62MgdsUU1j8dQ,61,Big Sur Oyster Bar,3.5,"South Point Hotel & Casino, 9777 S Las Vegas Blvd",Southeast,36.0121912,-115.1739932
+769,-3zffZUHoY8bQjGfPSoBKQ,61,Michael Mina,4.0,3600 S Las Vegas Blvd,The Strip,36.11199,-115.177001
+771,54WM5coZonA0izd2y04p_A,61,Famous Dave's Barbeque,3.5,9695 W Flamingo Rd,Spring Valley,36.1141807443,-115.303920552
+772,TrGBHqHVzJM5tk2C1D1ctQ,61,The Sandwich Spot,4.5,"3250 N Tenaya Way, Ste 104",Northwest,36.219859,-115.250331
+773,TeggG3duunpoy__1Y2SAyQ,61,Aloha Kitchen,3.5,4745 S Maryland Pkwy,University,36.1036270107,-115.137769141
+774,78XbdLi5e42XDxgnxuYacg,61,Ohjah Japanese Steakhouse Sushi & Hibachi Flamingo,4.5,10144 W Flamingo Rd,Spring Valley,36.1154163,-115.3140301
+775,NmOBomyz63TP9Nn2q4Z1rg,61,Smith & Wollensky,4.0,3767 Las Vegas Blvd S,The Strip,36.1046486,-115.1727668
+777,lF4pEu4_55SSFEo6Q58ftQ,61,German Bread Bakery,4.5,2237 N Rampart Blvd,Summerlin,36.2016161,-115.283462
+779,_sh6mIBWZis66mAjkjN8Qg,61,Rachel's Kitchen,3.5,9691 Trailwood Dr,Summerlin,36.1909406,-115.3072017
+781,dCUuzw3R2rPqKyN2Zl9zRw,60,Fiamma Trattoria & Bar,4.0,3799 Las Vegas Blvd S,The Strip,36.10156,-115.172953
+782,WLblFINiPI18_o1OdDsnVg,60,Cafe Rio,3.0,4680 S Maryland Pkwy,University,36.104435,-115.1367851
+783,U0UnBjz9DugW2qRZputKBg,60,Manan Bakery,4.0,"6620 W Flamingo Rd, Unit 4",,36.115024,-115.236638
+785,TL5Dtfnf-5hYG13lBF9N2A,60,Benihana,3.5,3000 Paradise Rd,Eastside,36.1362575,-115.1512526
+786,YI08egmS9lWWB6N6MmrePw,60,Teriyaki Madness,4.0,"8520 W Warm Springs Rd., Suite 102",Southwest,36.0564145033,-115.278167848
+787,LJt-NO2FhvQxTmBoaaLhTg,60,Three Angry Wives,3.0,"8820 W Charleston Blvd, Ste 105",Westside,36.1593779,-115.2881423
+789,tCYAxj5_pV4RnDpe3_5VpA,60,Sushi Bomb,3.5,"10470 W Cheyenne Ave, Ste 125",Northwest,36.2193261,-115.3257738
+791,jrE4M9HlYp2AZZ7iQCSIRw,59,Harbor Palace Seafood Restaurant,2.5,4275 Spring Mountain Rd,Chinatown,36.1258564,-115.1970731
+792,xEH00X_VoRepWKXQrragmw,59,MOzen Bistro,4.0,3752 Las Vegas Blvd S,The Strip,36.1062631042,-115.17428644
+793,DNSDAtD6uxQkoZkQe2v4ew,59,Curry Leaf Flavors of India,4.5,"5025 S Fort Apache Rd, Ste 101",Spring Valley,36.0979917,-115.2977607
+795,KVqWA98XZwGhJ3YbFNi0vw,59,Salted Malted Bakery & Creamery,4.5,"6584 N Decatur Blvd, Ste 120",,36.2798653434,-115.205750417
+796,PSRZaGGxXmOmabL2si8pKw,59,Carrabba's Italian Grill,3.5,8771 W Charleston Blvd,Westside,36.1584923,-115.2864407
+797,JjjlhlQ2LEaQMuAug4fDIA,59,Yi Mei Champion Taiwan Deli,3.5,3435 S Jones Blvd,Chinatown,36.126816,-115.2250079
+799,eJNHwNoCk_hZbK8AeHDZ9g,59,Nevada Chicken Cafe,3.5,"7340 Arroyo Crossing Pkwy, Ste 5",Spring Valley,36.0636453,-115.2520481
+800,PChG1Dm0A6AXIXkXGVK8Fw,59,Sasa Sushi,4.0,"7450 W Cheyenne Ave, Ste 118",Northwest,36.2189900672,-115.258273815
+801,D_mVIUu5XyrHz-7U_z_pDg,59,Nove Italiano,4.0,4321 W Flamingo Rd,,36.114483,-115.194814
+802,gV63aLTQ06Nff0GzJ0tcUA,59,Alizé,4.0,"Palms Casino Resort, 4321 W Flamingo Rd",,36.1142979145,-115.195554517
+803,3LWsVfsSmb_Nzbi2YQ-NIA,59,Delhi Indian Cuisine,4.0,4022 S Maryland Pkwy,Eastside,36.116164159,-115.136092119
+804,-OEIW0dO96-492qa_luxaw,59,Aces & Ales,4.0,3740 S Nellis Blvd,,36.121392,-115.0646814
+805,BhueLLvA0k9G1Lr0WeZX9w,59,Cafe Zupas,3.5,7060 S Rainbow Blvd,Spring Valley,36.0603197442,-115.241623081
+806,oljOuU-B7XUNQFPBjed2yQ,59,Kabuki Japanese Restaurant,3.5,"400 S Rampart Blvd, Ste 190",Westside,36.1685938,-115.2869305
+807,arv3T_av9OoVo3SvxV4TXw,59,Fish N Bowl,4.5,"7225 S Durango Dr, Ste 105",Southwest,36.056792005,-115.280016838
+808,qpaX3qOHBSOAEDUcIs8SPQ,59,Raising Cane's,4.0,4655 W Charleston,Westside,36.1585998893,-115.204244642
+809,BORPULADzZV6_LJZzcsywQ,58,PBR Rock Bar & Grill,3.0,"Planet Hollywood Resort & Casino, 3663 Las Vegas Blvd S",The Strip,36.1098235108,-115.171432448
+810,m-xsH8VkcYtTTvp2Fa6Ajw,58,Pancho's,3.0,11020 Lavender Hills Dr,South Summerlin,36.1454176827,-115.334235143
+811,SsN-SaGGkJn2Qm-jSDQ4aQ,58,Trevi Italian Restaurant,3.5,3500 South Las Vegas Blvd,The Strip,36.117839582,-115.17321825
+812,pFQaji0idkrzv5J-qTQ82Q,58,Golden Corral,3.0,1455 S Lamb Blvd,Sunrise,36.1550616,-115.0827729
+814,Kbbm6Vd5UdbP10dwjBghRw,58,In-N-Out Burger,4.0,3882 Blue Diamond Rd,Southwest,36.0406276166,-115.191256177
+815,lAR6Lj6-zBxQNqflZt0zTQ,58,Buca di Beppo Italian Restaurant,3.0,412 E Flamingo Rd,Eastside,36.1149553631,-115.151866144
+816,xB7bsOpJbnK9nHEZw1ARDg,58,Napoli Pizzeria,3.0,"4760 W Sahara Ave, Ste 11",Westside,36.1461964,-115.2074974
+817,-WLrZPzjKfrftLWaCi1QZQ,58,Blueberry Hill Family Restaurant,4.0,1505 E Flamingo Rd,University,36.1142203,-115.1327808
+819,0q_BHpxbikVtPRRLRu-U0g,58,Picasso,4.5,3600 S Las Vegas Blvd,The Strip,36.11199,-115.177001
+821,vOfz55MmWgjNQ3BA2PnhgQ,58,Marilyn's Cafe,4.0,"The Tuscany Suites & Casino, 255 E Flamingo Rd",Eastside,36.1134367128,-115.159506798
+822,5QNXZcclknB2PkfeN7FJWQ,58,The Hush Puppy,4.0,7185 W Charleston Blvd,Westside,36.1585286084,-115.250290611
+823,jmyvOW6G2T1fIePvajB4nQ,58,Cuba Cafe,4.0,2055 E Tropicana Ave,Southeast,36.1002598,-115.1251555
+825,xrBQKZbhJMCtaZxeJ0tzTQ,57,Sushi Tachi,3.5,"2745 W Centennial Pkwy, Ste 130",,36.2760754574,-115.177846427
+826,5z1WIr7E9P2CSzyN5seeSA,57,Sterling Brunch,4.0,3645 Las Vegas Blvd S,The Strip,36.114355,-115.17099
+828,HaPwC4nxs6RPfe1pAQkQ4A,57,Mastrioni's,4.0,"3330 S Hualapai Way, Ste 160",Spring Valley,36.1291479,-115.3145433
+829,bgXb5YYzQvHXmM8owZB4fQ,57,Wolfgang Puck Bar & Grill,3.5,"10955 Oval Park Dr, Ste D3",South Summerlin,36.1515465211,-115.332669628
+830,H8qlBw1YaxMsItfz25-AyA,57,John Cutter,3.0,11770 W Charleston Blvd,Summerlin,36.159014,-115.351342
+832,uuGL8diLlHfeUeFuod3F-w,57,Tom's Urban,3.5,3790 Las Vegas Blvd S,The Strip,36.1022287,-115.1745851
+833,aKEEQqL1UFMieilnylI1gw,57,Costa di Mare,3.5,3131 Las Vegas Blvd. South,The Strip,36.1265953,-115.1653652
+834,bjSC_jbrypke0l-bXXBmwQ,57,Vic & Anthony's Steakhouse,4.5,129 E Fremont St,Downtown,36.1702390246,-115.144609809
+835,6z3cgIE9dJ01wUm43f0yBQ,57,Fat Dumpling,3.5,3959 W Spring Mountain Rd,Chinatown,36.1264476,-115.1926856
+837,beuVp5CZxCdNvQIIPBS2rw,57,Chubby Cattle,4.5,"3400 S Jones Blvd, Ste 15",Chinatown,36.1273078,-115.2243612
+838,DLw9rK8Qb6l7ESgxtR47qQ,57,Ohana Hawaiian BBQ,3.5,"4360 Blue Diamond Rd, Ste 107",Southwest,36.0387056,-115.1986027
+839,DW0ZvWuYaSvMcB_3LG5RGg,57,Pei Wei,3.0,10830 W Charleston Blvd.,Summerlin,36.161278,-115.331443
+840,OUP9dy2eu_-2Mga3DpSFfQ,57,Rocco's,4.0,"1181 S Buffalo Dr, Ste 115",Westside,36.1573862,-115.2627989
+842,GTR39A2jwNIS_NV8q2r_JA,57,B and B Ristorante,3.5,"3355 Las Vegas Blvd S, 3355 S Las Vegas Blvd",The Strip,36.1230025089,-115.168725629
+843,jO3ikdNbF_TGGv87izTkEg,57,Buca di Beppo Italian Restaurant,3.0,7690 W Lake Mead Blvd,Summerlin,36.1972317,-115.26247
+844,h3pMMRwqBjMeMtk0_qQzRQ,57,Mezzo Bistro and Wine,3.5,"4275 N Rancho Dr, Ste 130",Northwest,36.2371812,-115.2311905
+845,eSLwC2iFJOU4UWXyuPiTpg,56,Hennessey's Tavern,3.0,425 Fremont St,Downtown,36.1689181,-115.1415925
+846,BuHbMNbCQzzYi-3Y5w1c4Q,56,The Habit Burger Grill,4.5,365 Hughes Ctr Dr,Eastside,36.1149584,-115.1555933
+848,JRh14J_be0jl7Wbt412vDA,56,Oscar's Steakhouse,3.5,"Plaza Hotel & Casino, 1 Main St",Downtown,36.1718351907,-115.14659958
+849,i3mZIwNi1EiJ7-1A8amoyw,56,Amena Bakery & Deli,4.5,"2101 S Decatur Blvd, Ste 10",Westside,36.149049,-115.208187
+851,iRwT2pBa87Y54q8nqfNAzw,56,Da Lat,4.0,4553 W Flamingo Rd,,36.1150660797,-115.203119752
+852,S-egzF2c7bRpCUNbZqV8dg,56,Truffles N Bacon Cafe,4.0,"8872 S Eastern Ave, Ste 100",,36.0279118,-115.1158569
+854,VfFHPsPtTW4Mgx0eHDyJiQ,56,Distill - A Local Bar,3.5,10820 W Charleston Blvd,Summerlin,36.1606854895,-115.331591073
+855,HFEkIohUqGIudgqbHiK1uA,56,The Cracked Egg,3.5,"5570 Painted Mirage, #140",Centennial,36.2624124,-115.2563524
+856,kpLt4l5J5kbMD4oxQLC2aA,56,King & I,4.0,2904 Lake E Dr,The Lakes,36.138984,-115.284115
+858,0XEqyl_lVaJNHRKxNcjJZg,56,Coffee Pub,4.5,"2800 W Sahara Ave, Ste 2A",Westside,36.145534,-115.179144
+859,k2b3niokS_tosjah_rzCPw,56,Metro Pizza,3.5,6720 Sky Pointe Dr,Centennial,36.2867051837,-115.274604778
+860,ZPwx7ktiVluGFVg0L05n5A,56,Rincon De Buenos Aires,4.5,5300 Spring Mountain Rd,Chinatown,36.1267101,-115.213915
+862,oH6QAuoTLFaX97oqqpLTMg,56,Familia Pizzeria,4.0,8090 S Durango Dr,Southwest,36.042461,-115.2782
+864,-U7tvCtaraTQ9b0zBhpBMA,56,MGM Grand Buffet,2.5,3799 Las Vegas Blvd S,The Strip,36.1020911813,-115.171778365
+865,f_eiOrEcMnkHB7GvQVOHkQ,56,Terrace Pointe Cafe,3.5,3131 Las Vegas Blvd S,The Strip,36.1259639214,-115.167703909
+866,X5uxdU9GHoUAqo2wmbg3OQ,55,Island Malaysian Cuisine,4.0,"5115 Spring Mountain Rd, Ste 217",Chinatown,36.125592,-115.211199
+867,MpovsyjkSkchD7ssAdEVKQ,55,Charlie Palmer Steak,4.0,3960 S Las Vegas Boulevard,The Strip,36.0909158,-115.1737761
+868,BwuyBsShSQwO3_-SvW6fRA,55,Kabob Grill,4.0,9550 S Eastern Ave,,36.0146273,-115.117155
+870,QJ6GXAAMkgCZPF0bZk0xLw,55,Baladie Café,4.5,4872 W Lone Mountain Rd,Northwest,36.2467158,-115.2088695
+871,SJU-jRAZS0cXoBGUjX5GUg,55,Jumping Rice & Rolls,4.5,"9484 W Flamingo Rd, Ste 175",Spring Valley,36.1157323283,-115.298611747
+872,Ssa6XY_RdDRRB9wuVIeIWw,55,Hedary's Mediterranean Restaurant,4.0,"7365 W Sahara Ave, Ste K",Westside,36.1430817,-115.2536257
+873,By7P2EBBvhqoSDj8PnQa8g,55,D.O.C.G. Enoteca,3.5,"Cosmopolitan Hotel, 3708 Las Vegas Blvd S",The Strip,36.1092162,-115.1732212
+874,w5CSi-An5meLnxjKSFn0wQ,55,Thai St Cafe,4.0,3137 Industrial Rd,,36.1327744,-115.1728258
+875,YF4QJ_j-PM7cMZja6K1MwQ,55,Encore Beach Club,4.0,3131 Las Vegas Blvd S,The Strip,36.1294170718,-115.166116868
+876,SeNOJ2zYHziptxLuiRINLg,55,Lago,4.0,3600 S Las Vegas Blvd,The Strip,36.1124136808,-115.175594714
+877,HmsCerK_rub0Ulo0aC0f9A,55,Hanabi,4.0,9350 W Sahara Ave,Westside,36.147262,-115.2998714
+879,T5nTtSCSRoEYMsZPhF61wg,54,Waffles Cafe,4.0,"6446 N Durango Dr, Ste 150",Centennial,36.2779836878,-115.286947773
+880,NfM1YE-FJCToO1LB36T6lQ,54,Jason's Deli,3.5,7305 Arroyo Crossing Pkwy,Spring Valley,36.0629898,-115.2515658
+882,uu5AtMrz_94e8kk4Gixg9Q,54,Jollibee,3.5,"3890 S Maryland Pkwy, Ste 137",Eastside,36.118238,-115.135755
+883,hQ4IGBbdDcCUh11zUSzwCQ,54,Big Ern's BBQ,3.0,707 E Fremont St,Downtown,36.167526,-115.138435
+884,kmdFk8ETfXiuoS364jaJFA,54,Garden Buffet,2.5,"South Point Hotel & Casino, 9777 S Las Vegas Blvd",Southeast,36.0114387079,-115.174912401
+885,JQLi-Ow9pg391iMzw5LSwg,54,Mary's Hash House,4.0,"2605 S Decatur Blvd, Ste 103",Westside,36.142094,-115.209418
+886,7dHYudt6OOIjiaxkSvv3lQ,54,In-N-Out Burger,4.0,2900 W Sahara Ave,Westside,36.1448187,-115.1805851
+887,lKq4Qsz13FDcAVgp49uukQ,54,Slice of Vegas,3.5,"Mandalay Bay, 3930 Las Vegas Blvd S,Ste 120",The Strip,36.09128,-115.174098
+888,QteBKpZTRa2dJ3u7MLiXww,54,Los Tacos,4.0,1710 E Charleston Blvd,Downtown,36.1584563,-115.1275613
+889,xfzDtGxx6B4a27RAyah69w,54,Sushi 21,4.0,"4965 W Tropicana Ave, Ste 102",,36.0994204,-115.2089924
+891,hPclwunHi36YV8cPghWJBg,54,Thai Food To Go,4.5,"3242 E Desert Inn Rd, Ste 9",Eastside,36.130228,-115.103766
+892,_QvGAqMmrUIlxpby2Ul5Dg,54,Dona Maria Tamales Restaurant,3.5,3205 N Tenaya Way,Northwest,36.2191460556,-115.251756703
+893,G5or_Fra4-6IYOVlm_dI2Q,54,Gilley's,3.0,3300 Las Vegas Blvd S,The Strip,36.1239879384,-115.170658334
+894,wtxKAHReCUOnPY08KMQcrQ,54,Cracker Barrel Old Country Store,3.0,8350 Dean Martin Dr,Southwest,36.0380601886,-115.181791
+896,kICgNgVRkIh4doz0atyMMA,54,Hakkasan Restaurant,4.0,"Mgm Grand, 3799 Las Vegas Blvd S",The Strip,36.101813,-115.172596
+897,WVvqV0cmNR3j7ChPoI74hQ,53,Soul Food Cafe,3.5,"7320 S Rainbow Blvd, Ste 112",Southwest,36.055414,-115.241332
+898,939j88ceB05Te3D7kQPwSA,53,VooDoo Rooftop Nightclub & Lounge,3.5,3700 W Flamingo Rd,,36.1162803216,-115.186104336
+899,vHt0CSynqesXox-9nBj7uA,53,On the Border Mexican Grill & Cantina,2.5,5630 Centennial Center Blvd,Centennial,36.2645991,-115.2564117
+901,BxRTF1hmGAzMzkTDsEp2gw,53,Panera Bread,4.0,7175 West Lake Mead Blvd,,36.195762,-115.248815
+902,wlQCPszSqUi2xpGqZsWjLA,53,Biscuits Cafe,3.5,"8465 West Sahara, Ste 100",Westside,36.143431,-115.275792
+903,qTTBJ83d-nWSnQpXyd44gA,53,Maza Mediterranean & Turkish Grill,4.0,2550 S Rainbow Blvd,Westside,36.143178,-115.241929
+904,PDIh1lVtKlUqPJROXYJQvQ,53,FIX,3.5,"Bellagio Las Vegas, 3600 S Las Vegas Blvd",The Strip,36.1138449002,-115.175391205
+905,S_PEroRv40j1In11gNH2LQ,53,Five Guys Burgers and Fries,4.0,7290 W Lake Mead Blvd,,36.1965014326,-115.250715808
+906,4Hx-brYb86k4C1VSKPvj7g,53,Crazy Pita Rotisserie & Grill,4.0,"Downtown Summerlin, 10975 Sage Park Dr, Ste 100",South Summerlin,36.1481749697,-115.332939526
+907,XBEx2FI2GKmsjs7eWNr7Lw,53,Juice 'N' Go,4.5,1735 S Rainbow Blvd,Westside,36.1525834,-115.2435895
+908,qmIHO-6T_KEfPC9jyGDamQ,52,Jean Georges Steakhouse,3.5,3730 Las Vegas Blvd S,The Strip,36.1071523736,-115.177130739
+909,8wt-saX_qXaqVCXQHc5qXw,52,Sporting Life Bar,4.0,7770 S Jones Blvd,Southwest,36.048195,-115.224919
+910,_y1Et7f4NE6D1P1GzphlIw,52,Blaze Fast-Fire'd Pizza,4.5,6211 N Decatur Blvd,Centennial,36.2717805646,-115.207198266
+911,hh-N1r9O1JpvzGw1mp0bKw,52,Rock'N'oodles,4.5,1108 S 3rd St,Downtown,36.15851,-115.150999
+912,rtlsfmdufArhk-47sWIf2w,52,Le Cirque,4.5,3600 S Las Vegas Blvd,The Strip,36.11312656,-115.175263026
+913,a3APDveO8DSEIp7o1f24hw,52,Zoozacrackers Deli,3.5,3131 Las Vegas Blvd S,The Strip,36.1265953,-115.1653652
+914,sARavfidmIS878q5BtlyVQ,52,é by José Andrés,4.5,"The Cosmopolitan Of Las Vegas, 3708 Las Vegas Blvd S",The Strip,36.109995716,-115.173604488
+915,2bK1ng2mnRdtTh_BDNGmIg,52,North End Pizza,3.0,6440 N Durango Dr,Centennial,36.2777222,-115.2863093
+917,lvuuyYZ-CzFrg1BLdV2OPw,52,Libre Mexican Cantina,4.0,11011 W Charleston Blvd,South Summerlin,36.1569658,-115.3335939
+918,vstifTjwsVFXc1aprX9_iQ,52,Raising Cane's,4.0,5660 Centennial Center Blvd,Centennial,36.2649844,-115.2566818
+920,3nf-a84p8LC41_WAIvJPjg,52,Grimaldi's Pizzeria,4.0,"Fashion Show Mall, 3200 Las Vegas Blvd S, Ste 1540",The Strip,36.1272253241,-115.172857855
+921,AUl6myFhTAbEqt0GMdKHiw,52,Chipotle Mexican Grill,3.0,"7340 Arroyo Crossing Pkyw, Ste 100",Spring Valley,36.0636370867,-115.25199075
+922,k-tg18rWRibZ4jKpoqhb0Q,52,Bonchon,3.5,"6455 S Rainbow Blvd, Ste 101",Spring Valley,36.0717327,-115.2429631
+924,eoyvbnRYQe-z85e8Rc6vAg,51,Grotto Ristorante,4.0,129 E Fremont St,Downtown,36.170349,-115.144946
+926,7yYexN1Q5ShE_z1MH2TDTw,51,Sammy's LA Pastrami & Burgers,3.5,2191 E Tropicana Ave,Southeast,36.1000026,-115.1222548
+927,-_yEVC3_3M6YOsamYfNFEw,51,Jason's Deli,4.0,3910 S Maryland Pkwy,Eastside,36.1178702,-115.1367954
+929,c-NXKTJ0jrrusTPxJAUwvA,51,Red Robin Gourmet Burgers,2.5,"10990 Lavender Hill Drive, Building 8B",South Summerlin,36.1457336231,-115.333381956
+930,yvqcZrHixuf_oIUW83xUcQ,51,Macayo's Mexican Restaurant,3.0,8245 W Sahara Ave,Westside,36.1434972,-115.2707372
+931,5TY6bUT3bbl9aHItiIXXqw,51,Big Al's Oyster Bar,3.5,"The Orleans Hotel And Casino, 4500 W Tropicana Ave",,36.10089,-115.20272
+932,9cw870n3gsGikVoOT5YOYg,51,Pier 215,4.5,"7060 S Durango Dr, Ste 101",Spring Valley,36.0609228604,-115.277371824
+933,iI3jcwudiZYMVUeRPy-DwQ,51,Curry Zen,4.0,"7835 S Rainbow Blvd, Ste 9",Southwest,36.0454724327,-115.244039632
+934,GC5wcui5uejRZTi8OCNPkQ,51,Mi Casa Grill Cantina,3.0,"Silverton Casino, 3333 Blue Diamond Rd",Southwest,36.0419492312,-115.183661817
+935,Lq9rYrwvWV5QDBYzq7MGHQ,51,Osaka Japanese Bistro,4.0,4205 W Sahara Ave,Westside,36.1438869,-115.1968986
+936,nnDLapJk1z2NJE0-XzwMlQ,51,Gallagher's Steakhouse,4.0,3790 Las Vegas Blvd S,The Strip,36.1038667205,-115.173266333
+937,ZDvS8DtnkYa8jY703MflEw,51,Badger Cafe,4.0,"1801 E Tropicana Ave, Ste 8",Southeast,36.1000666,-115.1273475
+939,vzrcPqSdRY41GoO5DR5pYA,51,Landry's Seafood,3.0,2610 W Sahara Ave,,36.144997,-115.175625
+940,3ajqOW9A7VhResA08I7RTg,51,Hash House A Go Go,3.5,1 S Main St,Downtown,36.171861,-115.146844
+942,Ipkl7KtlqxCe8bMMkwHwPQ,51,50's Diner Omelet House,4.0,"3050 E Desert Inn Rd, Ste 140",Eastside,36.1305272,-115.1084585
+943,Er5XAY2UFGGqBHdqpeCFkA,51,Zenshin Asian Restaurant,4.0,9777 Las Vegas Blvd S,Southeast,36.0113116,-115.1747074
+944,gqcJHVFCPeBRGnDf8bFzMw,51,Outback Steakhouse,3.5,8671 W Sahara Ave,The Lakes,36.1436176,-115.2809087
+945,3Gt3xskppi9jZuTrwrhLNg,51,Stack Restaurant & Bar,4.0,"Mirage Hotel & Casino, 3400 Las Vegas Blvd S",The Strip,36.1219660468,-115.175025921
+946,lGy7jJ9oVZUJNkmZj7ewgA,51,Planet Dailies,3.0,3667 Las Vegas Blvd S,The Strip,36.1096949,-115.1701623
+948,iiIXOU0L-KUCjuNES2e6Cw,50,Rubio's,4.0,"9310 W Sahara Ave, Ste 100",Westside,36.144938,-115.2989955
+949,RSOinkOUpxm0mGw1IWr4Xw,50,Katsuya,4.5,"SLS Las Vegas, 2535 S Las Vegas Blvd",The Strip,36.1423378,-115.1563054
+950,-Bf8BQ3yMk8U2f45r2DRKw,50,In-N-Out Burger,4.0,1960 Rock Springs Dr,,36.1956632,-115.2465134
+952,nI-ZmgPjAtiNTTU-_gnoYQ,50,Trattoria Reggiano,4.0,"2020 Park Centre Dr, Ste 140",South Summerlin,36.148739,-115.332717
+954,XhgFynFD7ZT77wofWpeOag,50,Mt Charleston Lodge Restaurant,3.5,5375 Kyle Canyon Rd,,36.2576388,-115.6447412
+956,Lzv68iVkRHstVvW3aXNWkA,50,Table Thai Bar & Bistro,4.5,3130 E Sunset Rd,Southeast,36.0719462,-115.1069016
+958,Wg9272hxpu9IBTXMTB6EeQ,50,Chili's,2.5,7335 Arroyo Crossing Pkwy,Spring Valley,36.0627570925,-115.252423123
+959,4Bw9XffSa0AMy2SrNCS2KA,50,Sababa Mediterranean Grill,3.5,3220 S Durango Dr,Westside,36.1309442,-115.2784531
+960,EMrghF81px-wnNqEYqA0Kw,50,Panera Bread,3.5,740 South Rampart Blvd,Westside,36.1632788522,-115.289161652
+961,g62SlImzhs6_1t-knPjd8w,50,Red Square Restaurant & Vodka Lounge,4.0,3950 Las Vegas Blvd S,The Strip,36.0927885119,-115.176156283
+962,Yp9w4nhUowBU_IS_StFXbQ,50,Tableau,4.0,3131 Las Vegas Blvd S,The Strip,36.1264163283,-115.16761583
+963,Y-S2LhHefBdnX8VP5Bh_JA,50,Citizens Kitchen and Bar,3.0,"Mandalay Bay, 3950 Las Vegas Blvd S",The Strip,36.0919655,-115.1730561
+964,44kd3YdkhXj5XiSPs5XNjQ,50,FireRock Steakhouse Las Vegas,3.5,5990 Centennial Center Blvd,Centennial,36.2719093,-115.263182
+965,Wfl_ch21ojyHsPnkvvnstw,49,Capriotti's Sandwich Shop,4.0,4480 Paradise Rd,Eastside,36.108898,-115.151261
+967,bjllusUsLq9zE4yZnLpOzg,49,Shawarma Plus,4.0,6530 S Decatur Blvd,,36.0711592,-115.2073851
+969,CtZ3HujCLTChyoad_L-nHA,49,PizzaRev,3.5,"7090 South Rainbow Blvd, Suite 110",Spring Valley,36.0599763,-115.2425924
+971,WDYE-OCXNgKyXGNuBjMgEw,49,Table 34,4.0,"600 E Warm Springs Rd, Ste 180",Southeast,36.0574506,-115.1494487
+972,N5CL5HLS6lyltw-OjjBrOw,49,Hussong's Cantina,3.5,"740 S Rampart Blvd, Ste 7",Westside,36.1636050063,-115.289374149
+973,Ay34xZOFax3X23zaA3nwdg,49,Roma Deli 1 & Restaurant,4.5,5755 Spring Mountain Rd,Chinatown,36.1253063,-115.2198749
+975,SgSVJWgMwFteYyz4OlHu9Q,49,Bambino's East Coast Pizzeria,4.5,2555 S Durango Dr,The Lakes,36.1422276753,-115.279427806
+976,-_TSaVr53qiEGqMkwyEMaQ,49,Parsley Modern Mediterranean,4.5,4985 W Tropicana Ave,,36.1002691,-115.2092345
+977,Qf6EnIzKqhXQg4YNkVAqHQ,49,Red Lobster,3.0,200 S. Decatur Blvd.,Westside,36.1716799,-115.2065845
+979,agGJSdMTRrkA6VrYMbC-SQ,49,Volcano Grille,4.0,"7150 S Durango Dr, Ste 110",Southwest,36.0580926,-115.2783844
+981,HUWLnKD5LSZY134amUO2Rg,49,New York Pizza & Pasta,4.0,"2400 S Jones Blvd, Ste 13",Westside,36.1452004152,-115.224454178
+982,PglC8rgguMIlT621p1BLdQ,49,Yum Cha,4.0,4945 W Tropicana Ave,,36.0997018912,-115.208473206
+983,U9aA5H13y7t9xWnoQslV0Q,49,Beijing Noodle No. 9,2.5,3570 Las Vegas Blvd S,The Strip,36.11706,-115.177875
+985,9qcTpWYxrZrN13p1zAP6dA,49,Ping Pong Thai Restaurant,3.5,"2955 E Sunset Rd, Ste110",Southeast,36.0711402559,-115.110620591
+986,nu1GQ_Q43JqzrWMZE_dE1Q,49,Searsucker,4.0,3570 Las Vegas Blvd S,The Strip,36.1171675,-115.177901
+987,kosTPb88O4Q0XGbVbEOGCA,49,Prommares Thai Food,4.0,6362 W Sahara Ave,Westside,36.1450530608,-115.232838104
+988,kgw8nBO9ZMRhukfnJd6bxg,49,Grape Street Cafe & Wine Bar,3.0,"2120 Festival Plaza Dr, Ste 160",South Summerlin,36.1481421773,-115.333543791
+989,WyZAeMGsjUE7OToI4Jdqfw,48,Chipotle Mexican Grill,3.5,"9240 W Sahara Ave, Ste 150",Westside,36.1447823,-115.2972551
+990,9sbXPpRC_wDhCsp7qG2PDw,48,HK Seafood Garden,3.5,"4300 W Spring Mountain Rd, Unit 103, 104, 105",Chinatown,36.1263719,-115.1981743
+992,TW58a4UkMcksdfQ7znUqsA,48,Doh Korean BBQ,4.0,"7920 S Rainbow Blvd, Ste 105",Southwest,36.0446071164,-115.242600292
+993,pyqnGlIfP9Zw8LLxBjyAiA,48,Nobu Restaurant,4.0,"Caesars Palace Las Vegas Hotel And Casino, 3570 Las Vegas Boulevard South",The Strip,36.1168372751,-115.175757816
+994,HnbkGxUs7oWKYDeB-Pk82Q,48,Espressamente illy,3.5,"Palazzo Waterfall Atrium, 3325 S Las Vegas Boulevard",The Strip,36.1234783899,-115.168578008
+995,hgQOESYp7CF4LnNI90XEiw,48,800 Degrees Neapolitan Pizzeria,3.5,2535 S Las Vegas Blvd,The Strip,36.1423259,-115.1561477
+997,slx9qstc2U2Tc4s7dzbbBg,48,Basil 'n Lime,3.5,"3665 Ft. Apache Rd, Ste 100",Spring Valley,36.1231309,-115.2980291
+998,MNaPOkqm2vKeNG8EqkZWCg,48,Chicago Joe's Restaurant,3.5,820 S 4th St,Downtown,36.1609974,-115.1478836
+1000,DkZnIPTPce-R2uoF-euYyQ,48,DT's Filipino Food,2.5,7320 S Rainbow Blvd,Southwest,36.0553574,-115.2414974
+1002,EdY6q0CO2mlATpoTFkvHAw,48,Dim Sum Cafe,3.5,3700 S Hualapai Way,Spring Valley,36.1217538915,-115.314392948
+1003,oWD385Ues-RWJmhP_Riz1g,48,Griddlecakes,3.5,9480 S Eastern Ave,,36.017362,-115.117046
+1004,33Tr0eRki1Yamzleu4GMdw,48,Rosallie,4.5,6090 S Rainbow Blvd,Spring Valley,36.078087,-115.2421383
+1005,2hyciWHsqnbqdEkUvO3KuQ,48,Little Crown & Anchor Pub,3.5,4755 Spring Mountain Rd,Chinatown,36.126151,-115.205974
+1006,59YbAeuiz0isJtRNKATTKw,48,Bacon Bar,3.5,3520 N Rancho Dr,Northwest,36.2234643,-115.2173158
+1008,YVd2yYNjpiFg2s4ToMRmPA,48,Cinnaholic,4.5,"4165 S Grand Canyon Dr, Ste 103",Spring Valley,36.114000098,-115.30861446
+1009,dZB5VuI4mCVRz8qQUwUgCg,48,Krazy Sushi,4.0,"7160 N Durango Dr, Ste 140",Centennial,36.2915046,-115.2871207
+1011,rjZ0L-P1SRLJfiK5epnjYg,48,San Gennaro Feast,2.5,628 W Craig Rd,,36.2412893,-115.1495796
+1012,h5a8aJ_Pd71JzUGFA-IaAg,48,Thai BBQ,3.5,4180 S Jones Blvd,,36.1129254,-115.2243713
+1014,PgQZfKQwW6Q9fIvViD7Xrg,48,Jason's Deli,3.5,1000 S Rampart Blvd,Westside,36.1604696,-115.2898892
+1015,tWhEnh77yHXDU3fQB3wiRA,47,TGI Fridays,2.5,4500 W Tropicana Ave,,36.1045348,-115.2015974
+1017,m51uL1LZhKYf2y_yG4NEng,47,Pho 87,3.5,3620 S Jones Blvd,Chinatown,36.1233694,-115.2246118
+1019,XDYCIRENiT2doRZgwNJ3SA,47,Pepe's Tacos,2.5,"4190 S Rainbow Blvd, Ste 1",Spring Valley,36.1125455098,-115.242615242
+1020,E0OKctOhZpUQgwUUBc_RwA,47,The Habit Burger Grill,4.0,"4830 Blue Diamond Rd, Ste 130",Southwest,36.0334485,-115.2070141
+1021,MDVbJicJvqaO4WGx0vEabQ,47,Chili's,3.0,7530 S Las Vegas Blvd,Southeast,36.0528727,-115.171438
+1022,LtO6vTBfYzlgWArn3kRe_A,47,Tacos El Gordo,4.0,3260 Losee Rd,,36.2186522367,-115.125405192
+1023,AXyptrkdFAkZ608lOFIJYA,47,Jun's Korean,4.0,"445 W Craig Rd, Ste 110",,36.238979,-115.1466822
+1025,uuGlYAIvYAX1q1KhpY6dtA,47,Brand Steakhouse,4.0,3770 Las Vegas Blvd S,The Strip,36.1047801463,-115.17492681
+1026,hgeXEGD9lRX4ohj7afSJnw,47,Thai Style Noodle House,3.5,"7377 S Jones Blvd, Ste 113-114",Southwest,36.0555646163,-115.225874918
+1027,Md6895ZtS3FA8a0pUaH6nw,47,America,3.0,3790 Las Vegas Blvd S,The Strip,36.102003,-115.175161
+1028,C1jQ5CbszJkS_cyWgaRVGQ,47,Swish,3.5,"7875 W Sahara Ave, Ste 105",Westside,36.1432598597,-115.262751058
+1029,GZONBn0K1yp2aaD-l8debQ,47,B&B Burger & Beer,3.0,3355 Las Vegas Blvd S,The Strip,36.122727,-115.170355
+1031,3fPIRTnBhd81MixgS9YoMQ,47,California Pizza Kitchen,3.5,"3200 Las Vegas Blvd, Sp 1590",The Strip,36.1275120047,-115.173562127
+1032,j00iBr6uYnwgFs_J5y9f0w,47,Rocco's NY Pizza,3.5,6970 S Rainbow Blvd,Spring Valley,36.064201,-115.241566
+1034,1CR2ddUcjYYwRd5JLtiRrw,47,Hard Rock Cafe,3.5,3771 Las Vegas Boulevard South,The Strip,36.104192,-115.172249
+1035,inuW6Gl02Mf8G5RRk39_lw,47,Chada Street,4.0,3839 Spring Mountain Rd,Chinatown,36.1261759,-115.1909378
+1036,01VPJkcU0m8WzlA7dCEpVQ,47,Tea Space,4.5,"3466 S Decatur Blvd, Ste E",Chinatown,36.1267709351,-115.207615909
+1037,8Yz1eFsaUy-ny3B6YZDOrg,46,Outback Steakhouse,3.5,7380 Las Vegas Blvd S,Southeast,36.0557884597,-115.171590209
+1038,3rj1qpgFvkRWtAka17mhEQ,46,Mimi's Cafe,3.0,6760 N Durango Dr,Centennial,36.2828691328,-115.287154801
+1039,0gTTGuA6uEmMhLhfJi0hqA,46,Sammy's Woodfired Pizza and Grill,3.5,"9516 W Flamingo Rd, Ste 100",Spring Valley,36.1157984,-115.2996569
+1040,tro-hrljuY1cUAVFYauTlQ,46,In-N-Out Burger,4.5,4705 S Maryland Pkwy,University,36.1041636,-115.1375999
+1042,WCFz9KVJTtIXSVvD5NMYoQ,46,Chart House,4.0,129 E Fremont St,Downtown,36.1705951255,-115.144464483
+1043,Ki8seQY5mtXc36xjoMfeDA,46,Flour & Barley,3.5,3545 Las Vegas Blvd S,The Strip,36.1173789902,-115.171619504
+1044,b1WGIdd_oSwGYZtC769Shw,46,Rachel's Kitchen,4.0,"7010 N Durango Dr, Ste 140",Centennial,36.2884223309,-115.286549547
+1045,C2T7ecxqsVu99PhSqT3c3g,46,PDQ,4.5,3737 W Craig Rd,,36.2388817213,-115.190002054
+1046,dYMhfzyZyklXELmYq_wfKg,46,Flavors The Buffet,3.0,3475 Las Vegas Blvd S,The Strip,36.1199282584,-115.172435045
+1047,5xdKUuu4DbJ71KGbwRXfFg,46,Ramen KoBo,4.0,7040 S Durango Dr,Spring Valley,36.0604653687,-115.278748578
+1048,r8hF3kwnZzxTo1IYNcI6rg,46,El Sombrero Mexican Bistro,4.0,807 S Main St,Downtown,36.1627231,-115.1512318
+1050,95CCHowiE0W_ovv5-9lQAQ,46,Fat Boy,4.5,"4425 Stewart St, Ste 107",Sunrise,36.1670439,-115.0801061
+1051,Q5sn7sP6v_lk3pxn0xVIlA,46,Five Guys Burgers and Fries,4.0,7580 S Las Vegas Blvd,Southeast,36.051991,-115.17155
+1052,dn51F67VLgPuqy_8SFk9oA,46,Ellis Island Cafe,3.5,4178 Koval Ln,Eastside,36.1130255,-115.1634847
+1054,qFZ7ReYNpjHuvSxOqXqHMg,46,Sumo Sushi 2,3.5,"8795 W Warm Springs Rd, Ste 106",Southwest,36.0552082103,-115.283305654
+1055,W7DwXa_7LNmETFHSQJZ2Lg,46,Sushi Mon,3.5,"8320 W Sahara Ave, Ste 180",Westside,36.1446660205,-115.272705995
+1056,lokPfoken16iTeAJ2PAwmQ,46,Feast Buffet,2.5,4949 N Rancho Dr,Northwest,36.2498922,-115.2441383
+1057,viji5rHhNlsy9w-JmUhyaw,46,Olive Garden Italian Restaurant,3.5,1361 S. Decatur Blvd,Westside,36.1548474,-115.2073392
+1058,qVbZ_VrZEGJKJg9ZpkGzjw,45,Dog Haus,4.5,4480 Paradise Rd,Eastside,36.108898,-115.151261
+1060,mnU3iGsL55MCWXiWV3AcAQ,45,In-N-Out Burger,4.5,5690 Centennial Center Blvd,Centennial,36.2652651,-115.2570317
+1061,atVh8viqTj-sqDJ35tAYVg,45,Beach Cafe,3.5,7750 S Jones Blvd,Southwest,36.0484755,-115.2243771
+1062,2Y0-nrSZNsLRStyupZgM7g,45,Courtyard Cafe,3.0,"The Orleans Hotel and Casino, 4500 W Tropicana Ave",,36.1021857409,-115.201499462
+1063,uDeycmwCy26ALJHeG3SsEA,45,Buffalo Wild Wings,3.0,"6640 N. Durango Dr, Ste 110",Centennial,36.2812317365,-115.286151141
+1064,kwLlQn95rqiqvmM4Yc2hIg,45,Roberto's Taco Shop,3.5,4845 S Fort Apache,Spring Valley,36.1017836,-115.297884
+1066,JhRxDdmZSGDG_u7cGxaYrw,45,California Pizza Kitchen,3.5,10945 Oval Park Dr,South Summerlin,36.151822,-115.331999
+1068,jG0m1-899xwYY3IXpTRRCQ,45,Baja Bar & Grill,4.5,4755 S Maryland Pkwy,University,36.1034389,-115.1377629
+1069,VUtazCTIc0aoOrQprP_s-Q,45,Toby Keith's I Love This Bar & Grill,3.0,3475 S Las Vegas Blvd,The Strip,36.1189978367,-115.170383135
+1070,eDdhZZBHEi-TRWQ2xhRI5g,45,Kaizen Fusion Roll & Sushi,4.0,"2760 Deer Springs Way, Ste 101",,36.2842149358,-115.178746123
+1071,yy7pPm_QGVRm6exD__Htug,45,India Masala Bar & Grill,4.0,1040 E Flamingo Rd,Eastside,36.115142,-115.141869
+1072,41b2SLmjLcxTGLVRxASiDA,45,Country Club,4.0,3131 Las Vegas Blvd S,,36.1264229683,-115.163536543
+1073,0jtRI7hVMpQHpUVtUy4ITw,45,Omelet House Summerlin,4.0,2227 N Rampart Blvd,Summerlin,36.2004667,-115.2818777
+1074,zdcesxBdjljRgS0QmCgkBg,45,Harrie's Bagelmania,4.0,"855 E Twain Ave, Ste 120",Eastside,36.1214158072,-115.144945065
+1075,pi4FLFEOn9AhNUxiLbBeHg,44,Hawaiian Style Poke,4.0,3524 Wynn Rd,Chinatown,36.1255480744,-115.194485875
+1076,_8yxceldCT7oe0wJC-yDPA,44,Benjarong Authentic Thai Cuisine,3.5,"7425 S Durango Dr, Ste 101",Southwest,36.0533813,-115.2795528
+1077,QMKgn9p_hRUlumBDAAfWlA,44,Cutting Board Filipino Gastropub,4.0,2131 Rock Springs Dr,,36.1977329861,-115.247068852
+1078,NQXuoB9JTPUItHvouMgWjQ,44,Violette's Vegan,4.0,"8560 W Desert Inn Rd, Ste D5",Westside,36.1300289,-115.2777727
+1079,Dxaz8OxaadecnWol18kAtw,44,Yellowtail,3.5,"Bellagio Las Vegas, 3600 S Las Vegas Blvd",The Strip,36.11199,-115.177001
+1081,KTjfQxsQDKWP0dWXBCyXuA,44,Famous Dave's Barbeque,3.5,2630 E Craig Rd,,36.2406450132,-115.113831313
+1082,Ehy00JWQixgoXzisVKhvag,44,Cucina,4.0,3720 S Las Vegas Blvd,The Strip,36.107676716,-115.17506169
+1083,6fPQJq4f_yiq1NHn0fd11Q,44,La Creperie,3.5,3655 Las Vegas Blvd S,The Strip,36.1125266402,-115.171351433
+1084,MX2OYa2sS5ys_6AiK-gs3A,44,Pho Sing Sing,4.0,3409 S Jones Blvd,Chinatown,36.1265774,-115.2259262
+1086,1SCETxRnwaYo2aBC3fi4SA,44,PDQ Las Vegas: Sahara,4.5,3010 W Sahara Ave,Westside,36.1444632,-115.182113
+1088,5JjGTaZkHbbjBrzBODcsAQ,44,Daisho Sushi,4.0,7435 S Eastern Ave,Southeast,36.055832,-115.120023
+1089,DHUAQ4pzH9KKzGZDm1jZLg,44,Krispy Kreme Doughnuts,3.0,7015 W Spring Mountain Rd,Chinatown,36.1252910295,-115.245750385
+1090,1CP8aJa8ILlfM5deroar0Q,44,Wingstop,3.5,5045 W Tropicana Ave,,36.1002514,-115.2098938
+1091,bMZBkFrTI6uSYQB6XYnvnw,44,Fogo de Chão Brazilian Steakhouse,4.0,"10975 Oval Park Dr, Ste D201",South Summerlin,36.1518113,-115.332395
+1093,BOMgSyi4-TYAnjVn3m0z3A,44,24 Seven Cafe,3.0,"Palms Casino, 4321 W Flamingo Rd",,36.115317,-115.19723
+1094,fpM-O9Ul62xizBq9YNO_tQ,43,Romano's Macaroni Grill,3.0,2001 N Rainbow Blvd,,36.1981346604,-115.242432917
+1095,fTtkz2RhWNAp6jKiIzXf_A,43,Capriotti's Sandwich Shop,4.0,322 W. Sahara,The Strip,36.1441292,-115.1614606
+1096,77h11eWv6HKJAgojLx8G4w,43,Eggslut,4.0,3708 Las Vegas Blvd S,The Strip,36.110118,-115.174364
+1097,Xs5MqC7-g0vc4nmWDtRZoQ,43,Northside Nathan's Pizza,3.5,"7531 W Lake Mead Blvd, Ste 300",,36.1956158,-115.2582758
+1099,zjvnqTjBp56NhMp1GrlO5g,43,Mingo Kitchen & Lounge,4.0,"1017 S 1st St, Ste 180",Downtown,36.1598867,-115.1520224
+1100,Lau3N654yNyWdIIybea1uA,43,Il Fornaio,3.5,"New York-New York Hotel and Casino, 3790 Las Vegas Blvd. Ste 13",The Strip,36.1285956625,-115.171172715
+1101,Z3ZSar8IVAR2qIupqxMynA,43,Joe's New York Pizza,3.5,4480 Paradise Rd,Eastside,36.108898,-115.151261
+1103,VzUo-RURV3VnfNItAYM8yg,43,Boba Hut,4.0,"5597 S Rainbow Blvd, Ste 130",Spring Valley,36.087483,-115.243782
+1105,2LNnIARy-lGmrlEMZSxZ1w,43,Great Buns Bakery,4.5,3270 E Tropicana Ave,Eastside,36.100745,-115.103546
+1106,rt-aQTkNfILbxBuATdJ1dA,43,American Coney Island Chili Dogs,3.5,301 Fremont St,Downtown,36.169971,-115.1427714
+1108,mwE5uNVkxCXvEuVa1KQ_3g,43,Distill - A Local Bar,4.0,4830 W Pyle Ave,Southwest,36.006571,-115.20638
+1110,D1czdOwjbkIWbXHqphwvXA,43,EllaEm's Soul Food,4.0,"775 W Craig Rd, Ste 146",,36.2379284,-115.1523061
+1111,ngs16C2M_uTq2zXamltHVw,42,Jessie Rae's BBQ,4.5,5611 S Valley View Blvd,,36.0878609,-115.190509
+1112,X11JfeIVH9d6qMrDqA-N7A,42,Scooter's Pub,3.5,6200 S Rainbow Blvd,Spring Valley,36.0758928,-115.2421223
+1113,-FNquqGseSCVMWo7KbK-Tg,42,Chipotle Mexican Grill,3.5,4530 S Maryland Pkwy,University,36.1070796309,-115.137064488
+1114,q3oJ6bNRV3OoJrwc95GOwg,42,Dirt Dog,4.5,"8390 S Rainbow Blvd, Ste 100",Southwest,36.0360346,-115.2429957
+1115,B3omTXI--0eiBC7nCv_WXg,42,Farm Basket,4.0,6148 W Charleston Blvd,Westside,36.1594218,-115.2250915
+1116,g8oxQ1Ji9mr9PMjhEfaWSg,42,Dick's Last Resort,3.0,"Excalibur Hotel And Casino, 3850 Las Vegas Blvd S",The Strip,36.0994443035,-115.175468487
+1117,iAu8s96GKQ73Xe7j_2GyCQ,42,Jackson's Bar & Grill,4.5,6020 W Flamingo Rd,,36.1153219,-115.2235825
+1119,p45zoSxaX9FC6JBoyw6DKg,42,Steiner's Nevada Style Pub,3.5,"1750 N Buffalo Dr, Ste 115",,36.1906225,-115.2588414
+1121,64o_nYvzIKwHFOSYSEm-qw,42,Joe's New York Pizza,3.5,7580 S Las Vegas Blvd,Southeast,36.051991,-115.17155
+1123,Yqgyx8SJ5SqFYc-4yH6Z1g,42,Bund Shanghai,3.5,"3545 S Decatur Blvd, Ste A",Chinatown,36.125505139,-115.208690655
+1124,vDhifJNAtVFGjqJM5hFQkg,42,Texas Station Gambling Hall & Hotel,3.0,2101 Texas Star Ln,,36.1977963,-115.1918552
+1125,QUxzvPrcWSXCKtYcneXIVA,42,Rubio's,4.0,"7290 W Lake Mead Blvd, Ste 3",,36.1964872432,-115.250543237
+1126,aS1qJzTGyluRT2tJ09Jbaw,42,Magal BBQ,4.5,4240 Spring Mountain Rd,Chinatown,36.1267040432,-115.196824031
+1127,foQZ6guS0l49trURKh7vlA,42,Double Barrel Roadhouse,3.5,3770 Las Vegas Blvd S,The Strip,36.1050697031,-115.173327791
+1128,ppHkkuDvvH8g1Enz6F8OJA,42,Divine Eatery,4.0,"7181 N Hualapai Way, Ste 115",Centennial,36.2914570873,-115.315807327
+1129,YUE5S4ReiM4dq9qkKbDMwg,42,Joes Crab Shack,3.0,1991 N Rainbow Blvd,,36.1952740767,-115.242623091
+1130,pUUgVNS5nBSoCJsBa3fDGw,42,The Sushi,3.5,8427 W Lake Mead Blvd,Summerlin,36.1979599,-115.2793996
+1131,2I_qSTehoUFsDNjaqCVxlA,42,Cafe Moda,3.0,3400 S Jones Blvd,Chinatown,36.1273078,-115.2243612
+1132,A7jbtXYFAZhErOW7xIQinA,42,Mother's Korean Grill,3.0,4215 Spring Mountain Rd,Chinatown,36.1253808,-115.1959803
+1133,YRiQtFNteLUUEiGkdQ23vg,42,All-American Bar & Grille,3.0,3700 W Flamingo Rd,,36.173891447,-115.136389
+1134,IWN2heYitkg-D4UdqfxcMA,42,HEXX kitchen + bar,4.0,"Paris Las Vegas, 3655 Las Vegas Blvd S",The Strip,36.11289,-115.171282
+1135,oJZNHz5UUVUgrZwVBVlpYw,42,Petrossian Bar,4.0,3600 S Las Vegas Blvd,The Strip,36.1128473337,-115.175814629
+1136,SEMvJDVnDB4NoPW6tXXO_Q,42,Goong Korean BBQ Restaurant,4.5,7729 S Rainbow Blvd,Southwest,36.0478201687,-115.244066014
+1137,2XkVexeY_8zyc9nriSElQg,41,Taco Tijuana,4.0,2554 E Tropicana Ave,Southeast,36.1002088852,-115.115144935
+1138,TqUVH7Ox_3qEkCxCCS_l3Q,41,The Prime Rib Loft,3.5,"The Orleans, 4500 W Tropicana Ave",,36.1027192,-115.201984
+1140,-sN_og_84rLW22CaE3cjVw,41,Full House BBQ,4.0,"9890 S Maryland Pkwy, Unit D19",Southeast,36.0100493007,-115.135391635
+1141,AA3gAf3qlH6GY9Uw06wUFg,41,TGI Fridays,2.5,7300 Aliante Pkwy,,36.2925070679,-115.180848204
+1142,mswelTP1cQiuAps2fSGuBw,41,Farmer Boys,3.5,5955 S Eastern Ave,Southeast,36.0813050356,-115.119292438
+1143,CZF9Nm8CFY2R9ZhfwYIARQ,41,Giuseppe's Bar & Grille,3.5,6065 S Durango Dr,Spring Valley,36.078642,-115.279971
+1145,3ZHyw0d8mk0HOEP7v4fW1A,41,Krung Thai Restaurant,4.0,4130 S Decatur Blvd,,36.1145279,-115.2076743
+1147,AoGCnRtwifZ2gTGHtg8KTw,41,Tokyo Sushi House,3.0,"10040 W Cheyenne Ave, Ste 150",Northwest,36.2188899971,-115.314227343
+1148,XsSgv3vBOyOBXn3Co8EVIg,41,Q Bistro,4.5,"3400 S Jones Blvd, Ste 12",Chinatown,36.1277487,-115.2248077
+1150,H5Y6o9H4rtxbHJFgLqI6Fw,41,Chili's,3.0,2011 N Rainbow Blvd,,36.198756,-115.2425637
+1151,sB1lPLICz4nrOuuqgLv50A,41,Morton's The Steakhouse,4.0,400 E Flamingo Rd,Eastside,36.114686,-115.1531337
+1153,nTc-Qj_-ABZrpM9YSpJ6jA,41,Chow King,3.0,3890 S Maryland Pkwy,Eastside,36.1182191,-115.1357269
+1154,F6p_k-Q6W_kkAb-s_a0Omw,41,Crazy Pita Rotisserie & Grill,4.0,"Town Square, 6587 S Las Vegas Blvd, Ste 190",Southeast,36.0695796848,-115.178412198
+1155,OPSNdO3LNPMt7qz1MNb42g,41,Urban Turban,4.0,"3900 Paradise Rd, Ste G",Eastside,36.1186973,-115.1542695
+1157,VbEK6-etnKKaPamrG2jWjQ,41,Haute Doggery,3.0,"3545 Las Vegas Blvd, Ste L-30",The Strip,36.1173225,-115.1715632
+1158,CvpXZRF-I7wfm19dW1jOXA,41,Mark Rich's New York Pizza & Pasta,3.0,11710 W Charleston Blvd,Summerlin,36.159290697,-115.350952173
+1159,oDNfrdvMV2Fq0R6vd2XwNw,41,Koi Restaurant,3.5,"Planet Hollywood Las Vegas Resort & Casino, 3667 Las Vegas Blvd S",The Strip,36.1096948,-115.1701624
+1161,5VeKrLlQdJjMmKGwBBvMmw,41,Yanni's Gyros,4.0,9770 S Maryland Pkwy,Southeast,36.0119106,-115.1361159
+1162,QYuojrlW94mpEwnp0uUIWA,41,La Parrilla The Lab,4.0,"2585 E Flamingo Rd, Ste 16",Eastside,36.1141160102,-115.114932843
+1163,xk-fOf_M39kDTgzfVgu0Tw,41,Rachel's Kitchen,4.0,"150 Las Vegas Blvd N, Ste 160",Downtown,36.169872,-115.139516
+1165,6PqYwabO2g1r2ZB7eImOiw,41,Olive Garden Italian Restaurant,3.5,6850 W. Cheyenne Ave.,Northwest,36.2187843,-115.2444229
+1167,zY6f_cFY8HTI3hLlJj3SOg,41,Sabatino's Authentic NY Pizzeria,3.5,7660 W Cheyenne Ave,Northwest,36.219133,-115.262282
+1169,YILyHegzhy1vlc_LNVfObw,41,Bottiglia Cucina & Enoteca,4.5,2300 Paseo Verde Pkwy,Anthem,36.020696,-115.0901928
+1171,BSDKbSLFO3CP-uhfcuUCkA,41,Dave & Buster's,2.5,"2130 Park Centre Dr, Ste 100",South Summerlin,36.1486189,-115.332454
+1172,6V_7ldr9tjmet0BdAnC34A,41,Tournament of Kings,4.0,"Excalibur Hotel And Casino, 3850 Las Vegas Blvd S",The Strip,36.099351,-115.175441
+1174,WlBvw6R1Qe2yIaZp-2ilZA,40,Toros Cantina & Gaming,3.5,11760 W Charleston Blvd,Summerlin,36.1594832749,-115.351678374
+1175,fUKi8LlQhzsGntuZjfvLWg,40,Rice Republic,3.0,2120 Festival Plaza Dr,South Summerlin,36.1493562,-115.3332506
+1176,6ANVuBMmpkXpFd5Hzkn4_Q,40,Red 8,3.5,3131 Las Vegas Blvd S,The Strip,36.1257833505,-115.165968373
+1177,UcIrRf2mWgqqlg-HNoDl0A,40,China One,3.5,"7080 N Durango Dr, Ste 130",Centennial,36.2896761296,-115.285823997
+1178,g9IeZKQl0TamGI8772vYAQ,40,Jimmy John's,3.5,"5463 S Rainbow Blvd, B-3",Spring Valley,36.0898001,-115.2432143
+1179,grlL6zmHBOer9rPycsRhBA,40,Bocho Sushi,4.5,124 S 6th St,Downtown,36.1679398,-115.1404681
+1181,gBy6UXTpoSHhW6qd15XU0g,40,Lakes Lounge,4.0,2920 Lake East Dr,The Lakes,36.1384195034,-115.284254123
+1182,c5TOGBUCCUUNBPM7h_KbmQ,40,Fausto's Mexican Grill,4.0,7835 S Rainbow Blvd,Southwest,36.0460189434,-115.244014487
+1183,2YBO1LEKIgyle0uX50u15Q,40,Noodle Exchange,3.5,"Gold Coast, 4000 W Flamingo Rd",,36.1163540204,-115.192880854
+1184,LZSyWy4IHgXg6QhW2jrBlw,40,Romano's Macaroni Grill,3.0,2400 W. Sahara Ave.,,36.1447171,-115.175034
+1186,iX2c4IzH_L5F6FM5GD3SUQ,39,Tasty Crepes,5.0,4845 S Fort Apache Rd,Spring Valley,36.101689985,-115.29815026
+1187,DKXUkIrFnMUMF535gf-dPA,39,Frijoles & Frescas Grilled Tacos,4.5,4811 S Rainbow Blvd,Spring Valley,36.10100467,-115.243461022
+1188,WXSsJIO_uGGSxS9qC8x1gQ,39,The Protein Source,4.0,"4220 S Grand Canyon Dr, Ste 8",Spring Valley,36.1131435,-115.3060615
+1189,ZXfMiPsPv-cH7GMQ-5-mhA,39,Montana Meat Company,3.5,6371 Centennial Center Bl,Centennial,36.2739112,-115.2692364
+1191,Wbi-x-1Nbn6LFCMOSN6F5Q,39,Cafe Rio,2.5,6575 N Decatur Blvd,Centennial,36.2794672,-115.2080128
+1192,JJAwT9R6Fp2yyWHtWFA8uQ,39,Sushi Way,4.5,"3900 Paradise Rd, Ste B",Eastside,36.118841,-115.154483
+1194,EWbNTPW0co_X4lZRB-QTLQ,39,Ocha Thai Cuisine,4.0,1201 Las Vegas Blvd S,Downtown,36.1566896,-115.148347
+1195,oN_A87dyVD2FBk7coLnhCg,39,Chile Verde Express Mexican Grill,4.5,"Choice Gas Station, 8095 S Rainbow Blvd",Southwest,36.0418375,-115.2441863
+1196,Qor28v4BlhSwtN8DSvah9g,39,Pepe's Tacos,3.5,1401 N Decatur Blvd,,36.18557,-115.207581
+1197,NaZVUOzqk5b-l0mlki-9Og,39,Chun Fai Chinese Eatery,3.5,"6565 S Fort Apache Rd, Ste 175",Spring Valley,36.0689682903,-115.298683822
+1198,aYfHXWNjLNUVoQa5CMA2jg,39,The Juice Standard,4.5,"4555 S Ft Apache Rd, Ste 144",Spring Valley,36.1065041,-115.2979412
+1199,9U4Tqt5SkZKQ6eeH6IPSxQ,39,Ohjah Japanese Steakhouse,4.5,"2051 N Rainbow Blvd, Ste 102",,36.1987541,-115.2427914
+1200,B0Vm2tge4I2JJlZhD4sl0Q,39,35 Steaks + Martinis,4.0,"Hard Rock Hotel & Casino, 4455 Paradise Rd",Eastside,36.1102226,-115.155311
+1201,S5FTckOpSK0_Ma4c18ZEgg,39,Wo Fat,3.5,"3700 E Desert Inn Rd, Ste 1",Eastside,36.1299291,-115.0936019
+1203,XwJ6fZRVbxQYRsryy4-qDw,39,Urban Crawfish Station,4.5,"4821 Spring Mountains Rd, Ste C",Chinatown,36.1249038512,-115.207247559
+1204,7EZ4Eu7YJ1ltRCC5jXFJrQ,39,The Buffet At TI,2.5,3300 S Las Vegas Blvd,The Strip,36.124829,-115.171991
+1206,H_FkQxifSo13B2FWjhp36g,39,Otto Enoteca Pizzeria,3.5,"The Venetian, 3355 Las Vegas Blvd S",The Strip,36.1229174,-115.1685253
+1207,aGDo7GDN5YLvpYykpSLkbw,39,Florida Cafe Cuban Bar & Grill,3.5,"Shalimar Hotel/ Parquin & Restaurant, 1401 Las Vegas Blvd S",Downtown,36.155323,-115.149618
+1209,QmVF3KJ07PsdroCFwOC_Ow,39,Chao Thai Restaurant,4.0,"4550 S Maryland Pkwy, Ste 23",University,36.1067926,-115.1364723
+1210,IU55VgrpLzVKo9sXWbTn3Q,38,Five Guys Burgers and Fries,3.5,2520 E Craig Rd,,36.2404520716,-115.116339292
+1211,uh7DUWtPoZkuEE05fghJ_w,38,Beauty & Essex,4.0,3708 S Las Vegas Blvd,The Strip,36.1099345,-115.1754157
+1213,2pV-BNJvTL3f3EiMZlv6_w,38,Geisha House Steak & Sushi,3.5,"6572 N Decatur Blvd, Ste 150",,36.279651,-115.206043
+1214,bKbYRUZKDYonSPOjzchJJg,38,Veggie Delight,4.0,3504 Wynn Rd,Chinatown,36.1260132,-115.1944708
+1216,vLkKorA1gPS97Zj0_WKA0Q,38,Twist by Pierre Gagnaire,4.0,"Mandarin Oriental, 3752 Las Vegas Blvd S",The Strip,36.1038631057,-115.173755046
+1217,sUMi2q41l4AzOsmJMRY8zQ,38,Del Mar Deli,3.5,9777 Las Vegas Blvd S,Southeast,36.0115411891,-115.175896473
+1218,TspQ9jCczz436RiJHJQYZw,38,Fresh Kabob,4.0,"1405 E Sunset Rd, Ste 130",Southeast,36.0714626826,-115.1341723
+1219,YYE0C8FeDpB6zqB0kSEh7w,38,Chile Addiction,4.0,"4235 S Fort Apache Rd, Ste 260",Spring Valley,36.1125835074,-115.298321231
+1220,9d36_PI9Fh7kZ-Pybr2QiA,38,The Olive Mediterranean Grill,4.0,"3850 E Sunset Rd, Ste D",Southeast,36.0718439856,-115.090392342
+1221,ZCQa7CJxZ-53Zxd_pobWug,38,Le Cafe Ile St. Louis,3.0,3655 Las Vegas Blvd S,The Strip,36.112544,-115.170981
+1223,etid3CozFvEOFcvDwHXsDw,38,Harvest by Roy Ellamar,4.0,3600 S Las Vegas Blvd,The Strip,36.112584716,-115.174618512
+1224,TrN8HBHBL4-Tu7cXMDoopQ,38,Golden Flower Chinese Cuisine,4.0,3315 E Russell Rd,Southeast,36.0856861,-115.1037793
+1225,5iSlHNIy3RLbCP5AayB31g,38,Ruby Tuesday,3.5,865 West Craig Road,,36.2388340919,-115.154006492
+1226,hubbaEcYPYEZu5Ziz6i0lw,38,Mantra Masala,3.5,"8530 W Warm Springs Rd, Ste 101",Southwest,36.0563527,-115.2773493
+1227,xmWs-su5eB5_57CIw4sqfw,38,Gina's Bistro,4.5,4226 S Durango Dr,Spring Valley,36.1128802,-115.2786224
+1228,UK2Onb024Azao0DrTHSvhg,38,Yanni's Greek Grill,4.5,"9620 S Las Vegas Blvd, Ste E-7",Southeast,36.0148375673,-115.171262962
+1229,01Ov9eDxKRY5k6ImMdiWLQ,38,Hong Kong Garden Seafood & BBQ Cafe,3.0,3407 S Jones Blvd,Chinatown,36.1271853,-115.2250113
+1230,Ch3HkwQYv1YKw_FO06vBWA,38,P.F. Chang's,3.5,4165 S Paradise Rd,Eastside,36.113548,-115.1538906
+1231,4KmrrhtfnngTVFa2d5LAjg,38,Allegro,3.5,3131 Las Vegas Blvd S,The Strip,36.127858,-115.165969
+1232,1SE9f6TEV5XhnTuuK01xwA,38,Wingstop,3.0,3910 S Maryland Pkwy,Eastside,36.1179083858,-115.137138704
+1233,6qKjl6xJQzLb9ka-QbTudA,38,Las Cazuelas,4.5,"9711 S Eastern Ave, Ste H-8",Southeast,36.0123098,-115.1189623
+1235,dk1MV0MP32Xq-iBxzewl0A,37,Tropical Smoothie Cafe,2.0,4165 S Grand Canyon Dr,Spring Valley,36.1141241,-115.3087109
+1236,FykLjv4tIq618q8F2pvTKg,37,Krazy Buffet,3.0,3131 N Rainbow Blvd,Northwest,36.2174113,-115.2427036
+1238,ZJ0gQp0fcnIDiZv0m9--Gg,37,Angara Indian Spice Grill,4.5,"4165 S Grand Canyon Dr, Ste 105",Spring Valley,36.1140628006,-115.308651882
+1239,cghHesD2NXV5yUu-ZAxE2g,37,Lumberjacks,3.0,965 W Craig Rd,,36.2389291,-115.1556685
+1240,HWl2EbZhkhAkFgqt44yUkA,37,Señor Frog's,2.5,3300 S Las Vegas Blvd,The Strip,36.1247576879,-115.170617441
+1241,H_eO04NZAQIDcbtFQ4BUag,37,Bobo China,4.5,8465 W Sahara Ave,Westside,36.1429966,-115.2761063
+1243,H8umkLwMkM0vP5B8oPiozQ,37,Sundance Grill,3.0,"Silverton Casino Hotel, 3333 Blue Diamond Rd",Southwest,36.0420620086,-115.183415054
+1244,IRbgMt0cVuzK1KSppU16_Q,37,Andrea's,4.0,3131 Las Vegas Blvd S,The Strip,36.1260222006,-115.166711078
+1245,F2HKV9oJhnIKQ-M4Gt4Ftg,37,Voodoo Wing Company,4.0,6728 W Cheyenne Ave,Northwest,36.2185398,-115.2431106
+1246,Cpb142L849ilMzgiSR4a0w,37,Tina's Filipino Cuisine,4.0,"7720 S Jones Blvd, Ste 105",Southwest,36.048884235,-115.224469189
+1247,w5LUtmw4G1KD7qAntqGd9w,37,Yoshinoya,3.0,4808 S Maryland Pkwy,University,36.10259,-115.136559
+1248,vGAJwqvfJLoeHdaM-8eRng,37,Chili's,2.5,6505 N Decatur Blvd,Centennial,36.2783709,-115.2069617
+1250,eS76100l3h7Ollb5s3_M4A,37,Mad House Coffee,4.0,8899 S Eastern Ave,Southeast,36.0280675,-115.1189137
+1252,COgwFthJpS4We16W5Gf4lw,37,Pamplemousse Le Restaurant,4.0,400 E Sahara Ave,Downtown,36.144096,-115.152417
+1254,KNTjauGqmib3sG1HWJyKEQ,37,E-Jo Korean Restaurant,4.0,"700 E Sahara Ave, Ste D",Downtown,36.1442771,-115.145359
+1256,ghDNHpqETRJGxG5iUtaZtw,37,Lobster ME,3.5,"Grand Canal Shoppes at The Venetian, 3377 South Las Vegas Blvd",The Strip,36.1215478105,-115.169505741
+1257,4X0KWUPcD2EkHN83aa4cXg,37,Blondies Sports Bar & Grill,2.5,"Planet Hollywood Resort & Casino, 3663 Las Vegas Blvd S",The Strip,36.1105256165,-115.169562361
+1258,e0JOkQYz_cnz91k6X55PLw,37,Sinatra,4.0,3131 Las Vegas Blvd S,The Strip,36.1265953,-115.1653652
+1259,fAo-3jt3oD69nwnr5M6FLQ,36,Wing Lei,3.5,3131 Las Vegas Blvd. South,The Strip,36.1265953,-115.1653652
+1260,1aj4TG0eFq6NaPBKk6bK7Q,36,Jacques Cafe,4.0,"1910 Village Center Cir, Unit One",Summerlin,36.193176,-115.304092
+1261,03icrim6SfEQJlejDMbzsA,36,Pho Saigon,4.0,"6820 Spring Mountain Rd, Ste C111",Chinatown,36.1269027,-115.2411278
+1263,YYU_E5ASIuS6HHUu8Kv-Xg,36,Pho Annie 2,4.5,"5651 S Grand Canyon, Ste 100",Spring Valley,36.0861570412,-115.307519138
+1264,z-OhppazxWfHnUCzFTKQhw,36,Snow White Cafe,4.0,"3400 S Jones Blvd, Ste 3",Chinatown,36.1273078,-115.2243612
+1265,YeYtDdGRonHddnviDc1q7g,36,Teriyaki Boy Healthy Grill,3.5,"9055 S Eastern Ave, Ste 1-B",Southeast,36.0253639,-115.1189835
+1267,LgvgD8JllzVmIdme4OP7Eg,36,Firehouse Subs,4.0,"7290 W Lake Mead Blvd, Ste 100",,36.19644395,-115.250950253
+1268,hT86CbF0p75wKqgAEbWVrA,36,Khun Chai Thai Restaurant,4.0,"3650 S Decatur Blvd, Ste 1",Chinatown,36.1242915571,-115.20783251
+1269,w6zW6gIyg1sI5V6Wag_SYg,36,Teppan Bento,4.5,"467 E Silverado Ranch, Unit 125",Southeast,36.0125177,-115.1526505
+1271,fAlKTsfsUF6A5iujEI2Z1w,36,Off The Strip at the LINQ,4.0,3545 Las Vegas Blvd S,The Strip,36.1177747,-115.1725759
+1272,gOOc6MDdhw7fV0Tf30mfAQ,36,Gritz Cafe,4.5,"1911 Stella Lake, Ste 150",,36.1937713,-115.1647985
+1273,qKn9nynsVYIST8rf6tEFRQ,36,Corner Thai Kitchen,4.0,"9575 W Tropicana Ave, Ste 1",Spring Valley,36.099339,-115.30114
+1275,SDtIdchX9WpKlH5Yst8kjQ,36,Red Rice,4.5,"9400 S Eastern Ave, Ste 106A",Southeast,36.0182434258,-115.118047093
+1276,Uk0_hruW6Ai5Tb47zo7IIQ,36,Spearmint Rhino Las Vegas,3.5,3340 S Highland Dr,,36.1281204,-115.1782481
+1278,ht9Z_l_Eq4vx-SFsltVlaQ,36,L&L Hawaiian Barbecue,3.0,"7320 S Rainbow Blvd, Ste 104",Southwest,36.0553574,-115.2414974
+1280,7P3Z4HTUM8M8Y9Yw3cc7Pg,36,Tipsy Coffee House,4.0,"6496 Medical Center St, Ste 102",Spring Valley,36.0707521,-115.2919191
+1281,esBRj9uPRzwxaW4Lz1XGLA,36,Oyster Bar,4.0,3475 S Las Vegas Blvd,The Strip,36.1193098,-115.1717702
+1282,0Hcks5q-DgJbDlmEWolx4A,36,Bonefish Grill,3.5,8701 W Charleston Blvd,Westside,36.158503,-115.285177
+1283,TUrQG_XfJA_kCOSN0oUbTQ,36,Smashburger,3.5,"7390 Las Vegas Blvd, Ste 100",Southeast,36.0552452,-115.1723424
+1284,sSmt7JFTDNCcK1KfMVO2hw,36,Mickie Finnz,2.5,"425 Fremont St, Ste 120",Downtown,36.1689181,-115.1415925
+1285,U9nXdynQ2YR5xYx8tM3S7w,36,TGI Fridays,2.5,4570 W Sahara Ave,Westside,36.1448864,-115.20233
+1286,Ta4GRuHyZvU5H_l5IAG1PQ,36,Nanay Gloria's,3.5,"5980 W Spring Mountain Rd, Ste 2",Chinatown,36.125541,-115.223274
+1287,6bU4NFkXbdbvnQBDa9-nfQ,36,Fiesta Filipina Cuisine,3.5,"3310 S Jones Blvd, Ste A",Westside,36.1286028,-115.2242459
