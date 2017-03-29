@@ -400,7 +400,7 @@ def showteams(li):
 
 
 
-    toy = pd.read_csv('2017-03-26preds.csv')
+    toy = pd.read_csv('2017-03-29preds.csv')
 
     ignoreplayers = [''] + list(
         roto1.today[~roto1.today['GTime(ET)'].isin(li)]['First  Last'])  # +list(injury.PLAYER)  \
@@ -415,7 +415,7 @@ def showteams(li):
         pf = toy.iloc[row]['POSITION:4']
         c = toy.iloc[row]['POSITION:5']
         salary = int(toy.iloc[row]['DK Sal'])
-        points = float(toy.iloc[row]['0'])
+        points = float(toy.iloc[row]['PREDS'])
         player = Player(pg, sg, sf, pf, c, name, salary, points)
         players.append(player)
 
