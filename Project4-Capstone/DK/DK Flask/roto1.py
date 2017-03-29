@@ -33,5 +33,5 @@ teamAbbrchange = lambda x: x.replace('atl', u'ATL').replace('bkn', u'BKN').repla
             u'TOR').replace('uta', u'UTA').replace('was', u'WAS')
 roto1['First  Last'] = roto1['First  Last'].apply(namechange)
 
-today = roto1[roto1.Date == pd.to_datetime('2017-03-26')][['First  Last','GTime(ET)']]
+today = roto1[roto1.Date == pd.to_datetime('2017-03-29')][['First  Last','GTime(ET)']]
 # print 'fromroto', sorted(today['GTime(ET)'].unique())
