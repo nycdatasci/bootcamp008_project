@@ -1,0 +1,47 @@
+.reco-header-id {
+	width: 50px;
+}
+
+.reco-header-name {
+	width: 450px;
+}
+
+.reco-header-sim {
+	width: 75px;
+}
+
+.reco-header-type {
+	width: 200px;
+}
+
+.reco-row {
+	height: 50px;
+}
+
+.reco-head {
+	background: #EEEEEE;
+	height: 30px;
+}
+
+tr.reco-row-alt:nth-child(even) {
+	background: #EEEEEE
+}
+tr.reco-row-alt:nth-child(odd) {
+	background: #FAFAFA
+}
+
+.review-anl-result {
+	font-weight: 500;
+	text-align: center;
+}
+
+/*
+.reco-header {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.settings-info {
+	font-size: 10px;
+	font-style: italic;
+}*/
