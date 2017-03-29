@@ -1,0 +1,273 @@
+---
+title: "fMRI Biomarker for Deep Brain Stimulation"
+output: html_notebook
+author: Trenton Jerde
+---
+
+
+```{r packages, message=FALSE, warning=FALSE}
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(readr)
+library(feather)
+library(readxl)
+library(rpart)
+library(rpart.plot)
+```
+
+
+```{r data read, message=FALSE, warning=FALSE}
+data.vlt <- 
+  read_excel("~/ds_stuff/projecdt_capstone/dbs_fmri/data/bold_4volt_3subs.xlsx")
+data.frq <- 
+  read_delim("~/ds_stuff/projecdt_capstone/dbs_fmri/data/bold_4freq_3subs_new.csv", 
+             "\t", escape_double = FALSE, trim_ws = TRUE)
+
+names(data.frq) <-
+  make.names(names(data.frq), unique = TRUE)
+data.frq <-
+  data.frq %>%
+  rename(subj = X.subj)
+```
+
+
+```{r combined for freq and voltage, message=FALSE, warning=FALSE}
+data.frq <-
+  data.frq %>% 
+  mutate(group = "frequency") %>% 
+  gather(run, bold, run1:run6)
+data.vlt <- 
+  data.vlt %>% 
+  rename(voltage = volt) %>% 
+  mutate(freq = 130L) %>%
+  mutate(group = "voltage") %>%
+  gather(run, bold, run1:run8)
+
+data <- 
+  bind_rows(
+    data.frq,
+    select_(
+      data.vlt, .dots = 
+        c("subj", "area", "run", "dbsOnOff", "block", "contact", "voltage", "freq", "group", "bold")
+    )
+  ) %>% 
+  select(group, everything()) %>% 
+  rename(dbs = dbsOnOff) %>% 
+  mutate(dbs = if_else(dbs == 2, 0, 1)) %>% 
+  mutate(run = as.integer(substr(run, 4, 4))) %>% 
+  mutate_at(vars(group:run), funs(as.factor)) %>% 
+  mutate(area.full = as.factor(ifelse(area == "1", "l.m1", ifelse(area == "2", "r.m1", ifelse(area == "3", "l.cb", ifelse(area == "4", "r.cb", NA)))))) %>% 
+  mutate(area.full = factor(area.full, c("l.m1", "r.m1", "l.cb", "r.cb"))) %>% 
+  mutate(subj.alt = as.factor(ifelse(subj == "76", "s3", ifelse(subj == "635", "s1", ifelse(subj == "985", "s2", NA))))) %>% 
+  group_by(group, subj, run) %>% 
+  mutate(bold.zs = (bold - mean(bold)) / sd(bold)) %>% 
+  ungroup() %>% 
+  mutate(area.rela = ifelse(subj.alt %in% c("s1", "s3"), ifelse(area.full == "l.m1", "ipsi.m1", ifelse(area.full == "r.m1", "contra.m1", ifelse(area.full == "l.cb", "ipsi.cb", ifelse(area.full == "r.cb", "contra.cb", NA)))), ifelse(area.full == "l.m1", "contra.m1", ifelse(area.full == "r.m1", "ipsi.m1", ifelse(area.full == "l.cb", "contra.cb", ifelse(area.full == "r.cb", "ipsi.cb", NA))))))
+
+data <- 
+  data %>% 
+  select(group, subj, subj.alt, area, area.full, area.rela, dbs:bold, bold.zs)
+
+rm(data.frq, data.vlt)
+```
+
+
+```{r box plots of z scores, message=FALSE, warning=FALSE}
+ggplot(
+  data %>% filter(group == "voltage", subj.alt == "s1"), 
+  aes(
+    x = factor(run), 
+    y = bold.zs
+  )
+) + 
+  geom_boxplot() + 
+  facet_grid(
+    area.full ~ voltage
+  )
+```
+
+
+```{r overall measure - adjusted ipsi m1 activation}
+std.err <- 
+  function(x) sd(x)/sqrt(length(x))
+
+data.voltage <-
+  data %>% 
+  filter(
+    group == "voltage"  
+  )
+
+CalculateAreaMeasures <- function(data) {
+  data.test.tmp <- 
+    data %>% 
+    group_by(area.rela, contact, voltage, run, block) %>% 
+    summarise(
+      bold.zs.avg = mean(bold.zs), 
+      dbs.val = unique(dbs)
+    )
+  
+  data.test.tmp <- 
+    data.test.tmp %>% 
+    mutate(
+      res = 
+        (lag(bold.zs.avg) - bold.zs.avg) / 
+        mean(c(lag(bold.zs.avg), bold.zs.avg), na.rm = TRUE) *
+        100
+    ) %>% 
+    filter(dbs.val == 0)
+  
+  data.test.tmp <- 
+    data.test.tmp %>% 
+    group_by(area.rela, contact, voltage, run) %>% 
+    mutate(pair = 1:n()) %>% 
+    select(area.rela, contact, voltage, run, pair, res)
+  
+  data.test.tmp <- 
+    data.test.tmp %>% 
+    group_by(area.rela, contact, voltage) %>% 
+    summarise(
+      res.avg = mean(res, na.rm = TRUE), 
+      res.sem = std.err((res))
+    ) %>% 
+    ungroup()
+}
+
+out <- list()
+subj.contact.voltage.unqs <-
+  data %>% select(subj.alt, contact, voltage) %>% unique()
+
+for (i in 1:nrow(subj.contact.voltage.unqs)) {
+  
+  subj.alt.no <- 
+    subj.contact.voltage.unqs[i,]$subj.alt
+  contact.no <- 
+    subj.contact.voltage.unqs[i,]$contact
+  voltage.no <- 
+    subj.contact.voltage.unqs[i,]$voltage
+  
+  data.voltage.no <-
+    data.voltage %>%
+    filter(
+      subj.alt == subj.alt.no &
+        contact == contact.no &
+        voltage == voltage.no
+    )
+  
+  data.voltage.no.res <-  
+    CalculateAreaMeasures(data.voltage.no) %>% 
+    mutate(
+      subj.alt = subj.alt.no
+    )
+  
+  out[[i]] <- data.voltage.no.res
+}
+
+result <-
+  bind_rows(out) %>% 
+  select(subj.alt, area.rela:res.sem) %>% 
+  group_by(subj.alt, contact, voltage) %>% 
+  mutate(
+    res.avg.wins = ifelse(area.rela != "ipsi.m1" & res.avg < 0, abs(mean(res.avg)), res.avg),
+    ipsi.m1.weighted = (0.9 * (res.avg.wins[area.rela == "ipsi.m1"])),
+    other.weighted = (0.1 * (mean(c(res.avg.wins[area.rela == "ipsi.cb"], res.avg.wins[area.rela == "contra.cb"], res.avg.wins[area.rela == "contra.m1"])))),
+    res.overall = 
+      ipsi.m1.weighted / other.weighted
+  ) %>%
+  arrange(subj.alt, desc(res.overall)); result %>% 
+  ungroup()
+
+```
+
+
+```{r 3d scatter effectiveness all subjects}
+# https://plot.ly/r/3d-scatter-plots/
+# http://www.statmethods.net/graphs/scatterplot.html
+plot.data <-
+  result %>% 
+  group_by(subj.alt, contact, voltage) %>% 
+  summarise(res = unique(res.overall)) %>% 
+  ungroup() %>% 
+  filter(!(subj.alt == "s3" & contact == "3" & voltage == "5"))
+
+library(plotly)
+
+p <- plot_ly(
+  plot.data, 
+  x = ~contact, y = ~voltage, z = ~res,
+  marker = list(color = ~res, colorscale = c('#FFE1A1', '#683531'), showscale = TRUE)) %>%
+  add_markers() %>%
+  layout(scene = list(xaxis = list(title = 'Contact'),
+                      yaxis = list(title = 'Voltage'),
+                      zaxis = list(title = 'Effectiveness')),
+         annotations = list(
+           x = 1.13,
+           y = 1.05,
+           text = 'Weighted Adjusted Ipsi M1 Activation',
+           xref = 'paper',
+           yref = 'paper',
+           showarrow = FALSE
+         ))
+p
+
+# # Create a shareable link to your chart
+# # Set up API credentials: https://plot.ly/r/getting-started
+# chart_link = plotly_POST(p, filename="scatter3d/colorscale")
+# chart_link
+```
+
+
+```{r multiple regression}
+# http://www.statmethods.net/stats/regression.html
+fit <- 
+  lm(bold.zs ~ group + area.rela + dbs + contact + voltage + freq, data = data)
+summary(fit)
+coefficients(fit)
+confint(fit, level=0.95)
+# fitted(fit)
+# residuals(fit)
+anova(fit)
+# vcov(fit)
+# influence(fit)
+layout(matrix(c(1,2,3,4),2,2)) # optional 4 graphs/page 
+plot(fit)
+```
+
+
+```{r regression tree}
+# http://www.statmethods.net/advstats/cart.html
+# http://blog.revolutionanalytics.com/2013/06/plotting-classification-and-regression-trees-with-plotrpart.html
+# http://www.milbo.org/rpart-plot/prp.pdf
+
+# grow tree 
+
+fit <- 
+  rpart(
+    bold.zs ~ group + area.rela + dbs + contact + voltage + freq, 
+    method = "anova", 
+    control = rpart.control(cp = 0.003),
+    data = data
+  )
+
+# fit <- rpart(Mileage~Price + Country + Reliability + Type, 
+#    method="anova", data=cu.summary)
+
+printcp(fit) # display the results 
+plotcp(fit) # visualize cross-validation results 
+summary(fit) # detailed summary of splits
+
+# create additional plots 
+par(mfrow=c(1,2)) # two plots on one page 
+rsq.rpart(fit) # visualize cross-validation results  	
+
+# # plot tree 
+# plot(fit, uniform=TRUE, 
+#      main="Regression Tree for DBS Effect on Bold")
+# text(fit, use.n=TRUE, all=TRUE, cex=.8)
+
+# # create attractive postcript plot of tree 
+# post(fit, file = "c:/tree2.ps", 
+#      title = "Regression Tree for Mileage ")
+
+rpart.plot(fit, type = 3, box.palette="RdYlGn", tweak = 1.2)
+```
