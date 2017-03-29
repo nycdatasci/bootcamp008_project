@@ -1,0 +1,349 @@
+Timestamp, Data Source, Data, Display Value, Raw Value
+"2017-03-12T23:25:00Z", GPS, Enabled, Yes, 1
+"2017-03-12T23:25:00Z", GPS, Authorisation Status, Authorised When In Use, Authorised When In Use
+"2017-03-12T23:25:00Z", GPS, Latitude, 40.69182629614024, 40.69182629614024
+"2017-03-12T23:25:00Z", GPS, Longitude, -73.98586643558012, -73.98586643558012
+"2017-03-12T23:25:00Z", GPS, Altitude, 51.8101692199707 Meters, 51.8101692199707
+"2017-03-12T23:25:00Z", GPS, Floor, No Data, nil
+"2017-03-12T23:25:00Z", GPS, Horizontal Accuracy, 65 Meters, 65
+"2017-03-12T23:25:00Z", GPS, Vertical Accuracy, 10 Meters, 10
+"2017-03-12T23:25:01Z", Cell Radio, Radio Access Technology, 4G (LTE), 4G (LTE)
+"2017-03-12T23:25:01Z", Cell Radio, Carrier, Verizon, Verizon
+"2017-03-12T23:25:01Z", Proximity, Active, No, 0
+"2017-03-12T23:25:01Z", Battery, Level, 100%, 1
+"2017-03-12T23:25:01Z", Battery, State, Charging, Charging
+"2017-03-12T23:25:01Z", Device Orientation, Screen Orientation, Unknown, nil
+"2017-03-12T23:25:01Z", Device Orientation, Screen Face Direction, Up, Up
+"2017-03-12T23:25:01Z", Cell Radio, Radio Access Technology, 4G (LTE), 4G (LTE)
+"2017-03-12T23:25:01Z", Cell Radio, Carrier, Verizon, Verizon
+"2017-03-12T23:25:01Z", GPS, Enabled, Yes, 1
+"2017-03-12T23:25:01Z", GPS, Authorisation Status, Authorised When In Use, Authorised When In Use
+"2017-03-12T23:25:01Z", GPS, Latitude, 40.69182629614024, 40.69182629614024
+"2017-03-12T23:25:01Z", GPS, Longitude, -73.98586643558012, -73.98586643558012
+"2017-03-12T23:25:01Z", GPS, Altitude, 51.8101692199707 Meters, 51.8101692199707
+"2017-03-12T23:25:01Z", GPS, Floor, No Data, nil
+"2017-03-12T23:25:01Z", GPS, Horizontal Accuracy, 65 Meters, 65
+"2017-03-12T23:25:01Z", GPS, Vertical Accuracy, 10 Meters, 10
+"2017-03-12T23:25:01Z", Bluetooth, Status, Off, Off
+"2017-03-12T23:25:01Z", Magnetometer (corrected for device), x, 19.42228698730469, 19.42228698730469
+"2017-03-12T23:25:01Z", Magnetometer (corrected for device), y, -3.648824691772461, -3.648824691772461
+"2017-03-12T23:25:01Z", Magnetometer (corrected for device), z, -59.7198486328125, -59.7198486328125
+"2017-03-12T23:25:01Z", Magnetometer (corrected for device), Estimated Accuracy, High, High
+"2017-03-12T23:25:01Z", Gyrometer (raw), x, 0.02863990067882113, 0.02863990067882113
+"2017-03-12T23:25:01Z", Gyrometer (raw), y, -0.01638083754896839, -0.01638083754896839
+"2017-03-12T23:25:01Z", Gyrometer (raw), z, 0.0001358212155940412, 0.0001358212155940412
+"2017-03-12T23:25:01Z", Gyrometer (smooth), x, -0.00154442829079926, -0.00154442829079926
+"2017-03-12T23:25:01Z", Gyrometer (smooth), y, 0.004923371132463217, 0.004923371132463217
+"2017-03-12T23:25:01Z", Gyrometer (smooth), z, 0.008312433958053589, 0.008312433958053589
+"2017-03-12T23:25:01Z", Acceleration (via User), x, 0.001966980518773198, 0.001966980518773198
+"2017-03-12T23:25:01Z", Acceleration (via User), y, -0.002225409261882305, -0.002225409261882305
+"2017-03-12T23:25:01Z", Acceleration (via User), z, -0.007874041795730591, -0.007874041795730591
+"2017-03-12T23:25:01Z", Acceleration (total), x, -0.03935241582803428, -0.03935241582803428
+"2017-03-12T23:25:01Z", Acceleration (total), y, -0.3680572612211108, -0.3680572612211108
+"2017-03-12T23:25:01Z", Acceleration (total), z, -0.9376373589038849, -0.9376373589038849
+"2017-03-12T23:25:01Z", Attitude, Roll, -0.04441154914774934, -0.04441154914774934
+"2017-03-12T23:25:01Z", Attitude, Yaw, -2.947700727234341, -2.947700727234341
+"2017-03-12T23:25:01Z", Attitude, Pitch, 0.3745264453167846, 0.3745264453167846
+"2017-03-12T23:25:01Z", Attitude, Quarternion w, -0.09096420457618845, -0.09096420457618845
+"2017-03-12T23:25:01Z", Attitude, Quarternion x, 0.003697536269622749, 0.003697536269622749
+"2017-03-12T23:25:01Z", Attitude, Quarternion y, 0.1873624413721444, 0.1873624413721444
+"2017-03-12T23:25:01Z", Attitude, Quarternion z, 0.9780629618150125, 0.9780629618150125
+"2017-03-12T23:25:01Z", Acceleration (via Gravity), x, -0.04131939634680748, -0.04131939634680748
+"2017-03-12T23:25:01Z", Acceleration (via Gravity), y, -0.3658318519592285, -0.3658318519592285
+"2017-03-12T23:25:01Z", Acceleration (via Gravity), z, -0.9297633171081543, -0.9297633171081543
+"2017-03-12T23:25:01Z", Accelerometer (raw), x, -0.0408782958984375, -0.0408782958984375
+"2017-03-12T23:25:01Z", Accelerometer (raw), y, -0.3679046630859375, -0.3679046630859375
+"2017-03-12T23:25:01Z", Accelerometer (raw), z, -0.9352569580078125, -0.9352569580078125
+"2017-03-12T23:25:01Z", Altimeter (Barometer), Relative Altitude, 0 Meters, 0
+"2017-03-12T23:25:01Z", Altimeter (Barometer), Pressure, 102.311248779297 kPa, 102.3112487792969
+"2017-03-12T23:25:02Z", Altimeter (Barometer), Relative Altitude, 0.0518722534179688 Meters, 0.05187225341796875
+"2017-03-12T23:25:02Z", Altimeter (Barometer), Pressure, 102.310623168945 kPa, 102.3106231689453
+"2017-03-12T23:25:03Z", Device Orientation, Screen Orientation, Unknown, nil
+"2017-03-12T23:25:03Z", Device Orientation, Screen Face Direction, Up, Up
+"2017-03-12T23:25:03Z", Altimeter (Barometer), Relative Altitude, 0.103752136230469 Meters, 0.1037521362304688
+"2017-03-12T23:25:03Z", Altimeter (Barometer), Pressure, 102.309989929199 kPa, 102.3099899291992
+"2017-03-13T12:47:25Z", GPS, Enabled, Yes, 1
+"2017-03-13T12:47:25Z", GPS, Authorisation Status, Authorised When In Use, Authorised When In Use
+"2017-03-13T12:47:25Z", GPS, Latitude, 40.69180341608964, 40.69180341608964
+"2017-03-13T12:47:25Z", GPS, Longitude, -73.98592334758247, -73.98592334758247
+"2017-03-13T12:47:25Z", GPS, Altitude, 51.8101692199707 Meters, 51.8101692199707
+"2017-03-13T12:47:25Z", GPS, Floor, No Data, nil
+"2017-03-13T12:47:25Z", GPS, Horizontal Accuracy, 286.7753035739723 Meters, 286.7753035739723
+"2017-03-13T12:47:25Z", GPS, Vertical Accuracy, 10.23731209346114 Meters, 10.23731209346114
+"2017-03-13T12:47:25Z", Altimeter (Barometer), Relative Altitude, 0.183563232421875 Meters, 0.183563232421875
+"2017-03-13T12:47:25Z", Altimeter (Barometer), Pressure, 102.309028625488 kPa, 102.3090286254883
+"2017-03-13T12:47:25Z", Magnetometer (raw), x, 51.61318969726562, 51.61318969726562
+"2017-03-13T12:47:25Z", Magnetometer (raw), y, 13.19828796386719, 13.19828796386719
+"2017-03-13T12:47:25Z", Magnetometer (raw), z, -464.3309936523438, -464.3309936523438
+"2017-03-13T12:47:25Z", Altimeter (Barometer), Relative Altitude, 0.261375427246094 Meters, 0.2613754272460938
+"2017-03-13T12:47:25Z", Altimeter (Barometer), Pressure, 102.308090209961 kPa, 102.3080902099609
+"2017-03-13T12:47:25Z", Magnetometer (corrected for device), x, 21.07644653320312, 21.07644653320312
+"2017-03-13T12:47:25Z", Magnetometer (corrected for device), y, 0.4939670562744141, 0.4939670562744141
+"2017-03-13T12:47:25Z", Magnetometer (corrected for device), z, -62.23922729492188, -62.23922729492188
+"2017-03-13T12:47:25Z", Magnetometer (corrected for device), Estimated Accuracy, High, High
+"2017-03-13T12:47:25Z", Acceleration (total), x, -0.006881714100018144, -0.006881714100018144
+"2017-03-13T12:47:25Z", Acceleration (total), y, -0.2891998281702399, -0.2891998281702399
+"2017-03-13T12:47:25Z", Acceleration (total), z, -0.9498901134356856, -0.9498901134356856
+"2017-03-13T12:47:25Z", Attitude, Roll, -0.004758848833561777, -0.004758848833561777
+"2017-03-13T12:47:25Z", Attitude, Yaw, -2.892560190607773, -2.892560190607773
+"2017-03-13T12:47:25Z", Attitude, Pitch, 0.288816615319027, 0.288816615319027
+"2017-03-13T12:47:25Z", Attitude, Quarternion w, -0.1225618980113169, -0.1225618980113169
+"2017-03-13T12:47:25Z", Attitude, Quarternion x, -0.01553600466024299, -0.01553600466024299
+"2017-03-13T12:47:25Z", Attitude, Quarternion y, 0.1430848060953495, 0.1430848060953495
+"2017-03-13T12:47:25Z", Attitude, Quarternion z, 0.9819694251755725, 0.9819694251755725
+"2017-03-13T12:47:25Z", Acceleration (via User), x, -0.002319986233487725, -0.002319986233487725
+"2017-03-13T12:47:25Z", Acceleration (via User), y, -0.004381774924695492, -0.004381774924695492
+"2017-03-13T12:47:25Z", Acceleration (via User), z, 0.008680605329573154, 0.008680605329573154
+"2017-03-13T12:47:25Z", Accelerometer (raw), x, -0.0680084228515625, -0.0680084228515625
+"2017-03-13T12:47:25Z", Accelerometer (raw), y, -0.3499603271484375, -0.3499603271484375
+"2017-03-13T12:47:25Z", Accelerometer (raw), z, -0.9901123046875, -0.9901123046875
+"2017-03-13T12:47:25Z", Acceleration (via Gravity), x, -0.004561727866530418, -0.004561727866530418
+"2017-03-13T12:47:25Z", Acceleration (via Gravity), y, -0.2848180532455444, -0.2848180532455444
+"2017-03-13T12:47:25Z", Acceleration (via Gravity), z, -0.9585707187652588, -0.9585707187652588
+"2017-03-13T12:47:25Z", Gyrometer (smooth), x, 0.04603668674826622, 0.04603668674826622
+"2017-03-13T12:47:25Z", Gyrometer (smooth), y, -0.05038667842745781, -0.05038667842745781
+"2017-03-13T12:47:25Z", Gyrometer (smooth), z, 0.008547691628336906, 0.008547691628336906
+"2017-03-13T12:47:25Z", Gyrometer (raw), x, 0.2305754219146244, 0.2305754219146244
+"2017-03-13T12:47:25Z", Gyrometer (raw), y, -0.001914812823766972, -0.001914812823766972
+"2017-03-13T12:47:25Z", Gyrometer (raw), z, -0.000206128668372133, -0.000206128668372133
+"2017-03-13T12:47:25Z", Altimeter (Barometer), Relative Altitude, 0.261375427246094 Meters, 0.2613754272460938
+"2017-03-13T12:47:25Z", Altimeter (Barometer), Pressure, 102.308090209961 kPa, 102.3080902099609
+"2017-03-13T12:47:25Z", Magnetometer (corrected for device), x, 20.47297668457031, 20.47297668457031
+"2017-03-13T12:47:25Z", Magnetometer (corrected for device), y, -2.963064193725586, -2.963064193725586
+"2017-03-13T12:47:25Z", Magnetometer (corrected for device), z, -60.23898315429688, -60.23898315429688
+"2017-03-13T12:47:25Z", Magnetometer (corrected for device), Estimated Accuracy, High, High
+"2017-03-13T12:47:25Z", Gyrometer (smooth), x, 0.283258318901062, 0.283258318901062
+"2017-03-13T12:47:25Z", Gyrometer (smooth), y, -0.6486314535140991, -0.6486314535140991
+"2017-03-13T12:47:25Z", Gyrometer (smooth), z, -0.2722956538200378, -0.2722956538200378
+"2017-03-13T12:47:25Z", Acceleration (via User), x, -0.01668407768011093, -0.01668407768011093
+"2017-03-13T12:47:25Z", Acceleration (via User), y, -0.005411383230239153, -0.005411383230239153
+"2017-03-13T12:47:25Z", Acceleration (via User), z, -0.007142293266952038, -0.007142293266952038
+"2017-03-13T12:47:25Z", Acceleration (total), x, -0.071044921875, -0.071044921875
+"2017-03-13T12:47:25Z", Acceleration (total), y, -0.351531979162246, -0.351531979162246
+"2017-03-13T12:47:25Z", Acceleration (total), z, -0.9437560914084315, -0.9437560914084315
+"2017-03-13T12:47:25Z", Attitude, Roll, -0.05797472436889489, -0.05797472436889489
+"2017-03-13T12:47:25Z", Attitude, Yaw, -2.879448212820416, -2.879448212820416
+"2017-03-13T12:47:25Z", Attitude, Pitch, 0.3534329488412212, 0.3534329488412212
+"2017-03-13T12:47:25Z", Attitude, Quarternion w, -0.1235562358396532, -0.1235562358396532
+"2017-03-13T12:47:25Z", Attitude, Quarternion x, 0.005320507079491109, 0.005320507079491109
+"2017-03-13T12:47:25Z", Attitude, Quarternion y, 0.1779460229844513, 0.1779460229844513
+"2017-03-13T12:47:25Z", Attitude, Quarternion z, 0.9762380660953026, 0.9762380660953026
+"2017-03-13T12:47:25Z", Acceleration (via Gravity), x, -0.05436084419488907, -0.05436084419488907
+"2017-03-13T12:47:25Z", Acceleration (via Gravity), y, -0.3461205959320068, -0.3461205959320068
+"2017-03-13T12:47:25Z", Acceleration (via Gravity), z, -0.9366137981414795, -0.9366137981414795
+"2017-03-13T12:47:25Z", Magnetometer (raw), x, 108.8907470703125, 108.8907470703125
+"2017-03-13T12:47:25Z", Magnetometer (raw), y, -9.255477905273438, -9.255477905273438
+"2017-03-13T12:47:25Z", Magnetometer (raw), z, -461.2059326171875, -461.2059326171875
+"2017-03-13T12:47:25Z", Altimeter (Barometer), Relative Altitude, -32.7989501953125 Meters, -32.7989501953125
+"2017-03-13T12:47:25Z", Altimeter (Barometer), Pressure, 102.708999633789 kPa, 102.7089996337891
+"2017-03-13T12:47:25Z", Altimeter (Barometer), Relative Altitude, -32.9391708374023 Meters, -32.93917083740234
+"2017-03-13T12:47:25Z", Altimeter (Barometer), Pressure, 102.710693359375 kPa, 102.710693359375
+"2017-03-13T12:47:25Z", Device Orientation, Screen Orientation, Unknown, nil
+"2017-03-13T12:47:25Z", Device Orientation, Screen Face Direction, Up, Up
+"2017-03-13T12:47:25Z", Device Orientation, Screen Orientation, Portrait, Portrait
+"2017-03-13T12:47:25Z", Device Orientation, Screen Face Direction, Up, Up
+"2017-03-13T12:47:25Z", Device Orientation, Screen Orientation, Portrait, Portrait
+"2017-03-13T12:47:25Z", Device Orientation, Screen Face Direction, Up, Up
+"2017-03-13T12:47:25Z", Device Orientation, Screen Orientation, Portrait, Portrait
+"2017-03-13T12:47:25Z", Device Orientation, Screen Face Direction, Up, Up
+"2017-03-13T12:47:25Z", Battery, Level, 70%, 0.7
+"2017-03-13T12:47:25Z", Battery, State, Charging, Charging
+"2017-03-13T12:47:25Z", Battery, Level, 70%, 0.7
+"2017-03-13T12:47:25Z", Battery, State, Discharging, Discharging
+"2017-03-13T12:47:25Z", Cell Radio, Radio Access Technology, Unknown, nil
+"2017-03-13T12:47:25Z", Cell Radio, Carrier, Verizon, Verizon
+"2017-03-13T12:47:25Z", Cell Radio, Radio Access Technology, Unknown, nil
+"2017-03-13T12:47:25Z", Cell Radio, Carrier, Verizon, Verizon
+"2017-03-13T12:47:26Z", Device Orientation, Screen Orientation, Portrait, Portrait
+"2017-03-13T12:47:26Z", Device Orientation, Screen Face Direction, Up, Up
+"2017-03-13T12:47:26Z", Device Orientation, Screen Orientation, Portrait, Portrait
+"2017-03-13T12:47:26Z", Device Orientation, Screen Face Direction, Up, Up
+"2017-03-13T12:47:26Z", Device, Model, iPhone, iPhone
+"2017-03-13T12:47:26Z", Device, Name, Emil's iPhone, Emil's iPhone
+"2017-03-13T12:47:26Z", Device, OS Name, iOS, iOS
+"2017-03-13T12:47:26Z", Device, iOS Version, 10.1.1, 10.1.1
+"2017-03-13T12:47:26Z", Device, Audio Output Method, Receiver, Receiver
+"2017-03-13T12:47:26Z", Device, Supports Touch ID, Yes, 1
+"2017-03-13T12:47:26Z", WiFi, Connected SSID, Not Connected, Not Connected
+"2017-03-13T12:47:26Z", WiFi, Connected BSSID, Not Connected, Not Connected
+"2017-03-13T12:47:26Z", Microphone, Left Channel Level, -28.41293 dB, -28.41293
+"2017-03-13T12:47:26Z", Microphone, Right Channel Level, -28.41293 dB, -28.41293
+"2017-03-13T12:47:26Z", Compass, Heading (True North), 293.6046752929688º, 293.6046752929688
+"2017-03-13T12:47:26Z", Compass, Heading (Magnetic North), 306.5272827148438º, 306.5272827148438
+"2017-03-13T12:47:26Z", Compass, x, 20.92471313476562, 20.92471313476562
+"2017-03-13T12:47:26Z", Compass, y, -1.234121322631836, -1.234121322631836
+"2017-03-13T12:47:26Z", Compass, z, -59.10147094726562, -59.10147094726562
+"2017-03-13T12:47:26Z", Storage, Total, 27.8 GB, 27796844544
+"2017-03-13T12:47:26Z", Storage, Free, 8.54 GB, 8543309824
+"2017-03-13T12:47:26Z", Storage, Used, 19.25 GB, 19253534720
+"2017-03-13T12:47:26Z", Memory, Total, 2.1 GB, 2097152000
+"2017-03-13T12:47:26Z", Memory, Free, 325.5 MB, 325451776
+"2017-03-13T12:47:26Z", Memory, Used, 1.41 GB, 1410826240
+"2017-03-13T12:47:26Z", Memory, Active, 769.8 MB, 769818624
+"2017-03-13T12:47:26Z", Memory, Inactive, 272.6 MB, 272596992
+"2017-03-13T12:47:26Z", Memory, Wired, 368.4 MB, 368410624
+"2017-03-13T12:47:26Z", Memory, Purgeable, 7.1 MB, 7061504
+"2017-03-13T12:47:26Z", Device Orientation, Screen Orientation, Portrait, Portrait
+"2017-03-13T12:47:26Z", Device Orientation, Screen Face Direction, Up, Up
+"2017-03-13T12:47:26Z", Altimeter (Barometer), Relative Altitude, -32.988899230957 Meters, -32.98889923095703
+"2017-03-13T12:47:26Z", Altimeter (Barometer), Pressure, 102.711303710938 kPa, 102.7113037109375
+"2017-03-13T12:47:26Z", GPS, Enabled, Yes, 1
+"2017-03-13T12:47:26Z", GPS, Authorisation Status, Authorised When In Use, Authorised When In Use
+"2017-03-13T12:47:26Z", GPS, Latitude, 40.75463194126757, 40.75463194126757
+"2017-03-13T12:47:26Z", GPS, Longitude, -73.99420408016836, -73.99420408016836
+"2017-03-13T12:47:26Z", GPS, Altitude, 47.86977005004883 Meters, 47.86977005004883
+"2017-03-13T12:47:26Z", GPS, Floor, No Data, nil
+"2017-03-13T12:47:26Z", GPS, Horizontal Accuracy, 1,414 Meters, 1414
+"2017-03-13T12:47:26Z", GPS, Vertical Accuracy, 13.05832674813039 Meters, 13.05832674813039
+"2017-03-13T12:47:27Z", Altimeter (Barometer), Relative Altitude, -33.0416030883789 Meters, -33.04160308837891
+"2017-03-13T12:47:27Z", Altimeter (Barometer), Pressure, 102.711944580078 kPa, 102.7119445800781
+"2017-03-13T12:47:28Z", Magnetometer (corrected for device), x, -2.06744384765625, -2.06744384765625
+"2017-03-13T12:47:28Z", Magnetometer (corrected for device), y, 7.075485229492188, 7.075485229492188
+"2017-03-13T12:47:28Z", Magnetometer (corrected for device), z, -3.292999267578125, -3.292999267578125
+"2017-03-13T12:47:28Z", Magnetometer (corrected for device), Estimated Accuracy, Medium, Medium
+"2017-03-13T12:47:28Z", Gyrometer (smooth), x, -0.03204457089304924, -0.03204457089304924
+"2017-03-13T12:47:28Z", Gyrometer (smooth), y, 0.06563528627157211, 0.06563528627157211
+"2017-03-13T12:47:28Z", Gyrometer (smooth), z, -0.04154836013913155, -0.04154836013913155
+"2017-03-13T12:47:28Z", Acceleration (via User), x, 0.04676134884357452, 0.04676134884357452
+"2017-03-13T12:47:28Z", Acceleration (via User), y, 0.005929243750870228, 0.005929243750870228
+"2017-03-13T12:47:28Z", Acceleration (via User), z, -0.05747338384389877, -0.05747338384389877
+"2017-03-13T12:47:28Z", Acceleration (total), x, -0.106536865234375, -0.106536865234375
+"2017-03-13T12:47:28Z", Acceleration (total), y, -0.1608428983017802, -0.1608428983017802
+"2017-03-13T12:47:28Z", Acceleration (total), z, -1.031478904187679, -1.031478904187679
+"2017-03-13T12:47:28Z", Attitude, Roll, -0.1561088680063109, -0.1561088680063109
+"2017-03-13T12:47:28Z", Attitude, Yaw, -2.920687421718132, -2.920687421718132
+"2017-03-13T12:47:28Z", Attitude, Pitch, 0.1675550488256366, 0.1675550488256366
+"2017-03-13T12:47:28Z", Attitude, Quarternion w, -0.1030219642670599, -0.1030219642670599
+"2017-03-13T12:47:28Z", Attitude, Quarternion x, 0.06803246827553398, 0.06803246827553398
+"2017-03-13T12:47:28Z", Attitude, Quarternion y, 0.09148133184688097, 0.09148133184688097
+"2017-03-13T12:47:28Z", Attitude, Quarternion z, 0.9881240934530103, 0.9881240934530103
+"2017-03-13T12:47:28Z", Acceleration (via Gravity), x, -0.1532982140779495, -0.1532982140779495
+"2017-03-13T12:47:28Z", Acceleration (via Gravity), y, -0.1667721420526505, -0.1667721420526505
+"2017-03-13T12:47:28Z", Acceleration (via Gravity), z, -0.9740055203437805, -0.9740055203437805
+"2017-03-13T12:47:28Z", Accelerometer (raw), x, -0.1612701416015625, -0.1612701416015625
+"2017-03-13T12:47:28Z", Accelerometer (raw), y, -0.1890869140625, -0.1890869140625
+"2017-03-13T12:47:28Z", Accelerometer (raw), z, -0.9970855712890625, -0.9970855712890625
+"2017-03-13T12:47:28Z", Gyrometer (raw), x, -0.08940631253559514, -0.08940631253559514
+"2017-03-13T12:47:28Z", Gyrometer (raw), y, 0.1028339707517747, 0.1028339707517747
+"2017-03-13T12:47:28Z", Gyrometer (raw), z, -0.03253051271531789, -0.03253051271531789
+"2017-03-13T12:47:28Z", Magnetometer (raw), x, 107.5404357910156, 107.5404357910156
+"2017-03-13T12:47:28Z", Magnetometer (raw), y, -9.568161010742188, -9.568161010742188
+"2017-03-13T12:47:28Z", Magnetometer (raw), z, -462.8594665527344, -462.8594665527344
+"2017-03-13T12:47:29Z", Device Orientation, Screen Orientation, Portrait, Portrait
+"2017-03-13T12:47:29Z", Device Orientation, Screen Face Direction, Up, Up
+"2017-03-13T18:00:39Z", Altimeter (Barometer), Relative Altitude, -33.0933151245117 Meters, -33.09331512451172
+"2017-03-13T18:00:39Z", Altimeter (Barometer), Pressure, 102.71257019043 kPa, 102.7125701904297
+"2017-03-13T18:00:39Z", Altimeter (Barometer), Relative Altitude, -33.0933151245117 Meters, -33.09331512451172
+"2017-03-13T18:00:39Z", Altimeter (Barometer), Pressure, 102.71257019043 kPa, 102.7125701904297
+"2017-03-13T18:00:39Z", Altimeter (Barometer), Relative Altitude, -33.0605010986328 Meters, -33.06050109863281
+"2017-03-13T18:00:39Z", Altimeter (Barometer), Pressure, 102.712173461914 kPa, 102.7121734619141
+"2017-03-13T18:00:39Z", Magnetometer (raw), x, 58.93551635742188, 58.93551635742188
+"2017-03-13T18:00:39Z", Magnetometer (raw), y, -14.48617553710938, -14.48617553710938
+"2017-03-13T18:00:39Z", Magnetometer (raw), z, -448.91748046875, -448.91748046875
+"2017-03-13T18:00:39Z", Altimeter (Barometer), Relative Altitude, -33.0525436401367 Meters, -33.05254364013672
+"2017-03-13T18:00:39Z", Altimeter (Barometer), Pressure, 102.71208190918 kPa, 102.7120819091797
+"2017-03-13T18:00:39Z", Device Orientation, Screen Orientation, Portrait, Portrait
+"2017-03-13T18:00:39Z", Device Orientation, Screen Face Direction, Up, Up
+"2017-03-13T18:00:39Z", Device Orientation, Screen Orientation, Portrait, Portrait
+"2017-03-13T18:00:39Z", Device Orientation, Screen Face Direction, Up, Up
+"2017-03-13T18:00:39Z", Device Orientation, Screen Orientation, Portrait, Portrait
+"2017-03-13T18:00:39Z", Device Orientation, Screen Face Direction, Up, Up
+"2017-03-13T18:00:39Z", Device, Model, iPhone, iPhone
+"2017-03-13T18:00:39Z", Device, Name, Emil's iPhone, Emil's iPhone
+"2017-03-13T18:00:39Z", Device, OS Name, iOS, iOS
+"2017-03-13T18:00:39Z", Device, iOS Version, 10.1.1, 10.1.1
+"2017-03-13T18:00:39Z", Device, Audio Output Method, Speaker, Speaker
+"2017-03-13T18:00:39Z", Device, Supports Touch ID, Yes, 1
+"2017-03-13T18:00:39Z", WiFi, Connected SSID, Not Connected, Not Connected
+"2017-03-13T18:00:39Z", WiFi, Connected BSSID, Not Connected, Not Connected
+"2017-03-13T18:00:39Z", Microphone, Left Channel Level, -120 dB, -120
+"2017-03-13T18:00:39Z", Microphone, Right Channel Level, -120 dB, -120
+"2017-03-13T18:00:39Z", Compass, Heading (True North), 353.0721435546875º, 353.0721435546875
+"2017-03-13T18:00:39Z", Compass, Heading (Magnetic North), 5.995089054107666º, 5.995089054107666
+"2017-03-13T18:00:39Z", Compass, x, -1.164871215820312, -1.164871215820312
+"2017-03-13T18:00:39Z", Compass, y, 9.634231567382812, 9.634231567382812
+"2017-03-13T18:00:39Z", Compass, z, -2.749176025390625, -2.749176025390625
+"2017-03-13T18:00:39Z", Storage, Total, 27.8 GB, 27796844544
+"2017-03-13T18:00:39Z", Storage, Free, 8.5 GB, 8499531776
+"2017-03-13T18:00:39Z", Storage, Used, 19.3 GB, 19297312768
+"2017-03-13T18:00:39Z", Memory, Total, 2.1 GB, 2097152000
+"2017-03-13T18:00:39Z", Memory, Free, 392.1 MB, 392085504
+"2017-03-13T18:00:39Z", Memory, Used, 1.34 GB, 1343094784
+"2017-03-13T18:00:39Z", Memory, Active, 716 MB, 716029952
+"2017-03-13T18:00:39Z", Memory, Inactive, 395.8 MB, 395837440
+"2017-03-13T18:00:39Z", Memory, Wired, 231.2 MB, 231227392
+"2017-03-13T18:00:39Z", Memory, Purgeable, 9 MB, 9027584
+"2017-03-13T18:00:39Z", Magnetometer (corrected for device), x, -1.395797729492188, -1.395797729492188
+"2017-03-13T18:00:39Z", Magnetometer (corrected for device), y, 3.70574951171875, 3.70574951171875
+"2017-03-13T18:00:39Z", Magnetometer (corrected for device), z, -0.39093017578125, -0.39093017578125
+"2017-03-13T18:00:39Z", Magnetometer (corrected for device), Estimated Accuracy, Medium, Medium
+"2017-03-13T18:00:39Z", Gyrometer (smooth), x, -0.08442123234272003, -0.08442123234272003
+"2017-03-13T18:00:39Z", Gyrometer (smooth), y, -0.04823704808950424, -0.04823704808950424
+"2017-03-13T18:00:39Z", Gyrometer (smooth), z, 0.01065093837678432, 0.01065093837678432
+"2017-03-13T18:00:39Z", Acceleration (via User), x, 0.1270676553249359, 0.1270676553249359
+"2017-03-13T18:00:39Z", Acceleration (via User), y, 0.1119797006249428, 0.1119797006249428
+"2017-03-13T18:00:39Z", Acceleration (via User), z, -0.05693153291940689, -0.05693153291940689
+"2017-03-13T18:00:39Z", Acceleration (total), x, 0.0380401685833931, 0.0380401685833931
+"2017-03-13T18:00:39Z", Acceleration (total), y, -0.1185760423541069, -0.1185760423541069
+"2017-03-13T18:00:39Z", Acceleration (total), z, -1.025909401476383, -1.025909401476383
+"2017-03-13T18:00:39Z", Attitude, Roll, -0.09162050377042147, -0.09162050377042147
+"2017-03-13T18:00:39Z", Attitude, Yaw, -2.900235047216381, -2.900235047216381
+"2017-03-13T18:00:39Z", Attitude, Pitch, 0.2326487799413918, 0.2326487799413918
+"2017-03-13T18:00:39Z", Attitude, Quarternion w, -0.1141707555672638, -0.1141707555672638
+"2017-03-13T18:00:39Z", Attitude, Quarternion x, 0.03119632597985891, 0.03119632597985891
+"2017-03-13T18:00:39Z", Attitude, Quarternion y, 0.120572981611659, 0.120572981611659
+"2017-03-13T18:00:39Z", Attitude, Quarternion z, 0.985623652274918, 0.985623652274918
+"2017-03-13T18:00:39Z", Acceleration (via Gravity), x, -0.08902748674154282, -0.08902748674154282
+"2017-03-13T18:00:39Z", Acceleration (via Gravity), y, -0.2305557429790497, -0.2305557429790497
+"2017-03-13T18:00:39Z", Acceleration (via Gravity), z, -0.9689778685569763, -0.9689778685569763
+"2017-03-13T18:00:39Z", Battery, Level, 89%, 0.89
+"2017-03-13T18:00:39Z", Battery, State, Discharging, Discharging
+"2017-03-13T18:00:40Z", GPS, Enabled, Yes, 1
+"2017-03-13T18:00:40Z", GPS, Authorisation Status, Authorised When In Use, Authorised When In Use
+"2017-03-13T18:00:40Z", GPS, Latitude, 40.75463193999999, 40.75463193999999
+"2017-03-13T18:00:40Z", GPS, Longitude, -73.99329403999997, -73.99329403999997
+"2017-03-13T18:00:40Z", GPS, Altitude, 16.63497924804688 Meters, 16.63497924804688
+"2017-03-13T18:00:40Z", GPS, Floor, No Data, nil
+"2017-03-13T18:00:40Z", GPS, Horizontal Accuracy, 1,414 Meters, 1414
+"2017-03-13T18:00:40Z", GPS, Vertical Accuracy, 17.78835826312439 Meters, 17.78835826312439
+"2017-03-13T18:00:40Z", Device Orientation, Screen Orientation, Portrait, Portrait
+"2017-03-13T18:00:40Z", Device Orientation, Screen Face Direction, Up, Up
+"2017-03-13T18:00:40Z", Device Orientation, Screen Orientation, Portrait, Portrait
+"2017-03-13T18:00:40Z", Device Orientation, Screen Face Direction, Up, Up
+"2017-03-13T18:00:40Z", Device Orientation, Screen Orientation, Portrait, Portrait
+"2017-03-13T18:00:40Z", Device Orientation, Screen Face Direction, Up, Up
+"2017-03-13T18:00:40Z", Altimeter (Barometer), Relative Altitude, -2.08580780029297 Meters, -2.085807800292969
+"2017-03-13T18:00:40Z", Altimeter (Barometer), Pressure, 102.33650970459 kPa, 102.3365097045898
+"2017-03-13T18:00:40Z", Device, Model, iPhone, iPhone
+"2017-03-13T18:00:40Z", Device, Name, Emil's iPhone, Emil's iPhone
+"2017-03-13T18:00:40Z", Device, OS Name, iOS, iOS
+"2017-03-13T18:00:40Z", Device, iOS Version, 10.1.1, 10.1.1
+"2017-03-13T18:00:40Z", Device, Audio Output Method, Speaker, Speaker
+"2017-03-13T18:00:40Z", Device, Supports Touch ID, Yes, 1
+"2017-03-13T18:00:40Z", WiFi, Connected SSID, Not Connected, Not Connected
+"2017-03-13T18:00:40Z", WiFi, Connected BSSID, Not Connected, Not Connected
+"2017-03-13T18:00:40Z", Microphone, Left Channel Level, -120 dB, -120
+"2017-03-13T18:00:40Z", Microphone, Right Channel Level, -120 dB, -120
+"2017-03-13T18:00:40Z", Compass, Heading (True North), 214.6683959960938º, 214.6683959960938
+"2017-03-13T18:00:40Z", Compass, Heading (Magnetic North), 227.6027679443359º, 227.6027679443359
+"2017-03-13T18:00:40Z", Compass, x, 26.30067443847656, 26.30067443847656
+"2017-03-13T18:00:40Z", Compass, y, -25.26361656188965, -25.26361656188965
+"2017-03-13T18:00:40Z", Compass, z, -42.53927612304688, -42.53927612304688
+"2017-03-13T18:00:40Z", Storage, Total, 27.8 GB, 27796844544
+"2017-03-13T18:00:40Z", Storage, Free, 8.5 GB, 8499367936
+"2017-03-13T18:00:40Z", Storage, Used, 19.3 GB, 19297476608
+"2017-03-13T18:00:40Z", Memory, Total, 2.1 GB, 2097152000
+"2017-03-13T18:00:40Z", Memory, Free, 382.1 MB, 382074880
+"2017-03-13T18:00:40Z", Memory, Used, 1.35 GB, 1350533120
+"2017-03-13T18:00:40Z", Memory, Active, 720.5 MB, 720486400
+"2017-03-13T18:00:40Z", Memory, Inactive, 395.6 MB, 395624448
+"2017-03-13T18:00:40Z", Memory, Wired, 234.4 MB, 234422272
+"2017-03-13T18:00:40Z", Memory, Purgeable, 9.3 MB, 9306112
+"2017-03-13T18:00:41Z", Accelerometer (raw), x, -0.0066070556640625, -0.0066070556640625
+"2017-03-13T18:00:41Z", Accelerometer (raw), y, -0.1367950439453125, -0.1367950439453125
+"2017-03-13T18:00:41Z", Accelerometer (raw), z, -1.001617431640625, -1.001617431640625
+"2017-03-13T18:00:41Z", Gyrometer (raw), x, 0.02010659991398924, 0.02010659991398924
+"2017-03-13T18:00:41Z", Gyrometer (raw), y, 0.1202244126699921, 0.1202244126699921
+"2017-03-13T18:00:41Z", Gyrometer (raw), z, -0.107920874749935, -0.107920874749935
+"2017-03-13T18:00:41Z", Altimeter (Barometer), Relative Altitude, -2.08580780029297 Meters, -2.085807800292969
+"2017-03-13T18:00:41Z", Altimeter (Barometer), Pressure, 102.33650970459 kPa, 102.3365097045898
