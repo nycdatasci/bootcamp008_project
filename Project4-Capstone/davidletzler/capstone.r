@@ -1,7 +1,7 @@
 
 setwd("~/NYCDSA/Project 4")
 
-
+bestseller<-read.csv("Full_Pub2.csv", stringsAsFactors = F)
 
 reviews<-read.csv("reviews.csv", stringsAsFactors = F)
 reviews$text<-gsub("â€™", "'",reviews$text)
@@ -12,6 +12,7 @@ reviews$text<-gsub("ã", 'e',reviews$text)
 
 
 library(dplyr)
+bestseller<-read.csv("")
 bestseller.review<-select(bestseller, author, title, book_review_link, sunday_review_link)
 bestseller.rev.uni<-unique(bestseller.review)
 nrow(bestseller.review) #4553
@@ -74,7 +75,7 @@ best<-ggplot(best.reviews, aes(x=Bestseller.List, Number))
 best + geom_bar(stat="identity", aes(fill=Reviewed), position="stack") + labs(title="How Many Bestsellers Get Reviewed?", x="Format", y="Number of Bestsellers") + theme_gdocs() + theme(plot.title = element_text(hjust = 0.5)) + guides(fill=guide_legend(title="Bestseller Reviewed?"))
 
 #Rough estimate--63% paperback to 37% hardcover
-#30,240 paperback--
+
 
 mean(sapply(sapply(fict.rev$text, strsplit, split="\\W"), length))
 
@@ -130,23 +131,35 @@ rt2<-cbind(rt, rt.filter2)
 rt.lines<-filter(rt2, rt.filter2==1)$text
 
 pred<-read.table("predictions.txt", sep=",")
+pred<-unlist(c(pred))
 
 rt3<-filter(rt2, rt.filter2==1)
 
-rt.pred<-cbind(rt3, pred)
 
-#rt.authorbook<-cbind(rt2, get_nrc_sentiment(rt2$text))
-#rt.filtered<-filter(rt.authorbook, rt.filter2==1)
+
+rt.pred<-cbind(rt, pred)
+rt.pred$pred<-rt.pred$pred-1
+rt.pred$pred[rt.pred$pred==-1]<-0
+
+pred.sent<-rt.pred %>% group_by(book_author, book_title, byline,) %>% summarize(review = sum(pred), length = n()) %>% mutate(avg.sent = review/length * 8)
+
+
+rt.authorbook<-cbind(rt2, get_sentiment(rt2$text))
+rt.filtered<-filter(rt.authorbook, rt.filter2==1)
 
 #rt.nrc<-mutate(rt.filtered, sentiment=trust + positive) %>% group_by(book_author, book_title, byline) %>% summarize(review = round(sum(sentiment),2), length=n()) %>% mutate(avg.sent = review/length * 8)
 
-#rt.judge3<-rt.authorbook %>% group_by(book_author, book_title, byline) %>% summarize(review = round(sum(sentiment),2), length = n()) %>% mutate(avg.sent = review/length * 8)
+rt.judge3<-rt.authorbook %>% group_by(book_author, book_title, byline, url) %>% summarize(review = round(sum(sentiment),2), length = n()) %>% mutate(avg.sent = review/length * 8)
 
-#test.sent<-rt.nrc %>% filter(book_title %in% c("Forgetting Tree", "Blue Diary", "Nightbird", "The Whistler", "Angel of Light", "Luka and the Fire of Life", "Mason & Dixon", "Adored", "Devil Knows You're Dead", "Los Alamos", "The Villa", "Ghostway",
-#                                                  "Forgotten Waltz", "Pet Sematary", "Wilde Lake", "Falling Man", "Life Expectancy: A Novel", "Welcome to Temptation", "Virtual Light", "Cold Mountain", "Aloft(Lee, Chang-Rae)", "The Buried Giant",
-#                                                  "The Dive From Clausen's Pier", "New York Dead", "The Girl on the Train", "Gone for Good", "Hunters", "The Days of Abandonment",
-#                                                  "Wolf in White Van", "L. A. Requiem", "The Assassination of Margaret Thatcher", "The Last Days of Night", "The White Tiger", "The Jane Austen Book Club",
-#                                                  "Persian Pickle Club", "Sure of You", "Sudden, Fearful Death", "Train Dreams", "That Old Cape Magic", "My Sister's Keeper", "Artemis Fowl", "Before the Fall", "The Naming of the Dead"))
+test.sent<-pred.sent %>% filter(book_title %in% c("Forgetting Tree", "Blue Diary", "Nightbird", "The Whistler", "Angel of Light", "Luka and the Fire of Life", "Mason & Dixon", "Adored", "Devil Knows You're Dead", "Los Alamos", "The Villa", "Ghostway",
+                                                  "Forgotten Waltz", "Pet Sematary", "Wilde Lake", "Falling Man", "Life Expectancy: A Novel", "Welcome to Temptation", "Virtual Light", "Cold Mountain", "Aloft(Lee, Chang-Rae)", "The Buried Giant",
+                                                  "The Dive From Clausen's Pier", "New York Dead", "The Girl on the Train", "Gone for Good", "Hunters", "The Days of Abandonment",
+                                                  "Wolf in White Van", "L. A. Requiem", "The Assassination of Margaret Thatcher", "The Last Days of Night", "The White Tiger", "The Jane Austen Book Club",
+                                                  "Persian Pickle Club", "Sure of You", "Sudden, Fearful Death", "Train Dreams", "That Old Cape Magic", "My Sister's Keeper", "Artemis Fowl", "Before the Fall", "The Naming of the Dead"))
+
+
+
+
 
 reviews2<-read.csv("reviews_2.csv", stringsAsFactors = F)
 
@@ -255,7 +268,10 @@ topic.model11$loadDocuments(reviews.tm)
 topic.model11$setAlphaOptimization(10, 50)
 topic.model11$train(500)
 
-plot(doc.topics7[,4], main = "The 'Fiction' Topic", ylab="Proportion of Document", abline(h=0.8, lty=2, col="blue"))
+plot(doc.topics7[,4], main = "The 'Fiction' Topic", ylab="Proportion of Document")
+abline(h=0.08, lty=2, lwd=4, col="red")
+abline(h=0.16, lty=2, lwd=4, col="red")
+abline(h=0.12, lty=2, lwd=2, col="red")
 
 difficult<-doc.topics7[(doc.topics7[,4]<0.16) & (doc.topics7[,4]>.08),]
 reviews2$fiction<-NA
@@ -279,4 +295,50 @@ names(sell.review)[19:24]<-c("book.reviewer", "review.date", "book.review", "sun
 missing<-unique(sell.review[!is.na(sell.review$book_review_link) & is.na(sell.review$book.review),]$book_review_link)
 
 
+
+sell.sent<-left_join(sell.review, rt.judge3[4:7], by=c("book_review_link" = "url"))
+sell.sent<-left_join(sell.sent, rt.judge3[4:7], by=c("sunday_review_link" = "url"))
+
+missing.book<-read.csv("missing_book.csv", stringsAsFactors = F)
+missing.sunday<-read.csv("missing_sunday.csv", stringsAsFactors = F)
+
+book.sent<-sentSplit(missing.book, "text")
+sunday.sent<-sentSplit(missing.sunday, "text")
+
+for (i in 1:length(sunday.sent)){
+  sell.sent$book.review[sell.sent$book_review_link==missisunday.sent$x[i]]<-sunday.sent$text[]
+}
+
+rt.filter2<-rep(2, nrow(rt))
+for (i in 1:nrow(rt)){
+  rt.filter2[i]<-(author_name[i] %in% strsplit(rt$text[i], split="\\W")[[1]]) | (all(strsplit(rt$book_title[i], split=" ")[[1]] %in% strsplit(rt$text[i], split="\\W")[[1]]))
+  
+}
+
+trade.total<-sell.sent %>% filter(display_name=="Paperback Trade Fiction") %>% group_by(author, title) %>% summarize(book = mean(avg.sent.x, na.rm=T), sunday = mean(avg.sent.y, na.rm=T), book.length = mean(length.x, na.rm=T), sunday.length=mean(length.y, na.rm=T))
+
+trade.total<-trade.total[trade.total$book!="NaN" | trade.total$sunday!="NaN",]
+
+mean(rt.judge3$avg.sent)#0.87
+mean(trade.total$book, na.rm=T)#0.7
+mean(trade.total$sunday, na.rm=T)#1.14
+mean(c(trade.total$sunday, trade.total$book), na.rm=T)
+
+best.reviews<-c(trade.total$sunday, trade.total$book)
+best.reviews<-best.reviews[best.reviews!="NaN"]
+
+t.test(rt.judge3$avg.sent, best.reviews)
+t.test(trade.total$book, trade.total$sunday)
+
+mean(rt.judge3$length)#45.9
+mean(trade.total$ na.rm=T)
+mean(trade.total$sunday, na.rm=T)
+mean(c(trade.total$sunday.length, trade.total$book.length), na.rm=T)#51.1
+
+best.length<-c(trade.total$sunday.length, trade.total$book.length)
+best.length<-best.length[best.length!="NaN"]
+
+t.test(best.length, rt.judge3$length)
+
+t.test(trade.total$sunday.length, trade.total$book.length)
 #Note: Missing 115/285 regular book (but 28 pre-2008), 155/370 Sundays (but 51 pre-2008); missing 30.5% and 28.1%, so estimate 70% of total yield.
