@@ -19,3 +19,6 @@
 [submodule "airbnb_kaggle"]
 	path = Project4-Capstone/airbnb_kaggle
 	url = https://github.com/sahooa/airbnb_kaggle
+[submodule "Project4-Capstone/DodgeCoates"]
+	path = Project4-Capstone/DodgeCoates
+	url = https://github.com/dwcoates/twits
