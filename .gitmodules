@@ -22,3 +22,6 @@
 [submodule "Project4-Capstone/DodgeCoates"]
 	path = Project4-Capstone/DodgeCoates
 	url = https://github.com/dwcoates/twits
+[submodule "Project4-Capstone/Ink-Scrapers"]
+	path = Project4-Capstone/Ink-Scrapers
+	url = git@github.com:Tingting-Chang/painting-classifier.git
