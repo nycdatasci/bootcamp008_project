@@ -29,7 +29,7 @@ summary_critics_docvecs = pickle.loads(urllib2.urlopen('http://steeefan-bkt-03.s
 # summary_critics_docvecs = -1
 
 # Collaborative
-+ user_item_matrix = pickle.load(open('D:/models/user_item_matrix_smaller-bin.pickle', 'rb'))
+# user_item_matrix = pickle.load(open('D:/models/user_item_matrix_smaller-bin.pickle', 'rb'))
 user_item_matrix = pickle.loads(urllib2.urlopen('http://steeefan-bkt-03.s3.amazonaws.com/models/user_item_matrix_smaller-bin.pickle').read())
 # user_item_matrix = -1
 
