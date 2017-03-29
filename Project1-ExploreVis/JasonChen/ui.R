@@ -18,13 +18,41 @@ shinyUI(dashboardPage(skin = 'purple',
       
       menuItem("Highest Injury Ratio?", tabName = "injratio", icon = icon("bar-chart-o"),
       menuSubItem("Injury/Death to Accidents", tabName = "injratio",icon = icon("bar-chart-o")),
-      menuSubItem("A Deeper Look into Motorcycles", tabName = "motorcycles",icon = icon("motorcycle")),
-      menuSubItem("Top 3 Motorcycle Accidents", tabName = "motoraccidents",icon = icon("motorcycle"))
+      menuSubItem("Cause of Accidents", tabName = "motorcycles",icon = icon("database")),
+      menuSubItem("Map by Causes", tabName = "motoraccidents",icon = icon("map"))
       )
       
       # menuItem('Future Features', tabName = 'future', icon = icon('exclamation-triangle'))
       ),
       
+    
+    conditionalPanel("input.sideBarMenu == 'trend'",
+                     selectizeInput('vehicle3',
+                                    'VEHICLE TYPE',
+                                    choice = c('All' = 'VEHICLE.TYPE.CODE.1 != "ALL"',
+                                               'TAXI' = 'VEHICLE.TYPE.CODE.1 == "TAXI"',
+                                               'LIVERY VEHICLE' = 'VEHICLE.TYPE.CODE.1 == "LIVERY VEHICLE"',
+                                               'SCOOTER' = 'VEHICLE.TYPE.CODE.1 == "SCOOTER"',
+                                               'OTHER' = 'VEHICLE.TYPE.CODE.1 == "OTHER"',
+                                               'MOTORCYCLE' = 'VEHICLE.TYPE.CODE.1 == "MOTORCYCLE"',
+                                               'AMBULANCE' = 'VEHICLE.TYPE.CODE.1 == "AMBULANCE"',
+                                               'PICK-UP TRUCK' = 'VEHICLE.TYPE.CODE.1 == "PICK-UP TRUCK"',
+                                               'UNKNOWN' = 'VEHICLE.TYPE.CODE.1 == "UNKNOWN"',
+                                               'BUS' = 'VEHICLE.TYPE.CODE.1 == "BUS"',
+                                               'FIRE TRUCK' = 'VEHICLE.TYPE.CODE.1 == "FIRE TRUCK"',
+                                               'UTL/STN WGN' = 'VEHICLE.TYPE.CODE.1 == "SPORT UTILITY / STATION WAGON"',
+                                               'VAN' = 'VEHICLE.TYPE.CODE.1 == "VAN"',
+                                               'NA' = 'VEHICLE.TYPE.CODE.1 == ""',
+                                               'SMALL COM VEH' = 'VEHICLE.TYPE.CODE.1 == "SMALL COM VEH(4 TIRES)"',
+                                               'BIKE' = 'VEHICLE.TYPE.CODE.1 == "BICYCLE"',
+                                               'LARGE COM VEH' = 'VEHICLE.TYPE.CODE.1 == "LARGE COM VEH(6 OR MORE TIRES)"',
+                                               'PEDICAB' = 'VEHICLE.TYPE.CODE.1 == "PEDICAB"'
+                                    ))
+                     
+                     
+    ),
+    
+    
       conditionalPanel("input.sideBarMenu == 'map1'",
                        selectizeInput('borough',
                                       'BOROUGH',
@@ -34,16 +62,30 @@ shinyUI(dashboardPage(skin = 'purple',
                                                  'Queens' = 'BOROUGH == "QUEENS"',
                                                  'Staten Island' = 'BOROUGH == "STATEN ISLAND"',
                                                  'Manhattan' = 'BOROUGH == "MANHATTAN"')),
-                       selectizeInput('filter',
-                                      'Number of Vehicles Involved: ',
-                                      choice = c('All' = 'no.of.cars !=""',
-                                                 '1' = 'no.of.cars == 1',
-                                                 '2' = 'no.of.cars == 2',
-                                                 '3' = 'no.of.cars == 3',
-                                                 '4' = 'no.of.cars == 4',
-                                                 '5' = 'no.of.cars == 5',
-                                                 '2+' = 'no.of.cars > 1',
-                                                 '3+' = 'no.of.cars > 2')),
+                       
+                       
+                       selectizeInput('vehicle',
+                                      'VEHICLE TYPE',
+                                      choice = c('All' = 'VEHICLE.TYPE.CODE.1 != "ALL"',
+                                                 'TAXI' = 'VEHICLE.TYPE.CODE.1 == "TAXI"',
+                                                 'LIVERY VEHICLE' = 'VEHICLE.TYPE.CODE.1 == "LIVERY VEHICLE"',
+                                                 'SCOOTER' = 'VEHICLE.TYPE.CODE.1 == "SCOOTER"',
+                                                 'OTHER' = 'VEHICLE.TYPE.CODE.1 == "OTHER"',
+                                                 'MOTORCYCLE' = 'VEHICLE.TYPE.CODE.1 == "MOTORCYCLE"',
+                                                 'AMBULANCE' = 'VEHICLE.TYPE.CODE.1 == "AMBULANCE"',
+                                                 'PICK-UP TRUCK' = 'VEHICLE.TYPE.CODE.1 == "PICK-UP TRUCK"',
+                                                 'UNKNOWN' = 'VEHICLE.TYPE.CODE.1 == "UNKNOWN"',
+                                                 'BUS' = 'VEHICLE.TYPE.CODE.1 == "BUS"',
+                                                 'FIRE TRUCK' = 'VEHICLE.TYPE.CODE.1 == "FIRE TRUCK"',
+                                                 'UTL/STN WGN' = 'VEHICLE.TYPE.CODE.1 == "SPORT UTILITY / STATION WAGON"',
+                                                 'VAN' = 'VEHICLE.TYPE.CODE.1 == "VAN"',
+                                                 'NA' = 'VEHICLE.TYPE.CODE.1 == ""',
+                                                 'SMALL COM VEH' = 'VEHICLE.TYPE.CODE.1 == "SMALL COM VEH(4 TIRES)"',
+                                                 'BIKE' = 'VEHICLE.TYPE.CODE.1 == "BICYCLE"',
+                                                 'LARGE COM VEH' = 'VEHICLE.TYPE.CODE.1 == "LARGE COM VEH(6 OR MORE TIRES)"',
+                                                 'PEDICAB' = 'VEHICLE.TYPE.CODE.1 == "PEDICAB"'
+                                      )),
+                       
                        sliderInput('heatslide', label = 'Set size of radius (in meters): ', 
                                    min = 0, max = 2000, value = 200, step = 100),
                        dateRangeInput('dateRange',
@@ -56,7 +98,18 @@ shinyUI(dashboardPage(skin = 'purple',
                                       "12:00 am - 6:00 am" = "TIME >= '00:00:00' & TIME <= '06:00:00'",
                                       "6:00 am - 12:00 pm" = "TIME >= '06:00:00' & TIME <= '12:00:00'",
                                       "12:00 pm - 6:00 pm" = "TIME >= '12:00:00' & TIME <= '18:00:00'",
-                                      "6:00 pm - 12:00 am" = "TIME >= '18:00:00' & TIME <= '23:59:59'"))
+                                      "6:00 pm - 12:00 am" = "TIME >= '18:00:00' & TIME <= '23:59:59'")),
+                       
+                       selectizeInput('filter',
+                                      'Number of Vehicles Involved: ',
+                                      choice = c('All' = 'no.of.cars !=""',
+                                                 '1' = 'no.of.cars == 1',
+                                                 '2' = 'no.of.cars == 2',
+                                                 '3' = 'no.of.cars == 3',
+                                                 '4' = 'no.of.cars == 4',
+                                                 '5' = 'no.of.cars == 5',
+                                                 '2+' = 'no.of.cars > 1',
+                                                 '3+' = 'no.of.cars > 2'))
                        
                        
       ),
@@ -98,7 +151,29 @@ shinyUI(dashboardPage(skin = 'purple',
                                       'Accidents by casualties: ',
                                       choice = c('All' = "NUMBER.OF.PERSONS.KILLED != ''",
                                                  'Injured or Killed' = 'NUMBER.OF.PERSONS.KILLED != 0 | NUMBER.OF.PERSONS.INJURED !=0',
-                                                 'Unharmed' = 'NUMBER.OF.PERSONS.KILLED == 0 & NUMBER.OF.PERSONS.INJURED ==0'))
+                                                 'Unharmed' = 'NUMBER.OF.PERSONS.KILLED == 0 & NUMBER.OF.PERSONS.INJURED ==0')),
+                       
+                       selectizeInput('vehicle4',
+                                      'VEHICLE TYPE',
+                                      choice = c('All' = 'VEHICLE.TYPE.CODE.1 != "ALL"',
+                                                 'TAXI' = 'VEHICLE.TYPE.CODE.1 == "TAXI"',
+                                                 'LIVERY VEHICLE' = 'VEHICLE.TYPE.CODE.1 == "LIVERY VEHICLE"',
+                                                 'SCOOTER' = 'VEHICLE.TYPE.CODE.1 == "SCOOTER"',
+                                                 'OTHER' = 'VEHICLE.TYPE.CODE.1 == "OTHER"',
+                                                 'MOTORCYCLE' = 'VEHICLE.TYPE.CODE.1 == "MOTORCYCLE"',
+                                                 'AMBULANCE' = 'VEHICLE.TYPE.CODE.1 == "AMBULANCE"',
+                                                 'PICK-UP TRUCK' = 'VEHICLE.TYPE.CODE.1 == "PICK-UP TRUCK"',
+                                                 'UNKNOWN' = 'VEHICLE.TYPE.CODE.1 == "UNKNOWN"',
+                                                 'BUS' = 'VEHICLE.TYPE.CODE.1 == "BUS"',
+                                                 'FIRE TRUCK' = 'VEHICLE.TYPE.CODE.1 == "FIRE TRUCK"',
+                                                 'UTL/STN WGN' = 'VEHICLE.TYPE.CODE.1 == "SPORT UTILITY / STATION WAGON"',
+                                                 'VAN' = 'VEHICLE.TYPE.CODE.1 == "VAN"',
+                                                 'NA' = 'VEHICLE.TYPE.CODE.1 == ""',
+                                                 'SMALL COM VEH' = 'VEHICLE.TYPE.CODE.1 == "SMALL COM VEH(4 TIRES)"',
+                                                 'BIKE' = 'VEHICLE.TYPE.CODE.1 == "BICYCLE"',
+                                                 'LARGE COM VEH' = 'VEHICLE.TYPE.CODE.1 == "LARGE COM VEH(6 OR MORE TIRES)"',
+                                                 'PEDICAB' = 'VEHICLE.TYPE.CODE.1 == "PEDICAB"'
+                                      ))
                        
       ),
       
@@ -128,19 +203,89 @@ shinyUI(dashboardPage(skin = 'purple',
       
       conditionalPanel("input.sideBarMenu == 'injratio'",
                        sliderInput('injslide', label = 'Show up to :', 
-                                   min = 1, max = 9, value = 5)
+                                   min = 1, max = 12, value = 5)
       ),
       
       conditionalPanel("input.sideBarMenu == 'motoraccidents'",
-                       checkboxGroupInput('motorvars', 'Select group: ',
-                        c('Traffic Control Disregarded' = "CONTRIBUTING.FACTOR.VEHICLE.1 =='Traffic Control Disregarded'",
-                          'Physical Disability' = "CONTRIBUTING.FACTOR.VEHICLE.1 == 'Physical Disability'",
-                          'Road Rage' = "CONTRIBUTING.FACTOR.VEHICLE.1 =='Aggressive Driving/Road Rage'")),
-                       radioButtons('motoradio', 'Select data:',
+                       
+                       selectizeInput('vehicle2',
+                                      'VEHICLE',
+                                      choice = c('All' = 'VEHICLE.TYPE.CODE.1 != "ALL"',
+                                                 'TAXI' = 'VEHICLE.TYPE.CODE.1 == "TAXI"',
+                                                 'LIVERY VEHICLE' = 'VEHICLE.TYPE.CODE.1 == "LIVERY VEHICLE"',
+                                                 'SCOOTER' = 'VEHICLE.TYPE.CODE.1 == "SCOOTER"',
+                                                 'OTHER' = 'VEHICLE.TYPE.CODE.1 == "OTHER"',
+                                                 'MOTORCYCLE' = 'VEHICLE.TYPE.CODE.1 == "MOTORCYCLE"',
+                                                 'AMBULANCE' = 'VEHICLE.TYPE.CODE.1 == "AMBULANCE"',
+                                                 'PICK-UP TRUCK' = 'VEHICLE.TYPE.CODE.1 == "PICK-UP TRUCK"',
+                                                 'UNKNOWN' = 'VEHICLE.TYPE.CODE.1 == "UNKNOWN"',
+                                                 'BUS' = 'VEHICLE.TYPE.CODE.1 == "BUS"',
+                                                 'FIRE TRUCK' = 'VEHICLE.TYPE.CODE.1 == "FIRE TRUCK"',
+                                                 'UTL/STN WGN' = 'VEHICLE.TYPE.CODE.1 == "SPORT UTILITY / STATION WAGON"',
+                                                 'VAN' = 'VEHICLE.TYPE.CODE.1 == "VAN"',
+                                                 'NA' = 'VEHICLE.TYPE.CODE.1 == ""',
+                                                 'SMALL COM VEH' = 'VEHICLE.TYPE.CODE.1 == "SMALL COM VEH(4 TIRES)"',
+                                                 'BIKE' = 'VEHICLE.TYPE.CODE.1 == "BICYCLE"',
+                                                 'LARGE COM VEH' = 'VEHICLE.TYPE.CODE.1 == "LARGE COM VEH(6 OR MORE TIRES)"',
+                                                 'PEDICAB' = 'VEHICLE.TYPE.CODE.1 == "PEDICAB"'
+                                      )),
+                       
+                       
+                       selectizeInput(
+                         'cause1', label = NULL, choices = unique(nyc.collisions$CONTRIBUTING.FACTOR.VEHICLE.1),
+                         options = list(placeholder = 'Select Contributing Factors')
+                       ),
+                       
+                       selectizeInput('year3',
+                                      'Year',
+                                      choice = c('All' = 'year != ""',
+                                                 '2013' = 'year == 2013',
+                                                 '2014' = 'year == 2014',
+                                                 '2015' = 'year == 2015',
+                                                 '2016' = 'year == 2016')),
+                       
+                       
+                       radioButtons('fatal', 'Select data:',
                                     c('All' = 'NUMBER.OF.PERSONS.INJURED !=""',
                                       'Fatal' = 'NUMBER.OF.PERSONS.KILLED != 0'))
-                       
-      )
+      ),
+    
+    conditionalPanel("input.sideBarMenu == 'motorcycles'",
+                    
+                     selectizeInput('vehicle1',
+                                    'VEHICLE',
+                                    choice = c('All' = 'VEHICLE.TYPE.CODE.1 != "ALL"',
+                                               'TAXI' = 'VEHICLE.TYPE.CODE.1 == "TAXI"',
+                                               'LIVERY VEHICLE' = 'VEHICLE.TYPE.CODE.1 == "LIVERY VEHICLE"',
+                                               'SCOOTER' = 'VEHICLE.TYPE.CODE.1 == "SCOOTER"',
+                                               'OTHER' = 'VEHICLE.TYPE.CODE.1 == "OTHER"',
+                                               'MOTORCYCLE' = 'VEHICLE.TYPE.CODE.1 == "MOTORCYCLE"',
+                                               'AMBULANCE' = 'VEHICLE.TYPE.CODE.1 == "AMBULANCE"',
+                                               'PICK-UP TRUCK' = 'VEHICLE.TYPE.CODE.1 == "PICK-UP TRUCK"',
+                                               'UNKNOWN' = 'VEHICLE.TYPE.CODE.1 == "UNKNOWN"',
+                                               'BUS' = 'VEHICLE.TYPE.CODE.1 == "BUS"',
+                                               'FIRE TRUCK' = 'VEHICLE.TYPE.CODE.1 == "FIRE TRUCK"',
+                                               'UTL/STN WGN' = 'VEHICLE.TYPE.CODE.1 == "SPORT UTILITY / STATION WAGON"',
+                                               'VAN' = 'VEHICLE.TYPE.CODE.1 == "VAN"',
+                                               'NA' = 'VEHICLE.TYPE.CODE.1 == ""',
+                                               'SMALL COM VEH' = 'VEHICLE.TYPE.CODE.1 == "SMALL COM VEH(4 TIRES)"',
+                                               'BIKE' = 'VEHICLE.TYPE.CODE.1 == "BICYCLE"',
+                                               'LARGE COM VEH' = 'VEHICLE.TYPE.CODE.1 == "LARGE COM VEH(6 OR MORE TIRES)"',
+                                               'PEDICAB' = 'VEHICLE.TYPE.CODE.1 == "PEDICAB"'
+                                    )),
+                     
+                     selectizeInput('year1',
+                                    'Year',
+                                    choice = c('All' = 'year != ""',
+                                               '2013' = 'year == 2013',
+                                               '2014' = 'year == 2014',
+                                               '2015' = 'year == 2015',
+                                               '2016' = 'year == 2016'))
+                     
+                     
+    )
+    
+    
     
 
     ),
@@ -185,6 +330,7 @@ shinyUI(dashboardPage(skin = 'purple',
       tabItem(tabName = "motorcycles",
               fluidRow(box(
                 DT::dataTableOutput('motorcycles'),
+                
                 width = 12))),
       
       tabItem(tabName = "motoraccidents",

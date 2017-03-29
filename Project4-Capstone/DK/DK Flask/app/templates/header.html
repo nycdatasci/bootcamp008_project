@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Good Enough</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='images/draftkings.png') }}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<header>
+	<div class="navbar-header">
+      <a class="navbar-brand" href="/">
+	  <img style="max-width:120px; max-height: 45px; margin-top: -7px;" src="{{ url_for('static', filename='images/dklogo.png') }}">
+	  </a>
+    </div>
+
+
+	<div class = "container-fluid">
+
+		<a href="/dashboard/"><button type="button" class="btn btn-success" id="button" aria-label="Left Align" style="margin-top: 5px; margin-bottom: 5px; height: 44px; margin-right: 15px">
+		  <span class="glyphicon glyphicon-off" aria-hidden="true"></span> Optimize
+		</button></a>
+
+
+
+	<ul class="nav navbar-nav navbar-right">
+
+		  <div style="margin-right: 10px; margin-left: 15px; margin-top: 5px; margin-bottom: 5px;"  class="container-fluid">
+			<h5>
+
+			<a href="/support-donate/"> <span class="glyphicon glyphicon-heart"></span> Support   </a>
+
+			<a href="/login/"><span class="glyphicon glyphicon-log-in"></span> Login   </a>
+
+		<a href="/register/"><span class="glyphicon glyphicon-pencil"></span> Sign up</a><h5>
+
+
+</header>
+
+<body>
+
+<!-- -->
+    <div class="border-row" style="width:100%; margin-bottom: 15px;"></div>
+
+
+    <div class="container" align="center" style="min-height:100%">
+
+    {% with messages = get_flashed_messages() %}
+	  {% if messages %}
+	    {% for message in messages %}
+		  <div class="alert alert-warning alert-dismissible" role="alert">
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+			{{message}}
+		  </div>
+		{% endfor %}
+	  {% endif %}
+	{% endwith %}
+
+        {% block body %}{% endblock %}
+
+    </div>
+
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+</body>
+
+</html>

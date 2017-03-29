@@ -1,0 +1,238 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+<div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#lineup" aria-controls="lineup" role="tab" data-toggle="tab">Lineup</a></li>
+    <li role="presentation"><a href="#players" aria-controls="players" role="tab" data-toggle="tab">Players</a></li>
+    <li role="presentation"><a href="#readme" aria-controls="readme" role="tab" data-toggle="tab">Readme</a></li>
+
+  </ul>
+
+  <!-- Tab panes -->
+<div class="tab-content">
+    <!--LINEUP TAB -->
+  <div role="tabpanel" class="tab-pane fade in active" id="lineup">
+
+    <h5 align="left">Game Times (ET):</h5>
+    <div id="timeinputs">
+    {% for time in gametimes %}
+      <span class="input-group-addon" > {{ ((time)|int|string if time < 13 else time%12)|int|string + ':' + ('00' if time%1 == 0 else '30') + (' AM' if time < 12 else ' PM') }}
+        <input type="checkbox" checked="checked" value={{time}} name='gametimes'>
+
+      </span>
+
+      {% endfor %}
+    </div>
+    <br>
+
+    <a href=# id=process_input><button class='btn btn-default'>Create Lineups</button></a><br><br>
+    <div id = "result"></div>
+
+
+    <script type=text/javascript>
+			$(function() {
+
+
+			  $('a#process_input').bind('click', function() {
+			    let time = {};
+			    let els = $("#timeinputs").children('span');
+			    els.each(function(index,val){
+                  time[$(this).find('input').val()] = $(this).find('input')[0].checked
+			    })
+
+
+
+			    var jsonObj = $.post('/background_process',time,
+				function(data){
+				  console.log(data);
+				  CreateTableFromJSON(data);
+				},'json');
+
+			   function CreateTableFromJSON(data){
+
+                  var divContainer = document.getElementById("result");
+                  console.log(divContainer)
+                  divContainer.innerHTML = "";
+
+                  for (var key in data) {
+                      if (data.hasOwnProperty(key)) {
+                          CreateOneTableFromJSON(data[key],divContainer);
+
+                      }
+                  }
+
+
+              }
+
+              function CreateOneTableFromJSON(data, parent) {
+
+                  var tableData = data.team;
+
+                  var col = ['player',"Pts","Sal","Value"];
+
+                  function capitalizeFirstLetter(string) {
+                      return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+                  }
+
+                  var group = document.createElement("div");
+                  var text = document.createElement("div");
+                  text.style.padding = "8px, 0px";
+                  text.style.fontWeight = "bold";
+                  text.innerHTML = "Total Points: "+Number(Math.round(data.points+'e2')+'e-2')+" | Salary: "+data.salary;
+                  group.appendChild(text);
+
+                  var table = document.createElement("table");
+                  table.classList.add('table');
+                  table.classList.add('table-hover');
+
+                  var tr = table.insertRow(-1);                   // TABLE ROW.
+
+                  for (var i = 0; i < col.length; i++) {
+                      var th = document.createElement("th");      // TABLE HEADER.
+                      th.innerHTML = capitalizeFirstLetter(col[i]);
+                      tr.appendChild(th);
+                  }
+
+                  // // ADD JSON DATA TO THE TABLE AS ROWS.
+                  for (var i = 0; i < tableData.length; i++) {
+
+                      tr = table.insertRow(-1);
+
+                      for (var j = 0; j < col.length; j++) {
+                          var tabCell = tr.insertCell(-1);
+                          tabCell.innerHTML = tableData[i][col[j]];
+                      }
+                  }
+
+                  // // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+                  group.appendChild(table);
+                  parent.appendChild(group);
+
+              }
+
+            })
+			});
+	</script>
+
+
+
+    <!--<br>{% for key in lineup %}-->
+      <!--Lineup: {{ key + 1}} | Projected Total: {{ lineup[key]['points']|round(2) }} | Salary Costs: {{ lineup[key]['salary'] }}<br>-->
+      <!--<table class="table table-hover"><tr>-->
+        <!--<tr><th>Player</th>-->
+        <!--<th>DK Salary</th>-->
+        <!--<th>Projections</th>-->
+        <!--<th>Projected Value</th></tr>-->
+        <!--{% for i in range(8) %}-->
+
+
+      <!--<td>{{ lineup[key]['team'][i]['player'] }}</td>-->
+      <!--<td>{{ lineup[key]['team'][i]['Sal'] }}</td>-->
+      <!--<td>{{ lineup[key]['team'][i]['Pts'] }}</td>-->
+      <!--<td>{{ lineup[key]['team'][i]['Value'] }}</td>-->
+      <!--</tr>-->
+
+        <!--{% endfor %}-->
+      <!--</table>-->
+
+    <!--<br>-->
+    <!--{% endfor %}-->
+
+
+  </div>
+
+
+    <!--PLAYER TAB -->
+  <div role="tabpanel" class="tab-pane fade" id="players">
+    <h3>Daily Predictions</h3><br>
+    <table class="table table-hover">
+
+        <tr>
+          <th>Player</th>
+          <th>DK Salary</th>
+          <th>Projections</th>
+          <th>Projected Value</th>
+        </tr>
+
+
+        {% set sort_on = request.args.sort_on|default('Salary') %}
+        {% for player in predictions|sort(attribute=sort_on,reverse=True) %}
+          <tr>
+            <td> {{player.Player}}</td>
+            <td> {{player.Salary}}</td>
+            <td> {{ (player.Points)|round(2) }}</td>
+            <td> {{ (player.Points / (player.Salary/1000))|round(2) }}</td>
+          </tr>
+		{% endfor %}
+    </table>
+
+
+
+      <!--Page tabs-->
+    <nav aria-label="Page navigation">
+      <ul class="pagination">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+    <!--README TAB -->
+  <div role="tabpanel" class="tab-pane fade" id="readme" align="left">
+    <br>
+
+    <li>A total score of 270 should yield a high likelyhood of winning in a 50/50 or double-up pool.</li><br>
+    <li>Each player's projections has an average backtested error of ~5 RMSE. This can cause the total projections to fluctuate on a given day.</li><br>
+    <li>There is a lot of variability in basketball.</li><br>
+    <li>The optimization algorithm is a stochastic process; you will likely see a different lineup each time you optimize.</li>
+    <br>
+     {% for t in TOPIC_DICT["Readme"] %}
+       <a href="{{t[1]}}">{{t[0]}}</a><br>
+     {% endfor %}
+
+
+
+  </div>
+
+</div>
+
+</div>
+
+
+<!--<script>-->
+  <!--$("#button").click(function(e) {-->
+    <!--e.preventDefault();-->
+    <!--$.ajax({-->
+        <!--type: "POST",-->
+        <!--url: "/dashboard/",-->
+        <!--success: function(result) {-->
+            <!--alert('Optimization successful');-->
+        <!--},-->
+        <!--error: function(result) {-->
+            <!--alert('error');-->
+        <!--}-->
+    <!--});-->
+<!--});-->
+<!--</script>-->
+
+
+
+{% endblock %}
+

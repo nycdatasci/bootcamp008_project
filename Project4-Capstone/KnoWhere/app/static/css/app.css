@@ -1,0 +1,100 @@
+body { 
+    padding-top: 65px;
+    font-family: Arial, Geneva, sans-serif;
+}
+
+#form {
+	margin-bottom: 30px;
+}
+.row {
+	margin-bottom: 10px;
+}
+
+h4.date-label {
+	color: #999999;
+	font-weight: bold;
+}
+
+.navbar {
+	background-color: #ff6a00;
+	width: 100%;
+	transition: top 0.2s ease-in-out;
+}
+
+.navbar * {
+	color: #ffffff !important;
+}
+
+.navbar-brand {
+	font-size: 1.4em;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1200px;
+    }
+}
+
+h4.panel-title {
+	font-size: 1em;
+	color: #ffffff;
+	background-color: #337ab7;
+	font-weight: bold;
+	border: none;
+	padding: 5px;
+}
+
+.panel, .panel-default, .overview-panel, .panel-body {
+	border: none;
+	box-shadow: none;
+}
+
+.panel-default>.panel-heading{
+	background: none;
+	border: none;
+}
+
+#mapid {
+	height: 400px;
+}
+
+[ng-cloak] {
+	visibility: hidden;
+}
+
+.badge {
+	background-color: #ffffff;
+	color: #666666;
+	border: 1px solid #e2e2e2;
+}
+
+#distance_chart, #location_chart {
+	width: 100%;
+}
+
+.list-group-item {
+	color: #666666;
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+
+.overview-icon {
+	font-size: 1.4em;
+}
+
+#location-group:last-child {
+	border-left: 0px;
+}
+
+#location-group:first-child {
+	border-right: 0px;
+}
+
+#mot_title {
+	background-color: #f6cd94;
+	color: #484848;
+}
+
+#bottom {
+	height: 50px;
+}

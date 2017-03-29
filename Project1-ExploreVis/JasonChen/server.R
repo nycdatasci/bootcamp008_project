@@ -1,9 +1,9 @@
-## server.R ##
+ ## server.R ##
 
 shinyServer(function(input, output){
   
   output$trend <- renderPlot(
-    group_by(filter_(nyc.collisions, input$trendradio), 
+    group_by(filter_(nyc.collisions, input$trendradio, input$vehicle3), 
              year)%>%summarise(count = n())%>%
       ggplot(aes(x=as.integer(as.character(year)), y=count)) + 
       geom_point(size = 4, color = 'red') + 
@@ -22,14 +22,15 @@ shinyServer(function(input, output){
                 max(nyc.collisions$LONGITUDE), max(nyc.collisions$LATITUDE))
     })
   
-  observeEvent(input$heatslide, 
+  observeEvent(input$vehicle,
+               {observeEvent(input$heatslide, 
                {observeEvent(input$dateRange, 
                              {observeEvent(input$time1, 
                                            {observeEvent(input$filter, 
                                                          {observeEvent(input$borough,{
     proxy <- leafletProxy("map1")%>%removeWebGLHeatmap(layerId = 'a')%>%
       addWebGLHeatmap(layerId = 'a', data = filter_(nyc.collisions, 
-                                     input$filter, input$borough)%>% 
+                                     input$filter, input$borough, input$vehicle)%>% 
                         filter_(input$time1)%>%
                         filter(DATE > input$dateRange[1] & DATE < input$dateRange[2]),
                       lng=~LONGITUDE, lat=~LATITUDE,size = input$heatslide, 
@@ -39,6 +40,7 @@ shinyServer(function(input, output){
   })
   })
   })
+               })
   
   output$map2 <- renderLeaflet({
     leaflet() %>%
@@ -67,7 +69,7 @@ shinyServer(function(input, output){
    
    
   output$plot <- renderPlot(
-    ggplot(summarise(group_by(filter_(nyc.collisions, input$plot),year,BOROUGH),count = n()), 
+    ggplot(summarise(group_by(filter_(nyc.collisions, input$plot, input$vehicle4),year,BOROUGH),count = n()), 
            aes(x=year, y=count)) + facet_grid(~ BOROUGH) +
       geom_bar(stat = 'identity', aes(fill = BOROUGH)) +
       scale_fill_brewer(palette = 'Pastel1') +
@@ -92,30 +94,53 @@ shinyServer(function(input, output){
     ggplot(head(arrange(inj.ratio,desc(ratio)), n= input$injslide),
            aes(x = VEHICLE.TYPE.CODE.1, y = ratio)) + 
       geom_bar(stat = 'identity', aes(fill = VEHICLE.TYPE.CODE.1)) +
-      scale_fill_brewer(palette = 'Pastel1') +
+      scale_fill_brewer(palette = 'Set3') +
       theme_classic()
   )
   
   output$motorcycles <- DT::renderDataTable({
-    datatable(arrange(motorcycle.cause,desc(total.deaths)), rownames = FALSE) %>%
+    datatable(arrange(
+      
+      group_by(
+        filter_(nyc.collisions, input$vehicle1, input$year1),
+        
+        
+        CONTRIBUTING.FACTOR.VEHICLE.1)%>%
+        summarise(total.deaths = sum(NUMBER.OF.PERSONS.KILLED),
+                  total.injuries = sum(NUMBER.OF.PERSONS.INJURED),
+                  total.accidents = n())%>%
+        mutate(ratio = (total.injuries + total.deaths)/total.accidents)%>%
+        arrange(desc(total.accidents)),#%>%
+        #filter(CONTRIBUTING.FACTOR.VEHICLE.1 != '', CONTRIBUTING.FACTOR.VEHICLE.1 != 'Unspecified'),
+      
+      
+      desc(total.deaths)), rownames = FALSE) %>%
     formatStyle(input$selected,
                 background = 'skyblue', fontWeight = 'bold')
   })
   
+  
   output$motoraccidents <- renderLeaflet({
-    leaflet() %>% 
+    leaflet() %>%
       addProviderTiles("Esri.WorldStreetMap")%>%
       fitBounds(min(motorcycles$LONGITUDE), min(motorcycles$LATITUDE), 
                 max(motorcycles$LONGITUDE), max(motorcycles$LATITUDE))
   })
-  observeEvent(input$motoradio, {observeEvent(input$motorvars, {
-    proxy <- leafletProxy("motoraccidents")%>%clearMarkers()%>%
-      addMarkers(data = filter_(filter_(motorcycles, input$motoradio),
-                                paste0(input$motorvars, collapse = ' | ')), 
+  observeEvent(input$year3, {observeEvent(input$cause1, {observeEvent(input$fatal, {observeEvent(input$vehicle2, {
+    proxy <- leafletProxy("motoraccidents")%>%clearMarkerClusters()%>%clearMarkers()%>%
+      addCircleMarkers(data = filter(filter_(nyc.collisions, input$fatal, input$vehicle2, input$year3),
+                               CONTRIBUTING.FACTOR.VEHICLE.1 == input$cause1),
+                       fillOpacity = 0.5,
+                       clusterOptions = markerClusterOptions(),
                  ~LONGITUDE, ~LATITUDE,
-                 popup = ~as.character(CONTRIBUTING.FACTOR.VEHICLE.1))
+                 color = 'red',
+                 popup = ~paste(UNIQUE.KEY, DATE, TIME, weekday, sep=' | '))
   })
   })
+})
+})
+  
+ 
   
 
   output$table <- DT::renderDataTable({
@@ -133,6 +158,11 @@ shinyServer(function(input, output){
       formatStyle(input$selected,  
                   background="skyblue", fontWeight='bold')
   })
+  
+  
+  
+  
+  
   
   
   

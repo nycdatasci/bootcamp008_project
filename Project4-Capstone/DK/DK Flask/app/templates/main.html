@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Good Enough</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='images/draftkings.png') }}">
+</head>
+
+<header>
+	<div class="navbar-header">
+      <a class="navbar-brand" href="/">
+	  <img style="max-width:120px; max-height: 45px; margin-top: -7px;" src="{{ url_for('static', filename='images/draftkings.png') }}">
+	  </a>
+    </div>
+
+
+	<div class = "container-fluid">
+
+		<a href="/dashboard/"><button type="button" class="btn btn-success" aria-label="Left Align" style="margin-top: 5px; margin-bottom: 5px; height: 44px; margin-right: 15px">
+		  <span class="glyphicon glyphicon-off" aria-hidden="true"></span> Optimize
+		</button></a>
+
+
+
+	<ul class="nav navbar-nav navbar-right">
+
+		  <div style="margin-right: 10px; margin-left: 15px; margin-top: 5px; margin-bottom: 5px;"  class="container-fluid">
+			<h5>
+
+			<a href="/support-donate/"> <span class="glyphicon glyphicon-heart"></span> Support   </a>
+
+			<a role="presentation" data-toggle="modal" data-target="#exampleModal" href="#"><span class="glyphicon glyphicon-log-in"></span> Login   </a>
+
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="exampleModalLabel">Login</h4>
+				  </div>
+				  <div class="modal-body">
+					  <div class="container-fluid">
+						  <form action="" class="form-inline" method="post">
+							<input type="text" class="form-control" placeholder="Username" name="username" value="">
+							 <input type="password" class="form-control" placeholder="Password" name="password" value="">
+							<input class="btn btn-primary" type="submit" value="Login">
+						  </form>
+
+							<div class="container">
+							<br>
+						   <p>No account? <a href='/register'>Register here</a>.</p>
+						   <br>
+
+						  </div>
+					</div>
+				  </div>
+
+				</div>
+			  </div>
+			</div>
+
+		<a role="presentation" class="active" data-toggle="modal" data-target="#register" href="#"><span class="glyphicon glyphicon-pencil"></span> Sign up</a><h5>
+		<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				<h4 class="modal-title" id="exampleModalLabel">Register</h4>
+			  </div>
+			  <div class="modal-body">
+				  <div class="container">
+
+						<form method=post action="/register">
+						  <dl>
+
+  <dt><label for="username">Username</label>
+  <dd><input id="username" name="username" type="text" value="">
+
+  </dd>
+
+
+  <dt><label for="email">Email Address</label>
+  <dd><input id="email" name="email" type="text" value="">
+
+  </dd>
+
+
+  <dt><label for="password">New Password</label>
+  <dd><input id="password" name="password" type="password" value="">
+
+  </dd>
+
+
+  <dt><label for="confirm">Repeat Password</label>
+  <dd><input id="confirm" name="confirm" type="password" value="">
+
+  </dd>
+
+
+  <dt><label for="accept_tos">I accept the <a href="/about/tos" target="blank">Terms of Service</a> and <a href="/about/privacy-policy" target="blank">Privacy Notice</a> (updated March 27, 2017)</label>
+  <dd><input id="accept_tos" name="accept_tos" type="checkbox" value="y">
+
+  </dd>
+
+						  </dl>
+						  <p><input type=submit value=Register>
+						</form>
+
+				</div>
+			  </div>
+
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+      </ul>
+
+	</ul>
+
+	</div>
+
+</header>
+
+<body>
+
+<!-- -->
+    <div class="border-row" style="width:100%; margin-bottom: 15px;"></div>
+
+    <div class="container" align="center" style="min-height:100%">
+
+        <a href="/dashboard/">
+		    <video autoplay="autoplay" muted="muted" poster="/static/videos/python-programming-tutorials-main.png" style="width:100%; max-height:80%" >
+		    <source src="/static/videos/python-programming-tutorials-main.mp4" type="video/mp4" type="video/mp4">
+		    <source src="/static/videos/python-programming-tutorials-main.webm" type="video/webm">
+		    </video>
+		</a>
+
+
+    </div>
+
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+</body>
+
+</html>

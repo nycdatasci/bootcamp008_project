@@ -30,7 +30,7 @@ def clean_song(title, artist):
 	elif title.find('('):
 		title = title.split( ' (')[0]
 
-	c_title = title.lower().strip().replace(' ', '-')replace('.', '').replace("'", "").replace('!', '').replace(',', '').replace('$', '').replace('?', '').replace('&', '').replace('#', '')
+	c_title = title.lower().strip().replace(' ', '-').replace('.', '').replace("'", "").replace('!', '').replace(',', '').replace('$', '').replace('?', '').replace('&', '').replace('#', '')
 
 	if artist.find('"') > 0:
 		artist = artist.replace('"', '')
@@ -38,7 +38,7 @@ def clean_song(title, artist):
 		artist = artist.replace("'", '')
 	elif artist.find(' & ') > 0:
 		artist = artist.split(' &')[0]
-	elif artist.find('/') > 0:
+	elif artist.find(' / ') > 0:
 		artist = artist.split(' / ')[0]
 	elif artist.find(', ') > 0:
 		artist = artist.split(',')[0]
@@ -48,6 +48,8 @@ def clean_song(title, artist):
 		artist = artist.replace('.', '')
 	elif artist.find(' feat') > 0:
 		artist = artist.split(' feat')[0]
+	elif artist.find(' with ') > 0:
+		artist = artist.split(' with')[0]
 		
 	c_artist = artist.lower().strip().replace('/','').replace('.', '').replace(' ', '-').replace("'", '').replace('"', '').replace(',', '')
 
@@ -91,7 +93,7 @@ def main():
 						print e
 						continue
 					try:
-						songlyrics = Song(title = c_title, artist = c_artist,).lyrics.format().replace('\n',"")
+						songlyrics = Song(title = c_title, artist = c_artist,).lyrics.format().replace('\n'," ")
 					except Exception, e:
 						print "Exception occurred with the format function!"
 						print e
@@ -100,10 +102,14 @@ def main():
 				print "track skipped!"
 				continue
 			print c_title + " " + c_artist
-			target = open(writename, 'w')
-			target.write(songlyrics.encode('utf-8'))
-			target.close()
-			print c_artist + ' - ' + c_title + " Success!"
+			try:
+				target = open(writename, 'w')
+				target.write(songlyrics.encode('utf-8'))
+				target.close()
+				print c_artist + ' - ' + c_title + " Success!"
+			except Exception, e:
+				print "track skipped! - write error!"
+				continue
 	print "Scraping Lyrics Complete"
 	
 main()

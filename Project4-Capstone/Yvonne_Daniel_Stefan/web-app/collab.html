@@ -1,0 +1,227 @@
+		      			<md-tab label="Collaborative">
+		      				<md-content class="md-padding">
+		      					{%raw%}
+		      					
+		      					<!-- COLLABORATION -->
+			      				<div class="row">
+			      					<div class="col-md-1" style="text-align: right">
+			      						<h3>
+			      							#1
+			      						</h3>
+			      					</div>
+			      					<div class="col-md-8">
+								    		<md-autocomplete flex md-selected-item="ctrl.selectedCollab1" md-input-minlength="3" md-search-text="ctrl.searchTextCollab1"
+								            md-items="itemCollab1 in ctrl.qrySearch(ctrl.searchTextCollab1, 'collab')" md-item-text="itemCollab1.name" md-delay="300"
+								            md-require-match md-floating-label="Select a game, movie or TV show" md-selected-item-change="ctrl.setCollabItem(itemCollab1.uniqueID, 1)">
+								          <div layout="row" class="item" layout-align="start center">
+								          	<div class="row">
+								          		<div class="col-md-1" style="text-align: left; width: 50px;">
+								          			{{itemCollab1.itemType}}
+								          		</div>
+								          		<div class="col-md-1" style="text-align: left; width: 35px;">
+								          			<img ng-src="{{itemCollab1.image}}" class="avatar" width="30" />
+								          		</div>
+								          		<div class="col-md-8" style="text-align: left; width: 400px;">
+								          			<span md-highlight-text="ctrl.searchText">{{itemCollab1.name}}</span>
+								          		</div>
+								          		<div class="col-md-2" style="text-align: left; width: 100px;">
+								          			<span>{{itemCollab1.system}}</span>
+								          		</div>
+								          	</div>
+								          </div>
+								          <div ng-messages="searchForm.autocompleteField.$error" ng-if="searchForm.autocompleteField.$touched">
+								            <div ng-message="md-require-match">Please select an existing item.</div>
+								            <div ng-message="minlength">Your entry is not long enough.</div>
+								          </div>
+								        </md-autocomplete>
+			      					</div>
+							    		<div class="col-md-2">
+										    <md-input-container class="md-icon-float md-icon-right md-block">
+										      <input ng-model="collabItemRank1" type="number" step="1" placeholder="Score" max="10" min="0">
+										    </md-input-container>
+			      					</div>
+			      					<div class="col-md-1"></div>
+			      				</div>
+			      				
+			      				<div class="row">
+			      					<div class="col-md-1" style="text-align: right">
+			      						<h3>
+			      							#2
+			      						</h3>
+			      					</div>
+			      					<div class="col-md-8">
+								    		<md-autocomplete flex md-selected-item="ctrl.selectedCollab2" md-input-minlength="3" md-search-text="ctrl.searchTextCollab2"
+								            md-items="itemCollab2 in ctrl.qrySearch(ctrl.searchTextCollab2, 'collab')" md-item-text="itemCollab2.name" md-delay="300"
+								            md-require-match md-floating-label="Select a game, movie or TV show" md-selected-item-change="ctrl.setCollabItem(itemCollab2.uniqueID, 2)">
+								          <div layout="row" class="item" layout-align="start center">
+								          	<div class="row">
+								          		<div class="col-md-1" style="text-align: left; width: 50px;">
+								          			{{itemCollab2.itemType}}
+								          		</div>
+								          		<div class="col-md-1" style="text-align: left; width: 35px;">
+								          			<img ng-src="{{itemCollab2.image}}" class="avatar" width="30" />
+								          		</div>
+								          		<div class="col-md-8" style="text-align: left; width: 400px;">
+								          			<span md-highlight-text="ctrl.searchText">{{itemCollab2.name}}</span>
+								          		</div>
+								          		<div class="col-md-2" style="text-align: left; width: 100px;">
+								          			<span>{{itemCollab2.system}}</span>
+								          		</div>
+								          	</div>
+								          </div>
+								          <div ng-messages="searchForm.autocompleteField.$error" ng-if="searchForm.autocompleteField.$touched">
+								            <div ng-message="md-require-match">Please select an existing item.</div>
+								            <div ng-message="minlength">Your entry is not long enough.</div>
+								          </div>
+								        </md-autocomplete>
+			      					</div>
+							    		<div class="col-md-2">
+										    <md-input-container class="md-icon-float md-icon-right md-block">
+										      <input ng-model="collabItemRank2" type="number" step="1" placeholder="Rank" max="10" min="0">
+										    </md-input-container>
+			      					</div>
+			      					<div class="col-md-1"></div>
+			      				</div>
+										
+			      				<div class="row">
+			      					<div class="col-md-1" style="text-align: right">
+			      						<h3>
+			      							#3
+			      						</h3>
+			      					</div>
+			      					<div class="col-md-8">
+								    		<md-autocomplete flex md-selected-item="ctrl.selectedCollab3" md-input-minlength="3" md-search-text="ctrl.searchTextCollab3"
+								            md-items="itemCollab3 in ctrl.qrySearch(ctrl.searchTextCollab3, 'collab')" md-item-text="itemCollab3.name" md-delay="300"
+								            md-require-match md-floating-label="Select a game, movie or TV show" md-selected-item-change="ctrl.setCollabItem(itemCollab3.uniqueID, 3)">
+								          <div layout="row" class="item" layout-align="start center">
+								          	<div class="row">
+								          		<div class="col-md-1" style="text-align: left; width: 50px;">
+								          			{{itemCollab3.itemType}}
+								          		</div>
+								          		<div class="col-md-1" style="text-align: left; width: 35px;">
+								          			<img ng-src="{{itemCollab3.image}}" class="avatar" width="30" />
+								          		</div>
+								          		<div class="col-md-8" style="text-align: left; width: 400px;">
+								          			<span md-highlight-text="ctrl.searchText">{{itemCollab3.name}}</span>
+								          		</div>
+								          		<div class="col-md-2" style="text-align: left; width: 100px;">
+								          			<span>{{itemCollab3.system}}</span>
+								          		</div>
+								          	</div>
+								          </div>
+								          <div ng-messages="searchForm.autocompleteField.$error" ng-if="searchForm.autocompleteField.$touched">
+								            <div ng-message="md-require-match">Please select an existing item.</div>
+								            <div ng-message="minlength">Your entry is not long enough.</div>
+								          </div>
+								        </md-autocomplete>
+			      					</div>
+							    		<div class="col-md-2">
+										    <md-input-container class="md-icon-float md-icon-right md-block">
+										      <input ng-model="collabItemRank3" type="number" step="1" placeholder="Rank" max="10" min="0">
+										    </md-input-container>
+			      					</div>
+			      					<div class="col-md-1"></div>
+			      				</div>
+			      				
+			      				<div class="row">
+			      					<div class="col-md-1" style="text-align: right">
+			      						<h3>
+			      							#4
+			      						</h3>
+			      					</div>
+			      					<div class="col-md-8">
+								    		<md-autocomplete flex md-selected-item="ctrl.selectedCollab4" md-input-minlength="4" md-search-text="ctrl.searchTextCollab4"
+								            md-items="itemCollab4 in ctrl.qrySearch(ctrl.searchTextCollab4, 'collab')" md-item-text="itemCollab4.name" md-delay="300"
+								            md-require-match md-floating-label="Select a game, movie or TV show" md-selected-item-change="ctrl.setCollabItem(itemCollab4.uniqueID, 4)">
+								          <div layout="row" class="item" layout-align="start center">
+								          	<div class="row">
+								          		<div class="col-md-1" style="text-align: left; width: 50px;">
+								          			{{itemCollab4.itemType}}
+								          		</div>
+								          		<div class="col-md-1" style="text-align: left; width: 35px;">
+								          			<img ng-src="{{itemCollab4.image}}" class="avatar" width="30" />
+								          		</div>
+								          		<div class="col-md-8" style="text-align: left; width: 400px;">
+								          			<span md-highlight-text="ctrl.searchText">{{itemCollab4.name}}</span>
+								          		</div>
+								          		<div class="col-md-2" style="text-align: left; width: 100px;">
+								          			<span>{{itemCollab4.system}}</span>
+								          		</div>
+								          	</div>
+								          </div>
+								          <div ng-messages="searchForm.autocompleteField.$error" ng-if="searchForm.autocompleteField.$touched">
+								            <div ng-message="md-require-match">Please select an existing item.</div>
+								            <div ng-message="minlength">Your entry is not long enough.</div>
+								          </div>
+								        </md-autocomplete>
+			      					</div>
+							    		<div class="col-md-2">
+										    <md-input-container class="md-icon-float md-icon-right md-block">
+										      <input ng-model="collabItemRank4" type="number" step="1" placeholder="Rank" max="10" min="0">
+										    </md-input-container>
+			      					</div>
+			      					<div class="col-md-1"></div>
+			      				</div>
+			      				
+			      				<div class="row">
+			      					<div class="col-md-1" style="text-align: right">	
+			      						<h3>
+			      							#5
+			      						</h3>
+			      					</div>
+			      					<div class="col-md-8">
+								    		<md-autocomplete flex md-selected-item="ctrl.selectedCollab5" md-input-minlength="4" md-search-text="ctrl.searchTextCollab5"
+								            md-items="itemCollab5 in ctrl.qrySearch(ctrl.searchTextCollab5, 'collab')" md-item-text="itemCollab5.name" md-delay="300"
+								            md-require-match md-floating-label="Select a game, movie or TV show" md-selected-item-change="ctrl.setCollabItem(itemCollab5.uniqueID, 5)">
+								          <div layout="row" class="item" layout-align="start center">
+								          	<div class="row">
+								          		<div class="col-md-1" style="text-align: left; width: 50px;">
+								          			{{itemCollab5.itemType}}
+								          		</div>
+								          		<div class="col-md-1" style="text-align: left; width: 35px;">
+								          			<img ng-src="{{itemCollab5.image}}" class="avatar" width="30" />
+								          		</div>
+								          		<div class="col-md-8" style="text-align: left; width: 400px;">
+								          			<span md-highlight-text="ctrl.searchText">{{itemCollab5.name}}</span>
+								          		</div>
+								          		<div class="col-md-2" style="text-align: left; width: 100px;">
+								          			<span>{{itemCollab5.system}}</span>
+								          		</div>
+								          	</div>
+								          </div>
+								          <div ng-messages="searchForm.autocompleteField.$error" ng-if="searchForm.autocompleteField.$touched">
+								            <div ng-message="md-require-match">Please select an existing item.</div>
+								            <div ng-message="minlength">Your entry is not long enough.</div>
+								          </div>
+								        </md-autocomplete>
+			      					</div>
+							    		<div class="col-md-2">
+										    <md-input-container class="md-icon-float md-icon-right md-block">
+										      <input ng-model="collabItemRank5" type="number" step="1" placeholder="Rank" max="10" min="0">
+										    </md-input-container>
+			      					</div>
+			      					<div class="col-md-1"></div>
+			      				</div>
+			      				
+			      				<div class="row">
+			      					<div class="col-md-4"></div>
+			      					<div class="col-md-4" style="text-align:center;">
+			      						<div class="row">
+			      							<div class="col-md-4" style="vertical-align: center;">
+												    <md-input-container class="md-icon-float md-icon-right md-block">
+															<input ng-model="recoAmount" type="number" step="1" placeholder="Show" ng-blur="ctrl.recommend(ctrl.selectedItemContent['uniqueID'], 'content')">
+												    </md-input-container>
+													</div>
+			      							<div class="col-md-4" style="vertical-align: center;">
+			      								<md-button class="md-raised md-primary" ng-click="ctrl.recommendCollab()">Recommend</md-button>
+			      							</div>
+			      							<div class="col-md-4" style="vertical-align: center;">
+			      								<md-button class="md-raised md-warn" ng-click="ctrl.resetCollab()">Reset</md-button>
+			      							</div>
+			      						</div>
+			      					</div>
+			      					<div class="col-md-4"></div>
+			      				</div>
+			      				{%endraw%}
+		      				</md-content>
+		      			</md-tab>

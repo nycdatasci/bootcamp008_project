@@ -1,0 +1,53 @@
+Deadline of this weekend to clean (2/26)  and visualize the data
+
+Thoughts about each variable:
+
+bathrooms: number of bathrooms 
+#there will probably be a peak around 1 or 2 bathrooms, and this will probably be a key field
+
+bedrooms: number of bathrooms
+#similar to bathrooms, there will be a peak around 1 to 3 bedrooms, as most renters will look for those types of apartments, this will be a key field
+
+building_id
+#unclear, unless that links to when an apartment is posted
+
+created
+#apartments created during popular periods (weekends, after work) might get more views
+
+description
+#scan for keywords that people will search for
+#this might require some NLP
+
+display_address
+#perhaps popular streets, like 'broadway', will improve interest. 
+#street can indicate neighborhood
+#see if we can find some key words in address that draw interest
+#break it down into number, street name, and street suffix? TBD
+
+features: a list of features about this apartment
+#also NLP, also very important
+#we need to do a transformation on this, to perhaps break features into different categories or columns
+
+latitude
+#not sure if it'll be important, but use it
+
+listing_id
+#not clear if useful
+
+longitude
+#not sure if it'll be important, but use it
+
+manager_id
+#could be a proxy for good pictures, leave it but use it
+
+
+photos: a list of photo links. You are welcome to download the pictures yourselves from renthop's site, but they are the same as imgs.zip. 
+#deal with it later
+
+price: in USD
+#there will be a peak in interest around 25% of a standard household income?
+
+street_address
+#not clear how this is different from display address. we'll figure it out later
+
+interest_level: this is the target variable. It has 3 categories: 'high', 'medium', 'low'
