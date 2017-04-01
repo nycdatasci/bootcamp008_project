@@ -1,0 +1,111 @@
+###################DATA MANIPULATION######################
+library(data.table)
+library(dplyr)
+library(tidyr)
+library(chron)
+library(reshape2)
+###################GGPLOT2 LIBRARY########################
+library(ggplot2)
+library(ggthemes)
+library(RColorBrewer)
+###################LEAFLET LIBRARY########################
+library(leaflet)
+library(leaflet.extras)
+####################SHINY#################################
+library(shinydashboard)
+library(shinyTime)
+library(DT)
+
+
+countvehicles <- function(row){return(sum(row != ''))}
+
+nyc.collisions <- fread('https://data.cityofnewyork.us/api/views/h9gi-nx95/rows.csv', 
+                        stringsAsFactors = F)%>%tbl_df()
+setnames(nyc.collisions, make.names(colnames(nyc.collisions)))
+
+nyc.collisions<- filter(nyc.collisions, 
+                        !is.na(LATITUDE + LONGITUDE + ZIP.CODE))
+nyc.collisions$DATE <- as.Date(nyc.collisions$DATE, '%m/%d/%Y')
+nyc.collisions <- mutate(nyc.collisions, year = year(DATE))
+nyc.collisions$year <- as.factor(nyc.collisions$year)
+nyc.collisions$ZIP.CODE <- as.character(nyc.collisions$ZIP.CODE)
+nyc.collisions <- filter(nyc.collisions, year != 2012 & year !=2017)
+nyc.collisions$TIME <- apply(t(nyc.collisions$TIME), 2, function(x){paste0(x, ':00')})
+
+nyc.collisions$TIME <- times(nyc.collisions$TIME)
+nyc.collisions$no.of.cars <- apply(select(nyc.collisions, c(25:29)),
+                                   1,countvehicles)
+nyc.collisions <- nyc.collisions%>%
+  mutate(weekday = weekdays(as.Date(DATE, '%m/%d/%y')))
+
+collisions.weekday<-summarise(group_by(nyc.collisions, weekday, year, BOROUGH), count = n())
+collisions.weekday$weekday <- factor(collisions.weekday$weekday,
+                                     levels = c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"))
+
+zip <- fread('zip.csv')
+zip <- separate(zip, 'ZIP Codes', into=c('a','b','c','d','e','f','g','h','i'), sep = ',')%>%
+  gather(key = 'col', value = 'ZIP.CODE', 3:11)%>%
+  na.omit()%>%
+  arrange(Neighborhood)%>%select(ZIP.CODE, Neighborhood)
+
+left<-nyc.collisions%>%select(NUMBER.OF.PERSONS.INJURED,NUMBER.OF.PERSONS.KILLED,NUMBER.OF.PEDESTRIANS.INJURED,
+                              NUMBER.OF.PEDESTRIANS.KILLED,NUMBER.OF.CYCLIST.INJURED,NUMBER.OF.CYCLIST.KILLED,
+                              NUMBER.OF.MOTORIST.INJURED,NUMBER.OF.MOTORIST.KILLED,
+                              ZIP.CODE,BOROUGH)
+
+left$ZIP.CODE <- as.integer(left$ZIP.CODE)
+zip$ZIP.CODE <- as.integer(zip$ZIP.CODE)
+
+byneighborhood <- left_join(left, zip, by="ZIP.CODE")
+
+inj.ratio <- group_by(nyc.collisions, VEHICLE.TYPE.CODE.1)%>%
+  summarise(total.deaths = sum(NUMBER.OF.PERSONS.KILLED),
+            total.injuries = sum(NUMBER.OF.PERSONS.INJURED),
+            total.accidents = n())%>%
+  mutate(ratio = (total.injuries + total.deaths)/total.accidents)%>%
+  arrange(desc(ratio))%>%
+  filter(VEHICLE.TYPE.CODE.1 != '', VEHICLE.TYPE.CODE.1 != 'UNKNOWN')
+
+
+
+  motorcycles <- filter(nyc.collisions, VEHICLE.TYPE.CODE.1 == 'MOTORCYCLE')
+motorcycle.cause <- group_by(motorcycles, CONTRIBUTING.FACTOR.VEHICLE.1)%>%
+  summarise(total.deaths = sum(NUMBER.OF.PERSONS.KILLED),
+            total.injuries = sum(NUMBER.OF.PERSONS.INJURED),
+            total.accidents = n())%>%
+  mutate(ratio = (total.injuries + total.deaths)/total.accidents)%>%
+  arrange(desc(ratio))%>%
+  filter(CONTRIBUTING.FACTOR.VEHICLE.1 != '', CONTRIBUTING.FACTOR.VEHICLE.1 != 'Unspecified')
+
+summary(motorcycle.cause)
+  
+collisions.hurt <- nyc.collisions%>%
+  filter(NUMBER.OF.PERSONS.KILLED != 0 | NUMBER.OF.PERSONS.INJURED !=0)
+collisions.safe <- nyc.collisions%>%
+  filter(NUMBER.OF.PERSONS.KILLED == 0 | NUMBER.OF.CYCLIST.INJURED ==0)
+
+
+collisions.killed <- nyc.collisions%>%
+  filter(NUMBER.OF.PERSONS.KILLED != 0)%>%
+  mutate(color = ifelse(NUMBER.OF.PEDESTRIANS.KILLED != 0, 'red', 
+                        ifelse(NUMBER.OF.CYCLIST.KILLED !=0, 'green', 'blue')))
+
+grouped <- group_by(nyc.collisions,year,BOROUGH)%>%
+  summarise( 
+    injured = sum(NUMBER.OF.PERSONS.INJURED), 
+    killed = sum(NUMBER.OF.PERSONS.KILLED),
+    none = sum(NUMBER.OF.PERSONS.INJURED ==0 & 
+                 NUMBER.OF.PERSONS.KILLED ==0),
+    count = n()
+  )
+
+grouped1 <- group_by(collisions.hurt,year,BOROUGH)%>%
+  summarise(
+    injured = sum(NUMBER.OF.PERSONS.INJURED), 
+    killed = sum(NUMBER.OF.PERSONS.KILLED),
+    none = sum(NUMBER.OF.PERSONS.INJURED ==0 & 
+                 NUMBER.OF.PERSONS.KILLED ==0),
+    count = n()
+  )
+
+#####################################TEST######################################

@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<!-- pll --><script type="text/javascript" src="/s/ef909fe/en_US.js"></script>
+<link href="/s/d0621fe/jobsearch_all.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="Data Scientist Jobs, Employment in New York, NY" href="http://rss.indeed.com/rss?q=data+scientist&l=New+York">
+<link rel="alternate" media="handheld" href="/m/jobs?q=data+scientist&l=New+York">
+<script type="text/javascript">
+    
+    window['closureReadyCallbacks'] = [];
+
+    function call_when_jsall_loaded(cb) {
+        if (window['closureReady']) {
+            cb();
+        } else {
+            window['closureReadyCallbacks'].push(cb);
+        }
+    }
+</script>
+
+<script type="text/javascript" src="/s/bf664f3/jobsearch-all-compiled.js"></script>
+            <script type="text/javascript">
+var pingUrlsForGA = [];
+
+var searchUID = '1b8dlrep1a10rbdd';
+var tk = '1b8dlrep1a10rbdd';
+
+var loggedIn = false;
+var myindeed = true;
+var userEmail = '';
+var tellFriendEmail = '';
+var globalLoginURL = 'https:\/\/www.indeed.com\/account\/login?dest=%2Fq-data-scientist-l-New-York-jobs.html';
+var globalRegisterURL = 'https:\/\/www.indeed.com\/account\/register?dest=%2Fq-data-scientist-l-New-York-jobs.html';
+var searchKey = '0cf87e27fc6be012';
+var searchState = 'q=data+scientist&amp;l=New+York';
+var searchQS = 'q=data+scientist&l=New+York';
+var eventType = 'jobsearch';
+var locale = 'en_US';
+function clk(id) { var a = document.getElementById(id); var hr = a.href; var si = a.href.indexOf('&jsa='); if (si > 0) return; var jsh = hr + '&tk=1b8dlrep1a10rbdd&jsa=2001'; a.href = jsh; }
+function sjomd(id) { var a = document.getElementById(id); var hr = a.href; var ocs = hr.indexOf('&oc=1'); if (ocs < 0) return; var oce = ocs + 5; a.href = hr.substring(0, ocs) + hr.substring(oce); }
+function sjoc(id, sal) { var a = document.getElementById(id); a.href = a.href + '&oc=1&sal='+sal; }
+function ptk(st,p) {document.cookie = 'PTK="tk=1b8dlrep1a10rbdd&type=jobsearch&subtype='+st+(p?'&'+p:'')+'"; path=/';}
+function rbptk(st, c, p) { ptk(st, 'cat='+c+(p?'&p='+p:''));}
+</script>
+<script type="text/javascript">
+function loadJSAsync( ) {
+for ( var i = 0; i < arguments.length; i++ ) {
+var url = arguments[i];
+(function() {
+var s = document.createElement("script"), el = document.getElementsByTagName("script")[0];
+s.async = true;
+s.src = url;
+el.parentNode.insertBefore(s, el);
+})();
+}
+}
+</script>
+<meta name="description" content="2,530  Data Scientist Jobs available in New York, NY on Indeed.com.  one search.  all jobs.">
+<meta name="keywords" content="Data Scientist Jobs, Employment in New York, NY, New York, NY careers, New York, NY employment, New York, NY job listings, New York, NY job search, New York, NY search engine, work in New York, NY">
+<meta name="referrer" content="origin">
+
+<link rel="canonical" href="/q-Data-Scientist-l-New-York,-NY-jobs.html">
+<link rel="next" href="/jobs?q=data+scientist&l=New+York&start=10" /><style type="text/css">
+#recPromoDisplay { margin-bottom: 3em;margin-left: 0.5em; }
+#recPromoDisplayPageLast { font-size: 16px; margin: 1.5em 0; }
+</style>
+<script type="text/javascript">
+var indeedCsrfToken = 'rbfLNADq3LqAGecg0J48m22GNWbbYdNb';
+var hashedCsrfToken = '5d7819acacaf9b44f978b1bf2baddb56';
+</script>
+
+<style type="text/css">
+.jasxcustomfonttst-useCustomHostedFontFullPage *{font-family:"Open Sans", sans-serif !important}.jasxcustomfonttst-useLato *{font-family:"Lato", sans-serif !important}.jasxcustomfonttst-useFira *{font-family:"Fira Sans", sans-serif !important}.jasxcustomfonttst-useGibson *{font-family:"Gibson", sans-serif !important}.jasxcustomfonttst-useAvenir *{font-family:"Avenir Next", sans-serif !important}.comment_bubble a,.comment_bubble a:link,.comment_bubble a:visited{color:#77c}.footer a,.footer a:link,.footer a:visited{color:#77c}.footer .sl:visited{color:#77c}.jsf .sl{color:#77c}.sl,.sl:link,.sl:visited{color:#77c}#cookie-alert .learn-more,#cookie-alert .learn-more :visited{color:#77c}#jobsearch .sl{color:#77c}#secondary_nav a,#secondary_nav a:link,#secondary_nav a:visited{color:#77c}.arrowStub{border-top-color:#666}.carouselInlineAd .cmp-note{color:#6F6F6F}.cmp_header{color:#666}.cmp_meta{color:#666}.comment_bubble{color:#666}.date,.visits{color:#808080}.dd-disabled{color:#666}.dd-disabled .dd-button-arrow{color:#666}.hp_welcome_message{color:#6F6F6F}.inwrap input{border-bottom-color:#aaa;border-\@LINE_END\@-color:#aaa}.ipadPromoCopy{color:#666}.itaText{color:#6F6F6F}.jsf .label{color:#aaa}.location{color:#666}.nps-popover-x-span{color:#666}.popover-x-span{color:#666}.rjl{color:#666}.rsc{color:#aaa}.rsh{color:#6F6F6F}.svh{color:#6F6F6F}.sjh{color:#666}.sup_grey{color:#aaa}#fromageMsg{color:#666}#jobsearch .label,#jobsearch .label label{color:#aaa}#not-likely-div{color:#808080}#original_radius_result{color:#666}#question-intro-div{color:#808080}#userOptionsLabel.active b{color:#666}#userOptionsLabel.active .arrowStub{border-bottom-color:#666}#very-likely-div{color:#808080}.jasxcolorcontrasttst-blueOnly .comment_bubble a,.jasxcolorcontrasttst-blueOnly .comment_bubble a:link,.jasxcolorcontrasttst-blueOnly .comment_bubble a:visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly .footer a,.jasxcolorcontrasttst-blueOnly .footer a:link,.jasxcolorcontrasttst-blueOnly .footer a:visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly .footer .sl:visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly .jsf .sl{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly .sl,.jasxcolorcontrasttst-blueOnly .sl:link,.jasxcolorcontrasttst-blueOnly .sl:visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly #cookie-alert .learn-more,.jasxcolorcontrasttst-blueOnly #cookie-alert .learn-more :visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly #jobsearch .sl{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly #secondary_nav a,.jasxcolorcontrasttst-blueOnly #secondary_nav a:link,.jasxcolorcontrasttst-blueOnly #secondary_nav a:visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly .arrowStub{border-top-color:#666}.jasxcolorcontrasttst-blueOnly .carouselInlineAd .cmp-note{color:#6F6F6F}.jasxcolorcontrasttst-blueOnly .cmp_header{color:#666}.jasxcolorcontrasttst-blueOnly .cmp_meta{color:#666}.jasxcolorcontrasttst-blueOnly .comment_bubble{color:#666}.jasxcolorcontrasttst-blueOnly .date,.jasxcolorcontrasttst-blueOnly .visits{color:#808080}.jasxcolorcontrasttst-blueOnly .dd-disabled{color:#666}.jasxcolorcontrasttst-blueOnly .dd-disabled .dd-button-arrow{color:#666}.jasxcolorcontrasttst-blueOnly .hp_welcome_message{color:#6F6F6F}.jasxcolorcontrasttst-blueOnly .inwrap input{border-bottom-color:#aaa;border-\@LINE_END\@-color:#aaa}.jasxcolorcontrasttst-blueOnly .ipadPromoCopy{color:#666}.jasxcolorcontrasttst-blueOnly .itaText{color:#6F6F6F}.jasxcolorcontrasttst-blueOnly .jsf .label{color:#aaa}.jasxcolorcontrasttst-blueOnly .location{color:#666}.jasxcolorcontrasttst-blueOnly .nps-popover-x-span{color:#666}.jasxcolorcontrasttst-blueOnly .popover-x-span{color:#666}.jasxcolorcontrasttst-blueOnly .rjl{color:#666}.jasxcolorcontrasttst-blueOnly .rsc{color:#aaa}.jasxcolorcontrasttst-blueOnly .rsh{color:#6F6F6F}.jasxcolorcontrasttst-blueOnly .svh{color:#6F6F6F}.jasxcolorcontrasttst-blueOnly .sjh{color:#666}.jasxcolorcontrasttst-blueOnly .sup_grey{color:#aaa}.jasxcolorcontrasttst-blueOnly #fromageMsg{color:#666}.jasxcolorcontrasttst-blueOnly #jobsearch .label,.jasxcolorcontrasttst-blueOnly #jobsearch .label label{color:#aaa}.jasxcolorcontrasttst-blueOnly #not-likely-div{color:#808080}.jasxcolorcontrasttst-blueOnly #original_radius_result{color:#666}.jasxcolorcontrasttst-blueOnly #question-intro-div{color:#808080}.jasxcolorcontrasttst-blueOnly #userOptionsLabel.active b{color:#666}.jasxcolorcontrasttst-blueOnly #userOptionsLabel.active .arrowStub{border-bottom-color:#666}.jasxcolorcontrasttst-blueOnly #very-likely-div{color:#808080}.jasxcolorcontrasttst-greyOnly .comment_bubble a,.jasxcolorcontrasttst-greyOnly .comment_bubble a:link,.jasxcolorcontrasttst-greyOnly .comment_bubble a:visited{color:#77c}.jasxcolorcontrasttst-greyOnly .footer a,.jasxcolorcontrasttst-greyOnly .footer a:link,.jasxcolorcontrasttst-greyOnly .footer a:visited{color:#77c}.jasxcolorcontrasttst-greyOnly .footer .sl:visited{color:#77c}.jasxcolorcontrasttst-greyOnly .jsf .sl{color:#77c}.jasxcolorcontrasttst-greyOnly .sl,.jasxcolorcontrasttst-greyOnly .sl:link,.jasxcolorcontrasttst-greyOnly .sl:visited{color:#77c}.jasxcolorcontrasttst-greyOnly #cookie-alert .learn-more,.jasxcolorcontrasttst-greyOnly #cookie-alert .learn-more :visited{color:#77c}.jasxcolorcontrasttst-greyOnly #jobsearch .sl{color:#77c}.jasxcolorcontrasttst-greyOnly #secondary_nav a,.jasxcolorcontrasttst-greyOnly #secondary_nav a:link,.jasxcolorcontrasttst-greyOnly #secondary_nav a:visited{color:#77c}.jasxcolorcontrasttst-greyOnly .arrowStub{border-top-color:#666}.jasxcolorcontrasttst-greyOnly .carouselInlineAd .cmp-note{color:#666}.jasxcolorcontrasttst-greyOnly .cmp_header{color:#666}.jasxcolorcontrasttst-greyOnly .cmp_meta{color:#666}.jasxcolorcontrasttst-greyOnly .comment_bubble{color:#666}.jasxcolorcontrasttst-greyOnly .date,.jasxcolorcontrasttst-greyOnly .visits{color:#666}.jasxcolorcontrasttst-greyOnly .dd-disabled{color:#666}.jasxcolorcontrasttst-greyOnly .dd-disabled .dd-button-arrow{color:#666}.jasxcolorcontrasttst-greyOnly .hp_welcome_message{color:#666}.jasxcolorcontrasttst-greyOnly .inwrap input{border-bottom-color:#666;border-\@LINE_END\@-color:#666}.jasxcolorcontrasttst-greyOnly .ipadPromoCopy{color:#666}.jasxcolorcontrasttst-greyOnly .itaText{color:#666}.jasxcolorcontrasttst-greyOnly .jsf .label{color:#666}.jasxcolorcontrasttst-greyOnly .location{color:#666}.jasxcolorcontrasttst-greyOnly .nps-popover-x-span{color:#666}.jasxcolorcontrasttst-greyOnly .popover-x-span{color:#666}.jasxcolorcontrasttst-greyOnly .rjl{color:#666}.jasxcolorcontrasttst-greyOnly .rsc{color:#666}.jasxcolorcontrasttst-greyOnly .rsh{color:#666}.jasxcolorcontrasttst-greyOnly .svh{color:#666}.jasxcolorcontrasttst-greyOnly .sjh{color:#666}.jasxcolorcontrasttst-greyOnly .sup_grey{color:#666}.jasxcolorcontrasttst-greyOnly #fromageMsg{color:#666}.jasxcolorcontrasttst-greyOnly #jobsearch .label,.jasxcolorcontrasttst-greyOnly #jobsearch .label label{color:#666}.jasxcolorcontrasttst-greyOnly #not-likely-div{color:#666}.jasxcolorcontrasttst-greyOnly #original_radius_result{color:#666}.jasxcolorcontrasttst-greyOnly #question-intro-div{color:#666}.jasxcolorcontrasttst-greyOnly #userOptionsLabel.active b{color:#666}.jasxcolorcontrasttst-greyOnly #userOptionsLabel.active .arrowStub{border-bottom-color:#666}.jasxcolorcontrasttst-greyOnly #very-likely-div{color:#666}.jasxcolorcontrasttst-greyAndBlue .comment_bubble a,.jasxcolorcontrasttst-greyAndBlue .comment_bubble a:link,.jasxcolorcontrasttst-greyAndBlue .comment_bubble a:visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue .footer a,.jasxcolorcontrasttst-greyAndBlue .footer a:link,.jasxcolorcontrasttst-greyAndBlue .footer a:visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue .footer .sl:visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue .jsf .sl{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue .sl,.jasxcolorcontrasttst-greyAndBlue .sl:link,.jasxcolorcontrasttst-greyAndBlue .sl:visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue #cookie-alert .learn-more,.jasxcolorcontrasttst-greyAndBlue #cookie-alert .learn-more :visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue #jobsearch .sl{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue #secondary_nav a,.jasxcolorcontrasttst-greyAndBlue #secondary_nav a:link,.jasxcolorcontrasttst-greyAndBlue #secondary_nav a:visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue .arrowStub{border-top-color:#666}.jasxcolorcontrasttst-greyAndBlue .carouselInlineAd .cmp-note{color:#666}.jasxcolorcontrasttst-greyAndBlue .cmp_header{color:#666}.jasxcolorcontrasttst-greyAndBlue .cmp_meta{color:#666}.jasxcolorcontrasttst-greyAndBlue .comment_bubble{color:#666}.jasxcolorcontrasttst-greyAndBlue .date,.jasxcolorcontrasttst-greyAndBlue .visits{color:#666}.jasxcolorcontrasttst-greyAndBlue .dd-disabled{color:#666}.jasxcolorcontrasttst-greyAndBlue .dd-disabled .dd-button-arrow{color:#666}.jasxcolorcontrasttst-greyAndBlue .hp_welcome_message{color:#666}.jasxcolorcontrasttst-greyAndBlue .inwrap input{border-bottom-color:#666;border-\@LINE_END\@-color:#666}.jasxcolorcontrasttst-greyAndBlue .ipadPromoCopy{color:#666}.jasxcolorcontrasttst-greyAndBlue .itaText{color:#666}.jasxcolorcontrasttst-greyAndBlue .jsf .label{color:#666}.jasxcolorcontrasttst-greyAndBlue .location{color:#666}.jasxcolorcontrasttst-greyAndBlue .nps-popover-x-span{color:#666}.jasxcolorcontrasttst-greyAndBlue .popover-x-span{color:#666}.jasxcolorcontrasttst-greyAndBlue .rjl{color:#666}.jasxcolorcontrasttst-greyAndBlue .rsc{color:#666}.jasxcolorcontrasttst-greyAndBlue .rsh{color:#666}.jasxcolorcontrasttst-greyAndBlue .svh{color:#666}.jasxcolorcontrasttst-greyAndBlue .sjh{color:#666}.jasxcolorcontrasttst-greyAndBlue .sup_grey{color:#666}.jasxcolorcontrasttst-greyAndBlue #fromageMsg{color:#666}.jasxcolorcontrasttst-greyAndBlue #jobsearch .label,.jasxcolorcontrasttst-greyAndBlue #jobsearch .label label{color:#666}.jasxcolorcontrasttst-greyAndBlue #not-likely-div{color:#666}.jasxcolorcontrasttst-greyAndBlue #original_radius_result{color:#666}.jasxcolorcontrasttst-greyAndBlue #question-intro-div{color:#666}.jasxcolorcontrasttst-greyAndBlue #userOptionsLabel.active b{color:#666}.jasxcolorcontrasttst-greyAndBlue #userOptionsLabel.active .arrowStub{border-bottom-color:#666}.jasxcolorcontrasttst-greyAndBlue #very-likely-div{color:#666}
+</style>
+
+<style type="text/css">
+#resultsCol { padding-top: 0; }
+.searchCount { margin-top: 6px; }
+.showing { padding-top: 9px; padding-bottom: 9px; }
+
+.brdr { height: 1px; overflow: hidden; background-color: #ccc; }
+
+#bjobalerts { margin-top: 0; }
+
+/* Tall window sizes */
+@media only screen and (min-height:780px){
+.showing { padding-bottom: 0; }
+}
+
+/* Wide window sizes */
+@media only screen and (min-width:1125px){
+.brdr  { margin-left: 12px; margin-right: 12px; }
+}
+
+a,a:link,.link,.btn,.btn:hover{text-decoration:none}a:hover,.link:hover{text-decoration:underline}.dya-container a{text-decoration:underline !important}</style>
+
+<script>
+function onLoadHandler() {
+
+document.js.reset();
+jobSeenInit('1b8dlrep1a10rbdd');
+
+if ( document.radius_update ) { document.radius_update.reset(); }
+
+}
+
+initLogInitialUserInteraction('1b8dlrep1a10rbdd', 'serp');
+
+window.onload = onLoadHandler;
+</script>
+<link rel="alternate" href="android-app://com.indeed.android.jobsearch/https/www.indeed.com/m/jobs?q=data+scientist&l=New+York">
+<title>Data Scientist Jobs, Employment in New York, NY
+|
+Indeed.com</title>
+<style>
+</style>
+<style>
+</style>
+<style type="text/css">
+.btn,.sg-btn{display:inline-block;padding:9px 15px;border:1px solid #9a99ac;border-bottom-color:#a2a2a2;-webkit-border-radius:6px;-moz-border-radius:6px;-ms-border-radius:6px;-o-border-radius:6px;border-radius:6px;background-color:#D9D9E2;background-image:-moz-linear-gradient(top, #f8f8f9, #D9D9E2);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#f8f8f9), to(#D9D9E2));background-image:-webkit-linear-gradient(top, #f8f8f9, #D9D9E2);background-image:linear-gradient(to bottom, #f8f8f9, #D9D9E2);background-repeat:repeat-x;-webkit-box-shadow:0 1px 5px rgba(0,0,0,0.2);-moz-box-shadow:0 1px 5px rgba(0,0,0,0.2);-ms-box-shadow:0 1px 5px rgba(0,0,0,0.2);-o-box-shadow:0 1px 5px rgba(0,0,0,0.2);box-shadow:0 1px 5px rgba(0,0,0,0.2);color:#333;vertical-align:middle;text-align:center;text-decoration:none;text-shadow:0 1px #fff;font-weight:700;font-size:16px;font-family:"Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;line-height:22px;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff8f8f9', endColorstr='#ffe6e6e6', GradientType=0);cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-highlight:none;-webkit-tap-highlight-color:transparent;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.btn.active,.btn.sg-active,.btn:active,.btn.disabled,.btn.sg-disabled,.btn[disabled],.sg-btn.active,.sg-btn.sg-active,.sg-btn:active,.sg-btn.disabled,.sg-btn.sg-disabled,.sg-btn[disabled]{outline:none;background-color:#f8f8f9;color:#333}.btn:focus,.sg-btn:focus{outline:0;box-shadow:0 0 1px 0 #1642bb;-webkit-transition:box-shadow 0.2s linear;-moz-transition:box-shadow 0.2s linear;transition:box-shadow 0.2s linear}.btn.active,.btn.sg-active,.btn:active,.sg-btn.active,.sg-btn.sg-active,.sg-btn:active{background-color:#f8f8f9;background-image:none;-webkit-box-shadow:inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);-moz-box-shadow:inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);box-shadow:inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05)}.btn.disabled,.btn.sg-disabled,.btn[disabled],.sg-btn.disabled,.sg-btn.sg-disabled,.sg-btn[disabled]{background-color:#f8f8f9;background-image:none;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;opacity:.65;filter:alpha(opacity=65);cursor:default}.btn-primary,.sg-btn-primary{border-color:#1642bb;background-color:#5585f2;background-image:-moz-linear-gradient(top, #6598ff, #2e5ad7);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#6598ff), to(#2e5ad7));background-image:-webkit-linear-gradient(top, #6598ff, #2e5ad7);background-image:linear-gradient(to bottom, #6598ff, #2e5ad7);background-repeat:repeat-x;color:#F8F8F9;text-shadow:0 -1px #0f2299;-ms-filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=-1, Color=#e80f2299, Positive=true);filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=-1, Color=#e80f2299, Positive=true);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6598fe', endColorstr='#ff3c69e0', GradientType=0);zoom:1}.btn-primary.active,.btn-primary.sg-active,.btn-primary:active,.btn-primary.disabled,.btn-primary.sg-disabled,.btn-primary[disabled],.sg-btn-primary.active,.sg-btn-primary.sg-active,.sg-btn-primary:active,.sg-btn-primary.disabled,.sg-btn-primary.sg-disabled,.sg-btn-primary[disabled]{background-color:#2e5ad7;color:#F8F8F9}.btn-primary:focus,.sg-btn-primary:focus{box-shadow:0 0 1px 0 #000}.btn-special,.sg-btn-special{border-color:#ba3200;background-color:#5585f2;background-image:-moz-linear-gradient(top, #f60, #f14200);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#f60), to(#f14200));background-image:-webkit-linear-gradient(top, #f60, #f14200);background-image:linear-gradient(to bottom, #f60, #f14200);background-repeat:repeat-x;color:#F8F8F9;text-shadow:0 -1px #000;-ms-filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=-1, Color=#e80f2299, Positive=true);filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=-1, Color=#e80f2299, Positive=true);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6598fe', endColorstr='#ff3c69e0', GradientType=0);zoom:1}.btn-special.active,.btn-special.sg-active,.btn-special:active,.btn-special.disabled,.btn-special.sg-disabled,.btn-special[disabled],.sg-btn-special.active,.sg-btn-special.sg-active,.sg-btn-special:active,.sg-btn-special.disabled,.sg-btn-special.sg-disabled,.sg-btn-special[disabled]{background-color:#f14200;color:#F8F8F9}.btn-special:focus,.sg-btn-special:focus{box-shadow:0 0 1px 0 #000}.btn-danger,.sg-btn-danger{border-color:#83121b;background-color:#5585f2;background-image:-moz-linear-gradient(top, #d1787f, #b01825);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#d1787f), to(#b01825));background-image:-webkit-linear-gradient(top, #d1787f, #b01825);background-image:linear-gradient(to bottom, #d1787f, #b01825);background-repeat:repeat-x;color:#F8F8F9;text-shadow:0 -1px #000;-ms-filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=-1, Color=#e80f2299, Positive=true);filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=-1, Color=#e80f2299, Positive=true);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6598fe', endColorstr='#ff3c69e0', GradientType=0);zoom:1}.btn-danger.active,.btn-danger.sg-active,.btn-danger:active,.btn-danger.disabled,.btn-danger.sg-disabled,.btn-danger[disabled],.sg-btn-danger.active,.sg-btn-danger.sg-active,.sg-btn-danger:active,.sg-btn-danger.disabled,.sg-btn-danger.sg-disabled,.sg-btn-danger[disabled]{background-color:#b01825;color:#F8F8F9}.btn-danger:focus,.sg-btn-danger:focus{box-shadow:0 0 1px 0 #000}input.btn,input.sg-btn{-webkit-appearance:none}button.btn::-moz-focus-inner,button.sg-btn::-moz-focus-inner{border:0}.btn-sm,.sg-btn-sm,.btn-xs,.sg-bt-xs{padding:6px 12px}.btn-xs,.sg-btn-xs{padding:3px 6px;line-height:15px}.btn-md,.sg-btn-md{padding:6px 6px}.btn-lg,.sg-btn-lg{padding:9px 18px;border-radius:6px;font-size:18px}.btn-block,.sg-btn-block{display:block;margin:9px auto;-webkit-box-sizing:border-box !important;-moz-box-sizing:border-box !important;box-sizing:border-box !important;max-width:352px}.btn-block-compact,.sg-btn-block-compact{margin:2px auto}input.btn-block,input.sg-btn-block,button.btn-block,button.sg-btn-block{width:100%;max-width:351px}.btn-block+.btn-block,.sg-btn-block+.sg-btn-block{margin-top:5px}#buttonContainer .btn,#buttonContainer .sg-btn{margin:0}.btn-icon .cssImage{margin-bottom:-40px;position:relative;top:-27px}.btn-pair{-webkit-box-sizing:border-box !important;-moz-box-sizing:border-box !important;box-sizing:border-box !important;width:49%}.comment_bubble a,.comment_bubble a:link,.comment_bubble a:visited{color:#77c}.footer a,.footer a:link,.footer a:visited{color:#77c}.footer .sl:visited{color:#77c}.jsf .sl{color:#77c}.sl,.sl:link,.sl:visited{color:#77c}#cookie-alert .learn-more,#cookie-alert .learn-more :visited{color:#77c}#jobsearch .sl{color:#77c}#secondary_nav a,#secondary_nav a:link,#secondary_nav a:visited{color:#77c}.arrowStub{border-top-color:#666}.carouselInlineAd .cmp-note{color:#6F6F6F}.cmp_header{color:#666}.cmp_meta{color:#666}.comment_bubble{color:#666}.date,.visits{color:#808080}.dd-disabled{color:#666}.dd-disabled .dd-button-arrow{color:#666}.hp_welcome_message{color:#6F6F6F}.inwrap input{border-bottom-color:#aaa;border-\@LINE_END\@-color:#aaa}.ipadPromoCopy{color:#666}.itaText{color:#6F6F6F}.jsf .label{color:#aaa}.location{color:#666}.nps-popover-x-span{color:#666}.popover-x-span{color:#666}.rjl{color:#666}.rsc{color:#aaa}.rsh{color:#6F6F6F}.svh{color:#6F6F6F}.sjh{color:#666}.sup_grey{color:#aaa}#fromageMsg{color:#666}#jobsearch .label,#jobsearch .label label{color:#aaa}#not-likely-div{color:#808080}#original_radius_result{color:#666}#question-intro-div{color:#808080}#userOptionsLabel.active b{color:#666}#userOptionsLabel.active .arrowStub{border-bottom-color:#666}#very-likely-div{color:#808080}.jasxcolorcontrasttst-blueOnly .comment_bubble a,.jasxcolorcontrasttst-blueOnly .comment_bubble a:link,.jasxcolorcontrasttst-blueOnly .comment_bubble a:visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly .footer a,.jasxcolorcontrasttst-blueOnly .footer a:link,.jasxcolorcontrasttst-blueOnly .footer a:visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly .footer .sl:visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly .jsf .sl{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly .sl,.jasxcolorcontrasttst-blueOnly .sl:link,.jasxcolorcontrasttst-blueOnly .sl:visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly #cookie-alert .learn-more,.jasxcolorcontrasttst-blueOnly #cookie-alert .learn-more :visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly #jobsearch .sl{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly #secondary_nav a,.jasxcolorcontrasttst-blueOnly #secondary_nav a:link,.jasxcolorcontrasttst-blueOnly #secondary_nav a:visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly .arrowStub{border-top-color:#666}.jasxcolorcontrasttst-blueOnly .carouselInlineAd .cmp-note{color:#6F6F6F}.jasxcolorcontrasttst-blueOnly .cmp_header{color:#666}.jasxcolorcontrasttst-blueOnly .cmp_meta{color:#666}.jasxcolorcontrasttst-blueOnly .comment_bubble{color:#666}.jasxcolorcontrasttst-blueOnly .date,.jasxcolorcontrasttst-blueOnly .visits{color:#808080}.jasxcolorcontrasttst-blueOnly .dd-disabled{color:#666}.jasxcolorcontrasttst-blueOnly .dd-disabled .dd-button-arrow{color:#666}.jasxcolorcontrasttst-blueOnly .hp_welcome_message{color:#6F6F6F}.jasxcolorcontrasttst-blueOnly .inwrap input{border-bottom-color:#aaa;border-\@LINE_END\@-color:#aaa}.jasxcolorcontrasttst-blueOnly .ipadPromoCopy{color:#666}.jasxcolorcontrasttst-blueOnly .itaText{color:#6F6F6F}.jasxcolorcontrasttst-blueOnly .jsf .label{color:#aaa}.jasxcolorcontrasttst-blueOnly .location{color:#666}.jasxcolorcontrasttst-blueOnly .nps-popover-x-span{color:#666}.jasxcolorcontrasttst-blueOnly .popover-x-span{color:#666}.jasxcolorcontrasttst-blueOnly .rjl{color:#666}.jasxcolorcontrasttst-blueOnly .rsc{color:#aaa}.jasxcolorcontrasttst-blueOnly .rsh{color:#6F6F6F}.jasxcolorcontrasttst-blueOnly .svh{color:#6F6F6F}.jasxcolorcontrasttst-blueOnly .sjh{color:#666}.jasxcolorcontrasttst-blueOnly .sup_grey{color:#aaa}.jasxcolorcontrasttst-blueOnly #fromageMsg{color:#666}.jasxcolorcontrasttst-blueOnly #jobsearch .label,.jasxcolorcontrasttst-blueOnly #jobsearch .label label{color:#aaa}.jasxcolorcontrasttst-blueOnly #not-likely-div{color:#808080}.jasxcolorcontrasttst-blueOnly #original_radius_result{color:#666}.jasxcolorcontrasttst-blueOnly #question-intro-div{color:#808080}.jasxcolorcontrasttst-blueOnly #userOptionsLabel.active b{color:#666}.jasxcolorcontrasttst-blueOnly #userOptionsLabel.active .arrowStub{border-bottom-color:#666}.jasxcolorcontrasttst-blueOnly #very-likely-div{color:#808080}.jasxcolorcontrasttst-greyOnly .comment_bubble a,.jasxcolorcontrasttst-greyOnly .comment_bubble a:link,.jasxcolorcontrasttst-greyOnly .comment_bubble a:visited{color:#77c}.jasxcolorcontrasttst-greyOnly .footer a,.jasxcolorcontrasttst-greyOnly .footer a:link,.jasxcolorcontrasttst-greyOnly .footer a:visited{color:#77c}.jasxcolorcontrasttst-greyOnly .footer .sl:visited{color:#77c}.jasxcolorcontrasttst-greyOnly .jsf .sl{color:#77c}.jasxcolorcontrasttst-greyOnly .sl,.jasxcolorcontrasttst-greyOnly .sl:link,.jasxcolorcontrasttst-greyOnly .sl:visited{color:#77c}.jasxcolorcontrasttst-greyOnly #cookie-alert .learn-more,.jasxcolorcontrasttst-greyOnly #cookie-alert .learn-more :visited{color:#77c}.jasxcolorcontrasttst-greyOnly #jobsearch .sl{color:#77c}.jasxcolorcontrasttst-greyOnly #secondary_nav a,.jasxcolorcontrasttst-greyOnly #secondary_nav a:link,.jasxcolorcontrasttst-greyOnly #secondary_nav a:visited{color:#77c}.jasxcolorcontrasttst-greyOnly .arrowStub{border-top-color:#666}.jasxcolorcontrasttst-greyOnly .carouselInlineAd .cmp-note{color:#666}.jasxcolorcontrasttst-greyOnly .cmp_header{color:#666}.jasxcolorcontrasttst-greyOnly .cmp_meta{color:#666}.jasxcolorcontrasttst-greyOnly .comment_bubble{color:#666}.jasxcolorcontrasttst-greyOnly .date,.jasxcolorcontrasttst-greyOnly .visits{color:#666}.jasxcolorcontrasttst-greyOnly .dd-disabled{color:#666}.jasxcolorcontrasttst-greyOnly .dd-disabled .dd-button-arrow{color:#666}.jasxcolorcontrasttst-greyOnly .hp_welcome_message{color:#666}.jasxcolorcontrasttst-greyOnly .inwrap input{border-bottom-color:#666;border-\@LINE_END\@-color:#666}.jasxcolorcontrasttst-greyOnly .ipadPromoCopy{color:#666}.jasxcolorcontrasttst-greyOnly .itaText{color:#666}.jasxcolorcontrasttst-greyOnly .jsf .label{color:#666}.jasxcolorcontrasttst-greyOnly .location{color:#666}.jasxcolorcontrasttst-greyOnly .nps-popover-x-span{color:#666}.jasxcolorcontrasttst-greyOnly .popover-x-span{color:#666}.jasxcolorcontrasttst-greyOnly .rjl{color:#666}.jasxcolorcontrasttst-greyOnly .rsc{color:#666}.jasxcolorcontrasttst-greyOnly .rsh{color:#666}.jasxcolorcontrasttst-greyOnly .svh{color:#666}.jasxcolorcontrasttst-greyOnly .sjh{color:#666}.jasxcolorcontrasttst-greyOnly .sup_grey{color:#666}.jasxcolorcontrasttst-greyOnly #fromageMsg{color:#666}.jasxcolorcontrasttst-greyOnly #jobsearch .label,.jasxcolorcontrasttst-greyOnly #jobsearch .label label{color:#666}.jasxcolorcontrasttst-greyOnly #not-likely-div{color:#666}.jasxcolorcontrasttst-greyOnly #original_radius_result{color:#666}.jasxcolorcontrasttst-greyOnly #question-intro-div{color:#666}.jasxcolorcontrasttst-greyOnly #userOptionsLabel.active b{color:#666}.jasxcolorcontrasttst-greyOnly #userOptionsLabel.active .arrowStub{border-bottom-color:#666}.jasxcolorcontrasttst-greyOnly #very-likely-div{color:#666}.jasxcolorcontrasttst-greyAndBlue .comment_bubble a,.jasxcolorcontrasttst-greyAndBlue .comment_bubble a:link,.jasxcolorcontrasttst-greyAndBlue .comment_bubble a:visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue .footer a,.jasxcolorcontrasttst-greyAndBlue .footer a:link,.jasxcolorcontrasttst-greyAndBlue .footer a:visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue .footer .sl:visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue .jsf .sl{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue .sl,.jasxcolorcontrasttst-greyAndBlue .sl:link,.jasxcolorcontrasttst-greyAndBlue .sl:visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue #cookie-alert .learn-more,.jasxcolorcontrasttst-greyAndBlue #cookie-alert .learn-more :visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue #jobsearch .sl{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue #secondary_nav a,.jasxcolorcontrasttst-greyAndBlue #secondary_nav a:link,.jasxcolorcontrasttst-greyAndBlue #secondary_nav a:visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue .arrowStub{border-top-color:#666}.jasxcolorcontrasttst-greyAndBlue .carouselInlineAd .cmp-note{color:#666}.jasxcolorcontrasttst-greyAndBlue .cmp_header{color:#666}.jasxcolorcontrasttst-greyAndBlue .cmp_meta{color:#666}.jasxcolorcontrasttst-greyAndBlue .comment_bubble{color:#666}.jasxcolorcontrasttst-greyAndBlue .date,.jasxcolorcontrasttst-greyAndBlue .visits{color:#666}.jasxcolorcontrasttst-greyAndBlue .dd-disabled{color:#666}.jasxcolorcontrasttst-greyAndBlue .dd-disabled .dd-button-arrow{color:#666}.jasxcolorcontrasttst-greyAndBlue .hp_welcome_message{color:#666}.jasxcolorcontrasttst-greyAndBlue .inwrap input{border-bottom-color:#666;border-\@LINE_END\@-color:#666}.jasxcolorcontrasttst-greyAndBlue .ipadPromoCopy{color:#666}.jasxcolorcontrasttst-greyAndBlue .itaText{color:#666}.jasxcolorcontrasttst-greyAndBlue .jsf .label{color:#666}.jasxcolorcontrasttst-greyAndBlue .location{color:#666}.jasxcolorcontrasttst-greyAndBlue .nps-popover-x-span{color:#666}.jasxcolorcontrasttst-greyAndBlue .popover-x-span{color:#666}.jasxcolorcontrasttst-greyAndBlue .rjl{color:#666}.jasxcolorcontrasttst-greyAndBlue .rsc{color:#666}.jasxcolorcontrasttst-greyAndBlue .rsh{color:#666}.jasxcolorcontrasttst-greyAndBlue .svh{color:#666}.jasxcolorcontrasttst-greyAndBlue .sjh{color:#666}.jasxcolorcontrasttst-greyAndBlue .sup_grey{color:#666}.jasxcolorcontrasttst-greyAndBlue #fromageMsg{color:#666}.jasxcolorcontrasttst-greyAndBlue #jobsearch .label,.jasxcolorcontrasttst-greyAndBlue #jobsearch .label label{color:#666}.jasxcolorcontrasttst-greyAndBlue #not-likely-div{color:#666}.jasxcolorcontrasttst-greyAndBlue #original_radius_result{color:#666}.jasxcolorcontrasttst-greyAndBlue #question-intro-div{color:#666}.jasxcolorcontrasttst-greyAndBlue #userOptionsLabel.active b{color:#666}.jasxcolorcontrasttst-greyAndBlue #userOptionsLabel.active .arrowStub{border-bottom-color:#666}.jasxcolorcontrasttst-greyAndBlue #very-likely-div{color:#666}#refineresultscol{width:184px}#refineresults{width:180px}#branding-td{width:186px;text-align:center}.ltr #searchCount{margin-right:4px;margin-left:4px}.ltr #resultsCol .sorting{padding-right:4px}.ltr #resultsCol .showing{padding-left:4px}.ltr #jobsearch{padding-left:4px}.rtl #searchCount{margin-left:4px;margin-right:4px}.rtl #resultsCol .sorting{padding-left:4px}.rtl #resultsCol .showing{padding-right:4px}.rtl #jobsearch{padding-right:4px}.jaui,.hasu .gasc,.row,.message,.oocs{padding-left:4px;padding-right:4px}#resumePromo{padding-left:4px;padding-right:4px}#primePromo{padding-left:4px;padding-right:4px}#walkInJobsPromo{padding-left:4px;padding-right:4px}@media only screen and (min-width: 1125px){.ltr #refineresults{padding-left:15px}.ltr #branding img{margin-left:16px;margin-right:28px}.rtl #refineresults{padding-right:15px}.rtl #branding img{margin-right:16px;margin-left:28px}.ltr #searchCount{margin-right:12px;margin-left:12px}.ltr #resultsCol .sorting{padding-right:12px}.ltr #resultsCol .showing{padding-left:12px}.ltr #jobsearch{padding-left:12px}.rtl #searchCount{margin-left:12px;margin-right:12px}.rtl #resultsCol .sorting{padding-left:12px}.rtl #resultsCol .showing{padding-right:12px}.rtl #jobsearch{padding-right:12px}.jaui,.hasu .gasc,.row,.message,.oocs{padding-left:12px;padding-right:12px}#resumePromo{padding-left:12px;padding-right:12px}#primePromo{padding-left:12px;padding-right:12px}#walkInJobsPromo{padding-left:12px;padding-right:12px}#resultsBody{width:1125px}#refineresultscol,#branding-td{width:225px}#refineresults{width:210px}}@media only screen and (min-width: 1250px){#resultsBody{width:1250px}#auxCol{width:315px}#refineresultscol,#branding-td{width:275px}#refineresults{width:260px}.ltr #refineresults{padding-left:15px}.ltr #branding img{margin-left:16px;margin-right:28px}.rtl #refineresults{padding-right:15px}.rtl #branding img{margin-right:16px;margin-left:28px}.ltr #searchCount{margin-right:12px;margin-left:12px}.ltr #resultsCol .sorting{padding-right:12px}.ltr #resultsCol .showing{padding-left:12px}.ltr #jobsearch{padding-left:12px}.rtl #searchCount{margin-left:12px;margin-right:12px}.rtl #resultsCol .sorting{padding-left:12px}.rtl #resultsCol .showing{padding-right:12px}.rtl #jobsearch{padding-right:12px}.jaui,.hasu .gasc,.row,.message,.oocs{padding-left:12px;padding-right:12px}#resumePromo{padding-left:12px;padding-right:12px}#primePromo{padding-left:12px;padding-right:12px}#walkInJobsPromo{padding-left:12px;padding-right:12px}}#branding-td{padding:5px 0 5px 0px}.resultsTop{padding-top:9px}
+</style>
+</head>
+
+<body data-tn-originLogType="jobsearch" data-tn-originLogId="1b8dlrep1a10rbdd" data-tn-olth="9d2bcadf63a72746e920e0ea88bc9d14" data-tn-application="jasx" class="ltr jasxcustomfonttst-inactive jasxcolorcontrasttst-inactive">
+<div id='accessibilityBanner'><span id='accessibilityText'>Skip to <!-- This is translated before reaching this state --><a id="skipToJobs" class='accessibilityMenu' href='#jobPostingsAnchor'>Job Postings</a>, <!-- This is translated before reaching this state --><a id="skipToSearch" class='accessibilityMenu' href='#what'>Search</a></span><a id='accessibilityClose'>Close</a></div><link type="text/css" rel="stylesheet" href="/s/36397a3/accessibility.css" />
+<script type="text/javascript">
+createTabBar('1b8dlrep1a10rbdd');
+</script>
+<style type="text/css">
+body { margin-top: 0; margin-left: 0; margin-right: 0; padding-top: 0; padding-right: 0; padding-left: 0; }
+
+#g_nav { border-bottom:1px solid #ccc; margin-bottom: 9px; }
+
+#g_nav a,
+#g_nav a:visited { color: #00c; }
+
+.navBi { display: -moz-inline-box; display: inline-block; padding: 9px 12px; margin: 0; list-style-type: none; }
+</style>
+<div id="g_nav" data-tn-section="globalNav" role="navigation">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td nowrap><style type="text/css">
+#p_nav a.selected { font-weight: bold; text-decoration:none; color: #000 !important; }
+</style>
+
+
+<div id="p_nav"><span class="navBi"><a href="/" title="Jobs" id="jobsLink" class="selected">Find Jobs</a></span><span class="navBi"><a href="/resumes?isid=find-resumes&ikw=SERPtop&co=US&hl=en"  id="rezLink" >Find Resumes</a></span><span class="navBi"><a href="/hire?hl=en&cc=US" id="empLink" onclick="if ( this.href.match('&isid=employerlink-US-control&ikw=SERPtop') == null ) { this.href += '&isid=employerlink-US-control&ikw=SERPtop' };" >Employers / Post Job</a></span></div>
+</td>
+<td align="right" nowrap><style type="text/css">
+
+
+#navpromo a,
+#navpromo a:visited {
+color: #f60;
+}
+
+
+#u_nav .login_unconfirmed,
+#u_nav .login_unconfirmed a,
+#u_nav .login_unconfirmed a:visited {
+color: #c00
+}
+
+#u_nav .resume_pending,
+#u_nav .resume_pending a,
+#u_nav .resume_pending a:visited {
+color: #c00
+}
+
+#userOptionsLabel {
+position: relative;
+z-index: 5;
+}
+
+#userOptionsLabel b {
+cursor: pointer;
+text-decoration: underline;
+position: relative;
+z-index: 5;
+}
+
+#userOptionsLabel:active {
+outline: none;
+}
+
+#userOptionsLabel.active {
+padding: 9px 11px;
+margin-bottom: -1px;
+_margin-bottom: 0px;
+border: 1px solid #ccc;
+border-top: 0;
+}
+
+#userOptionsLabel.active .arrowStub {
+border-width: 0 3px 3px;
+_border-width: 0px 3px 4px;
+border-color: transparent;
+top: -2px;
+border-style: dashed dashed solid;
+}
+
+#userOptionsLabel.active .halfPxlFix {
+background: #fff;
+bottom: -3px;
+height: 6px;
+left: 0;
+position: absolute;
+right: 0;
+border: 1px solid #fff;
+}
+
+.arrowStub {
+position: relative;
+border-style: solid dashed dashed;
+border-color: transparent;
+display: -moz-inline-box;
+display: inline-block;
+font-size: 0;
+height: 0;
+line-height: 0;
+width: 0;
+left: 4px;
+border-top-width: 3px;
+border-bottom-width: 0;
+border-right-width: 3px;
+padding-top: 1px;
+top: -1px;
+}
+
+#userOptions {
+z-index: 2;
+visibility: hidden;
+position: absolute;
+right: 0;
+x_right: -1px;
+top: 100%;
+padding: 9px 15px;
+border: 1px solid #ccc;
+background: #fff;
+min-width: 150px;
+_width: 150px;
+text-align: left;
+}
+
+#userOptions.open {
+visibility: visible;
+}
+
+.userOptionItem {
+margin: 6px 0;
+}
+
+.userOptionItem a {
+white-space: nowrap;
+}
+
+.userOptionGroup {
+border-top: 1px solid #e8e8e8;
+margin-top: 12px;
+}
+
+.userNameRepeat {
+color: #a8a8a8;
+padding-right: 48px;
+font-weight: bold;
+}
+
+.userOptionGroupHeader {
+font-weight: bold;
+margin: 6px 0;
+}
+
+</style>
+<div id="u_nav">
+<script type="text/javascript">
+function isUserOptionsOpen() {
+return document.getElementById('userOptions').className === 'open';
+}
+
+function hideUserOptions() {
+destroyKeyboardTrap();
+document.getElementById('userOptions').className = '';
+document.getElementById('userOptionsLabel').className = 'navBi';
+document.getElementById('userOptionsLabel').setAttribute('aria-label', 'open user action drop down menu');
+}
+function toggleUserOptions(e) {
+var options = document.getElementById('userOptions');
+var label = document.getElementById('userOptionsLabel');
+if (isUserOptionsOpen()) {
+hideUserOptions();
+if (!e.keyCode) {
+label.blur();
+}
+} else {
+options.className = 'open';
+label.className = 'navBi active navMenuDropDown';
+label.setAttribute('aria-label', 'close user action drop down menu');
+document.onclick = function() {
+hideUserOptions();
+document.onclick = function() {
+};
+};
+if (e.keyCode && (e.keyCode == 13 || e.keyCode == 32)) {
+var fL = document.getElementById('userOptions').getElementsByTagName('a')[0];
+if (fL) {
+fL.focus();
+}
+}
+else {
+label.blur();
+}
+createKeyboardTrap(document.getElementById('user_actions'), 'navMenuDropDown', hideUserOptions);
+}
+stopPropagation(e);
+
+}
+
+
+function createKeyboardTrap(containingElement, dropdownLinkClass) {
+var dropdownLinks = containingElement.getElementsByClassName(dropdownLinkClass);
+var numLinks = dropdownLinks.length;
+
+document.onkeydown = function(e) {
+if (e.keyCode === 9) {
+if (e.target === dropdownLinks[0] && e.shiftKey) {
+dropdownLinks[numLinks -1].focus();
+e.preventDefault();
+} else if (e.target === dropdownLinks[numLinks -1] && !e.shiftKey) {
+dropdownLinks[0].focus();
+e.preventDefault()
+}
+} else if (e.keyCode === 27) {
+hideUserOptions();
+}
+}
+}
+
+function destroyKeyboardTrap() {
+document.onkeydown = null;
+}
+
+function stopPropagation(e) {
+var e = e || window.event;
+e.stopPropagation ? e.stopPropagation() : e.cancelBubble = true;
+}
+
+</script>
+<script>
+
+function regExpEscape(s) {
+    return String(s).replace(/([-()\[\]{}+?*.$\^|,:#<!\\])/g, '\\$1').
+            replace(/\x08/g, '\\x08');
+}
+
+
+function appendParamsOnce(url, params) {
+    var useParams = params.replace(/^(\?|\&)/, '');
+    if (url.match(new RegExp('[\\?|\\&]' + regExpEscape(useParams))) == null) {
+        return url += (url.indexOf('?') > 0 ? '&' : '?' ) + useParams;
+    }
+    return url;
+}
+
+</script>
+<div id="user_actions">
+
+<span class="navBi"><span id="navpromo" class="resume-promo">
+<a href="/promo/resume" onclick="window.location=this.href + '?from=nav&subfrom=rezprmstd&trk.origin=jobsearch&trk.variant=rezprmstd&trk.tk=1b8dlrep1a10rbdd'; return false;">Upload your resume</a>
+</span></span>
+<span class="navBi"><a href="https://www.indeed.com/account/login?dest=%2Fjobs%3Fq%3Ddata%2Bscientist%26l%3DNew%2BYork" rel="nofollow" id="userOptionsLabel">Sign in</a></span>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<style type="text/css">
+.jasxcustomfonttst-useCustomHostedFontFullPage *{font-family:"Open Sans", sans-serif !important}.jasxcustomfonttst-useLato *{font-family:"Lato", sans-serif !important}.jasxcustomfonttst-useFira *{font-family:"Fira Sans", sans-serif !important}.jasxcustomfonttst-useGibson *{font-family:"Gibson", sans-serif !important}.jasxcustomfonttst-useAvenir *{font-family:"Avenir Next", sans-serif !important}.comment_bubble a,.comment_bubble a:link,.comment_bubble a:visited{color:#77c}.footer a,.footer a:link,.footer a:visited{color:#77c}.footer .sl:visited{color:#77c}.jsf .sl{color:#77c}.sl,.sl:link,.sl:visited{color:#77c}#cookie-alert .learn-more,#cookie-alert .learn-more :visited{color:#77c}#jobsearch .sl{color:#77c}#secondary_nav a,#secondary_nav a:link,#secondary_nav a:visited{color:#77c}.arrowStub{border-top-color:#666}.carouselInlineAd .cmp-note{color:#6F6F6F}.cmp_header{color:#666}.cmp_meta{color:#666}.comment_bubble{color:#666}.date,.visits{color:#808080}.dd-disabled{color:#666}.dd-disabled .dd-button-arrow{color:#666}.hp_welcome_message{color:#6F6F6F}.inwrap input{border-bottom-color:#aaa;border-\@LINE_END\@-color:#aaa}.ipadPromoCopy{color:#666}.itaText{color:#6F6F6F}.jsf .label{color:#aaa}.location{color:#666}.nps-popover-x-span{color:#666}.popover-x-span{color:#666}.rjl{color:#666}.rsc{color:#aaa}.rsh{color:#6F6F6F}.svh{color:#6F6F6F}.sjh{color:#666}.sup_grey{color:#aaa}#fromageMsg{color:#666}#jobsearch .label,#jobsearch .label label{color:#aaa}#not-likely-div{color:#808080}#original_radius_result{color:#666}#question-intro-div{color:#808080}#userOptionsLabel.active b{color:#666}#userOptionsLabel.active .arrowStub{border-bottom-color:#666}#very-likely-div{color:#808080}.jasxcolorcontrasttst-blueOnly .comment_bubble a,.jasxcolorcontrasttst-blueOnly .comment_bubble a:link,.jasxcolorcontrasttst-blueOnly .comment_bubble a:visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly .footer a,.jasxcolorcontrasttst-blueOnly .footer a:link,.jasxcolorcontrasttst-blueOnly .footer a:visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly .footer .sl:visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly .jsf .sl{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly .sl,.jasxcolorcontrasttst-blueOnly .sl:link,.jasxcolorcontrasttst-blueOnly .sl:visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly #cookie-alert .learn-more,.jasxcolorcontrasttst-blueOnly #cookie-alert .learn-more :visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly #jobsearch .sl{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly #secondary_nav a,.jasxcolorcontrasttst-blueOnly #secondary_nav a:link,.jasxcolorcontrasttst-blueOnly #secondary_nav a:visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly .arrowStub{border-top-color:#666}.jasxcolorcontrasttst-blueOnly .carouselInlineAd .cmp-note{color:#6F6F6F}.jasxcolorcontrasttst-blueOnly .cmp_header{color:#666}.jasxcolorcontrasttst-blueOnly .cmp_meta{color:#666}.jasxcolorcontrasttst-blueOnly .comment_bubble{color:#666}.jasxcolorcontrasttst-blueOnly .date,.jasxcolorcontrasttst-blueOnly .visits{color:#808080}.jasxcolorcontrasttst-blueOnly .dd-disabled{color:#666}.jasxcolorcontrasttst-blueOnly .dd-disabled .dd-button-arrow{color:#666}.jasxcolorcontrasttst-blueOnly .hp_welcome_message{color:#6F6F6F}.jasxcolorcontrasttst-blueOnly .inwrap input{border-bottom-color:#aaa;border-\@LINE_END\@-color:#aaa}.jasxcolorcontrasttst-blueOnly .ipadPromoCopy{color:#666}.jasxcolorcontrasttst-blueOnly .itaText{color:#6F6F6F}.jasxcolorcontrasttst-blueOnly .jsf .label{color:#aaa}.jasxcolorcontrasttst-blueOnly .location{color:#666}.jasxcolorcontrasttst-blueOnly .nps-popover-x-span{color:#666}.jasxcolorcontrasttst-blueOnly .popover-x-span{color:#666}.jasxcolorcontrasttst-blueOnly .rjl{color:#666}.jasxcolorcontrasttst-blueOnly .rsc{color:#aaa}.jasxcolorcontrasttst-blueOnly .rsh{color:#6F6F6F}.jasxcolorcontrasttst-blueOnly .svh{color:#6F6F6F}.jasxcolorcontrasttst-blueOnly .sjh{color:#666}.jasxcolorcontrasttst-blueOnly .sup_grey{color:#aaa}.jasxcolorcontrasttst-blueOnly #fromageMsg{color:#666}.jasxcolorcontrasttst-blueOnly #jobsearch .label,.jasxcolorcontrasttst-blueOnly #jobsearch .label label{color:#aaa}.jasxcolorcontrasttst-blueOnly #not-likely-div{color:#808080}.jasxcolorcontrasttst-blueOnly #original_radius_result{color:#666}.jasxcolorcontrasttst-blueOnly #question-intro-div{color:#808080}.jasxcolorcontrasttst-blueOnly #userOptionsLabel.active b{color:#666}.jasxcolorcontrasttst-blueOnly #userOptionsLabel.active .arrowStub{border-bottom-color:#666}.jasxcolorcontrasttst-blueOnly #very-likely-div{color:#808080}.jasxcolorcontrasttst-greyOnly .comment_bubble a,.jasxcolorcontrasttst-greyOnly .comment_bubble a:link,.jasxcolorcontrasttst-greyOnly .comment_bubble a:visited{color:#77c}.jasxcolorcontrasttst-greyOnly .footer a,.jasxcolorcontrasttst-greyOnly .footer a:link,.jasxcolorcontrasttst-greyOnly .footer a:visited{color:#77c}.jasxcolorcontrasttst-greyOnly .footer .sl:visited{color:#77c}.jasxcolorcontrasttst-greyOnly .jsf .sl{color:#77c}.jasxcolorcontrasttst-greyOnly .sl,.jasxcolorcontrasttst-greyOnly .sl:link,.jasxcolorcontrasttst-greyOnly .sl:visited{color:#77c}.jasxcolorcontrasttst-greyOnly #cookie-alert .learn-more,.jasxcolorcontrasttst-greyOnly #cookie-alert .learn-more :visited{color:#77c}.jasxcolorcontrasttst-greyOnly #jobsearch .sl{color:#77c}.jasxcolorcontrasttst-greyOnly #secondary_nav a,.jasxcolorcontrasttst-greyOnly #secondary_nav a:link,.jasxcolorcontrasttst-greyOnly #secondary_nav a:visited{color:#77c}.jasxcolorcontrasttst-greyOnly .arrowStub{border-top-color:#666}.jasxcolorcontrasttst-greyOnly .carouselInlineAd .cmp-note{color:#666}.jasxcolorcontrasttst-greyOnly .cmp_header{color:#666}.jasxcolorcontrasttst-greyOnly .cmp_meta{color:#666}.jasxcolorcontrasttst-greyOnly .comment_bubble{color:#666}.jasxcolorcontrasttst-greyOnly .date,.jasxcolorcontrasttst-greyOnly .visits{color:#666}.jasxcolorcontrasttst-greyOnly .dd-disabled{color:#666}.jasxcolorcontrasttst-greyOnly .dd-disabled .dd-button-arrow{color:#666}.jasxcolorcontrasttst-greyOnly .hp_welcome_message{color:#666}.jasxcolorcontrasttst-greyOnly .inwrap input{border-bottom-color:#666;border-\@LINE_END\@-color:#666}.jasxcolorcontrasttst-greyOnly .ipadPromoCopy{color:#666}.jasxcolorcontrasttst-greyOnly .itaText{color:#666}.jasxcolorcontrasttst-greyOnly .jsf .label{color:#666}.jasxcolorcontrasttst-greyOnly .location{color:#666}.jasxcolorcontrasttst-greyOnly .nps-popover-x-span{color:#666}.jasxcolorcontrasttst-greyOnly .popover-x-span{color:#666}.jasxcolorcontrasttst-greyOnly .rjl{color:#666}.jasxcolorcontrasttst-greyOnly .rsc{color:#666}.jasxcolorcontrasttst-greyOnly .rsh{color:#666}.jasxcolorcontrasttst-greyOnly .svh{color:#666}.jasxcolorcontrasttst-greyOnly .sjh{color:#666}.jasxcolorcontrasttst-greyOnly .sup_grey{color:#666}.jasxcolorcontrasttst-greyOnly #fromageMsg{color:#666}.jasxcolorcontrasttst-greyOnly #jobsearch .label,.jasxcolorcontrasttst-greyOnly #jobsearch .label label{color:#666}.jasxcolorcontrasttst-greyOnly #not-likely-div{color:#666}.jasxcolorcontrasttst-greyOnly #original_radius_result{color:#666}.jasxcolorcontrasttst-greyOnly #question-intro-div{color:#666}.jasxcolorcontrasttst-greyOnly #userOptionsLabel.active b{color:#666}.jasxcolorcontrasttst-greyOnly #userOptionsLabel.active .arrowStub{border-bottom-color:#666}.jasxcolorcontrasttst-greyOnly #very-likely-div{color:#666}.jasxcolorcontrasttst-greyAndBlue .comment_bubble a,.jasxcolorcontrasttst-greyAndBlue .comment_bubble a:link,.jasxcolorcontrasttst-greyAndBlue .comment_bubble a:visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue .footer a,.jasxcolorcontrasttst-greyAndBlue .footer a:link,.jasxcolorcontrasttst-greyAndBlue .footer a:visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue .footer .sl:visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue .jsf .sl{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue .sl,.jasxcolorcontrasttst-greyAndBlue .sl:link,.jasxcolorcontrasttst-greyAndBlue .sl:visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue #cookie-alert .learn-more,.jasxcolorcontrasttst-greyAndBlue #cookie-alert .learn-more :visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue #jobsearch .sl{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue #secondary_nav a,.jasxcolorcontrasttst-greyAndBlue #secondary_nav a:link,.jasxcolorcontrasttst-greyAndBlue #secondary_nav a:visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue .arrowStub{border-top-color:#666}.jasxcolorcontrasttst-greyAndBlue .carouselInlineAd .cmp-note{color:#666}.jasxcolorcontrasttst-greyAndBlue .cmp_header{color:#666}.jasxcolorcontrasttst-greyAndBlue .cmp_meta{color:#666}.jasxcolorcontrasttst-greyAndBlue .comment_bubble{color:#666}.jasxcolorcontrasttst-greyAndBlue .date,.jasxcolorcontrasttst-greyAndBlue .visits{color:#666}.jasxcolorcontrasttst-greyAndBlue .dd-disabled{color:#666}.jasxcolorcontrasttst-greyAndBlue .dd-disabled .dd-button-arrow{color:#666}.jasxcolorcontrasttst-greyAndBlue .hp_welcome_message{color:#666}.jasxcolorcontrasttst-greyAndBlue .inwrap input{border-bottom-color:#666;border-\@LINE_END\@-color:#666}.jasxcolorcontrasttst-greyAndBlue .ipadPromoCopy{color:#666}.jasxcolorcontrasttst-greyAndBlue .itaText{color:#666}.jasxcolorcontrasttst-greyAndBlue .jsf .label{color:#666}.jasxcolorcontrasttst-greyAndBlue .location{color:#666}.jasxcolorcontrasttst-greyAndBlue .nps-popover-x-span{color:#666}.jasxcolorcontrasttst-greyAndBlue .popover-x-span{color:#666}.jasxcolorcontrasttst-greyAndBlue .rjl{color:#666}.jasxcolorcontrasttst-greyAndBlue .rsc{color:#666}.jasxcolorcontrasttst-greyAndBlue .rsh{color:#666}.jasxcolorcontrasttst-greyAndBlue .svh{color:#666}.jasxcolorcontrasttst-greyAndBlue .sjh{color:#666}.jasxcolorcontrasttst-greyAndBlue .sup_grey{color:#666}.jasxcolorcontrasttst-greyAndBlue #fromageMsg{color:#666}.jasxcolorcontrasttst-greyAndBlue #jobsearch .label,.jasxcolorcontrasttst-greyAndBlue #jobsearch .label label{color:#666}.jasxcolorcontrasttst-greyAndBlue #not-likely-div{color:#666}.jasxcolorcontrasttst-greyAndBlue #original_radius_result{color:#666}.jasxcolorcontrasttst-greyAndBlue #question-intro-div{color:#666}.jasxcolorcontrasttst-greyAndBlue #userOptionsLabel.active b{color:#666}.jasxcolorcontrasttst-greyAndBlue #userOptionsLabel.active .arrowStub{border-bottom-color:#666}.jasxcolorcontrasttst-greyAndBlue #very-likely-div{color:#666}
+
+.indeedLogo {
+background: url(/images/medium_logo.png) no-repeat;
+
+margin: 8px 0 0 9px;
+border: 0;
+width: 166px;
+height: 64px;
+-webkit-background-size: 155px 43px;
+background-size: 155px 43px;
+}
+@media (-webkit-min-device-pixel-ratio: 2),
+(   min--moz-device-pixel-ratio: 2),
+(     -o-min-device-pixel-ratio: 2/1),
+(        min-device-pixel-ratio: 2),
+(                min-resolution: 192dpi),
+(                min-resolution: 2dppx) {
+.indeedLogo {
+background: url(/images/medium_logo@2x.png) no-repeat;
+-webkit-background-size: 155px 43px;
+background-size: 155px 43px;
+}
+}
+#branding img { border: 0; }
+#jobsearch { margin: 0 }
+.inwrap { border-right: 1px solid #e8e8e8;border-bottom: 1px solid #e8e8e8;display:inline-block; }
+.inwrap input { box-sizing: border-box; margin:0; height: 30px; font-family:Arial,sans-serif;border:1px solid #ccc; -webkit-border-radius: 0; -webkit-appearance: none; }
+.inwrap .input_text { font-size:18px;padding:3px 6px;_margin: -1px 0; }
+.inwrap .input_submit {color:#614041;font-size:15px;height:30px;background: #e8e8e8; padding:3px 9px;cursor:pointer;_padding:3px;}
+.inwrap .input_submit:active { background: #ccc; }
+.lnav  {width:100%;line-height:1;;font-size:10pt;}
+.jsf .label {font-size:12px; line-height:1.2;padding-top:0;font-weight:normal;white-space:nowrap;padding-right:1.5em}
+.jsf .label label {font-weight:normal}
+.jsf .sl { font-size: 11px; white-space: nowrap; }
+.npb { padding-bottom: 0; color: #f60; text-transform: lowercase;font-weight:bold; }
+.npl { padding-left: 0 }
+iframe { display:block; }
+.acd { border: 1px solid #333; background: #fff; position:absolute; width:100%; z-index: 1; }
+.aci { font-size: 18px; padding:1px 6px; cursor:pointer; }
+.acis { background:#36c; color:#fff; }
+
+#tjobalerts .ws_label,
+#bjobalerts .ws_label,
+#tjobalerts .member,
+#bjobalerts .member{ z-index: 1; }
+#acr td { padding-top:0; padding-bottom:0; }
+#acr td .h { display:none; }
+
+#what { width: 280px; }
+#where { width: 260px; }
+.inwrapBorder{border:1px solid #1c4ed9;border-top-color:#2f62f1;border-bottom-color:#133fbb;display:inline-block;width:auto}.inwrapBorderTop{border-top:1px solid #69F;display:inline-block;background-color:#3163f2;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3163F2',endColorstr='#2B57D5');background:-webkit-gradient(linear,left top,left bottom,from(#3163f2),to(#2b57d5));background:-moz-linear-gradient(top,#3163f2,#2b57d5);background:linear-gradient(top,#3163f2,#2b57d5)}.inwrapBorder .input_submit{background:transparent;border:0;color:#fff;font-family:Arial;font-size:15px;margin:0;padding:4px 9px;cursor:pointer;_padding:3px}.inwrapBorder a.input_submit{text-decoration:none;display:block}.inwrapBorder:hover{border-color:#235af6;border-top-color:#4072ff;border-bottom-color:#1e4fd9}.inwrapBorderTop:hover{border-top-color:#7ba7ff;background-color:#4273ff;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4273ff',endColorstr='#3364f1');background:-webkit-gradient(linear,left top,left bottom,from(#4273ff),to(#3364f1));background:-moz-linear-gradient(top,#4273ff,#3364f1);background:linear-gradient(top,#4273ff,#3364f1)}.inwrapBorder:active{border-color:#536db7;border-top-color:#4b69c1;border-bottom-color:#3753a6}.inwrapBorder:active .inwrapBorderTop{border-top-color:#6c82c1;background-color:#4b69c1;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4b69c1',endColorstr='#3753a6');background:-webkit-gradient(linear,left top,left bottom,from(#4b69c1),to(#3753a6));background:-moz-linear-gradient(top,#4b69c1,#3753a6);background:linear-gradient(top,#4b69c1,#3753a6)}.roundedCorner{display:inline-block;zoom:1;*display:inline;vertical-align:baseline;margin:0 2px;outline:0;cursor:pointer;text-align:center;text-decoration:none;font:15px/100% Arial,Helvetica,sans-serif;padding:.5em 2em .55em;text-shadow:0 1px 1px rgba(0,0,0,.3);-webkit-border-radius:.5em;-moz-border-radius:.5em;border-radius:.5em;-webkit-box-shadow:0 1px 2px rgba(0,0,0,.2);-moz-box-shadow:0 1px 2px rgba(0,0,0,.2);box-shadow:0 1px 2px rgba(0,0,0,.2)}.roundedCorner:hover{text-decoration:none}.roundedCorner:active{position:relative;top:1px}.bigrounded{-webkit-border-radius:2em;-moz-border-radius:2em;border-radius:2em}.medium{font-size:12px;padding:.4em 1.5em .42em}.small{font-size:11px;padding:.2em 1em .275em}.indeedblue{color:#d9eef7;border:solid 1px #1c4ed9;background:#3163f2;background:-webkit-gradient(linear,left top,left bottom,from(#2f62f1),to(#133fbb));background:-moz-linear-gradient(top,#2f62f1,#133fbb);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2F62F1',endColorstr='#133FBB')}.indeedblue:hover,.indeedblue:focus{background:#235af6;background:-webkit-gradient(linear,left top,left bottom,from(#4072ff),to(#1e4fd9));background:-moz-linear-gradient(top,#4072ff,#1e4fd9);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4072ff',endColorstr='#1e4fd9')}.indeedblue:active{color:#d9eef7;background:-webkit-gradient(linear,left top,left bottom,from(#4b69c1),to(#3753a6));background:-moz-linear-gradient(top,#4b69c1,#3753a6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4b69c1',endColorstr='#3753a6')}</style>
+<span id="hidden_colon" style="display:none">:</span>
+<table role="banner" cellpadding=0 cellspacing=0 border=0 class="jasxcolorcontrasttst-inactive"><tr><td width=1125><table class=lnav cellpadding=0 cellspacing=0>
+<tr>
+<td id="branding-td" style="vertical-align:top;"><a id=branding href="/" onmousedown="ptk('logo');"><img class="indeedLogo" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEHAAIALAAAAAABAAEAAAICVAEAOw==" alt="one search. all jobs. Indeed"title="one search. all jobs. Indeed" style="margin-bottom:6px;display:block;" /></a></td>
+<td valign=top style="padding-top:3px;">
+<form class="jsf" name=js id=jobsearch action="/jobs" method=get onsubmit="formptk('topsearch','where_ac','',['where_ac','what_ac'], ptk);formptk('topsearch','what_ac','w',['where_ac','what_ac'], ptk);">
+<table cellpadding=3 cellspacing=0 align=left>
+<tr>
+<td class=npb><label id="what_label_top" for="what">What</label></td>
+<td class=npb colspan=3><label id="where_label_top" for="where">Where</label></td>
+</tr>
+<tr role="search">
+<td class="npl epr"><span class=inwrap><input name=q class=input_text size=31 maxlength=512 value="data scientist" aria-labelledby="what_label_top hidden_colon what_label" id=what></span><div style="width:250px"><!-- --></div></td>
+<td class="npl epr"><span class=inwrap><input name=l class=input_text size=27 maxlength=45 value="New York"  aria-labelledby="where_label_top hidden_colon where_label" id=where></span><div style="width:200px"><!-- --></div></td>
+<td class=npl style="width:1px"><span class="inwrapBorder" style="width:auto;padding-right:0;"><span class="inwrapBorderTop"><input id=fj class=input_submit type=submit value="Find Jobs"></span></span></td>
+<td class="npl advanced-search" style="width:240px;"><div style="margin-left:12px; display:flex;"><a class=sl href="/advanced_search?q=data+scientist&l=New+York">Advanced Job Search</a></div></td>
+</tr>
+<tr id=acr>
+<td><span class=h>&nbsp;</span></td>
+<td colspan=2 class=npl><div style="position:relative;z-index:2"><div id=acdiv class=acd style="display:none;"></div></div></td>
+<td><span class=h>&nbsp;</span></td>
+</tr>
+<tr id=acr>
+<td colspan=3 class=npl><div style="position:relative;z-index:2"><div id=what_acdiv class=acd style="display:none;"></div></div></td>
+<td><span class=h>&nbsp;</span></td>
+</tr>
+<tr valign=baseline>
+<td id="what_label_cell" class=label>
+<label for='what' aria-hidden="true" id="what_label">job title, keywords or company</label>
+</td>
+<td id="where_label_cell" colspan=3 class=label>
+<label for='where' aria-hidden="true" id="where_label">city, state, or zip</label>
+</td>
+</tr>
+</table>
+</form>
+</td>
+</tr>
+</table>
+</td></tr></table>
+
+<script type="text/javascript">
+
+        initAutocomplete('where_ac', gbid('where'), gbid('acdiv'), '/rpc/suggest?from=serp&tk=1b8dlrep1a10rbdd', function() { formptk('topsearch','where_ac', '', ['where_ac','what_ac'], ptk); }, gbid('where'));
+        
+        initAutocomplete('what_ac', gbid('what'), gbid('what_acdiv'), '/rpc/suggest?what=true&tk=1b8dlrep1a10rbdd', function () {formptk('topsearch', 'what_ac', 'w', ['where_ac','what_ac'], ptk);}, gbid('what'));
+        </script>
+<script type="text/javascript">
+function rclk(el,jobdata,oc,sal) { var ocstr = oc ? '&onclick=1' : ''; document.cookie='RCLK="jk='+jobdata.jk+'&tk=1b8dlrep1a10rbdd&from=web&rd='+jobdata.rd+'&qd=7tdTJLF8oc4dPpT7T_zGvKxvh1kL0ISeG-nCT4VkA6qAVv7IJoWVRyBI2jwrl5v-Dvo8J5MS4Rm_rFnBQX6Aukz3TzDsJUi3VDAIsAcvfIyip13hc6UCqVooJT7KLl22gS9BX5ugyNT185kQ1hb_Eg&ts=1486517812001&sal='+sal+ocstr+'"; path=/'; return true;}
+function zrprclk(el,jobdata,oc) { var ocstr = oc ? '&onclick=1' : ''; document.cookie='RCLK="jk='+jobdata.jk+'&tk=1b8dlrep1a10rbdd&from=reconzrp&rd='+jobdata.rd+'&qd=7tdTJLF8oc4dPpT7T_zGvKxvh1kL0ISeG-nCT4VkA6qAVv7IJoWVRyBI2jwrl5v-Dvo8J5MS4Rm_rFnBQX6Aukz3TzDsJUi3VDAIsAcvfIyip13hc6UCqVooJT7KLl22gS9BX5ugyNT185kQ1hb_Eg&ts=1486517812001'+ocstr+'"; path=/'; return true;}
+function prjbottomclk(el,jobdata,oc) { var ocstr = oc ? '&onclick=1' : ''; document.cookie='RCLK="jk='+jobdata.jk+'&tk=1b8dlrep1a10rbdd&from=reconserp&rd='+jobdata.rd+'&qd=7tdTJLF8oc4dPpT7T_zGvKxvh1kL0ISeG-nCT4VkA6qAVv7IJoWVRyBI2jwrl5v-Dvo8J5MS4Rm_rFnBQX6Aukz3TzDsJUi3VDAIsAcvfIyip13hc6UCqVooJT7KLl22gS9BX5ugyNT185kQ1hb_Eg&ts=1486517812001'+ocstr+'"; path=/'; return true;}
+
+
+var jobmap = {};
+
+jobmap[0]= {jk:'e40fbeab1c1bb347',efccid: '3b6d538b33df8c0d',srcid:'e56cd7519317e2d0',cmpid:'c50250d3872353cc',num:'0',srcname:'Indeed',cmp:'Ubertal',cmpesc:'Ubertal',cmplnk:'/q-Ubertal-l-New-York-jobs.html',loc:'New York, NY',country:'US',zip:'',city:'New York',title:'Data Scientist',locid:'45f6c4ded55c00bf',rd:'qwCkIAYcCPMCjM7UAT1HUQ'};
+
+jobmap[1]= {jk:'e31b8735be5da6c6',efccid: '9d4ebd8091c43f14',srcid:'67ea03e34841aa3c',cmpid:'70b4e57e79184779',num:'1',srcname:'Indeed',cmp:'Catalyst USAOF, INC.',cmpesc:'Catalyst USAOF, INC.',cmplnk:'/q-Catalyst-USAOF-l-New-York-jobs.html',loc:'New York, NY',country:'US',zip:'',city:'New York',title:'Data Scientist',locid:'45f6c4ded55c00bf',rd:'xFC-gr8apKmRKKaXvFTS1-FlAJlk9ELPSHE4YUJ6Qj4'};
+
+jobmap[2]= {jk:'696a36400765db0e',efccid: 'fc795989ca54f422',srcid:'688e2c2f6441a6b4',cmpid:'1c29f699397ef176',num:'2',srcname:'IBM Kenexa',cmp:'IBM Kenexa',cmpesc:'IBM Kenexa',cmplnk:'/q-IBM-Kenexa-l-New-York-jobs.html',loc:'New York, NY',country:'US',zip:'',city:'New York',title:'Data Scientist Armonk or New York, NY',locid:'45f6c4ded55c00bf',rd:'qZbEW5CIRtWoBiKCtAKLFvjl0TZdzt_QvGjJX2Poj_o'};
+
+jobmap[3]= {jk:'10c5dbc704c559d4',efccid: '82691bc4b24698f9',srcid:'566057a6cdd81fe2',cmpid:'cb0785125f6f4ccc',num:'3',srcname:'Dia&amp;Co',cmp:'Dia&Co',cmpesc:'Dia&amp;Co',cmplnk:'/q-Dia&Co-l-New-York-jobs.html',loc:'New York, NY',country:'US',zip:'',city:'New York',title:'Data Scientist',locid:'45f6c4ded55c00bf',rd:'uVlV7VYy-7SSIyDxsodrpfrjdLYrAUDN75hTmQv9FDQ'};
+
+jobmap[4]= {jk:'b37410e6b4301b0b',efccid: 'f1d77e7bf54b6d87',srcid:'1679b3e968c10526',cmpid:'f58d3737bfb6f6b4',num:'4',srcname:'SkillsEQ',cmp:'SkillsEQ',cmpesc:'SkillsEQ',cmplnk:'/q-SkillsEQ-l-New-York-jobs.html',loc:'New York, NY',country:'US',zip:'',city:'New York',title:'Data Scientist',locid:'45f6c4ded55c00bf',rd:'jxp0ecYEQ7a9yKEkhbdjrw'};
+
+jobmap[5]= {jk:'c2783a489899e122',efccid: '3f1442d19a558947',srcid:'50bbce95ac84a66f',cmpid:'136a0b3a63366461',num:'5',srcname:'FSAStore.com, Inc.',cmp:'FSAStore.com, Inc.',cmpesc:'FSAStore.com, Inc.',cmplnk:'/q-FSAStore.com-l-New-York-jobs.html',loc:'New York, NY',country:'US',zip:'',city:'New York',title:'Data Scientist',locid:'45f6c4ded55c00bf',rd:'QdlFCs4BXUC5xs2hol2bDg'};
+
+jobmap[6]= {jk:'6a8bb9674bbabaaa',efccid: 'c2e619c4e6600f38',srcid:'4d687b724f53388c',cmpid:'30e595ec75fea251',num:'6',srcname:'Indeed',cmp:'WorkPro Solutions',cmpesc:'WorkPro Solutions',cmplnk:'/q-WorkPro-Solutions-l-New-York-jobs.html',loc:'New York, NY',country:'US',zip:'',city:'New York',title:'Data Scientist',locid:'45f6c4ded55c00bf',rd:'qL_QHgT9VavNGKQDIr0Wbw'};
+
+jobmap[7]= {jk:'bd7ae5f35ecd31bd',efccid: 'f479d1b5fb8220cd',srcid:'d7f9dafbce356a88',cmpid:'944395126192b1e2',num:'7',srcname:'Indeed',cmp:'Natural Resource Governance Institute',cmpesc:'Natural Resource Governance Institute',cmplnk:'/q-Natural-Resource-Governance-Institute-l-New-York-jobs.html',loc:'New York, NY',country:'US',zip:'',city:'New York',title:'Data Scientist',locid:'45f6c4ded55c00bf',rd:'axcOQxQMYN0a85mP7arLnQ'};
+
+jobmap[8]= {jk:'c01ca6ef587c7128',efccid: 'caff23281376b83d',srcid:'c6c40f68ed4ae948',cmpid:'db9f9b9d28743c59',num:'8',srcname:'Amazon.com',cmp:'Amazon Corporate LLC',cmpesc:'Amazon Corporate LLC',cmplnk:'/q-Amazon-Corporate-l-New-York-jobs.html',loc:'New York, NY',country:'US',zip:'',city:'New York',title:'Data Scientist',locid:'45f6c4ded55c00bf',rd:'WjRP17YOjrNXHzTlrPdpl_rjdLYrAUDN75hTmQv9FDQ'};
+
+jobmap[9]= {jk:'2060524d74480a4d',efccid: 'ff069eae3d0f3895',srcid:'cc2107699c96d59b',cmpid:'41084f0f40a0fe6e',num:'9',srcname:'bankINNOVATE',cmp:'bankINNOVATE',cmpesc:'bankINNOVATE',cmplnk:'/q-bankINNOVATE-l-New-York-jobs.html',loc:'New York, NY 10005',country:'US',zip:'10005',city:'New York',title:'Data Scientist (Consumer Finance, Model Validation)',locid:'45f6c4ded55c00bf',rd:'LofHjRrIlTa0IYZh-dckdA'};
+</script>
+
+<style type="text/css">
+.jobtitle {
+font-weight: bold;
+}
+td.snip b, span.company b, #femp_list .jobtitle, #cmpinfo_list .jobtitle, .jobtitle .new {
+font-weight: normal;
+}
+</style>
+<style type="text/css">
+div.row table tr td.snip { line-height: 1.4; }
+</style>
+
+<table role="main" cellpadding="0" cellspacing="0" border="0" id="resultsBody"><tr><td>
+<script type="text/javascript">
+window['ree'] = "pdsssps";
+window['jas'] = "KFx3IGjK";
+</script>
+
+<style type="text/css">
+.basePromo{margin-top:8px;margin-bottom:13px;padding-left:12px;padding-right:12px}.redText{color:red}.bold{font-weight:bold}.basePromo.resume{font-size:14px;margin-top:5px}.basePromo.resume>img{height:20px;margin-right:5px;margin-bottom:3px;width:16px}</style>
+
+<table cellspacing=0 cellpadding=0 width="100%" border=0 id="pageContent">
+<tr valign=top>
+
+<td id="refineresultscol" data-tn-section="refineBy">
+<div id=refineresults>
+
+<h1><font size="+1">data scientist jobs in New York, NY</font></h1>
+
+<div id="recPromoDisplay" style="display:none;"></div>
+
+    <script type="text/javascript">
+        call_when_jsall_loaded(function() {
+            var recJobLink = new RecJobLink("Recommended Jobs", "recPromoDisplay", "1b8dlr6fta10ret0", "",
+                    "US", "en", "",
+                    "", null, true);
+            recJobLink.onLoad();
+        });
+    </script>
+
+<span role="heading" aria-level="2" style="height: 0; overflow: hidden; position: absolute;">Filter results by:</span>
+
+<div style="margin-left: 6px; margin-bottom: 1em;">Sort&nbsp;by: <nobr><b>relevance</b> -
+            <a href="/jobs?q=data+scientist&l=New+York&amp;sort=date" rel=nofollow>date</a></nobr></div>
+<form name="radius_update" id="radius_update" method="get" action="/jobs">
+<input type="hidden" name="q" value="data scientist"><input type="hidden" name="l" value="New York"><label for="distance_selector" onclick="this.form.radius.focus();return false;">Distance:</label>
+<select id="distance_selector" name="radius" onchange="ptk('radius'); this.form.submit();">
+<option  value="0">Exact location only</option>
+<option  value="5">within 5 miles</option>
+<option  value="10">within 10 miles</option>
+<option  value="15">within 15 miles</option>
+<option selected value="25">within 25 miles</option>
+<option  value="50">within 50 miles</option>
+<option  value="100">within 100 miles</option>
+</select>
+<noscript><input type="submit" name="r_up" id="r_up" value="Go"></noscript>
+</form><div id="rb_Salary Estimate" class="rbSection rbOpen">
+<div class=rbHeader>
+<span role="heading" aria-level="3" class="ws_bold">
+Salary Estimate</span>
+</div>
+<div id="SALARY_rbo" class="rbsrbo">
+<ul class=rbList>
+<li onmousedown="rbptk('rb', 'salest', '1');">
+<a rel=nofollow href="/q-data-scientist-$50,000-l-New-York-jobs.html" title="$50,000+ (2046)">$50,000+</a> (2046)</li>
+<li onmousedown="rbptk('rb', 'salest', '2');">
+<a rel=nofollow href="/q-data-scientist-$70,000-l-New-York-jobs.html" title="$70,000+ (1631)">$70,000+</a> (1631)</li>
+<li onmousedown="rbptk('rb', 'salest', '3');">
+<a rel=nofollow href="/q-data-scientist-$85,000-l-New-York-jobs.html" title="$85,000+ (1302)">$85,000+</a> (1302)</li>
+<li onmousedown="rbptk('rb', 'salest', '4');">
+<a rel=nofollow href="/q-data-scientist-$105,000-l-New-York-jobs.html" title="$105,000+ (889)">$105,000+</a> (889)</li>
+<li onmousedown="rbptk('rb', 'salest', '5');">
+<a rel=nofollow href="/q-data-scientist-$125,000-l-New-York-jobs.html" title="$125,000+ (453)">$125,000+</a> (453)</li>
+</ul>
+</div>
+</div>
+<div id="rb_Job Type" class="rbSection rbOpen">
+<div class=rbHeader>
+<span role="heading" aria-level="3" class="ws_bold">
+Job Type</span>
+</div>
+<div id="JOB_TYPE_rbo" class="rbsrbo">
+<ul class=rbList>
+<li onmousedown="rbptk('rb', 'jobtype', '1');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&jt=fulltime" title="Full-time (2348)">Full-time</a> (2348)</li>
+<li onmousedown="rbptk('rb', 'jobtype', '2');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&jt=contract" title="Contract (106)">Contract</a> (106)</li>
+<li onmousedown="rbptk('rb', 'jobtype', '3');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&jt=temporary" title="Temporary (80)">Temporary</a> (80)</li>
+<li onmousedown="rbptk('rb', 'jobtype', '4');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&jt=internship" title="Internship (50)">Internship</a> (50)</li>
+<li onmousedown="rbptk('rb', 'jobtype', '5');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&jt=parttime" title="Part-time (35)">Part-time</a> (35)</li>
+<li onmousedown="rbptk('rb', 'jobtype', '6');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&jt=commission" title="Commission (2)">Commission</a> (2)</li>
+</ul>
+</div>
+</div>
+<div id="rb_Location" class="rbSection rbOpen">
+<div class=rbHeader>
+<span role="heading" aria-level="3" class="ws_bold">
+Location</span>
+</div>
+<div id="LOCATION_rbo" class="rbsrbo">
+<ul class=rbList>
+<li onmousedown="rbptk('rb', 'loc', '1');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbl=New+York,+NY&jlid=45f6c4ded55c00bf" title="New York, NY (1996)">New York, NY</a> (1996)</li>
+<li onmousedown="rbptk('rb', 'loc', '2');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbl=Summit,+NJ&jlid=f3c783c0c5425d6a" title="Summit, NJ (69)">Summit, NJ</a> (69)</li>
+<li onmousedown="rbptk('rb', 'loc', '3');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbl=Manhattan,+NY&jlid=ea5405905f293f14" title="Manhattan, NY (47)">Manhattan, NY</a> (47)</li>
+<li onmousedown="rbptk('rb', 'loc', '4');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbl=Roseland,+NJ&jlid=218092364ca6bfe9" title="Roseland, NJ (38)">Roseland, NJ</a> (38)</li>
+<li onmousedown="rbptk('rb', 'loc', '5');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbl=Newark,+NJ&jlid=fc0723f9333e9830" title="Newark, NJ (37)">Newark, NJ</a> (37)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'loc', '6');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbl=Jersey+City,+NJ&jlid=a8725547cbf3b706" title="Jersey City, NJ (31)">Jersey City, NJ</a> (31)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'loc', '7');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbl=Berkeley+Heights,+NJ&jlid=53861cbd532c8f01" title="Berkeley Heights, NJ (23)">Berkeley Heights, NJ</a> (23)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'loc', '8');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbl=Parsippany,+NJ&jlid=61d39317b53e0380" title="Parsippany, NJ (22)">Parsippany, NJ</a> (22)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'loc', '9');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbl=Clark,+NJ&jlid=27829490440682b8" title="Clark, NJ (15)">Clark, NJ</a> (15)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'loc', '10');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbl=Old+Westbury,+NY&jlid=f18033a3dfcbe666" title="Old Westbury, NY (14)">Old Westbury, NY</a> (14)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'loc', '11');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbl=East+Hanover,+NJ&jlid=0133c97d9389fa29" title="East Hanover, NJ (12)">East Hanover, NJ</a> (12)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'loc', '12');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbl=Kenilworth,+NJ&jlid=d4ba7419e50dc16c" title="Kenilworth, NJ (12)">Kenilworth, NJ</a> (12)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'loc', '13');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbl=Rahway,+NJ&jlid=4ee8dde7f79849a9" title="Rahway, NJ (11)">Rahway, NJ</a> (11)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'loc', '14');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbl=Whippany,+NJ&jlid=f1d6077a2b2f4d26" title="Whippany, NJ (11)">Whippany, NJ</a> (11)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'loc', '15');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbl=Woodcliff+Lake,+NJ&jlid=28b1ba47ab37f16b" title="Woodcliff Lake, NJ (10)">Woodcliff Lake, NJ</a> (10)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'loc', '16');"><a href="/q-Data-Scientist-jobs.html">Data Scientist jobs</a> nationwide</li>
+</ul>
+<div class="more_link"><span tabindex="0" onclick="showAllRefinements('rb_Location'); return false;" onkeyup="if (event.keyCode == 13) showAllRefinements('rb_Location'); return false;">more &raquo;</span></div></div>
+</div>
+<div id="rb_Company" class="rbSection rbOpen">
+<div class=rbHeader>
+<span role="heading" aria-level="3" class="ws_bold">
+Company</span>
+</div>
+<div id="COMPANY_rbo" class="rbsrbo">
+<ul class=rbList>
+<li onmousedown="rbptk('rb', 'cmp', '1');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbc=NYU+Langone+Medical+Center&jcid=a259fc86b1470609" title="NYU Langone Medical Center (347)">NYU Langone Medical Center</a> (347)</li>
+<li onmousedown="rbptk('rb', 'cmp', '2');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbc=Selby+Jennings&jcid=e46dcf251ad893cd" title="Selby Jennings (158)">Selby Jennings</a> (158)</li>
+<li onmousedown="rbptk('rb', 'cmp', '3');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbc=Weill+Cornell+Medical+College&jcid=eab46b3ba6851e42" title="Weill Cornell Medical College (110)">Weill Cornell Medical College</a> (110)</li>
+<li onmousedown="rbptk('rb', 'cmp', '4');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbc=Mount+Sinai+Health+System&jcid=c007936ceb766fe5" title="Mount Sinai Health System (104)">Mount Sinai Health System</a> (104)</li>
+<li onmousedown="rbptk('rb', 'cmp', '5');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbc=ADP&jcid=e996c2d6855fe778" title="ADP (48)">ADP</a> (48)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'cmp', '6');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbc=BuzzFeed&jcid=aadc8cd1bc50c192" title="BuzzFeed (44)">BuzzFeed</a> (44)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'cmp', '7');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbc=Columbia+University&jcid=bd976cc171c690e0" title="Columbia University (39)">Columbia University</a> (39)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'cmp', '8');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbc=Bank+of+America&jcid=5bd99dfa21c8a490" title="Bank of America (37)">Bank of America</a> (37)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'cmp', '9');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbc=Celgene&jcid=5d4039033d28e663" title="Celgene (32)">Celgene</a> (32)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'cmp', '10');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbc=Celgene+Corporation&jcid=b7b2b0ecc148eab5" title="Celgene Corporation (30)">Celgene Corporation</a> (30)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'cmp', '11');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbc=DEPT+OF+HEALTH%2FMENTAL+HYGIENE&jcid=2a757335b4200fbc" title="DEPT OF HEALTH/MENTAL HYGIENE (22)">DEPT OF HEALTH/MENTAL HYGIENE</a> (22)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'cmp', '12');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbc=Amazon+Corporate+LLC&jcid=db9f9b9d28743c59" title="Amazon Corporate LLC (22)">Amazon Corporate LLC</a> (22)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'cmp', '13');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbc=Averity&jcid=26ad2002ff6ebf9c" title="Averity (22)">Averity</a> (22)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'cmp', '14');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbc=Merck&jcid=c38b7d5e0419a6a7" title="Merck (20)">Merck</a> (20)</li>
+<li class="moreLi" onmousedown="rbptk('rb', 'cmp', '15');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&rbc=New+York+Institute+of+Technology&jcid=7b4271340988ba7d" title="New York Institute of Technology (20)">New York Institute of Technology</a> (20)</li>
+</ul>
+<div class="more_link"><span tabindex="0" onclick="showAllRefinements('rb_Company'); return false;" onkeyup="if (event.keyCode == 13) showAllRefinements('rb_Company'); return false;">more &raquo;</span></div></div>
+</div>
+<div id="rb_Experience Level" class="rbSection rbOpen">
+<div class=rbHeader>
+<span role="heading" aria-level="3" class="ws_bold">
+Experience Level</span>
+</div>
+<div id="EXP_LVL_rbo" class="rbsrbo">
+<ul class=rbList>
+<li onmousedown="rbptk('rb', 'explvl', '1');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&explvl=mid_level" title="Mid Level (1077)">Mid Level</a> (1077)</li>
+<li onmousedown="rbptk('rb', 'explvl', '2');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&explvl=entry_level" title="Entry Level (752)">Entry Level</a> (752)</li>
+<li onmousedown="rbptk('rb', 'explvl', '3');">
+<a rel=nofollow href="/jobs?q=data+scientist&l=New+York&explvl=senior_level" title="Senior Level (287)">Senior Level</a> (287)</li>
+</ul>
+</div>
+</div>
+</div>
+</td>
+<td id="resultsCol">
+<div class="messageContainer">
+
+<script type="text/javascript">
+function setJaPromoCookie() {
+var expires = new Date();
+expires.setTime(expires.getTime() + (5 * 365 * 24 * 60 * 60 * 1000));
+setCookie("showJaPromo", "1", expires);
+}
+function setRefineByCookie(refineByTypes) {
+var expires = new Date();
+expires.setTime(expires.getTime() + (10 * 1000));
+for (var i = 0; i < refineByTypes.length; i++) {
+setCookie(refineByTypes[i], "1", expires);
+}
+}
+</script>
+
+<style>
+    #stateCitySugg {
+        padding-left: 4px;
+        line-height: 200%;
+    }
+    #stateCitySugg a {
+        background-color: #f6f6f6;
+        padding: 5px 8px;
+        margin-left: 10px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+    @media only screen and (min-width: 1125px) {
+        #stateCitySugg {
+            padding-left: 12px;
+        }
+    }
+</style>
+<p id="stateCitySugg">
+    Did you mean:<a href="/jobs?q=Data+Scientist&l=New+York+State" onmousedown="ptk('stateCitySugg')">New York State</a>
+    </p></div>
+
+<style type="text/css">
+#increased_radius_result {
+font-size: 16px;
+font-style: italic;
+}
+#original_radius_result{
+font-size: 13px;
+font-style: italic;
+}
+</style>
+<div class="resultsTop"><div id="searchCount">Jobs 1 to 10 of 2,530</div>
+<div id="primePromo" data-tn-section="primePromo">
+<span class="new">New!</span> <a href="/promo/prime" onclick="this.href = appendParamsOnce( this.href, '?from=serptop&subfrom=primeprmtop&trk.origin=jobsearch&trk.variant=primeprmtop&trk.tk=1b8dlrep1a10rbdd&vertical=TECH&x_isid=serptop&x_ikw=data+scientist&x_sid=serptop&x_kw=data+scientist')">Join Indeed Prime</a> - Get offers from great tech companies</div></div>
+
+<script type="text/javascript">
+window['sjl'] = "jRTEHD9dT";
+</script>
+<style type="text/css">
+.jRTEHD9dT { margin: 0 0 6px 0; padding: 0; _zoom:100%; border: 0; background-color: #fff; }
+.jRTEHD9dT .jobtitle { white-space: nowrap; float:@LINE_START@; _float: none; }
+.jRTEHD9dT .sdn { color: #CD29C0; }
+.IONRWjtMP6 .brdr { margin-top: 12px; }
+.LLHKhogGKhY .brdr { margin-bottom: 12px; }
+@media only screen and (min-height:780px) {
+.IONRWjtMP6 { margin-bottom: 9px; }
+.LLHKhogGKhY .brdr,
+.ieDJcBfY,
+.IONRWjtMP6 .brdr { margin-bottom: 9px; margin-top: 9px; }
+}
+</style>
+<style type="text/css">
+.result-tab:empty {margin-top: 0;}
+.IONRWjtMP6 {
+margin-bottom: 0;
+}
+@media only screen and (min-height:780px) {
+.IONRWjtMP6 {
+margin-bottom: 0;
+}
+}
+</style>
+<div></div><a id="jobPostingsAnchor" tabindex="-1"></a>
+
+<div class="jRTEHD9dT IONRWjtMP6">
+<div class="row  result" id="pj_1f9ae2cfe362da9a" data-jk="1f9ae2cfe362da9a">
+<a target="_blank" id="sja1" data-tn-element="jobTitle" class="jobtitle turnstileLink" href="/pagead/clk?mo=r&ad=-6NYlbfkN0Ab67y_gTDH9tSaT0HLOcX4Q3W4UsL2WfVRyJV-qqww-YJ_ltwPKUIOQtlXfcv8uV0ROldKCXz3N1zS-RO-643yTOVokMl8n1BqQYtXpDvkNd7FvmzmB4do_qf5CR9qiu795bTOz6AI2P5Ba12rd7UB2ZvtrrpmJvfEvaMJRmujyCDL8gQR0DHMyUAHl-uoubdKIoNIQV5F2G-V4di1utNpTME3kx2hLcSRG4tY3LngaOBf_LYCm1z4fShSfWm4yp6MnqV--f5jl6JBoREwsQqdDlMd6U25kJUgeVSVmmQLFKvyvCxm2xIsRJHwFG5PsuSi9Hb03CE_daOjaChlNV65pq-iXr0jMN0Inhyb0dKQFkcZr4vP2WtpoKGLBk1kRsdugNepncHC5IQ1tvFalvvql2p6jYWUTWTlC8aZnWUJSxVO6uKFTKqo-37we417S32divI3J9LPHsKHAsqd0NDs2gBV5RXiiSqjJ7DDhtanXc8Mn1Znz_xnc2vOl4t_kBScPnzOhHS1YJx-yEXvAbIuXeKpM-J3-3YAwNVbY9_N5TbkXbpcn48pXx8OoU_HUhSENEyBvP28x0xSdfIwQPyN0JfUIa4Fzl6ae1Q9BxlC1EJ6O71NFcgsWnwMRcsDEUIIClLCL3zTJ4t3K0hnPiWw6NclJANyFtVMtFwuAIqLKbmNnxmsDgzfa59WClMaPa5r_NAhhtcS_7ZMwM36C_PGeVwif7vf-_qbxbuKPkD_Mcw-E0htqnm4GS6zK2APIHWD4cEOjg0aOQ==&p=1&sk=&fvj=0" title="Applied Machine Learning Scientist/Engineer - Relevance &amp; Discoverability team" rel="nofollow" onmousedown="sjomd('sja1'); clk('sja1');" onclick="setRefineByCookie([]); sjoc('sja1',0); convCtr('SJ', pingUrlsForGA)">Applied Machine Learning <b>Scientist</b>/Engineer - Relevance &amp; Di...</a>
+<br>
+<div class="sjcl">
+<span class="company">
+    <a
+                    data-tn-element="companyName" class="turnstileLink" target="_blank"
+                    href="/cmp/Bloomberg"
+                    onmousedown="this.href = appendParamsOnce(this.href, 'from=SERP&campaignid=serp-linkcompanyname&fromjk=1f9ae2cfe362da9a&jcid=f770da67b3b51c62')"
+                    
+            >
+        Bloomberg</a></span>
+
+ - <a data-tn-element="reviewStars" data-tn-variant="cmplinktst2" class="turnstileLink slNoUnderline " href="/cmp/Bloomberg/reviews" title="Bloomberg reviews" class="ratingsLabel" onmousedown="this.href = appendParamsOnce(this.href, '?campaignid=cmplinktst2&from=SERP&jt=Applied+Machine+Learning+Scientist%5C%2FEngineer+-+Relevance+%26+Discoverability+team&fromjk=1f9ae2cfe362da9a&jcid=f770da67b3b51c62');" target="_blank" >
+    <span class="ratings" style="height: 11px; line-height: 11px; background-image: url(/images/cmp/star_2_sm@2x.png); background-size: 12px 22px;width: 60px;"><span class="rating" style="height: 11px; line-height: 11px; background-image: url(/images/cmp/star_2_sm@2x.png); background-size: 12px 22px;background-position: 0 11px; width: 44.4px;"><!-- --></span></span><span class="slNoUnderline">310 reviews</span></a>
+ - <span class=location>New York, NY</span>
+</div>
+<table cellpadding=0 cellspacing=0 border=0><tr><td class=snip>
+<span class=summary>A research <b>scientist</b> and engineer who wants to apply machine learning to solve challenging problems. Design and build machine learning systems that solve...</span>
+</td></tr></table>
+<div class="result-link-bar-container">
+<div class="result-link-bar"><span id="tt_set_10" class="tt_set"><span id="savelink2_1f9ae2cfe362da9a" class="savelink2"><a id="sj_1f9ae2cfe362da9a" href="#" class="sl resultLink save-job-link" onclick="changeJobState('1f9ae2cfe362da9a', 'save', 'linkbar', true);return false;" title="Save this job to my.indeed">save job</a></span></span><div id="editsaved2_1f9ae2cfe362da9a" class="edit_note_content" style="display:none;"></div><script>window['sj_result_1f9ae2cfe362da9a'] = {"showSource": false, "source": "Bloomberg", "loggedIn": false, "showMyJobsLinks": true,"undoAction": "unsave","jobKey": "1f9ae2cfe362da9a", "myIndeedAvailable": true, "tellAFriendEnabled": false, "showMoreActionsLink": false, "resultNumber": 10, "jobStateChangedToSaved": false, "searchState": "q=data scientist&amp;l=New+York", "basicPermaLink": "https://www.indeed.com", "saveJobFailed": false, "removeJobFailed": false, "requestPending": false, "notesEnabled": false, "currentPage" : "serp", "sponsored" : true,"reportJobButtonEnabled": false, "showMyJobsHired": false, "showSaveForSponsored": true};</script></div></div>
+<div class="tab-container">
+<div class="sign-in-container result-tab"></div>
+<div class="tellafriend-container result-tab email_job_content"></div>
+</div>
+<span class="sdn">Sponsored</span>
+</div>
+<div class="row  result" id="pj_9d07a971ba9092f3" data-jk="9d07a971ba9092f3">
+<a target="_blank" id="sja2" data-tn-element="jobTitle" class="jobtitle turnstileLink" href="/pagead/clk?mo=r&ad=-6NYlbfkN0BSRDOq6hQFSM6LZGCjeuGcgrscL9f0IFpo02jWLPBCKv3T32YOwiKqiOO2W9ckbNNO6ciZ_5C5zY__O8Kb0hnq-xWx0BQ1ags8jEtHJU5Yh-c-tV1ky5cDHqlLncWu24tKzhacjlHe7bvLZbr9FIaI5lZAvFV_Kp3NDS-Y6SNedMy6Eu1bNMlrSyUJeTjQ0arSOd3AzEj0Xa2vPPlamQKY0VviS3IOOMbsSmJEgJXbyWJJanIYWC4eozMR5uwP6pxftn6Qku8ScJegMNoIQBXcaWvZX6LoWz1JhUgUkIM460uc6IKPKqkxMVbMl8g9vYVmjI19_ApWLc-s1gQ9Y2QCb2smOOucW3HGjyScgImFCwAShVyP1R89BU3zTk3BnDTSGiyLqcxdCkfRHrZD3ihEzPuyZIImKP6dPuCr_YClig==&p=2&sk=&fvj=0" title="Data Scientist - Healthcare" rel="nofollow" onmousedown="sjomd('sja2'); clk('sja2');" onclick="setRefineByCookie([]); sjoc('sja2',0); convCtr('SJ', pingUrlsForGA)"><b>Data</b> <b>Scientist</b> - Healthcare</a>
+<br>
+<div class="sjcl">
+<span class="company">
+    <a
+                    data-tn-element="companyName" class="turnstileLink" target="_blank"
+                    href="/cmp/Aetna"
+                    onmousedown="this.href = appendParamsOnce(this.href, 'from=SERP&campaignid=serp-linkcompanyname&fromjk=9d07a971ba9092f3&jcid=7077d7e88049c02a')"
+                    
+            >
+        Aetna</a></span>
+
+ - <a data-tn-element="reviewStars" data-tn-variant="cmplinktst2" class="turnstileLink slNoUnderline " href="/cmp/Aetna/reviews" title="Aetna reviews" class="ratingsLabel" onmousedown="this.href = appendParamsOnce(this.href, '?campaignid=cmplinktst2&from=SERP&jt=Data+Scientist+-+Healthcare&fromjk=9d07a971ba9092f3&jcid=7077d7e88049c02a');" target="_blank" >
+    <span class="ratings" style="height: 11px; line-height: 11px; background-image: url(/images/cmp/star_2_sm@2x.png); background-size: 12px 22px;width: 60px;"><span class="rating" style="height: 11px; line-height: 11px; background-image: url(/images/cmp/star_2_sm@2x.png); background-size: 12px 22px;background-position: 0 11px; width: 43.8px;"><!-- --></span></span><span class="slNoUnderline">1,893 reviews</span></a>
+ - <span class=location>New York, NY 10017</span>
+</div>
+<table cellpadding=0 cellspacing=0 border=0><tr><td class=snip>
+<span class=summary>Aetna’s Consumer Health Services Customer Insights and Analytics Team creates cutting edge analytic tools to drive better and faster decision making within the...</span>
+</td></tr></table>
+<div class="result-link-bar-container">
+<div class="result-link-bar"><span class="date">1 day ago</span> <span id="tt_set_11" class="tt_set">  -  <span id="savelink2_9d07a971ba9092f3" class="savelink2"><a id="sj_9d07a971ba9092f3" href="#" class="sl resultLink save-job-link" onclick="changeJobState('9d07a971ba9092f3', 'save', 'linkbar', true);return false;" title="Save this job to my.indeed">save job</a></span></span><div id="editsaved2_9d07a971ba9092f3" class="edit_note_content" style="display:none;"></div><script>window['sj_result_9d07a971ba9092f3'] = {"showSource": false, "source": "Aetna", "loggedIn": false, "showMyJobsLinks": true,"undoAction": "unsave","relativeJobAge": "1 day ago","jobKey": "9d07a971ba9092f3", "myIndeedAvailable": true, "tellAFriendEnabled": false, "showMoreActionsLink": false, "resultNumber": 11, "jobStateChangedToSaved": false, "searchState": "q=data scientist&amp;l=New+York", "basicPermaLink": "https://www.indeed.com", "saveJobFailed": false, "removeJobFailed": false, "requestPending": false, "notesEnabled": false, "currentPage" : "serp", "sponsored" : true,"reportJobButtonEnabled": false, "showMyJobsHired": false, "showSaveForSponsored": true};</script></div></div>
+<div class="tab-container">
+<div class="sign-in-container result-tab"></div>
+<div class="tellafriend-container result-tab email_job_content"></div>
+</div>
+<span class="sdn">Sponsored</span>
+</div>
+<div class="row sjlast result" id="pj_498395629cafe86c" data-jk="498395629cafe86c">
+<a target="_blank" id="sja3" data-tn-element="jobTitle" class="jobtitle turnstileLink" href="/pagead/clk?mo=r&ad=-6NYlbfkN0AQuNMn-pWDZaQ5TnIyuJxwho_F_v2ZDvGnxu4Xh9sDmUHkw3mAoNehYtLRzPE3uQxfYVSLmuUYDaXx6rr7lSpYCZwMUjbFrql4-c0hlPQNPbaKPt8kO09dzJaXuP95xyMl-KDhuD9QTghkWzC2xcADsukgQ6Ngpl5lUt0j5K4p86tmeQ6FbItrxaLDsAyK2xAu90NTU8FHAxXpxP0rsyJQry8hdMwTEqR5dKNcn7m0NjPfzike6HQJDvWdBImUi4fptyAMj_T1soMJYbzOQtU2LdGB1tf-wre_tt71PFbhKkvXoddy_sqw5XFEYk-N-alKWHGRZ_hmhf5TGijRkinry6j2R0UKrDmYi2vglarDFg6Sj9aqvQTgaz6wbhmIxk61TpEaQj3GA6CS4JnKU_iRpjP96-meLa7IOmW0_9kwIwGxCyQ-K0QQg7CliymjdqI=&p=3&sk=&fvj=1" title="Senior Data Scientist" rel="nofollow" onmousedown="sjomd('sja3'); clk('sja3');" onclick="setRefineByCookie([]); sjoc('sja3',1); convCtr('SJ', pingUrlsForGA)">Senior <b>Data</b> <b>Scientist</b></a>
+<br>
+<div class="sjcl">
+<span class="company">
+    TalentHub Worldwide, Inc.</span>
+
+ - <span class=location>New York, NY 10017</span>
+<div>
+$130,000 a year</div>
+</div>
+<table cellpadding=0 cellspacing=0 border=0><tr><td class=snip>
+<span class=summary>The Senior <b>Data</b> <b>Scientist</b> is responsible for creating and maintaining <b>data</b> infrastructure for gathering multiple sources of <b>data</b> into a single <b>data</b> hub for the...</span>
+</td></tr></table>
+<div class="iaP">
+    <span class="iaLabel"> Easily apply</span>
+</div>
+<div class="result-link-bar-container">
+<div class="result-link-bar"><span id="tt_set_12" class="tt_set"><span id="savelink2_498395629cafe86c" class="savelink2"><a id="sj_498395629cafe86c" href="#" class="sl resultLink save-job-link" onclick="changeJobState('498395629cafe86c', 'save', 'linkbar', true);return false;" title="Save this job to my.indeed">save job</a></span></span><div id="editsaved2_498395629cafe86c" class="edit_note_content" style="display:none;"></div><script>window['sj_result_498395629cafe86c'] = {"showSource": false, "source": "Indeed", "loggedIn": false, "showMyJobsLinks": true,"undoAction": "unsave","jobKey": "498395629cafe86c", "myIndeedAvailable": true, "tellAFriendEnabled": false, "showMoreActionsLink": false, "resultNumber": 12, "jobStateChangedToSaved": false, "searchState": "q=data scientist&amp;l=New+York", "basicPermaLink": "https://www.indeed.com", "saveJobFailed": false, "removeJobFailed": false, "requestPending": false, "notesEnabled": false, "currentPage" : "serp", "sponsored" : true,"reportJobButtonEnabled": false, "showMyJobsHired": false, "showSaveForSponsored": true};</script></div></div>
+<div class="tab-container">
+<div class="sign-in-container result-tab"></div>
+<div class="tellafriend-container result-tab email_job_content"></div>
+</div>
+<span class="sdn">Sponsored</span>
+</div>
+</div>
+<div class="  row  result" id="p_e40fbeab1c1bb347" data-jk="e40fbeab1c1bb347" itemscope itemtype="http://schema.org/JobPosting" data-tn-component="organicJob"
+
+>
+<h2 id=jl_e40fbeab1c1bb347 class="jobtitle">
+<a
+rel="nofollow"
+href="/company/Ubertal/jobs/Data-Scientist-e40fbeab1c1bb347?fccid=92c57376a3655070" target="_blank"
+onmousedown="return rclk(this,jobmap[0],0);"
+onclick="setRefineByCookie([]); return rclk(this,jobmap[0],true,0);"
+itemprop="title"
+title="Data Scientist"
+class="turnstileLink"
+data-tn-element="jobTitle"><b>Data</b> <b>Scientist</b></a>
+</h2>
+<span class="company" itemprop="hiringOrganization" itemtype="http://schema.org/Organization">
+    <span itemprop="name">
+    Ubertal</span>
+</span>
+
+ - <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span class="location" itemprop="address" itemscope itemtype="http://schema.org/Postaladdress"><span itemprop="addressLocality">New York, NY</span></span></span>
+<table cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td class=snip>
+<div>
+<span class=summary itemprop="description">
+Only W2. Prefer Locals. Primary language: Python, R, and SQL Statistical Tools: SAS, R, Excel Databases: Teradata, Oracle, Netezza, DB2 Job Type: Full...</span>
+</div>
+
+<div class="iaP">
+    <span class="iaLabel"> Easily apply</span>
+</div>
+<div class="result-link-bar-container">
+<div class="result-link-bar"><span class="date">4 hours ago</span> <span id="tt_set_0" class="tt_set">  -  <span id="savelink2_e40fbeab1c1bb347" class="savelink2"><a id="sj_e40fbeab1c1bb347" href="#" class="sl resultLink save-job-link" onclick="changeJobState('e40fbeab1c1bb347', 'save', 'linkbar', false);return false;" title="Save this job to my.indeed">save job</a></span> - <a href="#" id="tog_0" class="sl resultLink more-link " onclick="toggleMoreLinks('e40fbeab1c1bb347'); return false;">more...</a></span><div id="editsaved2_e40fbeab1c1bb347" class="edit_note_content" style="display:none;"></div><script>window['result_e40fbeab1c1bb347'] = {"showSource": false, "source": "Indeed", "loggedIn": false, "showMyJobsLinks": true,"undoAction": "unsave","relativeJobAge": "4 hours ago","jobKey": "e40fbeab1c1bb347", "myIndeedAvailable": true, "tellAFriendEnabled": false, "showMoreActionsLink": true, "resultNumber": 0, "jobStateChangedToSaved": false, "searchState": "q=data scientist&amp;l=New+York", "basicPermaLink": "https://www.indeed.com", "saveJobFailed": false, "removeJobFailed": false, "requestPending": false, "notesEnabled": true, "currentPage" : "serp", "sponsored" : false,"reportJobButtonEnabled": false, "showMyJobsHired": false, "showSaveForSponsored": false};</script></div></div>
+
+<div class="tab-container">
+<div id="tt_display_0" class="more-links-container result-tab" style="display:none;"><a class="close-link closeLink" title="Close" href="#" onclick="toggleMoreLinks('e40fbeab1c1bb347'); return false;"></a><div id="more_0" class="more_actions"><ul><li><span class="mat">View all <a href="/q-Ubertal-l-New-York,-NY-jobs.html" rel="nofollow">Ubertal jobs in New York, NY</a> - <a href="/l-New-York,-NY-jobs.html">New York jobs</a></span></li><li><span class="mat">Salary Search: <a href="/salaries/Data-Scientist-Salaries,-New-York-NY" onmousedown="this.href = appendParamsOnce(this.href, '?campaignid=serp-more&amp;fromjk=e40fbeab1c1bb347&amp;from=serp-more');" >Data Scientist salaries in New York, NY</a></span></li><li><span class="mat">Learn more about working at <a href="/cmp/Ubertal-1" onmousedown="this.href = appendParamsOnce(this.href, '?fromjk=e40fbeab1c1bb347&amp;from=serp-more&amp;campaignid=serp-more&amp;jcid=c50250d3872353cc');" >Ubertal</a></span></li><li><span class="mat">Related forums: <a href="/forum/cmp/Ubertal-1.html">Ubertal</a> - <a href="/forum/loc/New-York-New-York.html">New York, New York</a></span></li></ul></div></div><div class="dya-container result-tab"></div>
+<div class="tellafriend-container result-tab email_job_content"></div>
+<div class="sign-in-container result-tab"></div>
+<div class="notes-container result-tab"></div>
+</div>
+
+</td>
+</tr>
+</table>
+</div>
+
+<div class="  row  result" id="p_e31b8735be5da6c6" data-jk="e31b8735be5da6c6" itemscope itemtype="http://schema.org/JobPosting" data-tn-component="organicJob"
+
+>
+<h2 id=jl_e31b8735be5da6c6 class="jobtitle">
+<a
+rel="nofollow"
+href="/company/Catalyst-USAOF,-INC./jobs/Data-Scientist-e31b8735be5da6c6?fccid=3ee789f5ff18254c" target="_blank"
+onmousedown="return rclk(this,jobmap[1],1);"
+onclick="setRefineByCookie([]); return rclk(this,jobmap[1],true,1);"
+itemprop="title"
+title="Data Scientist"
+class="turnstileLink"
+data-tn-element="jobTitle"><b>Data</b> <b>Scientist</b></a>
+</h2>
+<span class="company" itemprop="hiringOrganization" itemtype="http://schema.org/Organization">
+    <span itemprop="name">
+    Catalyst USAOF, INC.</span>
+</span>
+
+ - <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span class="location" itemprop="address" itemscope itemtype="http://schema.org/Postaladdress"><span itemprop="addressLocality">New York, NY</span></span></span>
+<table cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td class=snip>
+<nobr>$100,000 a year</nobr>
+<div>
+<span class=summary itemprop="description">
+You will effectively communicate <b>data</b>-derived insights to non-technical audiences appropriately and mentor junior or aspiring <b>data</b> <b>scientists</b>....</span>
+</div>
+
+<div class="iaP">
+    <span class="iaLabel"> Easily apply</span>
+</div>
+<div class="result-link-bar-container">
+<div class="result-link-bar"><span class="date">3 days ago</span> <span id="tt_set_1" class="tt_set">  -  <span id="savelink2_e31b8735be5da6c6" class="savelink2"><a id="sj_e31b8735be5da6c6" href="#" class="sl resultLink save-job-link" onclick="changeJobState('e31b8735be5da6c6', 'save', 'linkbar', false);return false;" title="Save this job to my.indeed">save job</a></span> - <a href="#" id="tog_1" class="sl resultLink more-link " onclick="toggleMoreLinks('e31b8735be5da6c6'); return false;">more...</a></span><div id="editsaved2_e31b8735be5da6c6" class="edit_note_content" style="display:none;"></div><script>window['result_e31b8735be5da6c6'] = {"showSource": false, "source": "Indeed", "loggedIn": false, "showMyJobsLinks": true,"undoAction": "unsave","relativeJobAge": "3 days ago","jobKey": "e31b8735be5da6c6", "myIndeedAvailable": true, "tellAFriendEnabled": false, "showMoreActionsLink": true, "resultNumber": 1, "jobStateChangedToSaved": false, "searchState": "q=data scientist&amp;l=New+York", "basicPermaLink": "https://www.indeed.com", "saveJobFailed": false, "removeJobFailed": false, "requestPending": false, "notesEnabled": true, "currentPage" : "serp", "sponsored" : false,"reportJobButtonEnabled": false, "showMyJobsHired": false, "showSaveForSponsored": false};</script></div></div>
+
+<div class="tab-container">
+<div id="tt_display_1" class="more-links-container result-tab" style="display:none;"><a class="close-link closeLink" title="Close" href="#" onclick="toggleMoreLinks('e31b8735be5da6c6'); return false;"></a><div id="more_1" class="more_actions"><ul><li><span class="mat">View all <a href="/jobs?q=Catalyst+Usaof,+Inc&amp;l=New+York,+NY&amp;nc=jasx" rel="nofollow">Catalyst USAOF, INC. jobs in New York, NY</a> - <a href="/l-New-York,-NY-jobs.html">New York jobs</a></span></li><li><span class="mat">Salary Search: <a href="/salaries/Data-Scientist-Salaries,-New-York-NY" onmousedown="this.href = appendParamsOnce(this.href, '?campaignid=serp-more&amp;fromjk=e31b8735be5da6c6&amp;from=serp-more');" >Data Scientist salaries in New York, NY</a></span></li><li><span class="mat">Learn more about working at <a href="/cmp/Catalyst-Usaof,-Inc." onmousedown="this.href = appendParamsOnce(this.href, '?fromjk=e31b8735be5da6c6&amp;from=serp-more&amp;campaignid=serp-more&amp;jcid=70b4e57e79184779');" >Catalyst Usaof, Inc.</a></span></li><li><span class="mat">Related forums:  - <a href="/forum/loc/New-York-New-York.html">New York, New York</a></span></li></ul></div></div><div class="dya-container result-tab"></div>
+<div class="tellafriend-container result-tab email_job_content"></div>
+<div class="sign-in-container result-tab"></div>
+<div class="notes-container result-tab"></div>
+</div>
+
+</td>
+</tr>
+</table>
+</div>
+
+<div class="  row  result" id="p_696a36400765db0e" data-jk="696a36400765db0e" itemscope itemtype="http://schema.org/JobPosting" data-tn-component="organicJob"
+
+>
+<h2 id=jl_696a36400765db0e class="jobtitle">
+<a
+rel="nofollow"
+href="/rc/clk?jk=696a36400765db0e&fccid=de71a49b535e21cb" target="_blank"
+onmousedown="return rclk(this,jobmap[2],0);"
+onclick="setRefineByCookie([]); return rclk(this,jobmap[2],true,0);"
+itemprop="title"
+title="Data Scientist Armonk or New York, NY"
+class="turnstileLink"
+data-tn-element="jobTitle"><b>Data</b> <b>Scientist</b> Armonk or New York, NY</a>
+</h2>
+<span class="company" itemprop="hiringOrganization" itemtype="http://schema.org/Organization">
+    <span itemprop="name">
+    <a
+                    href="/cmp/IBM" target="_blank"
+                    onmousedown="this.href = appendParamsOnce(this.href, 'from=SERP&campaignid=serp-linkcompanyname&fromjk=696a36400765db0e&jcid=1c29f699397ef176')"
+                    
+            >
+        IBM Kenexa</a></span>
+</span>
+
+ - <a data-tn-element="reviewStars" data-tn-variant="cmplinktst2" class="turnstileLink slNoUnderline " href="/cmp/IBM/reviews" title="IBM Kenexa reviews" class="ratingsLabel" onmousedown="this.href = appendParamsOnce(this.href, '?campaignid=cmplinktst2&from=SERP&jt=Data+Scientist+Armonk+or+New+York%2C+NY&fromjk=696a36400765db0e&jcid=1c29f699397ef176');" target="_blank" >
+    <span class="ratings" style="height: 11px; line-height: 11px; background-image: url(/images/cmp/star_2_sm@2x.png); background-size: 12px 22px;width: 60px;"><span class="rating" style="height: 11px; line-height: 11px; background-image: url(/images/cmp/star_2_sm@2x.png); background-size: 12px 22px;background-position: 0 11px; width: 51.0px;"><!-- --></span></span><span class="slNoUnderline">13,401 reviews</span></a>
+ - <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span class="location" itemprop="address" itemscope itemtype="http://schema.org/Postaladdress"><span itemprop="addressLocality">New York, NY</span></span></span>
+<table cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td class=snip>
+<div>
+<span class=summary itemprop="description">
+2 years’ experience such as analyzing <b>data</b> and/or building <b>data</b> models. Staying relevant to emerging trends in areas related to contemporary web design and UI...</span>
+</div>
+
+<div class="result-link-bar-container">
+<div class="result-link-bar"><span class="date">3 days ago</span> <span id="tt_set_2" class="tt_set">  -  <span id="savelink2_696a36400765db0e" class="savelink2"><a id="sj_696a36400765db0e" href="#" class="sl resultLink save-job-link" onclick="changeJobState('696a36400765db0e', 'save', 'linkbar', false);return false;" title="Save this job to my.indeed">save job</a></span> - <a href="#" id="tog_2" class="sl resultLink more-link " onclick="toggleMoreLinks('696a36400765db0e'); return false;">more...</a></span><div id="editsaved2_696a36400765db0e" class="edit_note_content" style="display:none;"></div><script>window['result_696a36400765db0e'] = {"showSource": false, "source": "IBM Kenexa", "loggedIn": false, "showMyJobsLinks": true,"undoAction": "unsave","relativeJobAge": "3 days ago","jobKey": "696a36400765db0e", "myIndeedAvailable": true, "tellAFriendEnabled": false, "showMoreActionsLink": true, "resultNumber": 2, "jobStateChangedToSaved": false, "searchState": "q=data scientist&amp;l=New+York", "basicPermaLink": "https://www.indeed.com", "saveJobFailed": false, "removeJobFailed": false, "requestPending": false, "notesEnabled": true, "currentPage" : "serp", "sponsored" : false,"reportJobButtonEnabled": false, "showMyJobsHired": false, "showSaveForSponsored": false};</script></div></div>
+
+<div class="tab-container">
+<div id="tt_display_2" class="more-links-container result-tab" style="display:none;"><a class="close-link closeLink" title="Close" href="#" onclick="toggleMoreLinks('696a36400765db0e'); return false;"></a><div id="more_2" class="more_actions"><ul><li><span class="mat">View all <a href="/q-IBM-Kenexa-l-New-York,-NY-jobs.html" rel="nofollow">IBM Kenexa jobs in New York, NY</a> - <a href="/l-New-York,-NY-jobs.html">New York jobs</a></span></li><li><span class="mat">Salary Search: <a href="/salaries/Data-Scientist-Salaries,-New-York-NY" onmousedown="this.href = appendParamsOnce(this.href, '?campaignid=serp-more&amp;fromjk=696a36400765db0e&amp;from=serp-more');" >Data Scientist salaries in New York, NY</a></span></li><li><span class="mat">Learn more about working at <a href="/cmp/IBM" onmousedown="this.href = appendParamsOnce(this.href, '?fromjk=696a36400765db0e&amp;from=serp-more&amp;campaignid=serp-more&amp;jcid=1c29f699397ef176');" >IBM Kenexa</a></span></li><li><span class="mat">Related forums: <a href="/forum/cmp/IBM.html">IBM</a> - <a href="/forum/loc/New-York-New-York.html">New York, New York</a></span></li></ul></div></div><div class="dya-container result-tab"></div>
+<div class="tellafriend-container result-tab email_job_content"></div>
+<div class="sign-in-container result-tab"></div>
+<div class="notes-container result-tab"></div>
+</div>
+
+</td>
+</tr>
+</table>
+</div>
+
+<div class="  row  result" id="p_10c5dbc704c559d4" data-jk="10c5dbc704c559d4" itemscope itemtype="http://schema.org/JobPosting" data-tn-component="organicJob"
+
+>
+<h2 id=jl_10c5dbc704c559d4 class="jobtitle">
+<a
+rel="nofollow"
+href="/rc/clk?jk=10c5dbc704c559d4&fccid=6b9e6aa689d4469c" target="_blank"
+onmousedown="return rclk(this,jobmap[3],0);"
+onclick="setRefineByCookie([]); return rclk(this,jobmap[3],true,0);"
+itemprop="title"
+title="Data Scientist"
+class="turnstileLink"
+data-tn-element="jobTitle"><b>Data</b> <b>Scientist</b></a>
+</h2>
+<span class="company" itemprop="hiringOrganization" itemtype="http://schema.org/Organization">
+    <span itemprop="name">
+    <a
+                    href="/cmp/Dia&Co" target="_blank"
+                    onmousedown="this.href = appendParamsOnce(this.href, 'from=SERP&campaignid=serp-linkcompanyname&fromjk=10c5dbc704c559d4&jcid=cb0785125f6f4ccc')"
+                    
+            >
+        Dia&amp;Co</a></span>
+</span>
+
+ - <a data-tn-element="reviewStars" data-tn-variant="cmplinktst2" class="turnstileLink slNoUnderline " href="/cmp/Dia&Co/reviews" title="Dia&amp; reviews" class="ratingsLabel" onmousedown="this.href = appendParamsOnce(this.href, '?campaignid=cmplinktst2&from=SERP&jt=Data+Scientist&fromjk=10c5dbc704c559d4&jcid=cb0785125f6f4ccc');" target="_blank" >
+    <span class="ratings" style="height: 11px; line-height: 11px; background-image: url(/images/cmp/star_2_sm@2x.png); background-size: 12px 22px;width: 60px;"><span class="rating" style="height: 11px; line-height: 11px; background-image: url(/images/cmp/star_2_sm@2x.png); background-size: 12px 22px;background-position: 0 11px; width: 43.2px;"><!-- --></span></span><span class="slNoUnderline">3 reviews</span></a>
+ - <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span class="location" itemprop="address" itemscope itemtype="http://schema.org/Postaladdress"><span itemprop="addressLocality">New York, NY</span></span></span>
+<table cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td class=snip>
+<div>
+<span class=summary itemprop="description">
+Dives deep into problems to truly understand them before approaching a solution. Python, R, Matlab, SQL). In a relevant field, with knowledge of statistics,...</span>
+</div>
+
+<div class="iaP">
+    <span class="iaLabel"> Easily apply</span>
+</div>
+<div class="result-link-bar-container">
+<div class="result-link-bar"><span class="date">3 days ago</span> <span id="tt_set_3" class="tt_set">  -  <span id="savelink2_10c5dbc704c559d4" class="savelink2"><a id="sj_10c5dbc704c559d4" href="#" class="sl resultLink save-job-link" onclick="changeJobState('10c5dbc704c559d4', 'save', 'linkbar', false);return false;" title="Save this job to my.indeed">save job</a></span> - <a href="#" id="tog_3" class="sl resultLink more-link " onclick="toggleMoreLinks('10c5dbc704c559d4'); return false;">more...</a></span><div id="editsaved2_10c5dbc704c559d4" class="edit_note_content" style="display:none;"></div><script>window['result_10c5dbc704c559d4'] = {"showSource": false, "source": "Dia\x26Co", "loggedIn": false, "showMyJobsLinks": true,"undoAction": "unsave","relativeJobAge": "3 days ago","jobKey": "10c5dbc704c559d4", "myIndeedAvailable": true, "tellAFriendEnabled": false, "showMoreActionsLink": true, "resultNumber": 3, "jobStateChangedToSaved": false, "searchState": "q=data scientist&amp;l=New+York", "basicPermaLink": "https://www.indeed.com", "saveJobFailed": false, "removeJobFailed": false, "requestPending": false, "notesEnabled": true, "currentPage" : "serp", "sponsored" : false,"reportJobButtonEnabled": false, "showMyJobsHired": false, "showSaveForSponsored": false};</script></div></div>
+
+<div class="tab-container">
+<div id="tt_display_3" class="more-links-container result-tab" style="display:none;"><a class="close-link closeLink" title="Close" href="#" onclick="toggleMoreLinks('10c5dbc704c559d4'); return false;"></a><div id="more_3" class="more_actions"><ul><li><span class="mat">View all <a href="/q-Dia&amp;Co-l-New-York,-NY-jobs.html" rel="nofollow">Dia&amp;Co jobs in New York, NY</a> - <a href="/l-New-York,-NY-jobs.html">New York jobs</a></span></li><li><span class="mat">Salary Search: <a href="/salaries/Data-Scientist-Salaries,-New-York-NY" onmousedown="this.href = appendParamsOnce(this.href, '?campaignid=serp-more&amp;fromjk=10c5dbc704c559d4&amp;from=serp-more');" >Data Scientist salaries in New York, NY</a></span></li><li><span class="mat">Learn more about working at <a href="/cmp/Dia&amp;Co" onmousedown="this.href = appendParamsOnce(this.href, '?fromjk=10c5dbc704c559d4&amp;from=serp-more&amp;campaignid=serp-more&amp;jcid=cb0785125f6f4ccc');" >Dia&amp;Co</a></span></li><li><span class="mat">Related forums: <a href="/forum/cmp/Dia%26Co.html">Dia&amp;Co</a> - <a href="/forum/loc/New-York-New-York.html">New York, New York</a></span></li></ul></div></div><div class="dya-container result-tab"></div>
+<div class="tellafriend-container result-tab email_job_content"></div>
+<div class="sign-in-container result-tab"></div>
+<div class="notes-container result-tab"></div>
+</div>
+
+</td>
+</tr>
+</table>
+</div>
+
+<div class="  row  result" id="p_b37410e6b4301b0b" data-jk="b37410e6b4301b0b" itemscope itemtype="http://schema.org/JobPosting" data-tn-component="organicJob"
+
+>
+<h2 id=jl_b37410e6b4301b0b class="jobtitle">
+<a
+rel="nofollow"
+href="/rc/clk?jk=b37410e6b4301b0b&fccid=37da4965947fa05c" target="_blank"
+onmousedown="return rclk(this,jobmap[4],0);"
+onclick="setRefineByCookie([]); return rclk(this,jobmap[4],true,0);"
+itemprop="title"
+title="Data Scientist"
+class="turnstileLink"
+data-tn-element="jobTitle"><b>Data</b> <b>Scientist</b></a>
+</h2>
+<span class="company" itemprop="hiringOrganization" itemtype="http://schema.org/Organization">
+    <span itemprop="name">
+    SkillsEQ</span>
+</span>
+
+ - <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span class="location" itemprop="address" itemscope itemtype="http://schema.org/Postaladdress"><span itemprop="addressLocality">New York, NY</span></span></span>
+<table cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td class=snip>
+<div>
+<span class=summary itemprop="description">
+You have a Master’s Degree or PhD in applied mathematics, bio-statistics, statistics, physics, computer science, or operations research with a deep...</span>
+</div>
+
+<div class="result-link-bar-container">
+<div class="result-link-bar"><span class="date">5 days ago</span> <span id="tt_set_4" class="tt_set">  -  <span id="savelink2_b37410e6b4301b0b" class="savelink2"><a id="sj_b37410e6b4301b0b" href="#" class="sl resultLink save-job-link" onclick="changeJobState('b37410e6b4301b0b', 'save', 'linkbar', false);return false;" title="Save this job to my.indeed">save job</a></span> - <a href="#" id="tog_4" class="sl resultLink more-link " onclick="toggleMoreLinks('b37410e6b4301b0b'); return false;">more...</a></span><div id="editsaved2_b37410e6b4301b0b" class="edit_note_content" style="display:none;"></div><script>window['result_b37410e6b4301b0b'] = {"showSource": false, "source": "SkillsEQ", "loggedIn": false, "showMyJobsLinks": true,"undoAction": "unsave","relativeJobAge": "5 days ago","jobKey": "b37410e6b4301b0b", "myIndeedAvailable": true, "tellAFriendEnabled": false, "showMoreActionsLink": true, "resultNumber": 4, "jobStateChangedToSaved": false, "searchState": "q=data scientist&amp;l=New+York", "basicPermaLink": "https://www.indeed.com", "saveJobFailed": false, "removeJobFailed": false, "requestPending": false, "notesEnabled": true, "currentPage" : "serp", "sponsored" : false,"reportJobButtonEnabled": false, "showMyJobsHired": false, "showSaveForSponsored": false};</script></div></div>
+
+<div class="tab-container">
+<div id="tt_display_4" class="more-links-container result-tab" style="display:none;"><a class="close-link closeLink" title="Close" href="#" onclick="toggleMoreLinks('b37410e6b4301b0b'); return false;"></a><div id="more_4" class="more_actions"><ul><li><span class="mat">View all <a href="/q-Skillseq-l-New-York,-NY-jobs.html" rel="nofollow">SkillsEQ jobs in New York, NY</a> - <a href="/l-New-York,-NY-jobs.html">New York jobs</a></span></li><li><span class="mat">Salary Search: <a href="/salaries/Data-Scientist-Salaries,-New-York-NY" onmousedown="this.href = appendParamsOnce(this.href, '?campaignid=serp-more&amp;fromjk=b37410e6b4301b0b&amp;from=serp-more');" >Data Scientist salaries in New York, NY</a></span></li><li><span class="mat">Related forums: <a href="/forum/cmp/Skillseq.html">SkillsEQ</a> - <a href="/forum/loc/New-York-New-York.html">New York, New York</a></span></li></ul></div></div><div class="dya-container result-tab"></div>
+<div class="tellafriend-container result-tab email_job_content"></div>
+<div class="sign-in-container result-tab"></div>
+<div class="notes-container result-tab"></div>
+</div>
+
+</td>
+</tr>
+</table>
+</div>
+
+<div class="  row  result" id="p_c2783a489899e122" data-jk="c2783a489899e122" itemscope itemtype="http://schema.org/JobPosting" data-tn-component="organicJob"
+
+>
+<h2 id=jl_c2783a489899e122 class="jobtitle">
+<a
+rel="nofollow"
+href="/rc/clk?jk=c2783a489899e122&fccid=1db5d3f639f074a9" target="_blank"
+onmousedown="return rclk(this,jobmap[5],0);"
+onclick="setRefineByCookie([]); return rclk(this,jobmap[5],true,0);"
+itemprop="title"
+title="Data Scientist"
+class="turnstileLink"
+data-tn-element="jobTitle"><b>Data</b> <b>Scientist</b></a>
+</h2>
+<span class="company" itemprop="hiringOrganization" itemtype="http://schema.org/Organization">
+    <span itemprop="name">
+    FSAStore.com, Inc.</span>
+</span>
+
+ - <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span class="location" itemprop="address" itemscope itemtype="http://schema.org/Postaladdress"><span itemprop="addressLocality">New York, NY</span></span></span>
+<table cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td class=snip>
+<div>
+<span class=summary itemprop="description">
+Masters Degree in applied statistics, <b>data</b> mining, or a related quantitative discipline. Conceptualize, design models and build insights and value added...</span>
+</div>
+
+<div class="iaP">
+    <span class="iaLabel"> Easily apply</span>
+</div>
+<div class="result-link-bar-container">
+<div class="result-link-bar"><span class="date">5 days ago</span> <span id="tt_set_5" class="tt_set">  -  <span id="savelink2_c2783a489899e122" class="savelink2"><a id="sj_c2783a489899e122" href="#" class="sl resultLink save-job-link" onclick="changeJobState('c2783a489899e122', 'save', 'linkbar', false);return false;" title="Save this job to my.indeed">save job</a></span> - <a href="#" id="tog_5" class="sl resultLink more-link " onclick="toggleMoreLinks('c2783a489899e122'); return false;">more...</a></span><div id="editsaved2_c2783a489899e122" class="edit_note_content" style="display:none;"></div><script>window['result_c2783a489899e122'] = {"showSource": false, "source": "FSAStore.com, Inc.", "loggedIn": false, "showMyJobsLinks": true,"undoAction": "unsave","relativeJobAge": "5 days ago","jobKey": "c2783a489899e122", "myIndeedAvailable": true, "tellAFriendEnabled": false, "showMoreActionsLink": true, "resultNumber": 5, "jobStateChangedToSaved": false, "searchState": "q=data scientist&amp;l=New+York", "basicPermaLink": "https://www.indeed.com", "saveJobFailed": false, "removeJobFailed": false, "requestPending": false, "notesEnabled": true, "currentPage" : "serp", "sponsored" : false,"reportJobButtonEnabled": false, "showMyJobsHired": false, "showSaveForSponsored": false};</script></div></div>
+
+<div class="tab-container">
+<div id="tt_display_5" class="more-links-container result-tab" style="display:none;"><a class="close-link closeLink" title="Close" href="#" onclick="toggleMoreLinks('c2783a489899e122'); return false;"></a><div id="more_5" class="more_actions"><ul><li><span class="mat">View all <a href="/jobs?q=Fsastore+Com,+Inc&amp;l=New+York,+NY&amp;nc=jasx" rel="nofollow">FSAStore.com, Inc. jobs in New York, NY</a> - <a href="/l-New-York,-NY-jobs.html">New York jobs</a></span></li><li><span class="mat">Salary Search: <a href="/salaries/Data-Scientist-Salaries,-New-York-NY" onmousedown="this.href = appendParamsOnce(this.href, '?campaignid=serp-more&amp;fromjk=c2783a489899e122&amp;from=serp-more');" >Data Scientist salaries in New York, NY</a></span></li><li><span class="mat">Related forums:  - <a href="/forum/loc/New-York-New-York.html">New York, New York</a></span></li></ul></div></div><div class="dya-container result-tab"></div>
+<div class="tellafriend-container result-tab email_job_content"></div>
+<div class="sign-in-container result-tab"></div>
+<div class="notes-container result-tab"></div>
+</div>
+
+</td>
+</tr>
+</table>
+</div>
+
+<div class="  row  result" id="p_6a8bb9674bbabaaa" data-jk="6a8bb9674bbabaaa" itemscope itemtype="http://schema.org/JobPosting" data-tn-component="organicJob"
+
+>
+<h2 id=jl_6a8bb9674bbabaaa class="jobtitle">
+<a
+rel="nofollow"
+href="/company/WorkPro-Solutions/jobs/Data-Scientist-6a8bb9674bbabaaa?fccid=3df745ff38856666" target="_blank"
+onmousedown="return rclk(this,jobmap[6],0);"
+onclick="setRefineByCookie([]); return rclk(this,jobmap[6],true,0);"
+itemprop="title"
+title="Data Scientist"
+class="turnstileLink"
+data-tn-element="jobTitle"><b>Data</b> <b>Scientist</b></a>
+</h2>
+<span class="company" itemprop="hiringOrganization" itemtype="http://schema.org/Organization">
+    <span itemprop="name">
+    WorkPro Solutions</span>
+</span>
+
+ - <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span class="location" itemprop="address" itemscope itemtype="http://schema.org/Postaladdress"><span itemprop="addressLocality">New York, NY</span></span></span>
+<table cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td class=snip>
+<div>
+<span class=summary itemprop="description">
+Candidates with experience in project management, <b>data</b> science and the ability to derive actionable insights from complex <b>data</b>....</span>
+</div>
+
+<div class="iaP">
+    <span class="iaLabel"> Easily apply</span>
+</div>
+<div class="result-link-bar-container">
+<div class="result-link-bar"><span class="date">4 days ago</span> <span id="tt_set_6" class="tt_set">  -  <span id="savelink2_6a8bb9674bbabaaa" class="savelink2"><a id="sj_6a8bb9674bbabaaa" href="#" class="sl resultLink save-job-link" onclick="changeJobState('6a8bb9674bbabaaa', 'save', 'linkbar', false);return false;" title="Save this job to my.indeed">save job</a></span> - <a href="#" id="tog_6" class="sl resultLink more-link " onclick="toggleMoreLinks('6a8bb9674bbabaaa'); return false;">more...</a></span><div id="editsaved2_6a8bb9674bbabaaa" class="edit_note_content" style="display:none;"></div><script>window['result_6a8bb9674bbabaaa'] = {"showSource": false, "source": "Indeed", "loggedIn": false, "showMyJobsLinks": true,"undoAction": "unsave","relativeJobAge": "4 days ago","jobKey": "6a8bb9674bbabaaa", "myIndeedAvailable": true, "tellAFriendEnabled": false, "showMoreActionsLink": true, "resultNumber": 6, "jobStateChangedToSaved": false, "searchState": "q=data scientist&amp;l=New+York", "basicPermaLink": "https://www.indeed.com", "saveJobFailed": false, "removeJobFailed": false, "requestPending": false, "notesEnabled": true, "currentPage" : "serp", "sponsored" : false,"reportJobButtonEnabled": false, "showMyJobsHired": false, "showSaveForSponsored": false};</script></div></div>
+
+<div class="tab-container">
+<div id="tt_display_6" class="more-links-container result-tab" style="display:none;"><a class="close-link closeLink" title="Close" href="#" onclick="toggleMoreLinks('6a8bb9674bbabaaa'); return false;"></a><div id="more_6" class="more_actions"><ul><li><span class="mat">View all <a href="/q-Workpro-Solutions-l-New-York,-NY-jobs.html" rel="nofollow">WorkPro Solutions jobs in New York, NY</a> - <a href="/l-New-York,-NY-jobs.html">New York jobs</a></span></li><li><span class="mat">Salary Search: <a href="/salaries/Data-Scientist-Salaries,-New-York-NY" onmousedown="this.href = appendParamsOnce(this.href, '?campaignid=serp-more&amp;fromjk=6a8bb9674bbabaaa&amp;from=serp-more');" >Data Scientist salaries in New York, NY</a></span></li><li><span class="mat">Learn more about working at <a href="/cmp/Workpro-Solutions-1" onmousedown="this.href = appendParamsOnce(this.href, '?fromjk=6a8bb9674bbabaaa&amp;from=serp-more&amp;campaignid=serp-more&amp;jcid=30e595ec75fea251');" >Workpro Solutions</a></span></li><li><span class="mat">Related forums: <a href="/forum/cmp/Workpro-Solutions-1.html">WorkPro Solutions</a> - <a href="/forum/loc/New-York-New-York.html">New York, New York</a></span></li></ul></div></div><div class="dya-container result-tab"></div>
+<div class="tellafriend-container result-tab email_job_content"></div>
+<div class="sign-in-container result-tab"></div>
+<div class="notes-container result-tab"></div>
+</div>
+
+</td>
+</tr>
+</table>
+</div>
+
+<div class="  row  result" id="p_bd7ae5f35ecd31bd" data-jk="bd7ae5f35ecd31bd" itemscope itemtype="http://schema.org/JobPosting" data-tn-component="organicJob"
+
+>
+<h2 id=jl_bd7ae5f35ecd31bd class="jobtitle">
+<a
+rel="nofollow"
+href="/company/Natural-Resource-Governance-Institute/jobs/Data-Scientist-bd7ae5f35ecd31bd?fccid=07fb035769a4af14" target="_blank"
+onmousedown="return rclk(this,jobmap[7],0);"
+onclick="setRefineByCookie([]); return rclk(this,jobmap[7],true,0);"
+itemprop="title"
+title="Data Scientist"
+class="turnstileLink"
+data-tn-element="jobTitle"><b>Data</b> <b>Scientist</b></a>
+</h2>
+<span class="company" itemprop="hiringOrganization" itemtype="http://schema.org/Organization">
+    <span itemprop="name">
+    Natural Resource Governance Institute</span>
+</span>
+
+ - <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span class="location" itemprop="address" itemscope itemtype="http://schema.org/Postaladdress"><span itemprop="addressLocality">New York, NY</span></span></span>
+<table cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td class=snip>
+<div>
+<span class=summary itemprop="description">
+Initiate and co-develop <b>data</b> driven projects using <b>data</b> wrangling, analysis and visualization on oil and mining....</span>
+</div>
+
+<div class="iaP">
+    <span class="iaLabel"> Easily apply</span>
+</div>
+<div class="result-link-bar-container">
+<div class="result-link-bar"><span class="date">3 days ago</span> <span id="tt_set_7" class="tt_set">  -  <span id="savelink2_bd7ae5f35ecd31bd" class="savelink2"><a id="sj_bd7ae5f35ecd31bd" href="#" class="sl resultLink save-job-link" onclick="changeJobState('bd7ae5f35ecd31bd', 'save', 'linkbar', false);return false;" title="Save this job to my.indeed">save job</a></span> - <a href="#" id="tog_7" class="sl resultLink more-link " onclick="toggleMoreLinks('bd7ae5f35ecd31bd'); return false;">more...</a></span><div id="editsaved2_bd7ae5f35ecd31bd" class="edit_note_content" style="display:none;"></div><script>window['result_bd7ae5f35ecd31bd'] = {"showSource": false, "source": "Indeed", "loggedIn": false, "showMyJobsLinks": true,"undoAction": "unsave","relativeJobAge": "3 days ago","jobKey": "bd7ae5f35ecd31bd", "myIndeedAvailable": true, "tellAFriendEnabled": false, "showMoreActionsLink": true, "resultNumber": 7, "jobStateChangedToSaved": false, "searchState": "q=data scientist&amp;l=New+York", "basicPermaLink": "https://www.indeed.com", "saveJobFailed": false, "removeJobFailed": false, "requestPending": false, "notesEnabled": true, "currentPage" : "serp", "sponsored" : false,"reportJobButtonEnabled": false, "showMyJobsHired": false, "showSaveForSponsored": false};</script></div></div>
+
+<div class="tab-container">
+<div id="tt_display_7" class="more-links-container result-tab" style="display:none;"><a class="close-link closeLink" title="Close" href="#" onclick="toggleMoreLinks('bd7ae5f35ecd31bd'); return false;"></a><div id="more_7" class="more_actions"><ul><li><span class="mat">View all <a href="/q-Natural-Resource-Governance-Institute-l-New-York,-NY-jobs.html" rel="nofollow">Natural Resource Governance Institute jobs in New York, NY</a> - <a href="/l-New-York,-NY-jobs.html">New York jobs</a></span></li><li><span class="mat">Salary Search: <a href="/salaries/Data-Scientist-Salaries,-New-York-NY" onmousedown="this.href = appendParamsOnce(this.href, '?campaignid=serp-more&amp;fromjk=bd7ae5f35ecd31bd&amp;from=serp-more');" >Data Scientist salaries in New York, NY</a></span></li><li><span class="mat">Related forums: <a href="/forum/cmp/Natural-Resource-Governance-Institute-2.html">Natural Resource Governance Institute</a> - <a href="/forum/loc/New-York-New-York.html">New York, New York</a></span></li></ul></div></div><div class="dya-container result-tab"></div>
+<div class="tellafriend-container result-tab email_job_content"></div>
+<div class="sign-in-container result-tab"></div>
+<div class="notes-container result-tab"></div>
+</div>
+
+</td>
+</tr>
+</table>
+</div>
+
+<div class="  row  result" id="p_c01ca6ef587c7128" data-jk="c01ca6ef587c7128" itemscope itemtype="http://schema.org/JobPosting" data-tn-component="organicJob"
+
+>
+<h2 id=jl_c01ca6ef587c7128 class="jobtitle">
+<a
+rel="nofollow"
+href="/rc/clk?jk=c01ca6ef587c7128&fccid=fe2d21eef233e94a" target="_blank"
+onmousedown="return rclk(this,jobmap[8],0);"
+onclick="setRefineByCookie([]); return rclk(this,jobmap[8],true,0);"
+itemprop="title"
+title="Data Scientist"
+class="turnstileLink"
+data-tn-element="jobTitle"><b>Data</b> <b>Scientist</b></a>
+</h2>
+<span class="company" itemprop="hiringOrganization" itemtype="http://schema.org/Organization">
+    <span itemprop="name">
+    <a
+                    href="/cmp/Amazon.com" target="_blank"
+                    onmousedown="this.href = appendParamsOnce(this.href, 'from=SERP&campaignid=serp-linkcompanyname&fromjk=c01ca6ef587c7128&jcid=db9f9b9d28743c59')"
+                    
+            >
+        Amazon Corporate LLC</a></span>
+</span>
+
+ - <a data-tn-element="reviewStars" data-tn-variant="cmplinktst2" class="turnstileLink slNoUnderline " href="/cmp/Amazon.com/reviews" title="Amazon Corporate reviews" class="ratingsLabel" onmousedown="this.href = appendParamsOnce(this.href, '?campaignid=cmplinktst2&from=SERP&jt=Data+Scientist&fromjk=c01ca6ef587c7128&jcid=db9f9b9d28743c59');" target="_blank" >
+    <span class="ratings" style="height: 11px; line-height: 11px; background-image: url(/images/cmp/star_2_sm@2x.png); background-size: 12px 22px;width: 60px;"><span class="rating" style="height: 11px; line-height: 11px; background-image: url(/images/cmp/star_2_sm@2x.png); background-size: 12px 22px;background-position: 0 11px; width: 43.2px;"><!-- --></span></span><span class="slNoUnderline">11,745 reviews</span></a>
+ - <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span class="location" itemprop="address" itemscope itemtype="http://schema.org/Postaladdress"><span itemprop="addressLocality">New York, NY</span></span></span>
+<table cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td class=snip>
+<div>
+<span class=summary itemprop="description">
+Leading in Machine Learning requires the best <b>scientists</b> in the world. The Amazon Web Services (AWS) Machine Learning group is looking for <b>scientists</b> to join...</span>
+</div>
+
+<div class="result-link-bar-container">
+<div class="result-link-bar"><span class="result-link-source">Amazon.com </span>- <span class="date">4 days ago</span> <span id="tt_set_8" class="tt_set">  -  <span id="savelink2_c01ca6ef587c7128" class="savelink2"><a id="sj_c01ca6ef587c7128" href="#" class="sl resultLink save-job-link" onclick="changeJobState('c01ca6ef587c7128', 'save', 'linkbar', false);return false;" title="Save this job to my.indeed">save job</a></span> - <a href="#" id="tog_8" class="sl resultLink more-link " onclick="toggleMoreLinks('c01ca6ef587c7128'); return false;">more...</a></span><div id="editsaved2_c01ca6ef587c7128" class="edit_note_content" style="display:none;"></div><script>window['result_c01ca6ef587c7128'] = {"showSource": true, "source": "Amazon.com", "loggedIn": false, "showMyJobsLinks": true,"undoAction": "unsave","relativeJobAge": "4 days ago","jobKey": "c01ca6ef587c7128", "myIndeedAvailable": true, "tellAFriendEnabled": false, "showMoreActionsLink": true, "resultNumber": 8, "jobStateChangedToSaved": false, "searchState": "q=data scientist&amp;l=New+York", "basicPermaLink": "https://www.indeed.com", "saveJobFailed": false, "removeJobFailed": false, "requestPending": false, "notesEnabled": true, "currentPage" : "serp", "sponsored" : false,"reportJobButtonEnabled": false, "showMyJobsHired": false, "showSaveForSponsored": false};</script></div></div>
+
+<div class="tab-container">
+<div id="tt_display_8" class="more-links-container result-tab" style="display:none;"><a class="close-link closeLink" title="Close" href="#" onclick="toggleMoreLinks('c01ca6ef587c7128'); return false;"></a><div id="more_8" class="more_actions"><ul><li><span class="mat">View all <a href="/jobs?q=Amazon+Corporate+LLC&amp;l=New+York,+NY&amp;nc=jasx" rel="nofollow">Amazon Corporate LLC jobs in New York, NY</a> - <a href="/l-New-York,-NY-jobs.html">New York jobs</a></span></li><li><span class="mat">Salary Search: <a href="/salaries/Data-Scientist-Salaries,-New-York-NY" onmousedown="this.href = appendParamsOnce(this.href, '?campaignid=serp-more&amp;fromjk=c01ca6ef587c7128&amp;from=serp-more');" >Data Scientist salaries in New York, NY</a></span></li><li><span class="mat">Learn more about working at <a href="/cmp/Amazon.com" onmousedown="this.href = appendParamsOnce(this.href, '?fromjk=c01ca6ef587c7128&amp;from=serp-more&amp;campaignid=serp-more&amp;jcid=db9f9b9d28743c59');" >Amazon Corporate LLC</a></span></li><li><span class="mat">Related forums:  - <a href="/forum/loc/New-York-New-York.html">New York, New York</a></span></li></ul></div></div><div class="dya-container result-tab"></div>
+<div class="tellafriend-container result-tab email_job_content"></div>
+<div class="sign-in-container result-tab"></div>
+<div class="notes-container result-tab"></div>
+</div>
+
+</td>
+</tr>
+</table>
+</div>
+
+<div class="lastRow  row  result" id="p_2060524d74480a4d" data-jk="2060524d74480a4d" itemscope itemtype="http://schema.org/JobPosting" data-tn-component="organicJob"
+
+>
+<h2 id=jl_2060524d74480a4d class="jobtitle">
+<a
+rel="nofollow"
+href="/rc/clk?jk=2060524d74480a4d&fccid=56a9ddf4b6d6c21a" target="_blank"
+onmousedown="return rclk(this,jobmap[9],0);"
+onclick="setRefineByCookie([]); return rclk(this,jobmap[9],true,0);"
+itemprop="title"
+title="Data Scientist (Consumer Finance, Model Validation)"
+class="turnstileLink"
+data-tn-element="jobTitle"><b>Data</b> <b>Scientist</b> (Consumer Finance, Model Validation)</a>
+</h2>
+<span class="company" itemprop="hiringOrganization" itemtype="http://schema.org/Organization">
+    <span itemprop="name">
+    bankINNOVATE</span>
+</span>
+
+ - <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span class="location" itemprop="address" itemscope itemtype="http://schema.org/Postaladdress"><span itemprop="addressLocality">New York, NY 10005 <span style="font-size: smaller">(Financial District area)</span></span></span></span>
+<table cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td class=snip>
+<div>
+<span class=summary itemprop="description">
+Requires strong knowledge and experience with <b>data</b> analysis, statistics, <b>data</b> mining, and predictive analytics....</span>
+</div>
+
+<div class="iaP">
+    <span class="iaLabel"> Easily apply</span>
+</div>
+<div class="result-link-bar-container">
+<div class="result-link-bar"><span class="date">4 days ago</span> <span id="tt_set_9" class="tt_set">  -  <span id="savelink2_2060524d74480a4d" class="savelink2"><a id="sj_2060524d74480a4d" href="#" class="sl resultLink save-job-link" onclick="changeJobState('2060524d74480a4d', 'save', 'linkbar', false);return false;" title="Save this job to my.indeed">save job</a></span> - <a href="#" id="tog_9" class="sl resultLink more-link " onclick="toggleMoreLinks('2060524d74480a4d'); return false;">more...</a></span><div id="editsaved2_2060524d74480a4d" class="edit_note_content" style="display:none;"></div><script>window['result_2060524d74480a4d'] = {"showSource": false, "source": "bankINNOVATE", "loggedIn": false, "showMyJobsLinks": true,"undoAction": "unsave","relativeJobAge": "4 days ago","jobKey": "2060524d74480a4d", "myIndeedAvailable": true, "tellAFriendEnabled": false, "showMoreActionsLink": true, "resultNumber": 9, "jobStateChangedToSaved": false, "searchState": "q=data scientist&amp;l=New+York", "basicPermaLink": "https://www.indeed.com", "saveJobFailed": false, "removeJobFailed": false, "requestPending": false, "notesEnabled": true, "currentPage" : "serp", "sponsored" : false,"reportJobButtonEnabled": false, "showMyJobsHired": false, "showSaveForSponsored": false};</script></div></div>
+
+<div class="tab-container">
+<div id="tt_display_9" class="more-links-container result-tab" style="display:none;"><a class="close-link closeLink" title="Close" href="#" onclick="toggleMoreLinks('2060524d74480a4d'); return false;"></a><div id="more_9" class="more_actions"><ul><li><span class="mat">View all <a href="/q-Bankinnovate-l-New-York,-NY-jobs.html" rel="nofollow">bankINNOVATE jobs in New York, NY</a> - <a href="/l-New-York,-NY-jobs.html">New York jobs</a></span></li><li><span class="mat">Salary Search: <a href="/salaries/Data-Scientist-Salaries,-New-York-NY" onmousedown="this.href = appendParamsOnce(this.href, '?campaignid=serp-more&amp;fromjk=2060524d74480a4d&amp;from=serp-more');" >Data Scientist salaries in New York, NY</a></span></li><li><span class="mat">Learn more about working at <a href="/cmp/Bankinnovate" onmousedown="this.href = appendParamsOnce(this.href, '?fromjk=2060524d74480a4d&amp;from=serp-more&amp;campaignid=serp-more&amp;jcid=41084f0f40a0fe6e');" >Bankinnovate</a></span></li><li><span class="mat">Related forums: <a href="/forum/cmp/Bankinnovate.html">bankINNOVATE</a> - <a href="/forum/loc/New-York-New-York.html">New York, New York</a></span></li></ul></div></div><div class="dya-container result-tab"></div>
+<div class="tellafriend-container result-tab email_job_content"></div>
+<div class="sign-in-container result-tab"></div>
+<div class="notes-container result-tab"></div>
+</div>
+
+</td>
+</tr>
+</table>
+</div>
+
+<div></div><div class="jRTEHD9dT LLHKhogGKhY">
+<div class="row  result" id="pj_5df32b8b929debf1" data-jk="5df32b8b929debf1">
+<a target="_blank" id="sja4" data-tn-element="jobTitle" class="jobtitle turnstileLink" href="/pagead/clk?mo=r&ad=-6NYlbfkN0DAgAc92q6iRaEfcJAuaSGKVeICOvW3P0dpzElS8ir45AVr2KnXyohmCH6uVD67Lw7zpdjMNL11JVqsVrA276UolR2eWCfjEbFem-O7N89Fmvue-H1dWR5tmNHF5OWadv3WCc6_D1GrAh-BaYV_Yu042-aWAsduIgNBSx2CCIk6hQDI54_34fCtatVyeZZuhWpDd8LtZ2QnvRB0ttAxoeP9JRNFLnUpRpVybSiQYSEwiOhxrMIYBgKB8p_XqbdIU7X-JbAPlliHex66swJhPYfUl8g-3KgAEdidrRtbQE-4ZTsHNqpFmX0pw3BOw6ImsBP15G_5k0vTfh-udgcfH0NfweXHwsOFrqefyPSurHevfTtZtB3y0u7iD_zM_AlYzlI=&p=4&sk=&fvj=0" title="Data Scientist - Big Data &amp; Analytics" rel="nofollow" onmousedown="sjomd('sja4'); clk('sja4');" onclick="setRefineByCookie([]); sjoc('sja4',0); convCtr('SJ', pingUrlsForGA)"><b>Data</b> <b>Scientist</b> - Big <b>Data</b> &amp; Analytics</a>
+<br>
+<div class="sjcl">
+<span class="company">
+    <a
+                    data-tn-element="companyName" class="turnstileLink" target="_blank"
+                    href="/cmp/Kpmg"
+                    onmousedown="this.href = appendParamsOnce(this.href, 'from=SERP&campaignid=serp-linkcompanyname&fromjk=5df32b8b929debf1&jcid=2dd390c3a48a7ed0')"
+                    
+            >
+        KPMG</a></span>
+
+ - <a data-tn-element="reviewStars" data-tn-variant="cmplinktst2" class="turnstileLink slNoUnderline " href="/cmp/Kpmg/reviews" title="Kpmg reviews" class="ratingsLabel" onmousedown="this.href = appendParamsOnce(this.href, '?campaignid=cmplinktst2&from=SERP&jt=Data+Scientist+-+Big+Data+%26+Analytics&fromjk=5df32b8b929debf1&jcid=2dd390c3a48a7ed0');" target="_blank" >
+    <span class="ratings" style="height: 11px; line-height: 11px; background-image: url(/images/cmp/star_2_sm@2x.png); background-size: 12px 22px;width: 60px;"><span class="rating" style="height: 11px; line-height: 11px; background-image: url(/images/cmp/star_2_sm@2x.png); background-size: 12px 22px;background-position: 0 11px; width: 51.0px;"><!-- --></span></span><span class="slNoUnderline">1,936 reviews</span></a>
+ - <span class=location>New York, NY 10154</span>
+</div>
+<table cellpadding=0 cellspacing=0 border=0><tr><td class=snip>
+<span class=summary>Analyze and model structured <b>data</b> and implement algorithms to support analysis using advanced statistical and mathematical methods from statistics, machine...</span>
+</td></tr></table>
+<div class="result-link-bar-container">
+<div class="result-link-bar"><span id="tt_set_13" class="tt_set"><span id="savelink2_5df32b8b929debf1" class="savelink2"><a id="sj_5df32b8b929debf1" href="#" class="sl resultLink save-job-link" onclick="changeJobState('5df32b8b929debf1', 'save', 'linkbar', true);return false;" title="Save this job to my.indeed">save job</a></span></span><div id="editsaved2_5df32b8b929debf1" class="edit_note_content" style="display:none;"></div><script>window['sj_result_5df32b8b929debf1'] = {"showSource": false, "source": "KPMG LLP", "loggedIn": false, "showMyJobsLinks": true,"undoAction": "unsave","jobKey": "5df32b8b929debf1", "myIndeedAvailable": true, "tellAFriendEnabled": false, "showMoreActionsLink": false, "resultNumber": 13, "jobStateChangedToSaved": false, "searchState": "q=data scientist&amp;l=New+York", "basicPermaLink": "https://www.indeed.com", "saveJobFailed": false, "removeJobFailed": false, "requestPending": false, "notesEnabled": false, "currentPage" : "serp", "sponsored" : true,"sponsorName" : "KPMG LLP","reportJobButtonEnabled": false, "showMyJobsHired": false, "showSaveForSponsored": true};</script></div></div>
+<div class="tab-container">
+<div class="sign-in-container result-tab"></div>
+<div class="tellafriend-container result-tab email_job_content"></div>
+</div>
+<span class="sdn">Sponsored by <b>KPMG LLP</b></span>
+</div>
+<div class="row sjlast result" id="pj_46db0bb63cb8c4b4" data-jk="46db0bb63cb8c4b4">
+<a target="_blank" id="sja5" data-tn-element="jobTitle" class="jobtitle turnstileLink" href="/pagead/clk?mo=r&ad=-6NYlbfkN0A720v3zt_wAnHu-4tMK2LEEu_-Om5x2V0u59QhmKNF0rWB0lRlQ6mdzr9QEApSFp7mNt0paEmGRTBmK76NprCViCuFPhKLJvsQR71XMFP-UaRBB4bX2SctkDcvrvgEaZ-B3o75APHCH56IbguLRZMqn96l7j54PInwIeQIPkpKmD81UI6ZXYM9DtKm0hJRiTFAMs-ovckhhhPmFvG1Ea30Yjd7STPMXIRq_szdG2OKJMmEh7-nYOapChyHbFu5XdZaU2E_5SEa7nqRkpFuoFQom0gbcJb48H3qyAjIwtYHJWB3nrOTOUeMioQZJ3lpGACiqtw3QNeWhVvUrW09GO_vMPIVs69kuszY7w5XinbhlVhbRMn0nsP94kGiDynCNKckhmhgc0GWCPV7RTfHVdnZY7eZIqQ_7I4rtEG8BDXn5ZbiD91EFkrZb4MQuoQJp5SkjnZVU9ycjWD6aJLsji8906C5m-baq2jfDromb9I0xK5tpbrm9eTppzn11fkUTAy2KhUEGDm2OSvwoklGCIkcVhhB2VY8JRv8zGF8C4B-WkuRt5PtjmYhtO6YwR1v4ljC4Kh0FoVE5N7s9xAz1sAyGuqjDFHuj8CrgIaEgtQGqNpdV3BcE82TDxJRWGctMZI=&p=5&sk=&fvj=0" title="Data Scientist" rel="nofollow" onmousedown="sjomd('sja5'); clk('sja5');" onclick="setRefineByCookie([]); sjoc('sja5',0); convCtr('SJ', pingUrlsForGA)"><b>Data</b> <b>Scientist</b></a>
+<br>
+<div class="sjcl">
+<span class="company">
+    <a
+                    data-tn-element="companyName" class="turnstileLink" target="_blank"
+                    href="/cmp/Yodle"
+                    onmousedown="this.href = appendParamsOnce(this.href, 'from=SERP&campaignid=serp-linkcompanyname&fromjk=46db0bb63cb8c4b4&jcid=d6ac3ef27de4940d')"
+                    
+            >
+        Yodle</a></span>
+
+ - <a data-tn-element="reviewStars" data-tn-variant="cmplinktst2" class="turnstileLink slNoUnderline " href="/cmp/Yodle/reviews" title="Yodle reviews" class="ratingsLabel" onmousedown="this.href = appendParamsOnce(this.href, '?campaignid=cmplinktst2&from=SERP&jt=Data+Scientist&fromjk=46db0bb63cb8c4b4&jcid=d6ac3ef27de4940d');" target="_blank" >
+    <span class="ratings" style="height: 11px; line-height: 11px; background-image: url(/images/cmp/star_2_sm@2x.png); background-size: 12px 22px;width: 60px;"><span class="rating" style="height: 11px; line-height: 11px; background-image: url(/images/cmp/star_2_sm@2x.png); background-size: 12px 22px;background-position: 0 11px; width: 42.0px;"><!-- --></span></span><span class="slNoUnderline">103 reviews</span></a>
+ - <span class=location>New York, NY 10001</span>
+</div>
+<table cellpadding=0 cellspacing=0 border=0><tr><td class=snip>
+<span class=summary>Masters or PhD in relevant courses of study (e.g., Statistics, Mathematics, Computer Science, Physics) •Proficiency in Python •Proficiency in Java •Knowledge of...</span>
+</td></tr></table>
+<div class="result-link-bar-container">
+<div class="result-link-bar"><span id="tt_set_14" class="tt_set"><span id="savelink2_46db0bb63cb8c4b4" class="savelink2"><a id="sj_46db0bb63cb8c4b4" href="#" class="sl resultLink save-job-link" onclick="changeJobState('46db0bb63cb8c4b4', 'save', 'linkbar', true);return false;" title="Save this job to my.indeed">save job</a></span></span><div id="editsaved2_46db0bb63cb8c4b4" class="edit_note_content" style="display:none;"></div><script>window['sj_result_46db0bb63cb8c4b4'] = {"showSource": false, "source": "Yodle", "loggedIn": false, "showMyJobsLinks": true,"undoAction": "unsave","jobKey": "46db0bb63cb8c4b4", "myIndeedAvailable": true, "tellAFriendEnabled": false, "showMoreActionsLink": false, "resultNumber": 14, "jobStateChangedToSaved": false, "searchState": "q=data scientist&amp;l=New+York", "basicPermaLink": "https://www.indeed.com", "saveJobFailed": false, "removeJobFailed": false, "requestPending": false, "notesEnabled": false, "currentPage" : "serp", "sponsored" : true,"reportJobButtonEnabled": false, "showMyJobsHired": false, "showSaveForSponsored": true};</script></div></div>
+<div class="tab-container">
+<div class="sign-in-container result-tab"></div>
+<div class="tellafriend-container result-tab email_job_content"></div>
+</div>
+<span class="sdn">Sponsored</span>
+</div>
+</div><p class="footerJaPromoBubble">
+<span>
+Never miss a job. Get new jobs emailed to you daily.</span>
+<script type="text/javascript">setJaPromoCookie()</script>
+</p>
+<style>
+.fixed_ja_link_x { color:#00C; float: right; font-size: 22px; margin-top: -8px; font-weight: bold;}
+.fixed_ja_link_x:hover { cursor:pointer;}
+.fixed_ja_link { color:#00C; cursor: pointer;}
+.fixed_ja_link:hover { text-decoration: underline;}
+.fixed_ja_background { background-color: #ebebeb;}
+</style>
+<div id="bjobalertswrapper">
+<div id="bjobalerts" class="open jaPromoUi jaui KFx3IGjK">
+<div class="jobalertlabel">
+<span id="bjobalertlabel" class=jobalerts_title><span aria-label="alert icon" role="img" class=ico></span>Get email updates for the latest <b>data scientist jobs in New York</b></span>
+</div>
+<div id="bjobalertform" class="jaform">
+<span id="bjobalerttext"></span><span id="bjobalertsending"></span>
+<div id="bjobalertmessage">
+<form action="/alert" method=POST onsubmit="return addalertdelegate('data+scientist','New+York','b','',this.email.value,'1b8dlrep1a10rbdd', this.verified.value, false, '', false, '661982', 'US', '5d7819acacaf9b44f978b1bf2baddb56', this.recjobalert.checked, false);">
+<input type=hidden name=a value="add">
+<input type=hidden name=q value="data scientist">
+<input type=hidden name=l value="New York">
+<input type=hidden name=radius value="25">
+<input type=hidden name=noscript value="1">
+<input type=hidden name=fr value="b">
+<input type=hidden name=tk value="1b8dlrep1a10rbdd">
+<input id="balertverified" type=hidden name=verified value="0">
+<input type=hidden name=alertparams value="">
+<label for="balertemail">My email:</label> <input type=text id="balertemail" name=email value="" size=25 maxlength=100>
+<span class="indeed-apply-button"><span class="indeed-apply-button-inner"><input id="balertsubmit" type=submit value="Activate" class="indeed-apply-button-label"></span></span>
+<style type="text/css">
+    .indeed-apply-button { cursor : pointer !important; display : inline-block !important; padding : 1px !important; height : 31px !important; -moz-border-radius : 7px !important; border-radius : 7px !important; position : relative !important; text-decoration : none !important;background-color:#79788B; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#BCBBCD', endColorstr='#79788B', GradientType=0);background-image: -webkit-gradient(linear, center top, center bottom, from(#BCBBCD), to(#79788B)) !important;background-image: -webkit-linear-gradient(top, #BCBBCD, #79788B) !important;background-image: -moz-linear-gradient(top, #BCBBCD, #79788B) !important;background-image: -o-linear-gradient(top, #BCBBCD, #79788B) !important;background-image: -ms-linear-gradient(top, #BCBBCD, #79788B) !important;background-image: linear-gradient(top, #BCBBCD, #79788B) !important;-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2) !important;-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2) !important;box-shadow: 0 1px 2px rgba(0,0,0,0.2) !important; } #indeed-ia-1329175190441-0:link, #indeed-ia-1329175190441-0:visited, #indeed-ia-1329175190441-0:hover, #indeed-ia-1329175190441-0:active { border : 0 !important; text-decoration : none !important; }
+
+    .indeed-apply-button:hover { filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6D99F6', endColorstr='#1B45A3', GradientType=0);background-image: -webkit-gradient(linear, center top, center bottom, from(#6D99F6), to(#1B45A3)) !important;background-image: -webkit-linear-gradient(top, #6D99F6, #1B45A3) !important;background-image: -moz-linear-gradient(top, #6D99F6, #1B45A3) !important;background-image: -o-linear-gradient(top, #6D99F6, #1B45A3) !important;background-image: -ms-linear-gradient(top, #6D99F6, #1B45A3) !important;background-image: linear-gradient(top, #6D99F6, #1B45A3) !important; }
+
+    .indeed-apply-state-clicked .indeed-apply-button,
+    .indeed-apply-button:active { filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#B3BACA', endColorstr='#7C8493', GradientType=0);background-image: -webkit-gradient(linear, center top, center bottom, from(#B3BACA), to(#7C8493)) !important;background-image: -webkit-linear-gradient(top, #B3BACA, #7C8493) !important;background-image: -moz-linear-gradient(top, #B3BACA, #7C8493) !important;background-image: -o-linear-gradient(top, #B3BACA, #7C8493) !important;background-image: -ms-linear-gradient(top, #B3BACA, #7C8493) !important;background-image: linear-gradient(top, #B3BACA, #7C8493) !important;-webkit-box-shadow: none !important;-moz-box-shadow: none !important;box-shadow: none !important; }
+
+    .indeed-apply-button-inner { display : inline-block !important; height : 31px !important; -moz-border-radius : 6px !important; border-radius : 6px !important; font : 18px 'Helvetica Neue','Helvetica',Arial !important; font-weight : 200 !important; text-decoration : none !important; text-shadow : 0px 1px #F1F1F4 !important;background-color:#D9D9E2;  color: #FF6703;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFB', endColorstr='#D9D9E2', GradientType=0);background-image: -webkit-gradient(linear, center top, center bottom, from(#FAFAFB), to(#D9D9E2)) !important;background-image: -webkit-linear-gradient(top, #FAFAFB, #D9D9E2) !important;background-image: -moz-linear-gradient(top, #FAFAFB, #D9D9E2) !important;background-image: -o-linear-gradient(top, #FAFAFB, #D9D9E2) !important;background-image: -ms-linear-gradient(top, #FAFAFB, #D9D9E2) !important;background-image: linear-gradient(top, #FAFAFB, #D9D9E2) !important; }
+
+    .indeed-apply-button:active .indeed-apply-button-inner { filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#E8E8E9', endColorstr='#CBCBD3', GradientType=0);background-image: -webkit-gradient(linear, center top, center bottom, from(#E8E8E9), to(#CBCBD3)) !important;background-image: -webkit-linear-gradient(top, #E8E8E9, #CBCBD3) !important;background-image: -moz-linear-gradient(top, #E8E8E9, #CBCBD3) !important;background-image: -o-linear-gradient(top, #E8E8E9, #CBCBD3) !important;background-image: -ms-linear-gradient(top, #E8E8E9, #CBCBD3) !important;background-image: linear-gradient(top, #E8E8E9, #CBCBD3) !important; }
+
+    .indeed-apply-button-label {cursor: pointer; text-align : center !important; border:0; background: transparent;font-size: 12px; font-family: Arial, sans-serif; padding:3px 14px 2px 12px; margin:0; line-height: 26px; }
+
+    .indeed-apply-button:active .indeed-apply-button-label,
+    .indeed-apply-state-clicked .indeed-apply-button-label { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.75)" !important;filter: alpha(opacity=75) !important;-moz-opacity: 0.75 !important;-khtml-opacity: 0.75 !important;opacity: 0.75 !important; }
+
+    #talertemail, #balertemail {  height: 27px; line-height: 24px; padding-left: 6px; padding-right: 6px; font-size: 14px; font-family: Arial, sans-serif; }
+</style><label for="brecjobalert" id="brecjobalertlabel">
+<input id="brecjobalert" name="recjobalert" type="checkbox" checked>
+<span>Also get an email with jobs recommended just for me</span>
+</label>
+</form>
+<span class=caption>
+You can cancel email alerts at any time.</span>
+</div>
+</div>
+</div>
+</div><script type="text/javascript">
+function ptk(st,p) {
+document.cookie = 'PTK="tk=&type=jobsearch&subtype=' + st + (p ? '&' + p : '')
+ + (st == 'pagination' ? '&fp=1' : '')
++'"; path=/';
+}
+</script>
+<script type="text/javascript">
+function pclk(event) {
+var evt = event || window.event;
+var target = evt.target || evt.srcElement;
+var el = target.nodeType == 1 ? target : target.parentNode;
+var tag = el.tagName.toLowerCase();
+if (tag == 'span' || tag == 'a') {
+ptk('pagination');
+}
+return true;
+}
+</script>
+<div class=pagination onmousedown="pclk(event);">Results&nbsp;Page:&nbsp;&nbsp;<b>1</b>&nbsp;&nbsp;<a href="/jobs?q=data+scientist&l=New+York&start=10"><span class=pn>2</span></a>&nbsp;&nbsp;<a href="/jobs?q=data+scientist&l=New+York&start=20"><span class=pn>3</span></a>&nbsp;&nbsp;<a href="/jobs?q=data+scientist&l=New+York&start=30"><span class=pn>4</span></a>&nbsp;&nbsp;<a href="/jobs?q=data+scientist&l=New+York&start=40"><span class=pn>5</span></a>&nbsp;&nbsp; <a href="/jobs?q=data+scientist&l=New+York&start=10"><span class=pn><span class=np>Next&nbsp;&raquo;</span></span></a></div>
+<div class="related_searches">
+<div class="related_searches_list">
+<b>People also searched: </b><a href="/q-Accounting-l-New-York,-NY-jobs.html?from=relatedQueries&amp;rqf=1&amp;parentQnorm=data+scientist">accounting</a>&nbsp;- <a href="/q-Part-Time-l-New-York,-NY-jobs.html?from=relatedQueries&amp;rqf=1&amp;parentQnorm=data+scientist">part time</a>&nbsp;- <a href="/q-Clerical-l-New-York,-NY-jobs.html?from=relatedQueries&amp;rqf=1&amp;parentQnorm=data+scientist">clerical</a>&nbsp;- <a href="/q-Call-Center-l-New-York,-NY-jobs.html?from=relatedQueries&amp;rqf=1&amp;parentQnorm=data+scientist">call center</a>&nbsp;- <a href="/q-Construction-l-New-York,-NY-jobs.html?from=relatedQueries&amp;rqf=1&amp;parentQnorm=data+scientist">construction</a>&nbsp;- <a href="/q-Data-Entry-l-New-York,-NY-jobs.html?from=relatedQueries&amp;rqf=1&amp;parentQnorm=data+scientist">data entry</a>&nbsp;- <a href="/q-Graphic-Design-l-New-York,-NY-jobs.html?from=relatedQueries&amp;rqf=1&amp;parentQnorm=data+scientist">graphic design</a>&nbsp;- <a href="/q-Human-Resources-l-New-York,-NY-jobs.html?from=relatedQueries&amp;rqf=1&amp;parentQnorm=data+scientist">human resources</a>&nbsp;- <a href="/q-Insurance-l-New-York,-NY-jobs.html?from=relatedQueries&amp;rqf=1&amp;parentQnorm=data+scientist">insurance</a>&nbsp;- <a href="/q-Marketing-l-New-York,-NY-jobs.html?from=relatedQueries&amp;rqf=1&amp;parentQnorm=data+scientist">marketing</a></div>
+</div> </td>
+<td role="complementary" id=auxCol>
+<div id="tjobalertswrapper">
+<div id="tjobalerts" class="open  jaui ">
+<div class="jobalertlabel">
+<span id="tjobalertlabel" class=jobalerts_title><span aria-label="alert icon" role="img" class=ico></span>Get new jobs for this search by email</span>
+</div>
+<div id="tjobalertform" class="jaform">
+<span id="tjobalerttext"></span><span id="tjobalertsending"></span>
+<div id="tjobalertmessage">
+<form action="/alert" method=POST onsubmit="return addalertdelegate('data+scientist','New+York','t','',this.email.value,'1b8dlrep1a10rbdd', this.verified.value, false, '', false, '661982', 'US', '5d7819acacaf9b44f978b1bf2baddb56', this.recjobalert.checked, false);">
+<input type=hidden name=a value="add">
+<input type=hidden name=q value="data scientist">
+<input type=hidden name=l value="New York">
+<input type=hidden name=radius value="25">
+<input type=hidden name=noscript value="1">
+<input type=hidden name=fr value="t">
+<input type=hidden name=tk value="1b8dlrep1a10rbdd">
+<input id="talertverified" type=hidden name=verified value="0">
+<input type=hidden name=alertparams value="">
+<label for="talertemail">My email:</label> <input type=text id="talertemail" name=email value="" size=25 maxlength=100>
+<label for="trecjobalert" id="trecjobalertlabel">
+<input id="trecjobalert" name="recjobalert" type="checkbox" checked>
+<span>Also get an email with jobs recommended just for me</span>
+</label>
+<span class="indeed-apply-button"><span class="indeed-apply-button-inner"><input id="talertsubmit" type=submit value="Activate" class="indeed-apply-button-label"></span></span>
+<style type="text/css">
+    .indeed-apply-button { cursor : pointer !important; display : inline-block !important; padding : 1px !important; height : 31px !important; -moz-border-radius : 7px !important; border-radius : 7px !important; position : relative !important; text-decoration : none !important;background-color:#79788B; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#BCBBCD', endColorstr='#79788B', GradientType=0);background-image: -webkit-gradient(linear, center top, center bottom, from(#BCBBCD), to(#79788B)) !important;background-image: -webkit-linear-gradient(top, #BCBBCD, #79788B) !important;background-image: -moz-linear-gradient(top, #BCBBCD, #79788B) !important;background-image: -o-linear-gradient(top, #BCBBCD, #79788B) !important;background-image: -ms-linear-gradient(top, #BCBBCD, #79788B) !important;background-image: linear-gradient(top, #BCBBCD, #79788B) !important;-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2) !important;-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2) !important;box-shadow: 0 1px 2px rgba(0,0,0,0.2) !important; } #indeed-ia-1329175190441-0:link, #indeed-ia-1329175190441-0:visited, #indeed-ia-1329175190441-0:hover, #indeed-ia-1329175190441-0:active { border : 0 !important; text-decoration : none !important; }
+
+    .indeed-apply-button:hover { filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6D99F6', endColorstr='#1B45A3', GradientType=0);background-image: -webkit-gradient(linear, center top, center bottom, from(#6D99F6), to(#1B45A3)) !important;background-image: -webkit-linear-gradient(top, #6D99F6, #1B45A3) !important;background-image: -moz-linear-gradient(top, #6D99F6, #1B45A3) !important;background-image: -o-linear-gradient(top, #6D99F6, #1B45A3) !important;background-image: -ms-linear-gradient(top, #6D99F6, #1B45A3) !important;background-image: linear-gradient(top, #6D99F6, #1B45A3) !important; }
+
+    .indeed-apply-state-clicked .indeed-apply-button,
+    .indeed-apply-button:active { filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#B3BACA', endColorstr='#7C8493', GradientType=0);background-image: -webkit-gradient(linear, center top, center bottom, from(#B3BACA), to(#7C8493)) !important;background-image: -webkit-linear-gradient(top, #B3BACA, #7C8493) !important;background-image: -moz-linear-gradient(top, #B3BACA, #7C8493) !important;background-image: -o-linear-gradient(top, #B3BACA, #7C8493) !important;background-image: -ms-linear-gradient(top, #B3BACA, #7C8493) !important;background-image: linear-gradient(top, #B3BACA, #7C8493) !important;-webkit-box-shadow: none !important;-moz-box-shadow: none !important;box-shadow: none !important; }
+
+    .indeed-apply-button-inner { display : inline-block !important; height : 31px !important; -moz-border-radius : 6px !important; border-radius : 6px !important; font : 18px 'Helvetica Neue','Helvetica',Arial !important; font-weight : 200 !important; text-decoration : none !important; text-shadow : 0px 1px #F1F1F4 !important;background-color:#D9D9E2;  color: #FF6703;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFB', endColorstr='#D9D9E2', GradientType=0);background-image: -webkit-gradient(linear, center top, center bottom, from(#FAFAFB), to(#D9D9E2)) !important;background-image: -webkit-linear-gradient(top, #FAFAFB, #D9D9E2) !important;background-image: -moz-linear-gradient(top, #FAFAFB, #D9D9E2) !important;background-image: -o-linear-gradient(top, #FAFAFB, #D9D9E2) !important;background-image: -ms-linear-gradient(top, #FAFAFB, #D9D9E2) !important;background-image: linear-gradient(top, #FAFAFB, #D9D9E2) !important; }
+
+    .indeed-apply-button:active .indeed-apply-button-inner { filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#E8E8E9', endColorstr='#CBCBD3', GradientType=0);background-image: -webkit-gradient(linear, center top, center bottom, from(#E8E8E9), to(#CBCBD3)) !important;background-image: -webkit-linear-gradient(top, #E8E8E9, #CBCBD3) !important;background-image: -moz-linear-gradient(top, #E8E8E9, #CBCBD3) !important;background-image: -o-linear-gradient(top, #E8E8E9, #CBCBD3) !important;background-image: -ms-linear-gradient(top, #E8E8E9, #CBCBD3) !important;background-image: linear-gradient(top, #E8E8E9, #CBCBD3) !important; }
+
+    .indeed-apply-button-label {cursor: pointer; text-align : center !important; border:0; background: transparent;font-size: 12px; font-family: Arial, sans-serif; padding:3px 14px 2px 12px; margin:0; line-height: 26px; }
+
+    .indeed-apply-button:active .indeed-apply-button-label,
+    .indeed-apply-state-clicked .indeed-apply-button-label { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.75)" !important;filter: alpha(opacity=75) !important;-moz-opacity: 0.75 !important;-khtml-opacity: 0.75 !important;opacity: 0.75 !important; }
+
+    #talertemail, #balertemail {  height: 27px; line-height: 24px; padding-left: 6px; padding-right: 6px; font-size: 14px; font-family: Arial, sans-serif; }
+</style></form>
+<span class=caption>
+You can cancel email alerts at any time.</span>
+</div>
+</div>
+</div>
+</div><div id="femp_list">
+<div class="femp_header">Company with data scientist jobs</div>
+<div class="femp_item">
+    <div class="femp_logo">
+        <a
+                href="/cmp/Bloomberg" target=_blank
+                onmousedown="this.href = appendParamsOnce(this.href, 'tk=1b8dlrep1a10rbdd&campaignid=femp&from=femp');"
+        >
+            <img src="https://d2q79iu7y748jz.cloudfront.net/s/_logo/00f646d1a567bdac18411622b9a8e625" width=120 alt="Bloomberg"/>
+        </a>
+    </div>
+    <div class="femp_cmp">
+        <a
+                class="femp_cmp_link" href="/cmp/Bloomberg" target=_blank
+                onmousedown="this.href = appendParamsOnce(this.href, 'tk=1b8dlrep1a10rbdd&campaignid=femp&from=femp');"
+        >
+            Bloomberg</a>
+    </div>
+    <div class="femp_desc">Bloomberg gives influential decision makers a critical edge by connecting them to a dynamic network of information, people, and ideas.</div>
+
+    <div id='featemp_sj' class="featemp_sjl" style='display: none'>
+        <div id="indJobContent"></div>
+    </div>
+
+    <script type='text/javascript'>
+        var ind_nr = true;
+        var ind_pub = '8772657697788355';
+        var ind_el = 'indJobContent';
+        var ind_pf = '';
+        var ind_q = '';
+        var ind_fcckey = '6f1c4ce6a71857c8';
+        var ind_l = 'New York';
+        var ind_chnl = 'Bloomberg';
+        var ind_n = 3;
+        var ind_d = '';
+        var ind_t = 60;
+        var ind_c = 30;
+        var ind_rq = 'data scientist';
+    </script>
+    <script type='text/javascript' src='//jobroll.indeed.com/jobroll-widget-v3-fc2.js'></script>
+    <script type='text/javascript'>
+        window.indeedJobroll.origJobsCallback = window.indeedJobroll.jobsCallback;
+        window.indeedJobroll.jobsCallback=function(contentId, content) {
+            var sjDiv = document.getElementById('featemp_sj');
+            if (content.length <= 33 && sjDiv) {
+                sjDiv.style.display = 'none';
+            } else {
+                if (sjDiv) { sjDiv.style.display = 'block'; }
+                window.indeedJobroll.origJobsCallback(contentId, content);
+            }
+        };
+    </script>
+
+    <div class="femp_links">
+        <div class="jobs"><a href="/jobs?q=company%3A%22Bloomberg%22&l=New+York" onmousedown="this.href = appendParamsOnce(this.href, '&from=femp');">Jobs (165)</a></div>
+        <div class="reviews"><a href="/cmp/Bloomberg/reviews" onmousedown="this.href = appendParamsOnce(this.href, '&campaignid=femp&from=femp');">Reviews (310)</a> <span class="ratings" style="height: 11px; line-height: 11px; background-image: url(/images/cmp/star_2_sm@2x.png); background-size: 12px 22px;width: 60px;"><span class="rating" style="height: 11px; line-height: 11px; background-image: url(/images/cmp/star_2_sm@2x.png); background-size: 12px 22px;background-position: 0 11px; width: 44.4px;"><!-- --></span></span></div>
+        <div class="photos"><a href="/cmp/Bloomberg/photos" onmousedown="this.href = appendParamsOnce(this.href, '&campaignid=femp&from=femp');">Photos (5)</a></div>
+        <div class="salaries"><a href="/cmp/Bloomberg/salaries" onmousedown="this.href = appendParamsOnce(this.href, '&campaignid=femp&from=femp');">Salaries (830)</a></div>
+        </div>
+</div></div>
+<style type="text/css">@import url("/styles/salaryWidget.css");</style><div id="univsrch-salary-v3"><div id="univsrch-salary-info"><div id="univsrch-salary-title">Data Scientist salaries in New York, NY</div><div id="univsrch-salary-eval"><div id="univsrch-salary-rates" class="v3"><p id="univsrch-salary-currentsalary" class="v3"><b>$134,603</b> per year</p></div><div id="univsrch-salary-stats" class="v3"><p id="univsrch-salary-stats-para" class="v3">Based on 11 employees and 3300 jobs</p></div><div id="univsrch-sal-distribution"><ul><li style="height:66.48074812597184%; width:9.2%; left:0.0%;"></li><li style="height:82.26340430422306%; width:9.2%; left:10.088999999999999%;"></li><li style="height:90.0%; width:9.2%; left:20.177999999999997%;"class="univsrch-sal-highlight"></li><li style="height:89.67600459669475%; width:9.2%; left:30.266999999999996%;"></li><li style="height:83.13653857646224%; width:9.2%; left:40.355999999999995%;"></li><li style="height:72.8514213024694%; width:9.2%; left:50.44499999999999%;"></li><li style="height:61.06117624865406%; width:9.2%; left:60.53399999999999%;"></li><li style="height:49.398356869435986%; width:9.2%; left:70.62299999999999%;"></li><li style="height:38.84515435177375%; width:9.2%; left:80.71199999999999%;"></li><li style="height:29.85662469237593%; width:9.2%; left:90.80099999999999%;"></li></ul><div class="univsrch-sal-min univsrch-sal-caption float-left"><div class="float-left" style="width: 13.07px;"></div><span>Min<br/>$91,189</span></div><div class="univsrch-sal-max univsrch-sal-caption float-right"><div class="float-right" style="width: 13.07px;"></div><span>Max<br/>$198,686</span></div></div><div id="univsrch-salary-link"><a title="Data Scientist salaries by company in New York, NY" href="/salaries/Data-Scientist-Salaries,-New-York-NY?from=mobsalaryblock">Data Scientist salaries by company in New York, NY</a></div></div></div></div><script type="text/javascript">usBindSalaryWidgetLoggingNew();</script></td></tr>
+</table>
+
+<div id="prime-popover-background" class="prime-popover">
+</div>
+
+<div id="prime-popover-div" class="prime-popover">
+    <div id="prime-popover-x">
+        <button aria-label="close" id="prime-popover-close-button"><span>&times;</span></button>
+    </div><style type="text/css">
+    #prime_promo_logos {
+        width: 620px;
+        height: 436px;
+    }
+
+    #prime_promo_logos .heading_logo_div {
+        margin: 30px 0 24px 0;
+        text-align: center;
+    }
+
+    #prime_promo_logos .heading_logo_div .heading_logo {
+        max-height: 50px;
+        vertical-align: middle;
+    }
+
+    #prime_promo_logos .heading {
+        font-size: 24px;
+        color: #ff6600;
+        text-align: center;
+        line-height: 26px;
+    }
+
+    #prime_promo_logos .subheading {
+        font-size: 15px;
+        color: #666666;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+    #prime_promo_logos .content {
+        background: #F8F8F8;
+    }
+
+    #prime_promo_logos .content .legal {
+        font-size: 11px;
+        color: #666666;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    #prime_promo_logos .apply_div {
+        margin-top: 22px;
+        margin-bottom: 31px;
+    }
+
+    #learnMore {
+        color: #FFFFFF;
+        text-decoration: none !important;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #learnMore:hover,  #learnMore:focus {
+        text-decoration: none !important;
+    }
+
+    #prime_promo_logos .logo_div div {
+        display: inline-block;
+        width: 144px;
+        height: 35px;
+        text-align: center;
+    }
+
+    #prime_promo_logos .logo {
+        padding: 0 22.5px 0 22.5px;
+        max-width: 576px;
+        max-height: 94px;
+    }
+
+    #prime_promo_logos .logo_center_helper {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    #learnMore_div {
+        text-align: center;
+    }
+    #hiddenPrimeButton {
+        height: 0;
+        border: 0;
+        width: 0;
+        padding: 0;
+    }
+</style>
+<div id="prime_promo_logos">
+            <div class="heading_logo_div">
+                <span class="logo_center_helper"></span>
+                <img class="heading_logo" src="/images/prime/indeed_prime_logo.png" alt="Indeed Prime"/>
+            </div>
+            <div class="heading"><b>3 minutes</b> could get you</div>
+            <div class="heading"><b>10 offers</b> from top tech companies</div>
+            <div id="learnMore_div" class="apply_div">
+                <button id="hiddenPrimeButton" tabindex="-1" autofocus></button>
+                <a role="button" id="learnMore" class="roundedCorner indeedblue" href="/promo/prime" onclick="this.href = appendParamsOnce( this.href, '?from=primepopover&subfrom=primepopover&trk.origin=jobsearch&trk.variant=primepopover&trk.tk=1b8dlr6fta10ret0&vertical=TECH&x_isid=primepopover&x_ikw=data+scientist&x_sid=primepopover&x_kw=data+scientist')">Learn More</a>
+            </div>
+            <div class="content">
+                <div class="logo_div">
+                    <div>
+                        <span class="logo_center_helper"></span>
+                        <img class="logo" src="/images/prime/cmp-logos.png" alt="Dropbox, Evernote, Facebook, Redfin, Twilio, Uber, Slack... and more!"/>
+                    </div>
+                </div>
+                <div class="legal">Representative Companies Using Indeed Prime</div>
+            </div>
+        </div>
+    <img src="/imgping?type=primepromo&keyword=data scientist&location=New York&vertical=TECH&promo=primepopover" height="1" width="1"/>
+</div>
+
+<style type="text/css">
+    #prime-popover-background {
+        z-index: 2;
+        background: #000000;
+        width: 100%;
+        height: 100%;
+        opacity: .30;
+        filter: alpha(opacity=30);
+        top: 0;
+    }
+    #prime-popover-x {
+        float: right;
+        margin: 1px 1px 0 0;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 18px;
+        color: #666;
+    }
+    #prime-popover-close-button {
+        background:none;
+        border:none;
+        font-weight: bold;
+        font-size: 18px;
+        color: #666;
+    }
+    #prime-popover-close-button:hover {
+        cursor: pointer;
+    }
+    .prime-popover {
+        position: fixed;
+        display: none;
+    }
+    #prime-popover-div {
+        z-index: 3;
+        height: auto;
+        width: auto;
+        background: #ffffff;
+        display: none; /*hide before the cookie check*/
+        max-width: 620px;
+    }
+    
+    #prime_promo {
+        background:#ffffff
+    }
+</style>
+<script type="text/javascript">
+            window['primePopoverShown'] = 'popover';
+        </script>
+    <script>
+var focusHandlers = [];
+var linkHighlighter = new LinkHighlighter();
+focusHandlers.push(googBind(linkHighlighter.fadeToOriginalColor, linkHighlighter));
+var lostFocusHandlers = [];
+lostFocusHandlers.push(googBind(linkHighlighter.clickedAway, linkHighlighter, "#551a8b"));
+
+
+var didYouApplyPrompt = new DidYouApplyPrompt('1b8dlrep1a10rbdd',
+60, 'serp', false);
+focusHandlers.push(googBind(didYouApplyPrompt.returnedToPage, didYouApplyPrompt));
+lostFocusHandlers.push(googBind(didYouApplyPrompt.leftPage, didYouApplyPrompt));
+didYouApplyPrompt.dyaChangeFromCookie();
+
+var clickTime = new ClickTime(window.tk, 'serp', 'jobtitle', focusHandlers, lostFocusHandlers);
+</script>
+
+<script>enableAdometry();</script>
+<script>usBindRightRailLogging();</script>
+<style type="text/css">
+#secondary_nav a,#secondary_nav a:link,#secondary_nav a:visited{text-decoration:none}#secondary_nav a:hover{text-decoration:underline}.comment_bubble a,.comment_bubble a:link,.comment_bubble a:visited{color:#77c}.footer a,.footer a:link,.footer a:visited{color:#77c}.footer .sl:visited{color:#77c}.jsf .sl{color:#77c}.sl,.sl:link,.sl:visited{color:#77c}#cookie-alert .learn-more,#cookie-alert .learn-more :visited{color:#77c}#jobsearch .sl{color:#77c}#secondary_nav a,#secondary_nav a:link,#secondary_nav a:visited{color:#77c}.arrowStub{border-top-color:#666}.carouselInlineAd .cmp-note{color:#6F6F6F}.cmp_header{color:#666}.cmp_meta{color:#666}.comment_bubble{color:#666}.date,.visits{color:#808080}.dd-disabled{color:#666}.dd-disabled .dd-button-arrow{color:#666}.hp_welcome_message{color:#6F6F6F}.inwrap input{border-bottom-color:#aaa;border-\@LINE_END\@-color:#aaa}.ipadPromoCopy{color:#666}.itaText{color:#6F6F6F}.jsf .label{color:#aaa}.location{color:#666}.nps-popover-x-span{color:#666}.popover-x-span{color:#666}.rjl{color:#666}.rsc{color:#aaa}.rsh{color:#6F6F6F}.svh{color:#6F6F6F}.sjh{color:#666}.sup_grey{color:#aaa}#fromageMsg{color:#666}#jobsearch .label,#jobsearch .label label{color:#aaa}#not-likely-div{color:#808080}#original_radius_result{color:#666}#question-intro-div{color:#808080}#userOptionsLabel.active b{color:#666}#userOptionsLabel.active .arrowStub{border-bottom-color:#666}#very-likely-div{color:#808080}.jasxcolorcontrasttst-blueOnly .comment_bubble a,.jasxcolorcontrasttst-blueOnly .comment_bubble a:link,.jasxcolorcontrasttst-blueOnly .comment_bubble a:visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly .footer a,.jasxcolorcontrasttst-blueOnly .footer a:link,.jasxcolorcontrasttst-blueOnly .footer a:visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly .footer .sl:visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly .jsf .sl{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly .sl,.jasxcolorcontrasttst-blueOnly .sl:link,.jasxcolorcontrasttst-blueOnly .sl:visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly #cookie-alert .learn-more,.jasxcolorcontrasttst-blueOnly #cookie-alert .learn-more :visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly #jobsearch .sl{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly #secondary_nav a,.jasxcolorcontrasttst-blueOnly #secondary_nav a:link,.jasxcolorcontrasttst-blueOnly #secondary_nav a:visited{color:#6D6DC3}.jasxcolorcontrasttst-blueOnly .arrowStub{border-top-color:#666}.jasxcolorcontrasttst-blueOnly .carouselInlineAd .cmp-note{color:#6F6F6F}.jasxcolorcontrasttst-blueOnly .cmp_header{color:#666}.jasxcolorcontrasttst-blueOnly .cmp_meta{color:#666}.jasxcolorcontrasttst-blueOnly .comment_bubble{color:#666}.jasxcolorcontrasttst-blueOnly .date,.jasxcolorcontrasttst-blueOnly .visits{color:#808080}.jasxcolorcontrasttst-blueOnly .dd-disabled{color:#666}.jasxcolorcontrasttst-blueOnly .dd-disabled .dd-button-arrow{color:#666}.jasxcolorcontrasttst-blueOnly .hp_welcome_message{color:#6F6F6F}.jasxcolorcontrasttst-blueOnly .inwrap input{border-bottom-color:#aaa;border-\@LINE_END\@-color:#aaa}.jasxcolorcontrasttst-blueOnly .ipadPromoCopy{color:#666}.jasxcolorcontrasttst-blueOnly .itaText{color:#6F6F6F}.jasxcolorcontrasttst-blueOnly .jsf .label{color:#aaa}.jasxcolorcontrasttst-blueOnly .location{color:#666}.jasxcolorcontrasttst-blueOnly .nps-popover-x-span{color:#666}.jasxcolorcontrasttst-blueOnly .popover-x-span{color:#666}.jasxcolorcontrasttst-blueOnly .rjl{color:#666}.jasxcolorcontrasttst-blueOnly .rsc{color:#aaa}.jasxcolorcontrasttst-blueOnly .rsh{color:#6F6F6F}.jasxcolorcontrasttst-blueOnly .svh{color:#6F6F6F}.jasxcolorcontrasttst-blueOnly .sjh{color:#666}.jasxcolorcontrasttst-blueOnly .sup_grey{color:#aaa}.jasxcolorcontrasttst-blueOnly #fromageMsg{color:#666}.jasxcolorcontrasttst-blueOnly #jobsearch .label,.jasxcolorcontrasttst-blueOnly #jobsearch .label label{color:#aaa}.jasxcolorcontrasttst-blueOnly #not-likely-div{color:#808080}.jasxcolorcontrasttst-blueOnly #original_radius_result{color:#666}.jasxcolorcontrasttst-blueOnly #question-intro-div{color:#808080}.jasxcolorcontrasttst-blueOnly #userOptionsLabel.active b{color:#666}.jasxcolorcontrasttst-blueOnly #userOptionsLabel.active .arrowStub{border-bottom-color:#666}.jasxcolorcontrasttst-blueOnly #very-likely-div{color:#808080}.jasxcolorcontrasttst-greyOnly .comment_bubble a,.jasxcolorcontrasttst-greyOnly .comment_bubble a:link,.jasxcolorcontrasttst-greyOnly .comment_bubble a:visited{color:#77c}.jasxcolorcontrasttst-greyOnly .footer a,.jasxcolorcontrasttst-greyOnly .footer a:link,.jasxcolorcontrasttst-greyOnly .footer a:visited{color:#77c}.jasxcolorcontrasttst-greyOnly .footer .sl:visited{color:#77c}.jasxcolorcontrasttst-greyOnly .jsf .sl{color:#77c}.jasxcolorcontrasttst-greyOnly .sl,.jasxcolorcontrasttst-greyOnly .sl:link,.jasxcolorcontrasttst-greyOnly .sl:visited{color:#77c}.jasxcolorcontrasttst-greyOnly #cookie-alert .learn-more,.jasxcolorcontrasttst-greyOnly #cookie-alert .learn-more :visited{color:#77c}.jasxcolorcontrasttst-greyOnly #jobsearch .sl{color:#77c}.jasxcolorcontrasttst-greyOnly #secondary_nav a,.jasxcolorcontrasttst-greyOnly #secondary_nav a:link,.jasxcolorcontrasttst-greyOnly #secondary_nav a:visited{color:#77c}.jasxcolorcontrasttst-greyOnly .arrowStub{border-top-color:#666}.jasxcolorcontrasttst-greyOnly .carouselInlineAd .cmp-note{color:#666}.jasxcolorcontrasttst-greyOnly .cmp_header{color:#666}.jasxcolorcontrasttst-greyOnly .cmp_meta{color:#666}.jasxcolorcontrasttst-greyOnly .comment_bubble{color:#666}.jasxcolorcontrasttst-greyOnly .date,.jasxcolorcontrasttst-greyOnly .visits{color:#666}.jasxcolorcontrasttst-greyOnly .dd-disabled{color:#666}.jasxcolorcontrasttst-greyOnly .dd-disabled .dd-button-arrow{color:#666}.jasxcolorcontrasttst-greyOnly .hp_welcome_message{color:#666}.jasxcolorcontrasttst-greyOnly .inwrap input{border-bottom-color:#666;border-\@LINE_END\@-color:#666}.jasxcolorcontrasttst-greyOnly .ipadPromoCopy{color:#666}.jasxcolorcontrasttst-greyOnly .itaText{color:#666}.jasxcolorcontrasttst-greyOnly .jsf .label{color:#666}.jasxcolorcontrasttst-greyOnly .location{color:#666}.jasxcolorcontrasttst-greyOnly .nps-popover-x-span{color:#666}.jasxcolorcontrasttst-greyOnly .popover-x-span{color:#666}.jasxcolorcontrasttst-greyOnly .rjl{color:#666}.jasxcolorcontrasttst-greyOnly .rsc{color:#666}.jasxcolorcontrasttst-greyOnly .rsh{color:#666}.jasxcolorcontrasttst-greyOnly .svh{color:#666}.jasxcolorcontrasttst-greyOnly .sjh{color:#666}.jasxcolorcontrasttst-greyOnly .sup_grey{color:#666}.jasxcolorcontrasttst-greyOnly #fromageMsg{color:#666}.jasxcolorcontrasttst-greyOnly #jobsearch .label,.jasxcolorcontrasttst-greyOnly #jobsearch .label label{color:#666}.jasxcolorcontrasttst-greyOnly #not-likely-div{color:#666}.jasxcolorcontrasttst-greyOnly #original_radius_result{color:#666}.jasxcolorcontrasttst-greyOnly #question-intro-div{color:#666}.jasxcolorcontrasttst-greyOnly #userOptionsLabel.active b{color:#666}.jasxcolorcontrasttst-greyOnly #userOptionsLabel.active .arrowStub{border-bottom-color:#666}.jasxcolorcontrasttst-greyOnly #very-likely-div{color:#666}.jasxcolorcontrasttst-greyAndBlue .comment_bubble a,.jasxcolorcontrasttst-greyAndBlue .comment_bubble a:link,.jasxcolorcontrasttst-greyAndBlue .comment_bubble a:visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue .footer a,.jasxcolorcontrasttst-greyAndBlue .footer a:link,.jasxcolorcontrasttst-greyAndBlue .footer a:visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue .footer .sl:visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue .jsf .sl{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue .sl,.jasxcolorcontrasttst-greyAndBlue .sl:link,.jasxcolorcontrasttst-greyAndBlue .sl:visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue #cookie-alert .learn-more,.jasxcolorcontrasttst-greyAndBlue #cookie-alert .learn-more :visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue #jobsearch .sl{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue #secondary_nav a,.jasxcolorcontrasttst-greyAndBlue #secondary_nav a:link,.jasxcolorcontrasttst-greyAndBlue #secondary_nav a:visited{color:#6D6DC3}.jasxcolorcontrasttst-greyAndBlue .arrowStub{border-top-color:#666}.jasxcolorcontrasttst-greyAndBlue .carouselInlineAd .cmp-note{color:#666}.jasxcolorcontrasttst-greyAndBlue .cmp_header{color:#666}.jasxcolorcontrasttst-greyAndBlue .cmp_meta{color:#666}.jasxcolorcontrasttst-greyAndBlue .comment_bubble{color:#666}.jasxcolorcontrasttst-greyAndBlue .date,.jasxcolorcontrasttst-greyAndBlue .visits{color:#666}.jasxcolorcontrasttst-greyAndBlue .dd-disabled{color:#666}.jasxcolorcontrasttst-greyAndBlue .dd-disabled .dd-button-arrow{color:#666}.jasxcolorcontrasttst-greyAndBlue .hp_welcome_message{color:#666}.jasxcolorcontrasttst-greyAndBlue .inwrap input{border-bottom-color:#666;border-\@LINE_END\@-color:#666}.jasxcolorcontrasttst-greyAndBlue .ipadPromoCopy{color:#666}.jasxcolorcontrasttst-greyAndBlue .itaText{color:#666}.jasxcolorcontrasttst-greyAndBlue .jsf .label{color:#666}.jasxcolorcontrasttst-greyAndBlue .location{color:#666}.jasxcolorcontrasttst-greyAndBlue .nps-popover-x-span{color:#666}.jasxcolorcontrasttst-greyAndBlue .popover-x-span{color:#666}.jasxcolorcontrasttst-greyAndBlue .rjl{color:#666}.jasxcolorcontrasttst-greyAndBlue .rsc{color:#666}.jasxcolorcontrasttst-greyAndBlue .rsh{color:#666}.jasxcolorcontrasttst-greyAndBlue .svh{color:#666}.jasxcolorcontrasttst-greyAndBlue .sjh{color:#666}.jasxcolorcontrasttst-greyAndBlue .sup_grey{color:#666}.jasxcolorcontrasttst-greyAndBlue #fromageMsg{color:#666}.jasxcolorcontrasttst-greyAndBlue #jobsearch .label,.jasxcolorcontrasttst-greyAndBlue #jobsearch .label label{color:#666}.jasxcolorcontrasttst-greyAndBlue #not-likely-div{color:#666}.jasxcolorcontrasttst-greyAndBlue #original_radius_result{color:#666}.jasxcolorcontrasttst-greyAndBlue #question-intro-div{color:#666}.jasxcolorcontrasttst-greyAndBlue #userOptionsLabel.active b{color:#666}.jasxcolorcontrasttst-greyAndBlue #userOptionsLabel.active .arrowStub{border-bottom-color:#666}.jasxcolorcontrasttst-greyAndBlue #very-likely-div{color:#666}
+</style>
+<!-- jobs -->
+<div role="contentinfo" id="footerWrapper" style="text-align:center;" class="jasxcolorcontrasttst-inactive">
+<div id="footer" style="text-align:left;">
+
+<div class="separator_bottom"></div>
+<div id="secondary_nav">
+
+<div style="margin: 1em;"><span class="gaj_heading">Indeed helps people get jobs:</span> <a href="/promo/gotajob" onmousedown="this.href = appendParamsOnce( this.href, '?trk.origin=jobsearch&trk.tk=1b8dlrep1a10rbdd')" class="sl">Over 2.8 million stories shared</a></div><a href="/" title="Jobs" id="jobs_product_link">Jobs</a> - <a href="/Best-Places-to-Work" title="Browse Companies" id="companies_product_link">Browse Companies</a> - <a href="/salaries" title="Salary Search" id="salaries_product_link">Salaries</a> - <a href="/jobtrends" title="Career Trends" id="trends_product_link">Trends</a> - <a href="/forum" title="Employment Forums" id="forums_product_link">Forums</a> - <script type="text/javascript">
+var jobsProductLink = document.getElementById('jobs_product_link');
+document.getElementById('trends_product_link').onclick = function() { if ( !document.js ) { return; } var q = document.js.q.value; if ( q ) { window.location = '/jobtrends?q=' + urlencode( q ) + '&l=' + urlencode( document.js.l.value ); return false; } };document.getElementById('forums_product_link').onclick = function() { if ( !document.js ) { return; } var q = document.js.q.value; if ( q ) { window.location = '/forum/?q=' + urlencode( q ) + '&l=' + urlencode( document.js.l.value ); return false; } };document.getElementById('companies_product_link').onclick = function() { window.location = '/Best-Places-to-Work?campaignid=jobs'; return false;};</script>
+
+<a href="/find-jobs.jsp">Browse Jobs</a> - <a href="/tools/jobseeker/">Tools</a> - <a href="http://www.indeed.jobs">Work at Indeed</a> - <a href="/publisher">API</a> - <a href="/intl/en/about.html"><nobr>About</nobr></a> - <a href="https://indeed.zendesk.com/hc/en-us">Help Center</a>
+<style type="text/css">
+#footer-legal {
+margin-top: 10px;
+font-size: 9pt;
+}
+</style>
+<div id="footer-legal">
+<div class="legal-footer">&copy;2017 Indeed - <a href="/legal">Cookies, Privacy and Terms</a></div></div>
+</div>
+</div>
+</div>
+</td></tr></table>
+
+<script type="text/javascript">
+<!--
+(function ( tk ) { if ( tk && document.images ) { var s="/", q="?", a="&", e="="; rpc(s+"rpc"+s+"log"+q+"a"+e+"jsv"+a+"tk"+e+tk); } })('1b8dlrep1a10rbdd');
+function jsall_loaded() {
+
+
+initProcessLeftoverDwellEntries();
+
+    detectBrowserState('jobsearch', '1b8dlrep1a10rbdd');
+
+attachSjBlock('');
+attachJaBlock('');
+}
+if (window['closureReady'] === true) {
+jsall_loaded();
+}
+//-->
+</script>
+<script type="text/javascript">
+PENDING_ANALYTICS_VARS = window.PENDING_ANALYTICS_VARS || [];
+PENDING_ANALYTICS_VARS[PENDING_ANALYTICS_VARS.length] = ['_setCustomVar', 5, 'loggedIn', 'false', 3];
+</script>
+<script type="text/javascript">
+        var ga_domains = [];
+        ga_domains.push('indeed.co.in');ga_domains.push('indeed.lu');ga_domains.push('indeed.fr');ga_domains.push('indeed.de');ga_domains.push('indeed.com.br');ga_domains.push('indeed.co.uk');ga_domains.push('indeed.hk');ga_domains.push('indeed.fi');ga_domains.push('indeed.pt');ga_domains.push('indeed.jp');ga_domains.push('indeed.com');ga_domains.push('indeed.com.sg');ga_domains.push('indeed.nl');ga_domains.push('indeed.com.pk');ga_domains.push('indeed.cl');ga_domains.push('indeed.es');ga_domains.push('indeed.co.ve');ga_domains.push('indeed.ae');ga_domains.push('indeed.com.mx');ga_domains.push('indeed.com.my');ga_domains.push('indeed.ch');ga_domains.push('indeed.com.co');ga_domains.push('indeed.com.ph');ga_domains.push('indeed.co.za');ga_domains.push('indeed.ie');ga_domains.push('indeed.com.au');ga_domains.push('indeed.ca');ga_domains.push('indeed.com.pe');
+
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        var ga = ga || [];
+        ga('create', 'UA-90780-1', 'auto', {
+            'allowLinker': true
+        });
+        ga('require', 'linkid');
+        ga('require', 'linker');
+        ga('linker:autoLink', ga_domains, false, true);
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+
+        
+        (function () {
+            if (window.PENDING_ANALYTICS_VARS && window.PENDING_ANALYTICS_VARS.length > 0) {
+                for (var i in PENDING_ANALYTICS_VARS) {
+                    ga('set', PENDING_ANALYTICS_VARS[i][2], PENDING_ANALYTICS_VARS[i][3]);
+                }
+            }
+        })();
+    </script>
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '579216298929618');
+    fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=579216298929618&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<script>
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "6486505", c4:"www.indeed.com/q-data-scientist-l-New-York-jobs.html", c15:"1b8dlr6fta10ret0"});
+(function() { var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js"; el.parentNode.insertBefore(s, el); })();
+</script>
+<noscript>
+<img src="http://b.scorecardresearch.com/p?c1=2&c2=6486505&c4=www.indeed.com%2Fq-data-scientist-l-New-York-jobs.html&c15=1b8dlr6fta10ret0&cv=2.0&cj=1" style="display:none" width="0" height="0" alt=""/>
+</noscript>
+<img width='0' height='0' src='//log.dmtry.com/redir/1/0/4102/1011464/0/1/189/0/1017/1.ver?at=v&d=PxConv'>
+    <script>(function(){
+(function(){
+var q = document.getElementById('what').value;
+if (q.indexOf('recruit') != -1 && window.location.search.indexOf('&start') == -1) {
+    var d1 = document.getElementById('searchCount');
+    if (d1 !== null) {
+        div = d1.nextSibling;
+        while (div !== null && div.tagName !== "div"){
+            toRemove = div;
+            div = div.nextSibling;
+            toRemove.remove(toRemove.selectedIndex);
+        }
+        d1.insertAdjacentHTML('afterend', '<div style="border: 1px solid #0000cc; padding: 10px; margin-top: 20px; border-radius: 4px;font-size: 15px;padding-left: 12px;"><img style="max-width:30px;" src="https://s3-us-west-2.amazonaws.com/indeed-labs-crashtest/crowd/ic_recruiter.png"> Source candidates, Fill roles, Get cash - <a href="https://crowd.indeed.com/?sid=SERPpromo5&ikw=' +encodeURI(q) + '&from=SERPpromo5">Start Today</a></div>');
+    }
+}
+
+})();
+})();</script>
+<script>(function(){
+// 1: branded ad; 2: featured employer
+var links = {
+    ups1: '',
+    ups2: '',
+    uber1: '',
+    uber2: '',
+    geico1: '//survey.g.doubleclick.net/async_survey?site=qgfp2xu2hrmhvab6dteguwiwlm',
+    geico2: '//survey.g.doubleclick.net/async_survey?site=bqkbab6ycz63xptemth64d7ag4',
+    cellular1: '',
+    cellular2: '',
+    '': '//survey.g.doubleclick.net/async_survey?site=zkzmxam5i22lgspoirybpechbu'
+};
+
+function age() {
+    var ctk = ('; ' + document.cookie).split('; CTK=')[1];
+    if (!ctk) {
+        return 0;
+    }
+
+    var ts = 0;
+    for (var i=0; i<9; i++) {
+        var c = ctk.charCodeAt(i);
+        ts = ts * 32 + (c <= 57 ? c - 48 : c - 87);
+    }
+
+    return Date.now() - ts;
+}
+
+function findBrandedAd() {
+    var elements = document.getElementsByClassName('cmp-logo');
+    if (elements.length != 0) {
+        switch (elements[0].src.substr(-32)) {
+            case '6b0aa50f03a4494f8f059fbc8e9a8bff':
+                return 'geico1';
+            case 'd2b5ea2f96085bc28e430130c09c4ad4':
+                return 'cellular1';
+            case '56c538e1d4612864eb7efd974756770a':
+                return 'ups1';
+            case 'a3baab48c0e340098fb943ba8b3b63da':
+                return 'uber1';
+        }
+    }
+}
+
+function findFeaturedEmployer() {
+    var elements = document.getElementsByClassName('femp_cmp_link');
+    if (elements.length != 0) {
+        var href = elements[0].href.toLowerCase();
+        if (href.indexOf('ups') >= 0) {
+            return 'ups2';
+        } else if (href.indexOf('uber-partner-drivers') >= 0) {
+            return 'uber2';
+        } else if (href.indexOf('geico') >= 0) {
+            return 'geico2';
+        } else if (href.indexOf('cellular-sales') >= 0) {
+            return 'cellular2';
+        }
+    }
+}
+
+var ONE_DAY = 24 * 60 * 60 * 1000;
+
+if (age() < ONE_DAY) {
+    var adType = findBrandedAd() || findFeaturedEmployer();
+    if (adType) {
+        try {
+            localStorage.setItem('seenad', adType);
+        } catch (e) {
+        }
+    }
+} else {
+    var adType = null;
+    try {
+        adType = localStorage.getItem('seenad') || '';
+    } catch (e) {
+    }
+
+    if ((adType != null) && links[adType]) {
+        var script = document.createElement('SCRIPT');
+        script.async = script.defer = true;
+        script.src = links[adType];
+        document.body.appendChild(script);
+    }
+}
+})();</script>
+</body>
+</html>

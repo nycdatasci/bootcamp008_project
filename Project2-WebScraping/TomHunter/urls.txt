@@ -1,0 +1,14 @@
+BASE BEST SELLER LIST
+https://www.amazon.com/Best-Sellers/zgbs/
+
+--> use the above url to grab list of categories
+
+https://www.amazon.com/Best-Sellers-{CATEGORY-NAME}/zgbs/{CATEGORY-NAME}/
+
+"Pet Supplies" ==> "pet-supplies"
+
+E.G.
+
+https://www.amazon.com/Best-Sellers-Pet-Supplies/zgbs/pet-supplies/
+
+https://www.amazon.com/Best-Sellers-Amazon-Launchpad/zgbs/boost/

@@ -1,0 +1,559 @@
+state,year,Presidential.Term,congress.house,house.D,house.R,house.I,house.D.num,house.R.num,house.I.num,house.ratio.D.to.R,congress.senate,senate.D,senate.R,senate.I,senate.D.num,senate.R.num,senate.I.num,senate.ratio.D.to.R,electoral,electoral.num
+alabama,1980,Pres.Election,"4D, 3R",4D,3R,0,4,3,0,1.333,2D,2D,0,0,2,0,0,2.000,R,0
+alabama,1982,Mid.Terms,"4D, 3R",4D,3R,0,4,3,0,1.333,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+alabama,1994,Mid.Terms,"4D, 3R",4D,3R,0,4,3,0,1.333,2D,2D,0,0,2,0,0,2.000,R,0
+alabama,1988,Pres.Election,"5D, 2R",5D,2R,0,5,2,0,2.500,2D,2D,0,0,2,0,0,2.000,R,0
+alabama,1990,Mid.Terms,"5D, 2R",5D,2R,0,5,2,0,2.500,2D,2D,0,0,2,0,0,2.000,R,0
+alabama,1992,Pres.Election,"5D, 2R",5D,2R,0,5,2,0,2.500,2D,2D,0,0,2,0,0,2.000,R,0
+alabama,2000,Pres.Election,"5R, 2D",2D,5R,0,2,5,0,0.400,2R,0,2R,0,0,2,0,0.000,R,0
+alabama,2002,Mid.Terms,"5R, 2D",2D,5R,0,2,5,0,0.400,2R,0,2R,0,0,2,0,0.000,R,0
+alabama,2008,Pres.Election,"5R, 2D",2D,5R,0,2,5,0,0.400,2R,0,2R,0,0,2,0,0.000,R,0
+alabama,2010,Mid.Terms,"5R, 2D",2D,5R,0,2,5,0,0.400,2R,0,2R,0,0,2,0,0.000,R,0
+alaska,1980,Pres.Election,1R,0,1R,0,0,1,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+alaska,1982,Mid.Terms,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+alaska,1988,Pres.Election,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+alaska,1990,Mid.Terms,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+alaska,1992,Pres.Election,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+alaska,1994,Mid.Terms,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+alaska,1994,Mid.Terms,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+alaska,2000,Pres.Election,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+alaska,2002,Mid.Terms,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+alaska,2008,Pres.Election,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+alaska,2010,Mid.Terms,1R,0,1R,0,0,1,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+arizona,1980,Pres.Election,"2R, 2D",2D,2R,0,2,2,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+arizona,1982,Mid.Terms,"2R, 2D",2D,2R,0,2,2,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+arizona,1994,Mid.Terms,"3R, 3D",3D,3R,0,3,3,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+arizona,1988,Pres.Election,"4R, 1D",1D,4R,0,1,4,0,0.250,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+arizona,1988,Pres.Election,"4R, 1D",1D,4R,0,1,4,0,0.250,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+arizona,1990,Mid.Terms,"4R, 1D",1D,4R,0,1,4,0,0.250,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+arizona,1992,Pres.Election,"4R, 1D",1D,4R,0,1,4,0,0.250,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+arizona,2008,Pres.Election,"4R, 4D",4D,4R,0,4,4,0,1.000,2R,0,2R,0,0,2,0,0.000,R,0
+arizona,2010,Mid.Terms,"5D, 3R",5D,3R,0,5,3,0,1.667,2R,0,2R,0,0,2,0,0.000,R,0
+arizona,2000,Pres.Election,"5R, 1D",1D,5R,0,1,5,0,0.200,2R,0,2R,0,0,2,0,0.000,R,0
+arizona,2002,Mid.Terms,"5R, 1D",1D,5R,0,1,5,0,0.200,2R,0,2R,0,0,2,0,0.000,R,0
+arizona,2016,Pres.Election,"5R, 4D",4D,5R,0,4,5,0,0.800,2R,0,2R,0,0,2,0,0.000,R,0
+arkansas,1980,Pres.Election,"2D, 2R",2D,2R,0,2,2,0,1.000,2D,2D,0,0,2,0,0,2.000,R,0
+arkansas,1982,Mid.Terms,"2D, 2R",2D,2R,0,2,2,0,1.000,1D,1D,0,0,1,0,0,1.000,R,0
+arkansas,1990,Mid.Terms,"2D, 2R",2D,2R,0,2,2,0,1.000,1D,1D,0,0,1,0,0,1.000,R,0
+arkansas,1990,Mid.Terms,"2D, 2R",2D,2R,0,2,2,0,1.000,1D,1D,0,0,1,0,0,1.000,R,0
+arkansas,1994,Mid.Terms,"2D, 2R",2D,2R,0,2,2,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+arkansas,2000,Pres.Election,"2D, 2R",2D,2R,0,2,2,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+arkansas,1988,Pres.Election,"3D, 1R",3D,1R,0,3,1,0,3.000,1D,1D,0,0,1,0,0,1.000,R,0
+arkansas,1992,Pres.Election,"3D, 1R",3D,1R,0,3,1,0,3.000,2D,2D,0,0,2,0,0,2.000,D,1
+arkansas,2002,Mid.Terms,"3D, 1R",3D,1R,0,3,1,0,3.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+arkansas,2008,Pres.Election,"3D, 1R",3D,1R,0,3,1,0,3.000,1D,1D,0,0,1,0,0,1.000,R,0
+arkansas,2010,Mid.Terms,"3D, 1R",3D,1R,0,3,1,0,3.000,2D,2D,0,0,2,0,0,2.000,R,0
+arkansas,2016,Pres.Election,4R,0,4R,0,0,4,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+california,1982,Mid.Terms,"22D, 21R",22D,1R,0,22,1,0,22.000,2D,2D,0,0,2,0,0,2.000,R,0
+california,1980,Pres.Election,"25D, 18R",25D,8R,0,25,8,0,3.125,2D,2D,0,0,2,0,0,2.000,R,0
+california,1992,Pres.Election,"26D, 19R",26D,9R,0,26,9,0,2.889,2D,2D,0,0,2,0,0,2.000,D,1
+california,1992,Pres.Election,"26D, 19R",26D,9R,0,26,9,0,2.889,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+california,1988,Pres.Election,"28D, 17R",28D,7R,0,28,7,0,4.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+california,1988,Pres.Election,"28D, 17R",28D,7R,0,28,7,0,4.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+california,1990,Mid.Terms,"28D, 17R",28D,7R,0,28,7,0,4.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+california,2000,Pres.Election,"28D, 24R",28D,4R,0,28,4,0,7.000,2D,2D,0,0,2,0,0,2.000,D,1
+california,1994,Mid.Terms,"30D, 22R",30D,2R,0,30,2,0,15.000,2D,2D,0,0,2,0,0,2.000,D,1
+california,1994,Mid.Terms,"30D, 22R",30D,2R,0,30,2,0,15.000,2D,2D,0,0,2,0,0,2.000,D,1
+california,2002,Mid.Terms,"32D, 20R",32D,0,0,32,0,0,32.000,2D,2D,0,0,2,0,0,2.000,D,1
+california,2008,Pres.Election,"34D, 19R",34D,9R,0,34,9,0,3.778,2D,2D,0,0,2,0,0,2.000,D,1
+california,2010,Mid.Terms,"34D, 19R",34D,9R,0,34,9,0,3.778,2D,2D,0,0,2,0,0,2.000,D,1
+california,2016,Pres.Election,"39D, 14R",39D,4R,0,39,4,0,9.750,2D,2D,0,0,2,0,0,2.000,D,1
+colorado,1980,Pres.Election,"3D, 2R",3D,2R,0,3,2,0,1.500,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+colorado,1982,Mid.Terms,"3D, 2R",3D,2R,0,3,2,0,1.500,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+colorado,1988,Pres.Election,"3R, 3D",3D,3R,0,3,3,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+colorado,1990,Mid.Terms,"3R, 3D",3D,3R,0,3,3,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+colorado,1992,Pres.Election,"3R, 3D",3D,3R,0,3,3,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+colorado,2008,Pres.Election,"4D, 3R",4D,3R,0,4,3,0,1.333,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+colorado,1994,Mid.Terms,"4R, 2D",2D,4R,0,2,4,0,0.500,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+colorado,2000,Pres.Election,"4R, 2D",2D,4R,0,2,4,0,0.500,2R,0,2R,0,0,2,0,0.000,R,0
+colorado,2002,Mid.Terms,"4R, 2D",2D,4R,0,2,4,0,0.500,2R,0,2R,0,0,2,0,0.000,R,0
+colorado,2016,Pres.Election,"4R, 3D",3D,4R,0,3,4,0,0.750,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+colorado,2010,Mid.Terms,"5D, 2R",5D,2R,0,5,2,0,2.500,2D,2D,0,0,2,0,0,2.000,D,1
+connecticut,1988,Pres.Election,"3D, 3R",3D,3R,0,3,3,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+connecticut,1990,Mid.Terms,"3D, 3R",3D,3R,0,3,3,0,1.000,2D,2D,0,0,2,0,0,2.000,R,0
+connecticut,1992,Pres.Election,"3D, 3R",3D,3R,0,3,3,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+connecticut,1994,Mid.Terms,"3D, 3R",3D,3R,0,3,3,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+connecticut,2002,Mid.Terms,"3D, 3R",3D,3R,0,3,3,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+connecticut,1982,Mid.Terms,"4D, 2R",4D,2R,0,4,2,0,2.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+connecticut,1982,Mid.Terms,"4D, 2R",4D,2R,0,4,2,0,2.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+connecticut,2000,Pres.Election,"4D, 2R",4D,2R,0,4,2,0,2.000,2D,2D,0,0,2,0,0,2.000,D,1
+connecticut,2008,Pres.Election,"4D, 1R",4D,1R,0,4,1,0,4.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+connecticut,1980,Pres.Election,"5D, 1R",5D,1R,0,5,1,0,5.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+connecticut,1980,Pres.Election,"5D, 1R",5D,1R,0,5,1,0,5.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+connecticut,2010,Mid.Terms,5D,5D,0,0,5,0,0,5.000,2D,2D,0,0,2,0,0,2.000,D,1
+connecticut,2016,Pres.Election,5D,5D,0,0,5,0,0,5.000,2D,2D,0,0,2,0,0,2.000,D,1
+delaware,1988,Pres.Election,1D,1D,0,0,1,0,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+delaware,1990,Mid.Terms,1D,1D,0,0,1,0,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+delaware,1992,Pres.Election,1D,1D,0,0,1,0,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+delaware,1992,Pres.Election,1D,1D,0,0,1,0,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+delaware,2016,Pres.Election,1D,1D,0,0,1,0,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+delaware,1980,Pres.Election,1R,0,1R,0,0,1,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+delaware,1982,Mid.Terms,1R,0,1R,0,0,1,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+delaware,1994,Mid.Terms,1R,0,1R,0,0,1,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+delaware,2000,Pres.Election,1R,0,1R,0,0,1,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+delaware,2002,Mid.Terms,1R,0,1R,0,0,1,0,0.000,2D,2D,0,0,2,0,0,2.000,D,1
+delaware,2008,Pres.Election,1R,0,1R,0,0,1,0,0.000,2D,2D,0,0,2,0,0,2.000,D,1
+delaware,2010,Mid.Terms,1R,0,1R,0,0,1,0,0.000,2D,2D,0,0,2,0,0,2.000,D,1
+florida,1994,Mid.Terms,"13R, 10D",0,13R,0,0,13,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+florida,2000,Pres.Election,"15R, 8D",0,15R,0,0,15,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+florida,2002,Mid.Terms,"15R, 8D",0,15R,0,0,15,0,0.000,2D,2D,0,0,2,0,0,2.000,R,0
+florida,2008,Pres.Election,"16R, 9D",0,16R,0,0,16,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+florida,2010,Mid.Terms,"15R, 10D",0,15R,0,0,15,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+florida,2016,Pres.Election,"17R, 10D",0,17R,0,0,17,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+florida,1992,Pres.Election,"10R, 9D",9D,10R,0,9,10,0,0.900,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+florida,1982,Mid.Terms,"11D, 4R",11D,4R,0,11,4,0,2.750,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+florida,1990,Mid.Terms,"11R, 8D",8D,11R,0,8,11,0,0.727,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+florida,1980,Pres.Election,"12D, 3R",12D,3R,0,12,3,0,4.000,2D,2D,0,0,2,0,0,2.000,R,0
+florida,1988,Pres.Election,"12D, 7R",12D,7R,0,12,7,0,1.714,2D,2D,0,0,2,0,0,2.000,R,0
+georgia,1980,Pres.Election,"9D, 1R",9D,1R,0,9,1,0,9.000,2D,2D,0,0,2,0,0,2.000,D,1
+georgia,1982,Mid.Terms,"9D, 1R",9D,1R,0,9,1,0,9.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+georgia,1988,Pres.Election,"8D, 2R",8D,2R,0,8,2,0,4.000,2D,2D,0,0,2,0,0,2.000,R,0
+georgia,1990,Mid.Terms,"9D, 1R",9D,1R,0,9,1,0,9.000,2D,2D,0,0,2,0,0,2.000,R,0
+georgia,1992,Pres.Election,"9D, 1R",9D,1R,0,9,1,0,9.000,2D,2D,0,0,2,0,0,2.000,D,1
+georgia,1994,Mid.Terms,"7D, 4R",7D,4R,0,7,4,0,1.750,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+georgia,2000,Pres.Election,"8R, 3D",0,8R,0,0,8,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+georgia,2002,Mid.Terms,"8R, 3D",0,8R,0,0,8,0,0.000,2D,2D,0,0,2,0,0,2.000,R,0
+georgia,2008,Pres.Election,"7R, 6D",0,7R,0,0,7,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+georgia,2010,Mid.Terms,"7R, 6D",0,7R,0,0,7,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+georgia,2016,Pres.Election,"10R, 4D",0,10R,0,0,10,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+hawaii,1980,Pres.Election,2D,2D,0,0,2,0,0,2.000,2D,2D,0,0,2,0,0,2.000,D,1
+hawaii,1982,Mid.Terms,2D,2D,0,0,2,0,0,2.000,1D,1D,0,0,1,0,0,1.000,D,1
+hawaii,1988,Pres.Election,"1D,1R",1D,1R,0,1,1,0,1.000,1D,1D,0,0,1,0,0,1.000,D,1
+hawaii,1990,Mid.Terms,"1D,1R",1D,1R,0,1,1,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+hawaii,1990,Mid.Terms,1R,0,1R,0,0,1,0,0.000,2D,2D,0,0,2,0,0,2.000,D,1
+hawaii,1992,Pres.Election,2D,2D,0,0,2,0,0,2.000,2D,2D,0,0,2,0,0,2.000,D,1
+hawaii,1994,Mid.Terms,2D,2D,0,0,2,0,0,2.000,2D,2D,0,0,2,0,0,2.000,D,1
+hawaii,2000,Pres.Election,2D,2D,0,0,2,0,0,2.000,2D,2D,0,0,2,0,0,2.000,D,1
+hawaii,2002,Mid.Terms,2D,2D,0,0,2,0,0,2.000,1D,1D,0,0,1,0,0,1.000,D,1
+hawaii,2008,Pres.Election,2D,2D,0,0,2,0,0,2.000,2D,2D,0,0,2,0,0,2.000,D,1
+hawaii,2010,Mid.Terms,"1D,1R",1D,1R,0,1,1,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+hawaii,2016,Pres.Election,2D,2D,0,0,2,0,0,2.000,2D,2D,0,0,2,0,0,2.000,D,1
+idaho,1980,Pres.Election,2R,0,2R,0,0,2,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+idaho,1982,Mid.Terms,2R,0,2R,0,0,2,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+idaho,1988,Pres.Election,"1D,1R",1D,1R,0,1,1,0,1.000,2R,0,2R,0,0,2,0,0.000,R,0
+idaho,1990,Mid.Terms,"1D,1R",1D,1R,0,1,1,0,1.000,2R,0,2R,0,0,2,0,0.000,R,0
+idaho,1992,Pres.Election,2D,2D,0,0,2,0,0,2.000,2R,0,2R,0,0,2,0,0.000,R,0
+idaho,1994,Mid.Terms,"1D,1R",1D,1R,0,1,1,0,1.000,2R,0,2R,0,0,2,0,0.000,R,0
+idaho,2000,Pres.Election,2R,0,2R,0,0,2,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+idaho,2002,Mid.Terms,2R,0,2R,0,0,2,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+idaho,2008,Pres.Election,2R,0,2R,0,0,2,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+idaho,2010,Mid.Terms,"1D,1R",1D,1R,0,1,1,0,1.000,2R,0,2R,0,0,2,0,0.000,R,0
+idaho,2016,Pres.Election,2R,0,2R,0,0,2,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+illinois,1980,Pres.Election,"14R, 10D",0,14R,0,0,14,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+illinois,1982,Mid.Terms,"14R, 10D",0,14R,0,0,14,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+illinois,2000,Pres.Election,"10D, 10R",10D,0,0,10,0,0,10.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+illinois,2002,Mid.Terms,"10D, 10R",10D,0,0,10,0,0,10.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+illinois,2016,Pres.Election,"10D, 8R",10D,8R,0,10,8,0,1.250,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+illinois,2008,Pres.Election,"11D, 8R",11D,8R,0,11,8,0,1.375,2D,2D,0,0,2,0,0,2.000,D,1
+illinois,1994,Mid.Terms,"12D, 8R",12D,8R,0,12,8,0,1.500,2D,2D,0,0,2,0,0,2.000,D,1
+illinois,2010,Mid.Terms,"12D, 7R",12D,7R,0,12,7,0,1.714,2D,2D,0,0,2,0,0,2.000,D,1
+illinois,1988,Pres.Election,"13D, 9R",13D,9R,0,13,9,0,1.444,2D,2D,0,0,2,0,0,2.000,R,0
+illinois,1990,Mid.Terms,"14D, 8R",14D,8R,0,14,8,0,1.750,2D,2D,0,0,2,0,0,2.000,R,0
+illinois,1992,Pres.Election,"15D, 7R",15D,7R,0,15,7,0,2.143,2D,2D,0,0,2,0,0,2.000,D,1
+indiana,2008,Pres.Election,"5D, 4R",5D,4R,0,5,4,0,1.250,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+indiana,2010,Mid.Terms,"5D, 4R",5D,4R,0,5,4,0,1.250,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+indiana,1982,Mid.Terms,"6D, 5R",6D,5R,0,6,5,0,1.200,2R,0,2R,0,0,2,0,0.000,R,0
+indiana,1988,Pres.Election,"6D, 4R",6D,4R,0,6,4,0,1.500,2R,0,2R,0,0,2,0,0.000,R,0
+indiana,2000,Pres.Election,"6R, 4D",4D,6R,0,4,6,0,0.667,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+indiana,2002,Mid.Terms,"6R, 4D",4D,6R,0,4,6,0,0.667,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+indiana,1980,Pres.Election,"7D, 4R",7D,4R,0,7,4,0,1.750,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+indiana,1990,Mid.Terms,"7D, 3R",7D,3R,0,7,3,0,2.333,2R,0,2R,0,0,2,0,0.000,R,0
+indiana,1994,Mid.Terms,"7D, 3R",7D,3R,0,7,3,0,2.333,2R,0,2R,0,0,2,0,0.000,R,0
+indiana,2016,Pres.Election,"7R, 2D",2D,7R,0,2,7,0,0.286,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+indiana,1992,Pres.Election,"8D, 2R",8D,2R,0,8,2,0,4.000,2R,0,2R,0,0,2,0,0.000,R,0
+iowa,1980,Pres.Election,"3D, 3R",3D,3R,0,3,3,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+iowa,1982,Mid.Terms,"3D, 3R",3D,3R,0,3,3,0,1.000,2R,0,2R,0,0,2,0,0.000,R,0
+iowa,2008,Pres.Election,"3D, 2R",3D,2R,0,3,2,0,1.500,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+iowa,2010,Mid.Terms,"3D, 2R",3D,2R,0,3,2,0,1.500,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+iowa,2016,Pres.Election,"3R, 1D",1D,3R,0,1,3,0,0.333,2R,0,2R,0,0,2,0,0.000,R,0
+iowa,1988,Pres.Election,"4R, 2D",2D,4R,0,2,4,0,0.500,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+iowa,1990,Mid.Terms,"4R, 2D",2D,4R,0,2,4,0,0.500,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+iowa,1992,Pres.Election,"4R, 2D",2D,4R,0,2,4,0,0.500,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+iowa,1994,Mid.Terms,"4R, 1D",1D,4R,0,1,4,0,0.250,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+iowa,2000,Pres.Election,"4R, 1D",1D,4R,0,1,4,0,0.250,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+iowa,2002,Mid.Terms,"4R, 1D",1D,4R,0,1,4,0,0.250,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+kansas,1994,Mid.Terms,"2D, 2R",2D,2R,0,2,2,0,1.000,2R,0,2R,0,0,2,0,0.000,R,0
+kansas,2008,Pres.Election,"2R, 2D",2D,2R,0,2,2,0,1.000,2R,0,2R,0,0,2,0,0.000,R,0
+kansas,1988,Pres.Election,"3R, 2D",2D,3R,0,2,3,0,0.667,2R,0,2R,0,0,2,0,0.000,R,0
+kansas,1990,Mid.Terms,"3R, 2D",2D,3R,0,2,3,0,0.667,2R,0,2R,0,0,2,0,0.000,R,0
+kansas,1992,Pres.Election,"3R, 2D",2D,3R,0,2,3,0,0.667,2R,0,2R,0,0,2,0,0.000,R,0
+kansas,2000,Pres.Election,"3R, 1D",1D,3R,0,1,3,0,0.333,2R,0,2R,0,0,2,0,0.000,R,0
+kansas,2002,Mid.Terms,"3R, 1D",1D,3R,0,1,3,0,0.333,2R,0,2R,0,0,2,0,0.000,R,0
+kansas,2010,Mid.Terms,"3R, 1D",1D,3R,0,1,3,0,0.333,2R,0,2R,0,0,2,0,0.000,R,0
+kansas,1980,Pres.Election,"4R, 1D",1D,4R,0,1,4,0,0.250,2R,0,2R,0,0,2,0,0.000,R,0
+kansas,1982,Mid.Terms,"4R, 1D",1D,4R,0,1,4,0,0.250,2R,0,2R,0,0,2,0,0.000,R,0
+kansas,2016,Pres.Election,4R,0,4R,0,0,4,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+kentucky,1994,Mid.Terms,"3D, 3R",3D,3R,0,3,3,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+kentucky,1980,Pres.Election,"4D, 3R",4D,3R,0,4,3,0,1.333,2D,2D,0,0,2,0,0,2.000,R,0
+kentucky,1982,Mid.Terms,"4D, 3R",4D,3R,0,4,3,0,1.333,2D,2D,0,0,2,0,0,2.000,R,0
+kentucky,1988,Pres.Election,"4D, 3R",4D,3R,0,4,3,0,1.333,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+kentucky,1990,Mid.Terms,"4D, 3R",4D,3R,0,4,3,0,1.333,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+kentucky,1992,Pres.Election,"4D, 3R",4D,3R,0,4,3,0,1.333,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+kentucky,2008,Pres.Election,"4R, 2D",2D,4R,0,2,4,0,0.500,2R,0,2R,0,0,2,0,0.000,R,0
+kentucky,2010,Mid.Terms,"4R, 2D",2D,4R,0,2,4,0,0.500,2R,0,2R,0,0,2,0,0.000,R,0
+kentucky,2000,Pres.Election,"5R, 1D",1D,5R,0,1,5,0,0.200,2R,0,2R,0,0,2,0,0.000,R,0
+kentucky,2002,Mid.Terms,"5R, 1D",1D,5R,0,1,5,0,0.200,2R,0,2R,0,0,2,0,0.000,R,0
+kentucky,2016,Pres.Election,"5R, 1D",1D,5R,0,1,5,0,0.200,2R,0,2R,0,0,2,0,0.000,R,0
+kentucky,2016,Pres.Election,"5R, 1D",1D,5R,0,1,5,0,0.200,2R,0,2R,0,0,2,0,0.000,R,0
+louisiana,1990,Mid.Terms,"4D, 4R",4D,4R,0,4,4,0,1.000,2D,2D,0,0,2,0,0,2.000,R,0
+louisiana,1992,Pres.Election,"4D, 4R",4D,4R,0,4,4,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+louisiana,1994,Mid.Terms,"4D, 3R",4D,3R,0,4,3,0,1.333,2D,2D,0,0,2,0,0,2.000,D,1
+louisiana,1980,Pres.Election,"5D, 3R",5D,3R,0,5,3,0,1.667,2D,2D,0,0,2,0,0,2.000,R,0
+louisiana,1988,Pres.Election,"5D, 3R",5D,3R,0,5,3,0,1.667,2D,2D,0,0,2,0,0,2.000,R,0
+louisiana,2000,Pres.Election,"5R, 2D",2D,5R,0,2,5,0,0.400,2D,2D,0,0,2,0,0,2.000,R,0
+louisiana,2002,Mid.Terms,"5R, 2D",2D,5R,0,2,5,0,0.400,2D,2D,0,0,2,0,0,2.000,R,0
+louisiana,2008,Pres.Election,"5R, 2D",2D,5R,0,2,5,0,0.400,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+louisiana,2016,Pres.Election,"5R, 1D",1D,5R,0,1,5,0,0.200,2R,0,2R,0,0,2,0,0.000,R,0
+louisiana,1982,Mid.Terms,"6D, 2R",6D,2R,0,6,2,0,3.000,2D,2D,0,0,2,0,0,2.000,R,0
+louisiana,2010,Mid.Terms,"6R, 1D",1D,6R,0,1,6,0,0.167,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+maine,1988,Pres.Election,"1D,1R",1D,1R,0,1,1,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+maine,1990,Mid.Terms,"1D,1R",1D,1R,0,1,1,0,1.000,1R,0,1R,0,0,1,0,0.000,R,0
+maine,1992,Pres.Election,"1D,1R",1D,1R,0,1,1,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+maine,1994,Mid.Terms,"1D,1R",1D,1R,0,1,1,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+maine,2016,Pres.Election,"1D,1R",1D,1R,0,1,1,0,1.000,1I,0,0,1I,0,0,1,0.000,D,1
+maine,2000,Pres.Election,2D,2D,0,0,2,0,0,2.000,2D,2D,0,0,2,0,0,2.000,D,1
+maine,2002,Mid.Terms,2D,2D,0,0,2,0,0,2.000,1R,0,1R,0,0,1,0,0.000,D,1
+maine,2008,Pres.Election,2D,2D,0,0,2,0,0,2.000,1R,0,1R,0,0,1,0,0.000,D,1
+maine,2010,Mid.Terms,2D,2D,0,0,2,0,0,2.000,2D,2D,0,0,2,0,0,2.000,D,1
+maine,1980,Pres.Election,2R,0,2R,0,0,2,0,0.000,2D,2D,0,0,2,0,0,2.000,R,0
+maine,1982,Mid.Terms,2R,0,2R,0,0,2,0,0.000,2D,2D,0,0,2,0,0,2.000,R,0
+maryland,1994,Mid.Terms,"4D, 4R",4D,4R,0,4,4,0,1.000,1D,1D,0,0,1,0,0,1.000,D,1
+maryland,2000,Pres.Election,"4D, 4R",4D,4R,0,4,4,0,1.000,1D,1D,0,0,1,0,0,1.000,D,1
+maryland,2002,Mid.Terms,"4D, 4R",4D,4R,0,4,4,0,1.000,1D,1D,0,0,1,0,0,1.000,D,1
+maryland,1992,Pres.Election,"5D, 3R",5D,3R,0,5,3,0,1.667,1D,1D,0,0,1,0,0,1.000,D,1
+maryland,1980,Pres.Election,"6D, 2R",6D,2R,0,6,2,0,3.000,1R,0,1R,0,0,1,0,0.000,D,1
+maryland,1988,Pres.Election,"6D, 2R",6D,2R,0,6,2,0,3.000,2D,2D,0,0,2,0,0,2.000,R,0
+maryland,1990,Mid.Terms,"6D, 2R",6D,2R,0,6,2,0,3.000,1D,1D,0,0,1,0,0,1.000,R,0
+maryland,2008,Pres.Election,"6D, 2R",6D,2R,0,6,2,0,3.000,1D,1D,0,0,1,0,0,1.000,D,1
+maryland,1982,Mid.Terms,"7D, 1R",7D,1R,0,7,1,0,7.000,2D,2D,0,0,2,0,0,2.000,D,1
+maryland,2010,Mid.Terms,"7D, 1R",7D,1R,0,7,1,0,7.000,1D,1D,0,0,1,0,0,1.000,D,1
+maryland,2016,Pres.Election,"7D, 1R",7D,1R,0,7,1,0,7.000,2D,2D,0,0,2,0,0,2.000,D,1
+massachusetts,1980,Pres.Election,"10D,2R",10D,2R,0,10,2,0,5.000,2D,2D,0,0,2,0,0,2.000,D,1
+massachusetts,1982,Mid.Terms,"10D,2R",10D,2R,0,10,2,0,5.000,2D,2D,0,0,2,0,0,2.000,D,1
+massachusetts,1988,Pres.Election,"10D,1R",10D,1R,0,10,1,0,10.000,2D,2D,0,0,2,0,0,2.000,D,1
+massachusetts,1990,Mid.Terms,"10D,1R",10D,1R,0,10,1,0,10.000,2D,2D,0,0,2,0,0,2.000,D,1
+massachusetts,2000,Pres.Election,10D,10D,0,0,10,0,0,10.000,2D,2D,0,0,2,0,0,2.000,D,1
+massachusetts,2002,Mid.Terms,10D,10D,0,0,10,0,0,10.000,2D,2D,0,0,2,0,0,2.000,D,1
+massachusetts,2008,Pres.Election,10D,10D,0,0,10,0,0,10.000,2D,2D,0,0,2,0,0,2.000,D,1
+massachusetts,2010,Mid.Terms,10D,10D,0,0,10,0,0,10.000,2D,2D,0,0,2,0,0,2.000,D,1
+massachusetts,2010,Mid.Terms,10D,10D,0,0,10,0,0,10.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+massachusetts,1992,Pres.Election,11D,11D,0,0,11,0,0,11.000,2D,2D,0,0,2,0,0,2.000,D,1
+massachusetts,1994,Mid.Terms,"8D,2R",8D,2R,0,8,2,0,4.000,2D,2D,0,0,2,0,0,2.000,D,1
+massachusetts,2016,Pres.Election,9D,9D,0,0,9,0,0,9.000,2D,2D,0,0,2,0,0,2.000,D,1
+massachusetts,2016,Mid.Terms,9D,9D,0,0,9,0,0,9.000,2D,2D,0,0,2,0,0,2.000,D,1
+michigan,2000,Pres.Election,"10D, 6R",10D,6R,0,10,6,0,1.667,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+michigan,2010,Mid.Terms,"8D, 7R",8D,7R,0,8,7,0,1.143,2D,2D,0,0,2,0,0,2.000,D,1
+michigan,2002,Mid.Terms,"9D, 7R",9D,7R,0,9,7,0,1.286,2D,2D,0,0,2,0,0,2.000,D,1
+michigan,2008,Pres.Election,"9R, 6D",6D,9R,0,6,9,0,0.667,2D,2D,0,0,2,0,0,2.000,D,1
+michigan,2016,Pres.Election,"9R, 5D",5D,9R,0,5,9,0,0.556,2D,2D,0,0,2,0,0,2.000,R,0
+minnesota,1980,Pres.Election,"4DFL, 4R",4D,4R,0,4,4,0,1.000,2R,0,2R,0,0,2,0,0.000,D,1
+minnesota,1988,Pres.Election,"5DFL, 3R",5D,3R,0,5,3,0,1.667,2R,0,2R,0,0,2,0,0.000,D,1
+minnesota,1990,Mid.Terms,"5DFL, 3R",5D,3R,0,5,3,0,1.667,2R,0,2R,0,0,2,0,0.000,D,1
+minnesota,2002,Mid.Terms,"5DFL, 3R",5D,3R,0,5,3,0,1.667,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+minnesota,2008,Pres.Election,"5DFL, 3R",5D,3R,0,5,3,0,1.667,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+minnesota,2010,Mid.Terms,"5DFL, 3R",5D,3R,0,5,3,0,1.667,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+minnesota,2016,Pres.Election,"5DFL, 3R",5D,3R,0,5,3,0,1.667,2R,0,2R,0,0,2,0,0.000,D,1
+minnesota,1982,Mid.Terms,"5R, 3DFL",3D,5R,0,3,5,0,0.600,2R,0,2R,0,0,2,0,0.000,D,1
+minnesota,1992,Pres.Election,"6DFL, 2R",6D,2R,0,6,2,0,3.000,2R,0,2R,0,0,2,0,0.000,D,1
+minnesota,1994,Mid.Terms,"6DFL, 2R",6D,2R,0,6,2,0,3.000,2R,0,2R,0,0,2,0,0.000,D,1
+minnesota,2000,Pres.Election,"6DFL, 2R",6D,2R,0,6,2,0,3.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+mississippi,1980,Pres.Election,"3D, 2R",3D,2R,0,3,2,0,1.500,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+mississippi,2000,Pres.Election,"3D, 2R",3D,2R,0,3,2,0,1.500,2R,0,2R,0,0,2,0,0.000,R,0
+mississippi,2002,Mid.Terms,"3D, 2R",3D,2R,0,3,2,0,1.500,2R,0,2R,0,0,2,0,0.000,R,0
+mississippi,2008,Pres.Election,"3D, 1R",3D,1R,0,3,1,0,3.000,2R,0,2R,0,0,2,0,0.000,R,0
+mississippi,2010,Mid.Terms,"3D, 1R",3D,1R,0,3,1,0,3.000,2R,0,2R,0,0,2,0,0.000,R,0
+mississippi,2016,Pres.Election,"3R, 1D",1D,3R,0,1,3,0,0.333,2R,0,2R,0,0,2,0,0.000,R,0
+mississippi,1982,Mid.Terms,"4D, 1R",4D,1R,0,4,1,0,4.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+mississippi,1988,Pres.Election,"4D, 1R",4D,1R,0,4,1,0,4.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+mississippi,1990,Mid.Terms,5D,5D,0,0,5,0,0,5.000,2R,0,2R,0,0,2,0,0.000,R,0
+mississippi,1992,Pres.Election,5D,5D,0,0,5,0,0,5.000,2R,0,2R,0,0,2,0,0.000,R,0
+mississippi,1994,Mid.Terms,5D,5D,0,0,5,0,0,5.000,2R,0,2R,0,0,2,0,0.000,R,0
+missouri,1988,Pres.Election,"5D, 4R",5D,4R,0,5,4,0,1.250,1R,0,1R,0,0,1,0,0.000,R,0
+missouri,1990,Mid.Terms,"5D, 4R",5D,4R,0,5,4,0,1.250,2D,2D,0,0,2,0,0,2.000,R,0
+missouri,2000,Pres.Election,"5D, 4R",5D,4R,0,5,4,0,1.250,1R,0,1R,0,0,1,0,0.000,R,0
+missouri,2002,Mid.Terms,"5R, 4D",4D,5R,0,4,5,0,0.800,1D,1D,0,0,1,0,0,1.000,R,0
+missouri,2008,Pres.Election,"5R, 4D",4D,5R,0,4,5,0,0.800,1D,1D,0,0,1,0,0,1.000,R,0
+missouri,2010,Mid.Terms,"5R, 4D",4D,5R,0,4,5,0,0.800,1D,1D,0,0,1,0,0,1.000,R,0
+missouri,1982,Mid.Terms,"6D, 4R",6D,4R,0,6,4,0,1.500,2D,2D,0,0,2,0,0,2.000,R,0
+missouri,1992,Pres.Election,"6D, 3R",6D,3R,0,6,3,0,2.000,2D,2D,0,0,2,0,0,2.000,D,1
+missouri,1994,Mid.Terms,"6D, 3R",6D,3R,0,6,3,0,2.000,1R,0,1R,0,0,1,0,0.000,D,1
+missouri,1994,Mid.Terms,"6D, 3R",6D,3R,0,6,3,0,2.000,1R,0,1R,0,0,1,0,0.000,D,1
+missouri,2016,Pres.Election,"6R, 2D",2D,6R,0,2,6,0,0.333,1R,0,1R,0,0,1,0,0.000,R,0
+missouri,1980,Pres.Election,"8D, 2R",8D,2R,0,8,2,0,4.000,1D,1D,0,0,1,0,0,1.000,R,0
+montana,1980,Pres.Election,"1D, 1R",1D,1R,0,1,1,0,1.000,2D,2D,0,0,2,0,0,2.000,R,0
+montana,1982,Mid.Terms,"1D, 1R",1D,1R,0,1,1,0,1.000,2D,2D,0,0,2,0,0,2.000,R,0
+montana,1988,Pres.Election,"1D, 1R",1D,1R,0,1,1,0,1.000,2D,2D,0,0,2,0,0,2.000,R,0
+montana,1990,Mid.Terms,"1D, 1R",1D,1R,0,1,1,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+montana,1992,Pres.Election,"1D, 1R",1D,1R,0,1,1,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+montana,1994,Mid.Terms,1D,1D,0,0,1,0,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+montana,2000,Pres.Election,1R,0,1R,0,0,1,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+montana,2002,Mid.Terms,1R,0,1R,0,0,1,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+montana,2008,Pres.Election,1R,0,1R,0,0,1,0,0.000,2D,2D,0,0,2,0,0,2.000,R,0
+montana,2010,Mid.Terms,1R,0,1R,0,0,1,0,0.000,2D,2D,0,0,2,0,0,2.000,R,0
+montana,2016,Pres.Election,1R,0,1R,0,0,1,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+nebraska,1980,Pres.Election,"2R, 1D",1D,2R,0,1,2,0,0.500,2D,2D,0,0,2,0,0,2.000,R,0
+nebraska,1990,Mid.Terms,"2R, 1D",1D,2R,0,1,2,0,0.500,2D,2D,0,0,2,0,0,2.000,R,0
+nebraska,1992,Pres.Election,"2R, 1D",1D,2R,0,1,2,0,0.500,2D,2D,0,0,2,0,0,2.000,R,0
+nebraska,1994,Mid.Terms,"2R, 1D",1D,2R,0,1,2,0,0.500,2D,2D,0,0,2,0,0,2.000,R,0
+nebraska,2016,Pres.Election,"2R, 1D",1D,2R,0,1,2,0,0.500,2R,0,2R,0,0,2,0,0.000,R,0
+nebraska,1982,Mid.Terms,3R,0,3R,0,0,3,0,0.000,2D,2D,0,0,2,0,0,2.000,R,0
+nebraska,1988,Pres.Election,3R,0,3R,0,0,3,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+nebraska,2000,Pres.Election,3R,0,3R,0,0,3,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+nebraska,2002,Mid.Terms,3R,0,3R,0,0,3,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+nebraska,2008,Pres.Election,3R,0,3R,0,0,3,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+nebraska,2010,Mid.Terms,3R,0,3R,0,0,3,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+nevada,1980,Pres.Election,1D,1D,0,0,1,0,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+nevada,1982,Mid.Terms,1D,1D,0,0,1,0,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+nevada,1988,Pres.Election,"1D, 1R",1D,1R,0,1,1,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+nevada,1990,Mid.Terms,"1D, 1R",1D,1R,0,1,1,0,1.000,2D,2D,0,0,2,0,0,2.000,R,0
+nevada,1992,Pres.Election,"1D, 1R",1D,1R,0,1,1,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+nevada,1994,Mid.Terms,"1D, 1R",1D,1R,0,1,1,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+nevada,2000,Pres.Election,"1R, 1D",1D,1R,0,1,1,0,1.000,2D,2D,0,0,2,0,0,2.000,R,0
+nevada,2002,Mid.Terms,"1R, 1D",1D,1R,0,1,1,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+nevada,2010,Mid.Terms,"2D, 1R",2D,1R,0,2,1,0,2.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+nevada,2008,Pres.Election,"2R, 1D",1D,2R,0,1,2,0,0.500,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+nevada,2016,Pres.Election,"3R, 1D",1D,3R,0,1,3,0,0.333,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+new hampshire,1980,Pres.Election,"2D,2R",2D,2R,0,2,2,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+new hampshire,1982,Mid.Terms,"2D,2R",2D,2R,0,2,2,0,1.000,2R,0,2R,0,0,2,0,0.000,R,0
+new hampshire,1992,Pres.Election,"2D,2R",2D,2R,0,2,2,0,1.000,2R,0,2R,0,0,2,0,0.000,D,1
+new hampshire,1994,Mid.Terms,"2D,2R",2D,2R,0,2,2,0,1.000,2R,0,2R,0,0,2,0,0.000,D,1
+new hampshire,2016,Pres.Election,"2D,2R",2D,2R,0,2,2,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+new hampshire,2008,Pres.Election,4D,4D,0,0,4,0,0,4.000,2R,0,2R,0,0,2,0,0.000,D,1
+new hampshire,2010,Mid.Terms,4D,4D,0,0,4,0,0,4.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+new hampshire,1988,Pres.Election,4R,0,4R,0,0,4,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+new hampshire,1990,Mid.Terms,4R,0,4R,0,0,4,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+new hampshire,2000,Pres.Election,4R,0,4R,0,0,4,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+new hampshire,2002,Mid.Terms,4R,0,4R,0,0,4,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+new jersey,1980,Pres.Election,"10D, 5R",10D,5R,0,10,5,0,2.000,2D,2D,0,0,2,0,0,2.000,R,0
+new jersey,2016,Pres.Election,"6D, 6R",6D,6R,0,6,6,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+new jersey,1994,Mid.Terms,"7D, 6R",7D,6R,0,7,6,0,1.167,2D,2D,0,0,2,0,0,2.000,D,1
+new jersey,2000,Pres.Election,"7D, 6R",7D,6R,0,7,6,0,1.167,2D,2D,0,0,2,0,0,2.000,D,1
+new jersey,2002,Mid.Terms,"7D, 6R",7D,6R,0,7,6,0,1.167,2D,2D,0,0,2,0,0,2.000,D,1
+new jersey,2008,Pres.Election,"7D, 6R",7D,6R,0,7,6,0,1.167,2D,2D,0,0,2,0,0,2.000,D,1
+new jersey,1982,Mid.Terms,"8D, 7R",8D,7R,0,8,7,0,1.143,2D,2D,0,0,2,0,0,2.000,R,0
+new jersey,1982,Mid.Terms,"8D, 7R",8D,7R,0,8,7,0,1.143,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+new jersey,1988,Pres.Election,"8D, 6R",8D,6R,0,8,6,0,1.333,2D,2D,0,0,2,0,0,2.000,R,0
+new jersey,1990,Mid.Terms,"8D, 6R",8D,6R,0,8,6,0,1.333,2D,2D,0,0,2,0,0,2.000,R,0
+new jersey,1992,Pres.Election,"8D, 6R",8D,6R,0,8,6,0,1.333,2D,2D,0,0,2,0,0,2.000,D,1
+new jersey,2010,Mid.Terms,"8D, 5R",8D,5R,0,8,5,0,1.600,2D,2D,0,0,2,0,0,2.000,D,1
+new mexico,1980,Pres.Election,"1R, 1D",1D,1R,0,1,1,0,1.000,2R,0,2R,0,0,2,0,0.000,R,0
+new mexico,2016,Pres.Election,"2D, 1R",2D,1R,0,2,1,0,2.000,2D,2D,0,0,2,0,0,2.000,D,1
+new mexico,1982,Mid.Terms,2R,0,2R,0,0,2,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+new mexico,1988,Pres.Election,"2R, 1D",1D,2R,0,1,2,0,0.500,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+new mexico,1990,Mid.Terms,"2R, 1D",1D,2R,0,1,2,0,0.500,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+new mexico,1992,Pres.Election,"2R, 1D",1D,2R,0,1,2,0,0.500,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+new mexico,1994,Mid.Terms,"2R, 1D",1D,2R,0,1,2,0,0.500,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+new mexico,2000,Pres.Election,"2R, 1D",1D,2R,0,1,2,0,0.500,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+new mexico,2002,Mid.Terms,"2R, 1D",1D,2R,0,1,2,0,0.500,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+new mexico,2008,Pres.Election,"2R, 1D",1D,2R,0,1,2,0,0.500,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+new mexico,2010,Mid.Terms,3D,3D,0,0,3,0,0,3.000,2D,2D,0,0,2,0,0,2.000,D,1
+new york,1994,Mid.Terms,"18D, 13R",18D,3R,0,18,3,0,6.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+new york,2016,Pres.Election,"18D, 9R",18D,9R,0,18,9,0,2.000,2D,2D,0,0,2,0,0,2.000,D,1
+new york,2000,Pres.Election,"19D, 12R",19D,2R,0,19,2,0,9.500,2D,2D,0,0,2,0,0,2.000,D,1
+new york,2002,Mid.Terms,"19D, 12R",19D,2R,0,19,2,0,9.500,2D,2D,0,0,2,0,0,2.000,D,1
+new york,1988,Pres.Election,"20D, 14R",20D,4R,0,20,4,0,5.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+new york,1990,Mid.Terms,"21D, 13R",21D,3R,0,21,3,0,7.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+new york,1992,Pres.Election,"21D, 13R",21D,3R,0,21,3,0,7.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+new york,1982,Mid.Terms,"22D, 17R",22D,7R,0,22,7,0,3.143,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+new york,2008,Pres.Election,"23D, 6R",23D,6R,0,23,6,0,3.833,2D,2D,0,0,2,0,0,2.000,D,1
+new york,1980,Pres.Election,"26D, 13R",26D,3R,0,26,3,0,8.667,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+north carolina,2016,Pres.Election,"10R, 3D",3D,10R,0,3,10,0,0.300,2R,0,2R,0,0,2,0,0.000,R,0
+north carolina,1982,Mid.Terms,"7D, 4R",7D,4R,0,7,4,0,1.750,2R,0,2R,0,0,2,0,0.000,R,0
+north carolina,1992,Pres.Election,"7D, 4R",7D,4R,0,7,4,0,1.750,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+north carolina,2008,Pres.Election,"7D, 6R",7D,6R,0,7,6,0,1.167,2R,0,2R,0,0,2,0,0.000,R,0
+north carolina,2000,Pres.Election,"7R, 5D",5D,7R,0,5,7,0,0.714,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+north carolina,2002,Mid.Terms,"7R, 5D",5D,7R,0,5,7,0,0.714,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+north carolina,1988,Pres.Election,"8D, 3R",8D,3R,0,8,3,0,2.667,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+north carolina,1990,Mid.Terms,"8D, 3R",8D,3R,0,8,3,0,2.667,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+north carolina,1994,Mid.Terms,"8D, 4R",8D,4R,0,8,4,0,2.000,2R,0,2R,0,0,2,0,0.000,R,0
+north carolina,2010,Mid.Terms,"8D, 5R",8D,5R,0,8,5,0,1.600,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+north carolina,1980,Pres.Election,"9D, 2R",9D,2R,0,9,2,0,4.500,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+north dakota,1982,Mid.Terms,0,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+north dakota,1988,Pres.Election,0,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+north dakota,1990,Mid.Terms,0,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+north dakota,1992,Pres.Election,0,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+north dakota,1992,Pres.Election,0,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+north dakota,1994,Mid.Terms,0,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+north dakota,2000,Pres.Election,0,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+north dakota,2002,Mid.Terms,0,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+north dakota,2008,Pres.Election,0,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+north dakota,2010,Mid.Terms,0,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+north dakota,1980,Pres.Election,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+north dakota,2016,Pres.Election,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+ohio,1994,Mid.Terms,"10D, 9R",10D,9R,0,10,9,0,1.111,2D,2D,0,0,2,0,0,2.000,D,1
+ohio,2010,Mid.Terms,"10D, 8R",10D,8R,0,10,8,0,1.250,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+ohio,1988,Pres.Election,"11D, 10R",11D,0,0,11,0,0,11.000,2D,2D,0,0,2,0,0,2.000,R,0
+ohio,1990,Mid.Terms,"11D, 10R",11D,0,0,11,0,0,11.000,2D,2D,0,0,2,0,0,2.000,R,0
+ohio,1992,Pres.Election,"11D, 10R",11D,0,0,11,0,0,11.000,2D,2D,0,0,2,0,0,2.000,D,1
+ohio,2000,Pres.Election,"11R, 8D",8D,11R,0,8,11,0,0.727,2R,0,2R,0,0,2,0,0.000,R,0
+ohio,2002,Mid.Terms,"11R, 8D",8D,11R,0,8,11,0,0.727,2R,0,2R,0,0,2,0,0.000,R,0
+ohio,2008,Pres.Election,"11R, 7D",7D,11R,0,7,11,0,0.636,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+ohio,2016,Pres.Election,"12R, 4D",4D,12R,0,4,12,0,0.333,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+ohio,1980,Pres.Election,"13R, 10D",0,13R,0,0,13,0,0.000,2D,2D,0,0,2,0,0,2.000,R,0
+ohio,1982,Mid.Terms,"13R, 10D",0,13R,0,0,13,0,0.000,2D,2D,0,0,2,0,0,2.000,R,0
+oklahoma,1994,Mid.Terms,"3R, 3D",3D,3R,0,3,3,0,1.000,2R,0,2R,0,0,2,0,0.000,R,0
+oklahoma,1988,Pres.Election,"4D, 2R",4D,2R,0,4,2,0,2.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+oklahoma,1990,Mid.Terms,"4D, 2R",4D,2R,0,4,2,0,2.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+oklahoma,1992,Pres.Election,"4D, 2R",4D,2R,0,4,2,0,2.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+oklahoma,2008,Pres.Election,"4R, 1D",1D,4R,0,1,4,0,0.250,2R,0,2R,0,0,2,0,0.000,R,0
+oklahoma,2010,Mid.Terms,"4R, 1D",1D,4R,0,1,4,0,0.250,2R,0,2R,0,0,2,0,0.000,R,0
+oklahoma,1980,Pres.Election,"5D, 1R",5D,1R,0,5,1,0,5.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+oklahoma,1982,Mid.Terms,"5D, 1R",5D,1R,0,5,1,0,5.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+oklahoma,2002,Mid.Terms,"5R, 1D",1D,5R,0,1,5,0,0.200,2R,0,2R,0,0,2,0,0.000,R,0
+oklahoma,2016,Pres.Election,5R,0,5R,0,0,5,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+oklahoma,2016,Mid.Terms,5R,0,5R,0,0,5,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+oklahoma,2000,Pres.Election,6R,0,6R,0,0,6,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+oregon,1982,Mid.Terms,"3D, 1R",3D,1R,0,3,1,0,3.000,2R,0,2R,0,0,2,0,0.000,R,0
+oregon,1988,Pres.Election,"3D, 2R",3D,2R,0,3,2,0,1.500,2R,0,2R,0,0,2,0,0.000,D,1
+oregon,1990,Mid.Terms,"3D, 2R",3D,2R,0,3,2,0,1.500,2R,0,2R,0,0,2,0,0.000,D,1
+oregon,1990,Mid.Terms,"3D, 2R",3D,2R,0,3,2,0,1.500,2R,0,2R,0,0,2,0,0.000,D,1
+oregon,1980,Pres.Election,4D,4D,0,0,4,0,0,4.000,2R,0,2R,0,0,2,0,0.000,R,0
+oregon,1980,Pres.Election,4D,4D,0,0,4,0,0,4.000,2R,0,2R,0,0,2,0,0.000,R,0
+oregon,1992,Pres.Election,"4D, 1R",4D,1R,0,4,1,0,4.000,2R,0,2R,0,0,2,0,0.000,D,1
+oregon,1994,Mid.Terms,"4D, 1R",4D,1R,0,4,1,0,4.000,2R,0,2R,0,0,2,0,0.000,D,1
+oregon,2000,Pres.Election,"4D, 1R",4D,1R,0,4,1,0,4.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+oregon,2002,Mid.Terms,"4D, 1R",4D,1R,0,4,1,0,4.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+oregon,2008,Pres.Election,"4D, 1R",4D,1R,0,4,1,0,4.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+oregon,2010,Mid.Terms,"4D, 1R",4D,1R,0,4,1,0,4.000,2D,2D,0,0,2,0,0,2.000,D,1
+oregon,2016,Pres.Election,"4D, 1R",4D,1R,0,4,1,0,4.000,2D,2D,0,0,2,0,0,2.000,D,1
+pennsylvania,1994,Mid.Terms,"11D, 10R",11D,0,0,11,0,0,11.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+pennsylvania,2000,Pres.Election,"11D, 10R",11D,0,0,11,0,0,11.000,2R,0,2R,0,0,2,0,0.000,D,1
+pennsylvania,2008,Pres.Election,"11D, 8R",11D,8R,0,11,8,0,1.375,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+pennsylvania,2002,Mid.Terms,"11R, 10D",0,11R,0,0,11,0,0.000,2R,0,2R,0,0,2,0,0.000,D,1
+pennsylvania,1988,Pres.Election,"12D, 11R",12D,1R,0,12,1,0,12.000,2R,0,2R,0,0,2,0,0.000,R,0
+pennsylvania,1990,Mid.Terms,"12D, 11R",12D,1R,0,12,1,0,12.000,2R,0,2R,0,0,2,0,0.000,R,0
+pennsylvania,2010,Mid.Terms,"12D, 7R",12D,7R,0,12,7,0,1.714,2D,2D,0,0,2,0,0,2.000,D,1
+pennsylvania,1992,Pres.Election,"12R, 11D",1D,12R,0,1,12,0,0.083,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+pennsylvania,1982,Mid.Terms,"13D, 12R",13D,2R,0,13,2,0,6.500,2R,0,2R,0,0,2,0,0.000,R,0
+pennsylvania,2016,Pres.Election,"13R, 5D",5D,13R,0,5,13,0,0.385,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+pennsylvania,2016,Pres.Election,"13R, 5D",5D,13R,0,5,13,0,0.385,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+pennsylvania,1980,Pres.Election,"15D, 10R",15D,0,0,15,0,0,15.000,2R,0,2R,0,0,2,0,0.000,R,0
+rhode island,1982,Mid.Terms,"1D,1R",1D,1R,0,1,1,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+rhode island,1988,Pres.Election,"1D,1R",1D,1R,0,1,1,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+rhode island,1992,Pres.Election,"1D,1R",1D,1R,0,1,1,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+rhode island,1994,Mid.Terms,"1D,1R",1D,1R,0,1,1,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+rhode island,1980,Pres.Election,2D,2D,0,0,2,0,0,2.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+rhode island,2000,Pres.Election,2D,2D,0,0,2,0,0,2.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+rhode island,2002,Mid.Terms,2D,2D,0,0,2,0,0,2.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+rhode island,2008,Pres.Election,2D,2D,0,0,2,0,0,2.000,2D,2D,0,0,2,0,0,2.000,D,1
+rhode island,2010,Mid.Terms,2D,2D,0,0,2,0,0,2.000,2D,2D,0,0,2,0,0,2.000,D,1
+rhode island,2016,Pres.Election,2D,2D,0,0,2,0,0,2.000,2D,2D,0,0,2,0,0,2.000,D,1
+rhode island,1990,Mid.Terms,2R,0,2R,0,0,2,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+south carolina,1994,Mid.Terms,"3D, 3R",3D,3R,0,3,3,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+south carolina,1980,Pres.Election,"4D, 2R",4D,2R,0,4,2,0,2.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+south carolina,1988,Pres.Election,"4D, 2R",4D,2R,0,4,2,0,2.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+south carolina,1990,Mid.Terms,"4D, 2R",4D,2R,0,4,2,0,2.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+south carolina,1992,Pres.Election,"4D, 2R",4D,2R,0,4,2,0,2.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+south carolina,1982,Mid.Terms,"4R, 2D",2D,4R,0,2,4,0,0.500,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+south carolina,2000,Pres.Election,"4R, 2D",2D,4R,0,2,4,0,0.500,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+south carolina,2002,Mid.Terms,"4R, 2D",2D,4R,0,2,4,0,0.500,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+south carolina,2008,Pres.Election,"4R, 2D",2D,4R,0,2,4,0,0.500,2R,0,2R,0,0,2,0,0.000,R,0
+south carolina,2010,Mid.Terms,"4R, 2D",2D,4R,0,2,4,0,0.500,2R,0,2R,0,0,2,0,0.000,R,0
+south dakota,1980,Pres.Election,"1D, 1R",1D,1R,0,1,1,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+south dakota,1982,Mid.Terms,"1D, 1R",1D,1R,0,1,1,0,1.000,2R,0,2R,0,0,2,0,0.000,R,0
+south dakota,1988,Pres.Election,1D,1D,0,0,1,0,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+south dakota,1990,Mid.Terms,1D,1D,0,0,1,0,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+south dakota,1992,Pres.Election,1D,1D,0,0,1,0,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+south dakota,1994,Mid.Terms,1D,1D,0,0,1,0,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+south dakota,2008,Pres.Election,1D,1D,0,0,1,0,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+south dakota,2010,Mid.Terms,1D,1D,0,0,1,0,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+south dakota,2000,Pres.Election,1R,0,1R,0,0,1,0,0.000,2D,2D,0,0,2,0,0,2.000,R,0
+south dakota,2002,Mid.Terms,1R,0,1R,0,0,1,0,0.000,2D,2D,0,0,2,0,0,2.000,R,0
+south dakota,2016,Pres.Election,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+tennessee,1980,Pres.Election,"5D, 3R",5D,3R,0,5,3,0,1.667,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+tennessee,1982,Mid.Terms,"5D, 3R",5D,3R,0,5,3,0,1.667,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+tennessee,2008,Pres.Election,"5D, 4R",5D,4R,0,5,4,0,1.250,2R,0,2R,0,0,2,0,0.000,R,0
+tennessee,2010,Mid.Terms,"5D, 4R",5D,4R,0,5,4,0,1.250,2R,0,2R,0,0,2,0,0.000,R,0
+tennessee,2000,Pres.Election,"5R, 4D",4D,5R,0,4,5,0,0.800,2R,0,2R,0,0,2,0,0.000,R,0
+tennessee,2002,Mid.Terms,"5R, 4D",4D,5R,0,4,5,0,0.800,2R,0,2R,0,0,2,0,0.000,R,0
+tennessee,1988,Pres.Election,"6D, 3R",6D,3R,0,6,3,0,2.000,2D,2D,0,0,2,0,0,2.000,R,0
+tennessee,1990,Mid.Terms,"6D, 3R",6D,3R,0,6,3,0,2.000,2D,2D,0,0,2,0,0,2.000,R,0
+tennessee,1992,Pres.Election,"6D, 3R",6D,3R,0,6,3,0,2.000,2D,2D,0,0,2,0,0,2.000,D,1
+tennessee,1994,Mid.Terms,"6D, 3R",6D,3R,0,6,3,0,2.000,2D,2D,0,0,2,0,0,2.000,D,1
+tennessee,2016,Pres.Election,"7R, 2D",2D,7R,0,2,7,0,0.286,2R,0,2R,0,0,2,0,0.000,R,0
+texas,1988,Pres.Election,"17D, 10R",17D,0,0,17,0,0,17.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+texas,2000,Pres.Election,"17D, 13R",17D,3R,0,17,3,0,5.667,2R,0,2R,0,0,2,0,0.000,R,0
+texas,2002,Mid.Terms,"17D, 13R",17D,3R,0,17,3,0,5.667,2R,0,2R,0,0,2,0,0.000,R,0
+texas,1982,Mid.Terms,"19D, 5R",19D,5R,0,19,5,0,3.800,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+texas,1990,Mid.Terms,"19D, 8R",19D,8R,0,19,8,0,2.375,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+texas,1992,Pres.Election,"19D, 8R",19D,8R,0,19,8,0,2.375,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+texas,2008,Pres.Election,"19R, 13D",3D,19R,0,3,19,0,0.158,2R,0,2R,0,0,2,0,0.000,R,0
+texas,1980,Pres.Election,"20D, 4R",20D,4R,0,20,4,0,5.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+texas,2010,Mid.Terms,"20R, 12D",2D,20R,0,2,20,0,0.100,2R,0,2R,0,0,2,0,0.000,R,0
+texas,1994,Mid.Terms,"21D, 9R",21D,9R,0,21,9,0,2.333,2R,0,2R,0,0,2,0,0.000,R,0
+texas,2016,Pres.Election,"25R, 11D",1D,25R,0,1,25,0,0.040,2R,0,2R,0,0,2,0,0.000,R,0
+utah,1980,Pres.Election,"1D, 1R",1D,1R,0,1,1,0,1.000,2R,0,2R,0,0,2,0,0.000,R,0
+utah,1992,Pres.Election,"2D, 1R",2D,1R,0,2,1,0,2.000,2R,0,2R,0,0,2,0,0.000,R,0
+utah,1994,Mid.Terms,"2D, 1R",2D,1R,0,2,1,0,2.000,2R,0,2R,0,0,2,0,0.000,R,0
+utah,1982,Mid.Terms,2R,0,2R,0,0,2,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+utah,1988,Pres.Election,"2R, 1D",1D,2R,0,1,2,0,0.500,2R,0,2R,0,0,2,0,0.000,R,0
+utah,1990,Mid.Terms,"2R, 1D",1D,2R,0,1,2,0,0.500,2R,0,2R,0,0,2,0,0.000,R,0
+utah,2002,Mid.Terms,"2R, 1D",1D,2R,0,1,2,0,0.500,2R,0,2R,0,0,2,0,0.000,R,0
+utah,2008,Pres.Election,"2R, 1D",1D,2R,0,1,2,0,0.500,2R,0,2R,0,0,2,0,0.000,R,0
+utah,2010,Mid.Terms,"2R, 1D",1D,2R,0,1,2,0,0.500,2R,0,2R,0,0,2,0,0.000,R,0
+utah,2000,Pres.Election,3R,0,3R,0,0,3,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+utah,2016,Pres.Election,4R,0,4R,0,0,4,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+vermont,2008,Pres.Election,1D,1D,0,0,1,0,0,1.000,"1I,1D",0,0,1I,0,0,1,0.000,D,1
+vermont,2010,Mid.Terms,1D,1D,0,0,1,0,0,1.000,"1I,1D",0,0,1I,0,0,1,0.000,D,1
+vermont,2016,Pres.Election,1D,1D,0,0,1,0,0,1.000,"1I,1D",0,0,1I,0,0,1,0.000,D,1
+vermont,1992,Pres.Election,1I,0,0,0,0,0,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+vermont,1994,Mid.Terms,1I,0,0,0,0,0,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+vermont,2000,Pres.Election,1I,0,0,0,0,0,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+vermont,2002,Mid.Terms,1I,0,0,0,0,0,0,0.000,"1I,1D",0,0,1I,0,0,1,0.000,D,1
+vermont,1980,Pres.Election,1R,0,1R,0,0,1,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+vermont,1982,Mid.Terms,1R,0,1R,0,0,1,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+vermont,1988,Pres.Election,1R,0,1R,0,0,1,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+vermont,1990,Mid.Terms,1R,0,1R,0,0,1,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+virginia,1988,Pres.Election,"5R, 5D",5D,5R,0,5,5,0,1.000,2R,0,2R,0,0,2,0,0.000,R,0
+virginia,1990,Mid.Terms,"5R, 5D",5D,5R,0,5,5,0,1.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+virginia,1992,Pres.Election,"6D, 4R",6D,4R,0,6,4,0,1.500,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+virginia,2000,Pres.Election,"6D, 5R",6D,5R,0,6,5,0,1.200,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+virginia,2010,Mid.Terms,"6D, 5R",6D,5R,0,6,5,0,1.200,2D,2D,0,0,2,0,0,2.000,D,1
+virginia,1980,Pres.Election,"6R, 4D",4D,6R,0,4,6,0,0.667,"1I,1R",0,0,1I,0,0,1,0.000,R,0
+virginia,1994,Mid.Terms,"7D, 4R",7D,4R,0,7,4,0,1.750,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+virginia,2002,Mid.Terms,"8R, 3D",3D,8R,0,3,8,0,0.375,2R,0,2R,0,0,2,0,0.000,R,0
+virginia,2008,Pres.Election,"8R, 3D",3D,8R,0,3,8,0,0.375,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+virginia,2016,Pres.Election,"8R, 3D",3D,8R,0,3,8,0,0.375,2D,2D,0,0,2,0,0,2.000,D,1
+virginia,1982,Mid.Terms,"9R, 1D",1D,9R,0,1,9,0,0.111,"1I,1R",0,0,1I,0,0,1,0.000,R,0
+washington,1982,Mid.Terms,"5D, 2R",5D,2R,0,5,2,0,2.500,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+washington,1988,Pres.Election,"5D, 3R",5D,3R,0,5,3,0,1.667,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+washington,1990,Mid.Terms,"5D, 3R",5D,3R,0,5,3,0,1.667,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+washington,1992,Pres.Election,"5D, 3R",5D,3R,0,5,3,0,1.667,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+washington,2000,Pres.Election,"5D, 4R",5D,4R,0,5,4,0,1.250,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+washington,1980,Pres.Election,"6D, 1R",6D,1R,0,6,1,0,6.000,2D,2D,0,0,2,0,0,2.000,R,0
+washington,2002,Mid.Terms,"6D, 3R",6D,3R,0,6,3,0,2.000,2D,2D,0,0,2,0,0,2.000,D,1
+washington,2008,Pres.Election,"6D, 3R",6D,3R,0,6,3,0,2.000,2D,2D,0,0,2,0,0,2.000,D,1
+washington,2010,Mid.Terms,"6D, 3R",6D,3R,0,6,3,0,2.000,2D,2D,0,0,2,0,0,2.000,D,1
+washington,2016,Pres.Election,"6D, 4R",6D,4R,0,6,4,0,1.500,2D,2D,0,0,2,0,0,2.000,D,1
+washington,1994,Mid.Terms,"8D, 1R",8D,1R,0,8,1,0,8.000,"1D,1R",1D,1R,0,1,1,0,1.000,D,1
+"washington, d.c.",1980,Pres.Election,1D,1D,0,0,1,0,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+"washington, d.c.",1982,Mid.Terms,1D,1D,0,0,1,0,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+"washington, d.c.",1988,Pres.Election,1D,1D,0,0,1,0,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+"washington, d.c.",1990,Mid.Terms,1D,1D,0,0,1,0,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+"washington, d.c.",1992,Pres.Election,1D,1D,0,0,1,0,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+"washington, d.c.",1994,Mid.Terms,1D,1D,0,0,1,0,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+"washington, d.c.",2000,Pres.Election,1D,1D,0,0,1,0,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+"washington, d.c.",2002,Mid.Terms,1D,1D,0,0,1,0,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+"washington, d.c.",2008,Pres.Election,1D,1D,0,0,1,0,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+"washington, d.c.",2010,Mid.Terms,1D,1D,0,0,1,0,0,1.000,2D,2D,0,0,2,0,0,2.000,D,1
+west virginia,2002,Mid.Terms,"2 D1 R",2D,1R,0,2,1,0,2.000,2D,2D,0,0,2,0,0,2.000,R,0
+west virginia,2008,Pres.Election,"2 D1 R",2D,1R,0,2,1,0,2.000,2D,2D,0,0,2,0,0,2.000,R,0
+west virginia,2010,Mid.Terms,"2 D1 R",2D,1R,0,2,1,0,2.000,2D,2D,0,0,2,0,0,2.000,R,0
+west virginia,2000,Pres.Election,3 D,3D,0,0,3,0,0,3.000,2D,2D,0,0,2,0,0,2.000,R,0
+west virginia,2016,Pres.Election,3 R,0,3R,0,0,3,0,0.000,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+wisconsin,2000,Pres.Election,"5D, 4R",5D,4R,0,5,4,0,1.250,2D,2D,0,0,2,0,0,2.000,D,1
+wisconsin,2002,Mid.Terms,"5D, 4R",5D,4R,0,5,4,0,1.250,2D,2D,0,0,2,0,0,2.000,D,1
+wisconsin,2008,Pres.Election,"5D, 3R",5D,3R,0,5,3,0,1.667,2D,2D,0,0,2,0,0,2.000,D,1
+wisconsin,2010,Mid.Terms,"5D, 3R",5D,3R,0,5,3,0,1.667,2D,2D,0,0,2,0,0,2.000,D,1
+wisconsin,2016,Pres.Election,"5R, 3D",3D,5R,0,3,5,0,0.600,"1D,1R",1D,1R,0,1,1,0,1.000,R,0
+wyoming,1980,Pres.Election,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+wyoming,1982,Mid.Terms,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+wyoming,1988,Pres.Election,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+wyoming,1990,Mid.Terms,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+wyoming,1992,Pres.Election,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+wyoming,1994,Mid.Terms,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+wyoming,2000,Pres.Election,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+wyoming,2002,Mid.Terms,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+wyoming,2008,Pres.Election,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+wyoming,2010,Mid.Terms,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
+wyoming,2016,Pres.Election,1R,0,1R,0,0,1,0,0.000,2R,0,2R,0,0,2,0,0.000,R,0
